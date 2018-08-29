@@ -1,0 +1,23 @@
+<!-- Set up conditions for product participation in reporting id-->
+<script type="text/javascript">
+    var ShowReportIdQuestion=false,
+        mm101url = "{configuration.mm101B}";
+</script>
+{#configuration.OrganizationProducts}
+<!--if organization participates Report id and any match is found assume show to be true -->
+    {@if cond="'{.ProductID}' == '1' "}
+        <script>
+            ShowReportIdQuestion=true;
+        </script>
+        {#configuration.Products}
+            <!--now look to see if the member has already given an answer
+            if member has values in Products and reporting id value 
+            match the product for this organization then dont show the question -->
+            {@if cond="'{.RefProductID}' == '1' "}
+                <script>
+                    ShowReportIdQuestion=false;
+                </script>
+            {/if} 
+        {/configuration.Products} 
+    {/if} 
+{/configuration.OrganizationProducts}

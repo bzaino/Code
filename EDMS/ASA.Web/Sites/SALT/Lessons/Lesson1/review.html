@@ -1,0 +1,84 @@
+<h2>Let’s review everything</h2>
+<div class='divider'></div>
+<div class='description'>
+  <p>Here’s all of your income and each of your expenses so far. Take a moment to double-check this information and track your progress toward your goal.</p>
+</div>
+<div class='columns clearfix'>
+  <!-- Income -->
+  <div class='col income'>
+    <div class='table'>
+      <div class='thead'>
+        <div class='tr clearfix'>
+          <div class='th title'>
+            Money In
+          </div>
+          <div class='th month'>month</div>
+          <div class='th slash'>/</div>
+          <div class='th month-total in'>$4550</div>
+        </div>
+      </div>
+      <div class='tbody'></div>
+    </div>
+    <a class='edit-back' href='#' id='edit-income' title='Add new item'>Add new item</a>
+  </div>
+  <!-- Expenses -->
+  <div class='col expenses'>
+    <div class='table default'>
+      <div class='thead'>
+        <div class='tr clearfix'>
+          <div class='th title'>
+            Money Out
+          </div>
+          <div class='th month'>month</div>
+          <div class='th slash'>/</div>
+          <div class='th month-total out'>$4550</div>
+        </div>
+      </div>
+      <div class='tbody'>
+        <div class='tip' id='cc-tip-init'>
+          <div class='wing'></div>
+          <p>
+            <strong>Hold up!</strong>
+            Do you pay for any of this on a credit card?
+          </p>
+          <div class='buttons'>
+            <button id='cc-yes'>Yes</button>
+          </div>
+        </div>
+        <div class='interim tip'>
+          <p>
+            <strong>Ok, cool!</strong>
+            For a more accurate account of your monthly expenses, check off any bills that you regularly put on a credit card.
+          </p>
+        </div>
+        <div class='data'></div>
+        <div class='cc-details clearfix'>
+          <p>
+            How much do you pay on your credit card every month?
+          </p>
+          <div class='right clearfix'>
+            <input class='cc-expenses-total' type='text' />
+            <div>/</div>
+            <select class='cc-expenses-time dropdown' id='cc-dropkick-time'>
+              <option value='week'>week</option>
+              <option selected='selected' value='month'>month</option>
+              <option value='semester'>semester</option>
+              <option value='year'>year</option>
+            </select>
+          </div>
+        </div>
+        <div class='interim tip total-expenses'>
+          <p>
+            <strong class='cc-total-value'>$0</strong>
+            total credit card expenses
+          </p>
+          <div class='buttons'>
+            <button class='cc-cancel'>Cancel</button>
+            <button class='cc-save'>Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class='edit-back' href='#' id='edit-expenses' title='Add new item'>Add new item</a>
+  </div>
+</div>

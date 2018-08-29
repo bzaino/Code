@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>iisnode logs</title>
+    <style type="text/css">
+        body
+        {
+            font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+        }
+        table
+        {
+            border-collapse: collapse;
+        }
+        td, th
+        {
+            border: 1px solid lightgray;
+            padding: 3px 7px 2px 7px;
+        }
+        th
+        {
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: Gray;
+            color: #ffffff;
+        }
+        td.stderr
+        {
+            color: Red;
+        }
+    </style>
+</head>
+<body>
+    <table id="logFilesTable">
+        <tr>
+            <th>
+                Computer name
+            </th>
+            <th>
+                PID
+            </th>
+            <th>
+                Type
+            </th>
+            <th>
+                Created
+            </th>
+            <th>
+                Link
+            </th>
+        </tr>
+    </table>
+    <p id="lastUpdated"></p>
+    <script type="text/javascript">
+
+        // this is replaced with actual data at runtime by code in interceptor.js
+        var logFiles = [{"file":"BOSVSM009-12768-stdout-1535469007411.txt","computername":"BOSVSM009","pid":12768,"type":"stdout","created":1535469007411},{"file":"BOSVSM009-13140-stderr-1529439463603.txt","computername":"BOSVSM009","pid":13140,"type":"stderr","created":1529439463603},{"file":"BOSVSM009-13140-stdout-1529439463599.txt","computername":"BOSVSM009","pid":13140,"type":"stdout","created":1529439463599},{"file":"BOSVSM009-18812-stdout-1529441507032.txt","computername":"BOSVSM009","pid":18812,"type":"stdout","created":1529441507032},{"file":"BOSVSM009-20652-stdout-1535468074370.txt","computername":"BOSVSM009","pid":20652,"type":"stdout","created":1535468074370},{"file":"BOSVSM009-21316-stdout-1534252823393.txt","computername":"BOSVSM009","pid":21316,"type":"stdout","created":1534252823393},{"file":"BOSVSM009-8392-stderr-1534252403449.txt","computername":"BOSVSM009","pid":8392,"type":"stderr","created":1534252403449},{"file":"BOSVSM009-8392-stdout-1534252403439.txt","computername":"BOSVSM009","pid":8392,"type":"stdout","created":1534252403439},{"file":"BOSVSM009-9444-stderr-1529583689878.txt","computername":"BOSVSM009","pid":9444,"type":"stderr","created":1529583689878},{"file":"BOSVSM009-9444-stdout-1529583689872.txt","computername":"BOSVSM009","pid":9444,"type":"stdout","created":1529583689872}];
+        var lastUpdated = 1535469013277;
+        var date = new Date();
+
+        date.setTime(lastUpdated);
+        document.getElementById('lastUpdated').innerHTML = 'Index was last updated ' + date;
+
+        logFiles.sort(function (a, b) {
+            return b.created - a.created;
+        });
+
+        var logFilesTable = document.getElementById("logFilesTable");
+        for (var i = 0; i < logFiles.length; i++) {
+            var logFile = logFiles[i];
+            date.setTime(logFile.created);
+            var row = logFilesTable.insertRow(-1);
+            var computerNameCell = row.insertCell(0);
+            var pidCell = row.insertCell(1);
+            var typeCell = row.insertCell(2);
+            var dateCell = row.insertCell(3);
+            var logCell = row.insertCell(4);
+            computerNameCell.innerHTML = logFile.computername;
+            pidCell.innerHTML = logFile.pid.toString();
+            typeCell.innerHTML = logFile.type;
+            typeCell.setAttribute('class', logFile.type);
+            dateCell.innerHTML = date.toString();
+            logCell.innerHTML = '<a href="' + logFile.file + '">log</a>';
+        };
+
+    </script>
+</body>
+</html>

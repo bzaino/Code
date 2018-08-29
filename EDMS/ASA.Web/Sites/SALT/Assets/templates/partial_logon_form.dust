@@ -1,0 +1,39 @@
+            <form action="/Account/LogOn" autocomplete="off" id="loginForm" method="post" name="loginForm" class="reveal-form" data-abide="ajax">
+                <div class="row">
+                    <div class="small-12 columns ">
+                        <input  autocomplete="off" id="UserName" name="UserName" type="email" placeholder="Email Address" value="" tabindex="1" required value={SiteMember.Emails[0].EmailAddress}>
+                        {>"ErrorMessages/username" /}
+                    </div>
+                    <div class="small-12 columns login-pw">
+                        <input autocomplete="off" name="Password" type="password" placeholder="Password" value="" required tabindex="1">
+                        {>"ErrorMessages/password" /}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <input type="checkbox" id="checkRememberMe" name="checkRememberMe" value="true" checked="checked" class="css-checkbox" tabindex="1"></input>
+                        <label for="checkRememberMe" class="css-label"><small><em>Remember me</em></small></label>
+                    </div>
+                </div>
+                <div class="row padding-left">
+                    <div class="small-6 columns">
+                        <span class="loading margin-top" style="display:none">{>"Modules/SpinnerCSS" /}</span>
+                    </div>
+                    <div class="small-6 columns right">
+                        <button class="button base-btn main-btn submit no-top-margin right" id="loginBtn" type="submit" tabindex="1"><span>Log In</span></button>
+                    </div>
+                    <label class="error server-error js-server-error-text" id="errorCode"></label>
+                </div>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <small>
+                            <a id="forgot-password-link"  data-window-shade="forgotPasswordOverlay" href="" class="js-void-href" tabindex="1">
+                            Forgot your password?</a>
+                            <br>Don't have an account?&nbsp
+                            <a data-window-shade="registrationOverlay" href="" class="js-void-href registrationOverlay-link js-reg-button" tabindex="1">Sign Up.</a>
+                            <!-- SWD-7216 Route 'small screen' users to signup page instead of signup overlay -->
+                            <a href="/register" class="registration-link" tabindex="1">Sign Up.</a>
+                        </small>
+                     </div>
+                </div>
+            </form>

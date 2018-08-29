@@ -1,0 +1,206 @@
+<section>
+    <header>
+        <div class="row collapse js-show-hide show-hide">
+          <div class="small-10 columns">
+            <h2>School and Organization Information</h2>
+          </div>
+           <div class="small-2 columns">
+                 <a href="" class="js-void-href" title="Open or close" tabindex="2"><div class="hide-btn"><i class="fa fa-sort-asc"></i></div></a>
+            </div>
+        </div>
+    </header>
+   <article class="panel">
+       <form id="school-information-form" data-abide="ajax">
+          <!-- What is your enrollment status? -->
+          <div class="row">
+              <div class="small-12 medium-6 columns">
+                  <label>What is your current academic program enrollment status? </label>
+              </div>
+              <div class="small-12 medium-6 columns">
+                  <div class="styled-select">
+                      <select id="enrollmentDropdown" tabindex="2" name="EnrollmentStatus">
+                        <option class="{HideOption}" value=""> </option>
+                        <option value="F" {F_Selected}>I'm enrolled full time</option>
+                        <option value="H" {H_Selected}>I'm enrolled half time</option>
+                        <option value="L" {L_Selected}>I'm enrolled less than half time</option>
+                        <option value="G" {G_Selected}>I already graduated</option>
+                        <option value="W" {W_Selected}>I left before graduating</option>
+                        <option value="X" {X_Selected}>I haven't gone to college </option>
+                      </select>
+                  </div>
+              </div>
+          </div>
+         <!--What type of program are you enrolled in?-->
+          {>"Profile/ProfileRadioCheckboxQuestion" type="single" styleType="radio" currentQuestion=QuestionsAnswers[9]/}
+
+          <!--What's the highest degree that you?ve already completed?-->
+          {>"Profile/ProfileRadioCheckboxQuestion" type="single" styleType="radio" currentQuestion=QuestionsAnswers[10]/}
+
+          <!--What kind of school do you currently attend or did you last graduate from?-->
+          {>"Profile/ProfileRadioCheckboxQuestion" type="single" styleType="radio" currentQuestion=QuestionsAnswers[16]/}
+
+          <div id="OrgAffiliations" class="org-affiliations">
+            <div class="row affiliationQuestion">
+                <div class="small-12 medium-6 columns">
+                    <label>Who Sent You to Salt? 
+                      <br> <small>Select one.</small>
+                    </label>
+                </div>
+                <div class="small-12 columns">
+                    <div class="row">
+                        <div class="small-6 columns double-padding-bottom">
+                          <input type="radio" name="affiliationRadioBtn" id="senderSchool" tabindex="2" value="School" class="css-checkbox"/>
+                          <label class="css-label" for="senderSchool">A School</label>
+                        </div>
+                        <div class="small-6 columns double-padding-bottom">
+                          <input type="radio" name="affiliationRadioBtn" id="senderOrganization" tabindex="2" value="Organization" class="css-checkbox"/>
+                          <label class="css-label" for="senderOrganization">An Organization</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {#Organizations}
+                <div class="js-organization js-existingAffiliation">
+                    <!--If Organization type is school -->
+                    {@if cond="'{OrganizationTypeExternalId}' === '012300000000OGbAAM' "}
+                    <div class="row">
+                      <div class="small-12 medium-6 columns">
+                          <label class="school">Where do you go to school?</label>
+                      </div> 
+                    {:else}
+                    <div class="row no-bottom-margin">
+                      <div class="small-12 medium-6 columns">
+                          <label class="organization">Select your Organization.</label>
+                      </div> 
+                    {/if}            
+                    <div class="small-12 medium-6 columns">
+                        <div class="js-organization-search">
+                            <div>
+                              <!--If Organization type is school -->
+                              <input id="qa-{@if cond="'{OrganizationTypeExternalId}' === '012300000000OGbAAM' "}SCHL{:else}ORG{/if}-{$idx}" type="text" autocomplete="off" tabindex="2" disabled class="no-bottom-margin has-tip tip-top {@if cond="'{OrganizationTypeExternalId}' === '012300000000OGbAAM' "}SCHL{:else}ORG{/if} organizationFilter" name="organizationFilter" value="{OrganizationName}"  placeholder="School/Organization (Recommended)" data-tooltip title="Get extra benefits based on the school/organization with which you are/were affiliated." />
+                              <!--If Organization type is school -->
+                              {@if cond="'{OrganizationTypeExternalId}' === '012300000000OGbAAM' "}
+                                {>"ErrorMessages/organizationName" organizationValidation="a school"/}
+                              {:else}
+                                {>"ErrorMessages/organizationName" organizationValidation="an organization"/}
+                              {/if}
+                            </div>
+                            <input class="OEBranch" name="OEBranch" type="hidden" value="{OEBranch}"/>
+                            <input class="OECode" name="OECode" type="hidden" value="{OECode}" />
+                            <input class="SchoolType" name="SchoolType" type="hidden" value="{SALTSchoolTypeID}" />
+                            <input class="OrganizationId" name="OrganizationId" type="hidden" value="{OrganizationId}" />
+                        </div>
+                    </div>
+                  </div>
+                  <!--If Organization type is school -->
+                  {@if cond="'{OrganizationTypeExternalId}' === '012300000000OGbAAM' "}
+                    <!-- What year will you graduate-->
+                    <div class="row no-bottom-margin">
+                        <div class="small-12 medium-6 columns">
+                          <label>What is your graduation year?</label>
+                        </div>
+                        <div class="small-12 medium-6 columns">
+                          <div class="small-12">
+                              <div class="styled-select">
+                                <select id="qa-SCHL-yr-{$idx}" class="yearDropdown" name="GraduationDate" required tabindex="2">
+                                    <option value=""></option>
+                                  {@yearDropdown startYear="15" range="-99" gradDate="{ExpectedGraduationYear}" /}
+                                  <option value="1900" {@checkGradYear gradDate="{ExpectedGraduationYear}" /}>Unknown</option>
+                                </select>
+                                {>"ErrorMessages/GradDate" /}
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                  {/if}
+                  <!--If Organization type is school -->
+                  {@if cond="'{OrganizationTypeExternalId}' === '012300000000OGbAAM' "}
+                    {>"partial_organization_remove_button" tabIndex="2"/}
+                  {:else}
+                    {>"partial_organization_remove_button" tabIndex="2" class="padding-top"/}
+                  {/if}
+                </div>
+            {/Organizations}
+            <div class="affiliation-add-wrapper">
+              {>"partial_organization_add_button" initialVisibility="hidden" tabIndex="2"/}
+            </div>
+          </div>
+          <div class="js-profile-reporting-id-block">
+            <h3 class="small-12 columns js-profile-student-id" hidden>Student Id:</h3>
+            {#Organizations}
+              {>"Profile/ReportingIdRow" initialVisibility="hidden"/}
+            {/Organizations}
+          </div>
+          <div class="row">
+              <div class="small-12 columns">
+                  <button type="submit" tabindex="2" class="button base-btn main-btn submit right" disabled>Save</button>
+              </div>
+          </div>
+      </form>
+      <div class="affiliationTemplates">
+        <div class="schoolAddTemplate">
+          <div class="js-organization js-newAffiliation">
+            <div class="row">
+              <div class="small-12 medium-6 columns">
+                  <label class="school">Where do you go to school?</label>
+              </div>            
+              <div class="small-12 medium-6 columns">
+                  <div class="js-organization-search">
+                      <div>
+                        <input type="text" autocomplete="off" tabindex="2" class="no-bottom-margin has-tip tip-top SCHL organizationFilter" name="organizationFilter" value=""  placeholder="School Name" data-tooltip title="Get extra benefits based on the school with which you are/were affiliated." data-abide-validator="organizationLookup"/>
+                        {>"ErrorMessages/organizationName" organizationValidation="a school"/}
+                      </div>
+                      <input class="OEBranch" name="OEBranch" type="hidden" value=""/>
+                      <input class="OECode" name="OECode" type="hidden" value="" />
+                      <input class="SchoolType" name="SchoolType" type="hidden" value="" />
+                      <input class="OrganizationId" name="OrganizationId" type="hidden" value="" />
+                  </div>
+              </div>
+            </div>
+            <!-- What year will you graduate-->
+            <div class="row no-bottom-margin">
+                <div class="small-12 medium-6 columns">
+                  <label>What is your graduation year?</label>
+                </div>
+                <div class="small-12 medium-6 columns">
+                  <div class="small-12">
+                      <div class="styled-select">
+                        <select class="yearDropdown" name="GraduationDate" required tabindex="2">
+                            <option value="">Graduation Year</option>
+                          {@yearDropdown startYear="15" range="-99" gradDate="{.ExpectedGraduationYear}" /}
+                          <option value="1900" {@checkGradYear gradDate="{ExpectedGraduationYear}" /}>Unknown</option>
+                        </select>
+                        {>"ErrorMessages/GradDate" /}
+                      </div>
+                  </div>
+                </div>
+            </div>
+            {>"partial_organization_remove_button" tabIndex="2"/}
+          </div>
+        </div>
+        <div class="organizationAddTemplate">
+          <div class="js-organization js-newAffiliation">
+            <div class="row no-bottom-margin">
+              <div class="small-12 medium-6 columns">
+                  <label class="organization">Select your Organization.</label>
+              </div>            
+              <div class="small-12 medium-6 columns">
+                  <div class="js-organization-search">
+                      <div>
+                        <input type="text" autocomplete="off" tabindex="2" class="no-bottom-margin has-tip tip-top WELL organizationFilter" name="organizationFilter" value="" placeholder="Organization Name" data-tooltip title="Get extra benefits based on the organization with which you are/were affiliated." data-abide-validator="organizationLookup"/>
+                        {>"ErrorMessages/organizationName" organizationValidation="an organization"/}
+                      </div>
+                      <input class="OEBranch" name="OEBranch" type="hidden" value=""/>
+                      <input class="OECode" name="OECode" type="hidden" value="" />
+                      <input class="SchoolType" name="SchoolType" type="hidden" value="" />
+                      <input class="OrganizationId" name="OrganizationId" type="hidden" value="" />
+                  </div>
+              </div>
+            </div>
+            {>"partial_organization_remove_button" class="padding-top" tabIndex="2"/}
+          </div>
+        </div>
+      </div>
+      {>"Profile/AjaxMessages" /}
+    </article>
+</section>

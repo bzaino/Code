@@ -1,0 +1,1 @@
+define(["dust"], function(dust) { (function(){dust.register("ErrorMessages/name",body_0);function body_0(chk,ctx){return chk.write("<small class=\"error\">Please enter your name.</small>");}return body_0;})(); });

@@ -1,0 +1,1 @@
+define(["dust"], function(dust) { (function(){dust.register("ErrorMessages/ProfileOtherEntry",body_0);function body_0(chk,ctx){return chk.write("<small class=\"error\">This field must be between 1 and 20 characters long.</small>");}return body_0;})(); });

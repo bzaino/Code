@@ -1,0 +1,1290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="Asa.Salt.Web.Services.Contracts.Operations" elementFormDefault="qualified" targetNamespace="Asa.Salt.Web.Services.Contracts.Operations" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" />
+  <xs:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Common.Types.Enums" />
+  <xs:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson1" />
+  <xs:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons" />
+  <xs:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson2" />
+  <xs:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson3" />
+  <xs:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/System" />
+  <xs:element name="AddInteraction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="interaction" nillable="true" type="q1:MemberContentInteractionContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddInteractionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="AddInteractionResult" nillable="true" type="q2:MemberContentInteractionContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateInteraction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="interactionToUpdate" nillable="true" type="q3:MemberContentInteractionContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateInteractionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="UpdateInteractionResult" nillable="true" type="q4:MemberContentInteractionContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteInteraction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="interactionId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteInteractionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteInteractionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserInteractions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="contentId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="contentType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserInteractionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetUserInteractionsResult" nillable="true" type="q5:ArrayOfMemberContentInteractionContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserInteractionsByContentType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="contentType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserInteractionsByContentTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetUserInteractionsByContentTypeResult" nillable="true" type="q6:ArrayOfMemberContentInteractionContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserByUserId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserByUserIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetUserByUserIdResult" nillable="true" type="q7:MemberContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserByUsername">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserByUsernameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetUserByUsernameResult" nillable="true" type="q8:MemberContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserByActiveDirectoryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="activeDirectoryKey" type="q9:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserByActiveDirectoryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetUserByActiveDirectoryKeyResult" nillable="true" type="q10:MemberContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserOrganizations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserOrganizationsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetUserOrganizationsResult" nillable="true" type="q11:ArrayOfMemberOrganizationContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="user" nillable="true" type="q12:UserRegistrationContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="RegisterUserResult" nillable="true" type="q13:RegisterMemberResultContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeactivateUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="modifierUserName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeactivateUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeactivateUserResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteUserResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="user" nillable="true" type="q14:MemberContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Common.Types.Enums" minOccurs="0" name="UpdateUserResult" type="q15:MemberUpdateStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserOrgAffiliation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="userOrgAffiliations" nillable="true" type="q16:ArrayOfMemberOrganizationContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserOrgAffiliationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateUserOrgAffiliationResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserAlerts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserAlertsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetUserAlertsResult" nillable="true" type="q17:ArrayOfMemberAlertContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserProfileResponses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="responses" nillable="true" type="q18:ArrayOfMemberProfileQAContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserProfileResponsesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateUserProfileResponsesResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserActivityHistory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserActivityHistoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetUserActivityHistoryResult" nillable="true" type="q19:ArrayOfMemberActivityHistoryContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrgs">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOrgsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetAllOrgsResult" nillable="true" type="q20:ArrayOfRefOrganizationContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrgs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="filter" nillable="true" type="xs:string" />
+        <xs:element xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="orgTypeNames" nillable="true" type="q21:ArrayOfstring" />
+        <xs:element minOccurs="0" name="rowsPerPage" type="xs:int" />
+        <xs:element minOccurs="0" name="rowOffset" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrgsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetOrgsResult" nillable="true" type="q22:OrgPagedListContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="opeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="branchCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrgResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetOrgResult" nillable="true" type="q23:RefOrganizationContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrgByExternalOrgID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="externalOrgId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrgByExternalOrgIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetOrgByExternalOrgIDResult" nillable="true" type="q24:RefOrganizationContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrgByOrganizationId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="organizationId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrgByOrganizationIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetOrgByOrganizationIdResult" nillable="true" type="q25:RefOrganizationContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrgProducts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orgId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrgProductsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetOrgProductsResult" nillable="true" type="q26:ArrayOfRefOrganizationProductContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrgProductsByMemberId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrgProductsByMemberIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetOrgProductsByMemberIdResult" nillable="true" type="q27:ArrayOfRefOrganizationProductContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllProducts">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllProductsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetAllProductsResult" nillable="true" type="q28:ArrayOfRefProductContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllProfileQuestions">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllProfileQuestionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetAllProfileQuestionsResult" nillable="true" type="q29:ArrayOfRefProfileQuestionContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllProfileAnswers">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllProfileAnswersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetAllProfileAnswersResult" nillable="true" type="q30:ArrayOfRefProfileAnswerContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProfileResponses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProfileResponsesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetProfileResponsesResult" nillable="true" type="q31:ArrayOfMemberProfileQAContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRefRegistrationSources">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRefRegistrationSourcesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetAllRefRegistrationSourcesResult" nillable="true" type="q32:ArrayOfRefRegistrationSourceContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRefRegistrationSourceTypes">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRefRegistrationSourceTypesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetAllRefRegistrationSourceTypesResult" nillable="true" type="q33:ArrayOfRefRegistrationSourceTypeContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRefUserRoles">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRefUserRolesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetAllRefUserRolesResult" nillable="true" type="q34:ArrayOfRefMemberRoleContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddRefRegistrationSource">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="refRegistrationSourceContract" nillable="true" type="q35:RefRegistrationSourceContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddRefRegistrationSourceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddRefRegistrationSourceResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRefRegistrationSource">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="refRegistrationSourceContract" nillable="true" type="q36:RefRegistrationSourceContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRefRegistrationSourceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateRefRegistrationSourceResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRefCampaigns">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRefCampaignsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetAllRefCampaignsResult" nillable="true" type="q37:ArrayOfRefCampaignContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddRefCampaign">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="refCampaignContract" nillable="true" type="q38:RefCampaignContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddRefCampaignResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddRefCampaignResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRefCampaign">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="refCampaignContract" nillable="true" type="q39:RefCampaignContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRefCampaignResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateRefCampaignResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRefChannels">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllRefChannelsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetAllRefChannelsResult" nillable="true" type="q40:ArrayOfRefChannelContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAlert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="alertId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAlertResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteAlertResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteLoan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="loanId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteLoanResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteLoanResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateLoan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="loanContract" nillable="true" type="q41:MemberReportedLoanContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateLoanResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="UpdateLoanResult" nillable="true" type="q42:MemberReportedLoanContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteUserLessonQuestionResponses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lessonUserId" type="xs:int" />
+        <xs:element minOccurs="0" name="lessonId" type="xs:int" />
+        <xs:element minOccurs="0" name="questionId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="questionResponseId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="groupNumber" nillable="true" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteUserLessonQuestionResponsesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteUserLessonQuestionResponsesResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPaymentReminders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserPaymentRemindersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetUserPaymentRemindersResult" nillable="true" type="q43:ArrayOfPaymentReminderContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveUserPaymentReminders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="reminders" nillable="true" type="q44:ArrayOfPaymentReminderContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveUserPaymentRemindersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Common.Types.Enums" minOccurs="0" name="SaveUserPaymentRemindersResult" type="q45:RemindersUpdateStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportUserLoans">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element minOccurs="0" name="file" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="sourceName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportUserLoansResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="ImportUserLoansResult" nillable="true" type="q46:ArrayOfMemberReportedLoanContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserLoans">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserLoansResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetUserLoansResult" nillable="true" type="q47:ArrayOfMemberReportedLoanContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserLoansRecordSourceList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element xmlns:q48="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="recordSourceNames" nillable="true" type="q48:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserLoansRecordSourceListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetUserLoansRecordSourceListResult" nillable="true" type="q49:ArrayOfMemberReportedLoanContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportedLoans">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportedLoansResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetReportedLoansResult" nillable="true" type="q50:ArrayOfvMemberReportedLoansContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSurveyById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="surveyId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSurveyByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetSurveyByIdResult" nillable="true" type="q51:SurveyContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserSurveyResults">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="surveyId" type="xs:int" />
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserSurveyResultsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetUserSurveyResultsResult" nillable="true" type="q52:SurveyResponseContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostSurvey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="surveyResponse" nillable="true" type="q53:SurveyResponseContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostSurveyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PostSurveyResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLessonsReferenceData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Common.Types.Enums" minOccurs="0" name="refDataGroup" type="q54:RefLessonLookupDataTypes" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLessonsReferenceDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetLessonsReferenceDataResult" nillable="true" type="q55:ArrayOfRefLessonLookupDataContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserLessons">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lessonUserId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserLessonsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetUserLessonsResult" nillable="true" type="q56:ArrayOfMemberLessonContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartUserLesson">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="userLesson" nillable="true" type="q57:MemberLessonContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartUserLessonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="StartUserLessonResult" nillable="true" type="q58:MemberLessonContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostLesson1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson1" minOccurs="0" name="lesson" nillable="true" type="q59:Lesson1Contract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostLesson1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons" minOccurs="0" name="PostLesson1Result" nillable="true" type="q60:PostLessonResultContractOfLesson1ContractlUUV3ww1" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostLesson2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson2" minOccurs="0" name="lesson" nillable="true" type="q61:Lesson2Contract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostLesson2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons" minOccurs="0" name="PostLesson2Result" nillable="true" type="q62:PostLessonResultContractOfLesson2ContractnnNbrmR3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostLesson3">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson3" minOccurs="0" name="lesson" nillable="true" type="q63:Lesson3Contract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostLesson3Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons" minOccurs="0" name="PostLesson3Result" nillable="true" type="q64:PostLessonResultContractOfLesson3ContractQ4ySJVjP" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserLesson1Results">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lessonUserId" type="xs:int" />
+        <xs:element minOccurs="0" name="lessonStepId" nillable="true" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserLesson1ResultsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson1" minOccurs="0" name="GetUserLesson1ResultsResult" nillable="true" type="q65:Lesson1Contract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserLesson2Results">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lessonUserId" type="xs:int" />
+        <xs:element minOccurs="0" name="lessonStepId" nillable="true" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserLesson2ResultsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson2" minOccurs="0" name="GetUserLesson2ResultsResult" nillable="true" type="q66:Lesson2Contract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserLesson3Results">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lessonUserId" type="xs:int" />
+        <xs:element minOccurs="0" name="lessonStepId" nillable="true" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserLesson3ResultsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson3" minOccurs="0" name="GetUserLesson3ResultsResult" nillable="true" type="q67:Lesson3Contract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AssociateLessonsWithUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lessonUserId" type="xs:int" />
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AssociateLessonsWithUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AssociateLessonsWithUserResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateLoan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="loan" nillable="true" type="q68:MemberReportedLoanContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateLoanResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="CreateLoanResult" nillable="true" type="q69:MemberReportedLoanContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserLesson">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="userLesson" nillable="true" type="q70:MemberLessonContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserLessonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateUserLessonResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVlcMemberProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVlcMemberProfileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetVlcMemberProfileResult" nillable="true" type="q71:VLCUserProfileContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateVlcMemberProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="profile" nillable="true" type="q72:VLCUserProfileContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateVlcMemberProfileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateVlcMemberProfileResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddVlcResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="response" nillable="true" type="q73:VLCUserResponseContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddVlcResponseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddVlcResponseResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddJellyVisionQuizResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q74="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="response" nillable="true" type="q74:JellyVisionQuizResponseContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddJellyVisionQuizResponseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddJellyVisionQuizResponseResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCOLStates">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCOLStatesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetCOLStatesResult" nillable="true" type="q75:ArrayOfvCostOfLivingStateListContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCOLUrbanAreas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="stateId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCOLUrbanAreasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetCOLUrbanAreasResult" nillable="true" type="q76:ArrayOfRefGeographicIndexContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCOLResults">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cityA" type="xs:int" />
+        <xs:element minOccurs="0" name="cityB" type="xs:int" />
+        <xs:element minOccurs="0" name="salary" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCOLResultsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q77="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetCOLResultsResult" nillable="true" type="q77:COLResultsContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRefMajors">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRefMajorsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q78="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetRefMajorsResult" nillable="true" type="q78:JSIQuestionsContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRefStates">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRefStatesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetRefStatesResult" nillable="true" type="q79:JSIQuestionsContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetJSISchools">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="majorId" type="xs:int" />
+        <xs:element minOccurs="0" name="stateId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetJSISchoolsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q80="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetJSISchoolsResult" nillable="true" type="q80:JSIQuestionsContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostJSIResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q81="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="response" nillable="true" type="q81:JSIQuizAnswerContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostJSIResponseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q82="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="PostJSIResponseResult" nillable="true" type="q82:JSIQuestionsContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMembersAcademicInfoView">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="startRowIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="maximumRows" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMembersAcademicInfoViewResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q83="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="GetMembersAcademicInfoViewResult" nillable="true" type="q83:TupleOfArrayOfvMemberAcademicInfoContractintuTAgsqOm" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMemberOrganizations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMemberOrganizationsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q84="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetMemberOrganizationsResult" nillable="true" type="q84:ArrayOfMemberOrganizationContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMemberProducts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMemberProductsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q85="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetMemberProductsResult" nillable="true" type="q85:ArrayOfMemberProductContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddMemberProduct">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q86="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="memberProduct" nillable="true" type="q86:MemberProductContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddMemberProductResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddMemberProductResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMemberProduct">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q87="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="memberProduct" nillable="true" type="q87:MemberProductContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMemberProductResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateMemberProductResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMembersBySearchParms">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MemberID" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMembersBySearchParmsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q88="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetMembersBySearchParmsResult" nillable="true" type="q88:ArrayOfvMemberAcademicInfoContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserActivationHistory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserActivationHistoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q89="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetUserActivationHistoryResult" nillable="true" type="q89:ArrayOfMemberActivationHistoryContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateOrgInfoFlags">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iOrgID" type="xs:int" />
+        <xs:element minOccurs="0" name="bIsLookupAllowed" nillable="true" type="xs:boolean" />
+        <xs:element minOccurs="0" name="sModifiedBy" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateOrgInfoFlagsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateOrgInfoFlagsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpsertOrgToDoListItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q90="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="toDoListItem" nillable="true" type="q90:OrganizationToDoListContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpsertOrgToDoListItemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpsertOrgToDoListItemResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateOrgProductsSubscription">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iOrgID" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="dtProductList" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="sModifiedBy" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateOrgProductsSubscriptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateOrgProductsSubscriptionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpsertQuestionAnswer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MemberID" type="xs:int" />
+        <xs:element xmlns:q91="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="Responses" nillable="true" type="q91:ArrayOfMemberQAContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpsertQuestionAnswerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpsertQuestionAnswerResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMemberQuestionAnswer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MemberID" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SourceID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMemberQuestionAnswerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q92="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetMemberQuestionAnswerResult" nillable="true" type="q92:ArrayOfvMemberQuestionAnswerContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMemberToDos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="memberID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMemberToDosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q93="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetMemberToDosResult" nillable="true" type="q93:ArrayOfMemberToDoListContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpsertMemberToDo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q94="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="todoContract" nillable="true" type="q94:MemberToDoListContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpsertMemberToDoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpsertMemberToDoResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMemberRoles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="memberID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMemberRolesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q95="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="GetMemberRolesResult" nillable="true" type="q95:ArrayOfMemberRoleContract" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpsertMemberRoles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="memberId" type="xs:int" />
+        <xs:element xmlns:q96="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="memberRoles" nillable="true" type="q96:ArrayOfMemberRoleContract" />
+        <xs:element minOccurs="0" name="modifiedBy" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpsertMemberRolesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpsertMemberRolesResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

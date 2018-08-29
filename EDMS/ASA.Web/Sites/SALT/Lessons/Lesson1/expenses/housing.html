@@ -1,0 +1,181 @@
+<h2>Housing</h2>
+<div class='divider'></div>
+<div class='description'>
+  <p>What are your housing expenses? This can be very different if you rent or own, live in the dorms or off campus.</p>
+</div>
+<div class='question clearfix'>
+  <h1 class='clearfix'>
+    <span>I</span>
+    <span>
+      <select class='dropdown-large housing' name='housing-status' tabindex='1'>
+        <option class='select-one' selected='selected' value='select-one'>select one</option>
+        <option value='rent'>rent my home</option>
+        <option value='own'>own my home</option>
+      </select>
+    </span>
+    <span>,</span>
+    <span>and</span>
+    <span>I</span>
+    <span>pay</span>
+    <span>for</span>
+  </h1>
+  <form class='smaller-form rent'>
+    <div class='box-wrapper clearfix'>
+      <input data-display='Rent' id='rent' tabindex='2' type='checkbox' value='rent' />
+      <label for='rent'>Rent</label>
+      <div class='tip none'>
+        <div class='wing'></div>
+        <div class='details'>
+          <input id='rent-income' maxlength='8' tabindex='3' type='text' value='$' />
+          <span>/</span>
+          <select class='dropdown' name='rent-income' tabindex='4'>
+            <option value='week'>week</option>
+            <option selected='selected' value='month'>month</option>
+            <option value='semester'>semester</option>
+            <option value='year'>year</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class='box-wrapper clearfix'>
+      <input data-display='Cleaning / Lawn Maintenance' id='cleaning-rent' tabindex='5' type='checkbox' value='cleaning' />
+      <label for='cleaning-rent'>Cleaning &amp; Lawn Maintenance</label>
+      <div class='tip none'>
+        <div class='wing'></div>
+        <div class='details'>
+          <input id='cleaning-income' maxlength='8' tabindex='6' type='text' value='$' />
+          <span>/</span>
+          <select class='dropdown' name='rent-cleaning' tabindex='7'>
+            <option value='week'>week</option>
+            <option selected='selected' value='month'>month</option>
+            <option value='semester'>semester</option>
+            <option value='year'>year</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class='box-wrapper clearfix'>
+      <input data-display='Repairs' id='repairs' tabindex='8' type='checkbox' value='repairs' />
+      <label for='repairs'>Repairs</label>
+      <div class='tip none'>
+        <div class='wing'></div>
+        <div class='details'>
+          <input id='repairs-income' maxlength='8' tabindex='9' type='text' value='$' />
+          <span>/</span>
+          <select class='dropdown' name='rent-repairs' tabindex='10'>
+           <option value='week'>week</option>
+            <option selected='selected' value='month'>month</option>
+            <option value='semester'>semester</option>
+            <option value='year'>year</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </form>
+  <form class='smaller-form own'>
+    <div class='box-wrapper clearfix'>
+      <input data-display='Mortgage' id='mortgage' tabindex='2' type='checkbox' value='mortgage' />
+      <label for='mortgage'>Mortgage</label>
+      <div class='tip none'>
+        <div class='wing'></div>
+        <div class='details'>
+          <input id='mortgage-income' maxlength='8' tabindex='3' type='text' value='$' />
+          <span>/</span>
+          <select class='dropdown' name='mortgage-income' tabindex='4'>
+           <option value='week'>week</option>
+            <option selected='selected' value='month'>month</option>
+            <option value='semester'>semester</option>
+            <option value='year'>year</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class='box-wrapper clearfix'>
+      <input data-display='Insurance' id='insurance' tabindex='5' type='checkbox' value='insurance' />
+      <label for='insurance'>Insurance</label>
+      <div class='tip none'>
+        <div class='wing'></div>
+        <div class='details'>
+          <input id='insurance-income' maxlength='8' tabindex='6' type='text' value='$' />
+          <span>/</span>
+          <select class='dropdown' name='mortgage-insurance' tabindex='7'>
+            <option value='week'>week</option>
+            <option selected='selected' value='month'>month</option>
+            <option value='semester'>semester</option>
+            <option value='year'>year</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class='box-wrapper clearfix'>
+      <input data-display='Repairs / Renovations' id='repairs1' tabindex='8' type='checkbox' value='repairs1' />
+      <label for='repairs1'>Repairs &amp; Renovations</label>
+      <div class='tip none'>
+        <div class='wing'></div>
+        <div class='details'>
+          <input id='repairs1-income' maxlength='8' tabindex='9' type='text' value='$' />
+          <span>/</span>
+          <select class='dropdown' name='mortgage-repairs' tabindex='10'>
+            <option value='week'>week</option>
+            <option selected='selected' value='month'>month</option>
+            <option value='semester'>semester</option>
+            <option value='year'>year</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class='box-wrapper clearfix'>
+      <input data-display='Property Taxes' id='taxes' tabindex='11' type='checkbox' value='taxes' />
+      <label for='taxes'>Property Taxes</label>
+      <div class='tip'>
+        <div class='wing'></div>
+        <p>Many property taxes are paid yearly, but sometimes they’re added into your monthly mortgage.</p>
+        <div class='details'>
+          <input id='taxes-income' maxlength='8' tabindex='12' type='text' value='$' />
+          <span>/</span>
+          <select class='dropdown' name='mortgage-taxes' tabindex='13'>
+           <option value='week'>week</option>
+            <option selected='selected' value='month'>month</option>
+            <option value='semester'>semester</option>
+            <option value='year'>year</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class='box-wrapper clearfix'>
+      <input data-display='Cleaning / Lawn Maintenance' id='cleaning' tabindex='14' type='checkbox' value='cleaning' />
+      <label for='cleaning'>Cleaning &amp; Maintenance</label>
+      <div class='tip none'>
+        <div class='wing'></div>
+        <div class='details'>
+          <input id='cleaning-income' maxlength='8' tabindex='15' type='text' value='$' />
+          <span>/</span>
+          <select class='dropdown' name='mortgage-cleaning' tabindex='16'>
+            <option value='week'>week</option>
+            <option selected='selected' value='month'>month</option>
+            <option value='semester'>semester</option>
+            <option value='year'>year</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class='box-wrapper clearfix'>
+      <input data-display='Home Owners Association' id='hoa' tabindex='17' type='checkbox' value='hoa' />
+      <label for='hoa'>Home Owners Association</label>
+      <div class='tip'>
+        <div class='wing'></div>
+        <p>Homeowner Associations fees and payments can vary greatly. Make sure to include whether you pay yours monthly, yearly, or included in your mortgage.</p>
+        <div class='details'>
+          <input id='hoa-income' maxlength='18' type='text' value='$' />
+          <span>/</span>
+          <select class='dropdown' name='mortgage-hoa' tabindex='19'>
+           <option value='week'>week</option>
+            <option selected='selected' value='month'>month</option>
+            <option value='semester'>semester</option>
+            <option value='year'>year</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

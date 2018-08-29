@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://asa.org/servicecontract/loanManagement/v1.2" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://asa.org/servicecontract/loanManagement/v1.3" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://asa.org/servicecontract/loanManagement/v1.2" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://asa.org/servicecontract/loanManagement/v1.3" location="http://localhost:1000/LoanManagementService.svc?wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_ILoanManagement" type="i0:ILoanManagement">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaveLoan">
+      <soap:operation soapAction="SaveLoan" style="document" />
+      <wsdl:input name="SaveLoanRequest">
+        <soap:header message="i0:SaveLoanRequest_Headers" part="ParamList" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SaveLoanResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ASAFaultDetailFault">
+        <soap:fault use="literal" name="ASAFaultDetailFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ASABusinessFaultDetailFault">
+        <soap:fault use="literal" name="ASABusinessFaultDetailFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoan">
+      <soap:operation soapAction="GetLoan" style="document" />
+      <wsdl:input name="GetLoanRequest">
+        <soap:header message="i0:GetLoanRequest_Headers" part="ParamList" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetLoanResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ASABusinessFaultDetailFault">
+        <soap:fault use="literal" name="ASABusinessFaultDetailFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ASAFaultDetailFault">
+        <soap:fault use="literal" name="ASAFaultDetailFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SaveLoanSelfReportedEntry">
+      <soap:operation soapAction="SaveLoanSelfReportedEntry" style="document" />
+      <wsdl:input name="SaveLoanSelfReportedEntryRequest">
+        <soap:header message="i0:SaveLoanSelfReportedEntryRequest_Headers" part="ParamList" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SaveLoanSelfReportedEntryResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ASAFaultDetailFault">
+        <soap:fault use="literal" name="ASAFaultDetailFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ASABusinessFaultDetailFault">
+        <soap:fault use="literal" name="ASABusinessFaultDetailFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoanSelfReportedEntry">
+      <soap:operation soapAction="GetLoanSelfReportedEntry" style="document" />
+      <wsdl:input name="GetLoanSelfReportedEntryRequest">
+        <soap:header message="i0:GetLoanSelfReportedEntryRequest_Headers" part="ParamList" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetLoanSelfReportedEntryResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ASABusinessFaultDetailFault">
+        <soap:fault use="literal" name="ASABusinessFaultDetailFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ASAFaultDetailFault">
+        <soap:fault use="literal" name="ASAFaultDetailFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

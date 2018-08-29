@@ -1,0 +1,523 @@
+@font-face {
+    font-family: 'ITCAvantGardeGothicStdDemiCn';
+    src: url('/Assets/fonts/itcavantgardestd-demicn-webfont.eot');
+    src: url('/Assets/fonts/itcavantgardestd-demicn-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/Assets/fonts/itcavantgardestd-demicn-webfont.woff') format('woff'),
+         url('/Assets/fonts/itcavantgardestd-demicn-webfont.ttf') format('truetype'),
+         url('/Assets/fonts/itcavantgardestd-demicn-webfont.svg#ITCAvantGardeGothicStdDemiCn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'ArialNarrowRegular';
+    src: url('/Assets/fonts/arial_narrow-webfont.eot');
+    src: url('/Assets/fonts/arial_narrow-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/Assets/fonts/arial_narrow-webfont.woff') format('woff'),
+         url('/Assets/fonts/arial_narrow-webfont.ttf') format('truetype'),
+         url('/Assets/fonts/arial_narrow-webfont.svg#ArialNarrowRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Overrides colorbox.css */
+#cboxLoadedContent {
+  margin-bottom: 0; 
+}
+#cboxOverlay {
+  background: url("/Assets/images/lessons/lesson1/curriculum/bg-colorbox-overlay.png");
+}
+#cboxClose {
+  position:absolute;
+  top:-15px;
+  right:-15px;
+  background:transparent url(/Assets/images/global/overlay-close-btn.png) no-repeat 0 0;
+  width:33px;
+  height:35px;
+  text-indent:-9999px;
+}
+#cboxClose.hover {
+  background:transparent url(/Assets/images/global/overlay-close-btn-hover.png) no-repeat 0 0;
+}
+
+/* Log in Overlay */
+#ASASnippet #resetPassAlert header {
+  width: 340px;
+  display: block;
+}
+
+#ASASnippet #loginAlert:before, #ASASnippet #loginAlert:after { content: ""; display: table; }
+#ASASnippet #loginAlert:after { clear: both; }
+#ASASnippet #loginAlert { *zoom: 1; }
+
+#ASASnippet ul {
+  list-style: none;
+}
+#ASASnippet .inputWithErrorPotentialContainerLong {
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 20px;
+}
+#ASASnippet .RememberMeCheckBox
+{
+    margin-bottom:10px;
+}
+#ASASnippet #resetPassAlert {
+  min-height: 240px;
+}
+#ASASnippet #resetPassAlert label {
+    clear:both;
+    color:#000;
+    display:block;
+    font-size: 15px;
+    font-weight:bold;
+    margin-bottom:4px;
+    text-transform: uppercase;
+}
+#ASASnippet #resetPassAlert h2 {
+  color: #666;
+  font-family: Georgia,"MS Trebuchet",sans-serif;
+  font-size: 14px;
+  margin: 5px 0; 
+  padding: 5px 0;
+  text-transform: none;
+  font-weight: normal;
+}
+#ASASnippet #resetPassAlert header h1 {
+  font-size: 16px;
+}
+#ASASnippet input[type="text"], 
+#ASASnippet input[type="password"], 
+#ASASnippet input[type="tel"] {
+  background: #f0f0f0;
+  box-shadow: 2px 2px 3px #F4F4F4 inset;
+  border: 1px solid #DCDCDC;
+  border-radius: 3px;
+  color: #000;
+  font-size: 14px;
+  height: 28px;
+  line-height: 28px;
+  margin-right: 13px;
+  padding: 0 10px;
+}
+#ASASnippet {
+  background: url("/Assets/images/global/sub-nav-bg.png") repeat scroll 0 0 #FFFFFF;
+  border: 5px solid #50CAB5;
+  padding: 20px 35px;
+  position: relative;
+  font-size: 13px;
+  line-height: 1.2;
+}
+#ASASnippet #resetPassAlert input[type="text"] {
+  width: 220px !important;
+}
+#ASASnippet #loginAlert /* and all the section IDs from new overlays */ {
+  width:550px;
+  padding-bottom: 25px;
+}
+#ASASnippet #loginAlert h1 {
+  font-family: "arial narrow", arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: none;
+}
+#ASASnippet .leftSide {
+    background: none repeat scroll 0 0 #F0F0F0;
+    float: left;
+    min-height: 290px;
+    padding: 15px;
+    width: 240px;
+}
+#ASASnippet .rightSide {
+  padding-top: 15px;
+}
+#ASASnippet .rightSide p {
+  margin: 0px 0px 52px 0px;
+}
+#ASASnippet .left {
+  float: left;
+}
+#ASASnippet .right {
+  float: right;
+}
+#ASASnippet p {
+  margin: 0; 
+  padding: 0; 
+}
+#ASASnippet #loginAlert header {
+  margin-bottom: 15px;
+  display: block;
+}
+#ASASnippet #loginAlert li {
+  list-style: none;
+}
+#ASASnippet .inputWithErrorPotentialContainerLong {
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 270px;
+}
+#ASASnippet ul, 
+#ASASnippet p {
+  margin: 0;
+  padding: 0;
+}
+#ASASnippet input.error:focus, input.error {
+  background: #ff7f7f;
+}
+#ASASnippet label.error {
+  color: #FF7F7F !important;
+  font: italic 11px Georgia, Times, serif !important;
+  text-transform: none !important;
+  text-align: left !important;
+}
+#ASASnippet label.error {
+  color: #FF7F7F;
+  font-size: 10px;
+  font: italic 11px Georgia,Times,serif !important;
+  text-transform: none;
+  cursor: pointer;
+  width: 230px;
+  margin-bottom: 10px;
+  display: block;
+}
+#ASASnippet input:focus {
+  background: #ff0 !important;
+  outline: none !important;
+  border: 1px solid #ccc !important;
+}
+#ASASnippet #resetPassAlert a {
+  font-family: Georgia,Times New Roman,Times,serif;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #8c6eaa;
+}
+#ASASnippet #resetPassAlert a:hover {
+  color: #02d2b9;
+}
+
+#ASASnippet #loginAlert .loginFormContainer {
+  background: url("/Assets/images/global/dotted-border.png") repeat-x scroll 0 0 transparent;
+  padding-top: 20px;
+}
+#ASASnippet #resetPassAlert button.submit, 
+#ASASnippet #resetPassAlert a.button {
+  color: #fff;
+  display: block;
+  font-family: "ITCAvantGardeGothicStdBdCnOb",Arial,sans-serif;
+  font-size: 1.2em;
+  text-align: left;
+  text-transform: uppercase;
+  vertical-align: top;
+  background-color: #000;
+  margin-bottom: 15px;
+  width: 200px;
+  font-style: italic;
+}
+#ASASnippet #resetPassAlert button.submit {
+  padding-right: 10px;
+  width: 230px;
+  font-size: 18px;
+}
+#ASASnippet #resetPassAlert button.submit:hover {
+  background: #60CEBB;
+  text-decoration: none;
+}
+#ASASnippet button.submit:hover {
+  background-color: #60cebb;
+}
+#ASASnippet button.submit span {
+  padding: 12px 15px 8px 10px;
+}
+#ASASnippet #cboxLoadedContent button.submit span {
+  margin-right: 10px;
+}
+#ASASnippet button.submit span {
+  background: url("/Assets/images/global/submit.png") no-repeat scroll right center transparent;
+  display: block;
+  /*padding: 12px 15px 8px 10px;*/
+}
+#ASASnippet ul, #ASASnippet p, #ASASnippet button {
+  border: none;
+}
+#loginAlert h1 {
+  font-family: "arial narrow", arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: none;
+}
+#loginAlert h2 {
+  margin:0 !important;
+  padding:0;
+}
+#loginAlert h3 {
+  font-size: 16px;
+}
+#loginAlert p, #loginAlert h3, #loginAlert input {
+  font-family: arial, sans-serif;
+  margin-bottom: 0px;
+  text-transform: none;
+}
+#loginAlert a, #loginAlert h3 {
+  color: #FA1F95;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* form styles */
+#ASASnippet #loginAlert input[type="text"], 
+#ASASnippet #loginAlert input[type="password"] {
+  background: #fff;
+  border: 1px solid #ccc;
+  width: 190px !important;
+  height: 28px;
+  line-height: normal;
+  font-size: 13px;
+}
+#ASASnippet #loginAlert .email label, 
+#ASASnippet #loginAlert .password label {
+  clear:both;
+  color:#000;
+  display:block;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight:bold;
+  margin-bottom:4px;
+  text-transform: none;
+  text-transform:capitalize;
+  width: 210px;
+}
+
+#ASASnippet #loginAlert input { 
+  font-weight: bold; 
+  color: #858383;
+ }
+
+#ASASnippet #loginAlert .placeholder{ 
+  font-weight: bold !important;
+  color:  #858383 !important; 
+}
+#ASASnippet ::-webkit-input-placeholder{ 
+  font-weight: bold !important; 
+  color: #858383 !important; 
+}
+#ASASnippet :-moz-placeholder { 
+  font-weight: bold !important; 
+  color: #858383 !important; 
+}
+
+#ASASnippet input.error {
+  background: #FF6699 !important;
+}
+
+#ASASnippet label.error {
+  color: #F69 !important;
+  font: italic 11px arial, sans-serif !important;
+}
+#resetPassAlert .resetPasswordFormContainer {
+  padding-top: 10px;
+  background: url("/Assets/images/global/dotted-border.png") repeat-x;
+}
+
+/* button styles */
+#ASASnippet #loginAlert button {
+  color: white;
+  text-shadow: 1px 1px 3px #780444;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  background: transparent url("/Assets/images/global/pinkblend.png") repeat-x left top;
+  border: 1px solid #CCC;
+  width: 90px;
+  height: 32px;
+  display: inline-block;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  font-family: arial, sans-serif;
+  text-align:center;
+  padding: 0;
+}
+
+#ASASnippet #loginAlert button.submit span {
+  background: none !important;
+  text-align: left;
+  padding: 0px;
+  margin: 0px 0px 0px 10px;
+  }
+
+/* #confirm-overlay */
+#confirm-overlay {
+  width: 370px;
+  height: 193px;
+  text-align: center;
+  background-color: #fafafa;
+  border: 1px solid #d9d9d9;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  position: relative; }
+  #confirm-overlay .overlay-content {
+    padding: 29px 29px 6px;
+    border-bottom: 1px solid #d9d9d9; }
+    #confirm-overlay .overlay-content h1 {
+      background: url("/Assets/images/lessons/lesson1/overlays/headline-confirm.png") no-repeat 0 0;
+      margin: 0 auto;
+      width: 200px;
+      height: 0;
+      padding-top: 28px;
+      overflow: hidden; }
+    #confirm-overlay .overlay-content p {
+      font-size: 15px;
+      line-height: 20px; }
+  #confirm-overlay .buttons {
+    position: absolute;
+    bottom: 0;
+    height: 39px; }
+    #confirm-overlay .buttons a {
+      display: block;
+      float: left;
+      width: 184px;
+      height: 39px;
+      line-height: 39px;
+      font-size: 13px;
+      font-weight: bold;
+      color: #00a3cc; }
+      #confirm-overlay .buttons a.yes {
+        border-right: 1px solid #d9d9d9; }
+      #confirm-overlay .buttons a.no {
+        width: 185px; }
+      #confirm-overlay .buttons a:hover {
+        background-color: #f2f2f2; }
+
+/* Expenses Overlay */
+#expenses-overlay-container {
+  background-image: url("/Assets/images/lessons/lesson1/curriculum/bg-colorbox-overlay.png");
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 9999; }
+
+#expenses-overlay {
+  width: 850px;
+  height: 525px;
+  display: block;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  position: relative;
+  margin: 150px auto 0; }
+  #expenses-overlay .overlay-content .title {
+    border-bottom: 1px solid #d9d9d9; }
+  #expenses-overlay .overlay-content h1 {
+    display: none;
+    margin: 0 auto;
+    padding-top: 30px; }
+    #expenses-overlay .overlay-content h1 span.value {
+      color: #ff0099; }
+      #expenses-overlay .overlay-content h1 span.value.positive {
+        color: #00df6f; }
+  #expenses-overlay .overlay-content p {
+    font-size: 15px;
+    line-height: 20px; }
+  #expenses-overlay .overlay-content ul {
+    display: table;
+    list-style-type: none;
+    margin: 25px auto 20px;
+    padding: 0;
+    text-align: center; }
+    #expenses-overlay .overlay-content ul li a.current {
+      color: #575757; }
+    #expenses-overlay .overlay-content ul li {
+      display: inline-block;
+      float: left;
+      padding: 0 9px;
+      text-transform: capitalize; }
+      #expenses-overlay .overlay-content ul li a {
+        color: #00a3cc;
+        font-size: 12px;
+        font-weight: bold; }
+  #expenses-overlay .overlay-content .reset-changes {
+    clear: both;
+    display: block;
+    color: #00a3cc;
+    font-weight: bold;
+    background: url(/Assets/images/lessons/lesson1/curriculum/icon-restore-cashflow.png) no-repeat right 24px;
+    padding-top: 20px;
+    padding-right: 14px;
+    text-align: left;
+    width: 106px;
+    position: absolute;
+    top: 372px;
+    left: 40px; }
+  #expenses-overlay .buttons {
+    border-top: 1px solid #d9d9d9;
+    position: absolute;
+    bottom: 0;
+    height: 39px;
+    width: 850px; }
+    #expenses-overlay .buttons a {
+      display: block;
+      float: left;
+      width: 425px;
+      height: 39px;
+      line-height: 39px;
+      font-size: 13px;
+      font-weight: bold;
+      color: #00a3cc; }
+      #expenses-overlay .buttons a.back {
+        border-right: 1px solid #d9d9d9; }
+      #expenses-overlay .buttons a.done {
+        width: 424px; }
+      #expenses-overlay .buttons a:hover {
+        background-color: #f2f2f2; }
+
+/* IE 7 Fixes */
+.lt-ie8 {
+  /* Share Overlay */ }
+  .lt-ie8 #rewards-overlay .overlay-secondary-content #share-message {
+    margin-left: -30px; }
+
+
+#loginAlert * {
+  margin: 0; 
+  box-sizing:content-box;
+  -moz-box-sizing: content-box;
+}
+#ASASnippet #loginAlert h1 {
+  margin-bottom: 20px;
+}
+#loginAlert h3 {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  padding-top: 10px;
+}
+/*  login icons sprites  */
+[class*="login-icons"] {
+  background: url("/assets/images/sidebar/regFPO.png") 0 0 no-repeat;
+  float: left;
+  height: 80px;
+  width: 93px;
+}
+.pink-icon {
+  background-position: 0 0;
+}
+.blue-icon {
+  background-position: 0 -112px;
+}
+.yellow-icon {
+  background-position: 0 -222px;
+}

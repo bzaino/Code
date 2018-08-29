@@ -1,0 +1,79 @@
+<form data-abide>
+    <header>
+        <div class="headline">
+          <h1>{TypeName}</h1>
+        </div>
+    </header>
+      <section class="fields">
+      <div class="row collapse">
+        <div class="small-12 medium-6 columns">
+          <label>Debt Name:</label>
+        </div>
+        <div class="small-12 medium-6 columns">
+          <label>{LoanName}</label>
+        </div>
+      </div>
+      <div class="row collapse">
+        <div class="small-12 medium-6 columns">
+          <label>Balance:</label>
+        </div>
+        <div class="small-12 medium-6 columns">
+          <label>${PrincipalBalanceOutstandingAmount}</label>
+          </div>
+      </div>
+      <div class="row collapse">
+        <div class="small-12 medium-6 columns">
+          <label>Monthly Payment:</label>
+        </div>
+        <div class="small-12 medium-6 columns">
+          <label>${MonthlyPaymentAmount}</label>
+        </div>
+      </div>
+      <div class="row collapse">
+        <div class="small-12 medium-6 columns">
+          <label>Interest Rate:</label>
+        </div>
+        <div class="small-12 medium-6 columns">
+          <label>{InterestRate}%</label>
+        </div>
+      </div>
+      <div class="row collapse">
+        <div class="small-12 medium-6 columns">
+          <label>Pay To:</label>
+        </div>
+        <div class="small-12 medium-6 columns">
+          <label>{ServicingOrganizationName}</label>
+          <small class="error">This field is required.</small>
+        </div>
+      </div>
+      <div class="row collapse">
+        <div class="small-12 medium-6 columns">
+          <label>Amount Borrowed:</label>
+        </div>
+        <div class="small-12 medium-6 columns input-disabled">
+          <label>${OriginalLoanAmount}</label>
+        </div>
+      </div>
+      <div class="row collapse">
+        <div class="small-12 medium-6 columns">
+          <label>Date This Debt Was Borrowed:</label>
+        </div>
+        <div class="small-12 medium-6 columns">
+          <label>{@dateUS dateString="{OriginalLoanDate}" /}</label>
+        </div>
+      </div>
+    </section>
+      {> "KWYO/loanDetailContentEditorBlock" /}
+  <div class="row">
+    <div class="small-3 small-offset-5 medium-2 medium-offset-8 columns">
+        <a class="js-delete-loan back loan-delete-link federal-import-delete-link js-void-href" href="">
+          Delete
+        </a>
+    </div>
+    <div class="small-4 medium-2 columns">
+      <a type="submit" class="js-launchLoanImport button base-btn main-btn federal-import-update right js-void-href" href="">
+        Update
+      </a>
+    </div>
+  </div>
+</form>

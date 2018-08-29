@@ -1,0 +1,27 @@
+{mainContent[0].records[0].attributes.body}
+<div>
+    <a href='/Navigator/#{mainContent[0].records[0].attributes.answer-1-page-name}' class="current button base-btn multi-btn {@contentLength phrase="{mainContent[0].records[0].attributes.answer-1-button-text}"/} answer">{mainContent[0].records[0].attributes.answer-1-button-text}</a>
+    <a href='/Navigator/#{mainContent[0].records[0].attributes.answer-2-page-name}'  class="button base-btn {@contentLength phrase="{mainContent[0].records[0].attributes.answer-2-button-text}"/} multi-btn answer">{mainContent[0].records[0].attributes.answer-2-button-text}</a>
+</div>
+<div>
+    <a href='/Navigator/#{mainContent[0].records[0].attributes.answer-3-page-name}'  class="notYet button base-btn multi-btn {@contentLength phrase="{mainContent[0].records[0].attributes.answer-3-button-text}"/} answer">{mainContent[0].records[0].attributes.answer-3-button-text}</a>
+    <a id="backButton" class="button base-btn main-btn back js-void-href" href=""> Back<a/>
+</div>
+{! special content blocks !}
+{mainContent[0].records[0].attributes.special-content-1}
+{mainContent[0].records[0].attributes.special-content-2}
+{mainContent[0].records[0].attributes.special-content-3}
+{mainContent[0].records[0].attributes.special-content-4}
+
+
+{! New Tab Links -- open SALT content or external links in new tab !}
+{>"VLC/partial_newTab_buttons" /}
+
+{! Link buttons within VLC. Open another VLC slide in one-page experience !}
+
+{>"VLC/partial_VLC_buttons" /}
+
+	<div class="row">
+		&nbsp;
+	</div>
+</div>

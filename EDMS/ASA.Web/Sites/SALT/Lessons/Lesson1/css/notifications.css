@@ -1,0 +1,75 @@
+.notification {
+  color: #4b4c35;
+  background-color: #fdffb2;
+  height: 46px;
+  line-height: 1em;
+  border-top: 1px solid #e3e5a0;
+  border-bottom: 1px solid #ffffe5;
+  position: relative;
+  z-index: 5000; }
+  .notification.hover {
+    background: #fcff7f; }
+  .notification .notification-content {
+    width: 980px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative; }
+    .notification .notification-content span {
+      display: block;
+      float: left; }
+      .notification .notification-content span.img {
+        width: 25px;
+        margin-top: 11px;
+        margin-right: 5px; }
+        .notification .notification-content span.img img {
+          border: 1px solid white; }
+      .notification .notification-content span.icon.maintenance {
+        background: transparent url("/Assets/images/lessons/lesson1/global/notifications/icon-clock.png") no-repeat left center;
+        width: 17px;
+        height: 46px;
+        margin-right: 5px; }
+      .notification .notification-content span.heading {
+        margin-right: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 16px;
+        line-height: 46px; }
+        .notification .notification-content span.heading.replaced {
+          height: 0;
+          padding-top: 12px;
+          overflow: hidden;
+          margin-top: 19px; }
+          .notification .notification-content span.heading.replaced.heading-sweet {
+            background: transparent url("/Assets/images/lessons/lesson1/global/notifications/bg-sweet.png") no-repeat 0 0;
+            width: 45px; }
+          .notification .notification-content span.heading.replaced.heading-hey-now {
+            background: transparent url("/Assets/images/lessons/lesson1/global/notifications/bg-hey-now.png") no-repeat 0 0;
+            width: 61px; }
+      .notification .notification-content span.message {
+        font-size: 13px;
+        margin-top: 18px; }
+      .notification .notification-content span.name {
+        float: none;
+        display: inline;
+        font-weight: bold; }
+    .notification .notification-content a.dismiss {
+      position: absolute;
+      right: 0;
+      top: 13px;
+      display: block;
+      margin-right: 3px;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      -o-border-radius: 2px;
+      -ms-border-radius: 2px;
+      -khtml-border-radius: 2px;
+      border-radius: 2px;
+      padding: 0 11px 0 26px;
+      background: #e6e8a2 url("/Assets/images/lessons/lesson1/global/notifications/btn-dismiss-x-off.png") no-repeat 6px 6px;
+      font-size: 11px;
+      line-height: 21px;
+      color: #96984c; }
+      .notification .notification-content a.dismiss:hover, .notification .notification-content a.dismiss:active {
+        background: #4c4d36 url("/Assets/images/lessons/lesson1/global/notifications/btn-dismiss-x-on.png") no-repeat 6px 6px;
+        color: #fcff7f; }

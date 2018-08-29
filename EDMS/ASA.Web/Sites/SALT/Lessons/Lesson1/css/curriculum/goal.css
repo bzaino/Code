@@ -1,0 +1,64 @@
+#container #main #content-container .content #goal-container {
+  margin-top: 150px;
+  padding: 0px 0 0;
+  color: #272525; }
+  #container #main #content-container .content #goal-container .main-column h1 {
+    font: normal 30px "FoundersGroteskCond-Reg", Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0; }
+    #container #main #content-container .content #goal-container .main-column h1 strong {
+      font-family: "FoundersGroteskCond-SmBd", Arial, Helvetica, sans-serif; }
+  #container #main #content-container .content #goal-container .main-column h2 {
+    text-transform: none;
+    margin-bottom: 20px; }
+  #container #main #content-container .content #goal-container .main-column span {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    line-height: 19px;
+    text-align: center; }
+    #container #main #content-container .content #goal-container .main-column span .cbox,
+    #container #main #content-container .content #goal-container .main-column span .radio {
+      display: inline-block; }
+    #container #main #content-container .content #goal-container .main-column span span {
+      width: auto;
+      display: inline; }
+      #container #main #content-container .content #goal-container .main-column span span.slashgg {
+        background: url("/Assets/images/lessons/lesson1/curriculum/slash.png") no-repeat 0 0;
+        padding-left: 20px; }
+  #container #main #content-container .content #goal-container .main-column input[type=text] {
+    background: #f0f0f0; }
+    #container #main #content-container .content #goal-container .main-column input[type=text].value {
+      width: 59px; }
+    #container #main #content-container .content #goal-container .main-column input[type=text].other {
+      width: 100%;
+      margin-bottom: 15px; }
+  #container #main #content-container .content #goal-container .main-column .divider {
+    width: 15px;
+    height: 2px;
+    background-color: #00e070;
+    margin: 20px auto; }
+  #container #main #content-container .content #goal-container .main-column p {
+    margin: 0 0 1em;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center; }
+    #container #main #content-container .content #goal-container .main-column p.small {
+      font-size: 12px;
+      line-height: 15px;
+      color: #737070; }
+  #container #main #content-container .content #goal-container .main-column .clearfix .column {
+    float: left;
+    padding: 0 3%;
+    border-right: 1px solid #f0f0f0; }
+    #container #main #content-container .content #goal-container .main-column .clearfix .column.last {
+      margin-right: 0;
+      border-right: 0; }
+  #container #main #content-container .content #goal-container .main-column .clearfix.one-col .column {
+    width: 94%; }
+  #container #main #content-container .content #goal-container .main-column .clearfix.two-col .column {
+    width: 43%; }
+  #container #main #content-container .content #goal-container .main-column .clearfix.three-col .column {
+    width: 43%; }
+    #container #main #content-container .content #goal-container .main-column .clearfix.three-col .column .last {
+      border-right: 0px; }

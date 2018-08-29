@@ -1,0 +1,17 @@
+{#content}
+    {@ne key="{mainContent[0].record.attributes.ContentTypes}" value="Infographic" }
+        {@ne key="{mainContent[0].record.attributes.ContentTypes}" value="Comic" }
+            {#secondaryContent main=mainContent[0]}
+               {@select key="{name}"}
+                    {@eq value="FeaturedContent"}
+                        {@if cond="'{mainContent[0].record.attributes.ContentTypes}' ==='Article' || '{mainContent[0].record.attributes.ContentTypes}' ==='Blog'"}
+                            {> "RelatedContent" /}
+                        {/if}
+                    {/eq}
+                {/select}
+            {/secondaryContent}
+        {/ne}
+    {/ne}
+{/content}
+
+

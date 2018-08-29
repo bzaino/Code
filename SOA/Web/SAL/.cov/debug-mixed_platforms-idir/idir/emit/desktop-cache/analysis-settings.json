@@ -1,0 +1,8 @@
+{
+  covAnalyzeArgs : [
+    "--fb-include",
+    "coverity-default"
+  ],
+  fileOptions : [],
+  fileCheckerOptions : []
+}

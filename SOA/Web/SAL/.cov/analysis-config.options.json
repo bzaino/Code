@@ -1,0 +1,27 @@
+{
+  "Default": {
+    "server.auth_key_file": "C:\\Users\\bzaino.AMSA.003\\AppData\\Roaming\\Coverity\\authkeys\\ak-coverity-80",
+    "server.host": "coverity",
+    "server.ldap_server": "ldap",
+    "server.port": 80,
+    "server.ssl": false,
+    "stream": "WEB_Salt_DEV_ASA.Web.Services",
+    "vs.general.active_configuration": true,
+    "vs.general.version": {
+      "Major": 2017,
+      "Minor": 7,
+      "Revision": 0,
+      "Hotfix": 0
+    },
+    "vs.streams.remote_streams": [
+      "WEB_Salt_DEV_ASA.Web.Services"
+    ],
+    "vs.streams.remote_triage_store": "Default Triage Store",
+    "vs.ui.local_search_paths": [
+      "C:\\SOA\\wksp_03"
+    ],
+    "vs.ui.remote_strip_paths": [
+      "\\Build\\WEB_Salt_DEV"
+    ]
+  }
+}

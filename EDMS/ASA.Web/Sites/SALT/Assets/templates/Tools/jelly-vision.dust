@@ -1,0 +1,50 @@
+<div id="iFrameOverlay" class="reveal-modal large quiz" data-reveal>
+    <div class="close-reveal-modal cancel-circle overlayClose" id='overlayCloseJV'></div>
+    <div class='flex-video vimeo'>
+        <iframe width='910' id='jvIframe' src='' height='512' frameborder='0' allowfullscreen></iframe>
+    </div>
+</div>
+{?SiteMember.ActiveDirectoryKey}
+    <script type="text/javascript">
+        require([
+            'jquery', 'salt'
+        ], function ($, SALT) {
+            $(document).ready(function () {
+                var videoTimer;
+                /*make a local api call to grab the encrypted token, the "1" after RequestToken stands for partnerId. JellyVision is partnerId 1.*/
+                $.getJSON('/api/ASAMemberService/RequestToken/1/{SiteMember.MembershipId}').done(function (token){
+                    var srcVal= '{record.attributes.third-party-video}'.trim() +'?id={SiteMember.MembershipId}&referrerId=SALT&token=' + token;
+                    $('.jellyVisionButton').click(function() {
+                        SALT.trigger('content:todo:inProgress', {contentId: '101-11820'});                        
+                        
+                        if(isMobile()) {
+                            window.open(srcVal, '_blank');
+                        } else {
+                            $('#iFrameOverlay').foundation('reveal', 'open');
+                            $('#jvIframe').attr('src', srcVal);
+                        }
+
+                        /* create timer that sets task to complete if video is watched for 30 seconds */
+                        videoTimer = setTimeout(function () {
+                            SALT.trigger('content:todo:completed', {contentId: '101-11820'}); 
+                            clearTimeout(videoTimer);                           
+                        }, 60000);
+                    });
+                    function isMobile() {
+                        if(navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|IEMobile|Opera Mini/i)) {
+                            return true;
+                        }
+                        return false;
+                    }
+                });
+
+                $('#overlayCloseJV').on('click', function(){
+                    clearTimeout(videoTimer);
+                });
+
+            });
+
+        });
+
+    </script>
+{/SiteMember.ActiveDirectoryKey}

@@ -1,0 +1,3 @@
+Cross Domain API Call To: https://api.unigo.com/scholarshipsearch/allchoices?auth=eec6029a-4c6d-4042-81d6-7e755c0cd21c  Succeeded!
+retryFetchAnswerData - answerData cached
+retryFetchAnswerData - answerData cached cancelling setInterval for retryFetchAnswerData

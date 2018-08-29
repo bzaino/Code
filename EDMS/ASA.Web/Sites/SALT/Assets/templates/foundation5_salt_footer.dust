@@ -1,0 +1,55 @@
+<!-- footer -->
+<div class="footer-container js-footer-container hide-for-medium-down" tabindex="0">
+    <footer class="row collapse">
+        <div class="columns medium-8 ">
+            <nav>
+                <ul class="footer-nav inline-list">
+                    {>"Navigation/utility_links" tabindex_ind="0" /}
+                </ul>
+
+                {>"Navigation/salt_copyright" /}
+            </nav>
+        </div>
+        <div class="columns medium-4 noprint text-right">
+            <div class="social-icons">
+                <a href="https://twitter.com/SALT_MONEY" title="" target="_blank">
+                    <span class="fa-stack fa-lg">
+                        <img src="/Assets/images/emails/community/SALT_footer_twitter_sm.png" class="fa-twitter"/>
+                    </span>
+                    
+                </a>
+                <a href="https://www.facebook.com/saltmoney" title="" target="_blank">
+                    <span class="fa-stack fa-lg">
+                        <img src="/Assets/images/emails/community/SALT_footer_facebook_sm.png" class="fa-facebook"/>
+                    </span>
+                    
+                </a>
+                <a href="https://www.youtube.com/c/AmericanStudentAssistance" title="" target="_blank">
+                    <span class="fa-stack fa-lg">
+                        <img src="/Assets/images/emails/community/SALT_footer_youtube_sm.png" class="fa-youtube"/>
+                    </span> 
+                </a>
+             </div>
+        </div>
+    </footer>
+</div>
+<!-- /footer -->
+<!-- to support SWD-7131, make live chat lib globaly available so that live chat reachout module can be deployed without a code change.
+-->
+<div id="livechat" hidden>
+    <script src="//commondatastorage.googleapis.com/lhn/chat/scripts/lhnchatbutton-current.min.js" type="text/javascript" id="lhnscript"></script>
+</div>
+
+<!-- START OF SmartSource Data Collector TAG -->
+<!-- Copyright (c) 1996-2011 Webtrends Inc.  All rights reserved. -->
+<!-- Version: 9.4.0 -->
+<!-- Tag Builder Version: 3.3  -->
+<!-- Created: 11/16/2011 4:35:13 PM -->
+<!-- Webtrends inline script blocks removed. Functionality is replicated by salt/analytics/webtrends. -->
+
+<noscript>
+  <div>
+    <img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="https://statse.webtrendslive.com/dcsxx1gz6wz5bd051hwv5wjc4_1i1g/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.4.0&amp;dcssip=www.saltmoney.org"/>
+  </div>
+</noscript>
+<!-- END OF SmartSource Data Collector TAG -->

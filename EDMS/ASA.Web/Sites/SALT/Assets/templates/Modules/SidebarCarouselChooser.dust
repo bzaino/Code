@@ -1,0 +1,24 @@
+{#secondaryContent}
+    {?SiteMember.ActiveDirectoryKey}
+        {@select key="{name}"}
+            {@eq value="Carousel"}
+                {#records}
+                    {>"Modules/Carousel" recordKey="{attributes.P_Primary_Key|trim}" /}
+                {/records}
+            {/eq}
+        {/select}
+    {:else}
+        {@select key="{name}"}
+            {@eq value="UnAuthCarousel"}
+                {#records}
+                    {>"Modules/Carousel" recordKey="{attributes.P_Primary_Key|trim}" /}
+                {/records}
+            {/eq}
+        {/select}
+    {/SiteMember.ActiveDirectoryKey}
+{/secondaryContent}
+
+{>"Modules/Carousel" recordKey="{mainContent[0].record.attributes.carousel-module-sidebar-1|trim}" /}
+{>"Modules/Carousel" recordKey="{mainContent[0].record.attributes.carousel-module-sidebar-2|trim}" /}
+{>"Modules/Carousel" recordKey="{mainContent[0].record.attributes.carousel-module-sidebar-3|trim}" /}
+{>"Modules/Carousel" recordKey="{mainContent[0].record.attributes.carousel-module-sidebar-4|trim}" /}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Test Runner</title>
+    <link rel="stylesheet" href="mocha.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+    <!-- Fixes an issue with tests running foundation 5 code -->
+    <style>
+        meta.foundation-data-attribute-namespace {
+        font-family: false; }
+    </style>
+    <div id="mocha"></div>
+    <div id="fixtures"></div>
+    <script src="../../Assets/scripts/js/libs/dust/dust-full.js" type="text/javascript" charset="utf-8"> </script>
+    <script src="mocha.js" type="text/javascript" charset="utf-8"></script>
+    <script src="chai.js" type="text/javascript" charset="utf-8"></script>
+    <script src="sinon.js" type="text/javascript" charset="utf-8"></script>
+
+    <!--The following file contains an array of file names.  These are the files that will be tested -->
+    <script src="RunnerConfig.js" type="text/javascript" charset="utf-8"> </script>
+    <!-- Admin config -->
+    <script>
+        mocha.setup({
+            ui: 'tdd',
+            ignoreLeaks: true
+        });
+
+        // Protect from console errors
+        console = window.console || function() {};
+
+        // Don't track
+        window.notrack = true;
+
+        // Mocha run helper, used for browser
+        var runMocha = function() {
+
+            if (window.mochaPhantomJS) {
+                mochaPhantomJS.run();
+            }
+            else {
+                mocha.run();
+            }
+        };
+    </script>
+
+    <script data-main="../../Assets/scripts/js/" src="../../Assets/scripts/js/require.js" type="text/javascript" charset="utf-8" data-cover></script>
+    <script src="../../Assets/scripts/js/require-config.js" type="text/javascript" charset="utf-8" data-cover> </script>
+
+
+    <script type="text/javascript" charset="utf-8">
+        if (!window.mochaPhantomJS) {
+            /* WE'RE NOT IN COMMAND LINE RUNNER
+            Add DOM specific SPECS */
+            RunnerConfig = RunnerConfig.concat(DOMConfig);
+        }
+        require(RunnerConfig, function (argument) {
+            runMocha();
+        });
+    </script>
+
+    <script src="../../assets/scripts/js/libs/blanket/blanket.js" data-cover-flags="debug" data-cover-only="['modules/','salt/', 'Tools/']"></script>
+    <script src="../../assets/scripts/js/libs/blanket/blanket-mocha.js"></script>
+</body>
+</html>

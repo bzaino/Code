@@ -1,0 +1,95 @@
+{#content}
+    <article class="content">
+        {>"Modules/ContentHeaderBar" /}
+        <header class="title-container">
+            {mainContent[0].record.attributes.headline}
+            <div class="row collapse">
+                <div class="small-12 columns no-padding">
+                    {mainContent[0].record.attributes.subhead}
+                    {>"Modules/DisplayAuthorAndDate" englishContent="english" /}
+                </div>
+            </div>
+        </header>
+         <div class="row collapse">
+            <div class="small-12 columns padded video-h5">
+                {@if cond="'{mainContent[0].record.attributes.callout|trim}'.length !== 0"}
+                    <article class="callout full-width">
+                        <div id="englishCallout" >
+                            {mainContent[0].record.attributes.callout}
+                        </div>
+                    </article>
+                {/if}
+            </div>
+        </div>
+        <div id="MainPlayerContainer" class="flex-video">
+            {@if cond="'{mainContent[0].record.attributes.third-party-video|trim}'.length === 0"}
+            <video  id="myPlayerID" 
+                data-video-id="{mainContent[0].record.attributes.b-video-id|trim}" 
+                data-account="1894469414001" 
+                data-player="SJLISQXFb" 
+                data-embed="default" 
+                data-application-id 
+                class="video-js flex-video" 
+                controls></video>        
+            {:else}
+                <iframe id="iframe{mainContent[0].record.attributes.b-video-id|trim}" src="{mainContent[0].record.attributes.third-party-video|s|trim}" frameborder="0" showinfo="0"  controls ="0"  allowfullscreen></iframe>
+            {/if}
+
+            <script>
+
+                require(['bc', 'salt'], function(brightcove, SALT) {
+                    var myPlayer = videojs.getPlayers().myPlayerID;
+                    myPlayer.on('ended', function(){
+                        /*The below lines to remain double quotes to account for items with single quotes in the title*/
+                        var title = {mainContent[0].record.attributes.resource_link_title|js|s};
+                        SALT.publish('content:todo:completed', {
+                            contentId: "{mainContent[0].record.attributes.P_Primary_Key}",
+                            todoListStatusId: "{mainContent[0].record.attributes.RefToDoStatusID}",
+                            contentType: "{mainContent[0].record.attributes.ContentTypes}",
+                            contentTitle: '\"' + title + '\"'
+                        });
+                    });
+
+                    var videoTimer;
+                    /* for 3rd party videos, we don't get an event when the video is complete
+                       so we use a simple timer for completion */
+                    if ($.trim("{mainContent[0].record.attributes.third-party-video}")) {
+                        videoTimer = setTimeout(function () {
+                            SALT.trigger('content:todo:completed', {contentId: '{mainContent[0].record.attributes.P_Primary_Key}'});
+                            clearTimeout(videoTimer);
+                        }, 60000);
+                    }
+
+                    SALT.on('need:navigation', function () {
+                        clearTimeout(videoTimer);
+                    });
+
+                });
+            </script>
+        </div>
+        <div class="row collapse">
+            <div class="small-12 columns">
+                {mainContent[0].record.attributes.body}
+                {#mainContent[0]}
+                    {>"Modules/FlatTags" /}
+                    {>"Modules/AuthorPartnerBlock" /}
+                {/mainContent[0]}
+            </div>
+        </div>
+        {>"Modules/ContentFooter" /}
+    </article>
+    {> "RelatedContent" /}
+{/content}
+
+{?SiteMember.DashboardEnabled}
+    <script>
+        require(['salt', 'modules/Dashboard'], function (SALT) {
+            {#content.mainContent[0].record}
+                /* Status 1 is Added. Only mark items in progress if they've been previously added */
+                {@if cond="'{attributes.RefToDoStatusID}' === '1'"}
+                    SALT.trigger('content:todo:inProgress', {contentId: '{attributes.P_Primary_Key}'});
+                {/if}
+            {/content.mainContent[0].record}
+        });
+    </script>
+{/SiteMember.DashboardEnabled}

@@ -1,0 +1,43 @@
+{#content.mainContent[2].records[0].attributes}
+<div id="js-findPin" class="reveal-modal medium upload-info" data-reveal>
+     <div class="close-reveal-modal cancel-circle overlayClose"></div>
+    <header class="row">
+        <div class="headline">
+            {answer-4-button-text}
+        </div>
+            {answer-4-page-name}
+    </header>
+    <div class="row collapse">
+        <div class="step-header one"> 
+            {answer-1-button-text}
+        </div>
+    </div>
+    <div class="row collapse">
+        <div class="small-12 medium-4 columns has-image"> 
+            {rich-text-image}
+        </div>
+        <div class="small-12 8 medium-8 columns pin-instructions">
+            {answer-1-page-name}
+        </div>
+    </div>
+    <div class="row collapse">
+        <div class="step-header two"> 
+            {answer-2-button-text}
+        </div>
+    </div>
+    <div class="row collapse">
+         <div class="small-12 medium-4 columns has-image">
+            {btn-help-1}
+        </div>
+        <div class="small-12 8 medium-8 columns pin-instructions">
+            {answer-2-page-name}
+        </div>
+    </div>
+     <div class="row collapse">
+        <div class="large-12 columns">
+            <a class="button base-btn main-btn right js-void-href" href="" onClick="dcsMultiTrack('DCS.dcsuri','KnowWhatYouOwe/findpin.html', 'WT.si_n', 'mydataimport', 'WT.si_x', '1');" data-reveal-id="js-loanUpload">{answer-3-page-name}</a>
+            <a class="button base-btn main-btn back js-void-href" href="" data-reveal-id="js-uploadInfo">{answer-3-button-text}</a>
+        </div>
+    </div>
+</div>
+{/content.mainContent[2].records[0].attributes}

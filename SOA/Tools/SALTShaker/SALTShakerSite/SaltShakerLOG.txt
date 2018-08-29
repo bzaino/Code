@@ -1,0 +1,8 @@
+[Header]\r\n2017-10-30 14:57:18,246 [11] INFO  usercontrol_uc_Home Session_Start: User Sam Account name was empty or not found 
+2017-10-30 14:57:18,349 [11] INFO  usercontrol_uc_Home User: bzaino has admin rights.
+[Header]\r\n2017-10-30 14:58:08,621 [10] INFO  usercontrol_uc_Home Session_Start: User Sam Account name was empty or not found 
+2017-10-30 14:58:08,732 [10] INFO  usercontrol_uc_Home User: bzaino has admin rights.
+2017-10-30 14:59:20,612 [5] INFO  usercontrol_uc_MemberDetail Salt MemberID: 12775 found calling FetchSaltMemberData() from InitMemberDataModelBySearchResultsQueryString. Network id:bzaino
+2017-10-30 14:59:21,037 [5] INFO  usercontrol_uc_MemberDetail User: bzaino viewed member: 12775 , rw10131@pdv5.com
+[Header]\r\n2017-10-30 15:03:03,361 [5] INFO  usercontrol_uc_Home Session_Start: User Sam Account name was empty or not found 
+2017-10-30 15:03:03,462 [5] INFO  usercontrol_uc_Home User: bzaino has admin rights.

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PartnerConfig PartnerName="Demo/IDP/DemoPortalIDP_2_Demo_SP2_PSP">
+  
+  <!-- where to forward browsers that do support IWA -->
+  <LoggedOutPage>~/</LoggedOutPage> <!-- where to go when you are all logged out (unless overriden be relay state -->
+
+  <EncryptionKey>dd462d219766af7ba729a469ebf3ef08</EncryptionKey>
+  <EncryptionType>AES128</EncryptionType>
+  
+  <IDPURL>https://asa.ssoexchange.com/saml-idp/idp/saml2/SSOService/DemoPortalIDP</IDPURL>
+  <IDPLogoutURL>https://asa.ssoexchange.com/saml-idp/idp/saml2/LogoutService/DemoPortalIDP</IDPLogoutURL>
+  
+  <TokenTimeout>500</TokenTimeout>
+
+  <IDVerifierName>ASAIDP.SSO.Plugins.SiteMemberPlugin</IDVerifierName>
+  
+  <!--
+  <IdentityClass>UserPrincipalIdentitySource.UserPrincipalVerifier</IdentityClass>
+  <IdentityLib>UserPrincipalIdentitySource.dll</IdentityLib>
+  -->
+
+</PartnerConfig>

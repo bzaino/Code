@@ -1,0 +1,159 @@
+{>"page_parent.dust" /}
+
+{<dynamicTitle}Get Expert Student Loan Help With Repayment Navigator – Salt{/dynamicTitle}
+
+{<dynamicHead}
+    <meta name="WT.cg_n" content="Repayment Navigator">
+{/dynamicHead}
+
+{<dynamicScripts}
+   <script>
+        require(['modules/VLC/VLC']);
+   </script>
+{/dynamicScripts}
+
+{<dynamicBody}
+    <div id="loanImportContainer">
+    </div>
+    <div id="threeColumn">
+        <section class="content VLCMain" id="applicationView">
+            <div class="row collapse">
+                <div id="Question" class="padded"></div>
+                <div class="small-12 medium-6 columns VLCmainContent" >
+                    <div id="hiddenFields" hidden>
+                    </div>
+                    <div id="VLCBody" class="padded">
+                    </div>
+                    <div class="row margin-top">
+                         <h4><a id="startOver" class="js-void-href" href="">Start Over<a/></h4>
+                    </div>
+                    <div id="js-widget-scroll" class="WidgetsButton blackAndColorBtn widgetOpenTab widgetsSlider">
+                        <i class="widgetIcon-dollar">&nbsp;</i>
+                    </div>
+                </div>
+                {#content}
+                    {#secondaryContent}
+                        {@select key="{name}"}
+                            {@eq value="NavigatorCollection"}
+                                {#contents}
+                                    {#records}
+                                    <div class="small-12 medium-6 columns" id="Widgets">
+                                        <div class="padded">
+                                            <dl class="accordion widgetAccordion" data-accordion>
+                                                <dd class="accordion-section active" id="js-myloans-accordion">
+                                                    <a href="#progressW" id="js-myloans-accordion-btn" class="title widgetTitle blackAndColorBtn">
+                                                        <i class="widgetIcon-dollar hide">&nbsp;</i>
+                                                        <i class="widgetIcon-close WidgetsButton hide">&nbsp;</i>
+                                                        <h5 class="widgeth5">{attributes.header-1}</h5>
+                                                        <i class="accordion-arrow"></i>
+                                                    </a>
+                                                    <div class="content widgetContent widgetText active" id="progressW">
+                                                        <div id="ProgressWidget">
+                                                        </div>
+                                                        <hr>
+                                                        <h2 class="loan-subhead"><a href="#DoYouKnowHowMuch">{attributes.loan-subhead}<span class="right" id="amountBorrowed"></span></a></h2>
+                                                        <a id="addLoans" class="hidden-btn button base-btn main-btn right" href="#{attributes.addloans-btn-pagename}" hidden>{attributes.addloans-btn-text}</a>
+                                                        <hr>
+                                                        <div id="IncomeBasedForm">
+                                                        </div>
+                                                        <ul class="list-style-none">
+                                                            <li class="row collapse">
+                                                                <span class="small-8 columns">{attributes.loan-payment-text}</span>
+                                                                <div id="monthlyPaymentID" class="small-4 columns text-right"></div>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="widgetText" id="widget-disclaimers">
+                                                            <div id="disclaimer-standard" hidden>
+                                                                {attributes.standard-disclaimer}
+                                                            </div>
+                                                            <div id="disclaimer-graduated" hidden>
+                                                                {attributes.graduated-disclaimer}
+                                                            </div>
+                                                            <div id="disclaimer-extended" hidden>
+                                                                {attributes.extended-disclaimer}
+                                                            </div>
+                                                            <div id="disclaimer-incomebased" hidden>
+                                                                {attributes.income-based-disclaimer}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <dl class="accordion widgetAccordion" data-accordion>
+                                                <dd class="accordion-section">
+                                                    <a href="#enrollmentInfo" class="widgetTitle title blackAndColorBtn">
+                                                        <i class="widgetIcon-links">&nbsp;</i><h5 class="widgeth5">{attributes.header-2}</h5>
+                                                        <i class="accordion-arrow"></i>
+                                                    </a>
+                                                    <div class="content widgetContent" id="enrollmentInfo">
+                                                        <section>
+                                                            <ul class="list-style-none">
+                                                                <li class="boldText row collapse">
+                                                                    <a class="small-7 columns" href="#{attributes.enroll-status-page-name}">{attributes.enroll-status-text}</a>
+                                                                    <span id="enrollmentStatus" class="small-5 columns text-right"></span>
+                                                                </li>
+                                                            </ul>
+                                                        </section>
+
+                                                        <section>
+                                                            <ul class="list-style-none">
+                                                                <li class="boldText row collapse">
+                                                                    <a id="gradLink" class="small-7 columns" href="#WhenWillYouGrad" /}>{attributes.grad-date-text}</a> <!-- change the href with javascript based on their answer for if enrolled or not -->
+                                                                     <span id="LoanRelatedInfoWidget" class="small-5 columns  text-right"></span>
+                                                                </li>
+                                                            </ul>
+                                                        </section>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <dl class="accordion widgetAccordion" data-accordion>
+                                                <dd class="accordion-section">
+                                                    <a href="#whatyouvelearned" class="title widgetTitle blackAndColorBtn"><i class="widgetIcon-info">&nbsp;</i><h5 class="widgeth5">{attributes.header-3}</h5>
+                                                    <i class="accordion-arrow"></i></a>
+                                                    <div class="content widgetContent" id="whatyouvelearned">
+                                                        <section>
+                                                            <h4 class="boldText">{attributes.payment-plans-header}</h4>
+                                                            <ul class="list-style-none widget-list" id="paymentPlans">
+                                                                {> "VLC/PaymentPLans" /}
+                                                            </ul>
+                                                        </section>
+                                                        <section>
+                                                            <h4 class="boldText">{attributes.postpone-payments-header}</h4>
+                                                            <ul class="list-style-none widget-list" id="postponePayment">
+                                                                {> "VLC/PostponePayment" /}
+                                                            </ul>
+                                                        </section>
+                                                        <section>
+                                                            <h4 class="boldText">{attributes.loan-forgiveness-header}</h4>
+                                                            <ul class="list-style-none widget-list" id="loanForgiveness">
+                                                                {> "VLC/LoanForgiveness" /}
+                                                            </ul>
+                                                        </section>
+                                                        <section>
+                                                            <h4 class="boldText">{attributes.default-header}</h4>
+                                                            <ul class="list-style-none widget-list" id="loanDefault">
+                                                                {> "VLC/LoanDefault" /}
+                                                            </ul>
+                                                        </section>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <div id="ContextualHelp">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {/records}
+                                {/contents}
+                            {/eq}
+                        {/select}
+                    {/secondaryContent}
+                {/content}
+            </div>
+        </section>
+        <section id="FeaturedContent">
+        </section>
+    </div>
+{/dynamicBody}
+
+
+

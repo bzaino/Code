@@ -1,0 +1,11 @@
+<tr class="js-loan-row" id="{LoanSelfReportedEntryId}">
+  <td class="hide-for-small"><div style="background:{Color}" class="arrow-boxed-color">
+
+  <!-- <div class="arrow-boxed"> -->
+
+  </div></div></td>
+  <td>{TypeName}</td>
+  <td><a value="{LoanSelfReportedEntryId}" class="js-loanDetailLink loan-name">{LoanName}</a></td>
+  <td>${PrincipalBalanceOutstandingAmount|currencyComma}</td>
+  <td>${MonthlyPaymentAmount|currencyComma}</td>
+</tr>

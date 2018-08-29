@@ -1,0 +1,49 @@
+<div class="row collapse">
+    <div class="small-12 medium-6 columns">
+        <label>{LoanLabel}</label>
+    </div>
+    <div class="small-12 medium-6 columns">
+        <input type="text" value="{LoanName}" name="LoanName" required/>
+        <small class="error">This field is required.</small>
+    </div>
+</div><div class="row collapse">
+    <div class="small-12 medium-6 columns">
+        <label>Balance:</label>
+    </div>
+    <div class="small-12 medium-6 columns prefix-div">
+        <span class="prefix">$</span>
+        <input type="balance" value="{PrincipalBalanceOutstandingAmount}" name="PrincipalBalanceOutstandingAmount" class="prefixed" required />
+        <small class="error">A valid amount is required.</small>
+    </div>
+</div>
+<div class="row collapse">
+    <div class="small-12 medium-6 columns">
+        <label>Monthly Payment{FedLoanAsterisk}:</label>
+    </div>
+    <div class="small-12 medium-6 columns prefix-div">
+        <span class="loan-import prefix">$</span>
+        <input type="balance" value="{MonthlyPaymentAmount}" name="MonthlyPaymentAmount" class="prefixed" {required}/>
+        <small class="error">A valid amount is required.</small>
+ 
+    </div>
+</div>
+<div class="row collapse">
+    <div class="small-12 medium-6 columns">
+        <label>Interest Rate:</label>
+    </div>
+    <div class="small-12 medium-6 columns percent-div">
+    <!-- if we have an interest value (loan details view) show it, otherwise (adding new loan) show the default rate for federal and no defaut rate for all others -->
+    <span class="percent">%</span>
+     <input type="interest" value="{?InterestRate}{InterestRate}{:else}{fedInterest}{/InterestRate}" name="InterestRate"  required/>
+      <small class="error">A valid interest rate is required.</small>
+    </div>
+</div>
+<div class="row collapse">
+    <div class="small-12 medium-6 columns">
+        <label>Pay To:</label>
+    </div>
+    <div class="small-12 medium-6 columns">
+        <input type="text" value="{ServicingOrganizationName}" name="ServicingOrganizationName" maxlength="65" required/>
+        <small class="error">This field is required.</small>
+    </div>
+</div>

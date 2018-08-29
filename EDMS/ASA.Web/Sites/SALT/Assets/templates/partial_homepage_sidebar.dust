@@ -1,0 +1,15 @@
+{?SiteMember.ActiveDirectoryKey}
+    {>"partial_schoolLogo" /}
+{/SiteMember.ActiveDirectoryKey}
+
+{#secondaryContent}
+    {@select key="{name}"}
+        {@eq value="Carousel"}
+            {#records}
+                {>"Modules/Carousel" recordKey="{attributes.P_Primary_Key|trim}" /}
+            {/records}
+        {/eq}
+    {/select}
+{/secondaryContent}
+
+{>"Modules/ReachOutDelegate" /}

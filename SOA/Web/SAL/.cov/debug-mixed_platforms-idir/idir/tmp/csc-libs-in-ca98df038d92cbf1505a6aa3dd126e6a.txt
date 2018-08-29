@@ -1,0 +1,4 @@
+--csc
+c:/program files (x86)/msbuild/12.0/bin/csc.exe
+--output
+C:/SOA/wksp_03/SOA/Web/SAL/.cov/debug-mixed_platforms-idir/idir/tmp/csc-libs-out-ca98df038d92cbf1505a6aa3dd126e6a.txt

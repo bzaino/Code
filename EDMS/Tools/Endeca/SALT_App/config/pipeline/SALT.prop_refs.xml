@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE PROP_REFS SYSTEM "prop_refs.dtd">
+<PROP_REFS>
+
+  <PROP_REF NAME="P_Tile_ID" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_Tile_Xml_Path" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_Content_Type" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_Record_Type" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_Membership_Level" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_Enrollment_Status" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_Loan_Status" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_School_Type" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_Loan_Type" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_School" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_Grade" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_Is_Default" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_School_ID" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_School_Name" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_School_Alias" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_Primary_Key" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_Role" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_Location" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_Gender" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_Employment_Status" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_Age" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_Marital_Status" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_Income" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_Loan_Balance" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_Content_Size" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="page_title" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="page_summary" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="headline" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="body" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="callout" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="term" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="P_Hits_Last_7_Days" TYPE="INTEGER"/>
+
+  <PROP_REF NAME="P_Hits_Last_24_Hrs" TYPE="INTEGER"/>
+
+  <PROP_REF NAME="P_Hits_Last_30_Days" TYPE="INTEGER"/>
+
+  <PROP_REF NAME="P_Hits_Last_365_Days" TYPE="INTEGER"/>
+
+  <PROP_REF NAME="P_Rating" TYPE="DOUBLE"/>
+
+  <PROP_REF NAME="P_Rating_Count" TYPE="INTEGER"/>
+
+  <PROP_REF NAME="author-name" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="acronym" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="third-party-copy" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="author-info" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="subhead" TYPE="ALPHA"/>
+
+  <PROP_REF NAME="sys_title" TYPE="ALPHA"/>
+
+</PROP_REFS>

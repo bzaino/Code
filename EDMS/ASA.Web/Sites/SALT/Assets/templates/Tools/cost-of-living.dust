@@ -1,0 +1,93 @@
+<div id="js-col-container" class="row collapse use-as-glossary">
+    <div class="small-12 medium-6 columns padding-right js-mobile-section">
+            <form id="js-col-form" name="col-form" autocomplete="off">
+                <div class="row collapse js-question-block">
+                    <div class="small-11 columns arrow-svg"><div class="ol">1</div>
+                        <label class="js-col-step-labels" for="current-state">Where Do You Live?</label>
+                    </div>
+                    <div class="small-1 columns fa-gray-bg">
+                        <i class="fa fa-question js-question-mark"></i>
+                    </div>
+                </div>
+                <div class="row light-gray-bg border-top-2">
+                    <div class="small-4 columns input-3col">
+                        <div class="styled-select COL">
+                            <select id="current-state" class="js-col-element js-state" name="CurrentState" disabled="disabled">
+                                <option value="">State</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="small-8 columns input-9col">
+                        <div class="styled-select COL">
+                            <select id="current-city" class="js-col-element js-metro-area" name="CurrentCity">
+                                <option value="">Metro Area</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row collapse margin-top js-question-block">
+                    <div class="small-11 columns arrow-svg"><div class="ol">2</div>
+                        <label class="js-col-step-labels" for="dest-state">Where Are You Moving?</label>
+                    </div>
+                    <div class="small-1 columns fa-gray-bg">
+                        <i class="fa fa-question js-question-mark"></i>
+                    </div>
+                </div>
+                <div class="row light-gray-bg border-top-2">
+                        <div class="small-4 columns input-3col">
+                            <div class="styled-select COL">
+                                <select id="dest-state" class="js-col-element js-state" name="DestinationState" disabled="disabled">
+                                    <option value="">State</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="small-8 columns input-9col">
+                            <div class="styled-select COL">
+                                <select id="dest-city" class="js-col-element js-metro-area" name="DestinationCity">
+                                    <option value="">Metro Area</option>
+                                </select>
+                            </div>
+                        </div>
+                </div>
+                <div class="row collapse margin-top js-question-block">
+                    <div class="small-11 columns arrow-svg"><div class="ol">3</div>
+                        <label class="js-col-step-labels" for="js-salary-slider">What Do You Earn Now?</label>
+                     </div>
+                    <div class="small-1 columns fa-gray-bg js-question-mark">
+                        <i class="fa fa-question"></i>
+                    </div>
+                </div>
+                 <div class="row light-gray-bg border-top-2">
+                    <div class="small-12 columns padded salary-output-div">
+                        <span id="js-salary-output" class="salary-output">0</span>
+                        <input id="js-salary-slider" type="range" min="0" max="250000" step="5000" value="0">
+                    </div>
+                    <div class="small-8 columns gray-text"><small>$0</small></div>
+                    <div class="small-4 columns gray-text text-right"><small>$250,000</small></div>
+                </div>
+ 	        </form>
+            <input type="button" id="js-see-breakdown" class="button base-btn main-btn right margin-bottom show-for-small js-toggle-trigger" disabled="disabled" value="Next" />
+            <div class="centered">
+            {content.mainContent[0].record.attributes.tool-images}
+            </div>
+        </div>
+
+        <div id="js-breakdown" class="small-12 medium-6 columns breakdown show-for-medium-no-important js-mobile-section"></div>
+</div>
+
+{#content}
+    {#mainContent}
+        <div id="what-it-means" class="reveal-modal tiny" data-reveal>
+            {> "COL/WhatItMeans" header="{record.attributes.button-text-only}" links="{record.attributes.auth-body}" image="{record.attributes.spanish-button-area}" body="{record.attributes.Auth-Headline}" blockID="js-more-block" /}
+            {> "COL/WhatItMeans" header="{record.attributes.auth-button-area}" links="{record.attributes.button-area}" image="{record.attributes.auth-alt-headline}" body="{record.attributes.spanish-headline}" blockID="js-less-block" /}
+            {> "COL/WhatItMeans" header="{record.attributes.auth-button-text-only}" links="{record.attributes.spanish-body}" image="{record.attributes.spanish-subhead}" body="{record.attributes.spanish-summary}" blockID="js-same-block" /}
+        </div>
+    {/mainContent}
+{/content}
+
+
+<script>
+    require(['modules/COL/CostOfLiving'], function (CostOfLiving) {
+        var costOfLiving = new CostOfLiving();
+    });
+</script>

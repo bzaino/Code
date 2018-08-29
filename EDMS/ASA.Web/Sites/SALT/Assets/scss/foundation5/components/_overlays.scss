@@ -1,0 +1,567 @@
+/* SALT overlays should be the highest z-index. Foundation default is only 'z-index: 41;' */
+.reveal-modal {
+    z-index: 500;
+    background: rgba(255, 255, 255, 0.98);
+    border:2px solid #e6e8e7;
+    box-shadow: 2px 2px 2px #666;
+    -moz-box-shadow: 2px 2px 2px #666;
+    -webkit-box-shadow: 2px 2px 2px #666;
+    height: auto;
+    min-height: initial;
+    padding: .75em 1em .25em 1em;
+}
+.joyride-modal-bg {
+    background: transparent;
+    background: rgba(0, 0, 0, 0.2);
+}
+.reveal-modal.loan-detail-style {
+    padding: .75em 1em 0 1em;
+}
+.reveal-modal h1 {
+    font-size: 1em;
+    font-weight: normal;
+}
+.reveal-modal .headline {
+    width: 100%;
+    margin-bottom: .625em;
+}
+.reveal-modal .headline h1 {
+    border-bottom: 1px solid #DCDBDE;
+    line-height: 1.8em;
+}
+.reveal-modal p {
+    color: #003763;
+}
+.reveal-modal p a {
+    font-weight: bold;
+}
+.reveal-modal p a.button {
+    font-weight: normal;
+}
+.reveal-modal form {
+    margin-bottom: 0;
+}
+.reveal-modal.rounded form {
+    margin-bottom: 1em;
+}
+.reveal-modal .styled-select {
+    margin-bottom: 1em;
+}
+.overlay-header table, .overlay-header td{
+     background-color:transparent;
+     border:0;
+     font-size:1.2rem;
+     margin-bottom: 0;
+     padding:  0;
+}
+.overlay-body p {
+    line-height: 1.5em;
+}
+.close-reveal-modal.overlayClose {
+    position: absolute;
+    top: 5px;
+    left: 90%;
+    z-index: 100;
+}
+.img-right p {
+    float: right;
+    width:100%;
+}
+.img-right img {
+    padding-left: 2em;
+}
+#videoOverlay.reveal-modal {
+    padding:1em 1em 0 1em;
+}
+#videoOverlay.reveal-modal .close-reveal-modal{
+    position: absolute;
+    top: -.25rem !important;
+    right: .25rem !important;
+    font-size: 1.5em;
+}
+.tutorial-header {
+    text-align: right;
+    display: none;
+}
+
+/* SALT loading gif styles. No longer need to be absolutely positioned.*/
+.reveal-modal .loading {
+    position: relative;
+    left: 0;   /*have to overwrite old colorbox default until colorbox gone completely*/
+    margin-top: 0;
+    margin-left: 10px;
+    top:5px;
+    width: 24px;
+}
+/*Iphone4*/
+.yt {
+    min-width: 300px;
+    min-height: 250px;
+    padding-top: 1.2em;
+}
+.reveal-modal.welcome-overlay {
+    padding: 1.05em;
+    position: fixed;
+}
+.welcome-overlay h2, .welcome-overlay h3 {
+    margin-bottom: .2em;
+}
+.welcome-overlay hr {
+    margin: .5em 0;
+}
+.upload-info h1 {
+    margin-bottom: 0;
+}
+.has-image p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.loan-instructions {
+    vertical-align: middle;
+}
+.loan-instructions:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.pin-instructions p {
+    margin-top: 1em;
+}
+.loan-instructions p, .pin-instructions p {
+    color: #003763;
+    line-height: 1.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 1em;
+    vertical-align: middle;
+}
+/* loan import */
+
+#findFile h4{
+    font-size: .9em;
+    font-weight: normal;
+}
+.fileupload {
+    background-color: #fff;
+    margin-bottom: 0;
+}
+.border img {
+    width: 100%;
+    border: 2px solid #DCDBDE;
+    border-bottom: 0;
+}
+.step-callout {
+    background:#fff;
+    border: 2px solid #DCDBDE;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.step-callout h4 {
+    font-size: .8em;
+    font-weight: 700;
+}
+.step-callout p, .graybox p {
+    color: #666;
+    font-size: .85em;
+    line-height: 1.4em;
+}
+.l-importedFileIE {
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+.divider-line {
+    border-bottom: 1px solid #DCDBDE;
+}
+.divider-line.row.collapse {
+    margin: .9em 0;
+}
+.divider-line h4 {
+    font-size:.9em;
+    font-weight: normal;
+    color: #003763;
+}
+.divider-line h6 {
+    font-size:.9em;
+    font-weight: normal;
+    color: #003763;
+}
+.divider-line small {
+    color: #003763;
+}
+.reveal-modal.small, .reveal-modal.tiny, .reveal-modal.medium, .reveal-modal.large {
+    margin-left: 2%;
+    width: 96%;
+}
+.divider-line small {
+    font-size: .65em;
+    font-style: italic;
+    line-height: 1.4;
+    display: inline-block;
+    margin-top: -1em;
+    margin-bottom: 1em;
+}
+/*  Jellyvison tool overlay  */
+.quiz .flex-video.vimeo {
+    padding-bottom:58%;
+}
+.reveal-modal.large.quiz {
+    width:980px;
+    height:575px;
+    margin-left: -28%;
+    margin-top: 6%;
+}
+/* Reporting ID specific styles */
+#reportModal header.report_head{
+    border-bottom: 3px solid #C0C0C0;
+    margin-bottom: 26px;
+}
+#FrmReportId label.labelText{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+/************** new design ************/
+.custom-overlays {
+    background: rgba(255, 255, 255, 0);
+    left:.4em;
+    margin: 0 auto;
+    position: absolute;
+    top: 50px; // just below the top header
+    width: 96%;
+    z-index: 101;
+}
+.window-shade {
+    background: #fff;
+    border:1px solid #e6e8e7;
+    -moz-box-shadow: 2px 2px 1px #666; /* for Firefox 3.5+ */
+    -webkit-box-shadow: 2px 2px 1px #666; /* for Safari and Chrome */
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1em 1.25em 0 1.25em; /*forms have their own bottom margins*/
+    float: right;
+    max-width: 320px;
+}
+.window-shade-close {
+    float: right;
+    margin: -6px;
+    height: 22px;
+    width: 22px;
+    z-index: 100;
+}
+.show-on-overlay{
+    display: none;
+}
+.custom-overlay .show-on-overlay{
+    display: block;
+}
+.h-prop-wrap {
+    width: 100%;
+    left: 0;
+    position: fixed;
+    bottom: 0;
+    z-index:98;
+}
+.h-prop-wrap .footer-container {
+    margin-top: 0;
+}
+.horizontal-prop {
+    background: $salt-blue;
+    border-top: 2px solid $white;
+    border-bottom: 2px solid $white;
+    width: 100%;
+    padding: .5em 0;
+    left: 0;
+    position: relative;
+    z-index: 101;
+    -moz-box-shadow: 1px 1px 5px 2px #666; /* for Firefox 3.5+ */
+    -webkit-box-shadow: 1px 1px 5px 2px #666; /* for Safari and Chrome */
+    box-shadow: 1px 1px 5px 2px #666;
+    h1, h2 {
+        color: $white;
+    }
+    h2 {
+        font-weight: normal;
+    }
+    .full-width-small {
+        display: block;
+    }
+    .button.main-btn {
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+}
+.blocker {
+    background: rgba(255, 255, 255, 0.1);
+    left: 0;
+    top:0;
+    position: absolute;
+    width: 100%;
+    z-index: 12 !important;
+}
+.blockerImg {
+    background: transparent url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMjVweCIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDI1IDEwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjUgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxsaW5lYXJHcmFkaWVudCBpZD0iU1ZHSURfMV8iIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMTIuMDA0OSIgeTE9Ijk0LjAyODMiIHgyPSIxMy4wMDQ5IiB5Mj0iNS4wMjc5Ij4NCgk8c3RvcCAgb2Zmc2V0PSIwIiBzdHlsZT0ic3RvcC1jb2xvcjojRkZGRkZGIi8+DQoJPHN0b3AgIG9mZnNldD0iMSIgc3R5bGU9InN0b3AtY29sb3I6I0ZGRkZGRjtzdG9wLW9wYWNpdHk6MCIvPg0KPC9saW5lYXJHcmFkaWVudD4NCjxyZWN0IGZpbGw9InVybCgjU1ZHSURfMV8pIiB3aWR0aD0iMjUiIGhlaWdodD0iMTAwIi8+DQo8L3N2Zz4=') repeat-x;
+    height: 100px;
+    left: 0;
+    top: -100px;
+    position:absolute;
+    width: 100%;
+    z-index: 100 !important;
+}
+.standard-overlay {
+	text-align: center;
+    h1, h2 {
+        font-weight: bold !important;
+    }
+    h1 {
+    	font-size: 1.6rem !important;
+    }
+}
+#regMsgOverlay {
+    .delta-loader-wrapper {
+    	height: 45px;
+    	margin-top: 20px;
+	}
+}
+@media only screen and (min-width: 21.1em) { /* min-width 350px, Galaxy S III */
+    .yt {
+        min-width: 335px;
+        min-height: 250px;
+        padding-top: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 23.4em) { /* min-width 375px, iphone6 */
+    .yt {
+        min-width: 350px;
+        min-height: 270px;
+        padding-top: 1.2em;
+    }
+}
+@media only screen and (orientation: landscape)  and (min-width: 21.1em) {
+     .yt {
+        min-width: 254px;
+        min-height: 260px;
+        padding-top: 1.2em;
+    }
+}
+@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
+    .reveal-modal {
+        &.rounded {
+            border-radius: 20px 80px;
+            padding: 2em 2em 1.5em 2em;
+            .close-reveal-modal.overlayClose {
+                top: 1.5rem;
+                left: auto;
+                right: 4rem;
+            }
+        }
+        &.tiny {
+            margin-left: -30%;
+            width: 60%;
+        }
+        &.small {
+            margin-left: -40%;
+            width: 80%;
+        }
+        &.medium {
+            margin-left: -45%;
+            width: 90%;
+        }
+        &.large {
+            margin-left: -48%;
+            width: 96%;
+            &.quiz {
+                margin-left: -48%;
+            }
+        }
+        &.xlarge {
+            margin-left: -0%;
+            width: 100%;
+        }
+        &.welcome-overlay {
+            padding: 1.5em;
+        }
+        .headline {
+            width: 100%;
+            margin-bottom: .625em;
+            h1 {
+                border-bottom: 1px solid #CCC;
+                line-height: 2em;
+            }
+        }
+        h1 {
+            font-size: 1.1em;
+            font-weight: normal;
+        }
+    }
+    #videoOverlay.reveal-modal {
+        padding: 1.8em 1.8em 1em 1.8em;
+        .close-reveal-modal {
+            position: absolute;
+            top: -.25rem !important;
+            right: .25rem !important;
+            font-size: 2.4em;
+        }
+    }
+    .yt {
+        min-width: 320px;
+        min-height: 300px;
+    }
+    .tutorial-header {
+        display: block;
+    }
+    .step-callout {
+        min-height:19em;
+    }
+    .horizontal-prop {
+        padding: 1.1em;
+        .full-width-small {
+            display: initial;
+        }
+        .button.main-btn {
+            margin-left: 3em;
+            margin-right: 3em;
+        }
+    }
+    .welcome-o h2, .welcome-overlay h3 {
+        margin-bottom: .3em;
+    }
+    .welcome-overlay hr {
+        margin: 1em 0;
+    }
+}
+@media only screen and (min-width: 52.063em) { /* min-width px, medium to large screens */
+    .reveal-modal {
+        &.tiny {
+            margin-left: -30%;
+            width: 60%;
+        }
+        &.small {
+            margin-left: -35%;
+            width: 70%;
+        }
+        &.medium {
+            margin-left: -43%;
+            width: 86%;
+        }
+        &.large {
+            margin-left: -46%;
+            width: 92%;
+        }
+        &.xlarge {
+            margin-left: -0%;
+            width: 100%;
+        }   
+    }
+    .step-callout {
+        min-height: 15em;
+    }
+}
+@media only screen and (min-width: 64.063em) {  /* min-width 1025px, large screens */
+    .custom-overlays {
+        width: 100%;
+        left:0;
+    }
+    .window-shade {
+        margin-left: .625em !important;
+        margin-right: .625em !important;
+    }
+    .reveal-modal {
+        &.tiny {
+            margin-left: -30%;
+            width: 40%;
+        }
+        &.small {
+            margin-left: -30%;
+            width: 60%;
+        }
+        &.medium, &.large {
+            margin-left: -35%;
+            width: 70%;
+        }
+        &.xlarge {
+            margin-left: -25%;
+            width: 50%;
+        }
+    }
+    .step-callout {
+        min-height: 15em;
+    }
+    .graybox {
+        min-height: 20em;
+    }
+}
+@media only screen and (min-width: 74.063em) { /* min-width , mid to large screens */
+    .reveal-modal {
+        &.tiny {
+            margin-left: -20%;
+            width: 40%;
+        }
+        &.small {
+            margin-left: -25%;
+            width: 50%;
+        }
+        &.medium {
+            margin-left: -27%;
+            width: 54%;
+        }
+        &.large {
+             margin-left: -36%;
+             width: 72%;
+        }
+        &.xlarge {
+            margin-left: -25%;
+            width: 50%;
+        }
+        &.large.quiz {
+            margin-left: -40%;
+        }
+    }
+}
+@media only screen and (min-width: 90.063em) { /* min-width 1441px, xlarge screens */
+    .reveal-modal {
+        &.tiny {
+            margin-left: -15%;
+            width: 30%;
+        }
+        &.small {
+            margin-left: -20%;
+            width: 40%;
+        }
+        &.medium {
+            margin-left: -25%;
+            width: 50%;
+        }
+        &.large {
+            margin-left: -30%;
+            width: 60%;
+        }
+        &.xlarge {
+            margin-left: -20%;
+            width: 40%;
+        }
+        &.large.quiz {
+            margin-left: -30%;
+        }
+    }
+    .step-callout {
+        min-height: 15em;
+    }
+    
+}
+@media only screen and (min-width: 120.063em) { /* min-width 1921px, xlarge screens */
+    .reveal-modal {
+        &.small {
+          margin-left: -15%;
+          width: 30%;
+        }
+        &.large {
+          margin-left: -15%;
+          width: 40%;
+        }
+        &.large.quiz {
+            margin-left: -22%;
+        }
+    }
+}

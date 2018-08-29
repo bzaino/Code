@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PartnerConfig PartnerName="SaltIDP/Jive/PSP_Dev_ConnectionTo_JiveDev">
+  
+  <!-- where to forward browsers that do support IWA -->
+  <LoggedOutPage>~/</LoggedOutPage> <!-- where to go when you are all logged out (unless overriden be relay state -->
+
+  <EncryptionKey>8121434996390cec25d661d4c2a6c119</EncryptionKey>
+  <EncryptionType>AES128</EncryptionType>
+  
+  <IDPURL>https://asa.ssoexchange.com/saml-idp/idp/saml2/SSOService/DevSaltIDP</IDPURL>
+  <IDPLogoutURL>https://asa.ssoexchange.com/saml-idp/idp/saml2/LogoutService/DevSaltIDP</IDPLogoutURL>
+  
+  <TokenTimeout>500</TokenTimeout>
+
+  <!-- <IDVerifierName>SSO.Plugins.MyPortalUserPrincipalSSOPlugin</IDVerifierName> -->
+  <IDVerifierName>ASAIDP.SSO.Plugins.SiteMemberPlugin</IDVerifierName>
+
+</PartnerConfig>

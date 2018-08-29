@@ -1,0 +1,4 @@
+2018-06-29 14:08:34.889 | 120 | AMSA\bzaino [17] INFO  | ASA.Web.Services.SALHost.Global                    SAL Host Startup 
+2018-06-29 14:08:34.947 | 178 | AMSA\bzaino [17] INFO  | ASA.Web.Services.SALHost.Global                    inside register routes 
+2018-06-29 14:08:34.948 | 179 | AMSA\bzaino [17] INFO  | ASA.Web.Services.SALHost.Global                    about to attach routes 
+2018-06-29 14:43:48.144 | 2113375 | AMSA\bzaino [61] INFO  | ASA.Web.Services.SALHost.Global                    SAL Host Shutdown 

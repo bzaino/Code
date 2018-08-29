@@ -1,0 +1,214 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset='utf-8' />
+  <meta content='IE=edge, chrome=1' http-equiv='X-UA-Compatible' />
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta content='width=device-width,initial-scale=1' name='viewport' />
+
+  <title>How Does Your Cash Flow?</title>
+
+  <base href="/lessons/lesson1/" />
+
+  <link href='css/base.css' rel='stylesheet' />
+  <link href='css/colorbox.css' rel='stylesheet' />
+  <link href='css/overlays.css' rel='stylesheet' />
+  <link href='css/notifications.css' rel='stylesheet' />
+  <link href='/Assets/css/plugins/dropkick.css' rel='stylesheet' />
+  <link href='css/curriculum/global.css' rel='stylesheet' />
+  <link href='css/curriculum/cashflow.css' rel='stylesheet' />
+
+  <link href='favicon.ico' rel='shortcut icon' />
+
+    <script data-main="/Assets/Scripts/js/" src="/Assets/Scripts/js/require.js"></script>
+  <script src="/Assets/Scripts/js/require-config.js"></script>
+    <script src="/assets/scripts/js/libs/modernizr/modernizr.js"> </script>
+  <script src="/assets/scripts/js/dest/lessons.core.min.js"> </script>
+ <script>
+     require([
+      '/lessons/lesson1/js/curriculum/global.js',
+      'jquery',
+      'salt',
+      'jquery.colorbox',
+      'jquery.ui',
+      'libs/jsLog',
+      'libs/lazyload',
+      'jquery.json',
+      'jquery.waypoints',
+      'jquery.styledInputs',
+      'jquery.styledDropDowns',
+      'jquery.dropkick',
+      'jquery.commify',
+      'jquery.formatCurrency',
+      'salt/Lessons/LessonsLoginManager'
+    ]);
+  </script>
+</head>
+<body id='curriculum-wrapper'>
+  <div id='header'>
+    <div class='bottom'></div>
+    <div id='header-content'>
+      <div class='header clearfix' id='header-left'>
+        <h1 id='logo'>
+          <a href='/'>$alt</a>
+        </h1>
+        <div class='user-info'>
+          <div class='user-info-content clearfix visuallyhidden'>
+            <div class='fb-profile'>
+              <!-- <img alt='' class='image' src='img/global/fb-profile.png' /> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='header clearfix' id='header-center'>
+        <span class='step step1'></span>
+        <span class='of'>of</span>
+        <span class='step step2'></span>
+        <span class='slash'>/</span>
+        <span class='chapter'></span>
+        <div id='header-dropdown'>
+          <ul></ul>
+        </div>
+      </div>
+      <div class='header clearfix' id='header-right'>
+        <a class='save-and-exit' href="/">Save &amp; Exit</a>
+        <a href="/Account/LogOn" id="loginSubmit" class="visuallyhidden unauthenticatedUser__logonButton cboxElement loginButton" rel="tall">Log On</a>
+      </div>
+    </div>
+    <div id='header-progress'>
+      <div class='progress'></div>
+    </div>
+  </div>
+  <div id='fb-root'></div>
+  <div id='container'>
+    <div class='page-class'>
+      <div class='clearfix' id='main' role='main'>
+        <div id='content-left'>
+          <div class='content'></div>
+        </div>
+        <div class='clearfix' id='content-container'>
+
+          <!-- AddThis Button BEGIN -->
+          <div class="addthis_toolbox addthis_default_style">
+            <a class="addthis_button_facebook"></a>
+            <a class="addthis_button_twitter"></a>
+            <a class="addthis_button_linkedin"></a>
+            <a class="addthis_button_google_plusone_share"></a>
+            <a class="addthis_button_tumblr"></a>
+            <a class="addthis_button_email"></a>
+          </div>
+          <!-- AddThis Button END -->
+
+          <div class='content' id='content-area'></div>
+          <div id='footer'>
+            <div class='left'>
+              <div id='total'>
+                <div class='value'>$0</div>
+                <div class='value-message'>total monthly income</div>
+              </div>
+              <div id='up-next'>
+                <div class='first'>Up next:</div>
+                <div class='second'>Expenses</div>
+              </div>
+            </div>
+            <div class='right clearfix'>
+              <div class='error-msg'>
+                Oops, be sure to select at least one.
+              </div>
+              <div class='button-wrapper'>
+                <a class='left-button' href='#' ></a>
+                <a class='right-button' href='/content/media/Lesson/_/R-101-3403'>Keep Going</a>
+              </div>
+            </div>
+            <div class='top'></div>
+          </div>
+        </div>
+        <div class='clearfix' id='content-visual'>
+          <div class='content'>
+            <h4>Your 1-month cash flow</h4>
+            <div id='vis'>
+              <div id='bars'>
+                <div id='income'>
+                  <div class='top'></div>
+                </div>
+                <div id='expenses'>
+                  <div class='top'></div>
+                </div>
+              </div>
+            </div>
+            <div class='clearfix' id='stats'>
+              <dl class='in'>
+                <dt class='total-income-value'>$0</dt>
+                <dd>coming in</dd>
+              </dl>
+              <dl class='out'>
+                <dt class='total-expense-value'>$0</dt>
+                <dd>going out</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+      require([
+      'jquery',
+      'salt',
+
+      'jquery.colorbox',
+      'salt/global!',
+      'salt/Lessons/LessonsLoginManager',
+      'salt/Utility'
+    ], function ($, SALT) {
+        SALT.global.utils.alerts.overlays();
+
+        // Add event handler to all login buttons.
+        $('.loginButton').click(function () {
+            var redirectAfterLogin = $(this).data('redirect');
+            if (redirectAfterLogin) {
+                e.preventDefault();
+                redirectAfterLogin = encodeURIComponent(redirectAfterLogin.replace(/\//g, "!"));
+                SALT.LoginManager.returnURLOverride = '/lessons/lessonsLogin.html?ReturnUrl=' + redirectAfterLogin;
+                curriculum.global.tracking.trigger('siteMember:signin:complete');
+            }
+
+
+            $(document).one('cbox_complete', function () {
+                $(document).one('cbox_complete', function () {
+                    if (!SALT.Utility.currentBrowser.isSafari && !SALT.Utility.currentBrowser.isIE6_9)
+                        setTimeout(function () {
+                            $("input:first").focus();
+                        }, 1000);
+                });
+            });
+
+            SALT.global.overlays.open({
+                name: 'LogOn',
+                anchor: this
+            });
+        });
+    });
+  </script>
+
+  <!--BEGIN QUALTRICS SITE INTERCEPT-->
+  <script type='text/javascript'>
+    (function(){var g=function(e,h,f,g){
+    this.get=function(a){for(var a=a+"=",c=document.cookie.split(";"),b=0,e=c.length;b<e;b++){for(var d=c[b];" "==d.charAt(0);)d=d.substring(1,d.length);if(0==d.indexOf(a))return d.substring(a.length,d.length)}return null};
+    this.set=function(a,c){var b="",b=new Date;b.setTime(b.getTime()+6048E5);b="; expires="+b.toGMTString();document.cookie=a+"="+c+b+"; path=/; "};
+    this.check=function(){var a=this.get(f);if(a)a=a.split(":");else if(100!=e)"v"==h&&(e=Math.random()>=e/100?0:100),a=[h,e,0],this.set(f,a.join(":"));else return!0;var c=a[1];if(100==c)return!0;switch(a[0]){case "v":return!1;case "r":return c=a[2]%Math.floor(100/c),a[2]++,this.set(f,a.join(":")),!c}return!0};
+    this.go=function(){if(this.check()){var a=document.createElement("script");a.type="text/javascript";a.src=g+ "&t=" + (new Date()).getTime();document.body&&document.body.appendChild(a)}};
+    this.start=function(){var a=this;window.addEventListener?window.addEventListener("load",function(){a.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){a.go()})}};
+    try{(new g(100,"r","QSI_S_ZN_0dryfgtPxlSBu5L","//zn_0dryfgtpxlsbu5l-asaorg.siteintercept.qualtrics.com/WRSiteInterceptEngine/?Q_ZID=ZN_0dryfgtPxlSBu5L&Q_LOC="+encodeURIComponent(window.location.href))).start()}catch(i){}})();
+  </script>
+  <div id='ZN_0dryfgtPxlSBu5L'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+  <!--END SITE INTERCEPT-->
+
+</body>
+</html>

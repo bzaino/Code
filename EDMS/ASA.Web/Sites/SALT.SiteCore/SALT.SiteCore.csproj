@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C389C0F-4084-4EF8-81CC-F7DDDB59A6A8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ASA.Web.Sites.SALT.SiteCore</RootNamespace>
+    <AssemblyName>ASA.Web.Sites.SALT.SiteCore</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <Choose>
+    <When Condition="'$(Configuration)' == 'Release'">
+      <ItemGroup>
+        <Reference Include="ASA.Log.ServiceLogger">
+          <SpecificVersion>False</SpecificVersion>
+          <HintPath>..\..\..\..\SOA\Bin\InternalComponents\Release\ASA.Log.ServiceLogger.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="ASA.Log.ServiceLogger">
+          <SpecificVersion>False</SpecificVersion>
+          <HintPath>..\..\..\..\SOA\Bin\InternalComponents\Debug\ASA.Log.ServiceLogger.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\3rdParty\Bin\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net">
+      <HintPath>..\..\..\..\3rdParty\Bin\Common.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Types, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\SOA\Web\SALTService\Common.Types\bin\$(Configuration)\Common.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\3rdParty\Bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ConfigController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\ConfigModels.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\ManageAccountModel.cs" />
+    <Compile Include="Models\SchoolLookup.cs" />
+    <Compile Include="Models\_translators\RegisterModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SALTApplication.cs" />
+    <Compile Include="SALTException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\SOA\Web\SAL\Common\Source\ASA.Web.Services.Common\ASA.Web.Services.Common.csproj">
+      <Project>{C3BED31D-9AFF-4FDE-A672-3806F28596FE}</Project>
+      <Name>ASA.Web.Services.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SOA\Web\SAL\SALServices\Alert\Source\ASA.Web.Services.AlertService\ASA.Web.Services.AlertService.csproj">
+      <Project>{3ADCD915-DD9C-479B-8709-76D89F9D35A9}</Project>
+      <Name>ASA.Web.Services.AlertService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SOA\Web\SAL\SALServices\Membership\Source\ASA.Web.Services.ASAMemberService\ASA.Web.Services.ASAMemberService.csproj">
+      <Project>{4B9960C0-CA04-46CF-9DEA-55F9FE8C4F02}</Project>
+      <Name>ASA.Web.Services.ASAMemberService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SOA\Web\SAL\SALServices\Search\Source\ASA.Web.Services.SearchService\ASA.Web.Services.SearchService.csproj">
+      <Project>{F8DDB7C7-3067-4196-A9D9-93B743728F21}</Project>
+      <Name>ASA.Web.Services.SearchService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Collections\ASA.Web.Collections.csproj">
+      <Project>{1C130373-1360-4D29-B924-2C465E00C4C0}</Project>
+      <Name>ASA.Web.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DirectoryServicesWrapper\DirectoryServicesWrapper.csproj">
+      <Project>{665C1628-CEB8-4932-8D48-51BDC85425A8}</Project>
+      <Name>DirectoryServicesWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\ASA.Web.Common.csproj">
+      <Project>{78A826B1-E5DB-4E4C-ACB9-2039272EFE9B}</Project>
+      <Name>ASA.Web.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WTF\Integration\ASA.Web.WTF.Integration.csproj">
+      <Project>{B63E76A8-E705-4A19-95AC-4E30AAF289BA}</Project>
+      <Name>ASA.Web.WTF.Integration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WTF\_root\ASA.Web.WTF.csproj">
+      <Project>{DC669184-0A6D-4EF7-B225-07A4F5C841A9}</Project>
+      <Name>ASA.Web.WTF %28dependencies\asa.web.wtf\ASA.Web.WTF%29</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

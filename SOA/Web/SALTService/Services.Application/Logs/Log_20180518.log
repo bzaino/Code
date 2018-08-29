@@ -1,0 +1,58 @@
+2018-05-18 12:22:56.072 | 30980 | AMSA\bzaino [ 8] DEBUG | Logger                                             .SetUserData user, Member originalUser) - Begin Method 
+2018-05-18 12:22:56.087 | 30995 | AMSA\bzaino [ 8] DEBUG | Logger                                             .SetUserData user, Member originalUser) - End Method 
+2018-05-18 12:22:58.810 | 33718 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - Begin Method 
+2018-05-18 12:22:58.833 | 33741 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - No Record was found to be deleted 
+2018-05-18 12:22:58.835 | 33743 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - End Method 
+2018-05-18 12:22:58.838 | 33746 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - Begin Method 
+2018-05-18 12:22:58.844 | 33752 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - No Record was found to be deleted 
+2018-05-18 12:22:58.847 | 33755 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - End Method 
+2018-05-18 12:22:58.849 | 33757 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - Begin Method 
+2018-05-18 12:22:58.854 | 33762 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - No Record was found to be deleted 
+2018-05-18 12:22:58.856 | 33764 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - End Method 
+2018-05-18 12:22:58.858 | 33766 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - Begin Method 
+2018-05-18 12:22:58.863 | 33771 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - No Record was found to be deleted 
+2018-05-18 12:22:58.868 | 33776 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - End Method 
+2018-05-18 12:22:58.871 | 33779 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - Begin Method 
+2018-05-18 12:22:58.907 | 33815 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - No Record was found to be deleted 
+2018-05-18 12:22:58.910 | 33818 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - End Method 
+2018-05-18 12:22:58.912 | 33820 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - Begin Method 
+2018-05-18 12:22:58.916 | 33824 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - No Record was found to be deleted 
+2018-05-18 12:22:58.918 | 33826 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - End Method 
+2018-05-18 12:22:58.922 | 33830 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - Begin Method 
+2018-05-18 12:22:58.927 | 33835 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - No Record was found to be deleted 
+2018-05-18 12:22:58.929 | 33837 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - End Method 
+2018-05-18 12:22:58.930 | 33838 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - Begin Method 
+2018-05-18 12:22:58.934 | 33842 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - No Record was found to be deleted 
+2018-05-18 12:22:58.936 | 33844 | AMSA\bzaino [24] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - End Method 
+2018-05-18 12:22:58.939 | 33847 | AMSA\bzaino [24] DEBUG | Logger                                             .InsertUserProfileResponses(int userId, IList<MemberProfileAnswer> responses) - Begin Method 
+2018-05-18 12:22:58.977 | 33885 | AMSA\bzaino [24] DEBUG | Logger                                             .InsertUserProfileResponses(int userId, IList<MemberProfileAnswer> responses) - End Method 
+2018-05-18 12:23:15.179 | 50087 | AMSA\bzaino [ 9] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - Begin Method 
+2018-05-18 12:23:15.223 | 50131 | AMSA\bzaino [ 9] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - End Method 
+2018-05-18 12:23:15.226 | 50134 | AMSA\bzaino [ 9] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - Begin Method 
+2018-05-18 12:23:15.233 | 50141 | AMSA\bzaino [ 9] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - End Method 
+2018-05-18 12:23:15.236 | 50144 | AMSA\bzaino [ 9] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - Begin Method 
+2018-05-18 12:23:15.242 | 50150 | AMSA\bzaino [ 9] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - End Method 
+2018-05-18 12:23:15.244 | 50152 | AMSA\bzaino [ 9] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - Begin Method 
+2018-05-18 12:23:15.254 | 50162 | AMSA\bzaino [ 9] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - End Method 
+2018-05-18 12:23:15.256 | 50164 | AMSA\bzaino [ 9] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - Begin Method 
+2018-05-18 12:23:15.278 | 50186 | AMSA\bzaino [ 9] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - No Record was found to be deleted 
+2018-05-18 12:23:15.287 | 50195 | AMSA\bzaino [ 9] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - End Method 
+2018-05-18 12:23:15.297 | 50205 | AMSA\bzaino [ 9] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - Begin Method 
+2018-05-18 12:23:15.319 | 50227 | AMSA\bzaino [ 9] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - No Record was found to be deleted 
+2018-05-18 12:23:15.323 | 50231 | AMSA\bzaino [ 9] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - End Method 
+2018-05-18 12:23:15.326 | 50234 | AMSA\bzaino [ 9] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - Begin Method 
+2018-05-18 12:23:15.330 | 50238 | AMSA\bzaino [ 9] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - No Record was found to be deleted 
+2018-05-18 12:23:15.332 | 50240 | AMSA\bzaino [ 9] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - End Method 
+2018-05-18 12:23:15.334 | 50242 | AMSA\bzaino [ 9] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - Begin Method 
+2018-05-18 12:23:15.340 | 50248 | AMSA\bzaino [ 9] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - No Record was found to be deleted 
+2018-05-18 12:23:15.343 | 50251 | AMSA\bzaino [ 9] DEBUG | Logger                                             .DeleteUserProfileResponses(int userId, int profileQuestionExternalID) - End Method 
+2018-05-18 12:23:15.345 | 50253 | AMSA\bzaino [ 9] DEBUG | Logger                                             .InsertUserProfileResponses(int userId, IList<MemberProfileAnswer> responses) - Begin Method 
+2018-05-18 12:23:15.358 | 50266 | AMSA\bzaino [ 9] DEBUG | Logger                                             .InsertUserProfileResponses(int userId, IList<MemberProfileAnswer> responses) - End Method 
+2018-05-18 13:41:18.761 | 7029 | AMSA\bzaino [ 1] DEBUG | Logger                                             .SetUserData user, Member originalUser) - Begin Method 
+2018-05-18 13:41:18.788 | 7056 | AMSA\bzaino [ 1] DEBUG | Logger                                             .SetUserData user, Member originalUser) - End Method 
+2018-05-18 13:41:18.799 | 7067 | AMSA\bzaino [12] DEBUG | Logger                                             .SetUserData user, Member originalUser) - Begin Method 
+2018-05-18 13:41:18.803 | 7071 | AMSA\bzaino [12] DEBUG | Logger                                             .SetUserData user, Member originalUser) - End Method 
+2018-05-18 14:37:20.078 | 4684 | AMSA\bzaino [ 8] DEBUG | Logger                                             .SetUserData user, Member originalUser) - Begin Method 
+2018-05-18 14:37:20.099 | 4705 | AMSA\bzaino [ 8] DEBUG | Logger                                             .SetUserData user, Member originalUser) - End Method 
+2018-05-18 14:37:20.496 | 5102 | AMSA\bzaino [43] DEBUG | Logger                                             .SetUserData user, Member originalUser) - Begin Method 
+2018-05-18 14:37:20.502 | 5108 | AMSA\bzaino [43] DEBUG | Logger                                             .SetUserData user, Member originalUser) - End Method 

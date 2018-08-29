@@ -1,0 +1,10 @@
+<div id="social">
+    <ul class="social_icons no-margin">
+        <li>Share This:<li>
+        <li><a class="addthis_button_facebook"></a></li>
+        <li><a class="addthis_button_twitter"></a></li>
+        <li><a class="addthis_button_linkedin"></a></li>
+        <li><a class="addthis_button_email"></a></li>
+        <li><a class="addthis_button_print"></a></li>
+    </ul>
+</div>

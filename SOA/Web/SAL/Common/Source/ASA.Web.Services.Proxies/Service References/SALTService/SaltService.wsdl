@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="Asa.Salt.Web.Services.Contracts.Operations" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SaltService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="Asa.Salt.Web.Services.Contracts.Operations" location="http://localhost:8081/SALTService.svc?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_ISaltService" type="i0:ISaltService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddInteraction">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/AddInteraction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInteraction">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateInteraction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInteraction">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/DeleteInteraction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInteractions">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserInteractions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInteractionsByContentType">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserInteractionsByContentType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByUserId">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserByUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByUsername">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserByUsername" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByActiveDirectoryKey">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserByActiveDirectoryKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserOrganizations">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserOrganizations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterUser">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/RegisterUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateUser">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/DeactivateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/DeleteUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserOrgAffiliation">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateUserOrgAffiliation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserAlerts">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserAlerts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserProfileResponses">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateUserProfileResponses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserActivityHistory">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserActivityHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrgs">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllOrgs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgs">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetOrgs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrg">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetOrg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgByExternalOrgID">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetOrgByExternalOrgID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgByOrganizationId">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetOrgByOrganizationId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgProducts">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetOrgProducts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgProductsByMemberId">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetOrgProductsByMemberId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProducts">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllProducts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProfileQuestions">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllProfileQuestions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProfileAnswers">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllProfileAnswers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileResponses">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetProfileResponses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRefRegistrationSources">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllRefRegistrationSources" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRefRegistrationSourceTypes">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllRefRegistrationSourceTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRefUserRoles">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllRefUserRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddRefRegistrationSource">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/AddRefRegistrationSource" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRefRegistrationSource">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateRefRegistrationSource" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRefCampaigns">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllRefCampaigns" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddRefCampaign">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/AddRefCampaign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRefCampaign">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateRefCampaign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRefChannels">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllRefChannels" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAlert">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/DeleteAlert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLoan">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/DeleteLoan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLoan">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateLoan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserLessonQuestionResponses">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/DeleteUserLessonQuestionResponses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPaymentReminders">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserPaymentReminders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveUserPaymentReminders">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/SaveUserPaymentReminders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportUserLoans">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/ImportUserLoans" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLoans">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserLoans" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLoansRecordSourceList">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserLoansRecordSourceList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReportedLoans">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetReportedLoans" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSurveyById">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetSurveyById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSurveyResults">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserSurveyResults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostSurvey">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/PostSurvey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLessonsReferenceData">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetLessonsReferenceData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLessons">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserLessons" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartUserLesson">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/StartUserLesson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostLesson1">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/PostLesson1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostLesson2">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/PostLesson2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostLesson3">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/PostLesson3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLesson1Results">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserLesson1Results" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLesson2Results">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserLesson2Results" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLesson3Results">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserLesson3Results" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AssociateLessonsWithUser">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/AssociateLessonsWithUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateLoan">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/CreateLoan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserLesson">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateUserLesson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVlcMemberProfile">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetVlcMemberProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVlcMemberProfile">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateVlcMemberProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddVlcResponse">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/AddVlcResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddJellyVisionQuizResponse">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/AddJellyVisionQuizResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCOLStates">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetCOLStates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCOLUrbanAreas">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetCOLUrbanAreas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCOLResults">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetCOLResults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRefMajors">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetRefMajors" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRefStates">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetRefStates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJSISchools">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetJSISchools" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostJSIResponse">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/PostJSIResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMembersAcademicInfoView">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetMembersAcademicInfoView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberOrganizations">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetMemberOrganizations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberProducts">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetMemberProducts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMemberProduct">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/AddMemberProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMemberProduct">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateMemberProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMembersBySearchParms">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetMembersBySearchParms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserActivationHistory">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserActivationHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrgInfoFlags">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateOrgInfoFlags" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertOrgToDoListItem">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpsertOrgToDoListItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrgProductsSubscription">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateOrgProductsSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertQuestionAnswer">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpsertQuestionAnswer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberQuestionAnswer">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetMemberQuestionAnswer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberToDos">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetMemberToDos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertMemberToDo">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpsertMemberToDo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberRoles">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetMemberRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertMemberRoles">
+      <soap:operation soapAction="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpsertMemberRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SaltService">
+    <wsdl:port name="BasicHttpBinding_ISaltService" binding="tns:BasicHttpBinding_ISaltService">
+      <soap:address location="http://localhost:8081/SALTService.svc/basic" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

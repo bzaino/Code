@@ -1,0 +1,61 @@
+<div class="google-map-resource">
+    <div class="row collapse {?blockedContent} noprint{/blockedContent}">
+        <p id="membershipId" hidden>{SiteMember.MembershipId}</p>
+        <h4 class="question">Choose a state to check out its participating colleges and universities.</h4>
+        <div class="small-5 medium-3">
+            <div class='js-jsiDropdown styled-select'>
+                <select id="selState" tabindex="1">
+                    <option value="0" selected="selected">Select State</option>
+                    {#JSISelectStates.JSIQuizList}
+                        <option value="{State}">
+                            {StateCd}
+                        </option>
+                    {/JSISelectStates.JSIQuizList}
+                </select>
+            </div>
+        </div>
+        <span id="js-map-span" class="occupations hidden-map-span hidden">
+            <div id="js-selection-msg" class="target-text">
+                <h4>Participating Schools In state</h4>
+                <span></span>
+            </div>
+            <div id="js-map-canvas-swap" class="small-12"></div>
+            <p></p>
+            <div id="js-place-holder" class="google-place-holder"></div>
+            <div class="right small-12 columns"><button class="restart button base-btn main-btn back left">Try Again</button></div> 
+        </span>
+       
+    </div>
+    <p{?blockedContent} class="noprint"{/blockedContent}>
+        <small>
+            <br>
+            <br>Programs are subject to change. Be sure to check with the school listed for complete eligibility details before enrolling.
+            <br>
+        </small>
+    </p>
+</div>
+
+<script>
+require([
+    'jquery',
+    'modules/ASASeniorBorrower'
+], function ($) {
+    var selectState = document.getElementById('selState');
+    $(document).ready(function() {
+        /*set option and add map*/   
+        asaSeniorBorrower.init({tryGeolocation: true, viewOnHover: true, clusterMarkers: true});
+        /*update map camvas on state*/ 
+        selectState.addEventListener('change', function() {
+            asaSeniorBorrower.selectionChanged({
+                mapCanvasId: 'js-map-canvas-swap', selectlocation: $('#selState option:selected').val(), showDefaultMap: false
+            });
+            $('.hidden-map-span').removeClass('hidden');
+        });
+         $('.restart').click(function (e) {
+            $('.hidden-map-span').addClass('hidden');
+            $('#js-map-canvas').removeClass('hidden');
+            $('#selState').val('0');
+        }); 
+    });
+});
+</script>

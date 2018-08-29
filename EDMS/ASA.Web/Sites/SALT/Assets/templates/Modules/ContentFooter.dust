@@ -1,0 +1,7 @@
+<div class="row collapse">
+    <div class="small-12 medium-6 columns">{>"partial_social" /}</div>
+    {@if cond="'{mainContent[0].record.attributes.ContentTypes[0]}' !== 'Lesson'"}
+        <div class="small-12 medium-6 columns">{>"UserRatingWidget" /}</div>
+    {/if}
+</div>
+

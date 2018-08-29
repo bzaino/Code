@@ -1,0 +1,8 @@
+2018-06-19 14:31:42.419 | 4532 | AMSA\bzaino [ 4] DEBUG | Logger                                             .SetUserData user, Member originalUser) - Begin Method 
+2018-06-19 14:31:42.419 | 4532 | AMSA\bzaino [27] DEBUG | Logger                                             .SetUserData user, Member originalUser) - Begin Method 
+2018-06-19 14:31:42.435 | 4548 | AMSA\bzaino [ 4] DEBUG | Logger                                             .SetUserData user, Member originalUser) - End Method 
+2018-06-19 14:31:42.438 | 4551 | AMSA\bzaino [27] DEBUG | Logger                                             .SetUserData user, Member originalUser) - End Method 
+2018-06-19 15:50:47.074 | 11419 | AMSA\bzaino [53] DEBUG | Logger                                             .SetUserData user, Member originalUser) - Begin Method 
+2018-06-19 15:50:47.095 | 11440 | AMSA\bzaino [53] DEBUG | Logger                                             .SetUserData user, Member originalUser) - End Method 
+2018-06-19 15:50:47.117 | 11462 | AMSA\bzaino [49] DEBUG | Logger                                             .SetUserData user, Member originalUser) - Begin Method 
+2018-06-19 15:50:47.129 | 11474 | AMSA\bzaino [49] DEBUG | Logger                                             .SetUserData user, Member originalUser) - End Method 

@@ -1,0 +1,6 @@
+<li class="boldText row collapse widget-row">
+    <a class="small-8 columns scroll-top" href="#LoanDefault1NextSteps">Default</a><span class="small-4 columns widgetGrayText text-right upperCase">{Default}</span>
+</li>
+<li class="boldText row collapse widget-row">
+    <a class="small-8 columns scroll-top" href="#LoanDelinquency1NextSteps">Delinquency</a><span class="small-4 columns widgetGrayText text-right upperCase">{Delinquency}</span>
+</li>

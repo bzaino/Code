@@ -1,0 +1,69 @@
+cmdline: command line: "C:\Program Files\Coverity\Coverity Static Analysis\bin\cov-analyze" @@C:/Users/BZAINO~1.003/AppData/Local/Temp/cov-bzaino/f8e4b9f78bb4c3e16a2b1b1abf0bbc69/cov-analyze.default.txt 
+cmdline: parsed cmdline: [
+cmdline:   { name: "fb-include", args: [ "coverity-default" ] },
+cmdline:   { name: "dir", args: [ "C:\\SOA\\wksp_03\\SOA\\Web\\SAL\\.cov\\debug-mixed_platforms-idir\\idir" ] },
+cmdline:   { name: "tmpdir", args: [ "C:\\Users\\BZAINO~1.003\\AppData\\Local\\Temp" ] },
+cmdline:   { name: "no-banner" },
+cmdline:   { name: "security-file", args: [ "C:\\Program Files\\Coverity\\Coverity Static Analysis\\bin\\license.dat" ] },
+cmdline:   { name: "persistent-models", args: [ "true" ] },
+cmdline:   { name: "no-whole-program-checkers" },
+cmdline:   { name: "fb-exclude", args: [ "desktop" ] },
+cmdline:   { name: "export-summaries", args: [ "false" ] },
+cmdline:   { name: "noxrefs" },
+cmdline:   { name: "use-cached-desktop" },
+cmdline:   { name: "strip-path", args: [ "C:/SOA/wksp_03/SOA/Web/SAL" ] },
+cmdline:   { name: "ticker-mode", args: [ "none" ] },
+cmdline:   { name: "tu", args: [ "64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,89,90,91,92,93,95,96,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,149,150,151,152,153,154,155,157,158,159,161,162,163,164,165,166,167,169,170,171,172,173,174,176,177,178,179,180,181,182,183,184,185,186,187,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,209,210,211,212,213,214,215,216,217,218,220,221,223,224,225,226,227,228,229,230,231,232,233,234,236,237,238,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,308,309,310,311,312,313,314,316,317,318,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,337,338,339,341,342,344,345,346,348,349,351,352,353,355,356,357,358,360,361,562,563,564,565,566,567,568,569,570,571,573,574,575,576,577,578,579,580,581,582,583,584,585,586,587,588,589,590,591,592,593,594,595,596,597,598,599,600,601,602,603,604,605,606,607,608,609,610,611,612,613,614,615,616,617,618,619,620,621" ] },
+cmdline:   { name: "enable", args: [ "PARSE_ERROR" ] },
+cmdline:   { name: "force-report-rws" },
+cmdline: ]
+startup: am_pid=6148
+startup: detected platform: Windows 7 Enterprise, 64-bit, Service Pack 1 (build 7601)
+startup: target platform: win64
+startup: Detected 2 logical cpus
+startup: Detected 2 cpu cores
+startup: host name: BOSVSM009
+startup: user name: bzaino
+startup: Analysis version: 2017.07 (7a4de27b47 p-milo-push-30112.654)
+startup: temp directory: C:/Users/BZAINO~1.003/AppData/Local/Temp/cov-bzaino/320c3451ce9b464eea02b2387a2fd62f
+startup: enable_constraint_fpp=0
+startup: current time: 2018-Apr-23 10:03:25
+startup: Detected amount of memory: 12582456kb
+startup: Limiting memory to 11324210kb
+wlink: Identifying web applications
+wlink: Linking web-app archive bytecode
+emitdb: callgraph.cpp:2860 11111111
+emitdb: callgraph.cpp:2890 11000011
+emitdb: callgraph.cpp:2910 11000011
+directives: ===== User directives:
+directives: Directive Kind                                     Number
+directives: --------------                                     ------
+rta: Not running RTA because it doesn't apply to current languages
+emitdb: callgraph.cpp:2920 11000000
+dyncg: N/A or no data
+directives: Optimizing dataflow configuration
+general: Starting analysis
+dm-access-lib: AM listening for DM at 127.0.0.1:54356
+dm-access-lib: AM starting DM with command line: C:/Program Files/Coverity/Coverity Static Analysis/bin/cov-internal-dm.exe --AM-port 54356 --log-file C:/SOA/wksp_03/SOA/Web/SAL/.cov/debug-mixed_platforms-idir/idir/output/distributor.log -j 2 --AW-timeout 36000 C:\Program Files\Coverity\Coverity Static Analysis\bin\cov-analyze.exe --worker --message-size-limit 104857600
+dm-access-lib: DM started: dm_pid=6120
+dm-access-lib: AM got connection from DM: (local) 127.0.0.1:54356 - 127.0.0.1:54357 (remote)
+wurlegend: <phase><n> dw_id wup_bytes dw_ms wur_bytes aw_ms [mem] paths (rest are labeled)
+wur: stat280 1 114224 156 3052 16 mem=12591104 max=14544896 52 nr=14 n: batch 280
+wur: conc4313 1 19317 47 1380 31 mem=12591104 max=14544896 83 n: ASA.Web.Services.ASAMemberService.ASAMember::SendEmailToMember(System.String)System.Boolean in TU 582
+wur: conctd1254 1 18596 0 432 0 mem=12591104 max=14544896 53 n: ASA.Web.Services.ASAMemberService.ASAMember::SendEmailToMember(System.String)System.Boolean in TU 582
+wur: gen280 1 229223 141 216 109 mem=16302080 max=18255872 1240 nr=14 n: batch 280
+summary: Analysis summary report:
+summary: ------------------------
+summary: Files analyzed                 : 248
+summary: Total LoC input to cov-analyze : 37228
+summary: Functions analyzed             : 5255
+summary: Paths analyzed                 : 56314
+summary: Time taken by analysis         : 00:00:12
+summary: Defect occurrences found       : 4 NULL_RETURNS
+summary: Number of functions: 5568
+summary: out_of_memory count: 0
+summary: paths_exceeded count: 0
+summary: recoverable failures: 0
+mem: AM peak mem bytes: 52723712
+assert: suppressed asserts: workers=0, master=0
+failures: recoverable failures: workers=0, master=0

@@ -1,0 +1,144 @@
+<!-- header -->
+<header class="salt-header noprint js-header fixed js-simple-header{^SiteMember.ActiveDirectoryKey} unauth-header{/SiteMember.ActiveDirectoryKey}" aria-label="Main Menu">
+    <nav class="row collapse-for-small-only" role="menubar">
+        <div class="menu-btn-wrapper left">
+            <!-- Button to trigger dropdown menu -->
+            <a type="button" id="menu-btn" href class="js-tab-index-0 menu-burger salticon dd-opener js-dropdown" data-dropdown="left-menu" aria-controls="left-menu" aria-expanded="false" tabindex="1" aria-haspopup="true" role="menuitem">
+                <figcaption>menu</figcaption>
+            </a>
+            <!-- Top left dropdown menu -->
+            <div id="left-menu" class="left-menu f-dropdown" data-dropdown-content aria-hidden="true" aria-autoclose="false" role="menu">
+                {>"left_menu" /}
+            </div>
+        </div>
+        <!-- Salt Logo, Home link -->
+        <span class="logo left">
+            <a href="{?SiteMember.ActiveDirectoryKey}/home{?SiteMember.DashboardEnabled}#fndtn-MySalt{/SiteMember.DashboardEnabled}{:else}/index.html{/SiteMember.ActiveDirectoryKey}" title="saltmoney.org" class="ir home-link {?SiteMember.ActiveDirectoryKey}js-SPA{/SiteMember.ActiveDirectoryKey}" alt="SALT logo. Money knowledge for college and beyond." tabindex="1" role="menuitem"></a>
+        </span>
+        <div class="nav-right-wrapper js-nav-right-wrapper">
+        {^SiteMember.SearchDisabled}
+            <div class="js-search-form search-input left hide">
+                <form id="searchForm" name="searchForm" method="get" action="/content/search" class="no-bottom-margin">
+                <input class="search" type="search" id="searchCriteria" name="searchCriteria" maxLength="100" placeholder="Search..." tabindex="1" />
+                <input class="search-magn-sm js-search hide" type="submit" value="" tabindex="-1" />
+                <span class="js-search-x search-x js-search hide" value="" tabindex="1" />
+                </span>
+                </form>
+            </div>
+        {/SiteMember.SearchDisabled}
+        {?SiteMember.ActiveDirectoryKey}
+            <div class="header-buttons left">
+                {^SiteMember.SearchDisabled}
+                    <div class="left search-btn-box js-search-magn">
+                        <a href="" id="search-btn" type="button" class="salticon magnify" tabindex="1" aria-haspopup="true" role="menuitem"/>
+                            <figcaption class="js-search-label">search</figcaption>
+                        </a>
+                    </div>
+                {/SiteMember.SearchDisabled}
+                <div class="left profile-btn-box hide-for-medium-down">
+                    <a href="" id="profile-btn" type="button" class="profile salticon dd-opener" data-dropdown="js-profile-dropdown" aria-controls="js-profile-dropdown" aria-expanded="false" tabindex="1" aria-haspopup="true" role="menuitem"/>
+                        <figcaption>profile</figcaption>
+                    </a>
+                    <aside id="js-profile-dropdown" data-dropdown-content class="js-header-dropdown dropdown-panel profile-panel f-dropdown" aria-autoclose="false">
+                        <div id="js-Profile-widget">
+                            <div class="js-rr-module">
+                                <span class="js-rr-module-header">
+                                    Hi, <strong><a href="/manageprofile/" tabindex="1">{SiteMember.FirstName}!</a></strong>
+                                </span>
+                                <a href="/Account/LogOff" class="button sidenav-button xtiny radius right" tabindex="1">Log Out</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="left profile-btn-box hide-for-large-up">
+                    <a href="" id="sm-profile-btn" type="button" class="profile salticon dd-opener" data-dropdown="js-sidebar" aria-controls="js-sidebar" aria-expanded="false" tabindex="1" aria-haspopup="true" role="menuitem"/>
+                        <figcaption>profile</figcaption>
+                    </a>
+                </div>
+                <div class="left support-btn-box">
+                    <a href="" id="support-btn" type="button" id="js-support-btn" class="salticon customer-service dd-opener" data-dropdown="js-dropdown-support" aria-controls="js-dropdown-support" aria-expanded="false" tabindex="1" aria-haspopup="true" role="menuitem"/>
+                        <figcaption>support</figcaption>
+                    </a>
+                </div>
+            </div>
+            <!-- user authentication -->
+        {:else}
+            <div id="js-authentication-strip" class="right authentication-strip">
+                <span class="auth-button-wrapper">
+                    <a href="" class="js-void-href js-search-magn" aria-haspopup="true" role="menuitem" tabindex="1">
+                        <label class="js-search-label">search</label>
+                    </a>
+                </span>
+                <span class="auth-button-wrapper hide-for-small">
+                    <a id="js-signup-link" href="" title="Sign Up for Salt Benefits" data-window-shade="registrationOverlay" class="js-void-href" tabindex="1" aria-haspopup="true" role="menuitem">
+                        <label class="js-signup-link-text">sign up</label>
+                    </a>
+                </span>
+                <span class="auth-button-wrapper">
+                    <a id="login-link" href="" type="button" class="loginButton js-void-href" data-window-shade="loginOverlay" title="Log In if you are a current Salt User" tabindex="1" aria-haspopup="true" role="menuitem">
+                        <label>log in</label>
+                    </a>
+                </span>
+            </div>
+        {/SiteMember.ActiveDirectoryKey}
+        </div>
+    </nav>
+
+</header>
+<!-- /header -->
+<!-- /header -->
+{^sidebarReg}
+    <div class="fixed">
+        <div id="custom-overlays" class="custom-overlays">
+            {^hideLoginOverlay}
+                {> "Overlays/LogOn" /}
+            {/hideLoginOverlay}
+            {> "Overlays/ForgotPassword" /}
+            {^individualIDCookie}
+                {^isRegistrationPage}
+                    {> "Overlays/RegistrationOverlay" /}
+                {/isRegistrationPage}
+            {/individualIDCookie}
+            {#configuration}
+                {?resetPassword}
+                    {>"Overlays/ResetPassword"/}
+                    <script>
+                        require(['jquery', 'salt'], function ($, SALT) {
+                            $(document).ready(function() {
+                                setTimeout(function () {
+                                    SALT.trigger('open:customOverlay', 'resetPasswordOverlay');
+                                }, 1500);
+                            });
+                        });
+                    </script>
+                {/resetPassword}
+                {?resetExpired}
+                    {>"Overlays/ExpirePwd"/}
+                    <script>
+                        require(['jquery', 'salt'], function ($, SALT) {
+                            $(document).ready(function() {
+                                setTimeout(function () {
+                                    SALT.trigger('open:customOverlay', 'forgotPasswordExpireOverlay');
+                                }, 1500);
+                            });
+                        });
+                    </script>
+                {/resetExpired}
+            {/configuration}
+        </div>
+    </div>
+{/sidebarReg}
+
+
+<script>
+    require(['jquery', 'jquery.cookie'], function ($) {
+        $(function () {
+            if ($.cookie('TooYoung')) {
+                $('.js-signup-link-text').css('color', '#dcddde');
+            }
+        });
+    });
+    {^SiteMember.SearchDisabled}
+    require(['modules/SearchAutoComplete']);
+    {/SiteMember.SearchDisabled}
+</script>

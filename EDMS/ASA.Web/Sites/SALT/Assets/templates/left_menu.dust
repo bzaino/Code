@@ -1,0 +1,54 @@
+<nav class="dropdown-nav closer">
+    <dl class="no-accordion">
+        {?SiteMember.ShowMM101}
+            <dd class="MM101">
+                <a href="#" id="OpenMoney101" class="js-salt-courses-link" tabindex="1">Courses<span class="external-link right"></span></a>
+            </dd>
+        {/SiteMember.ShowMM101}
+        <dd><a href="/blog" tabindex="1">Blog</a></dd>
+        {?SiteMember.ShowAdminPortal}
+            <dd class="">
+                <a href="{configuration.adminPortalUrl}" target="_blank" class="" tabindex="1">Admin Portal<span class="external-link right"></span></a>
+            </dd>
+        {/SiteMember.ShowAdminPortal}
+    </dl>
+    <dl class="accordion" data-accordion>
+        <dd class="accordion-navigation">
+            <a href="#panel1b" title="Resources"  tabindex="1"><span class="down-arrow"></span>Resources</a>
+            <ul id="panel1b" class="dropdown content">
+                {^SiteMember.BrowseDisabled}
+                <li><a href="{?SiteMember.DashboardEnabled}/home?Dims=46#fndtn-Library{:else}/home?Type=All&No=0&Dims=46&NoBanner=true&Ns=P_Hits_Last_30_Days|1{/SiteMember.DashboardEnabled}" class="js-SPA"  tabindex="1">Tools & Calculators</a></li>
+                <li><a href="{?SiteMember.DashboardEnabled}/home?Dims=43#fndtn-Library{:else}/home?Type=All&No=0&Dims=43&NoBanner=true&Ns=P_Hits_Last_30_Days|1{/SiteMember.DashboardEnabled}" class="js-SPA"  tabindex="1">Forms</a></li>
+                {/SiteMember.BrowseDisabled}
+                <li><a href="/home/glossary.html"  tabindex="1">Glossary</a></li>
+                {^SiteMember.BrowseDisabled}
+                <li><a href="{?SiteMember.DashboardEnabled}/home?Dims=44#fndtn-Library{:else}/home?Type=All&No=0&Dims=44&NoBanner=true&Ns=P_Hits_Last_30_Days|1{/SiteMember.DashboardEnabled}" class="js-SPA"  tabindex="1">Lessons</a></li>
+                {/SiteMember.BrowseDisabled}
+            </ul>
+        </dd>
+    </dl>
+    <dl class="accordion" data-accordion>
+        <dd class="accordion-navigation">
+            <a href="#panel2b" title="Support"  tabindex="1"><span class="down-arrow"></span>Support</a>
+            <ul id="panel2b" class="dropdown content">
+                {?SiteMember.MemberShipFlag}
+                    <li><a href="" class="liveChatLink" target="_blank" data-WT-value="Live Chat New Navigation"  tabindex="1">Live Chat</a></li>
+                {/SiteMember.MemberShipFlag}
+                <li><a href="/content/media/Tool/just-ask/_/R-101-7836"  tabindex="1">Just Ask Salt</a></li>
+            </ul>
+        </dd>
+    </dl>
+    <dl class="accordion" data-accordion>
+        <dd class="accordion-navigation show-for-medium-down">
+            <a href="#panel3b" title="More" tabindex="1"><span class="down-arrow"></span>More ...</a>
+            <ul id="panel3b" class="content dropdown">
+                {>"Navigation/utility_links" tabindex_ind="1" /}
+                <li><a href="https://twitter.com/SALT_MONEY" title="" target="_blank" tabindex="1">Twitter<span class="external-link right"></span></a></li>
+                <li><a href="https://www.facebook.com/saltmoney" title="" target="_blank" tabindex="1">Facebook<span class="external-link right"></span></a></li>
+                <li><a href="https://www.youtube.com/c/AmericanStudentAssistance" title="" target="_blank" tabindex="1">YouTube<span class="external-link right"></span></a></li>
+
+                <li class="menu-copyright">{>"Navigation/salt_copyright"/}</li>
+            </ul>
+        </dd>
+    </dl>
+</nav>

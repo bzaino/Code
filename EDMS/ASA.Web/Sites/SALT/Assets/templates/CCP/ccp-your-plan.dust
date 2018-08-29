@@ -1,0 +1,102 @@
+<section data-index="7" hidden>
+    <div class="row collapse">
+        <div class="small-12 columns js-noloans">
+            <p>Congratulations! You've created a plan to cover all of the costs for this program of study.</p>
+        </div>
+        <div class="small-12 columns js-overpaying" hidden>
+            <p>Your contributions exceed the total cost for this program of study. You may want to double-check and adjust your entries.</p>
+        </div>
+        <div class="small-12 columns">
+            <p>Let's review your information and make changes, if necessary.</p>             
+        </div>
+    </div>
+    <div class="items-col">
+        <div class="row collapse">
+            <div class="small-6 columns">
+                Cost Of Attendance
+            </div>
+            <div class="small-3 columns text-right">
+               <div class="results cost-of-attendence">$<span class="js-cost-of-attendence-results"></span></div>
+            </div>
+            <div class="small-3 columns text-right">
+               <input type="button" href="CostOfAttendance" value="Edit" class="js-edit-button ccp-button edit no-margin"></input>
+            </div>
+        </div>
+        <div class="row collapse">
+            <div class="small-6 columns">
+                Grants & Scholarships
+            </div>
+            <div class="small-3 columns text-right">
+                <div class="results yearly-grants">$<span class="js-yearly-grants-results"></span></div>
+            </div>
+             <div class="small-3 columns text-right">
+               <input type="button" href="GrantsAndScholarships" value="Edit" class="js-edit-button ccp-button edit no-margin"></input>
+            </div>
+        </div>
+        <div class="row collapse">
+            <div class="small-6 columns">
+                Planned Contributions
+            </div>
+            <div class="small-3 columns text-right">
+               <div class="results total-contributions">$<span class="js-total-contributions-results"></span></div>
+            </div>
+            <div class="small-3 columns text-right">
+               <input type="button" href="PlannedContributions" value="Edit" class="js-edit-button ccp-button edit no-margin"></input>
+            </div>
+        </div>
+        <div class="row collapse">
+            <div class="small-6 columns">
+                Monthly Installments
+            </div>
+            <div class="small-3 columns text-right">
+                <div class="results monthly-installments">$<span class="js-monthly-installments-results"></span></div>
+            </div>
+            <div class="small-3 columns text-right">
+               <input type="button" href="MonthlyInstallments" value="Edit" class="js-edit-button ccp-button edit no-margin"></input>
+            </div>
+        </div>
+        <div class="row collapse white-border">
+            <div class="small-6 columns">
+                Total Loans
+            </div>
+            <div class="small-3 columns text-right">
+                <div class="results">$<span class="js-total-loans-results"></span></div>
+            </div>
+            <div class="small-3 columns text-right">
+               <input type="button" href="StudentLoans" value="Edit" class="js-edit-button margin-top ccp-button edit no-margin"></input>
+            </div>
+        </div>
+        <div class="row collapse white-border no-top-padding">
+            <div class="small-6 columns">
+                <span class="js-attach-glossary glossary-link">Total Interest</span> <small>(estimated)</small>
+            </div>
+            <div class="small-3 columns text-right">
+                <div class="results total-interest">$<span class="js-total-interest-results"></span></div>
+            </div>
+            <div class="small-3 columns text-right"> 
+            </div>
+        </div>
+        <br>
+        <div class="row collapse no-top-padding">
+            <div class="small-6 columns">
+                <h4>Total Loans & Interest</h4>
+            </div>
+            <div class="small-3 columns text-right">
+                <div class="results">$<span class="js-total-amount-results"></span></div>
+            </div>
+             <div class="small-3 columns text-right"> 
+            </div>
+        </div>
+    </div>
+    <div class="row collapse">
+        <div class="small-12 columns padding-top">
+            <p><em>Note: These figures are an estimate based on the assumption that the grants, scholarships, and planned contributions remain the same each year, and that costs will increase by 4% each year&mdash;which may not be the case. Price is just one factor when deciding which school to attend. Be sure to look at the big picture when making this choice.</em></p>
+        </div>
+        
+    </div>
+    <div class="row collapse margin-bottom">
+        <div class="small-12 columns">
+            <input type="button" href="StudentLoans" class="js-backend-save js-prev-page back-arrow" value="" onclick='Webtrends.multiTrack({element:this, argsa:["WT.dl","99","WT.z_actname","CollegeCostPlanner","WT.z_actype","Page7ToolResults-ClickBack","WT.si_n","","WT.si_x",""]});'/>
+        </div>
+    </div>
+</section>

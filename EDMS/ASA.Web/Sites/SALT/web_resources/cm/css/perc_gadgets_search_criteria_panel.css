@@ -1,0 +1,57 @@
+#perc-search-criteria-panel-content
+{
+    font-family: Verdana;
+    font-size: 11px;
+}
+#perc-search-criteria-panel-content-header
+{
+    height:20px;
+    padding-bottom:10px;
+}
+#perc-search-criteria-panel-content-select-filters, #perc-search-criteria-panel-content-refresh-search
+{
+    margin-left:7px;
+    float:right;
+    cursor: pointer;
+    color: #0099CC;
+    font-family: Verdana;
+    font-size: 11px;
+}
+#perc-search-criteria-panel-content-refresh-search
+{
+    background:url("../images/images/blueButtonRefresh.png") no-repeat scroll right center transparent;
+    height:22px;
+    width:66px;
+    margin-top: -4px;
+}
+
+#perc-search-criteria-panel-content-refresh-search:hover
+{
+    background:url("../images/images/blueButtonRefreshOver.png") no-repeat scroll right center transparent;
+}
+
+#perc-search-criteria-panel-content-refresh-search.perc-disabled
+{
+    background:url("../images/images/blueButtonRefreshDisabled.png") no-repeat scroll right center transparent;
+}
+
+#perc-search-criteria-panel-content-fields
+{
+    border:1px solid #777777;
+    background-color: #E6E6E9;
+    padding:5px;
+    color: #000;
+    font-family: Verdana;
+    font-size: 11px;    
+}
+.perc-search-criteria-panel-content-spans, .perc-search-criteria-panel-values-spans
+{
+    font-family: Verdana;
+    font-size: 11px;    
+}
+#perc-search-criteria-panel-content-fields #perc-search-criteria-panel-filters
+{
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 11px;        
+}

@@ -1,0 +1,81 @@
+﻿<#@ template debug="true" hostSpecific="true" #>
+<#@ output extension=".generated.cs" #>
+<#@ Assembly Name="System.Data" #>
+<#@ assembly name="System.Configuration" #>
+<#@ import namespace="System.Data" #>
+<#@ import namespace="System.Data.SqlClient" #>
+<#@ import namespace="System.Configuration" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Text.RegularExpressions" #>
+<#@ include file="EF.Utility.CS.ttinclude"#>
+using System;
+using System.CodeDom.Compiler;
+
+namespace <#= GetSubNamespace() #>
+{
+	public class LessonSteps
+	{
+	<#
+		string path = "";
+		var buildConfig = Path.Combine(Host.ResolvePath(@"..\"), "App.config");
+		var config = ConfigurationManager.OpenMappedExeConfiguration(new ExeConfigurationFileMap { ExeConfigFilename = buildConfig }, ConfigurationUserLevel.None);
+		var connectionString = config.ConnectionStrings.ConnectionStrings["SALTEntities"].ConnectionString;
+
+		var sqlConnection = new SqlConnection(connectionString);
+		var lessonsSql= string.Format("select LessonID,LessonName from Lesson");
+		var lessonsCommand = new SqlCommand(lessonsSql, sqlConnection);
+
+		sqlConnection.Open();
+
+		var lessonsSqlReader = lessonsCommand.ExecuteReader();
+
+		while (lessonsSqlReader.Read()){
+	#>
+
+
+
+		/// <summary>
+		/// LessonQuestionAttributes auto generated constants
+		/// </summary>
+		[GeneratedCode("TextTemplatingFileGenerator", "11")]
+		public class Lesson<#= Pascalize(lessonsSqlReader["LessonID"]) #>
+		{
+		<#
+			var lessonQuestionConnection = new SqlConnection(connectionString);
+			var lessonQuestionSql = "SELECT LessonStepName, LessonStepID FROM LessonStep WHERE LessonID =" +  lessonsSqlReader["LessonID"] ;
+
+			var lessonQuestionCommand = new SqlCommand(lessonQuestionSql, lessonQuestionConnection);
+
+			lessonQuestionConnection.Open();
+
+			var lessonStepReader = lessonQuestionCommand.ExecuteReader();
+			bool loop = lessonStepReader.Read();
+
+			while(loop)
+			{
+		
+					#>
+			     
+
+				public const int <#= Pascalize(lessonStepReader["LessonStepName"]) #> = <#= lessonStepReader["LessonStepId"] #><# loop = lessonStepReader.Read(); #><#= loop ? ";\r\n" : ";" #>
+			
+			
+		<#}#>
+		
+	  }
+	<#}#>
+}
+}
+<#+
+    private string Pascalize(object value)
+    {
+        Regex rx = new Regex(@"(?:[^a-zA-Z0-9]*)(?<first>[a-zA-Z0-9])(?<reminder>[a-zA-Z0-9]*)(?:[^a-zA-Z0-9]*)");
+        return rx.Replace(value.ToString(), m => m.Groups["first"].ToString().ToUpper() + m.Groups["reminder"].ToString().ToLower());
+    }
+
+    private string GetSubNamespace()
+    {
+        CodeGenerationTools code = new CodeGenerationTools(this){FullyQualifySystemTypes = true, CamelCaseFields = false};
+		return code.VsNamespaceSuggestion();
+    }
+#>

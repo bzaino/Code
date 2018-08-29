@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="user_goal_landing small-12 columns">
+        {^noBannerTreatment}
+            {>"LandingPage/dynamic_banner" bannerData=secondaryContent[0].records[0] /}
+            <!-- User Goal Options -->
+            <div class="user-goal-option show-for-medium-up padding-top">
+                <div class="user-goals-blocks">
+                    {>"LandingPage/user-goals-cta" /}
+                </div>
+            </div>
+        {/noBannerTreatment}
+        {?showContentTypeInHeader}
+            <div class="page-title">
+                <h2>{selectedContentType}</h2>
+            </div>
+        {/showContentTypeInHeader}
+        <div id="filterContent">
+            {@if cond="'{name}' !== 'AuthHome' && '{name}' !== 'Personalized'"}
+                <ul class="user-goal-topics bordered">
+                    {#tagsForGoal}
+                    <li><a href="" class="tag-tray-link {@tagSelectedCheck tag=. /}" tabindex="2">{.}</a></li><li class="separator">&dot;</li>
+                    {/tagsForGoal}
+                </ul>
+            {/if}
+            <div class="padding-top">
+                {>"SortControlBar" /}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="articles-container row">
+    <div class="js-home-tiles padding-top flex-container">
+        {> "tiles" /}
+    </div>
+</div>

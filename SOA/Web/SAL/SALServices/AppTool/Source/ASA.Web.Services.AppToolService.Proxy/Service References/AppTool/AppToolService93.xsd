@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://asa.org/contracts/apptool" elementFormDefault="qualified" targetNamespace="http://asa.org/contracts/apptool" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="ApplicationToolType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SRC" />
+      <xs:enumeration value="GRC" />
+      <xs:enumeration value="IRC" />
+      <xs:enumeration value="DFC" />
+      <xs:enumeration value="FBC" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ApplicationToolType" nillable="true" type="tns:ApplicationToolType" />
+  <xs:complexType name="ArrayOfAppToolCanonicalType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AppToolCanonicalType" nillable="true" type="tns:AppToolCanonicalType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAppToolCanonicalType" nillable="true" type="tns:ArrayOfAppToolCanonicalType" />
+  <xs:complexType name="AppToolCanonicalType">
+    <xs:sequence>
+      <xs:element name="AppToolTier1" nillable="true" type="tns:AppToolTier1Type">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="AppToolTier2" nillable="true" type="tns:AppToolTier2Type">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="AppToolTier3" nillable="true" type="tns:AppToolTier3Type">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AppToolCanonicalType" nillable="true" type="tns:AppToolCanonicalType" />
+  <xs:complexType name="AppToolTier1Type">
+    <xs:sequence>
+      <xs:element name="PersonId" type="xs:int" />
+      <xs:element name="CustomerId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AppToolTier1Type" nillable="true" type="tns:AppToolTier1Type" />
+  <xs:complexType name="AppToolTier2Type">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AppToolInfoType" nillable="true" type="tns:AppToolTier2Type.AppToolInfoTypeType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AppToolTier2Type" nillable="true" type="tns:AppToolTier2Type" />
+  <xs:complexType name="AppToolTier2Type.AppToolInfoTypeType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AppToolPersonId" type="xs:int" />
+      <xs:element name="AppToolType" type="tns:ApplicationToolType" />
+      <xs:element minOccurs="0" name="PrincipalAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="InterestRate" type="xs:double" />
+      <xs:element minOccurs="0" name="NumberOfPayments" type="xs:int" />
+      <xs:element minOccurs="0" name="MonthlyIncome" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NumberOfMonthsInForbearance" type="xs:int" />
+      <xs:element minOccurs="0" name="ForbearancePaymentAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NumberOfForbearancePayments" type="xs:int" />
+      <xs:element minOccurs="0" name="BalanceAtStartDeferment" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NumberOfMonthsInDeferment" type="xs:int" />
+      <xs:element minOccurs="0" name="RecordVersion" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AppToolTier2Type.AppToolInfoTypeType" nillable="true" type="tns:AppToolTier2Type.AppToolInfoTypeType" />
+  <xs:complexType name="AppToolTier3Type">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="AppToolTier3Type" nillable="true" type="tns:AppToolTier3Type" />
+</xs:schema>

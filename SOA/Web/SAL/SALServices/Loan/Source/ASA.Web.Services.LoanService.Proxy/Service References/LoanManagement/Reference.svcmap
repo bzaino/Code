@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="69c2c1ec-6972-4e18-b3f1-52c81a481cd6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://adevweb023.amsa.com/LoanManagementService/LoanManagementService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LoanManagementService918.xsd" MetadataType="Schema" ID="943d6d3d-2cf3-46cb-b642-844b7cc2cc26" SourceId="1" SourceUrl="http://adevweb023.amsa.com/LoanManagementService/LoanManagementService.svc?xsd=xsd7" />
+    <MetadataFile FileName="LoanManagementService919.xsd" MetadataType="Schema" ID="33237dd6-b8a9-4e12-85d1-718e761221e2" SourceId="1" SourceUrl="http://adevweb023.amsa.com/LoanManagementService/LoanManagementService.svc?xsd=xsd8" />
+    <MetadataFile FileName="LoanManagementService920.xsd" MetadataType="Schema" ID="98ca39c7-4094-413b-aa23-b69df1f2d844" SourceId="1" SourceUrl="http://adevweb023.amsa.com/LoanManagementService/LoanManagementService.svc?xsd=xsd0" />
+    <MetadataFile FileName="LoanManagementService3.wsdl" MetadataType="Wsdl" ID="bdb60862-a88b-4f8c-a343-f4d098991f55" SourceId="1" SourceUrl="http://adevweb023.amsa.com/LoanManagementService/LoanManagementService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="LoanManagementService921.xsd" MetadataType="Schema" ID="c1299ced-d27f-4051-ae64-bd6bdc628718" SourceId="1" SourceUrl="http://adevweb023.amsa.com/LoanManagementService/LoanManagementService.svc?xsd=xsd6" />
+    <MetadataFile FileName="LoanManagementService922.xsd" MetadataType="Schema" ID="88693ba1-1209-433b-b6f2-ede7d6fd7466" SourceId="1" SourceUrl="http://adevweb023.amsa.com/LoanManagementService/LoanManagementService.svc?xsd=xsd1" />
+    <MetadataFile FileName="LoanManagement12.wsdl" MetadataType="Wsdl" ID="515828f5-14f2-4f09-bf6b-5cd965ada940" SourceId="1" SourceUrl="http://adevweb023.amsa.com/LoanManagementService/LoanManagementService.svc?wsdl" />
+    <MetadataFile FileName="LoanManagementService923.xsd" MetadataType="Schema" ID="980d6929-5822-441b-b507-cc0b103c9781" SourceId="1" SourceUrl="http://adevweb023.amsa.com/LoanManagementService/LoanManagementService.svc?xsd=xsd4" />
+    <MetadataFile FileName="LoanManagementService924.xsd" MetadataType="Schema" ID="646b7c96-3c66-4ba9-bb7f-e8fd031127d3" SourceId="1" SourceUrl="http://adevweb023.amsa.com/LoanManagementService/LoanManagementService.svc?xsd=xsd2" />
+    <MetadataFile FileName="LoanManagementService925.xsd" MetadataType="Schema" ID="78fa9ad5-0471-408d-a0da-f80954346554" SourceId="1" SourceUrl="http://adevweb023.amsa.com/LoanManagementService/LoanManagementService.svc?xsd=xsd5" />
+    <MetadataFile FileName="LoanManagementService926.xsd" MetadataType="Schema" ID="b65cdf72-bfbe-43ac-b893-6324eb620e87" SourceId="1" SourceUrl="http://adevweb023.amsa.com/LoanManagementService/LoanManagementService.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

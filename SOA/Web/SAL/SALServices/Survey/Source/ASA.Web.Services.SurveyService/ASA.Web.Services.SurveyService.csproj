@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2EBADBE5-4D6F-470D-B260-23AB938C17E8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ASA.Web.Services.SurveyService</RootNamespace>
+    <AssemblyName>ASA.Web.Services.SurveyService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\Bin\Web\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\..\Bin\Web\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <Choose>
+    <When Condition="'$(Configuration)' == 'Release'">
+      <ItemGroup>
+        <Reference Include="ASA.Log.ServiceLogger">
+          <SpecificVersion>False</SpecificVersion>
+          <HintPath>..\..\..\..\..\..\Bin\InternalComponents\Release\ASA.Log.ServiceLogger.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="ASA.Log.ServiceLogger">
+          <SpecificVersion>False</SpecificVersion>
+          <HintPath>..\..\..\..\..\..\Bin\InternalComponents\Debug\ASA.Log.ServiceLogger.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\3rdParty\Bin\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net">
+      <HintPath>..\..\..\..\..\..\..\3rdParty\Bin\Common.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\..\..\..\..\3rdParty\Bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataContracts\CostOfLivingModels.cs" />
+    <Compile Include="DataContracts\JellyVisionQuizResponseModel.cs" />
+    <Compile Include="DataContracts\JSIQuizListModel.cs" />
+    <Compile Include="DataContracts\JSIQuizModel.cs" />
+    <Compile Include="DataContracts\VLCQuestionModel.cs" />
+    <Compile Include="DataContracts\VLCQuestionResponseModel.cs" />
+    <Compile Include="Exceptions\SurveyBadDataException.cs" />
+    <Compile Include="Exceptions\SurveyMappingException.cs" />
+    <Compile Include="Exceptions\SurveyOperationException.cs" />
+    <Compile Include="TranslateSurveyModel.cs" />
+    <Compile Include="DataContracts\SurveyListModel.cs" />
+    <Compile Include="DataContracts\SurveyModel.cs" />
+    <Compile Include="Survey.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SurveyAdapter.cs" />
+    <Compile Include="ServiceContracts\ISurvey.cs" />
+    <Compile Include="ServiceContracts\ISurveyAdapter.cs" />
+    <Compile Include="Validation\JellyVisionQuizResponseValidation.cs" />
+    <Compile Include="Validation\SurveyValidation.cs" />
+    <Compile Include="Validation\VLCQuestionResponseValidation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\..\EDMS\ASA.Web\Collections\ASA.Web.Collections.csproj">
+      <Project>{1C130373-1360-4D29-B924-2C465E00C4C0}</Project>
+      <Name>ASA.Web.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\..\EDMS\ASA.Web\Common\ASA.Web.Common.csproj">
+      <Project>{78A826B1-E5DB-4E4C-ACB9-2039272EFE9B}</Project>
+      <Name>ASA.Web.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\..\EDMS\ASA.Web\WTF\Integration\ASA.Web.WTF.Integration.csproj">
+      <Project>{B63E76A8-E705-4A19-95AC-4E30AAF289BA}</Project>
+      <Name>ASA.Web.WTF.Integration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\..\EDMS\ASA.Web\WTF\_root\ASA.Web.WTF.csproj">
+      <Project>{DC669184-0A6D-4EF7-B225-07A4F5C841A9}</Project>
+      <Name>ASA.Web.WTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Common\Source\ASA.Web.Services.Common\ASA.Web.Services.Common.csproj">
+      <Project>{C3BED31D-9AFF-4FDE-A672-3806F28596FE}</Project>
+      <Name>ASA.Web.Services.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Common\Source\ASA.Web.Services.Proxies\ASA.Web.Services.Proxies.csproj">
+      <Project>{AE7B93ED-B4D2-456D-B8E3-4A0984B77461}</Project>
+      <Name>ASA.Web.Services.Proxies</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Membership\Source\ASA.Web.Services.ASAMemberService\ASA.Web.Services.ASAMemberService.csproj">
+      <Project>{4B9960C0-CA04-46CF-9DEA-55F9FE8C4F02}</Project>
+      <Name>ASA.Web.Services.ASAMemberService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

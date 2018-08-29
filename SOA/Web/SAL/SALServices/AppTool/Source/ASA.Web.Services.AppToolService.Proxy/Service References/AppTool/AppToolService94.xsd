@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://asa.org/servicecontract/apptool/v1.0" elementFormDefault="qualified" targetNamespace="http://asa.org/servicecontract/apptool/v1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?xsd=xsd2" namespace="http://asa.org/contracts/apptoolServiceCriteria" />
+  <xs:import schemaLocation="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?xsd=xsd4" namespace="http://asa.org/contracts/apptool" />
+  <xs:import schemaLocation="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?xsd=xsd7" namespace="http://amsa.com/contract/ASA.Common.ResponseMessage/v1.0" />
+  <xs:element name="GetAppToolRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://asa.org/contracts/apptoolServiceCriteria" minOccurs="0" name="Criteria" nillable="true" type="q1:AppToolServiceCriteriaType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppToolResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://asa.org/contracts/apptool" minOccurs="0" name="AppToolCanonicalList" nillable="true" type="q2:ArrayOfAppToolCanonicalType" />
+        <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+        <xs:element xmlns:q3="http://amsa.com/contract/ASA.Common.ResponseMessage/v1.0" minOccurs="0" name="ResponseMessageList" nillable="true" type="q3:ResponseMessageList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveAppToolRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://asa.org/contracts/apptool" minOccurs="0" name="AppToolCanonical" nillable="true" type="q4:AppToolCanonicalType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveAppToolResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://asa.org/contracts/apptool" minOccurs="0" name="AppToolCanonical" nillable="true" type="q5:AppToolCanonicalType" />
+        <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+        <xs:element xmlns:q6="http://amsa.com/contract/ASA.Common.ResponseMessage/v1.0" minOccurs="0" name="ResponseMessageList" nillable="true" type="q6:ResponseMessageList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

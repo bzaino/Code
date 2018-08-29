@@ -1,0 +1,1760 @@
+/* line 11, global-old.css.sass */
+body, html {
+  height: 100%;
+}
+
+/* Layout styles */
+/* line 14, global-old.css.sass */
+#header {
+  width: 100%;
+  background: #272525;
+  position: fixed;
+  z-index: 10000;
+  border-bottom: 1px solid #d6d6d6;
+}
+/* line 20, global-old.css.sass */
+#header .bottom.shadow {
+  width: 65.9%;
+  height: 4px;
+  background: url(/Assets/images/lessons/lesson2/curriculum/curriculum-shadow.png) repeat;
+  position: absolute;
+  bottom: -5px;
+}
+/* line 26, global-old.css.sass */
+#header #header-progress {
+  background: white;
+  width: 100%;
+}
+/* line 29, global-old.css.sass */
+#header #header-progress .progress {
+  background: #0fe278;
+  width: 0%;
+  height: 8px;
+}
+/* line 33, global-old.css.sass */
+#header #header-content {
+  margin: 0 auto;
+  padding: 0;
+  min-width: 1000px;
+  height: 50px;
+  position: relative;
+}
+/* line 39, global-old.css.sass */
+#header #header-content .header {
+  position: absolute;
+}
+/* line 41, global-old.css.sass */
+#header #header-content #header-left {
+  left: 5.3%;
+}
+/* line 43, global-old.css.sass */
+#header #header-content #header-left #logo {
+  float: left;
+  width: 63px;
+  height: 26px;
+  margin: 12px 0 0;
+  background: url(/Assets/images/lessons/lesson2/curriculum/salt-logo.gif) no-repeat;
+}
+/* line 49, global-old.css.sass */
+#header #header-content #header-left #logo a {
+  text-indent: -3000px;
+  display: block;
+}
+/* line 52, global-old.css.sass */
+#header #header-content #header-left .user-info {
+  float: left;
+  border-left: 1px solid #4d4b4b;
+  margin-left: 20px;
+  padding: 13px 0px 0px 20px;
+  height: 37px;
+}
+/* line 58, global-old.css.sass */
+#header #header-content #header-left .user-info img {
+  width: 24px;
+  height: 24px;
+  border: 1px solid white;
+  float: left;
+}
+/* line 63, global-old.css.sass */
+#header #header-content #header-left .user-info .name {
+  float: left;
+  margin-left: 8px;
+  color: white;
+  font-size: 13px;
+  padding-top: 8px;
+}
+/* line 69, global-old.css.sass */
+#header #header-content #header-center {
+  width: 300px;
+  color: white;
+  margin: 0 auto;
+  padding: 6px 0 0 13px;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  margin-left: -115px;
+}
+/* line 80, global-old.css.sass */
+#header #header-content #header-center .step {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "FoundersGroteskCond-SmBd", sans-serif;
+  font-weight: lighter;
+}
+/* line 85, global-old.css.sass */
+#header #header-content #header-center .step.step1 {
+  margin-left: 17px;
+}
+/* line 87, global-old.css.sass */
+#header #header-content #header-center .of {
+  font-family: "Georgia", serif;
+  font-size: 13px;
+  font-style: italic;
+  padding: 3px;
+  position: relative;
+  top: -3px;
+}
+/* line 94, global-old.css.sass */
+#header #header-content #header-center .slash {
+  padding: 5px;
+  font-size: 18px;
+  font-family: "FoundersGroteskCond-Reg", sans-serif;
+  font-weight: lighter;
+}
+/* line 99, global-old.css.sass */
+#header #header-content #header-center .chapter {
+  font-size: 22px;
+  font-family: "FoundersGroteskCond-Reg", sans-serif;
+  font-weight: lighter;
+  padding-right: 13px;
+}
+/* line 104, global-old.css.sass */
+#header #header-content #header-center.hover, #header #header-content #header-center.active {
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1), 0 0 0 1px #cccccc;
+  -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1), 0 0 0 1px #cccccc;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1), 0 0 0 1px #cccccc;
+}
+/* line 109, global-old.css.sass */
+#header #header-content #header-center.hover .chapter, #header #header-content #header-center.active .chapter {
+  background: url("/Assets/images/lessons/lesson2/curriculum/curriculum-header-arrow-active.png") no-repeat right 7px;
+}
+/* line 111, global-old.css.sass */
+#header #header-content #header-center #header-dropdown {
+  display: none;
+  font-family: "FoundersGroteskCond-Reg", sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+}
+/* line 117, global-old.css.sass */
+#header #header-content #header-center #header-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 9px 0 0;
+}
+/* line 121, global-old.css.sass */
+#header #header-content #header-center #header-dropdown ul li {
+  padding: 13px 0 7px;
+  width: 233px;
+  line-height: 1em;
+  background: url("/Assets/images/lessons/lesson2/curriculum/bg-dropdown-dots.png") repeat-x bottom;
+  position: relative;
+}
+/* line 127, global-old.css.sass */
+#header #header-content #header-center #header-dropdown ul li:last-child {
+  background: none;
+}
+/* line 129, global-old.css.sass */
+#header #header-content #header-center #header-dropdown ul li a {
+  display: block;
+  zoom: 1;
+  color: #8c8989;
+}
+/* line 133, global-old.css.sass */
+#header #header-content #header-center #header-dropdown ul li a span {
+  display: block;
+  float: left;
+}
+/* line 136, global-old.css.sass */
+#header #header-content #header-center #header-dropdown ul li a span.number {
+  font-family: "FoundersGroteskCond-SmBd", sans-serif;
+  font-weight: lighter;
+  width: 22px;
+  text-align: center;
+  margin-right: 12px;
+}
+/* line 142, global-old.css.sass */
+#header #header-content #header-center #header-dropdown ul li a:before, #header #header-content #header-center #header-dropdown ul li a:after {
+  content: "";
+  display: table;
+}
+/* line 146, global-old.css.sass */
+#header #header-content #header-center #header-dropdown ul li a:after {
+  clear: both;
+}
+/* line 148, global-old.css.sass */
+#header #header-content #header-center #header-dropdown ul li a:hover {
+  color: #272525;
+}
+/* line 151, global-old.css.sass */
+#header #header-content #header-center #header-dropdown ul li.current a {
+  color: #272525;
+}
+/* line 153, global-old.css.sass */
+#header #header-content #header-center #header-dropdown ul li.current .indicator {
+  background: url("/Assets/images/lessons/lesson2/curriculum/bg-indicator.png") no-repeat 0 0;
+  width: 85px;
+  height: 21px;
+  color: #005b27;
+  font: normal 11px/21px Arial, Helvetica, sans-serif;
+  padding: 0 4px;
+  text-transform: uppercase;
+  position: absolute;
+  left: -63px;
+  top: 10px;
+  cursor: default;
+}
+/* line 166, global-old.css.sass */
+#header #header-content #header-center #header-dropdown ul li.completed a {
+  color: black;
+  cursor: default;
+}
+/* line 169, global-old.css.sass */
+#header #header-content #header-center #header-dropdown ul li.completed a span.number {
+  background: url("/Assets/images/lessons/lesson2/curriculum/bg-completed.png") no-repeat 0 0;
+  height: 0;
+  padding-top: 17px;
+  overflow: hidden;
+  width: 17px;
+  margin-left: 5px;
+}
+/* line 177, global-old.css.sass */
+#header #header-content #header-center #header-dropdown ul li.ready a {
+  color: black;
+}
+/* line 179, global-old.css.sass */
+#header #header-content #header-right {
+  right: 5.3%;
+  top: 0;
+  padding-top: 14px;
+}
+/* line 183, global-old.css.sass */
+#header #header-content #header-right .save-and-exit {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  display: block;
+  height: 17px;
+  width: 67px;
+  padding: 4px 0 0 26px;
+  color: #8c8989;
+  font-size: 11px;
+  background: #3d3c3c url("/Assets/images/lessons/lesson2/curriculum/curriculum-save-and-exit.png") no-repeat 0 0;
+}
+/* line 192, global-old.css.sass */
+#header #header-content #header-right .save-and-exit:hover {
+  color: #ebe6e6;
+  background-position: 0 -21px;
+}
+
+/* line 195, global-old.css.sass */
+#container {
+  position: relative;
+  min-width: 1000px;
+  height: 100%;
+}
+/* line 199, global-old.css.sass */
+#container div.page-class {
+  height: 100%;
+  width: 100%;
+}
+/* line 202, global-old.css.sass */
+#container #main {
+  display: none;
+  margin: 0px auto;
+  /*padding-top: 68px*/ /*moving this padding to floated divs inside #main */
+  z-index: 1;
+  min-width: 1000px;
+}
+/* line 208, global-old.css.sass */
+#container #main #content-container {
+  left: 5.3%;
+  width: 60.6%;
+  position: absolute;
+  margin-bottom: 150px;
+  padding: 68px 0 98px;
+}
+/* line 214, global-old.css.sass */
+#container #main #content-container .content {
+  float: left;
+  width: 91.6%;
+}
+/* line 217, global-old.css.sass */
+#container #main #content-container .content h2 {
+  font: lighter 22px "FoundersGroteskCond-SmBd", Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 30px 0 0;
+  letter-spacing: 1px;
+}
+/* line 222, global-old.css.sass */
+#container #main #content-container .content .divider {
+  width: 22px;
+  height: 2px;
+  background: black;
+  margin: 18px auto 27px;
+}
+/* line 227, global-old.css.sass */
+#container #main #content-container .content .description {
+  font-family: "Georgia", serif;
+  font-size: 15px;
+  line-height: 22px;
+  color: #8c8989;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 34px;
+  padding-bottom: 49px;
+  border-bottom: 1px solid #d9d9d9;
+}
+/* line 238, global-old.css.sass */
+#container #main #content-container .content .description p {
+  width: 560px;
+  margin: 0 auto;
+}
+/* line 241, global-old.css.sass */
+#container #main #content-container .content .question {
+  width: 97%;
+}
+/* line 243, global-old.css.sass */
+#container #main #content-container .content .question h1 {
+  font: lighter 45px/60px "FoundersGroteskCond-Reg", Arial, Helvetica, sans-serif;
+}
+/* line 245, global-old.css.sass */
+#container #main #content-container .content .question h1 span,
+#container #main #content-container .content .question h1 .dd-large {
+  /* float: left */
+}
+/* line 248, global-old.css.sass */
+#container #main #content-container .content .question h1 span {
+  margin: 0 10px 15px 0;
+  height: 43px;
+  padding: 2px 0;
+}
+/* line 252, global-old.css.sass */
+#container #main #content-container .content .question h1 span.dd-wrapper {
+  position: relative;
+  padding: 0;
+}
+/* line 255, global-old.css.sass */
+#container #main #content-container .content .question h1 span.dd-wrapper .dd-large {
+  position: absolute;
+}
+/* line 258, global-old.css.sass */
+#container #main #content-container .content .question form .box-wrapper {
+  margin-bottom: 18px;
+}
+/* line 260, global-old.css.sass */
+#container #main #content-container .content .question form .box-wrapper .cbox,
+#container #main #content-container .content .question form .box-wrapper input[type=checkbox] {
+  float: left;
+  margin-right: 17px;
+}
+/* line 264, global-old.css.sass */
+#container #main #content-container .content .question form .box-wrapper label.bold {
+  font-weight: bold;
+}
+/* line 266, global-old.css.sass */
+#container #main #content-container .content .question form .box-wrapper label {
+  float: left;
+}
+/* line 269, global-old.css.sass */
+#container #main #content-container .content .question form .box-wrapper .tip .details {
+  position: absolute;
+  top: -35px;
+  right: 0;
+  display: none;
+}
+/* line 274, global-old.css.sass */
+#container #main #content-container .content .question form .box-wrapper .tip .details input {
+  float: left;
+}
+/* line 276, global-old.css.sass */
+#container #main #content-container .content .question form .box-wrapper .tip .details .dd {
+  float: left;
+}
+/* line 278, global-old.css.sass */
+#container #main #content-container .content .question form .box-wrapper .tip .details span {
+  float: left;
+  color: #f0f0f0;
+  font-size: 23px;
+  margin: 0 5px;
+}
+/* line 283, global-old.css.sass */
+#container #main #content-container .content .question form .box-wrapper .tip.none {
+  border: 0;
+  height: 0;
+  margin: 0;
+}
+/* line 287, global-old.css.sass */
+#container #main #content-container .content .question form .box-wrapper .tip.none .wing {
+  display: none;
+}
+/* line 289, global-old.css.sass */
+#container #main #content-container .content .question form .box-wrapper .tip.none .details {
+  top: -26px;
+}
+/* line 291, global-old.css.sass */
+#container #main #content-container #footer {
+  display: none !important;
+  width: 55.5%;
+  background: white;
+  border-top: 1px solid #d9d9d9;
+  height: 70px;
+  padding-top: 18px;
+  position: fixed;
+  bottom: 0px;
+  z-index: 10;
+}
+/* line 301, global-old.css.sass */
+#container #main #content-container #footer .top.shadow {
+  height: 4px;
+  background: url(/Assets/images/lessons/lesson2/curriculum/curriculum-shadow.png) repeat;
+  position: absolute;
+  top: -5px;
+  width: 100%;
+}
+/* line 307, global-old.css.sass */
+#container #main #content-container #footer .left {
+  float: left;
+  width: 35%;
+}
+/* line 311, global-old.css.sass */
+#container #main #content-container #footer .left #total .value {
+  font-family: "FoundersGroteskCond-SmBd", sans-serif;
+  font-size: 22px;
+  font-weight: lighter;
+  color: black;
+  display: inline;
+  padding: 10px 4px 0px 4px;
+}
+/* line 318, global-old.css.sass */
+#container #main #content-container #footer .left #total .value.negative {
+  color: #ff0099;
+}
+/* line 320, global-old.css.sass */
+#container #main #content-container #footer .left #total .value.positive {
+  color: #0fe278;
+}
+/* line 322, global-old.css.sass */
+#container #main #content-container #footer .left #total .value-message {
+  display: inline;
+  font-family: "FoundersGroteskCond-reg", sans-serif;
+  font-weight: lighter;
+  font-size: 22px;
+}
+/* line 327, global-old.css.sass */
+#container #main #content-container #footer .left #up-next {
+  font-size: 12px;
+}
+/* line 329, global-old.css.sass */
+#container #main #content-container #footer .left #up-next .first {
+  display: inline;
+  font-weight: bold;
+}
+/* line 332, global-old.css.sass */
+#container #main #content-container #footer .left #up-next .second {
+  display: inline;
+  color: #8c8989;
+}
+/* line 335, global-old.css.sass */
+#container #main #content-container #footer .right {
+  float: right;
+  height: 47px;
+  position: relative;
+  width: 64%;
+}
+/* line 340, global-old.css.sass */
+#container #main #content-container #footer .right .error-msg {
+  color: #5d0e40;
+  font-weight: bold;
+  background-color: #ffe5f5;
+  position: absolute;
+  z-index: 500;
+  top: -32px;
+  right: -37px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  padding: 6px 10px 5px;
+  height: 13px;
+  display: none;
+}
+/* line 352, global-old.css.sass */
+#container #main #content-container #footer .right .error-msg:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #ffe5f5;
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  margin-left: -6px;
+}
+/* line 364, global-old.css.sass */
+#container #main #content-container #footer .right .button-wrapper {
+  position: absolute;
+  right: 0;
+  width: 181px;
+}
+/* line 368, global-old.css.sass */
+#container #main #content-container #footer .right .button-wrapper .left-button {
+  float: left;
+  border: 1px solid #cccccc;
+  background: #fafafa url(/Assets/images/lessons/lesson2/curriculum/curriculum-prev-btn-bg.png) no-repeat center center;
+  width: 42px;
+  height: 32px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  margin-right: 9px;
+}
+/* line 376, global-old.css.sass */
+#container #main #content-container #footer .right .button-wrapper .left-button:hover {
+  background: #f0f0f0 url(/Assets/images/lessons/lesson2/curriculum/curriculum-prev-btn-bg.png) no-repeat center center;
+}
+/* line 378, global-old.css.sass */
+#container #main #content-container #footer .right .button-wrapper .right-button {
+  float: left;
+  color: #595757;
+  border: 1px solid #cccccc;
+  background: #fafafa url(/Assets/images/lessons/lesson2/curriculum/curriculum-next-btn-bg.png) no-repeat 90% center;
+  height: 11px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px 40px 11px 15px;
+  text-transform: uppercase;
+  font-family: "FoundersGroteskCond-SmBd", sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+}
+/* line 390, global-old.css.sass */
+#container #main #content-container #footer .right .button-wrapper .right-button:hover {
+  background: #f0f0f0 url(/Assets/images/lessons/lesson2/curriculum/curriculum-next-btn-bg.png) no-repeat 90% center;
+}
+/* line 392, global-old.css.sass */
+#container #main #content-left {
+  border-left: 1px solid #d6d6d6;
+  height: 100%;
+  min-width: 0%;
+  padding: 68px 0 0 0;
+  position: fixed;
+  left: 0;
+  overflow: scroll;
+  background: #f0f0f0;
+}
+/* line 401, global-old.css.sass */
+#container #main #content-left .content {
+  float: right;
+  width: 69.5%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 19px;
+}
+/* line 407, global-old.css.sass */
+#container #main #content-left .content .reset-changes {
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline;
+  position: relative;
+  padding-bottom: 68px;
+}
+/* line 414, global-old.css.sass */
+#container #main #content-left .content .reset-changes p {
+  display: inline;
+  color: #00a3cc;
+  background: url(/Assets/images/lessons/lesson2/curriculum/icon-restore-cashflow.png) no-repeat right 4px;
+  padding-top: 1px;
+  padding-right: 14px;
+}
+/* line 420, global-old.css.sass */
+#container #main #content-left .content .section {
+  padding: 40px 30% 40px 0;
+  border-bottom: 1px solid #d6d6d6;
+}
+/* line 423, global-old.css.sass */
+#container #main #content-left .content .section.last {
+  border-bottom: none;
+}
+/* line 425, global-old.css.sass */
+#container #main #content-left .content .section h3 {
+  font: lighter 24px "FoundersGroteskCond-SmBd", sans-serif;
+  margin: 0 0 20px;
+}
+/* line 428, global-old.css.sass */
+#container #main #content-left .content .section p {
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 1em;
+  margin-top: 0px;
+}
+/* line 433, global-old.css.sass */
+#container #main #content-left .content .section .cbox {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+/* line 437, global-old.css.sass */
+#container #main #content-left .content .section input[type="text"] {
+  background: #fafafa;
+  border: 1px solid #cccccc;
+}
+/* line 440, global-old.css.sass */
+#container #main #content-left .content .section input.big {
+  margin: 4px 0 0 0;
+  width: 190px;
+}
+/* line 443, global-old.css.sass */
+#container #main #content-left .content .section label {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 0 0 5px;
+}
+/* line 447, global-old.css.sass */
+#container #main #content-left .content .section .button-expenses {
+  background-color: white;
+  border: 1px solid #cccccc;
+  color: #00a3cc;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 3px 17px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 461, global-old.css.sass */
+#container #main #content-left .content .section .hidden-modifiers {
+  display: none;
+  margin: 10px 0 0 0;
+}
+/* line 464, global-old.css.sass */
+#container #main #content-left .content .section .hidden-modifiers span {
+  font-weight: bold;
+}
+/* line 467, global-old.css.sass */
+#container #main #content-left .content h4 {
+  font: lighter 19px "FoundersGroteskCond-Reg", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 40px 0 17px;
+}
+/* line 472, global-old.css.sass */
+#container #main #content-visual {
+  border-left: 1px solid #d6d6d6;
+  height: 100%;
+  min-width: 34%;
+  position: fixed;
+  right: 0;
+  background: #f0f0f0;
+  padding-top: 57px;
+}
+/* line 480, global-old.css.sass */
+#container #main #content-visual .content {
+  margin: 0px auto;
+  width: 298px;
+  height: 100%;
+}
+/* line 484, global-old.css.sass */
+#container #main #content-visual .content h4 {
+  font: lighter 19px "FoundersGroteskCond-Reg", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 40px 0 17px;
+}
+/* line 489, global-old.css.sass */
+#container #main #content-visual .content #vis {
+  width: 298px;
+  height: 71%;
+  margin: 0 auto;
+  background: url("/Assets/images/lessons/lesson2/curriculum/vis-grid-bg.png") repeat;
+  position: relative;
+  top: 0;
+  border-bottom: 1px solid #dcdbdb;
+}
+/* line 497, global-old.css.sass */
+#container #main #content-visual .content #vis #bars {
+  width: 214px;
+  height: 72%;
+  position: absolute;
+  bottom: 0;
+  left: 45px;
+}
+/* line 503, global-old.css.sass */
+#container #main #content-visual .content #vis #bars #income {
+  overflow: visible !important;
+  z-index: 3;
+  width: 117px;
+  height: 4%;
+  background: #00df6f;
+  position: absolute;
+  bottom: 0px;
+}
+/* line 511, global-old.css.sass */
+#container #main #content-visual .content #vis #bars #income .top {
+  position: absolute;
+  top: -28px;
+  width: 117px;
+  height: 28px;
+  background: url("/Assets/images/lessons/lesson2/curriculum/curriculum-bar-income.png") no-repeat;
+}
+/* line 517, global-old.css.sass */
+#container #main #content-visual .content #vis #bars #expenses {
+  overflow: visible !important;
+  z-index: 3;
+  width: 117px;
+  height: 4%;
+  background: #ed1890;
+  position: absolute;
+  bottom: 0;
+  left: 97px;
+}
+/* line 526, global-old.css.sass */
+#container #main #content-visual .content #vis #bars #expenses .top {
+  position: absolute;
+  top: -28px;
+  width: 117px;
+  height: 28px;
+  background: url("/Assets/images/lessons/lesson2/curriculum/curriculum-bar-expenses.png") no-repeat;
+}
+/* line 532, global-old.css.sass */
+#container #main #content-visual .content #stats {
+  padding: 12px 0 0;
+  width: 158px;
+  margin: 0 auto;
+}
+/* line 540, global-old.css.sass */
+#container #main #content-visual .content #stats dl {
+  float: left;
+  width: 55px;
+  margin: 0;
+  padding: 0;
+}
+/* line 545, global-old.css.sass */
+#container #main #content-visual .content #stats dl dt {
+  text-align: center;
+  margin: 0;
+  padding: 4px 0 0;
+  height: 24px;
+  font-weight: lighter;
+  font-size: 24px;
+  font-family: "FoundersGroteskCond-SmBd", sans-serif;
+  color: #00df6f;
+}
+/* line 555, global-old.css.sass */
+#container #main #content-visual .content #stats dl dd {
+  text-align: center;
+  margin: 0;
+  padding: 0 0 3px;
+  font-size: 16px;
+  font-family: "FoundersGroteskCond-Reg", sans-serif;
+  font-weight: lighter;
+  color: black;
+}
+/* line 563, global-old.css.sass */
+#container #main #content-visual .content #stats dl.in {
+  padding-right: 25px;
+  margin-right: 22px;
+  border-right: 1px solid gainsboro;
+}
+/* line 567, global-old.css.sass */
+#container #main #content-visual .content #stats dl.in dt {
+  margin-left: -8px;
+  color: #00df6f;
+}
+/* line 570, global-old.css.sass */
+#container #main #content-visual .content #stats dl.out {
+  float: right;
+}
+/* line 572, global-old.css.sass */
+#container #main #content-visual .content #stats dl.out dt {
+  color: #ed1890;
+}
+
+/* Common Anchor/Button Styles */
+/* line 576, global-old.css.sass */
+a.read-more {
+  display: inline-block;
+  color: #272525;
+  font: bold 12px Arial, Helvetica, sans-serif;
+}
+/* line 580, global-old.css.sass */
+a.read-more:hover {
+  border-bottom: 1px solid #00a3cc;
+}
+/* line 582, global-old.css.sass */
+a.read-more span {
+  font-size: 14px;
+  color: #00a3cc;
+}
+
+/* line 586, global-old.css.sass */
+a.facebook {
+  width: 146px;
+  height: 32px;
+  background: url("/Assets/images/lessons/lesson2/global/bg-facebook-button.png") no-repeat;
+  padding: 0 0 0 46px;
+  color: white;
+  font: bold 12px/32px Arial, Helvetica, sans-serif;
+  display: block;
+}
+/* line 594, global-old.css.sass */
+a.facebook:hover {
+  cursor: pointer;
+  background-position: 0 -32px;
+}
+
+/* line 598, global-old.css.sass */
+a.add-another {
+  display: inline-block;
+  padding-left: 27px;
+  background: url("/Assets/images/lessons/lesson2/curriculum/btn-add.png") no-repeat 0 0;
+  font: normal 20px/27px "FoundersGroteskCond-Reg", Arial, Helvetica, sans-serif;
+  color: #272525;
+}
+
+/* line 605, global-old.css.sass */
+a.btn-remove {
+  display: block;
+  width: 20px;
+  height: 0;
+  padding-top: 19px;
+  overflow: hidden;
+  background: url("/Assets/images/lessons/lesson2/curriculum/btn-remove.png") no-repeat 0 0;
+  float: left;
+}
+
+/* line 614, global-old.css.sass */
+.cbox {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #8c8989;
+  background: #fafafa;
+  cursor: pointer;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 621, global-old.css.sass */
+.cbox.checked {
+  border: 1px solid #00994c;
+  background: #e5fff2 url(/Assets/images/lessons/lesson2/curriculum/checkbox-checked-bg.png) no-repeat center center;
+}
+
+/* line 624, global-old.css.sass */
+.cbox:focus {
+  outline: none;
+  border: 1px solid #272525;
+}
+
+/* line 627, global-old.css.sass */
+.cbox.checked:focus {
+  outline: none;
+  border: 1px solid #272525;
+}
+
+/* line 630, global-old.css.sass */
+.cbox.error {
+  border: 1px solid #ff0099;
+}
+
+/* line 632, global-old.css.sass */
+.cbox.partial-select {
+  border: 1px solid #00994c;
+  background: #e5fff2 url(/Assets/images/lessons/lesson2/curriculum/checkbox-partial-select-bg.png) no-repeat 2px 5px;
+}
+
+/* line 635, global-old.css.sass */
+.radio {
+  width: 14px;
+  height: 14px;
+  background: url("/Assets/images/lessons/lesson2/curriculum/radio-unchecked-bg.png") no-repeat;
+  cursor: pointer;
+}
+
+/* line 640, global-old.css.sass */
+.radio.checked {
+  background: url("/Assets/images/lessons/lesson2/curriculum/radio-checked-bg.png") no-repeat;
+}
+
+/* line 643, global-old.css.sass */
+input[type="text"] {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background: #f0f0f0;
+  color: black;
+  font-size: 14px;
+  border: 1px solid #f0f0f0;
+  width: 54px;
+  height: 19px;
+  padding-left: 5px;
+}
+/* line 652, global-old.css.sass */
+input[type="text"]:focus {
+  background: #fafafa;
+  border: 1px solid #cccccc;
+}
+/* line 655, global-old.css.sass */
+input[type="text"].error {
+  background-color: #ffe5f5;
+  border: 1px solid #ff0099;
+}
+
+/* placeholders */
+/* line 660, global-old.css.sass */
+::-webkit-input-placeholder {
+  color: #999696;
+}
+
+/* line 662, global-old.css.sass */
+input:-moz-placeholder {
+  color: #999696;
+}
+
+/* line 665, global-old.css.sass */
+input[type="text"].large {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background: #f0f0f0;
+  color: black;
+  font-size: 34px;
+  border: 1px solid #f0f0f0;
+  width: 268px;
+  height: 41px;
+  padding: 4px 0 0 5px;
+}
+/* line 674, global-old.css.sass */
+input[type="text"].large.value {
+  width: 137px;
+}
+/* line 676, global-old.css.sass */
+input[type="text"].large.time {
+  width: 60px;
+}
+/* line 678, global-old.css.sass */
+input[type="text"].large:focus, input[type="text"].large.focus {
+  background: #fafafa;
+  border: 1px solid #cccccc;
+  color: black !important;
+}
+/* line 683, global-old.css.sass */
+input[type="text"].large.error {
+  background: #fee5f7;
+  border: 1px solid #ff0099;
+}
+/* line 686, global-old.css.sass */
+input[type="text"].large.placeholder {
+  color: #999999;
+}
+
+/* Dropdown */
+/* line 689, global-old.css.sass */
+.dd:hover {
+  background: #fafafa;
+  border: 1px solid #cccccc;
+}
+
+/* line 692, global-old.css.sass */
+.dd {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #f0f0f0 !important;
+  background: #f0f0f0;
+  margin: 0px;
+  padding: 4px 0 2px;
+  float: left;
+  z-index: 1;
+  position: relative;
+}
+/* line 701, global-old.css.sass */
+.dd.active {
+  background: #fafafa;
+  border: 1px solid #cccccc;
+  z-index: 5;
+}
+/* line 705, global-old.css.sass */
+.dd dt {
+  background: none;
+  margin: 0;
+  padding-right: 5px;
+  padding-left: 9px;
+}
+/* line 710, global-old.css.sass */
+.dd dt a {
+  background: url(/Assets/images/lessons/lesson2/curriculum/curriculum-dropdown-arrow-sml.png) no-repeat right center;
+  padding-right: 27px;
+  color: black;
+  display: block;
+  width: auto;
+  height: 15px;
+  font-size: 12px;
+  outline: none;
+}
+/* line 719, global-old.css.sass */
+.dd dt a span {
+  display: none;
+}
+/* line 721, global-old.css.sass */
+.dd dd {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: block;
+}
+/* line 726, global-old.css.sass */
+.dd dd ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 731, global-old.css.sass */
+.dd dd ul li {
+  height: 18px;
+  margin-top: 5px;
+  padding: 5px 0 0 9px;
+}
+/* line 735, global-old.css.sass */
+.dd dd ul li:hover {
+  background: #faff00;
+}
+/* line 737, global-old.css.sass */
+.dd dd ul li a {
+  font-size: 12px;
+  color: black;
+  display: block;
+  height: 20px;
+}
+/* line 742, global-old.css.sass */
+.dd dd ul li span {
+  display: none;
+}
+
+/* Dropdown large */
+/* line 745, global-old.css.sass */
+.dd-large:hover {
+  background: #fafafa;
+  border: 1px solid #cccccc;
+}
+
+/* line 748, global-old.css.sass */
+.dd-large {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #f0f0f0;
+  background: #f0f0f0;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+  min-width: 131px;
+  float: left;
+}
+/* line 757, global-old.css.sass */
+.dd-large.active {
+  background: #fafafa;
+  border: 1px solid #cccccc;
+  z-index: 5;
+}
+/* line 761, global-old.css.sass */
+.dd-large dt {
+  margin: 0;
+}
+/* line 763, global-old.css.sass */
+.dd-large dt a {
+  background: url("/Assets/images/lessons/lesson2/curriculum/curriculum-dropdown-arrow-lrg.png") no-repeat right center;
+  padding: 1px 27px 1px 9px;
+  margin-right: 14px;
+  color: black;
+  display: block;
+  width: auto;
+  height: 45px;
+  font-size: 45px;
+  line-height: 60px;
+  outline: none;
+  text-decoration: none;
+}
+/* line 775, global-old.css.sass */
+.dd-large dt a span {
+  display: none;
+}
+/* line 777, global-old.css.sass */
+.dd-large dd {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+/* line 781, global-old.css.sass */
+.dd-large dd ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 786, global-old.css.sass */
+.dd-large dd ul li {
+  margin-top: 5px;
+}
+/* line 788, global-old.css.sass */
+.dd-large dd ul li:hover {
+  background: #faff00;
+}
+/* line 790, global-old.css.sass */
+.dd-large dd ul li a {
+  font-size: 45px;
+  color: black;
+  display: block;
+  height: 45px;
+  padding: 5px 9px;
+  text-decoration: none;
+}
+/* line 797, global-old.css.sass */
+.dd-large dd ul li span {
+  display: none;
+}
+
+/* restore graph button */
+/* line 801, global-old.css.sass */
+.restore-graph {
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+  display: inline;
+  position: relative;
+  top: -1px;
+  margin-left: 10px;
+}
+/* line 809, global-old.css.sass */
+.restore-graph p {
+  display: inline;
+  color: #00a3cc;
+  background: url(/Assets/images/lessons/lesson2/curriculum/icon-restore-cashflow.gif) no-repeat right 0px;
+  padding-top: 1px;
+  padding-right: 14px;
+}
+
+/* line 816, global-old.css.sass */
+#goalPageMessage {
+  display: inline;
+  font-size: 27px;
+  text-transform: none;
+}
+
+/* Colorbox Overlay */
+/* line 822, global-old.css.sass */
+#cboxOverlay {
+  background-image: url("/Assets/images/lessons/lesson2/curriculum/bg-colorbox-overlay.png");
+}
+
+/* line 824, global-old.css.sass */
+#cboxClose {
+  display: none !important;
+}
+
+/* local header */
+/* line 828, global-old.css.sass */
+.local-header {
+  width: 60.6%;
+  height: 108px;
+  position: fixed;
+  background: white;
+  z-index: 999;
+  top: 67px;
+  border-bottom: 1px solid #d9d9d9;
+}
+/* line 836, global-old.css.sass */
+.local-header .local-header-content {
+  width: 823px;
+  margin: 0px auto;
+  position: relative;
+}
+/* line 840, global-old.css.sass */
+.local-header .bottom {
+  background: url(/Assets/images/lessons/lesson2/curriculum/curriculum-shadow.png) repeat;
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+}
+/* line 845, global-old.css.sass */
+.local-header .bottom.active {
+  height: 4px;
+}
+
+/* line 849, global-old.css.sass */
+ul.suggestion-box {
+  margin: 40px 0 0 !important;
+  padding: 4px 0 0;
+  list-style: none;
+  font: lighter 45px/44px "FoundersGroteskCond-Reg", Arial, Helvetica, sans-serif;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  width: 308px;
+  background: #fafafa;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 24px;
+  z-index: 100;
+}
+/* line 863, global-old.css.sass */
+ul.suggestion-box li {
+  margin-top: 4px;
+}
+/* line 865, global-old.css.sass */
+ul.suggestion-box li.suggestion-box-top {
+  background: url("/Assets/images/lessons/lesson2/curriculum/autocomplete-top.png") no-repeat top center;
+  height: 16px;
+  margin-top: -20px;
+}
+/* line 869, global-old.css.sass */
+ul.suggestion-box li a {
+  color: #272525;
+  display: block;
+  cursor: pointer;
+  padding: 6px 0 0 11px;
+  height: 44px;
+}
+/* line 875, global-old.css.sass */
+ul.suggestion-box li a:hover {
+  background: #faff00;
+}
+
+/* moved .tips */
+/* line 879, global-old.css.sass */
+.tip {
+  font-size: 13px;
+  display: none;
+  padding: 0 9px;
+  width: 100%;
+  margin: 9px 0;
+  float: left;
+  background: #d9faea;
+  border: 1px solid #9ff3ca;
+  position: relative;
+  *zoom: 1;
+}
+/* line 890, global-old.css.sass */
+.tip:before, .tip:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 895, global-old.css.sass */
+.tip .wing {
+  position: absolute;
+  background: url(/Assets/images/lessons/lesson2/curriculum/curriculum-tip-wing.png) no-repeat;
+  height: 17px;
+  left: 29px;
+  top: -7px;
+  width: 11px;
+}
+/* line 902, global-old.css.sass */
+.tip p {
+  float: left;
+}
+/* line 904, global-old.css.sass */
+.tip .buttons {
+  float: right;
+  padding-top: 8px;
+}
+/* line 907, global-old.css.sass */
+.tip .buttons button {
+  color: #4b5a53;
+  font-weight: bold;
+  border: 1px solid #7dd2a8;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #e5fbef;
+  float: left;
+  margin-right: 3px;
+}
+/* line 918, global-old.css.sass */
+.tip.interim {
+  background-color: whitesmoke;
+  border: none;
+}
+/* line 923, global-old.css.sass */
+.tip.interim .buttons button#cc-cancel {
+  border: 1px solid transparent;
+  background: transparent;
+  color: #00a3cc;
+  font-weight: normal;
+}
+/* line 928, global-old.css.sass */
+.tip.interim .buttons button#cc-save {
+  border: 1px solid #cccccc;
+  background: #fafafa;
+  color: #00a3cc;
+}
+
+/* simple expenses padding */
+/* line 935, global-old.css.sass */
+#content-container .simple {
+  padding-bottom: 170px;
+}
+
+/* Windows Fix */
+/* line 942, global-old.css.sass */
+.windows .question h1 .dd-large {
+  margin-top: 8px !important;
+}
+/* line 945, global-old.css.sass */
+.windows .question h1 .dd-large dt a {
+  margin-top: -8px !important;
+  padding-bottom: 8px !important;
+}
+/* line 949, global-old.css.sass */
+.windows .question h1 span input {
+  margin-top: 8px !important;
+}
+/* line 952, global-old.css.sass */
+.windows #container #main #content-container #footer .right .button-wrapper .right-button {
+  padding: 5px 40px 16px 15px;
+}
+
+/* dropkick normal theme */
+/* line 960, global-old.css.sass */
+.dk_container {
+  background: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #272525;
+}
+/* line 966, global-old.css.sass */
+.dk_container:focus {
+  outline: 0px;
+  background: #fafafa;
+}
+/* line 969, global-old.css.sass */
+.dk_container a {
+  display: block;
+  line-height: 22px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* line 974, global-old.css.sass */
+.dk_container:hover {
+  background: #fafafa;
+}
+
+/* line 977, global-old.css.sass */
+.dk_toggle {
+  background: url(/Assets/images/lessons/lesson2/curriculum/curriculum-dropdown-arrow-sml.png) no-repeat 93% center;
+  color: #272525;
+  display: block;
+  padding: 0px 0px 0px 9px;
+  min-width: 80px;
+  height: 19px;
+  text-align: left;
+}
+
+/* line 986, global-old.css.sass */
+.dk_toggle:hover {
+  color: #272525;
+}
+
+/* line 989, global-old.css.sass */
+.dk_container .dk_label {
+  margin: 0px !important;
+  height: 19px !important;
+  padding: 0px !important;
+}
+
+/* line 993, global-old.css.sass */
+.dk_open {
+  z-index: 10;
+  background: #fafafa;
+}
+
+/* line 999, global-old.css.sass */
+.dk_options a {
+  line-height: normal;
+  display: block;
+  color: #272525;
+  text-align: left;
+  background-color: #fafafa;
+  padding-left: 9px;
+  padding-top: 5px;
+}
+/* line 1007, global-old.css.sass */
+.dk_options a:hover {
+  color: #272525;
+  background: #faff00;
+  text-decoration: none;
+}
+
+/* line 1012, global-old.css.sass */
+.dk_option_current a {
+  background: #faff00;
+}
+
+/* line 1016, global-old.css.sass */
+.dk_options_inner {
+  margin: 0px;
+  color: #272525;
+}
+
+/* line 1021, global-old.css.sass */
+.dk_options_inner a {
+  height: 19px;
+}
+
+/* line 1024, global-old.css.sass */
+.dk_touch .dk_options {
+  max-height: 250px;
+}
+
+/* end normal theme */
+/* dropkick large theme */
+/* line 1030, global-old.css.sass */
+.dk_theme_large {
+  font: lighter 45px "FoundersGroteskCond-Reg", Arial, Helvetica, sans-serif;
+  background: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  color: #272525;
+}
+/* line 1036, global-old.css.sass */
+.dk_theme_large:focus {
+  outline: 0px;
+  background: #fafafa;
+}
+/* line 1039, global-old.css.sass */
+.dk_theme_large a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* line 1042, global-old.css.sass */
+.dk_container:hover {
+  background: #fafafa;
+}
+
+/* line 1045, global-old.css.sass */
+.dk_theme_large .dk_toggle {
+  font-size: 45px;
+  height: 33px;
+  line-height: 42px;
+  background: url(/Assets/images/lessons/lesson2/curriculum/curriculum-dropdown-arrow-lrg.png) no-repeat 93% center;
+  color: #272525;
+  height: 43px;
+  /* padding: 12px 0px 0px 9px */
+  padding-right: 55px;
+  text-align: left;
+}
+
+/* line 1055, global-old.css.sass */
+.lt-ie9 .dk_theme_large .dk_label {
+  line-height: 42px;
+}
+
+/* line 1058, global-old.css.sass */
+.lt-ie9 .dk_theme_large .dk_options a {
+  line-height: 42px;
+}
+
+/* line 1062, global-old.css.sass */
+.dk_toggle:hover {
+  color: #272525;
+}
+
+/* line 1065, global-old.css.sass */
+.dk_theme_large .dk_label {
+  line-height: 61px;
+  font-size: 45px;
+  display: block;
+  margin: 0px !important;
+  height: 43px !important;
+  padding: 0px !important;
+}
+
+/* line 1073, global-old.css.sass */
+.dk_open {
+  z-index: 10;
+  background: #fafafa;
+}
+
+/* line 1079, global-old.css.sass */
+.dk_theme_large .dk_options a {
+  height: 42px;
+  font-size: 45px;
+  display: block;
+  color: #272525;
+  text-align: left;
+  background-color: #fafafa;
+  padding-left: 9px;
+  padding-top: 5px;
+}
+/* line 1088, global-old.css.sass */
+.dk_theme_large .dk_options a:hover {
+  color: #272525;
+  background-color: #faff00;
+  text-decoration: none;
+}
+
+/* line 1093, global-old.css.sass */
+.dk_theme_large .dk_option_current a {
+  background-color: #faff00;
+}
+
+/* line 1097, global-old.css.sass */
+.dk_options_inner {
+  margin: 0px;
+  color: #272525;
+}
+
+/* line 1104, global-old.css.sass */
+.dk_touch .dk_options {
+  max-height: 250px;
+}
+
+/* end large theme */
+/* dropkick large-transportation theme */
+/* line 1110, global-old.css.sass */
+.dk_theme_large-transportation {
+  font: lighter 45px "FoundersGroteskCond-Reg", Arial, Helvetica, sans-serif;
+  background: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  color: #272525;
+}
+/* line 1116, global-old.css.sass */
+.dk_theme_large-transportation:focus {
+  outline: 0px;
+  background: #fafafa;
+}
+/* line 1119, global-old.css.sass */
+.dk_theme_large-transportation a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* line 1124, global-old.css.sass */
+.dk_theme_large-transportation .dk_toggle {
+  font-size: 45px;
+  height: 33px;
+  line-height: 42px;
+  background: url(/Assets/images/lessons/lesson2/curriculum/curriculum-dropdown-arrow-lrg.png) no-repeat 93% center;
+  color: #272525;
+  height: 43px;
+  /* padding: 12px 0px 0px 9px */
+  padding-right: 55px;
+  width: 261px;
+  min-width: 261px;
+  text-align: left;
+}
+
+/* line 1136, global-old.css.sass */
+.lt-ie9 .dk_theme_large-transportation .dk_label {
+  line-height: 42px;
+}
+
+/* line 1139, global-old.css.sass */
+.lt-ie9 .dk_theme_large-transportation .dk_options a {
+  line-height: 42px;
+}
+
+/* line 1144, global-old.css.sass */
+.dk_theme_large-transportation .dk_label {
+  line-height: 61px;
+  font-size: 45px;
+  display: block;
+  margin: 0px !important;
+  height: 43px !important;
+  padding: 0px !important;
+}
+
+/* line 1155, global-old.css.sass */
+.dk_theme_large-transportation .dk_options a {
+  height: 42px;
+  font-size: 45px;
+  display: block;
+  color: #272525;
+  text-align: left;
+  background-color: #fafafa;
+  padding-left: 9px;
+  padding-top: 5px;
+}
+/* line 1164, global-old.css.sass */
+.dk_theme_large-transportation .dk_options a:hover {
+  color: #272525;
+  background-color: #faff00;
+  text-decoration: none;
+}
+
+/* line 1169, global-old.css.sass */
+.dk_theme_large-transportation .dk_option_current a {
+  background-color: #faff00;
+}
+
+/* end large-transportation theme */
+/* line 1175, global-old.css.sass */
+.dk_container {
+  display: none;
+  float: left;
+  position: relative;
+}
+/* line 1179, global-old.css.sass */
+.dk_container a {
+  outline: 0;
+}
+
+/* line 1182, global-old.css.sass */
+.dk_toggle {
+  width: auto !important;
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  position: relative;
+  zoom: 1;
+}
+
+/* line 1190, global-old.css.sass */
+.dk_open {
+  position: relative;
+}
+/* line 1192, global-old.css.sass */
+.dk_open .dk_options {
+  left: -1px;
+  display: block;
+  margin-top: 1px;
+  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+/* line 1199, global-old.css.sass */
+.dk_open .dk_label {
+  margin: 0px;
+  height: auto;
+  padding: 0px;
+  color: inherit;
+}
+
+/* line 1205, global-old.css.sass */
+.dk_options {
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  left: 0px;
+}
+/* line 1212, global-old.css.sass */
+.dk_options a:link, .dk_options a:visited {
+  display: block;
+}
+
+/* line 1215, global-old.css.sass */
+.dk_options_inner {
+  position: relative;
+  list-style: none;
+  padding: 0px;
+}
+
+/* line 1221, global-old.css.sass */
+.dk_touch .dk_options {
+  overflow: hidden;
+}
+/* line 1223, global-old.css.sass */
+.dk_touch .dk_options_inner {
+  max-height: none;
+  overflow: visible;
+}
+
+/* line 1227, global-old.css.sass */
+.dk_fouc select {
+  position: relative;
+  top: -99999em;
+  visibility: hidden;
+}
+
+/* line 1233, global-old.css.sass */
+.lt-ie9 .dk_theme_large, .lt-ie9 .dk_theme_large-transportation {
+  top: 10px;
+}
+
+/* line 1237, global-old.css.sass */
+.ie9 .dk_theme_large, .ie9 .dk_theme_large-transportation {
+  top: 8px;
+}
+/* line 1239, global-old.css.sass */
+.ie9 .dk_theme_large .dk_label, .ie9 .dk_theme_large-transportation .dk_label {
+  line-height: 42px;
+}
+/* line 1241, global-old.css.sass */
+.ie9 .dk_theme_large .dk_options_inner li a, .ie9 .dk_theme_large-transportation .dk_options_inner li a {
+  line-height: 32px;
+}
+
+/* line 1245, global-old.css.sass */
+.lt-ie9 input[type=checkbox] {
+  margin: 2px 0 0 0;
+}
+
+/* line 1249, global-old.css.sass */
+.ie9 input[type=checkbox] {
+  margin: 2px 0 0 0;
+}

@@ -1,0 +1,6 @@
+<div id="regMsgOverlay" class="reveal-modal tiny standard-overlay" data-reveal>
+	<h1>Thanks For Joining Salt!</h1>
+	<h3>Hang on while we create your account ...</h3>
+    <div class="delta-loader-wrapper"><span class="delta-loader"></span></div> 
+    <br> 
+</div>

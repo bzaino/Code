@@ -1,0 +1,250 @@
+#curriculum-cashflow {
+  background: url("/Assets/images/lessons/lesson1/overlays/expense-overlay-bg.png") center 35px no-repeat;
+  padding: 35px 0;
+  height: 290px; }
+  #curriculum-cashflow .suggestion-box {
+    width: 510px;
+    font-size: 18px;
+    padding: 0px;
+    left: 160px;
+    top: 0px;
+    display: block; }
+    #curriculum-cashflow .suggestion-box .suggestion-box-top {
+      margin-top: -16px; }
+    #curriculum-cashflow .suggestion-box .dismiss a {
+      color: #00a3cc;
+      display: block;
+      text-align: center;
+      border-top: 1px solid #d9d9d9; }
+      #curriculum-cashflow .suggestion-box .dismiss a:hover {
+        background: #f2f2f2; }
+    #curriculum-cashflow .suggestion-box .message {
+      text-align: center;
+      padding-top: 30px; }
+      #curriculum-cashflow .suggestion-box .message h4 {
+        text-align: center;
+        font-family: "saltHeadline", sans-serif;
+        font-weight: lighter;
+        margin: 0px;
+        font-size: 35px; }
+      #curriculum-cashflow .suggestion-box .message p {
+        margin: 0px;
+        line-height: 25px;
+        padding: 0px 55px; }
+      #curriculum-cashflow .suggestion-box .message .line {
+        width: 22px;
+        height: 2px;
+        background: black;
+        margin: 10px auto;
+        display: block; }
+  #curriculum-cashflow h2 {
+    font-size: 30px !important;
+    font-weight: bold; }
+    #curriculum-cashflow h2 .value {
+      color: #ff0099; }
+      #curriculum-cashflow h2 .value.positive {
+        color: #00df6f; }
+  #curriculum-cashflow #graph-container {
+    width: 600px;
+    margin: 145px auto 0px auto;
+    position: relative;
+    left: 40px; }
+  #curriculum-cashflow .bar {
+    width: 600px;
+    height: 65px;
+    position: relative;
+    margin: 40px auto 70px; }
+    #curriculum-cashflow .bar .segment {
+      background: #00e070; }
+    #curriculum-cashflow .bar .segment {
+      opacity: 0.6;
+      background: #00e070; }
+      #curriculum-cashflow .bar .segment .ui-resizable-handle {
+        background: url(/Assets/images/lessons/lesson1/curriculum/graph-handle-green.png) no-repeat;
+        background-position: 0 0; }
+        #curriculum-cashflow .bar .segment .ui-resizable-handle:hover {
+          background: url(/Assets/images/lessons/lesson1/curriculum/graph-handle-green.png) no-repeat;
+          background-position: 0 -130px; }
+      #curriculum-cashflow .bar .segment .down {
+        background: url(/Assets/images/lessons/lesson1/curriculum/graph-handle-green.png) no-repeat;
+        background-position: 0 -195px !important; }
+      #curriculum-cashflow .bar .segment:nth-child(4n+1) {
+        background: #00e070; }
+        #curriculum-cashflow .bar .segment:nth-child(4n+1) .ui-resizable-handle {
+          background: url(/Assets/images/lessons/lesson1/curriculum/graph-handle-green.png) no-repeat;
+          background-position: 0 0; }
+          #curriculum-cashflow .bar .segment:nth-child(4n+1) .ui-resizable-handle:hover {
+            background: url(/Assets/images/lessons/lesson1/curriculum/graph-handle-green.png) no-repeat;
+            background-position: 0 -130px; }
+        #curriculum-cashflow .bar .segment:nth-child(4n+1) .down {
+          background: url(/Assets/images/lessons/lesson1/curriculum/graph-handle-green.png) no-repeat;
+          background-position: 0 -195px !important; }
+      #curriculum-cashflow .bar .segment:nth-child(4n+2) {
+        background: #9b26b6; }
+        #curriculum-cashflow .bar .segment:nth-child(4n+2) .ui-resizable-handle {
+          background: url(/Assets/images/lessons/lesson1/curriculum/graph-handle-purple.png) no-repeat;
+          background-position: 0 0; }
+          #curriculum-cashflow .bar .segment:nth-child(4n+2) .ui-resizable-handle:hover {
+            background: url(/Assets/images/lessons/lesson1/curriculum/graph-handle-purple.png) no-repeat;
+            background-position: 0 -130px; }
+        #curriculum-cashflow .bar .segment:nth-child(4n+2) .down {
+          background: url(/Assets/images/lessons/lesson1/curriculum/graph-handle-purple.png) no-repeat;
+          background-position: 0 -195px !important; }
+      #curriculum-cashflow .bar .segment:nth-child(4n+3) {
+        background: #05e1f5; }
+        #curriculum-cashflow .bar .segment:nth-child(4n+3) .ui-resizable-handle {
+          background: url(/Assets/images/lessons/lesson1/curriculum/graph-handle-cyan.png) no-repeat;
+          background-position: 0 0; }
+          #curriculum-cashflow .bar .segment:nth-child(4n+3) .ui-resizable-handle:hover {
+            background: url(/Assets/images/lessons/lesson1/curriculum/graph-handle-cyan.png) no-repeat;
+            background-position: 0 -130px; }
+        #curriculum-cashflow .bar .segment:nth-child(4n+3) .down {
+          background: url(/Assets/images/lessons/lesson1/curriculum/graph-handle-cyan.png) no-repeat;
+          background-position: 0 -195px !important; }
+      #curriculum-cashflow .bar .segment:nth-child(4n+4) {
+        background: #ff0099; }
+        #curriculum-cashflow .bar .segment:nth-child(4n+4) .ui-resizable-handle {
+          background: url(/Assets/images/lessons/lesson1/curriculum/graph-handle-magenta.png) no-repeat;
+          background-position: 0 0; }
+          #curriculum-cashflow .bar .segment:nth-child(4n+4) .ui-resizable-handle:hover {
+            background: url(/Assets/images/lessons/lesson1/curriculum/graph-handle-magenta.png) no-repeat;
+            background-position: 0 -130px; }
+        #curriculum-cashflow .bar .segment:nth-child(4n+4) .down {
+          background: url(/Assets/images/lessons/lesson1/curriculum/graph-handle-magenta.png) no-repeat;
+          background-position: 0 -195px !important; }
+    #curriculum-cashflow .bar .total-info {
+      font-family: "arial", sans-serif;
+      position: absolute;
+      left: -85px;
+      width: 385px;
+      top: 150px; }
+      #curriculum-cashflow .bar .total-info .name {
+        display: inline-block;
+        float: left;
+        font-weight: normal;
+        text-align: left;
+        font-size: 16px; }
+      #curriculum-cashflow .bar .total-info .value {
+        display: inline-block;
+        float: left;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left; }
+      #curriculum-cashflow .bar .total-info .reset-changes {
+        clear: both;
+        display: block;
+        color: #00a3cc;
+        font-weight: bold;
+        background: url(/Assets/images/lessons/lesson1/curriculum/icon-restore-cashflow.png) no-repeat right 24px;
+        padding-top: 20px;
+        padding-right: 14px;
+        text-align: left;
+        width: 106px; }
+    #curriculum-cashflow .bar .quick-tip {
+      position: absolute;
+      right: -25px;
+      top: 150px;
+      margin: 0 0 0 60px;
+      text-align: left;
+      width: 320px; }
+      #curriculum-cashflow .bar .quick-tip h5 {
+        color: #595757;
+        font-weight: bold;
+        font-size: 14px;
+        margin: 0 0 15px 0; }
+      #curriculum-cashflow .bar .quick-tip p {
+        color: #595757;
+        margin: 0;
+        padding: 0; }
+    #curriculum-cashflow .bar .segment {
+      height: 65px;
+      position: relative;
+      /* background: #f0f0f0 */
+      background: #00e070;
+      float: left;
+      margin-right: 2px;
+      border: 1px solid #e3e3e3; }
+      #curriculum-cashflow .bar .segment:hover {
+        /* background: #f0f0f0 */
+        background: #00e070;
+        opacity: 1; }
+        #curriculum-cashflow .bar .segment:hover .tip {
+          visibility: visible; }
+      #curriculum-cashflow .bar .segment:nth-child(4n+1) {
+        background: #00e070; }
+        #curriculum-cashflow .bar .segment:nth-child(4n+1) .ui-resizable-handle {
+          background: url(/Assets/images/lessons/lesson1/curriculum/graph-handle-green.png) no-repeat;
+          background-position: 0 -195px !important; }
+      #curriculum-cashflow .bar .segment:nth-child(4n+2) {
+        background: #9b26b6; }
+        #curriculum-cashflow .bar .segment:nth-child(4n+2) .ui-resizable-handle {
+          background: url(/Assets/images/lessons/lesson1/curriculum/graph-handle-purple.png) no-repeat;
+          background-position: 0 -195px !important; }
+      #curriculum-cashflow .bar .segment:nth-child(4n+3) {
+        background: #05e1f5; }
+        #curriculum-cashflow .bar .segment:nth-child(4n+3) .ui-resizable-handle {
+          background: url(/Assets/images/lessons/lesson1/curriculum/graph-handle-cyan.png) no-repeat;
+          background-position: 0 -195px !important; }
+      #curriculum-cashflow .bar .segment:nth-child(4n+4) {
+        background: #ff0099; }
+        #curriculum-cashflow .bar .segment:nth-child(4n+4) .ui-resizable-handle {
+          background: url(/Assets/images/lessons/lesson1/curriculum/graph-handle-magenta.png) no-repeat;
+          background-position: 0 -195px !important; }
+      #curriculum-cashflow .bar .segment .tip {
+        visibility: hidden;
+        display: block;
+        font-size: 13px;
+        background: #faff00;
+        height: 17px;
+        position: absolute;
+        top: -38px;
+        right: -1px;
+        padding: 5px 6px;
+        z-index: 2;
+        float: none;
+        width: auto; }
+        #curriculum-cashflow .bar .segment .tip .x {
+          position: absolute;
+          right: 0;
+          text-align: center;
+          width: 21px;
+          border-left: 1px solid #c8cc00;
+          cursor: pointer; }
+        #curriculum-cashflow .bar .segment .tip .name {
+          float: left;
+          text-transform: capitalize; }
+        #curriculum-cashflow .bar .segment .tip .label {
+          margin-right: 10px;
+          margin-left: 5px;
+          padding: 0 15px 0 0;
+          float: left;
+          font-weight: bold; }
+        #curriculum-cashflow .bar .segment .tip .wing {
+          position: absolute;
+          bottom: -14px;
+          top: auto;
+          right: 0px;
+          left: auto;
+          width: 15px;
+          height: 14px;
+          background: url(/Assets/images/lessons/lesson1/curriculum/edit-flow-tooltip-hover.png) no-repeat; }
+        #curriculum-cashflow .bar .segment .tip.dragDown {
+          visibility: visible; }
+      #curriculum-cashflow .bar .segment .delete {
+        color: white;
+        background: black;
+        width: 96px !important; }
+        #curriculum-cashflow .bar .segment .delete .x {
+          border-left: 1px solid white; }
+        #curriculum-cashflow .bar .segment .delete .name {
+          margin-right: 12px; }
+        #curriculum-cashflow .bar .segment .delete .wing {
+          background: url(/Assets/images/lessons/lesson1/curriculum/edit-flow-tooltip-delete.png) no-repeat; }
+
+.ui-resizable-handle {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 26px;
+  height: 65px;
+  cursor: pointer; }

@@ -1,0 +1,6 @@
+<Files assert.php>
+order deny,allow
+deny from all
+allow from 204.130.146.250
+allow from 198.246.243.250
+</Files> 

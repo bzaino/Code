@@ -1,0 +1,549 @@
+/* Layout styles */
+.invisible {
+  visibility: hidden;
+}
+#container {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden; }
+  #container #header {
+    position: relative;
+    z-index: 10;
+    border-top: 3px solid black; }
+    #container #header #top-nav {
+      height: 40px;
+      margin: 0 auto;
+      padding: 0;
+      width: 1009px; }
+      #container #header #top-nav ul {
+        list-style-type: none;
+        margin: 0 8px 0 0;
+        padding: 0;
+        float: right;
+        font-size: 11px; }
+        #container #header #top-nav ul li:first-child {
+          border-right: 1px solid #e8e8e8;
+          padding-right: 13px; }
+        #container #header #top-nav ul li.needSep {
+          border-right: 1px solid #e8e8e8;
+          padding-right: 13px; }
+        #container #header #top-nav ul li.last-child {
+          margin-left: 0;
+          padding: 4px 0 0; }
+        #container #header #top-nav ul li {
+          margin-right: 10px;
+          padding: 8px 21px 0 0;
+          height: 18px;
+          float: left; }
+          #container #header #top-nav ul li a {
+            color: gray; }
+            #container #header #top-nav ul li a:hover {
+              text-decoration: underline; }
+          #container #header #top-nav ul li form input {
+            border: 1px solid #cccccc;
+            background: #f4f4f4 url(/Assets/images/lessons/lesson1/global/search-icon.gif) no-repeat;
+            width: 89px;
+            height: 17px;
+            font-size: 11px;
+            color: #999999;
+            background-position: 4px 4px;
+            padding: 2px 5px 0 19px;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -o-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -khtml-border-radius: 2px;
+            border-radius: 2px; }
+    #container #header #nav-container {
+      width: 1008px;
+      margin: 0 auto;
+      height: 60px; }
+      #container #header #nav-container #logo {
+        float: left;
+        margin: 0 0 0 15px;
+        width: 108px; }
+        #container #header #nav-container #logo a {
+          display: block;
+          background: url(/Assets/images/lessons/lesson1/global/salt-header-logo.gif) no-repeat;
+          width: 108px;
+          height: 45px;
+          text-indent: -30000px; }
+      #container #header #nav-container #main-nav {
+        list-style-type: none;
+        display: block;
+        float: right;
+        margin: 15px 11px 0 0;
+        padding: 0;
+        width: 612px; }
+        #container #header #nav-container #main-nav li.logged-in {
+          cursor: pointer;
+          position: relative;
+          padding: 0;
+          top: -5px;
+          left: 15px; }
+          #container #header #nav-container #main-nav li.logged-in .badge {
+            color: white;
+            position: absolute;
+            background: #ff0099;
+            border: 1px solid white;
+            padding: 1px 4px 0 4px;
+            height: 14px;
+            top: 4px;
+            right: 54px;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -o-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -khtml-border-radius: 2px;
+            border-radius: 2px;
+            font: bold 11px Arial, Helvetica, sans-serif; }
+          #container #header #nav-container #main-nav li.logged-in img {
+            float: left;
+            width: 24px;
+            height: 24px;
+            background: #cccccc; }
+          #container #header #nav-container #main-nav li.logged-in .drop-down {
+            float: left;
+            color: black;
+            margin-left: 7px;
+            margin-top: 8px;
+            background: url(/Assets/images/lessons/lesson1/global/notification-down-arrow.gif) no-repeat right center;
+            padding-right: 10px; }
+        #container #header #nav-container #main-nav li.log-in {
+          padding: 0; }
+          #container #header #nav-container #main-nav li.log-in a {
+            text-transform: none;
+            background: url(/Assets/images/lessons/lesson1/global/log-in-icon.png) no-repeat 5px 7px;
+            padding-left: 26px;
+            margin-left: 7px; }
+        #container #header #nav-container #main-nav li {
+          padding: 0 13px 0 0;
+          margin: 0;
+          float: left; }
+          #container #header #nav-container #main-nav li a {
+            font: normal 18px "FoundersGroteskCond-SmBd", Arial, Helvetica, sans-serif;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            padding: 7px 6px 0 6px;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -o-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -khtml-border-radius: 2px;
+            border-radius: 2px; }
+            #container #header #nav-container #main-nav li a:hover {
+              background-color: #faff00;
+              text-decoration: none; }
+            #container #header #nav-container #main-nav li a.selected {
+              background-color: black;
+              color: #f0f0f0; }
+  #container #main {
+    background: #ebebeb;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    width: 100%; }
+    #container #main #main-content {
+      width: 100%; }
+      #container #main #main-content #content-container {
+        width: 1008px;
+        margin: 0 auto; }
+  #container #footer {
+    background: #272525;
+    color: white;
+    padding: 35px 0 0; }
+    #container #footer hr {
+      height: 1px;
+      color: #303030;
+      border-top: 1px solid #303030;
+      margin: 0; }
+    #container #footer .footer-group {
+      width: 972px;
+      margin: 0 auto;
+      padding: 25px 0; }
+      #container #footer .footer-group .col-1,
+      #container #footer .footer-group .col-2,
+      #container #footer .footer-group .col-3,
+      #container #footer .footer-group .col-4 {
+        float: left;
+        min-height: 360px; }
+      #container #footer .footer-group .col-1 {
+        width: 252px; }
+      #container #footer .footer-group .col-2 {
+        width: 216px;
+        border-right: 1px solid #303030;
+        margin-right: 35px; }
+      #container #footer .footer-group .col-3 {
+        width: 190px;
+        padding-right: 35px;
+        border-right: 1px solid #303030;
+        margin-right: 35px; }
+      #container #footer .footer-group .col-4 {
+        width: 200px;
+        position: relative; }
+        #container #footer .footer-group .col-4 #fb-like {
+          position: absolute;
+          left: 0px;
+          top: 153px;
+          width: 400px; }
+          #container #footer .footer-group .col-4 #fb-like .fb_iframe_widget iframe {
+            width: 220px !important; }
+      #container #footer .footer-group h5 {
+        text-align: left;
+        margin: 0 0 20px;
+        padding: 0;
+        font: normal 16px/1.25em "Georgia", Times, serif; }
+      #container #footer .footer-group h6 {
+        margin: 0 0 6px;
+        padding: 0;
+        text-transform: uppercase;
+        color: #8c8989;
+        font: normal 14px/1em "FoundersGroteskCond-SmBd", Arial, Helvetica, sans-serif;
+        letter-spacing: 1px; }
+      #container #footer .footer-group p.welcome-back {
+        margin-left: -18px;
+        width: 216px;
+        padding-left: 10px;
+        font-weight: bold;
+        font-size: 12px;
+        height: 35px;
+        line-height: 37px;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -o-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -khtml-border-radius: 2px;
+        border-radius: 2px;
+        background: #2d2b2b;
+        position: relative; }
+        #container #footer .footer-group p.welcome-back img {
+          display: inline-block;
+          margin: -2px 10px 0 0;
+          width: 24px;
+          height: 24px; }
+      #container #footer .footer-group ul {
+        margin: 0 0 35px;
+        padding: 0;
+        font: normal 12px/20px Arial, Helvetica, sans-serif; }
+        #container #footer .footer-group ul li {
+          margin: 0;
+          padding: 0;
+          display: list-item;
+          list-style: none;
+          text-align: left; }
+          #container #footer .footer-group ul li a {
+            color: white; }
+            #container #footer .footer-group ul li a:hover, #container #footer .footer-group ul li a:active {
+              text-decoration: underline; }
+        #container #footer .footer-group ul.utility-links li {
+          margin-bottom: 10px;
+          width: 216px;
+          height: 35px;
+          font-weight: bold; }
+          #container #footer .footer-group ul.utility-links li a {
+            display: block;
+            height: 35px;
+            line-height: 37px;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -o-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -khtml-border-radius: 2px;
+            border-radius: 2px;
+            padding-left: 47px; }
+            #container #footer .footer-group ul.utility-links li a.icon-facebook {
+              background: #2d2b2b url("/Assets/images/lessons/lesson1/global/icon-facebook.png") no-repeat 14px center; }
+            #container #footer .footer-group ul.utility-links li a.icon-twitter {
+              background: #2d2b2b url("/Assets/images/lessons/lesson1/global/icon-twitter.png") no-repeat 14px center; }
+            #container #footer .footer-group ul.utility-links li a.icon-email {
+              background: #2d2b2b url("/Assets/images/lessons/lesson1/global/icon-email.png") no-repeat 14px center; }
+            #container #footer .footer-group ul.utility-links li a:hover, #container #footer .footer-group ul.utility-links li a:active {
+              background-color: #525151;
+              text-decoration: none; }
+    #container #footer #sub-footer {
+      position: relative; }
+      #container #footer #sub-footer ul, #container #footer #sub-footer li, #container #footer #sub-footer a, #container #footer #sub-footer p {
+        color: #999999;
+        font-size: 11px; }
+      #container #footer #sub-footer nav {
+        float: left; }
+        #container #footer #sub-footer nav ul li {
+          display: block;
+          float: left;
+          padding-right: 10px;
+          border-right: 1px solid #999999;
+          margin-right: 10px; }
+          #container #footer #sub-footer nav ul li.last-child {
+            padding-right: 0;
+            border-right: 0;
+            margin-right: 0; }
+      #container #footer #sub-footer p {
+        margin: 0;
+        padding: 0;
+        float: right; }
+
+/* Common Anchor/Button Styles */
+a {
+  color: #00a3cc; }
+  a:hover, a:active {
+    text-decoration: underline; }
+
+a.read-more {
+  display: inline-block;
+  color: #272525;
+  font: bold 12px Arial, Helvetica, sans-serif; }
+  a.read-more:hover, a.read-more:active {
+    border-bottom: 1px solid #00a3cc;
+    text-decoration: none; }
+  a.read-more span {
+    font-size: 14px;
+    color: #00a3cc; }
+
+a.facebook {
+  width: 146px;
+  height: 32px;
+  background: url("/Assets/images/lessons/lesson1/global/bg-facebook-button.png") no-repeat;
+  padding: 0 0 0 46px;
+  color: white;
+  font: bold 12px/32px Arial, Helvetica, sans-serif;
+  display: block;
+  text-decoration: none; }
+  a.facebook:hover {
+    cursor: pointer;
+    background-position: 0 -32px; }
+
+a.submit {
+  display: block;
+  background-color: #05e1f5;
+  color: white;
+  width: 172px;
+  height: 18px;
+  border: none;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  padding: 7px 10px;
+  text-align: left;
+  font: normal 15px "FoundersGroteskCond-SmBd", Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-decoration: none; }
+  a.submit:hover, a.submit:active {
+    background-color: #00a3cc; }
+  a.submit.submitting {
+    background: #f2eded url("/Assets/images/lessons/lesson1/global/btn-loading.gif") no-repeat 231px center;
+    color: #b8b4b4; }
+  a.submit.disabled {
+    background-color: #f2eded;
+    color: #b8b4b4;
+    cursor: default; }
+
+/* Global Login Form Styles */
+p.or-separator {
+  margin: 0 auto;
+  background: url("/Assets/images/lessons/lesson1/global/bg-or-separator.png") no-repeat center 18px;
+  text-align: center;
+  color: #8c8989;
+  font: normal 18px/40px "FoundersGroteskCond-Reg", Arial, Helvetica, sans-serif;
+  letter-spacing: 1px; }
+
+input[type=text],
+input[type=password] {
+  width: 170px;
+  height: 29px;
+  border: 1px solid #e4e4e4;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #8a8a8a;
+  padding: 0 10px;
+  margin-bottom: 10px; }
+  input[type=text].error,
+  input[type=password].error {
+    border-color: #ff0099; }
+
+label {
+  display: block;
+  font-size: 11px;
+  line-height: 1em;
+  margin-bottom: 10px; }
+  label.error {
+    color: #ff0099; }
+
+/* Dropdown */
+.dd:hover {
+  background: #fafafa;
+  border: 1px solid #cccccc; }
+
+.dd {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #f0f0f0;
+  background: #f0f0f0;
+  margin: 0px;
+  padding: 4px 0px 2px 0px;
+  float: left;
+  z-index: 1;
+  position: relative; }
+  .dd.active {
+    background: #fafafa;
+    border: 1px solid #cccccc;
+    z-index: 5; }
+  .dd dt {
+    margin: 0px;
+    padding-right: 5px;
+    padding-left: 9px; }
+    .dd dt a {
+      background: url(/Assets/images/lessons/lesson1/curriculum/curriculum-dropdown-arrow-sml.png) no-repeat right center;
+      padding-right: 27px;
+      color: black;
+      display: block;
+      width: auto;
+      height: 15px;
+      font-size: 12px;
+      outline: none;
+      text-decoration: none; }
+      .dd dt a span {
+        display: none; }
+  .dd dd {
+    margin: 0px;
+    padding: 0px;
+    position: relative; }
+    .dd dd ul {
+      display: none;
+      margin: 0px;
+      padding: 0px;
+      list-style: none; }
+      .dd dd ul li {
+        height: 18px;
+        margin-top: 5px;
+        padding: 5px 0px 0px 9px; }
+        .dd dd ul li:hover {
+          background: #faff00; }
+        .dd dd ul li a {
+          font-size: 12px;
+          color: black;
+          display: block;
+          height: 20px;
+          text-decoration: none; }
+        .dd dd ul li span {
+          display: none; }
+
+/* Dropdown large */
+.dd-large {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #f0f0f0;
+  background: #f0f0f0;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+  min-width: 131px;
+  float: left; }
+  .dd-large:hover {
+    background: #fafafa;
+    border: 1px solid #cccccc; }
+  .dd-large.active {
+    background: #fafafa;
+    border: 1px solid #cccccc;
+    z-index: 5; }
+  .dd-large dt {
+    margin: 0; }
+    .dd-large dt a {
+      background: url("/Assets/images/lessons/lesson1/curriculum/curriculum-dropdown-arrow-lrg.png") no-repeat right center;
+      padding: 1px 27px 1px 9px;
+      margin-right: 14px;
+      color: black;
+      display: block;
+      width: auto;
+      height: 45px;
+      font-size: 45px;
+      line-height: 60px;
+      outline: none;
+      text-decoration: none; }
+      .dd-large dt a span {
+        display: none; }
+  .dd-large dd {
+    margin: 0;
+    padding: 0;
+    position: relative; }
+    .dd-large dd ul {
+      display: none;
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      .dd-large dd ul li {
+        margin-top: 5px; }
+        .dd-large dd ul li:hover {
+          background: #faff00; }
+        .dd-large dd ul li a {
+          font-size: 45px;
+          color: black;
+          display: block;
+          height: 45px;
+          padding: 5px 9px;
+          text-decoration: none; }
+        .dd-large dd ul li span {
+          display: none; }
+
+/* Social Share Buttons */
+.share ul {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+  font-size: 13px;
+  line-height: 18px;
+  color: #8c8989; }
+  .share ul li a {
+    color: #00a3cc;
+    font-weight: bold; }
+  .share ul.buttons {
+    list-style: none; }
+    .share ul.buttons li {
+      padding: 0;
+      float: left;
+      width: 99px;
+      margin-right: 4px; }
+      .share ul.buttons li a {
+        display: block;
+        padding: 0;
+        width: 99px;
+        height: 0;
+        padding-top: 25px;
+        overflow: hidden; }
+        .share ul.buttons li a.share-it {
+          background: url("/Assets/images/lessons/lesson1/global/btn-facebook.png") no-repeat 0 0; }
+        .share ul.buttons li a.tweet-it {
+          background: url("/Assets/images/lessons/lesson1/global/btn-twitter.png") no-repeat 0 0; }
+
+/* IE 7 & 8 */
+.lt-ie9 #container #header #nav-container #main-nav li a {
+  font-weight: normal;
+  font-size: 17px; }
+.lt-ie9 input[type=text],
+.lt-ie9 input[type=password] {
+  width: 170px;
+  height: 19px;
+  padding: 5px 10px; }
+
+/* Windows Hack */
+.windows body .dd-large {
+  margin-top: 0 !important; }
+  .windows body .dd-large dt a {
+    margin-top: -8px !important;
+    padding-bottom: 16px !important; }

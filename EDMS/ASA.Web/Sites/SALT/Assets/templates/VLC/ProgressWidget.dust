@@ -1,0 +1,14 @@
+<section>
+    <form class="custom small-12 columns no-padding" id="planSelector">
+        <div id="plan">
+            <div class="styled-select">
+                <select id="planSelect">
+                    <option value="Standard"  {@if cond="'{Plan}' === 'Standard'"}selected{/if}>Standard (10 Years)</option>
+                    <option value="Graduated" {@if cond="'{Plan}' === 'Graduated'"}selected{/if}>Graduated (10 Years)</option>
+                    <option value="Extended" {@if cond="'{Plan}' === 'Extended'"}selected{/if}>Extended (25 Years)</option>
+                    <option value="Income Based" {@if cond="'{Plan}' === 'Income Based'"}selected{/if}>Income Based</option>
+                </select>
+            </div>
+        </div>
+    </form>
+</section>

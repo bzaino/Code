@@ -1,0 +1,19 @@
+{mainContent[0].records[0].attributes.body}
+
+<section class="loanSection">
+	<div class="loanDisplay thin-border margin-bottom"><span>{mainContent[0].records[0].attributes.special-content-1}</span><span class="right">$<span id="amountBorrowed"></span></span></div>
+
+	<div class="loanDisplay thin-border margin-bottom"><span>{mainContent[0].records[0].attributes.special-content-2}</span><span class="right">$<span id="monthlyPayment"></span></span></div>
+</section>
+
+{mainContent[0].records[0].attributes.special-content-3}
+
+{>"VLC/partial_newTab_buttons" /}
+
+{! Link buttons within VLC. Open another VLC slide in one-page experience !}
+{>"VLC/partial_VLC_buttons" /}
+
+
+<div>
+    <a id="backButton" class="button base-btn main-btn back js-void-href" href=""> Back<a/>
+</div>

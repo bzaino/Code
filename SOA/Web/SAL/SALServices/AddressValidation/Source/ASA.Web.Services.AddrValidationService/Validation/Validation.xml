@@ -1,0 +1,51 @@
+﻿<objects xmlns="http://www.springframework.net" xmlns:v="http://www.springframework.net/validation">
+  <!-- Reusable Regular Expressions -->
+  <object name = "ZipExpression" type="String">
+    <constructor-arg value="(^\d{5}(-\d{4})?$)" />
+  </object>
+
+    <object name = "AlphaNumExpression" type="String">
+        <constructor-arg value="^[a-zA-Z0-9]+$"/>
+    </object>
+
+  <!-- ADDRESS VALITION -->
+  <v:group id="AddressValidationModelValidator">
+    <v:required id="AddressLine1RequiredValidator" test="AddressLine1">
+      <v:message id="error_addressline1_required" providers="PersonAddressModelErrorProvider"/>
+    </v:required>
+    <v:condition id="AddressLine1LengthValidator" test="AddressLine1.Length &lt;= 60">
+      <v:message id="error_addressline1_length_invalid" providers="PersonAddressModelErrorProvider"/>
+    </v:condition>
+    <v:condition id="AddressLine2LengthValidator" test="AddressLine2.Length &lt;= 60">
+      <v:message id="error_addressline2_length_invalid" providers="PersonAddressModelErrorProvider"/>
+    </v:condition>
+    <v:required id="CityRequiredValidator" test="City">
+      <v:message id="error_city_required" providers="PersonAddressModelErrorProvider"/>
+    </v:required>
+    <v:condition id="CityLengthValidator" test="City.Length &lt;= 60">
+      <v:message id="error_city_length_invalid" providers="PersonAddressModelErrorProvider"/>
+    </v:condition>
+    <v:required id="StateIDRequiredValidator" test="StateID" when="CountryID == 'US'">
+      <v:message id="error_stateid_required" providers="PersonAddressModelErrorProvider"/>
+    </v:required>
+    <v:required id="CountryIDRequiredValidator" test="CountryID">
+      <v:message id="error_country_required" providers="PersonAddressModelErrorProvider"/>
+    </v:required>
+    <v:required id="ZipRequiredValidator" test="Zip">
+      <v:message id="error_zip_required" providers="PersonAddressModelErrorProvider"/>
+    </v:required>
+    <v:regex id="ZipRegexValidator1" test="Zip" when="CountryID == 'US'">
+      <v:property name="Expression" ref="ZipExpression1" />
+      <v:message id="error_zip_invalid" providers="PersonAddressModelErrorProvider" />
+    </v:regex>
+    <v:regex id="ZipRegexValidator2" test="Zip" when="CountryID != 'US'">
+      <v:property name="Expression" ref="ZipExpression2" />
+      <v:message id="error_zip_invalid" providers="PersonAddressModelErrorProvider" />
+    </v:regex>
+    <v:condition id="ZipLengthValidator" test="Zip.Length &lt;= 16">
+      <v:message id="error_zip_length_invalid" providers="PersonAddressModelErrorProvider"/>
+    </v:condition>
+  </v:group>
+  
+  
+</objects>

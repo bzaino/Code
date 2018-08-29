@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE DIMENSION_GROUPS SYSTEM "dimension_groups.dtd">
+<DIMENSION_GROUPS>
+
+  <DIMENSION_GROUP NAME="Published Content">
+    <DIMNAME>Gender</DIMNAME>
+    <DIMNAME>Vendor</DIMNAME>
+    <DIMNAME>KnowledgeLevels</DIMNAME>
+    <DIMNAME>LifeStage</DIMNAME>
+    <DIMNAME>StateChange</DIMNAME>
+    <DIMNAME>Voicelevel</DIMNAME>
+    <DIMNAME>Positioning</DIMNAME>
+    <DIMNAME>UserGoals</DIMNAME>
+    <DIMNAME>Standards</DIMNAME>
+    <DIMNAME>Topics</DIMNAME>
+    <DIMNAME>Topics-Parent</DIMNAME>
+    <DIMNAME>Persona</DIMNAME>
+    <DIMNAME>SALT Standards</DIMNAME>
+    <DIMNAME>ContentTypes</DIMNAME>
+    <DIMNAME>Language</DIMNAME>
+  </DIMENSION_GROUP>
+
+</DIMENSION_GROUPS>

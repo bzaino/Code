@@ -1,0 +1,404 @@
+/*******************************************************
+VLC  Styles
+*******************************************************/
+#startOver input[type="button"]:focus, #backButton input[type="button"]:focus{
+    background: #000 !important;
+}
+.VLCMain h1{
+    font-size: 1.4em;
+    font-weight: normal;
+    margin-bottom: .5em;
+}
+.VLCMain h2 {
+    font-size: 1rem;
+}
+.VLCmainContent p {
+    line-height: 1.3em;
+}
+.VLCMain .padded {
+    padding-left:0;
+}
+.table {
+    display:table;
+}
+.tableCell {
+    display:table-cell;
+}
+.tableCell.middleAlign {
+    vertical-align: middle;
+}
+.tableCell input {
+    margin: 0
+}
+.left-bar-callout {
+    padding: 0;
+    position: relative;
+    background: #fff;
+    padding: .625em 0 0 0;
+    border-top: 1px solid #ececec;
+}
+.left-bar-callout .prefix {
+    background-color:transparent;
+    border: 0;
+    float: left;
+    line-height: 1.64rem;
+    font-size:1em;
+    width: 15px;
+    padding: 2px 0 0 5px;
+    margin-right: -15px;
+}
+.left-bar-callout input.prefixed {
+    max-width: 100px;
+    padding-left: 17px;
+}
+.left-bar-callout h3 {
+    font-size: .8rem;
+    margin: 0px;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+.left-bar-callout h4 {
+    margin: .8em 0 0 0;
+    padding-bottom: 0;
+    font-weight: 600;
+}
+.left-bar-callout p {
+    line-height: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-top: 0;
+}
+#FeaturedContent .hasListView {
+    float: left;
+}
+.VLCLabel {
+    top: 6px;
+}
+option {
+    z-index: 100 !important;
+}
+option:focus, .styled-select:hover {
+    outline: medium none;
+}
+#reportModal #report_id span.error {
+    color: #FF6699;
+    display: block;
+    font: italic 11px arial, sans-serif;
+    padding-top: 0;
+    text-align: left;
+    text-transform: none;
+    width: auto;
+    margin-top: 2px;
+}
+.errorMessage {
+    font: italic 11px arial, sans-serif;
+    text-transform: none;
+    margin: 10px 0;
+}
+.loanDisplay {
+    background: #d7d7d7;
+    font-weight: bold;
+    color: black;
+    padding: 15px 15px 15px 5px;
+}
+.pinkText {
+    color: #fa1f95;
+}
+.verticalMargin55 {
+    margin: 55px 0 15px 0;
+}
+.btnHelp {
+    margin: 10px 0;
+}
+h3.deck-title {
+    text-transform: none;
+    font-weight: normal;
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+/* VLC toggle icons */
+.listViewToggle {
+    background: url("/Assets/images/home/homeViewIcons.png") no-repeat 0 0;
+}
+.listViewToggle-grid {
+    background-position: 0 -17px;
+}
+.listViewToggle-grid.activeBtn, .listViewToggle-grid:hover {
+    background-position: 0 3px;
+}
+.listViewToggle-List {
+    background-position: 0 -58px;
+}
+.listViewToggle-List.activeBtn, .listViewToggle-List:hover {
+    background-position: 0 -37px;
+}
+/* VLC center widget */
+    /* Foundation accordion CSS is deeply nested.
+    Try to avoid too-specific selectors, but sometimes can't be helped */
+dl.accordion.widgetAccordion {
+    border-bottom: 0;
+    margin-bottom: 10px;
+}
+.widgetAccordion .accordion .content {
+display: none;
+padding: 0.6375em;
+}
+dl.accordion .accordion-section {
+    border-top: 0;
+}
+
+dl.accordion.widgetAccordion.row {
+    border-bottom: 0;
+    margin: 0 0 10px 0;
+}
+.blackAndColorBtn, .widgetAccordion .title.widgetTitle.blackAndColorBtn {
+    background: $salt-blue;
+    padding: 4px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+    border-radius: 7px 7px 7px 7px;
+}
+.widgetAccordion .title.widgetTitle {
+    font-size: 16px;
+    position: relative;
+    text-align: right;
+}
+.widgetAccordion .accordion-arrow {
+    border: solid 6px;
+    border-color: white transparent transparent transparent;
+    margin-left: 5px;
+    position: relative;
+    top: 16px;
+}
+.widgetAccordion .active .accordion-arrow {
+    border-color: transparent transparent white transparent;
+    top: -13px;
+}
+dl.accordion .widgeth5 {
+    color: #fff;
+    display: inline-block;
+    margin: 0;
+    font-size: .75em;
+}
+h5.widgeth5 {
+    font-size: .75rem;
+}
+[class*="widgetIcon-"] {
+    background: url("/Assets/images/global/widgetSpriteGreen.png") 0 -2px no-repeat;
+    border-right: 1px solid #636466;
+    display: inline-block;
+    float: left;
+    margin-top: 5px;
+    height: 20px;
+    width: 27px;
+}
+.widgetIcon-info {
+    background-position: 0 -49px;
+}
+.widgetIcon-question {
+    background-position: 0 -67px;
+}
+.widgetIcon-links {
+    background-position: 0 -25px;
+}
+.widgetIcon-close {
+    background-position: 0 -85px;
+}
+.WidgetsButton.widgetsSlider {
+    display: none;
+}
+.widgetIcon-close.hide {
+    display: none;
+}
+dl.accordion .accordion-section .widgetContent {
+    border: 2px solid $gray15;
+    -webkit-border-radius: 0 0 7px 7px;
+    border-radius: 0 0 7px 7px;
+    margin: -4px 5px 0 5px;
+}
+.widgetContent .widget-item {
+    padding: 5px;
+    margin-bottom: 15px;
+}
+.widgetContent hr {
+    border-color: #FFFFFF;
+}
+.widgetContent .widgetText p {
+    line-height: 1.3em;
+}
+.widgetContent h4 {
+    margin-bottom: 10px;
+}
+.widgetContent ul.widget-list li.widget-row {
+    line-height: 15px;
+    margin-bottom: 10px;
+}
+.widgetContent ul.widget-list li.widget-row:last-child {
+    margin-bottom: 3px;
+}
+[id*="disclaimer-"]{
+    margin-top: 10px;
+}
+.widgetContent li p {
+    font-size: 1em;
+}
+.row form .row.widgetForm {
+    margin: 0 5px 0;
+}
+.widgetContent a, .widgetContent a:visited, .widgetContent a:active {
+    text-decoration: none;
+}
+.widgetContent a:hover {
+    text-decoration: underline;
+}
+.widgetContent a.button:hover {
+    text-decoration: none;
+}
+.widgetContent .boldText {
+    font-size: 12px;
+    font-weight: bold;
+}
+#ContextualHelp dd.active .widgetContent {
+    display: inline-block !important;
+}
+section.content .widgetText p {
+    font-size: .85em;
+    line-height: 1.3em;
+    margin-bottom: 0;
+}
+.widgetBlackText {
+    color: #000000;
+}
+.grayBorder {
+    border: 2px solid #CCC;
+}
+#loanImportContainer .step-callout {
+    overflow:hidden;
+}
+#Widgets .padded {
+    padding: 0.5em;
+}
+#whatyouvelearned section:not(:first-child) {
+    margin-top: 1.5em; 
+}
+#VLCBody em {
+    padding-right: 2px;
+}
+@media only screen and (max-width: 641px) {
+    .vlc-body p:first-of-type, .loanSection {
+        width: 95%;
+    }
+    [role="VLCWidget"], [role="VLCmainContent"] {
+        width: 100%;
+        display: block;
+        position: relative;
+        z-index: 1;
+        -webkit-transition: 0.25s all ease-in;
+        -moz-transition: 0.25s all ease-in;
+        -o-transition: 0.25s all ease-in;
+        transition: 0.25s all ease-in;
+    }
+    #Widgets[role="VLCWidget"] {
+        margin-right: -110%;
+        margin-top: 0;
+        float: right;
+        width: 100% !important;
+    }
+    .Widgetactive #Widgets[role="VLCWidget"] {
+        margin-right: 0;
+    }
+    .Widgetactive #Widgets dl.widgetAccordion {
+        margin-bottom: 0;
+    }
+    .Widgetactive #Widgets dl.accordion dd.accordion-section .content {
+        display: block !important;
+        border: none;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        margin: 0 -25px;
+    }
+    .Widgetactive #Widgets dl.accordion dd.accordion-section.active .content {
+        border: none;
+    }
+    .widgetOpenTab.blackAndColorBtn {
+        -webkit-box-shadow: -3px 10px 8px -8px rgba(51,51,51,1);
+        -moz-box-shadow: -3px 10px 8px -8px rgba(51,51,51,1);
+        box-shadow: -3px 10px 8px -8px rgba(51,51,51,1);
+        display: block;
+        height: 35px;
+        position: absolute;
+        right: -10px;
+        top: 10px;
+    }
+    .Widgetactive .accordion-arrow {
+        border: none;
+    }
+    div [role="VLCmainContent"] {
+        width: 100% !important;
+        float: left !important;
+    }
+    .Widgetactive [role="VLCmainContent"] {
+        margin-left: -100%;
+    }
+    .widgetsSlider .mobile_button {
+        border: 1px solid #ff008c;
+        width: 25px;
+        -webkit-box-shadow: 2px 4px 11px -3px #313538;
+        box-shadow: 2px 4px 11px -3px #313538;
+        padding: 6px 23px 5px 8px;
+    }
+    .Widgetactive .widgetsSlider .mobile_button {
+        -webkit-box-shadow: -2px 4px 11px -3px #313538;
+        box-shadow: -2px 4px 11px -3px #313538;
+    }
+    .widgetsSlider .widgetIcon-dollar {
+        border-right: none;
+    }
+    .WidgetsButton.widgetsSlider {
+        display: block;
+    }
+    .widgetIcon-dollar.hide {
+        display: none;
+    }
+    .widgetIcon-close.hide {
+        display: block;
+    }
+    .Widgetactive .widgetAccordion .widgetTitle.blackAndColorBtn{
+        margin: 0 -20px;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+    }
+    /*******************************************************
+    Drop down widgets
+    *******************************************************/
+    .gradSalaryEstimator .widgetAccordion > li > div.title.widgetTitle.blackAndColorBtn{
+        margin: 0;
+        -webkit-border-radius: 7px;
+        border-radius: 7px;
+    }
+    .gradSalaryEstimator ul.accordion.widgetAccordion > li > div.title:after {
+        border-color: white transparent transparent transparent;
+        border-width: 6px;
+        right: 8px;
+        top: 13px;
+    }
+    .gradSalaryEstimator ul.accordion.widgetAccordion > li.active > div.title:after {
+        border-color: transparent transparent white transparent;
+        top: 8px;
+    }
+}
+
+#plan select {
+    font-size: .75rem;
+}
+
+@media only screen and (min-width: 40.063em) {  /* min-width 641px, medium screens */
+    dl.accordion .widgeth5 {
+       font-size: .85rem;
+    }
+}
+@media only screen and (min-width: 64.063em) {  /* min-width 1025px, large screens */
+    dl.accordion .widgeth5 {
+        font-size: .95rem;
+    }
+}

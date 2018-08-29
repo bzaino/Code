@@ -1,0 +1,22 @@
+<div id="loginOverlay" class="hide custom-overlay bordered">
+    <div class="row">
+        <!-- for sidebar forms, don't load window shade overlay markup -->
+        {^sidebarReg}
+        <div class="window-shade small-12 medium-6 large-4 right noprint">
+            <a href="" class="js-void-href"><div tabindex="1" class="window-shade-close cancel-circle" data-focus-sel="#login-link"></div></a>
+        {/sidebarReg}
+            <div class="row">
+                <div class="small-11 columns">
+                    <header>
+                        <h2>Already Have An Account?</h2>
+                    </header>
+                </div>
+            </div>
+            {>"partial_logon_form"/}
+        <!-- for sidebar forms, don't load window shade overlay markup -->
+        {^sidebarReg}
+        </div>
+        {/sidebarReg}
+    </div>
+</div>
+{>"Overlays/ConfirmPersonalInfo" /}

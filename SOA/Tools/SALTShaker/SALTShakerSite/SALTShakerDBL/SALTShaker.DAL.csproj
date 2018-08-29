@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6ACCB4A5-F1E5-4FE1-A649-BFA19ED59FE4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SALTShaker.DAL</RootNamespace>
+    <AssemblyName>SALTShaker.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=17.1.1.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AjaxControlToolkit.17.1.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ASA.Web.Collections">
+      <HintPath>..\..\..\..\..\EDMS\ASA.Web\Collections\bin\$(Configuration)\ASA.Web.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="ASA.Web.WTF">
+      <HintPath>..\..\..\..\..\EDMS\ASA.Web\WTF\_root\bin\$(Configuration)\ASA.Web.WTF.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging">
+      <HintPath>..\..\..\..\..\3rdParty\Bin\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net">
+      <HintPath>..\..\..\..\..\3rdParty\Bin\Common.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Types">
+      <HintPath>..\..\..\..\Web\SALTService\Common.Types\bin\$(Configuration)\Common.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\3rdParty\Bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\3rdParty\Bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\ContentBL.cs" />
+    <Compile Include="BLL\ExceptionMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BLL\MemberBL.cs" />
+    <Compile Include="BLL\OrganizationBL.cs" />
+    <Compile Include="DAL\ContentRepository.cs" />
+    <Compile Include="DAL\DataContracts\ActivityTypeModel.cs" />
+    <Compile Include="DAL\DataContracts\ContentModel.cs" />
+    <Compile Include="DAL\DataContracts\EndecaContentModel.cs" />
+    <Compile Include="DAL\DataContracts\MemberModel.cs" />
+    <Compile Include="DAL\DataContracts\MemberOrganizationModel.cs" />
+    <Compile Include="DAL\DataContracts\OrganizationModel.cs" />
+    <Compile Include="DAL\DataContracts\OrganizationProductModel.cs" />
+    <Compile Include="DAL\DataContracts\OrganizationToDoModel.cs" />
+    <Compile Include="DAL\DataContracts\MemberActivityHistoryModel.cs" />
+    <Compile Include="DAL\DataContracts\ProductModel.cs" />
+    <Compile Include="DAL\DataContracts\SaltMemberModel.cs" />
+    <Compile Include="DAL\DataContracts\SaltRefDataModels.cs" />
+    <Compile Include="DAL\DataContracts\vMemberAcademicInfoModel.cs" />
+    <Compile Include="DAL\IContentRepository.cs" />
+    <Compile Include="DAL\ISaltRefDataRepository.cs" />
+    <Compile Include="DAL\MemberRepository.cs" />
+    <Compile Include="DAL\IMemberRepository.cs" />
+    <Compile Include="DAL\SaltRefDataRepository.cs" />
+    <Compile Include="DAL\IOrganizationRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAL\OrganizationRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAL\TranslateModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\SaltMemberComparer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SALTShaker.Proxies\SALTShaker.Proxies.csproj">
+      <Project>{3ce95c7a-4815-4e05-ad0a-e9569d367825}</Project>
+      <Name>SALTShaker.Proxies</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

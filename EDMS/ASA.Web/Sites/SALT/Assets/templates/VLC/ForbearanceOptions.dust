@@ -1,0 +1,3 @@
+{mainContent[0].records[0].attributes.headline}
+
+{mainContent[0].records[0].attributes.help-text}

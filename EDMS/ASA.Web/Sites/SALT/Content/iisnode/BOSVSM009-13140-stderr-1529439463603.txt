@@ -1,0 +1,18 @@
+Error communicating with chatbase: 
+Error: The message cannot be set as not_handled and not be of type user.
+    at NotHandledValidationError (C:\SOA\wksp_03\EDMS\ASA.Web\Sites\SALT\Content\node_modules\@google\chatbase\lib\MessageSink\errors.js:21:5)
+    at MessageStateWrapper.exportCreatePayload (C:\SOA\wksp_03\EDMS\ASA.Web\Sites\SALT\Content\node_modules\@google\chatbase\lib\MessageSink.js:426:14)
+    at Promise (C:\SOA\wksp_03\EDMS\ASA.Web\Sites\SALT\Content\node_modules\@google\chatbase\lib\MessageStateWrapper.js:133:29)
+    at MessageStateWrapper.send (C:\SOA\wksp_03\EDMS\ASA.Web\Sites\SALT\Content\node_modules\@google\chatbase\lib\MessageStateWrapper.js:129:12)
+    at buildSendChatbaseMsg (C:\SOA\wksp_03\EDMS\ASA.Web\Sites\SALT\Content\serverWidgets.js:182:9)
+    at Object.exports.logToChatbase (C:\SOA\wksp_03\EDMS\ASA.Web\Sites\SALT\Content\serverWidgets.js:234:5)
+    at C:\SOA\wksp_03\EDMS\ASA.Web\Sites\SALT\Content\routes.js:525:35
+Error communicating with chatbase: 
+Error: The message cannot be set as not_handled and not be of type user.
+    at NotHandledValidationError (C:\SOA\wksp_03\EDMS\ASA.Web\Sites\SALT\Content\node_modules\@google\chatbase\lib\MessageSink\errors.js:21:5)
+    at MessageStateWrapper.exportCreatePayload (C:\SOA\wksp_03\EDMS\ASA.Web\Sites\SALT\Content\node_modules\@google\chatbase\lib\MessageSink.js:426:14)
+    at Promise (C:\SOA\wksp_03\EDMS\ASA.Web\Sites\SALT\Content\node_modules\@google\chatbase\lib\MessageStateWrapper.js:133:29)
+    at MessageStateWrapper.send (C:\SOA\wksp_03\EDMS\ASA.Web\Sites\SALT\Content\node_modules\@google\chatbase\lib\MessageStateWrapper.js:129:12)
+    at buildSendChatbaseMsg (C:\SOA\wksp_03\EDMS\ASA.Web\Sites\SALT\Content\serverWidgets.js:182:9)
+    at Object.exports.logToChatbase (C:\SOA\wksp_03\EDMS\ASA.Web\Sites\SALT\Content\serverWidgets.js:234:5)
+    at C:\SOA\wksp_03\EDMS\ASA.Web\Sites\SALT\Content\routes.js:525:35

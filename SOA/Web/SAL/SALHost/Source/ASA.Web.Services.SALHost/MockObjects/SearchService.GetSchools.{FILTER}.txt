@@ -1,0 +1,20 @@
+﻿{
+	"ErrorList":[],
+	"Records":[
+		{"Fields":[
+			{"Key":"P_Primary_Key","Value":["School-102"]},
+			{"Key":"P_School_Alias","Value":["HVD"]},
+			{"Key":"P_School_ID","Value":["102"]},
+			{"Key":"P_School_Name","Value":["Harvard University"]},
+			{"Key":"Record Type","Value":["School"]}
+		]},
+		{"Fields":[
+			{"Key":"P_Primary_Key","Value":["School-103"]},
+			{"Key":"P_School_Alias","Value":["BU","Boston Univ."]},
+			{"Key":"P_School_ID","Value":["103"]},
+			{"Key":"P_School_Name","Value":["Boston University"]},
+			{"Key":"Record Type","Value":["School"]}
+		]}
+	],
+	"ResultsMessage":"Records were found"
+}

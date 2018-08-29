@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE SEARCH_CHARS SYSTEM "search_chars.dtd">
+<SEARCH_CHARS>
+
+  <SEARCH_CHAR>%</SEARCH_CHAR>
+
+  <SEARCH_CHAR>?</SEARCH_CHAR>
+
+  <SEARCH_CHAR>#</SEARCH_CHAR>
+
+  <SEARCH_CHAR>+</SEARCH_CHAR>
+
+  <SEARCH_CHAR>-</SEARCH_CHAR>
+
+  <SEARCH_CHAR>&amp;</SEARCH_CHAR>
+
+</SEARCH_CHARS>

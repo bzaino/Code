@@ -1,0 +1,87 @@
+<div id="graph-header">
+  <div class="heading">
+      PLACEHOLDER<!--    With a payment of <strong><span class="value">$425</span> per month,</strong> you’ll pay off your loan in <strong><span class="years">10</span> years.</strong> -->
+  </div>
+  <div id="chart-toggle">
+    <a href="#" class="graph"></a>
+    <a href="#" class="list"></a>
+  </div>
+</div>
+<div id="header-hidden-nav">
+  <div class="wrapper">
+    <a href="#" class="loan-balance hidden-btn"></a>
+    <a href="#" class="monthly-payment hidden-btn"></a>
+  </div>
+  <div id="view-selector" class="clearfix">
+    <a href="#" id="show-graphs" class="selected">show graphs</a>
+    <a href="#" id="show-list">show list</a>
+  </div>
+</div>
+
+
+
+<div id="graphs-view">
+  <div id="graph-nav">
+    <div class="wrapper">
+      <a href="#" class="loan-balance">Loan Balance</a>
+      <a href="#" class="monthly-payment">Monthly Payment</a>
+    </div>
+  </div>
+  <div id="balance-graph-container">
+    <div id="graph" style="min-width: 400px; height: 470px; margin: -110px auto 0px auto"></div>
+  </div>
+  
+  <div id="payment-graph-container">
+    <div id="payment-graph" style="min-width: 400px; height: 470px; margin: -110px auto 0px auto"></div>
+      <ul id="key">
+        <li class="red">Adjusted payment</li>
+      	<li class="blue">Standard repayment</li>
+      </ul>
+  </div>
+</div>
+
+<div id="list-view" class="hidden">
+  <div id="list-view-data" >
+    <dl class="clearfix">
+      <dt>Total repaid</dt>
+      <dd id="total-repaid"></dd>
+    </dl>
+    
+    <dl class="clearfix">
+      <dt>Total repayment period</dt>
+      <dd id="repayment-period"></dd>
+    </dl>
+    
+    <dl class="clearfix">
+      <dt>Total interest paid</dt>
+      <dd id="interest-paid"></dd>
+    </dl>
+    
+    <dl class="clearfix">
+      <dt>Monthly payment</dt>
+      <dd id="monthly-payment"></dd>
+    </dl>
+    
+    <dl class="clearfix">
+      <dt>Grace Period</dt>
+      <dd id="grace-period"></dd>
+    </dl>
+    
+    <dl class="clearfix">
+      <dt>Available deferment<strong>*</strong></dt>
+      <dd id="deferment"></dd>
+    </dl>
+    
+    <dl class="clearfix last">
+      <dt>Available forbearance<strong>*</strong></dt>
+      <dd id="forbearance"></dd>
+    </dl>
+
+  </div>
+
+  <br />
+  <p class="disclaimer">
+    <strong>*</strong>These can vary by loan type and servicer
+  </p>
+
+</div>

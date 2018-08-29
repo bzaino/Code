@@ -1,0 +1,1 @@
+define(["dust"], function(dust) { (function(){dust.register("CCP/college-cost-planner-graph",body_0);function body_0(chk,ctx){return chk.write("<div class=\"small-12 medium-6 columns padding-top js-ccp-graph\" id=\"CCPGraph\"><div class=\"js-ccp-graph ccp-graph\" id=\"js-ccp-chart\" ").reference(ctx.get("display"),ctx,"h").write("></div></div>");}return body_0;})(); });

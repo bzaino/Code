@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!--
+  ~ Copyright 2001, 2012, Oracle and/or its affiliates. All rights reserved.
+  ~ Oracle and Java are registered trademarks of Oracle and/or its
+  ~ affiliates. Other names may be trademarks of their respective owners.
+  ~ UNIX is a registered trademark of The Open Group.
+  ~
+  ~ This software and related documentation are provided under a license
+  ~ agreement containing restrictions on use and disclosure and are
+  ~ protected by intellectual property laws. Except as expressly permitted
+  ~ in your license agreement or allowed by law, you may not use, copy,
+  ~ reproduce, translate, broadcast, modify, license, transmit, distribute,
+  ~ exhibit, perform, publish, or display any part, in any form, or by any
+  ~ means. Reverse engineering, disassembly, or decompilation of this
+  ~ software, unless required by law for interoperability, is prohibited.
+  ~ The information contained herein is subject to change without notice
+  ~ and is not warranted to be error-free. If you find any errors, please
+  ~ report them to us in writing.
+  ~ U.S. GOVERNMENT END USERS: Oracle programs, including any operating
+  ~ system, integrated software, any programs installed on the hardware,
+  ~ and/or documentation, delivered to U.S. Government end users are
+  ~ "commercial computer software" pursuant to the applicable Federal
+  ~ Acquisition Regulation and agency-specific supplemental regulations.
+  ~ As such, use, duplication, disclosure, modification, and adaptation
+  ~ of the programs, including any operating system, integrated software,
+  ~ any programs installed on the hardware, and/or documentation, shall be
+  ~ subject to license terms and license restrictions applicable to the
+  ~ programs. No other rights are granted to the U.S. Government.
+  ~ This software or hardware is developed for general use in a variety
+  ~ of information management applications. It is not developed or
+  ~ intended for use in any inherently dangerous applications, including
+  ~ applications that may create a risk of personal injury. If you use
+  ~ this software or hardware in dangerous applications, then you shall
+  ~ be responsible to take all appropriate fail-safe, backup, redundancy,
+  ~ and other measures to ensure its safe use. Oracle Corporation and its
+  ~ affiliates disclaim any liability for any damages caused by use of this
+  ~ software or hardware in dangerous applications.
+  ~ This software or hardware and documentation may provide access to or
+  ~ information on content, products, and services from third parties.
+  ~ Oracle Corporation and its affiliates are not responsible for and
+  ~ expressly disclaim all warranties of any kind with respect to
+  ~ third-party content, products, and services. Oracle Corporation and
+  ~ its affiliates will not be responsible for any loss, costs, or damages
+  ~ incurred due to your access to or use of third-party content, products,
+  ~ or services.
+  -->
+
+<!--
+BEGIN DOCUMENTATION
+
+
+This settings file lets you:
+- disable particular report items, or entire report sections
+- specify the values of N for "Top N" report items
+- specify the size of the session queue that's used for conversion rate
+  report items. (A larger number results in more accurate conversion rate
+  calculations, but uses more memory.)
+  
+Here is a sample configuration:
+
+	<report_settings>
+		<disable list="conv_rate_summ, top_search_terms_dym_engaged" />
+		<top_n report_item="top_search_terms_no_results" n="5, 10, 25, 50" initial_value="25" />
+		<top_n report_item="top_autocorrected_terms" n="10, 25, 50" initial_value="10" />
+		<session_queue size="5000" />
+	</report_settings>
+
+Here is a list of IDs for report sections and the report items they contain, 
+which you can use in <disable> and <top_n> elements. (This list is for reference
+purposes only - changes to this list will have no effect.)
+
+	req_and_sess
+		request_and_session_summary
+		num_requests_by_hour
+		num_requests_by_date
+		num_unique_sessions_by_hour
+		num_unique_sessions_by_date
+		requests_by_type
+		num_search_only_requests_by_num_results
+		num_nav_only_requests_by_num_results
+		num_search_then_nav_requests_by_num_results
+		dimension_values
+	conv_rate_summ
+		conversion_rate
+		conversion_rate_by_hour
+		conversion_rate_by_date
+		conversion_rate_by_type
+		conversion_rate_top_by_search_terms
+		conversion_rate_by_top_dimensions
+		conversion_rate_by_top_merch_rules
+	abtest
+		conversion_rate_by_top_abtest_rules
+	search
+		top_search_keys
+		top_search_terms
+		top_search_terms_w_results
+	nav
+		top_dimensions
+		top_dvals
+		top_dimension_pairs
+		top_dval_pairs
+		top_dimension_triples
+		top_dval_triples
+	recs
+		top_records
+	noresults 
+		spell_correct_alt_sugg_summary
+		top_search_terms_no_results
+		top_autocorrected_terms
+		top_search_terms_dym_engaged
+	merch
+		business_rules_summary
+		top_merch_rules
+		top_records_selected_through_merch
+		top_dvals_no_merch
+		top_search_terms_no_merch
+	dimsearch 	
+		dim_search_summary
+		top_dimension_search_results_selected
+	sort
+		sorting_summary
+		top_sort_keys
+
+
+END DOCUMENTATION
+-->
+
+
+<report_settings>
+
+</report_settings>

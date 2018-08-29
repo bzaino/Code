@@ -1,0 +1,101 @@
+/*******************************************************
+Glossary Styles
+*******************************************************/
+.glossary [data-magellan-expedition] {
+    background: white;
+    z-index: 50;
+    top: 40px !important;
+    max-width: 600px;
+}
+.glossary .sub-nav dt, .glossary .sub-nav dd {
+    float: left;
+    display: inline;
+    padding-left: .15rem;
+    padding-bottom: 0.625rem;
+    font-weight: normal;
+    font-size: 0.8rem;
+    color: #cecece;
+    padding-top: 1em;
+}
+.glossary dl.sub-nav {
+    display: table;
+    margin-left: -1.1rem;
+}
+.glossary dl.sub-nav dd.nolink {
+    -moz-letter-spacing: 4px;
+    letter-spacing: 4px;
+    cursor: default;
+}
+.glossary dl.sub-nav dd a {
+    -moz-letter-spacing: 3px;
+    letter-spacing: 4px;
+    line-height: 1em !important;
+    text-decoration: none;
+    color: $light-blue;
+    padding: 0 0;
+    cursor: default;
+}
+.glossary dl.sub-nav dd.active a, .glossary dl.sub-nav dd:hover a {
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: $salt-blue;
+    color: $white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 3px 0 3px 8px;
+    margin-left: -8px;
+}
+.glossary .sub-nav dt.active a:hover, .glossary .sub-nav dd.active a:hover, .glossary .sub-nav li.active a:hover {
+    background: #5BC500;
+}
+.glossary-content {
+    border-top: #5BC500;
+    border-top-style: solid;
+    padding-top: 20px;
+    width:100%;
+}
+.glossary-header p {
+    margin-bottom: 10px;
+}
+.glossary-letter {
+    border-bottom: 1px solid #000;
+    font-size: 1.5em;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 1.2em 0;
+}
+.glossary-term {
+    color: #003763;
+    font-size: 13pt;
+    font-weight: bold;
+    padding-top: inherit;
+    margin: 1em 0 0;
+}
+.glossary-definition {
+    margin: 0 .625em .5rem 0;
+}
+.glossary-definition p {
+    margin-bottom: .5rem;
+}
+/*  extra spacing in IE for scrolling under fixed header*/
+p.spaced {
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+/* remove extra spacing in Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .glossary-letter {
+        padding-top: 0;
+        margin-top: 1.2em;
+    }
+}
+@media #{$large-up} {
+    .glossary .sub-nav dt, .glossary .sub-nav dd {
+        margin-left: 0;
+        margin-bottom: 0; 
+        padding-left: .62rem;
+        padding-bottom: 0.625rem;
+        font-size: 0.875rem;
+    }
+}

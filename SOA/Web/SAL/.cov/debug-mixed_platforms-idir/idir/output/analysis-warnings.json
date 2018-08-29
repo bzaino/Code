@@ -1,0 +1,10 @@
+[
+  {
+    errorType : "missingSummaries",
+    errorSubType : null,
+    errorMessage : {
+      CovLStr : "{CovLStrv2{{t{[WARNING] Some summaries were not available because of disconnected operation.\nThis may affect results.}}}}",
+      en : "[WARNING] Some summaries were not available because of disconnected operation.\nThis may affect results."
+    }
+  }
+]

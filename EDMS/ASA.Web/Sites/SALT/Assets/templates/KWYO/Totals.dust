@@ -1,0 +1,11 @@
+<div class="totals-data row">
+     <div class="columns medium-6 kwyo-total"><span>Total Owed: ${Total.total|currencyComma}</span></div>
+     <div class="columns medium-6 kwyo-monthly"><span>Monthly Payment: ${Monthly.total|currencyComma}</span></div>
+</div>
+{?LastDate}
+	<div class="row">
+		<div class="columns">
+    		<small class="left"><i>Last Updated: {LastDate}</i></small>
+    	</div>
+    </div>
+{/LastDate}

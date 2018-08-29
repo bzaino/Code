@@ -1,0 +1,7 @@
+{@if cond="'{ContentEditorText|trim}'.length"}
+    <div class="row collapse">
+        <section class="small-12 columns detail-disclaimer">
+            {ContentEditorText|s}
+        </section>
+    </div>
+{/if}

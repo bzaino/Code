@@ -1,0 +1,10 @@
+<div class="row js-affiliation-add-buttons affiliation-add-buttons {initialVisibility}">
+  <div class="small-5 columns left-add"> 
+    <input type="button" tabindex="{tabIndex}" value="" id="plus-school" class="plus-one js-school-add-button">
+    <label for="plus-school" class="plus-button">Add School</label>
+  </div>
+  <div class="small-7 columns"> 
+    <input type="button" tabindex="{tabIndex}" value="" id="plus-org" class="plus-one js-organization-add-button">
+     <label for="plus-org" class="plus-button">Add Organization</label>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+{!-- this form's action is populated in progresswidget.js render callback function --!}
+<form id="js-Courses-form" action="" target="_blank" method="get">
+   <input type="hidden" name="wantsurl" id="wantsurl" value="" />
+</form>
+{#.}
+	<div class="js-rr-course-widget js-rr-module rr-course">
+		<div class="left MM101">
+			<a href="#" data-coursepath="/course/view.php?id={CourseID}" class="js-salt-courses-link course-name-lnk"><span class="rr-course-name js-rr-module-header">{ShortName}</span></a>
+		</div>
+		<div class="right">
+		<div class="checkmark {?CompleteStatus}completed{:else}incomplete{/CompleteStatus}"></div>
+		</div>
+	</div>
+{/.}

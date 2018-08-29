@@ -1,0 +1,5 @@
+AssemblyFullPath,GACAddOrRemove,DeleteFileIfBeingRemoved
+D:\inetpub\@site.physical.path@\bin\DirectoryServicesWrapper.dll,remove,no
+D:\inetpub\@site.physical.path@\bin\DirectoryServicesWrapper.dll,add,
+D:\inetpub\@site.physical.path@\api\bin\HttpsRequestWrapper.dll,remove,no
+D:\inetpub\@site.physical.path@\api\bin\HttpsRequestWrapper.dll,add,

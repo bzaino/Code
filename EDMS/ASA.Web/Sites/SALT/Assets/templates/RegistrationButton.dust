@@ -1,0 +1,3 @@
+<a class="underline registrationOverlay-link" data-window-shade="registrationOverlay" ><br>Sign up.</a>
+<!-- SWD-7216 Route 'small screen' users to signup page instead of signup overlay -->
+<a href="/register" class="underline registration-link" ><br>Sign up.</a>

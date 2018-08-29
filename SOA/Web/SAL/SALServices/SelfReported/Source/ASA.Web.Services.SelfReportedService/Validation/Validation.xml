@@ -1,0 +1,69 @@
+<objects xmlns="http://www.springframework.net" xmlns:v="http://www.springframework.net/validation">
+  <!-- Reusable Regular Expressions -->
+
+  <object name = "MoneyExpression" type="String">
+    <constructor-arg value="^[0-9.]+$"/>
+  </object>
+
+  <object name="NumberExpression" type="String">
+    <constructor-arg value="^[0-9]+$"/>
+  </object>
+  
+  <!--  SELF REPORTED LOAN VALIDATION -->
+  <v:group id="SelfReportedLoanModelValidator">
+    <!-- REQUIRED STUFF-->
+    <v:required id="IndividualIdRequiredValidator" test="IndividualId">
+      <v:message id="error_indidualid_required" providers="SelfReportedLoanModelErrorProvider"/>
+    </v:required>
+    <!-- LENGTH STUFF-->
+    <v:condition id="LoanStatusIdLengthValidator" test="LoanStatusId.Length &lt;= 2">
+      <v:message id="error_loanstatusid_length_invalid" providers="SelfReportedLoanModelErrorProvider"/>
+    </v:condition>
+    <v:condition id="LoanTypeIdLengthValidator" test="LoanTypeId.Length &lt;= 2">
+      <v:message id="error_loantypeid_length_invalid" providers="SelfReportedLoanModelErrorProvider"/>
+    </v:condition>
+    <v:condition id="AccountNicknameLengthValidator" test="AccountNickname.Length &lt;= 50">
+      <v:message id="error_accountnickname_length_invalid" providers="SelfReportedLoanModelErrorProvider"/>
+    </v:condition>
+    <v:condition id="HolderNameLengthValidator" test="HolderName.Length &lt;= 80">
+      <v:message id="error_holdername_length_invalid" providers="SelfReportedLoanModelErrorProvider"/>
+    </v:condition>
+    <v:condition id="SchoolNameLengthValidator" test="SchoolName.Length &lt;= 80">
+      <v:message id="error_schoolname_length_invalid" providers="SelfReportedLoanModelErrorProvider"/>
+    </v:condition>
+    <v:condition id="ServicerNameLengthValidator" test="ServicerName.Length &lt;= 80">
+      <v:message id="error_servicername_length_invalid" providers="SelfReportedLoanModelErrorProvider"/>
+    </v:condition>
+    <v:condition id="ServicerWebAddressLengthValidator" test="ServicerWebAddress.Length &lt;= 120">
+      <v:message id="error_servicerwebaddress_length_invalid" providers="SelfReportedLoanModelErrorProvider"/>
+    </v:condition>
+    <!-- REGEX STUFF -->
+    <v:regex id="InterestRateRegexValidator" test="InterestRate">
+      <v:property name="Expression" ref="MoneyExpression" />
+      <v:message id="error_interestrate_invalid" providers="SelfReportedLoanModelErrorProvider" />
+    </v:regex>
+    <v:regex id="PrincipalBalanceOutstandingAmountRegexValidator" test="PrincipalBalanceOutstandingAmount">
+      <v:property name="Expression" ref="MoneyExpression" />
+      <v:message id="error_principalbalanceoutstandingamount_invalid" providers="SelfReportedLoanModelErrorProvider" />
+    </v:regex>
+    <v:regex id="PaymentDueAmountRegexValidator" test="PaymentDueAmount">
+      <v:property name="Expression" ref="MoneyExpression" />
+      <v:message id="error_paymentdueamount_invalid" providers="SelfReportedLoanModelErrorProvider" />
+    </v:regex>
+    <v:regex id="NextPaymentDueAmountRegexValidator" test="NextPaymentDueAmount">
+      <v:property name="Expression" ref="MoneyExpression" />
+      <v:message id="error_nextpaymentdueamount_invalid" providers="SelfReportedLoanModelErrorProvider" />
+    </v:regex>
+  </v:group>
+
+  <!--
+        //        <xsd:element name="InterestRate" type="xsd:double" minOccurs="0" nillable="true"/>
+        //        <xsd:element name="PrincipalBalanceOutstandingAmount" type="cmn:MoneyType" minOccurs="0" nillable="true"/>
+        //        <xsd:element name="PaymentDueAmount" type="cmn:MoneyType" minOccurs="0" nillable="true"/>
+        //        <xsd:element name="NextPaymentDueAmount" type="cmn:MoneyType" minOccurs="0" nillable="true"/>
+        //        <xsd:element name="NextPaymentDueDate" type="xsd:dateTime" minOccurs="0" nillable="true"/>
+        //        <xsd:element name="IsActive" type="cmn:vchar1" minOccurs="0" nillable="true"/>
+        //        <xsd:element name="RecordVersion" type="xsd:base64Binary" nillable="true" minOccurs="0"/>
+  -->
+  
+</objects>

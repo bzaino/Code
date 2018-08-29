@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{497716E3-A5F3-45FD-874E-0C76BA4D5773}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ASA.Web.Services.LessonsService</RootNamespace>
+    <AssemblyName>ASA.Web.Services.LessonsService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\Bin\Web\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\..\Bin\Web\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <Choose>
+    <When Condition="'$(Configuration)' == 'Release'">
+      <ItemGroup>
+        <Reference Include="ASA.Log.ServiceLogger">
+          <SpecificVersion>False</SpecificVersion>
+          <HintPath>..\..\..\..\..\..\Bin\InternalComponents\Release\ASA.Log.ServiceLogger.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="ASA.Log.ServiceLogger">
+          <SpecificVersion>False</SpecificVersion>
+          <HintPath>..\..\..\..\..\..\Bin\InternalComponents\Debug\ASA.Log.ServiceLogger.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\3rdParty\Bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataContracts\Lesson2\CardInformation.cs">
+      <DependentUpon>Lesson2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContracts\Lesson2\DebtReductionOptions.cs">
+      <DependentUpon>Lesson2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContracts\Lesson2\Lesson2.cs" />
+    <Compile Include="DataContracts\Lesson3\Deferment.cs">
+      <DependentUpon>Lesson3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContracts\Expense.cs" />
+    <Compile Include="DataContracts\Lesson3\FasterRepayment.cs">
+      <DependentUpon>Lesson3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContracts\Lesson3\Favorite.cs">
+      <DependentUpon>Lesson3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContracts\Frequency.cs" />
+    <Compile Include="DataContracts\Lesson1\Goal.cs">
+      <DependentUpon>Lesson1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContracts\Lesson1\Income.cs">
+      <DependentUpon>Lesson1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContracts\Lesson1\Lesson1.cs" />
+    <Compile Include="DataContracts\Lesson3\Lesson3.cs" />
+    <Compile Include="DataContracts\Lesson3\LoanType.cs">
+      <DependentUpon>Lesson3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContracts\Lesson3\LowerPayment.cs">
+      <DependentUpon>Lesson3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContracts\Lesson2\OneTimeExpense.cs">
+      <DependentUpon>Lesson2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContracts\Lesson2\RecurringExpense.cs">
+      <DependentUpon>Lesson2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContracts\Lesson3\RepaymentOptions.cs">
+      <DependentUpon>Lesson3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContracts\Lesson3\StandardRepayment.cs">
+      <DependentUpon>Lesson3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContracts\Lessons.cs" />
+    <Compile Include="DataContracts\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceContracts\Lesson2.partial.cs">
+      <DependentUpon>Lessons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceContracts\Lesson1.partial.cs">
+      <DependentUpon>Lessons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceContracts\Lessons.cs" />
+    <Compile Include="ServiceContracts\Lesson3.partial.cs">
+      <DependentUpon>Lessons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TranslateModel.cs" />
+    <Compile Include="Validation\ExpenseValidation.cs" />
+    <Compile Include="Validation\FrequencyValidation.cs" />
+    <Compile Include="Validation\Lesson1Validation\GoalValidation.cs">
+      <DependentUpon>Lesson1Validation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\Lesson1Validation\IncomeValidation.cs">
+      <DependentUpon>Lesson1Validation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\Lesson1Validation\Lesson1Validation.cs" />
+    <Compile Include="Validation\Lesson2Validation\CardInformationValidation.cs">
+      <DependentUpon>Lesson2Validation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\Lesson2Validation\DebtReductionOptionsValidation.cs">
+      <DependentUpon>Lesson2Validation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\Lesson2Validation\Lesson2Validation.cs" />
+    <Compile Include="Validation\Lesson2Validation\OneTimeExpenseValidation.cs">
+      <DependentUpon>Lesson2Validation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\Lesson2Validation\RecurringExpenseValidation.cs">
+      <DependentUpon>Lesson2Validation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\Lesson3Validation\DeferementValidation.cs">
+      <DependentUpon>Lesson3Validation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\Lesson3Validation\FasterRepaymentValidation.cs">
+      <DependentUpon>Lesson3Validation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\Lesson3Validation\FavoriteValidation.cs">
+      <DependentUpon>Lesson3Validation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\Lesson3Validation\Lesson3Validation.cs" />
+    <Compile Include="Validation\Lesson3Validation\LoanTypeValidation.cs">
+      <DependentUpon>Lesson3Validation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\Lesson3Validation\LowerPaymentValidation.cs">
+      <DependentUpon>Lesson3Validation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\Lesson3Validation\RepaymentOptionsValidation.cs">
+      <DependentUpon>Lesson3Validation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\Lesson3Validation\StandardRepaymentValidation.cs">
+      <DependentUpon>Lesson3Validation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\LessonsValidation.cs" />
+    <Compile Include="Validation\UserValidation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\..\EDMS\ASA.Web\WTF\Integration\ASA.Web.WTF.Integration.csproj">
+      <Project>{B63E76A8-E705-4A19-95AC-4E30AAF289BA}</Project>
+      <Name>ASA.Web.WTF.Integration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\SALTService\Common.Types\Common.Types.csproj">
+      <Project>{55C6DF8C-5C3E-46D0-9011-A4DC75C6B553}</Project>
+      <Name>Common.Types</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Common\Source\ASA.Web.Services.Common\ASA.Web.Services.Common.csproj">
+      <Project>{C3BED31D-9AFF-4FDE-A672-3806F28596FE}</Project>
+      <Name>ASA.Web.Services.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\..\EDMS\ASA.Web\WTF\_root\ASA.Web.WTF.csproj">
+      <Project>{DC669184-0A6D-4EF7-B225-07A4F5C841A9}</Project>
+      <Name>ASA.Web.WTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Common\Source\ASA.Web.Services.Proxies\ASA.Web.Services.Proxies.csproj">
+      <Project>{AE7B93ED-B4D2-456D-B8E3-4A0984B77461}</Project>
+      <Name>ASA.Web.Services.Proxies</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Membership\Source\ASA.Web.Services.ASAMemberService\ASA.Web.Services.ASAMemberService.csproj">
+      <Project>{4B9960C0-CA04-46CF-9DEA-55F9FE8C4F02}</Project>
+      <Name>ASA.Web.Services.ASAMemberService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Validation\ErrorMessages.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

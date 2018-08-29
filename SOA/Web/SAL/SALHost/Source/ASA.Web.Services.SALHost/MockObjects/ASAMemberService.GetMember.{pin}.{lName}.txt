@@ -1,0 +1,53 @@
+﻿{
+	"ErrorList":[],
+	"Addresses":[{
+		"ErrorList":[],
+		"AddressLine1":"100 Cambridge St",
+		"AddressLine2": null,
+		"City":"Boston",
+		"Country":"United States of America",
+		"CountryID":"USA",
+		"ForeignPostalCode":null,
+		"State":"Massachusetts",
+		"StateID":"MA",
+		"Type":"Primary",
+		"TypeID":"P",
+		"Zip":"02114"
+	}],
+	"ContactFrequency":"Weekly",
+	"CustomerId":2,
+	"DOB":"\/Date(928164000000-0400)\/",
+	"Emails":[{
+		"ErrorList":[],
+		"EmailAddress":"test12@asa.org",
+		"Type":"Primary",
+		"TypeID":"P"
+	}],
+	"EnrollmentStatus":"G",
+	"ExternalId":"EXTRNL_1",
+	"FirstName":"Johnny",
+	"GradeLevel":"4",
+	"GraduationDate":"\/Date(928164000000-0400)\/",
+	"IndividualId":"member1",
+	"LastName":"Foxtrot",
+	"LegalFirstName":"John",
+	"MembershipId":"someidentifierhere",
+	"MembershipPIN":"123456",
+	"MembershipStartDate":"\/Date(928164000000-0400)\/",
+	"MiddleInitial":"Q",
+	"PINExpirationDate":"\/Date(928164000000-0400)\/",
+	"PartTimeDate":"\/Date(928164000000-0400)\/",
+	"PersonId":123456,
+	"Phones":[{
+		"ErrorList":[],
+		"PhoneNumber":"6175555555",
+		"Type":"Mobile",
+		"TypeID":"M"
+	}],
+	"Schools":[{
+		"ErrorList":[],
+		"SchoolId":"sch1",
+		"SchoolName":"School of Underwater Basket Weaving"
+	}],
+	"WithdrawalDate":"\/Date(928164000000-0400)\/"
+}

@@ -1,0 +1,127 @@
+.owl-theme .owl-controls{
+    margin: .5em 0 1em 0;
+    text-align: center;
+}
+/* Styling Next and Prev buttons */
+.owl-theme .owl-controls .owl-buttons div{
+    display: inline-block;
+    zoom: 1; 
+    margin: 6px;
+}
+.owl-prev {
+    width: 0; 
+    height: 0; 
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent; 
+    border-right: 9px solid #586173; 
+}
+.owl-next {
+    width: 0; 
+    height: 0; 
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 9px solid #586173;
+}
+/* Button fix for SWD-7671*/
+.persona-signup-btn {
+    z-index: 1;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.carousel-holder { 
+    margin: 0 .625em 1.25em .625em;
+    //max-width:300px;
+}
+.content .carousel-holder {
+    display: none;
+}
+.carousel-holder .owl-theme {
+    background: #f1f1f1; 
+    margin-right: .625em;
+}
+
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+    opacity: 1;
+    text-decoration: none;
+}
+/* Styling Pagination*/
+.owl-theme .owl-controls .owl-page{
+    display: inline-block;
+    zoom: 1;
+}
+.owl-theme .owl-controls .owl-page span{
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin: 0 4px 7px 4px; 
+    opacity: 0.5;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #869791;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+    opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+    height: auto;
+    width: auto;
+    color: #FFF;
+    padding: 2px 10px;
+    font-size: 12px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+    min-height: 150px;
+}
+.img-container img {
+    width:100%;
+}
+.owl-pagination {
+    background: #f1f1f1 !important;
+}
+.owl-page {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.carousel-img {
+    border-bottom: 3px solid #fff;
+}
+.carousel-img > p:first-child {
+    margin: 0;
+}
+.carousel-headline {
+    background: #fff;
+    border-bottom: 1px solid $gray15; 
+    font-size: 1.15em;
+    line-height: 1em;
+    margin-bottom: .625em;
+    padding-bottom: .3em;
+    font-weight: bold; 
+    margin-top: 2em;
+}
+.carousel-bg {
+    margin-top: 0;
+    padding: .75em;
+}
+.carousel-bg p {
+    font-size:.84rem;
+    margin-bottom: .9rem;
+    line-height: 1.2rem;
+}
+.carousel-bg .carousel-author p {
+    font-size: .75rem;
+    font-style: italic;
+}
+ @media only screen and (min-width: 50.063em) {
+    .content .carousel-holder {
+        display: block;
+    }
+}

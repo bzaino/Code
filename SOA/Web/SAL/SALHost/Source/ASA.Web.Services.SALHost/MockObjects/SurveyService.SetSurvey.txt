@@ -1,0 +1,9 @@
+﻿{
+	"ErrorList":[{
+		"BusinessMessage":"Mock - Storing Survey was successful.",
+		"Code":"",
+		"DetailMessage":"Mock Storing Survey was successful.",
+		"ServiceName":"Web Survey Service"
+	}],
+	"ResultCode":1
+}

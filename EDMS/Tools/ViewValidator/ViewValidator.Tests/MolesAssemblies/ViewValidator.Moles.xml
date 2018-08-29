@@ -1,0 +1,1627 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ViewValidator.Moles</name>
+    </assembly>
+    <members>
+        <member name="T:AfcTester.Utility.Moles.MArguments">
+            <summary>Mole type of <see cref="T:AfcTester.Utility.Arguments"/>
+            .</summary>
+        </member>
+        <member name="M:AfcTester.Utility.Moles.MArguments.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:AfcTester.Utility.Moles.MArguments.#ctor(AfcTester.Utility.Arguments)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:AfcTester.Utility.Moles.MArguments.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:AfcTester.Utility.Moles.MArguments.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:AfcTester.Utility.Moles.MArguments.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:AfcTester.Utility.Moles.MArguments.ConstructorStringArray">
+            <summary>Sets the mole of <see cref="M:AfcTester.Utility.Arguments.#ctor(System.String[])"/>
+            </summary>
+        </member>
+        <member name="P:AfcTester.Utility.Moles.MArguments.ItemGetString">
+            <summary>Sets the mole of <see cref="P:AfcTester.Utility.Arguments.Item(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:AfcTester.Utility.Moles.MArguments.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:AfcTester.Utility.Moles.MArguments.AllInstances.ItemGetString">
+            <summary>Sets the mole of <see cref="P:AfcTester.Utility.Arguments.Item(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MControllerActionValidator">
+            <summary>Mole type of <see cref="T:ViewValidator.ControllerActionValidator"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MControllerActionValidator.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MControllerActionValidator.#ctor(ViewValidator.ControllerActionValidator)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MControllerActionValidator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MControllerActionValidator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MControllerActionValidator.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MControllerActionValidator.ConstructorStringStringReportList">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ControllerActionValidator.#ctor(System.String,System.String,ViewValidator.ReportList)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MControllerActionValidator.CreateRazorFilenameString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ControllerActionValidator.CreateRazorFilename(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MControllerActionValidator.IsControllerActionValidStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ControllerActionValidator.IsControllerActionValid(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MControllerActionValidator.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MControllerActionValidator.AllInstances.CreateRazorFilenameString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ControllerActionValidator.CreateRazorFilename(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MControllerActionValidator.AllInstances.IsControllerActionValidStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ControllerActionValidator.IsControllerActionValid(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MFolderValidator">
+            <summary>Mole type of <see cref="T:ViewValidator.FolderValidator"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MFolderValidator.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MFolderValidator.#ctor(ViewValidator.FolderValidator)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MFolderValidator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MFolderValidator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MFolderValidator.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MFolderValidator.ConstructorFolderValidatorFolderStatusStringStringReportList">
+            <summary>Sets the mole of <see cref="M:ViewValidator.FolderValidator.#ctor(ViewValidator.FolderValidator.FolderStatus,System.String,System.String,ViewValidator.ReportList)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MFolderValidator.FolderTreePathAndFileGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.FolderValidator.FolderTreePathAndFile"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MFolderValidator.Validate">
+            <summary>Sets the mole of <see cref="M:ViewValidator.FolderValidator.Validate"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MFolderValidator.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MFolderValidator.AllInstances.FolderTreePathAndFileGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.FolderValidator.FolderTreePathAndFile"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MFolderValidator.AllInstances.Validate">
+            <summary>Sets the mole of <see cref="M:ViewValidator.FolderValidator.Validate"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MLog">
+            <summary>Mole type of <see cref="T:ViewValidator.Log"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MLog.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MLog.#ctor(ViewValidator.Log)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MLog.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MLog.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MLog.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MLog.ConstructorString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Log.#ctor(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MLog.LogReportReport">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Log.LogReport(ViewValidator.Report)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MLog.OutputFileGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Log.OutputFile"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MLog.OutputFileSetString">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Log.OutputFile"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MLog.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MLog.AllInstances.LogReportReport">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Log.LogReport(ViewValidator.Report)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MLog.AllInstances.OutputFileGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Log.OutputFile"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MLog.AllInstances.OutputFileSetString">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Log.OutputFile"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MReport">
+            <summary>Mole type of <see cref="T:ViewValidator.Report"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReport.#ctor(ViewValidator.Report)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReport.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReport.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.Constructor">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Report.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.EqualsObject">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Report.Equals(System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.PagefeedNeededGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.PagefeedNeeded"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.PagefeedNeededSetBoolean">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.PagefeedNeeded"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.PathGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.Path"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.PathResolvesGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.PathResolves"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.PathResolvesSetPathResolves">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.PathResolves"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.PathSetString">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.Path"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.ReportFrequencyGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.ReportFrequency"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.ReportFrequencySetInt32">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.ReportFrequency"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.ReportMessageGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.ReportMessage"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.ReportMessageSetString">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.ReportMessage"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.ReportTypeGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.ReportType"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.ReportTypeSetReportType">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.ReportType"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.TagNameGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.TagName"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.TagNameSetString">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.TagName"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MReport.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.AllInstances.EqualsObject">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Report.Equals(System.Object)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.AllInstances.PagefeedNeededGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.PagefeedNeeded"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.AllInstances.PagefeedNeededSetBoolean">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.PagefeedNeeded"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.AllInstances.PathGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.Path"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.AllInstances.PathResolvesGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.PathResolves"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.AllInstances.PathResolvesSetPathResolves">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.PathResolves"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.AllInstances.PathSetString">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.Path"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.AllInstances.ReportFrequencyGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.ReportFrequency"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.AllInstances.ReportFrequencySetInt32">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.ReportFrequency"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.AllInstances.ReportMessageGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.ReportMessage"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.AllInstances.ReportMessageSetString">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.ReportMessage"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.AllInstances.ReportTypeGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.ReportType"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.AllInstances.ReportTypeSetReportType">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.ReportType"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.AllInstances.TagNameGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.TagName"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReport.AllInstances.TagNameSetString">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Report.TagName"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MReportList">
+            <summary>Mole type of <see cref="T:ViewValidator.ReportList"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportList.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportList.#ctor(ViewValidator.ReportList)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportList.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportList.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportList.Bind(System.Collections.ICollection)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportList.Bind(System.Collections.IEnumerable)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportList.Bind(System.Collections.IList)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportList.Bind(System.Collections.Generic.ICollection{ViewValidator.Report})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportList.Bind(System.Collections.Generic.IEnumerable{ViewValidator.Report})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportList.Bind(System.Collections.Generic.IList{ViewValidator.Report})">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportList.AddReport">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportList.Add(ViewValidator.Report)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportList.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportList.Constructor">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportList.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MReportList.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportList.AllInstances.AddReport">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportList.Add(ViewValidator.Report)"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MReportMissingFile">
+            <summary>Mole type of <see cref="T:ViewValidator.ReportMissingFile"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportMissingFile.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportMissingFile.#ctor(ViewValidator.ReportMissingFile)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportMissingFile.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportMissingFile.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportMissingFile.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportMissingFile.BlankRecord">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportMissingFile.BlankRecord"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportMissingFile.ConstructorReportTypeStringStringBoolean">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportMissingFile.#ctor(ViewValidator.ReportType,System.String,System.String,System.Boolean)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportMissingFile.ToCSV">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportMissingFile.ToCSV"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportMissingFile.ToString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportMissingFile.ToString"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MReportMissingFile.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportMissingFile.AllInstances.BlankRecord">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportMissingFile.BlankRecord"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportMissingFile.AllInstances.ToCSV">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportMissingFile.ToCSV"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportMissingFile.AllInstances.ToString01">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportMissingFile.ToString"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MReportSuccess">
+            <summary>Mole type of <see cref="T:ViewValidator.ReportSuccess"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportSuccess.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportSuccess.#ctor(ViewValidator.ReportSuccess)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportSuccess.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportSuccess.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportSuccess.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportSuccess.BlankRecord">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportSuccess.BlankRecord"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportSuccess.ConstructorReportTypeStringBoolean">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportSuccess.#ctor(ViewValidator.ReportType,System.String,System.Boolean)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportSuccess.ToCSV">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportSuccess.ToCSV"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportSuccess.ToString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportSuccess.ToString"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MReportSuccess.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportSuccess.AllInstances.BlankRecord">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportSuccess.BlankRecord"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportSuccess.AllInstances.ToCSV">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportSuccess.ToCSV"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportSuccess.AllInstances.ToString01">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportSuccess.ToString"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MReportTagError">
+            <summary>Mole type of <see cref="T:ViewValidator.ReportTagError"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportTagError.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportTagError.#ctor(ViewValidator.ReportTagError)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportTagError.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportTagError.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportTagError.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportTagError.BlankRecord">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportTagError.BlankRecord"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportTagError.ConstructorStringReportTypeStringStringBoolean">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportTagError.#ctor(System.String,ViewValidator.ReportType,System.String,System.String,System.Boolean)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportTagError.ToCSV">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportTagError.ToCSV"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportTagError.ToString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportTagError.ToString"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MReportTagError.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportTagError.AllInstances.BlankRecord">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportTagError.BlankRecord"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportTagError.AllInstances.ToCSV">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportTagError.ToCSV"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportTagError.AllInstances.ToString01">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportTagError.ToString"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MReportTypeOutput">
+            <summary>Mole type of <see cref="T:ViewValidator.ReportTypeOutput"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportTypeOutput.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportTypeOutput.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportTypeOutput.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportTypeOutput.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportTypeOutput.ReportTypeStrReportType">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportTypeOutput.ReportTypeStr(ViewValidator.ReportType)"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MReportUrlValidation">
+            <summary>Mole type of <see cref="T:ViewValidator.ReportUrlValidation"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportUrlValidation.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportUrlValidation.#ctor(ViewValidator.ReportUrlValidation)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportUrlValidation.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MReportUrlValidation.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportUrlValidation.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportUrlValidation.BlankRecord">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportUrlValidation.BlankRecord"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportUrlValidation.ConstructorStringReportTypeStringPathResolvesStringBoolean">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportUrlValidation.#ctor(System.String,ViewValidator.ReportType,System.String,ViewValidator.PathResolves,System.String,System.Boolean)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportUrlValidation.ToCSV">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportUrlValidation.ToCSV"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportUrlValidation.ToString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportUrlValidation.ToString"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MReportUrlValidation.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportUrlValidation.AllInstances.BlankRecord">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportUrlValidation.BlankRecord"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportUrlValidation.AllInstances.ToCSV">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportUrlValidation.ToCSV"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MReportUrlValidation.AllInstances.ToString01">
+            <summary>Sets the mole of <see cref="M:ViewValidator.ReportUrlValidation.ToString"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MValidator">
+            <summary>Mole type of <see cref="T:ViewValidator.Validator"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MValidator.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MValidator.#ctor(ViewValidator.Validator)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MValidator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MValidator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AreListsEqualIListOfStringIListOfString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.AreListsEqual(System.Collections.Generic.IList`1{System.String},System.Collections.Generic.IList`1{System.String})"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.ArgsGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Validator.Args"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.ArgsSetStringArray">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Validator.Args"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AssertFolderContents">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.AssertFolderContents"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AssertNumParams">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.AssertNumParams"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AssertPathValidStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.AssertPathValid(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.CheckForOrphanedViewTagsInFolderString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.CheckForOrphanedViewTagsInFolder(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.CheckForOrphanedViewTagsInViewString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.CheckForOrphanedViewTagsInView(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.CheckForOrphanedXmlTagsInFolderString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.CheckForOrphanedXmlTagsInFolder(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.CheckForOrphanedXmlTagsInViewString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.CheckForOrphanedXmlTagsInView(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.CheckRazorForXmlHardCodingStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.CheckRazorForXmlHardCoding(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.CheckRazorStringForUrlStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.CheckRazorStringForUrl(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.CheckXmlNodeForUrlStringXmlNode">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.CheckXmlNodeForUrl(System.String,System.Xml.XmlNode)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.CompareListsStringStringIListOfStringIListOfStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.CompareLists(System.String,System.String,System.Collections.Generic.IList`1{System.String},System.Collections.Generic.IList`1{System.String},System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.ConcatenateTagsIListOfStringIListOfString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.ConcatenateTags(System.Collections.Generic.IList`1{System.String},System.Collections.Generic.IList`1{System.String})"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.Constructor">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.ControllerNamesSelectedGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Validator.ControllerNamesSelected"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.ExtractViewTagNameStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.ExtractViewTagName(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.ExtractXmlTagNameStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.ExtractXmlTagName(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.FillListFromViewStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.FillListFromView(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.FillListFromXmlStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.FillListFromXml(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.FillNodeListXmlNodeListOfXmlNode">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.FillNodeList(System.Xml.XmlNode,System.Collections.Generic.List`1{System.Xml.XmlNode})"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.FilterAndResolveUrlStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.FilterAndResolveUrl(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.FoldersSelectedString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.FoldersSelected(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.GetFolderStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.GetFolder(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.GetViewFilenameString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.GetViewFilename(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.GetXmlFilenameString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.GetXmlFilename(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.IsEmailAddressString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.IsEmailAddress(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.IsMatchWordListXmlWordListRazor">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.IsMatch(ViewValidator.WordListXml,ViewValidator.WordListRazor)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.IsWebUrlString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.IsWebUrl(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.LogFileGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Validator.LogFile"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.LogRazorUrlStringStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.LogRazorUrl(System.String,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.LogXmlUrlStringStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.LogXmlUrl(System.String,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.NumErrorsGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Validator.NumErrors"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.NumMatchesWordListXmlWordListRazor">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.NumMatches(ViewValidator.WordListXml,ViewValidator.WordListRazor)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.OutputExcelReports">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.OutputExcelReports"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.OutputUrlReports">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.OutputUrlReports"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.ProcessRazorStrStringStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.ProcessRazorStr(System.String,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.ProcessXmlStrStringStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.ProcessXmlStr(System.String,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.PublishedContentPathGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Validator.PublishedContentPath"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.ReportListGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Validator.ReportList"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.RootContentPathGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Validator.RootContentPath"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.SetParamsStringArray">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.SetParams(System.String[])"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.TakeUrlStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.TakeUrl(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.TestSubStringStringInt32">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.TestSubString(System.String,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.TestSubStringStringInt32Int32">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.TestSubString(System.String,System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.URLFileGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Validator.URLFile"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.Validate">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.Validate"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.VerifyUrlsResolve">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.VerifyUrlsResolve"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.ViewPathGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Validator.ViewPath"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.WebUrlResolvesString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.WebUrlResolves(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator._NumMatchesb__1String">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.&lt;NumMatches&gt;b__1(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator._NumMatchesb__2String">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.&lt;NumMatches&gt;b__2(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator._NumMatchesb__3StringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.&lt;NumMatches&gt;b__3(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MValidator.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.AreListsEqualIListOfStringIListOfString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.AreListsEqual(System.Collections.Generic.IList`1{System.String},System.Collections.Generic.IList`1{System.String})"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.ArgsGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Validator.Args"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.ArgsSetStringArray">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Validator.Args"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.AssertFolderContents">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.AssertFolderContents"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.AssertNumParams">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.AssertNumParams"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.AssertPathValidStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.AssertPathValid(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.CheckForOrphanedViewTagsInFolderString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.CheckForOrphanedViewTagsInFolder(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.CheckForOrphanedViewTagsInViewString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.CheckForOrphanedViewTagsInView(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.CheckForOrphanedXmlTagsInFolderString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.CheckForOrphanedXmlTagsInFolder(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.CheckForOrphanedXmlTagsInViewString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.CheckForOrphanedXmlTagsInView(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.CheckRazorForXmlHardCodingStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.CheckRazorForXmlHardCoding(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.CheckRazorStringForUrlStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.CheckRazorStringForUrl(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.CheckXmlNodeForUrlStringXmlNode">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.CheckXmlNodeForUrl(System.String,System.Xml.XmlNode)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.CompareListsStringStringIListOfStringIListOfStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.CompareLists(System.String,System.String,System.Collections.Generic.IList`1{System.String},System.Collections.Generic.IList`1{System.String},System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.ConcatenateTagsIListOfStringIListOfString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.ConcatenateTags(System.Collections.Generic.IList`1{System.String},System.Collections.Generic.IList`1{System.String})"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.ControllerNamesSelectedGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Validator.ControllerNamesSelected"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.ExtractViewTagNameStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.ExtractViewTagName(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.ExtractXmlTagNameStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.ExtractXmlTagName(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.FillListFromViewStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.FillListFromView(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.FillListFromXmlStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.FillListFromXml(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.FillNodeListXmlNodeListOfXmlNode">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.FillNodeList(System.Xml.XmlNode,System.Collections.Generic.List`1{System.Xml.XmlNode})"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.FilterAndResolveUrlStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.FilterAndResolveUrl(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.FoldersSelectedString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.FoldersSelected(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.GetFolderStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.GetFolder(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.GetViewFilenameString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.GetViewFilename(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.GetXmlFilenameString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.GetXmlFilename(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.IsEmailAddressString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.IsEmailAddress(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.IsMatchWordListXmlWordListRazor">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.IsMatch(ViewValidator.WordListXml,ViewValidator.WordListRazor)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.IsWebUrlString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.IsWebUrl(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.LogFileGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Validator.LogFile"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.LogRazorUrlStringStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.LogRazorUrl(System.String,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.LogXmlUrlStringStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.LogXmlUrl(System.String,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.NumErrorsGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Validator.NumErrors"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.NumMatchesWordListXmlWordListRazor">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.NumMatches(ViewValidator.WordListXml,ViewValidator.WordListRazor)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.OutputExcelReports">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.OutputExcelReports"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.OutputUrlReports">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.OutputUrlReports"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.ProcessRazorStrStringStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.ProcessRazorStr(System.String,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.ProcessXmlStrStringStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.ProcessXmlStr(System.String,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.PublishedContentPathGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Validator.PublishedContentPath"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.ReportListGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Validator.ReportList"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.RootContentPathGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Validator.RootContentPath"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.SetParamsStringArray">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.SetParams(System.String[])"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.TakeUrlStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.TakeUrl(System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.TestSubStringStringInt32">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.TestSubString(System.String,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.TestSubStringStringInt32Int32">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.TestSubString(System.String,System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.URLFileGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Validator.URLFile"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.Validate">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.Validate"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.VerifyUrlsResolve">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.VerifyUrlsResolve"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.ViewPathGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.Validator.ViewPath"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MValidator.AllInstances.WebUrlResolvesString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.Validator.WebUrlResolves(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MWordList">
+            <summary>Mole type of <see cref="T:ViewValidator.WordList"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MWordList.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MWordList.#ctor(ViewValidator.WordList)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MWordList.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MWordList.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.AreTagsCompleteString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.WordList.AreTagsComplete(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.ChangeItemsInListWordListChangeStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.WordList.ChangeItemsInList(ViewValidator.WordList.ChangeString,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.CleanseList">
+            <summary>Sets the mole of <see cref="M:ViewValidator.WordList.CleanseList"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.CleanseListOfItemWordListStringLocationString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.WordList.CleanseListOfItem(ViewValidator.WordList.StringLocation,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.ConstructorChar">
+            <summary>Sets the mole of <see cref="M:ViewValidator.WordList.#ctor(System.Char)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.DelimiterGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.WordList.Delimiter"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.DelimiterSetChar">
+            <summary>Sets the mole of <see cref="P:ViewValidator.WordList.Delimiter"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.RemoveAllTagsString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.WordList.RemoveAllTags(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.RemoveTagsFromStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.WordList.RemoveTagsFromString(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.WordStrGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.WordList.WordStr"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.WordStrSetString">
+            <summary>Sets the mole of <see cref="P:ViewValidator.WordList.WordStr"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.WordsGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.WordList.Words"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.WordsSetListOfString">
+            <summary>Sets the mole of <see cref="P:ViewValidator.WordList.Words"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList._AreTagsCompleteb__0Char">
+            <summary>Sets the mole of <see cref="M:ViewValidator.WordList.&lt;AreTagsComplete&gt;b__0(System.Char)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList._AreTagsCompleteb__1Char">
+            <summary>Sets the mole of <see cref="M:ViewValidator.WordList.&lt;AreTagsComplete&gt;b__1(System.Char)"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MWordList.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.AllInstances.AreTagsCompleteString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.WordList.AreTagsComplete(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.AllInstances.ChangeItemsInListWordListChangeStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.WordList.ChangeItemsInList(ViewValidator.WordList.ChangeString,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.AllInstances.CleanseList">
+            <summary>Sets the mole of <see cref="M:ViewValidator.WordList.CleanseList"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.AllInstances.CleanseListOfItemWordListStringLocationString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.WordList.CleanseListOfItem(ViewValidator.WordList.StringLocation,System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.AllInstances.DelimiterGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.WordList.Delimiter"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.AllInstances.DelimiterSetChar">
+            <summary>Sets the mole of <see cref="P:ViewValidator.WordList.Delimiter"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.AllInstances.RemoveAllTagsString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.WordList.RemoveAllTags(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.AllInstances.RemoveTagsFromStringString">
+            <summary>Sets the mole of <see cref="M:ViewValidator.WordList.RemoveTagsFromString(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.AllInstances.WordStrGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.WordList.WordStr"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.AllInstances.WordStrSetString">
+            <summary>Sets the mole of <see cref="P:ViewValidator.WordList.WordStr"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.AllInstances.WordsGet">
+            <summary>Sets the mole of <see cref="P:ViewValidator.WordList.Words"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordList.AllInstances.WordsSetListOfString">
+            <summary>Sets the mole of <see cref="P:ViewValidator.WordList.Words"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MWordListRazor">
+            <summary>Mole type of <see cref="T:ViewValidator.WordListRazor"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MWordListRazor.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MWordListRazor.#ctor(ViewValidator.WordListRazor)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MWordListRazor.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MWordListRazor.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordListRazor.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordListRazor.CleanseList">
+            <summary>Sets the mole of <see cref="M:ViewValidator.WordListRazor.CleanseList"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordListRazor.ConstructorStringChar">
+            <summary>Sets the mole of <see cref="M:ViewValidator.WordListRazor.#ctor(System.String,System.Char)"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MWordListRazor.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordListRazor.AllInstances.CleanseList">
+            <summary>Sets the mole of <see cref="M:ViewValidator.WordListRazor.CleanseList"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MWordListXml">
+            <summary>Mole type of <see cref="T:ViewValidator.WordListXml"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MWordListXml.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MWordListXml.#ctor(ViewValidator.WordListXml)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MWordListXml.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.MWordListXml.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordListXml.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordListXml.CleanseList">
+            <summary>Sets the mole of <see cref="M:ViewValidator.WordListXml.CleanseList"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordListXml.ConstructorXmlNodeChar">
+            <summary>Sets the mole of <see cref="M:ViewValidator.WordListXml.#ctor(System.Xml.XmlNode,System.Char)"/>
+            </summary>
+        </member>
+        <member name="T:ViewValidator.Moles.MWordListXml.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.MWordListXml.AllInstances.CleanseList">
+            <summary>Sets the mole of <see cref="M:ViewValidator.WordListXml.CleanseList"/>
+            </summary>
+        </member>
+        <member name="T:AfcTester.Utility.Moles.SArguments">
+            <summary>Stub type of <see cref="T:AfcTester.Utility.Arguments"/>
+            .</summary>
+        </member>
+        <member name="M:AfcTester.Utility.Moles.SArguments.#ctor(System.String[])">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:AfcTester.Utility.Moles.SArguments.InitializeStub">
+            <summary>Initializes a new instance of type SArguments</summary>
+        </member>
+        <member name="P:AfcTester.Utility.Moles.SArguments.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:AfcTester.Utility.Moles.SArguments.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:ViewValidator.Moles.SControllerActionValidator">
+            <summary>Stub type of <see cref="T:ViewValidator.ControllerActionValidator"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SControllerActionValidator.#ctor(System.String,System.String,ViewValidator.ReportList)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SControllerActionValidator.InitializeStub">
+            <summary>Initializes a new instance of type SControllerActionValidator</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SControllerActionValidator.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SControllerActionValidator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:ViewValidator.Moles.SFolderValidator">
+            <summary>Stub type of <see cref="T:ViewValidator.FolderValidator"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SFolderValidator.#ctor(ViewValidator.FolderValidator.FolderStatus,System.String,System.String,ViewValidator.ReportList)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SFolderValidator.InitializeStub">
+            <summary>Initializes a new instance of type SFolderValidator</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SFolderValidator.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SFolderValidator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:ViewValidator.Moles.SLog">
+            <summary>Stub type of <see cref="T:ViewValidator.Log"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SLog.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SLog.InitializeStub">
+            <summary>Initializes a new instance of type SLog</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SLog.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SLog.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:ViewValidator.Moles.SReport">
+            <summary>Stub type of <see cref="T:ViewValidator.Report"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReport.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReport.BlankRecord">
+            <summary>Sets the stub of <see cref="M:ViewValidator.Report.BlankRecord"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SReport.BlankRecord01">
+            <summary>Sets the stub of <see cref="M:ViewValidator.Report.BlankRecord"/>
+            </summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReport.Equals(System.Object)">
+            <summary>Sets the stub of <see cref="M:ViewValidator.Report.Equals(System.Object)"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SReport.EqualsObject">
+            <summary>Sets the stub of <see cref="M:ViewValidator.Report.Equals(System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReport.InitializeStub">
+            <summary>Initializes a new instance of type SReport</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReport.ToCSV">
+            <summary>Sets the stub of <see cref="M:ViewValidator.Report.ToCSV"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SReport.ToCSV01">
+            <summary>Sets the stub of <see cref="M:ViewValidator.Report.ToCSV"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SReport.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SReport.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:ViewValidator.Moles.SReportList">
+            <summary>Stub type of <see cref="T:ViewValidator.ReportList"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportList.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportList.InitializeStub">
+            <summary>Initializes a new instance of type SReportList</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SReportList.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SReportList.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:ViewValidator.Moles.SReportMissingFile">
+            <summary>Stub type of <see cref="T:ViewValidator.ReportMissingFile"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportMissingFile.#ctor(ViewValidator.ReportType,System.String,System.String,System.Boolean)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportMissingFile.BlankRecord">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportMissingFile.BlankRecord"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SReportMissingFile.BlankRecord01">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportMissingFile.BlankRecord"/>
+            </summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportMissingFile.Equals(System.Object)">
+            <summary>Sets the stub of <see cref="M:ViewValidator.Report.Equals(System.Object)"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SReportMissingFile.EqualsObject">
+            <summary>Sets the stub of <see cref="M:ViewValidator.Report.Equals(System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportMissingFile.InitializeStub">
+            <summary>Initializes a new instance of type SReportMissingFile</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportMissingFile.ToCSV">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportMissingFile.ToCSV"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SReportMissingFile.ToCSV01">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportMissingFile.ToCSV"/>
+            </summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportMissingFile.ToString">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportMissingFile.ToString"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SReportMissingFile.ToString01">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportMissingFile.ToString"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SReportMissingFile.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SReportMissingFile.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:ViewValidator.Moles.SReportSuccess">
+            <summary>Stub type of <see cref="T:ViewValidator.ReportSuccess"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportSuccess.#ctor(ViewValidator.ReportType,System.String,System.Boolean)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportSuccess.BlankRecord">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportSuccess.BlankRecord"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SReportSuccess.BlankRecord01">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportSuccess.BlankRecord"/>
+            </summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportSuccess.Equals(System.Object)">
+            <summary>Sets the stub of <see cref="M:ViewValidator.Report.Equals(System.Object)"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SReportSuccess.EqualsObject">
+            <summary>Sets the stub of <see cref="M:ViewValidator.Report.Equals(System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportSuccess.InitializeStub">
+            <summary>Initializes a new instance of type SReportSuccess</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportSuccess.ToCSV">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportSuccess.ToCSV"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SReportSuccess.ToCSV01">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportSuccess.ToCSV"/>
+            </summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportSuccess.ToString">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportSuccess.ToString"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SReportSuccess.ToString01">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportSuccess.ToString"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SReportSuccess.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SReportSuccess.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:ViewValidator.Moles.SReportTagError">
+            <summary>Stub type of <see cref="T:ViewValidator.ReportTagError"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportTagError.#ctor(System.String,ViewValidator.ReportType,System.String,System.String,System.Boolean)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportTagError.BlankRecord">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportTagError.BlankRecord"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SReportTagError.BlankRecord01">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportTagError.BlankRecord"/>
+            </summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportTagError.Equals(System.Object)">
+            <summary>Sets the stub of <see cref="M:ViewValidator.Report.Equals(System.Object)"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SReportTagError.EqualsObject">
+            <summary>Sets the stub of <see cref="M:ViewValidator.Report.Equals(System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportTagError.InitializeStub">
+            <summary>Initializes a new instance of type SReportTagError</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportTagError.ToCSV">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportTagError.ToCSV"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SReportTagError.ToCSV01">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportTagError.ToCSV"/>
+            </summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportTagError.ToString">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportTagError.ToString"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SReportTagError.ToString01">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportTagError.ToString"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SReportTagError.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SReportTagError.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:ViewValidator.Moles.SReportUrlValidation">
+            <summary>Stub type of <see cref="T:ViewValidator.ReportUrlValidation"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportUrlValidation.#ctor(System.String,ViewValidator.ReportType,System.String,ViewValidator.PathResolves,System.String,System.Boolean)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportUrlValidation.BlankRecord">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportUrlValidation.BlankRecord"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SReportUrlValidation.BlankRecord01">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportUrlValidation.BlankRecord"/>
+            </summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportUrlValidation.Equals(System.Object)">
+            <summary>Sets the stub of <see cref="M:ViewValidator.Report.Equals(System.Object)"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SReportUrlValidation.EqualsObject">
+            <summary>Sets the stub of <see cref="M:ViewValidator.Report.Equals(System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportUrlValidation.InitializeStub">
+            <summary>Initializes a new instance of type SReportUrlValidation</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportUrlValidation.ToCSV">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportUrlValidation.ToCSV"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SReportUrlValidation.ToCSV01">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportUrlValidation.ToCSV"/>
+            </summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SReportUrlValidation.ToString">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportUrlValidation.ToString"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SReportUrlValidation.ToString01">
+            <summary>Sets the stub of <see cref="M:ViewValidator.ReportUrlValidation.ToString"/>
+            </summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SReportUrlValidation.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SReportUrlValidation.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:ViewValidator.Moles.SValidator">
+            <summary>Stub type of <see cref="T:ViewValidator.Validator"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SValidator.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SValidator.InitializeStub">
+            <summary>Initializes a new instance of type SValidator</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SValidator.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SValidator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:ViewValidator.Moles.SWordList">
+            <summary>Stub type of <see cref="T:ViewValidator.WordList"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SWordList.#ctor(System.Char)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SWordList.CleanseList">
+            <summary>Sets the stub of <see cref="M:ViewValidator.WordList.CleanseList"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SWordList.CleanseList01">
+            <summary>Sets the stub of <see cref="M:ViewValidator.WordList.CleanseList"/>
+            </summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SWordList.InitializeStub">
+            <summary>Initializes a new instance of type SWordList</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SWordList.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SWordList.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:ViewValidator.Moles.SWordListRazor">
+            <summary>Stub type of <see cref="T:ViewValidator.WordListRazor"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SWordListRazor.#ctor(System.String,System.Char)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SWordListRazor.CleanseList">
+            <summary>Sets the stub of <see cref="M:ViewValidator.WordListRazor.CleanseList"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SWordListRazor.CleanseList01">
+            <summary>Sets the stub of <see cref="M:ViewValidator.WordListRazor.CleanseList"/>
+            </summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SWordListRazor.InitializeStub">
+            <summary>Initializes a new instance of type SWordListRazor</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SWordListRazor.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SWordListRazor.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:ViewValidator.Moles.SWordListXml">
+            <summary>Stub type of <see cref="T:ViewValidator.WordListXml"/>
+            .</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SWordListXml.#ctor(System.Xml.XmlNode,System.Char)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SWordListXml.CleanseList">
+            <summary>Sets the stub of <see cref="M:ViewValidator.WordListXml.CleanseList"/>
+            </summary>
+        </member>
+        <member name="F:ViewValidator.Moles.SWordListXml.CleanseList01">
+            <summary>Sets the stub of <see cref="M:ViewValidator.WordListXml.CleanseList"/>
+            </summary>
+        </member>
+        <member name="M:ViewValidator.Moles.SWordListXml.InitializeStub">
+            <summary>Initializes a new instance of type SWordListXml</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SWordListXml.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ViewValidator.Moles.SWordListXml.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+    </members>
+</doc>

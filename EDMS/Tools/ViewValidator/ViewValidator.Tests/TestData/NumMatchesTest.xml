@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<content-item>
+  <createDate>
+    11/23/2011
+  </createDate>
+  <lastModified>
+    12/12/2011
+  </lastModified>
+  <displayTitle>
+    Options
+  </displayTitle>
+  <author>
+    me
+  </author>
+
+  <labels>
+    <label name="searchbox-search-results-button">
+      <![CDATA[Search Results
+]]>
+    </label>
+    <label name="TEST-LABEL-FOR-UNIT-TEST">
+      <![CDATA[TEST LABEL FOR UNIT TEST
+]]>
+    </label>
+  </labels>
+</content-item>

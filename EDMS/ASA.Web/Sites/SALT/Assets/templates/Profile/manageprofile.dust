@@ -1,0 +1,31 @@
+{>"page_parent" /}
+
+{<dynamicTitle} Manage My Profile - Salt {/dynamicTitle}
+
+{<dynamicCSS}
+{/dynamicCSS}
+
+{<dynamicScripts}
+    <script>
+        require(['modules/Profile/myProfile']);
+    </script>
+{/dynamicScripts}
+
+{<dynamicBody}
+    <div class="row">
+        <article class="small-12 columns">
+            <header>
+                <h1>Help Us Help You!</h1>
+                <h5>Your answers to the following questions will help us understand you and your specific needs&mdash;so we can make sure the tips, tools, and information you’re looking for are easy for you to find.</h5>
+            </header>
+        </article>
+    </div>
+    <div class="row js-profileQA-container profileQA-container">
+        <div class="small-12 columns padded">
+            <div id="personal-information-section"></div>
+            <div id="financial-information-section"></div>
+            <div id="school-information-section"></div>
+            <div id="account-details-section"></div>
+        </div>
+    </div>
+{/dynamicBody}

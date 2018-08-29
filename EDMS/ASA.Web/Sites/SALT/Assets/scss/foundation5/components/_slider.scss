@@ -1,0 +1,145 @@
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 7px;
+    background: #ddd;
+    border: 0;
+    border-bottom: 1px solid #a7a7a7;
+    border-right: 1px solid #a7a7a7;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #ddd;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-top: -9px;
+    background: #1e5799; /* Old browsers */
+    background: -webkit-gradient(radial, 0 0, 0px, 0 0, 100%, color-stop(0%,#1e5799), color-stop(0%,#00ddf4), color-stop(100%,#309cca)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(0, ellipse cover,  #1e5799 0%,#00ddf4 0%,#309cca 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(0, ellipse cover,  #1e5799 0%,#00ddf4 0%,#309cca 100%); /* Opera 12+ */
+    background: radial-gradient(ellipse at 0,  #1e5799 0%,#00ddf4 0%,#309cca 100%); /* W3C */
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+.salary-output-div {
+    padding: 2.2em .4em .4em .4em;
+}
+.salary-output {
+    position: absolute;
+    background-color: $gray75;
+    font-size: .85em;
+    padding: 3px 7px;
+    height: 26px;
+    text-align: center;
+    color: $white;
+    display: inline-block;
+    bottom: 55%;
+    left: 5px;
+    margin-left: -1%;
+}
+.salary-output:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10px solid $gray75;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: 100%;
+    left: 50%;
+    margin-left: -3px;
+    margin-top: -1px;
+}
+.salary-output:before {
+    content: '$';
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ddd;
+}
+
+input[type=range]{
+    /* fix for FF unable to apply focus style bug  */
+   /* border: 1px solid #ddd;*/
+
+    /*required for proper track sizing in FF*/
+    width: 100%;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-moz-range-thumb {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #49B7CE;
+    border: 1px solid #ddd;
+    background: -moz-radial-gradient(0, ellipse cover,  #1e5799 0%, #00ddf4 0%, #309cca 100%); /* FF3.6+ */
+    -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+input[type=range]:focus::-moz-range-track {
+    background: #ccc;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 7px;
+
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+    border: 1px solid #ddd;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #49B7CE;
+    background: -ms-radial-gradient(0, ellipse cover,  #1e5799 0%,#00ddf4 0%,#309cca 100%); /* IE10+ */
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #888;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
+}
+input[type=range]::-ms-tooltip {
+    display: none;
+}

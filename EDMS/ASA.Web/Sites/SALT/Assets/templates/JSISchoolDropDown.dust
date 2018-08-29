@@ -1,0 +1,6 @@
+<option value="0" selected="selected">Select a School</option>
+{#JSIQuizList}
+	<option value='{SchoolId}'>
+		{School}
+	</option>
+{/JSIQuizList}

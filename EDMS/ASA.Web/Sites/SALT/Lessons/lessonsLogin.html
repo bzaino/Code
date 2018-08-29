@@ -1,0 +1,56 @@
+<script data-main="/Assets/Scripts/js/" src="/Assets/Scripts/js/require.js"></script>
+<script src="/Assets/Scripts/js/require-config.js"></script>
+<script src="/assets/scripts/js/libs/modernizr/modernizr.js"> </script>
+<script src="/assets/scripts/js/dest/lessons.core.min.js"> </script>
+
+<script>
+    require([
+            'jquery'], function ($, lessons) {
+
+                $(document).ready(function () {
+                    var lessonUserId = getCookie('UserGuid');
+
+                    url = '../../api/LessonsService/User/AssociateRegisteredUser/' + lessonUserId;
+
+                    $.ajax({
+                        url: url,
+                        type: 'POST',
+                        async: false,
+                        cache: false,
+                        timeout: 30000,
+                        error: function () {
+                            //TODO:Implement save error state;
+                            SALT.console.error('Lessons: Error Associating Lesson User');
+                        },
+                        success: function () {
+                            location.href = location.href.replace(/!/g, '/').replace('/lessons/lessonsLogin.html?ReturnUrl=', '');
+                        }
+                    });
+
+                });
+
+                function getCookie(name) {
+                    var cookies = document.cookie;
+                    if (cookies.length > 0) {
+                        var cookieIndex = cookies.indexOf(name + "=");
+                        if (cookieIndex != -1) {
+                            var valueStart = cookieIndex + name.length + 1;
+                            var valueEnd = cookies.indexOf(";", valueStart);
+                            if (valueEnd == -1) {
+                                valueEnd = cookies.length;
+                            }
+                            return unescape(cookies.substring(valueStart, valueEnd));
+                        }
+                    }
+                    return null;
+                }
+
+                function getQueryStringValueByName(name) {
+                    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+                    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+                    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+                }
+
+            });
+</script>

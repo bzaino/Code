@@ -1,0 +1,390 @@
+/********************************************************
+    variables.scss is used for storing, sharing and updating all of global stylings on saltmoney.org
+********************************************************/
+
+/* ==========================================================================
+   Base variable 
+   ==========================================================================
+
+
+1. @Colors
+2. @Fonts
+3. @Layers
+4. @grid
+5. @Buttons
+6. @Buttons group
+7. @panels
+8. @Magellan
+9. @Alert Boxes
+
+
+    */
+
+ // Allows the use of rem-calc() or lower-bound() in your settings
+ @import '../foundation5/functions';
+
+// We use this to control whether or not CSS classes come through in the gem files.
+$include-html-classes: true;
+// $include-print-styles: true;
+$include-html-global-classes: $include-html-classes;
+ $global-radius: 19px;
+ $global-rounded: 1000px;
+ $global-rhomboid: 0 10px;
+// 1. Colors
+
+// Primary colors
+ $salt-blue     : #003765;
+ $growth-green  : #5BC500;
+ 
+// Secondary colors
+ $light-blue    : #0070C4;
+ $light-blue-alt : #00A1E1;
+ $dark-green    : #417000;
+ $gold          : #FFB81C;
+ $purple        : #9F5CC0;
+ // brand pink, used for borders, backgrounds, fills
+ $pink          : #F5416C;
+ // copy pink, better contrast, slightly darker version of brand pink
+ $pink-copy     : #d00b39;
+ 
+// Neutral accents
+ $white         : #FFFFFF;
+ $black         : #000000;
+
+ $gray75        : #636466;
+ $gray50        : #A7A7A7;
+ $gray15        : #DCDDDE;
+ $gray10        : mix($gray15 , $white, 40%); // currently #f1f1f2
+ $gray5         : #f8f8f8;
+
+// We use these as default colors throughout
+ $primary-color    : $salt-blue;
+ $secondary-color  : $light-blue;
+ $alert-color      : $pink;
+ $success-color    : $growth-green;
+ $warning-color    : $gold;
+ $info-color       : $purple;
+
+$site-colors: (
+ 'white'           : $white, 
+ 'black'           : $black, 
+ 'blue'            : $salt-blue, 
+ 'green'           : $growth-green, 
+ 'dark-green'      : $dark-green, 
+ 'purple'          : $purple, 
+ 'gold'            : $gold, 
+ 'pink'            : $pink,
+ 'pink-copy'       : $pink-copy,
+ 'light-blue'      : $light-blue,
+ 'light-blue-alt'  : $light-blue-alt,
+ 'gray'            : $gray50,
+ 'gray5'           : $gray5,
+ 'gray10'          : $gray10,
+ 'gray15'          : $gray15,
+ 'gray75'          : $gray75
+);
+$flow-text-group: (h1, h2, h3, h4, h5, h6, p, b, a);
+
+@each $site-color,  $color-value in $site-colors{
+  .bg-#{$site-color} {
+    background-color: #{$color-value};
+  } 
+  .text-#{$site-color} {
+    color: #{$color-value};
+    #{$flow-text-group} {
+      color: #{$color-value} !important;
+    }
+  }
+}
+.header-text-color {
+    color: $pink-copy;
+}
+// 2. Fonts
+
+// We use these to define default font weights
+ $font-weight-normal: normal;
+ $font-weight-bold: bold;
+
+// We use these to define default font stacks
+ $font-family-sans-serif: 'Noto Sans', sans-serif;
+ $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+ $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
+
+// We use these to control various global styles
+ $body-bg: $white;
+ $body-font-color: $primary-color;
+ $body-font-family: $font-family-sans-serif;
+ $body-font-weight: $font-weight-normal;
+ $body-font-style: normal;
+
+// We use this to control font-smoothing
+ $font-smoothing: antialiased;
+
+// We use these to define default font weights
+ $font-weight-normal: normal;
+ $font-weight-bold: bold;
+
+// 3. Layers
+// We will define certain "layers" that elements can use to define their z-indices
+ $base-layer: 0;
+ $lowest-hover-layer: 1;
+ $sticky-subheader-layer: 10; 
+
+
+// 4. Grid
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+//$include-html-grid-classes: $include-html-classes;
+ $include-xl-html-grid-classes: true;
+
+ $row-width: rem-calc(960);
+ $total-columns: 12;
+ $column-gutter: rem-calc(20);
+
+// 5. Buttons
+
+// $include-html-button-classes: $include-html-classes;
+
+ $cursor-default-value: pointer;
+
+// We use these to build padding for buttons.
+$button-med: rem-calc(12);
+$button-tny: rem-calc(7);
+$button-sml: rem-calc(9);
+$button-lrg: rem-calc(16);
+
+// We use this to control the display property.
+$button-display: inline-block;
+$button-margin-bottom: rem-calc(10);
+
+// We use these to control button text styles.
+$button-font-family: $body-font-family;
+$button-font-color: $white;
+$button-font-color-alt: $salt-blue;
+$button-font-med: rem-calc(16);
+$button-font-tny: rem-calc(11);
+$button-font-sml: rem-calc(13);
+$button-font-lrg: rem-calc(20);
+$button-font-weight: $font-weight-bold;
+$button-font-align: center;
+
+// We use these to control various hover effects.
+$button-function-factor: 10%;
+
+// We use this to set the default radius used throughout the core.
+$button-radius: 10px;
+$button-round: $global-rounded;
+
+// We use this to set default opacity and cursor for disabled buttons.
+$button-disabled-opacity: 0.6;
+$button-disabled-cursor: $cursor-default-value;
+
+// We use these to control button border styles.
+ $button-border-width: 0;
+ $button-border-style: none;
+ $button-bg-color: $salt-blue;
+ $button-bg-hover: #004985; //scale-color($button-bg-color, $lightness: -$button-function-factor);
+ $button-border-color: $button-bg-color;
+ $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
+ $secondary-button-border-color: $secondary-button-bg-hover;
+ $success-button-bg-hover: scale-color($success-color, $lightness: $button-function-factor);
+ $success-button-border-color: $success-button-bg-hover;
+ $alert-button-bg-hover: scale-color($alert-color, $lightness: $button-function-factor);
+ $alert-button-border-color: $alert-button-bg-hover;
+ $warning-button-bg-hover: scale-color($warning-color, $lightness: $button-function-factor);
+ $warning-button-border-color: $warning-button-bg-hover;
+ $info-button-bg-hover: scale-color($info-color, $lightness: $button-function-factor);
+ $info-button-border-color: $info-button-bg-hover;
+ $ccp-button-color: $white;
+ $ccp-button-font-color: $secondary-color;
+ $ccp-button-font-color-active: $white;
+ $ccp-button-bg-hover: $salt-blue;
+ $ccp-button-bg-active: $salt-blue;
+
+// 6. Button Groups
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ $include-html-button-classes: $include-html-classes;
+
+// Sets the margin for the right side by default, and the left margin if right-to-left direction is used
+ $button-bar-margin-opposite: rem-calc(10);
+ $button-group-border-width: 1px;
+
+// We use this to set default opacity and cursor for disabled buttons.
+// $button-disabled-opacity: .7;
+// $button-disabled-cursor: $cursor-default-value;
+
+// Used for the Right Rail
+//- - - - - - - - - - - - - - - - - - - - - - - - -
+
+$rr-num-initially-visible-courses: 3;
+$rr-num-courses: 12;
+
+// 7. Panels
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ $include-html-panel-classes: $include-html-classes;
+
+// We use these to control the background and border styles
+ $panel-bg: rgba($gray15, .1);
+ $panel-border-style: solid;
+ $panel-border-size: 1px;
+ $callout-panel-bg: $primary-color;
+
+// We use this % to control how much we darken things on hover
+ $panel-border-color: scale-color($panel-bg, $lightness: -11%);
+
+// We use these to set default inner padding and bottom margin
+ $panel-margin-top: rem-calc(10);
+ $panel-margin-bottom: rem-calc(10);
+ $panel-padding: rem-calc(20);
+
+// We use these to set default font colors
+ $panel-font-color: $primary-color;
+ $panel-font-color-alt: $white;
+
+ $panel-header-adjust: true;
+ $callout-panel-link-color: $primary-color;
+ $callout-panel-link-color-hover: $white;
+
+// 08. Dropdown
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ $include-html-dropdown-classes: $include-html-classes;
+
+// We use these to controls height and width styles.
+// $f-dropdown-max-width: 200px;
+// $f-dropdown-height: auto;
+// $f-dropdown-max-height: none;
+
+// Used for bottom position
+// $f-dropdown-margin-top: 2px;
+
+// Used for right position
+// $f-dropdown-margin-left: $f-dropdown-margin-top;
+
+// Used for left position
+// $f-dropdown-margin-right: $f-dropdown-margin-top;
+
+// Used for top position
+// $f-dropdown-margin-bottom: $f-dropdown-margin-top;
+
+// We use this to control the background color
+// $f-dropdown-bg: $white;
+
+// We use this to set the border styles for dropdowns.
+ //$f-dropdown-border-style: none;
+ //$f-dropdown-border-width: 0px;
+ //$f-dropdown-border-color: rgba(0,0,0,0);
+
+// We use these to style the triangle pip.
+// $f-dropdown-triangle-size: 6px;
+// $f-dropdown-triangle-color: $white;
+// $f-dropdown-triangle-side-offset: 10px;
+
+// We use these to control styles for the list elements.
+// $f-dropdown-list-style: none;
+// $f-dropdown-font-color: $charcoal;
+// $f-dropdown-font-size: rem-calc(14);
+// $f-dropdown-list-padding: rem-calc(5, 10);
+// $f-dropdown-line-height: rem-calc(18);
+// $f-dropdown-list-hover-bg: $smoke;
+// $dropdown-mobile-default-float: 0;
+
+// We use this to control the styles for when the dropdown has custom content.
+// $f-dropdown-content-padding: rem-calc(20);
+
+// Default radius for dropdown.
+// $f-dropdown-radius: $global-radius;
+
+// 9. Magellan
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// $include-html-magellan-classes: $include-html-classes;
+
+ $magellan-bg: $white;
+ $magellan-padding: 0px;
+
+// 10. Side Nav
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// $include-html-nav-classes: $include-html-classes;
+
+// We use this to control padding.
+ $side-nav-padding: rem-calc(0);
+
+// We use these to control list styles.
+// $side-nav-list-type: none;
+// $side-nav-list-position: outside;
+// $side-nav-list-margin: rem-calc(0 0 7 0);
+
+// We use these to control link styles.
+ $side-nav-link-color: $secondary-color;
+// $side-nav-link-color-active: scale-color($side-nav-link-color, $lightness: 30%);
+// $side-nav-link-color-hover: scale-color($side-nav-link-color, $lightness: 30%);
+ $side-nav-link-bg-hover: hsla(0, 0, 0, .0);
+// $side-nav-link-margin: 0;
+ $side-nav-link-padding: 0;
+// $side-nav-font-size: rem-calc(14);
+// $side-nav-font-weight: $font-weight-normal;
+// $side-nav-font-weight-active: $side-nav-font-weight;
+// $side-nav-font-family: $body-font-family;
+// $side-nav-font-family-active: $side-nav-font-family;
+
+// We use these to control heading styles.
+// $side-nav-heading-color: $side-nav-link-color;
+// $side-nav-heading-font-size: $side-nav-font-size;
+// $side-nav-heading-font-weight: bold;
+// $side-nav-heading-text-transform: uppercase;
+
+// We use these to control border styles
+ $side-nav-divider-size: 0px;
+ $side-nav-divider-style: none;
+// $side-nav-divider-color: scale-color($white, $lightness: 10%);
+
+
+
+// 09. Alert Boxes
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// $include-html-alert-classes: $include-html-classes;
+
+// We use this to control alert top position.
+ $alert-top-position: rem-calc(0px);
+
+// We use this to control alert padding.
+ $alert-padding-top: rem-calc(5);
+ $alert-padding-default-float: rem-calc(30px); //$alert-padding-top;
+ $alert-padding-opposite-direction: $alert-padding-top + rem-calc(10);
+ $alert-padding-bottom: $alert-padding-top;
+
+// We use these to control text style.
+ $alert-font-weight: $font-weight-normal;
+ $alert-font-size: rem-calc(13);
+ $alert-font-color: $white;
+ $alert-font-color-alt: scale-color($secondary-color, $lightness: -66%);
+
+// We use this for close hover effect.
+ $alert-function-factor: -14%;
+
+// We use these to control border styles.
+// $alert-border-style: solid;
+// $alert-border-width: 1px;
+ $alert-border-color: scale-color(#ff0000, $lightness: $alert-function-factor);
+ $alert-bottom-margin: rem-calc(0);
+
+// We use these to style the close buttons
+ $alert-close-color: $white;
+// $alert-close-top: 50%;
+// $alert-close-position: rem-calc(4);
+// $alert-close-font-size: rem-calc(22);
+ $alert-close-opacity: .5;
+ $alert-close-opacity-hover: .9;
+// $alert-close-padding: 9px 6px 4px;
+// $alert-close-background: inherit;
+
+// We use this to control border radius
+// $alert-radius: $global-radius;
+
+// $alert-transition-speed: 300ms;
+// $alert-transition-ease: ease-out;

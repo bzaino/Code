@@ -1,0 +1,10 @@
+Shared Libraries for SALT project.
+
+Any cross project shared libraries can be found here.
+
+.NET Libraries are referenced directly from this location.
+
+JavaScript Libraries are copied to the targed web project. 
+
+When adding libraries be sure to include a file with the text of the license covering the project as well as a sources.txt describing where to
+acquire key library files and documentation.

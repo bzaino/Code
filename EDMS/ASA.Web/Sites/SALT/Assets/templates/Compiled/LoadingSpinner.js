@@ -1,0 +1,1 @@
+define(["dust", "Compiled/Modules/SpinnerCSS"], function(dust) { (function(){dust.register("LoadingSpinner",body_0);function body_0(chk,ctx){return chk.write("<div class=\"js-profile-saved-img profile-saved-img small-12 centered hide\">").partial("Modules/SpinnerCSS",ctx,null).write("</div>");}return body_0;})(); });

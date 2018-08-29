@@ -1,0 +1,9 @@
+<form id="edit-manualFed-form" data-abide>
+    {> "KWYO/loanDetailNonImportedHeader" /}
+      <section class="fields">
+        {>"KWYO/KWYO_forms_sharedFields"  LoanLabel="Debt Name:"/}
+        {>"KWYO/KWYO_forms_sharedFields_nonCC" /}
+      </section>
+    {> "KWYO/loanDetailContentEditorBlock" /}
+    {> "KWYO/loanDetailButtons" /}
+</form>

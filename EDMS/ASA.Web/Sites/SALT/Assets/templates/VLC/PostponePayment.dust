@@ -1,0 +1,33 @@
+<li class="boldText row collapse widget-row">
+    <a class="small-8 columns scroll-top" href="#InSchoolDeferment">In-School Deferment</a><span class="small-4 columns widgetGrayText text-right upperCase">{DefermentInSchool}</span>
+</li>
+<li class="boldText row collapse widget-row">
+    <a class="small-8 columns scroll-top" href="#EducationRelatedDeferment">Education Related Deferment</a><span class="small-4 columns widgetGrayText text-right upperCase">{DefermentEducationRelated}</span>
+</li>
+<li class="boldText row collapse widget-row">
+    <a class="small-8 columns scroll-top" href="#SummerBridgeDeferment">Summer Bridge Deferment</a><span class="small-4 columns widgetGrayText text-right upperCase">{DefermentSummerBridge}</span>
+</li>
+<li class="boldText row collapse widget-row">
+    <a class="small-8 columns scroll-top" href="#PerkinsDeferment">Perkins Loans Deferment</a><span class="small-4 columns widgetGrayText text-right upperCase">{DefermentPerkins}</span>
+</li>
+<li class="boldText row collapse widget-row">
+    <a class="small-8 columns scroll-top" href="#RehabilitationTrainingDeferment">Rehabilitation Training Deferment</a><span class="small-4 columns widgetGrayText text-right upperCase">{DefermentRehabilitation}</span>
+</li>
+<li class="boldText row collapse widget-row">
+    <a class="small-8 columns scroll-top" href="#PlusLoanPostEnrollmentDeferment">Plus Loan Post Enrollment Deferment</a><span class="small-4 columns widgetGrayText text-right upperCase">{DefermentPlusLoan}</span>
+</li>
+<li class="boldText row collapse widget-row">
+    <a class="small-8 columns scroll-top" href="#UnemploymentDeferment">Unemployment Deferment</a><span class="small-4 columns widgetGrayText text-right upperCase">{DefermentUnemployment}</span>
+</li>
+<li class="boldText row collapse widget-row">
+    <a class="small-8 columns scroll-top" href="#EconomicHardshipDeferment">Economic Hardship Deferment</a><span class="small-4 columns widgetGrayText text-right upperCase">{DefermentEconomic}</span>
+</li>
+<li class="boldText row collapse widget-row">
+    <a class="small-8 columns scroll-top" href="#MilitaryDeferment">Military Deferment</a><span class="small-4 columns widgetGrayText text-right upperCase">{DefermentMilitary}</span>
+</li>
+<li class="boldText row collapse widget-row">
+    <a class="small-8 columns scroll-top" href="#PeaceCorpsDeferment">Peace Corps Deferment</a><span class="small-4 columns widgetGrayText text-right upperCase">{DefermentPeaceCorps}</span>
+</li>
+<li class="boldText row collapse widget-row">
+    <a class="small-8 columns scroll-top" href="#PostActiveDutyDeferment">Post Active Duty Deferment</a><span class="small-4 columns widgetGrayText text-right upperCase">{DefermentPostActiveDuty}</span>
+</li>

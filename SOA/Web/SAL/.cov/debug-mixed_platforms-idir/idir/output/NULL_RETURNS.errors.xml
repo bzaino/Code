@@ -1,0 +1,187 @@
+<error>
+<domain>STATIC_CS</domain>
+<lang>C#</lang>
+<checker>NULL_RETURNS</checker>
+<type>null_pointer_dereference_exception</type>
+<subtype>return_value</subtype>
+<template>null_returns_multievent_v1</template>
+<file>C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Survey.cs</file>
+<function>System.Boolean ASA.Web.Services.SurveyService.Survey::PostJellyVisionQuizResponse(System.String,System.String,System.String,System.String,System.String)</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{System.ServiceModel.Web.WebOperationContext.get_Current() != null}}}}}}</description>
+<line>294</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>returned_null</tag>
+<description>{CovLStrv2{{t{{0} returns null (checked {1} out of {2} times).}{{code{Decrypt}}}{1}{4}}}}</description>
+<line>298</line>
+</event>
+<event>
+<tag>var_assigned</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = null return value from {1}.}{{code{ticket}}}{{code{Decrypt}}}}}}</description>
+<line>298</line>
+</event>
+<event>
+<main>true</main>
+<tag>null_method_call</tag>
+<description>{CovLStrv2{{t{Calling a method on null object {0}.}{{code{ticket}}}}}}</description>
+<line>299</line>
+</event>
+<extra>Decrypt</extra>
+<subcategory>none</subcategory>
+<antecedentMerge>
+<domain>STATIC_CS</domain>
+<checker>NULL_RETURNS</checker>
+<file>C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Survey.cs</file>
+<function>System.Boolean ASA.Web.Services.SurveyService.Survey::PostJellyVisionQuizResponse(System.String,System.String,System.String,System.String,System.String)</function>
+<extra></extra>
+</antecedentMerge>
+<eventSetCaptions>
+<eventSetCaption>Call to null-returning function</eventSetCaption>
+<eventSetCaption>Examples where return value was checked for null</eventSetCaption>
+</eventSetCaptions>
+</error>
+<error>
+<domain>STATIC_CS</domain>
+<lang>C#</lang>
+<checker>NULL_RETURNS</checker>
+<type>null_pointer_dereference_exception</type>
+<subtype>return_value</subtype>
+<template>null_returns_multievent_v1</template>
+<file>C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ASAMemberTests.cs</file>
+<function>System.Void ASA.Web.Services.ASAMemberService.Tests.ASAMemberTests::MemberAdapterGetByEmail_Should_Return_Valid_Member()</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>returned_null</tag>
+<description>{CovLStrv2{{t{{0} returns null (checked {1} out of {2} times).}{{code{GetMemberByEmail}}}{3}{6}}}}</description>
+<line>101</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/ASAMemberAdapter.cs</file>
+<function>ASA.Web.Services.ASAMemberService.DataContracts.ASAMemberModel ASA.Web.Services.ASAMemberService.AsaMemberAdapter::GetMemberByEmail(System.String)</function>
+<key>65860bcf1bfc6a094570831a2e6c97bb</key>
+<id>2</id>
+</model_ptr>
+</event>
+<event>
+<tag>var_assigned</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = null return value from {1}.}{{code{model}}}{{code{GetMemberByEmail}}}}}}</description>
+<line>101</line>
+</event>
+<event>
+<main>true</main>
+<tag>null_method_call</tag>
+<description>{CovLStrv2{{t{Calling a method on null object {0}.}{{code{model}}}}}}</description>
+<line>105</line>
+</event>
+<extra>GetMemberByEmail</extra>
+<subcategory>none</subcategory>
+<antecedentMerge>
+<domain>STATIC_CS</domain>
+<checker>NULL_RETURNS</checker>
+<file>C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ASAMemberTests.cs</file>
+<function>System.Void ASA.Web.Services.ASAMemberService.Tests.ASAMemberTests::MemberAdapterGetByEmail_Should_Return_Valid_Member()</function>
+<extra></extra>
+</antecedentMerge>
+<eventSetCaptions>
+<eventSetCaption>Call to null-returning function</eventSetCaption>
+<eventSetCaption>Examples where return value was checked for null</eventSetCaption>
+</eventSetCaptions>
+</error>
+<error>
+<domain>STATIC_CS</domain>
+<lang>C#</lang>
+<checker>NULL_RETURNS</checker>
+<type>null_pointer_dereference_exception</type>
+<subtype>return_value</subtype>
+<template>null_returns_multievent_v1</template>
+<file>C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/ASAMemberAdapter.cs</file>
+<function>System.Int32 ASA.Web.Services.ASAMemberService.AsaMemberAdapter::GetMemberIdFromContext()</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{System.Web.HttpContext.Current.Request.Cookies[&quot;MemberId&quot;] != null}}}}}}</description>
+<line>142</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>returned_null</tag>
+<description>{CovLStrv2{{t{{0} returns null (checked {1} out of {2} times).}{{code{Decrypt}}}{1}{4}}}}</description>
+<line>144</line>
+</event>
+<event>
+<main>true</main>
+<tag>null_method_call</tag>
+<description>{CovLStrv2{{t{Calling a method on null object {0}.}{{code{System.Web.Security.FormsAuthentication.Decrypt(System.Web.HttpContext.Current.Request.Cookies[&quot;MemberId&quot;].Value)}}}}}}</description>
+<line>144</line>
+</event>
+<extra>Decrypt</extra>
+<subcategory>none</subcategory>
+<antecedentMerge>
+<domain>STATIC_CS</domain>
+<checker>NULL_RETURNS</checker>
+<file>C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/ASAMemberAdapter.cs</file>
+<function>System.Int32 ASA.Web.Services.ASAMemberService.AsaMemberAdapter::GetMemberIdFromContext()</function>
+<extra></extra>
+</antecedentMerge>
+<eventSetCaptions>
+<eventSetCaption>Call to null-returning function</eventSetCaption>
+<eventSetCaption>Examples where return value was checked for null</eventSetCaption>
+</eventSetCaptions>
+</error>
+<error>
+<domain>STATIC_CS</domain>
+<lang>C#</lang>
+<checker>NULL_RETURNS</checker>
+<type>null_pointer_dereference_exception</type>
+<subtype>return_value</subtype>
+<template>null_returns_multievent_v1</template>
+<file>C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Tests/ASA.Web.WTF.Tests/SiteMembershipTests.cs</file>
+<function>System.Void ASA.Web.WTF.Tests.SiteMembershipTests::SiteMembership_CreateMemeber_Succeeds()</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>returned_null</tag>
+<description>{CovLStrv2{{t{{0} returns null (checked {1} out of {2} times).}{{code{CreateMember}}}{0}{3}}}}</description>
+<line>81</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/SiteMembership.cs</file>
+<function>ASA.Web.WTF.SiteMember ASA.Web.WTF.SiteMembership::CreateMember(ASA.Web.WTF.MemberAuthInfo,ASA.Web.WTF.MemberProfileData,ASA.Web.WTF.MemberCreationStatus&amp;,System.Collections.Generic.IList`1&lt;ASA.Web.WTF.IContextActionValidationRequest`1&lt;ASA.Web.WTF.IContextActionValidator&gt;&gt;)</function>
+<key>271f25a3e780d00e24b1cfeec0a52fa2</key>
+<id>17</id>
+</model_ptr>
+</event>
+<event>
+<tag>var_assigned</tag>
+<description>{CovLStrv2{{t{Assigning: {0} = null return value from {1}.}{{code{member}}}{{code{CreateMember}}}}}}</description>
+<line>81</line>
+</event>
+<event>
+<main>true</main>
+<tag>null_method_call</tag>
+<description>{CovLStrv2{{t{Calling a method on null object {0}.}{{code{member}}}}}}</description>
+<line>86</line>
+</event>
+<extra>CreateMember</extra>
+<subcategory>none</subcategory>
+<antecedentMerge>
+<domain>STATIC_CS</domain>
+<checker>NULL_RETURNS</checker>
+<file>C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Tests/ASA.Web.WTF.Tests/SiteMembershipTests.cs</file>
+<function>System.Void ASA.Web.WTF.Tests.SiteMembershipTests::SiteMembership_CreateMemeber_Succeeds()</function>
+<extra></extra>
+</antecedentMerge>
+<eventSetCaptions>
+<eventSetCaption>Call to null-returning function</eventSetCaption>
+<eventSetCaption>Examples where return value was checked for null</eventSetCaption>
+</eventSetCaptions>
+</error>

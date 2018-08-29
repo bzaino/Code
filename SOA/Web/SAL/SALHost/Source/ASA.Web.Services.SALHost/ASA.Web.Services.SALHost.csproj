@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B549C357-C73B-4C79-A8B2-132D6B8F7EC4}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ASA.Web.Services.SALHost</RootNamespace>
+    <AssemblyName>ASA.Web.Services.SALHost</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DesktopBuildPackageLocation>obj\Debug\Package\SALHost.zip</DesktopBuildPackageLocation>
+    <DeployIisAppPath>Default Web Site/SALHost_deploy</DeployIisAppPath>
+    <PackageAsSingleFile>true</PackageAsSingleFile>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ASA.Log.ServiceLogger">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Bin\InternalComponents\$(Configuration)\ASA.Log.ServiceLogger.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\3rdParty\Bin\Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net, Version=1.2.0.2, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\3rdParty\Bin\Common.Logging.Log4Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Elmah">
+      <HintPath>..\..\..\..\..\..\3rdParty\Bin\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="Endeca.Data, Version=2.1.0.0, Culture=neutral, PublicKeyToken=6d02be8724ca751c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\3rdParty\Endeca\Bin\Endeca.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Endeca.Data.Content">
+      <HintPath>..\..\..\..\..\..\3rdParty\Endeca\Bin\Endeca.Data.Content.dll</HintPath>
+    </Reference>
+    <Reference Include="Endeca.Logging">
+      <HintPath>..\..\..\..\..\..\3rdParty\Endeca\Bin\Endeca.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Endeca.Navigation">
+      <HintPath>..\..\..\..\..\..\3rdParty\Endeca\Bin\Endeca.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Endeca.Navigation.AccessControl">
+      <HintPath>..\..\..\..\..\..\3rdParty\Endeca\Bin\Endeca.Navigation.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Endeca.Web">
+      <HintPath>..\..\..\..\..\..\3rdParty\Endeca\Bin\Endeca.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Endeca.Web.Content">
+      <HintPath>..\..\..\..\..\..\3rdParty\Endeca\Bin\Endeca.Web.Content.dll</HintPath>
+    </Reference>
+    <Reference Include="Endeca.Web.UI.WebControls">
+      <HintPath>..\..\..\..\..\..\3rdParty\Endeca\Bin\Endeca.Web.UI.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Endeca.Web.Url.Seo">
+      <HintPath>..\..\..\..\..\..\3rdParty\Endeca\Bin\Endeca.Web.Url.Seo.dll</HintPath>
+    </Reference>
+    <Reference Include="Intelligencia.UrlRewriter">
+      <HintPath>..\..\..\..\..\..\3rdParty\Bin\Intelligencia.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\3rdParty\Bin\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Spring.Aop, Version=1.3.0.20349, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\3rdParty\Bin\Spring.Aop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spring.Core, Version=1.3.0.20349, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\3rdParty\Bin\Spring.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spring.Data, Version=1.3.0.20349, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\3rdParty\Bin\Spring.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spring.Services, Version=1.3.0.30349, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\3rdParty\Bin\Spring.Services.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spring.Web, Version=1.3.0.20349, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\3rdParty\Bin\Spring.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spring.Web.Extensions, Version=1.3.0.20349, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\3rdParty\Bin\Spring.Web.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MockObjects\AddrValidationService.ValidateAddress.txt" />
+    <Content Include="MockObjects\AlertService.DeleteAlert.{alertId}.txt" />
+    <Content Include="MockObjects\AlertService.GetAlertInfo.txt" />
+    <Content Include="MockObjects\AlertService.GetAlerts.txt" />
+    <Content Include="MockObjects\AppToolService.AppToolObject.txt" />
+    <Content Include="MockObjects\AppToolService.{PERSONID}.{TOOLTYPE}.txt" />
+    <Content Include="MockObjects\ASAMemberService.Update.txt" />
+    <Content Include="MockObjects\ASAMemberService.GetMember.Individual.txt" />
+    <Content Include="MockObjects\ASAMemberService.GetMember.{pin}.{lName}.txt" />
+    <Content Include="MockObjects\LoanService.{SSN}.txt" />
+    <Content Include="MockObjects\ReminderService.SetReminder.txt" />
+    <Content Include="MockObjects\ReminderService.DeleteReminder.{reminderId}.txt" />
+    <Content Include="MockObjects\ReminderService.GetReminders.txt" />
+    <Content Include="MockObjects\SearchService.GetAds.{FILTER}.txt" />
+    <Content Include="MockObjects\SearchService.GetDownloadableFiles.{FILTER}.txt" />
+    <Content Include="MockObjects\SearchService.GetRelatedArticles.{FILTER}.txt" />
+    <Content Include="MockObjects\SearchService.GetRewards.{FILTER}.txt" />
+    <Content Include="MockObjects\SearchService.GetSchools.{FILTER}.txt" />
+    <Content Include="MockObjects\SelfReportedService.SelfReportedLoan.txt" />
+    <Content Include="MockObjects\SelfReportedService.SelfReportedLoans.txt" />
+    <Content Include="MockObjects\SelfReportedService.GetSelfReportedLoans.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="log4net.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Runtime.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ASASettings.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\EDMS\ASA.Web\Collections\ASA.Web.Collections.csproj">
+      <Project>{1C130373-1360-4D29-B924-2C465E00C4C0}</Project>
+      <Name>ASA.Web.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\EDMS\ASA.Web\Common\ASA.Web.Common.csproj">
+      <Project>{78A826B1-E5DB-4E4C-ACB9-2039272EFE9B}</Project>
+      <Name>ASA.Web.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\EDMS\ASA.Web\WTF\Integration\ASA.Web.WTF.Integration.csproj">
+      <Project>{B63E76A8-E705-4A19-95AC-4E30AAF289BA}</Project>
+      <Name>ASA.Web.WTF.Integration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\EDMS\ASA.Web\WTF\_root\ASA.Web.WTF.csproj">
+      <Project>{DC669184-0A6D-4EF7-B225-07A4F5C841A9}</Project>
+      <Name>ASA.Web.WTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Source\ASA.Web.Services.Common\ASA.Web.Services.Common.csproj">
+      <Project>{C3BED31D-9AFF-4FDE-A672-3806F28596FE}</Project>
+      <Name>ASA.Web.Services.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SALServices\Alert\Source\ASA.Web.Services.AlertService\ASA.Web.Services.AlertService.csproj">
+      <Project>{3ADCD915-DD9C-479B-8709-76D89F9D35A9}</Project>
+      <Name>ASA.Web.Services.AlertService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SALServices\ContentService\ASA.Web.Services.ContentService.csproj">
+      <Project>{DE4F151B-55E3-4243-8C26-82FB7000183B}</Project>
+      <Name>ASA.Web.Services.ContentService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SALServices\Lessons\Source\ASA.Web.Services.LessonsService\ASA.Web.Services.LessonsService.csproj">
+      <Project>{497716E3-A5F3-45FD-874E-0C76BA4D5773}</Project>
+      <Name>ASA.Web.Services.LessonsService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SALServices\Membership\Source\ASA.Web.Services.ASAMemberService\ASA.Web.Services.ASAMemberService.csproj">
+      <Project>{4B9960C0-CA04-46CF-9DEA-55F9FE8C4F02}</Project>
+      <Name>ASA.Web.Services.ASAMemberService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SALServices\Reminder\Source\ASA.Web.Services.ReminderService\ASA.Web.Services.ReminderService.csproj">
+      <Project>{B4496DE0-C9C4-41E7-967B-040907806F1D}</Project>
+      <Name>ASA.Web.Services.ReminderService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SALServices\Search\Source\ASA.Web.Services.SearchService\ASA.Web.Services.SearchService.csproj">
+      <Project>{F8DDB7C7-3067-4196-A9D9-93B743728F21}</Project>
+      <Name>ASA.Web.Services.SearchService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SALServices\SelfReported\Source\ASA.Web.Services.SelfReportedService\ASA.Web.Services.SelfReportedService.csproj">
+      <Project>{F03FC303-C64A-4AC1-B9EC-78E183554811}</Project>
+      <Name>ASA.Web.Services.SelfReportedService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SALServices\Survey\Source\ASA.Web.Services.SurveyService\ASA.Web.Services.SurveyService.csproj">
+      <Project>{2EBADBE5-4D6F-470D-B260-23AB938C17E8}</Project>
+      <Name>ASA.Web.Services.SurveyService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="client.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

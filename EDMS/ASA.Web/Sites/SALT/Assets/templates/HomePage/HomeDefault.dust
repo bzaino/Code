@@ -1,0 +1,97 @@
+{> "Modules/alerts" /}
+{@SALTTour mainContent=mainContent}
+    {>"partial_overlay_SALTTour"/}
+{/SALTTour}
+<div class="js-homecarousel-container">
+    <section persona="Home" itemIndex="0" class="small-12 position-relative content-background item js-carousel-slider {@if cond="'{persona}' !== 'Home'"}hidden{/if}">
+        <section class="section_block small-12">
+            <div class="hero-container row collapse">
+                <div class="small-12 columns hero-copy-area">
+                    <header class="small-12 columns banner-block">
+                        <h1 class="hero-headline">{leftContent[0].records[0].attributes.headline}</h1>
+                        <h2>{leftContent[0].records[0].attributes.subhead}</h2>
+                        {leftContent[0].records[0].attributes.body}
+                        <a href="#" data-window-shade="registrationOverlay" class="button base-btn main-btn cta-dark-bg registrationOverlay-link persona-signup-btn" >Join Salt</a>
+                    </header>
+                    <div class="show-for-medium-up small-12 columns banner-block">
+                        {leftContent[0].records[0].attributes.selection-intro-copy}
+                        <div class="unauth-home-button-section small-9 medium-11 large-9 columns right">
+                            <header class="persona-header">
+                                {leftContent[0].records[0].attributes.column1-header-copy}
+
+                            </header>
+                            {@personaButtons copy="{leftContent[0].records[0].attributes.column1-button-copy}" links="{leftContent[0].records[0].attributes.column1-button-links}"/}
+                        </div>
+                        <div class="unauth-home-button-section small-9 medium-11 large-9 columns right">
+                            <header class="persona-header">
+                            {leftContent[0].records[0].attributes.column2-header-copy}
+                            </header>
+                            {@personaButtons copy="{leftContent[0].records[0].attributes.column2-button-copy}" links="{leftContent[0].records[0].attributes.column2-button-links}"/}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-nav bottom position-absolute small-12 show-for-small-only">
+                    <div class="row collapse">
+                        <div class="columns small-4">
+                            <ul class="bullet-nav inline-list right">
+                                {@personaNav copy="{leftContent[0].records[0].attributes.column1-button-copy}" links="{leftContent[0].records[0].attributes.column1-button-links}"/}
+                            </ul>
+                        </div>
+                        <div class="columns small-4">
+                            <a href="#" data-window-shade="registrationOverlay" class="button base-btn main-btn noprint registrationOverlay-link" > Join Salt</a>
+                            <!-- SWD-7216 Route 'small screen' users to signup page instead of signup overlay -->
+                            <a href="/register" class="salt_btn noprint registration-link" >Join Salt</a>
+                        </div>
+                        <div class="columns small-4">
+                            <ul class="bullet-nav inline-list">
+                                {@personaNav copy="{leftContent[0].records[0].attributes.column2-button-copy}" links="{leftContent[0].records[0].attributes.column2-button-links}"/}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="small-12 text-center">
+                    <figure>
+                        {@responsiveImage mediumAvailable="true" imageSource="{leftContent[0].records[0].attributes.banner-image}" /}
+                    </figure>
+                </div>
+                <div class="small-12 position-absolute slider-arrow-container show-for-small">
+                    <div class="row">
+                        <div class="small-1 columns slider-arrows right">
+                            <a href='#' class="js-arrow" title="next">
+                                 <span class="hp-arrows right-arrow"> </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {>"HomePage/BelowFold"/}
+        </section>
+    </section>
+
+    {#rightContent}
+        {@math key=$idx method="mod" operand=2}
+            {@eq value=0}
+                <section persona="{name}" itemIndex='{title}' class="small-12 position-relative content-background item js-carousel-slider {@if cond="'{persona}' !== '{name}'"}hidden{/if}">
+            {/eq}
+        {/math}
+
+        {>"HomePage/HomeBody" index=$idx /}
+
+        {@math key=$idx method="mod" operand=2}
+            {@eq value=1}
+                </section>
+            {/eq}
+        {/math}
+    {/rightContent}
+</div>
+<script>
+    require(['modules/HomePage/UnauthHome', 'jquery'], function (unauthHome, $) {
+        $(document).ready(function () {
+            unauthHome.initializeOwlCarousel();
+            unauthHome.slideEventsBinder();
+            $('.js-rr-skip-link').remove();
+        });
+    });
+</script>

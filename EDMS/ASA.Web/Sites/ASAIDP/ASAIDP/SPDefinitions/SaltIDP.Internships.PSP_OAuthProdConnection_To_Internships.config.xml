@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PartnerConfig PartnerName="SaltIDP/Internships/PSP_OAuthProdConnection_To_Internships">
+  
+  <LoggedOutPage>~/</LoggedOutPage>
+
+  <EncryptionKey>b9c8681751862a1760911d4ba923786b</EncryptionKey>
+  <EncryptionType>AES128</EncryptionType>
+  
+  <IDPURL>https://asa.ssoexchange.com/saml-idp/idp/oauth10/SSOService/ProdSaltIDP</IDPURL>
+  <IDPLogoutURL>https://asa.ssoexchange.com/saml-idp/idp/oauth10/LogoutService/ProdSaltIDP</IDPLogoutURL>
+  
+  <TokenTimeout>500</TokenTimeout>
+
+  <IDVerifierName>ASAIDP.SSO.Plugins.SiteMemberPlugin</IDVerifierName>
+
+</PartnerConfig>

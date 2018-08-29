@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="aa6cff2a-e649-4bce-801d-f8d3b6f28504" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8081/SALTService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SALTService815.xsd" MetadataType="Schema" ID="71ae310c-8f1b-43d8-83ba-26c9ff172c37" SourceId="1" SourceUrl="http://localhost:8081/SALTService.svc?xsd=xsd7" />
+    <MetadataFile FileName="SALTService811.xsd" MetadataType="Schema" ID="9dc75aff-9ba4-410e-95bd-8eb5d5480fe3" SourceId="1" SourceUrl="http://localhost:8081/SALTService.svc?xsd=xsd3" />
+    <MetadataFile FileName="SALTService11.disco" MetadataType="Disco" ID="2c42d3ba-2502-4289-8c78-5650f84eeaa2" SourceId="1" SourceUrl="http://localhost:8081/SALTService.svc?disco" />
+    <MetadataFile FileName="SALTService812.xsd" MetadataType="Schema" ID="01064b9e-4c44-457f-b4ce-56dd394fd342" SourceId="1" SourceUrl="http://localhost:8081/SALTService.svc?xsd=xsd4" />
+    <MetadataFile FileName="SALTService88.xsd" MetadataType="Schema" ID="ff0f65e8-77f8-4534-aa39-6957db6359eb" SourceId="1" SourceUrl="http://localhost:8081/SALTService.svc?xsd=xsd0" />
+    <MetadataFile FileName="SaltService23.wsdl" MetadataType="Wsdl" ID="0308e1bf-2b9b-4a33-81ae-38d383501365" SourceId="1" SourceUrl="http://localhost:8081/SALTService.svc?wsdl" />
+    <MetadataFile FileName="SALTService.xsd" MetadataType="Schema" ID="25e2bfc9-f926-463d-a8ca-287e608d9c9d" SourceId="1" SourceUrl="http://localhost:8081/SALTService.svc?xsd=xsd8" />
+    <MetadataFile FileName="SALTService813.xsd" MetadataType="Schema" ID="7c029cbb-062b-409b-900a-b5b48191c377" SourceId="1" SourceUrl="http://localhost:8081/SALTService.svc?xsd=xsd5" />
+    <MetadataFile FileName="SALTService89.xsd" MetadataType="Schema" ID="19f2b9df-396e-4ece-a13c-5c4b528d246a" SourceId="1" SourceUrl="http://localhost:8081/SALTService.svc?xsd=xsd1" />
+    <MetadataFile FileName="SALTService12.xsd" MetadataType="Schema" ID="0a5bfb19-6619-415b-96a2-8723daf0116e" SourceId="1" SourceUrl="http://localhost:8081/SALTService.svc?xsd=xsd9" />
+    <MetadataFile FileName="SALTService13.xsd" MetadataType="Schema" ID="d20c57b1-0392-4f57-a0a1-ff3d235ac293" SourceId="1" SourceUrl="http://localhost:8081/SALTService.svc?xsd=xsd10" />
+    <MetadataFile FileName="SALTService814.xsd" MetadataType="Schema" ID="bf4a31ba-5925-4118-b65c-55b211136d7f" SourceId="1" SourceUrl="http://localhost:8081/SALTService.svc?xsd=xsd6" />
+    <MetadataFile FileName="SALTService810.xsd" MetadataType="Schema" ID="20baad6f-0466-49b2-8b3c-72b9147ab65d" SourceId="1" SourceUrl="http://localhost:8081/SALTService.svc?xsd=xsd2" />
+    <MetadataFile FileName="SALTService22.wsdl" MetadataType="Wsdl" ID="071da18f-a2ea-49c3-aa1b-20ed35a71ed3" SourceId="1" SourceUrl="http://localhost:8081/SALTService.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE RECORD_SORT_CONFIG SYSTEM "record_sort_config.dtd">
+<RECORD_SORT_CONFIG>
+
+  <RECORD_SORT NAME="headline"/>
+
+  <RECORD_SORT NAME="term"/>
+
+  <RECORD_SORT NAME="P_Hits_Last_7_Days"/>
+
+  <RECORD_SORT NAME="P_Hits_Last_24_Hrs"/>
+
+  <RECORD_SORT NAME="P_Hits_Last_30_Days"/>
+
+  <RECORD_SORT NAME="P_Hits_Last_365_Days"/>
+
+  <RECORD_SORT NAME="P_Rating"/>
+
+  <RECORD_SORT NAME="P_Rating_Count"/>
+
+  <RECORD_SORT NAME="author-name"/>
+
+  <RECORD_SORT NAME="third-party-copy"/>
+
+  <RECORD_SORT NAME="author-info"/>
+
+</RECORD_SORT_CONFIG>

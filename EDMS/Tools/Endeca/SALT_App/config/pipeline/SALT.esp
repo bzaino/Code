@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE STUDIO_PROJECT SYSTEM "studio_project.dtd">
+<STUDIO_PROJECT APP_VERSION="6.1" NAME="SALT" VERSION="600">
+
+  <PROJECT_MANAGER_CONFIG APPLICATION="" FORGE_OP_CONFIG="--pruneAutoGen" PORT="8006" URL="localhost"/>
+
+  <PROJECT_PIPELINE URL="pipeline.epx"/>
+
+  <PROJECT_FILE TYPE="ANALYTICS_CONFIG" URL="SALT.analytics_config.xml"/>
+
+  <PROJECT_FILE TYPE="DERIVED_PROPS" URL="SALT.derived_props.xml"/>
+
+  <PROJECT_FILE TYPE="DIMENSION_GROUPS" URL="SALT.dimension_groups.xml"/>
+
+  <PROJECT_FILE TYPE="DIMENSION_REFS" URL="SALT.dimension_refs.xml"/>
+
+  <PROJECT_FILE TYPE="DIMSEARCH_CONFIG" URL="SALT.dimsearch_config.xml"/>
+
+  <PROJECT_FILE TYPE="DIMSEARCH_INDEX" URL="SALT.dimsearch_index.xml"/>
+
+  <PROJECT_FILE TYPE="DVAL_RANKS" URL="SALT.dval_ranks.xml"/>
+
+  <PROJECT_FILE TYPE="DVAL_REFS" URL="SALT.dval_refs.xml"/>
+
+  <PROJECT_FILE HIGHEST_ID="2" TYPE="MERCH_RULES" URL="SALT.merch_rules.xml"/>
+
+  <PROJECT_FILE TYPE="MERCHSTYLES" URL="SALT.merchstyles.xml"/>
+
+  <PROJECT_FILE TYPE="MERCHZONES" URL="SALT.merchzones.xml"/>
+
+  <PROJECT_FILE TYPE="PRECEDENCE_RULES" URL="SALT.precedence_rules.xml"/>
+
+  <PROJECT_FILE TYPE="PROP_REFS" URL="SALT.prop_refs.xml"/>
+
+  <PROJECT_FILE TYPE="RECORD_FILTER" URL="SALT.record_filter.xml"/>
+
+  <PROJECT_FILE TYPE="RECORD_SORT_CONFIG" URL="SALT.record_sort_config.xml"/>
+
+  <PROJECT_FILE TYPE="RECORD_SPEC" URL="SALT.record_spec.xml"/>
+
+  <PROJECT_FILE TYPE="RECSEARCH_CONFIG" URL="SALT.recsearch_config.xml"/>
+
+  <PROJECT_FILE TYPE="RECSEARCH_INDEXES" URL="SALT.recsearch_indexes.xml"/>
+
+  <PROJECT_FILE TYPE="REFINEMENTS_CONFIG" URL="SALT.refinement_config.xml"/>
+
+  <PROJECT_FILE TYPE="RELRANK_STRATEGIES" URL="SALT.relrank_strategies.xml"/>
+
+  <PROJECT_FILE TYPE="RENDER_CONFIG" URL="SALT.render_config.xml"/>
+
+  <PROJECT_FILE TYPE="ROLLUPS" URL="SALT.rollups.xml"/>
+
+  <PROJECT_FILE TYPE="SEARCH_CHARS" URL="SALT.search_chars.xml"/>
+
+  <PROJECT_FILE TYPE="STOP_WORDS" URL="SALT.stop_words.xml"/>
+
+  <PROJECT_FILE TYPE="PHRASES" URL="SALT.phrases.xml"/>
+
+  <PROJECT_FILE TYPE="THESAURUS" URL="SALT.thesaurus.xml"/>
+
+  <PROJECT_FILE TYPE="STEMMING" URL="SALT.stemming.xml"/>
+
+  <PROJECT_FILE TYPE="PROFILES" URL="SALT.profiles.xml"/>
+
+  <PROJECT_FILE TYPE="KEY_PROPS" URL="SALT.key_props.xml"/>
+
+  <PROJECT_FILE TYPE="LANGUAGES" URL="SALT.languages.xml"/>
+
+  <PROJECT_FILE TYPE="CRAWLER_GLOBAL_CONFIG" URL="SALT.crawler_global_config.xml"/>
+
+  <PROJECT_FILE TYPE="CRAWLER_DEFAULTS" URL="SALT.crawler_defaults.properties"/>
+
+  <PROJECT_FILE TYPE="CRAWL_PROFILES" URL="SALT.crawl_profiles.xml"/>
+
+</STUDIO_PROJECT>

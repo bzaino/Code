@@ -1,0 +1,40 @@
+{#mainContent[0].record}
+    <div class="carousel-headline js-carousel-nullable">{attributes.carousel-headline}</div>
+    <div class="owl-carousel js-carousel-{attributes.P_Primary_Key}">
+        <div>
+            <div class="carousel-img js-carousel-nullable">{attributes.carousel-image-1}</div>
+            <div class="carousel-bg js-carousel-nullable">
+                <div>{attributes.carousel-body-1}</div>
+                <div class="carousel-author">{attributes.carousel-author-1}</div>
+            </div>
+        </div>
+        <div>
+            <div class="carousel-img js-carousel-nullable">{attributes.carousel-image-2}</div>
+            <div class="carousel-bg js-carousel-nullable">
+                <div>{attributes.carousel-body-2}</div>
+                <div class="carousel-author">{attributes.carousel-author-2}</div>
+            </div>
+        </div>
+        <div>
+            <div class="carousel-img js-carousel-nullable">{attributes.carousel-image-3}</div>
+            <div class="carousel-bg js-carousel-nullable">
+                <div>{attributes.carousel-body-3}</div>
+                <div class="carousel-author">{attributes.carousel-author-3}</div>
+            </div>
+        </div>
+        <div>
+            <div class="carousel-img js-carousel-nullable">{attributes.carousel-image-4}</div>
+            <div class="carousel-bg js-carousel-nullable">
+                <div>{attributes.carousel-body-4}</div>
+                <div class="carousel-author">{attributes.carousel-author-4}</div>
+            </div>
+        </div>
+        <div>
+            <div class="carousel-img js-carousel-nullable">{attributes.carousel-image-5}</div>
+            <div class="carousel-bg js-carousel-nullable">
+                <div>{attributes.carousel-body-5}</div>
+                <div class="carousel-author">{attributes.carousel-author-5}</div>
+            </div>
+        </div>
+    </div>
+{/mainContent[0].record}

@@ -1,0 +1,12 @@
+<p><hr class="noprint"></p> 
+<div class="small-12 medium-4 columns right noprint">
+	<div class="panel no-bottom-margin">
+		<h4>
+			Did you like this?
+		</h4>
+		<a data-window-shade="registrationOverlay" class="js-void-href large-font underline registrationOverlay-link" >Sign up.</a>
+		<!-- SWD-7216 Route 'small screen' users to signup page instead of signup overlay "-->
+		<a href="/register" class="large-font underline registration-link" >Sign up.</a>
+
+	</div>
+</div>

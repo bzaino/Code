@@ -1,0 +1,47 @@
+﻿{
+	"ErrorList":[],
+	"Loans":[
+		{
+			"ErrorList":[],
+			"AccountNickname":"SelfRptdLoan Nickname1",
+			"DateReceived":"\/Date(1150171200000-0400)\/",
+			"HolderName":"Test Holder",
+			"InterestRate":6.1,
+			"IsActive":true,
+			"LoanSelfReportedEntryId":12,
+			"LoanStatusId":"DF",
+			"LoanTerm":10,
+			"LoanTypeId":"SF",
+			"NextPaymentDueAmount":200.23,
+			"NextPaymentDueDate":"\/Date(1150171200000-0400)\/",
+			"OriginalLoanAmount":4200.00,
+			"PaymentDueAmount":200.23,
+			"IndividualId":"84600200-7f5b-4359-8dbc-6504d8bf402e",
+			"PrincipalBalanceOutstandingAmount":3000.47,
+			"SchoolName":"School of Basket Weaving",
+			"ServicerName":"Test Servicer",
+			"ServicerWebAddress":"www.testservicer.com"
+		},
+		{
+			"ErrorList":[],
+			"AccountNickname":"SelfRptdLoan Nickname2",
+			"DateReceived":"\/Date(1150171200000-0400)\/",
+			"HolderName":"Test Holder2",
+			"InterestRate":6.2,
+			"IsActive":true,
+			"LoanSelfReportedEntryId":13,
+			"LoanStatusId":"DF",
+			"LoanTerm":10,
+			"LoanTypeId":"SF",
+			"NextPaymentDueAmount":300.23,
+			"NextPaymentDueDate":"\/Date(1150171200000-0400)\/",
+			"OriginalLoanAmount":4500.00,
+			"PaymentDueAmount":300.23,
+			"IndividualId":"84600200-7f5b-4359-8dbc-6504d8bf402e",
+			"PrincipalBalanceOutstandingAmount":3200.47,
+			"SchoolName":"School of Advanced Underwater Basket Weaving",
+			"ServicerName":"Test Servicer2",
+			"ServicerWebAddress":"www.testservicer2.com"
+		}
+	]
+}

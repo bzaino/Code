@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SALTShaker", "SALTShakerSite\SALTShaker.csproj", "{81874DFD-90FE-44C6-91AA-21F60AF0867A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3CE95C7A-4815-4E05-AD0A-E9569D367825} = {3CE95C7A-4815-4E05-AD0A-E9569D367825}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SALTShaker.DAL", "SALTShakerSite\SALTShakerDBL\SALTShaker.DAL.csproj", "{6ACCB4A5-F1E5-4FE1-A649-BFA19ED59FE4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3CE95C7A-4815-4E05-AD0A-E9569D367825} = {3CE95C7A-4815-4E05-AD0A-E9569D367825}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SALTShaker.Proxies", "SALTShakerSite\SALTShaker.Proxies\SALTShaker.Proxies.csproj", "{3CE95C7A-4815-4E05-AD0A-E9569D367825}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.Tests", "Tests\DAL.Tests\DAL.Tests.csproj", "{5E7FC7E5-F574-4AE6-A9B2-D3BF523D5B84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{51E8985D-9CF7-478D-98AA-95090959D195}"
+	ProjectSection(SolutionItems) = preProject
+		Tests\Local.testsettings = Tests\Local.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL.Tests", "Tests\BLL.Tests\BLL.Tests.csproj", "{965E7AD0-3852-4F6E-89D7-DA30AB109399}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81874DFD-90FE-44C6-91AA-21F60AF0867A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81874DFD-90FE-44C6-91AA-21F60AF0867A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81874DFD-90FE-44C6-91AA-21F60AF0867A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81874DFD-90FE-44C6-91AA-21F60AF0867A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ACCB4A5-F1E5-4FE1-A649-BFA19ED59FE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ACCB4A5-F1E5-4FE1-A649-BFA19ED59FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ACCB4A5-F1E5-4FE1-A649-BFA19ED59FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ACCB4A5-F1E5-4FE1-A649-BFA19ED59FE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CE95C7A-4815-4E05-AD0A-E9569D367825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CE95C7A-4815-4E05-AD0A-E9569D367825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CE95C7A-4815-4E05-AD0A-E9569D367825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CE95C7A-4815-4E05-AD0A-E9569D367825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E7FC7E5-F574-4AE6-A9B2-D3BF523D5B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E7FC7E5-F574-4AE6-A9B2-D3BF523D5B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E7FC7E5-F574-4AE6-A9B2-D3BF523D5B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E7FC7E5-F574-4AE6-A9B2-D3BF523D5B84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{965E7AD0-3852-4F6E-89D7-DA30AB109399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{965E7AD0-3852-4F6E-89D7-DA30AB109399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{965E7AD0-3852-4F6E-89D7-DA30AB109399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{965E7AD0-3852-4F6E-89D7-DA30AB109399}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5E7FC7E5-F574-4AE6-A9B2-D3BF523D5B84} = {51E8985D-9CF7-478D-98AA-95090959D195}
+		{965E7AD0-3852-4F6E-89D7-DA30AB109399} = {51E8985D-9CF7-478D-98AA-95090959D195}
+	EndGlobalSection
+EndGlobal

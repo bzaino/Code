@@ -1,0 +1,92 @@
+{@math key=index method="mod" operand=2}
+    {@eq value=0}
+        <div class="hero-container">
+            <div class="small-12 hero-copy-area">
+                <section class="row">
+                    <div class="large-5 medium-6 medium-offset-1 columns home-persona-text">
+                        <header>
+                            <hroup>
+                                <h1 class="hero-headline">{records[0].attributes.headline}</h2>
+                            </hroup>
+                        </header>
+
+                        {records[0].attributes.body}
+                        <div class="intro-and-bullets spaceleft">
+                            {records[0].attributes.bullet-list-copy}
+                        </div>
+
+                        {>"HomePage/CTAProp"/}
+                    </div>
+                </section>
+            </div>
+
+            <div class="small-12 text-center">
+                <figure class="noprint">
+                     {@responsiveImage mediumAvailable="true" imageSource="{records[0].attributes.banner-image}" /}
+                </figure>
+                <div class="small-12 position-absolute slider-arrow-container noprint">
+                    <div class="row">
+                        <div class="small-1 columns slider-arrows">
+                            <a href='#' class="js-arrow" title="previous">
+                                <span class="hp-arrows left-arrow"> </span>
+                            </a>
+                        </div>
+                        <div class="small-1 columns slider-arrows">
+                            <a href='#' class="js-arrow" title="next">
+                               <span class="hp-arrows right-arrow"> </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-nav bottom position-absolute small-12 show-for-small noprint">
+                <div class="row collapse">
+                    <div class="columns small-4">
+                        <ul class="bullet-nav inline-list right noprint">
+                            {@personaNav copy="{records[0].attributes.column1-button-copy}" links="{records[0].attributes.column1-button-links}"/}
+                        </ul>
+                    </div>
+                    <div class="columns small-4 noprint">
+                        <!-- SWD-7216 Route 'small screen' users to signup page instead of signup overlay -->
+                        <a href="/register" class=" salt_btn noprint registration-link"> Join Salt </a>
+                    </div>
+                    <div class="columns small-4">
+                        <ul class="bullet-nav inline-list">
+                            {@personaNav copy="{records[0].attributes.column2-button-copy}" links="{records[0].attributes.column2-button-links}"/}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-nav position-absolute small-12 hide-for-small noprint">
+                <nav class="row position-relative">
+                    <div class="columns large-12 no-padding">
+                        <ul class="no-margin text-center">
+                            {@personaNav links="{records[0].attributes.persona-links}" copy="{records[0].attributes.persona-link-copy}"/}
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    {:else}
+         <div class="row">
+            <div class="padded">
+                <header class="page-title">
+                    <h2>{name}</h2>
+                </header>
+            </div>
+        </div>
+        <div class="row padding-top">
+            {#records}
+                <div class="home-tile-section small-6 medium-4 large-4 columns {name}">
+                    {> "oldTiles" /}
+                </div>
+            {/records}
+        </div>
+    {/eq}
+{/math}
+
+
+
+

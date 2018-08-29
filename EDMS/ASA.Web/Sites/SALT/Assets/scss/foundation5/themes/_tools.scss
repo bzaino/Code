@@ -1,0 +1,318 @@
+/*******************************************************
+App detail page classes for thumbnail clicking
+*******************************************************/
+
+ul.thumbnails {
+    padding-left: 0;
+}
+ul.thumbnails li {
+    display: inline-block;
+    cursor: pointer;
+    padding-right:10px;
+}
+.app-resources {
+    float: right;
+}
+.app-button
+{
+   float: right;
+}
+.app-button p
+{
+    max-width:100%;
+    max-height:100%;
+    display:block;
+}
+.app-button img {
+    padding: 0 0 5px 0;
+}
+/* Fixx has "five" and "seven" in the column widths in CM1. Since we want these unique
+columns to work differently from large-5 and large-7, it seems best to leave them as is.*/
+.five.column {
+  width: 100%;
+
+ }
+ .seven.column {
+  width: 100%;
+  float: none;
+  margin-top: 0;
+ }
+ul.phoneImages {
+    margin-bottom: 0;
+}
+ul.phoneImages li {
+    display: none;
+    list-style-type: none;
+}
+.header-buffer.job-search .row {
+    max-width: 71em !important;
+}
+.jobs-search-iframe {
+    width:100vw !important;
+    height: 1600px;
+    border:0;
+}
+/* Cost of living */
+.cost-factor-bottom-border {
+    border-bottom: 1px solid $gray50;
+    font-size: .85em;
+    padding: 0 0 .4em 0;
+}
+.breakdown h4 {
+    border-bottom: 1px solid $gray50;
+    padding-bottom: .4em;
+}
+.light-gray-text {
+    color: $gray50;
+}
+.gray-text {
+    color: gray;
+}
+.deck {
+    background-color: #eef6fb;
+    padding: .625em;
+    margin: .325em -.625em;
+}
+.deck .higher, .deck .larger {
+    font-size: 150%;
+    font-weight: bold;
+}
+.items-col .row {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0.5rem 0 0.5rem 0; 
+}
+.items-col .row.white-border {
+    border-bottom: 1px solid #fff;
+    padding: 1em 0 0 0;
+    margin-bottom:-.5em; 
+}
+.items-col .row.no-bottom-border {
+    margin-bottom:-2em !important;
+}
+.items-col.deck .row {
+    border-bottom: none;
+    padding-top: .625em; 
+}
+.items-col .row .columns:nth-child(1){
+    padding-top: 2px !important;
+}
+ .ccp-graph {
+    left:310px;
+    top:140px;
+    position:absolute;
+ }
+.whatitmeans-disclaimer {
+    font-style: italic;
+    font-size: small;
+}
+.whatitmeans-text {
+    font-size: small;
+}
+.whatitmeans-text p {
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+.salary-needed:before {
+    content: "$";
+}
+.breakdown {
+    padding-left: 0;
+}
+.breakdown-disclaimer {
+    padding-top: 1.2em;
+    font-size:.75em;
+    font-style: italic;
+    line-height: 1.2;
+}
+.breakdown-disclaimer dt {
+    float: left;
+    margin-right:.2em;
+    clear: right;
+    min-height: 4em;
+}
+.category-title {
+    color: #434343;
+    padding-left: .75em !important;
+    font-weight: normal;
+}
+.salary-needed {
+    font-size: 2em;
+    font-weight: bold;
+    color: $gray75;
+}
+.year-text {
+    color: $gray75;
+    font-size: 1.2em;
+    font-weight: bold;
+    vertical-align: super;
+}
+.percent-change-container {
+    margin: 10px 0 10px 0;
+    padding: 4px 0;
+    color: $gray75;
+}
+.percent-change-container .percent {
+    color: $gray75;
+}
+.lower, .percent.lower {
+    font-weight:bold;
+}
+.higher, .percent.higher {
+    font-weight:bold;
+}
+.year-text.lower,.year-text.higher {
+    color: $gray75;
+}
+.higher.percent:after, .lower.percent:after {
+    content: "%";
+}
+.padding-10 {
+    padding: 10px;
+}
+.light-gray-bg {
+   background: $gray10;
+   overflow: visible;
+}
+.light-gray-bg .input-3col {
+  padding: .625em .325em .625em .25em !important;
+}
+.light-gray-bg .input-9col {
+  padding: .625em .325em .625em 0em !important;
+}
+.col-step-labels {
+    font-weight: bold;
+    color: black;
+}
+.link-list {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: .625em;
+}
+article.link-list p {
+    margin: .8em 0 0 0;
+}
+.ccp-graph {
+    position:relative;
+    left:10px;
+    top:0;
+ }
+.reveal-modal {
+    position: absolute;
+}
+.google-map-canvas {
+    min-height: 332px;
+    min-width: 265px;
+}
+.google-map-canvas .padding {
+    margin-right: 6px;
+    margin-bottom: 16px;
+}
+.gm-style-iw { 
+    word-wrap: break-word ;
+}
+.google-map-marker {
+    word-wrap: break-word;
+    max-width: 225px;
+    min-height: 20px; 
+}
+.google-place-holder p {
+    border-bottom: 1px solid #c3c3c3;
+    vertical-align: middle;
+    padding-bottom:1em;
+    min-width: 50%;
+    white-space: nowrap;
+}
+.google-map-resource .google-place-holder p a {
+    font-weight: bold; 
+}
+.google-place-holder .fa-external-link {
+    color:black;
+}
+.google-arrow-button {
+    font-family: 'FontAwesome';
+    margin-right: 6px;
+    text-decoration: none;
+}
+.google-arrow-button:hover {
+    text-decoration: none;
+}
+.google-arrow-button:before {
+    content: "\f13a";
+    font-size: 1.5em;
+    color: $gray75;
+}
+.google-arrow-down {
+    font-family: 'FontAwesome';
+    margin-right: 6px;
+    text-decoration: none;
+}
+.google-arrow-down:hover {
+    text-decoration: none;
+}
+.google-arrow-down:before {
+    content: "\f139";
+}
+.add-padding {
+    padding:0;
+    padding-left: 24px;
+}
+.google-place-holder .google-map-span {
+    display: table-cell;
+    padding-left: 24px;
+    width: 96%;
+    white-space: normal;
+}
+.google-map-resource .styled-select {
+    margin-bottom: 2em;
+}
+
+@media only screen and (max-width: 40em) {
+    .google-map-resource .small-5 {
+        width: 50.5%;
+    } 
+}
+@media only screen and (min-width: 40.063em) {
+    .breakdown {
+        padding-left: 1em;
+    }
+    .link-list {
+        margin-bottom: .325em;
+    }
+}
+@media only screen and (min-width: 60.063em) {
+  .five.column {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    float: left;
+    width: 41.66667%;
+   }
+   .seven.column {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    float: left;
+    width: 58.33333%;
+    margin-top: 100px;
+   }
+}
+@media only screen and (max-width: 62.000em) {
+    .google-map-canvas {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .google-place-holder p  {
+        min-width: 310px;
+        width: 90%;
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        flex-flow: row wrap;
+        -webkit-flex-flow: row wrap;
+        -moz-flex-flow: row wrap;
+    }
+    .google-map-resource .medium-3 {
+        width: 49.5%;
+    } 
+}

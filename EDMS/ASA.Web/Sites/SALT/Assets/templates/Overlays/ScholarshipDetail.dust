@@ -1,0 +1,120 @@
+ {#Scholarship}
+ <div class="reveal-modal medium no-padding scholarship-search-detail" id="js-scholarshipDetail" data-reveal>
+     <div class="tabs-div">
+        <dl class="tabs">
+            <dd class="tab-title active">{Title}</dd>
+        </dl>
+        <div class="close-reveal-modal cancel-circle overlayClose"></div>
+    </div>
+    <div class="tabs-content">
+        <div class="row">
+            <div class="small-6 columns">
+                <div class="row collapse">
+                    <div class="small-2 medium-1 columns">
+                        <span class="hilite-icon">
+                            <i class="fa fa-dollar"></i>
+                        </span>
+                    </div>
+                    <div class="small-10 medium-11 columns">
+                        <span class="hilite">Award Amount</span>
+                        <br>
+                        <span class="ss-loan-amount">{numericDollarAmount}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="small-6 columns">
+                <div class="row collapse">
+                    <div class="small-2 medium-1 columns">
+                        <span class="hilite-icon">
+                            <i class="fa fa-calendar"></i>
+                        </span>
+                    </div>
+                    <div class="small-10 medium-11 columns">
+                        <span class="hilite">Application Deadline</span>
+                        <br>
+                        <span="application-date">{FormattedDeadlineDate}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-12 columns">
+                <span class="hilite">Awarded By</span>
+                <br>
+                {ProviderName}
+            </div>
+        </div>
+        {?AwardRequirements}
+             <div class="row">
+                <div class="small-12 columns">
+                    <span class="hilite">Requirements</span>
+                    <br>
+                    {#AwardRequirements}
+                        {.}<br>
+                    {/AwardRequirements}
+                </div>
+            </div>
+        {/AwardRequirements}
+        {?DollarAmount}
+         <div class="row">
+                <div class="small-12 columns">
+                    <span class="hilite">Awarded Amount</span>
+                    <br>
+                    <pre>{DollarAmount}</pre>
+                </div>
+            </div>
+        {/DollarAmount}
+        {?PdfUrl}
+             <div class="row">
+                <div class="small-12 columns">
+                    <span class="hilite">Pdf</span>
+                    <br>
+                    <a href="{@urlParser url=PdfUrl /}">Download</a>
+                </div>
+            </div>
+        {/PdfUrl}
+        {?AdditionalInfo}
+            <div class="row">
+                <div class="small-12 columns">
+                    <span class="hilite">Additional Information</span>
+                    <br>
+                    <pre>{AdditionalInfo}</pre>
+                </div>
+            </div>
+        {/AdditionalInfo}
+        <div class="row">
+            <div class="small-12 columns">
+                <span class="hilite">Contact</span><br>
+                {@contactParser providerName=ProviderName contactPerson=ContactPerson contactTitle=ContactTitle address1=Address1 address2=Address2 city=City province=Province state=State zipCode=ZipCode country=Country email1=Email1  phone1=Phone1 /}
+                {?Email1} <a href="mailto:{Email1}">{Email1}</a><br>{/Email1}
+                {?Email2} <a href="mailto:{Email2}">{Email2}</a><br>{/Email2}
+                {?Phone1}{Phone1}<br>{/Phone1}
+                {?Phone2}{Phone2}<br>{/Phone2}
+                {?Fax}Fax: {Fax}<br>{/Fax}
+                {?ProviderUrl}<div class="small-11 ellipsis"><a href="{@urlParser url=ProviderUrl /}" target="_blank" rel="external">{ProviderUrl}</a></div>{/ProviderUrl}
+           </div>
+        </div>
+        {?FreeTextDeadlineDate}
+            <div class="row">
+                <div class="small-12 columns">
+                    <span class="hilite">Deadline Information</span>
+                    {?FreeTextDeadlineDate}<br>
+                       <pre>{FreeTextDeadlineDate}</pre>
+                    {/FreeTextDeadlineDate}
+                </div>
+            </div>
+        {/FreeTextDeadlineDate}
+    </div>
+{/Scholarship}
+    <div class="row">
+        <div class="small-12 columns padding-bottom padding-right">
+            {?ApplicationUrl}
+                <a href="{@urlParser url=ApplicationUrl /}" class="button base-btn main-btn right" target="_blank" rel="external">Apply Now</a><br>
+            {:else}
+                {?Scholarship.ProviderUrl}
+                    <a href="{@urlParser url=Scholarship.ProviderUrl /}" class="button base-btn main-btn right" target="_blank" rel="external">Apply Now</a><br>
+                {/Scholarship.ProviderUrl}
+            {/ApplicationUrl}
+        </div>
+    </div>
+</div>

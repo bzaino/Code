@@ -1,0 +1,1 @@
+define(["dust"], function(dust) { (function(){dust.register("ErrorMessages/terms",body_0);function body_0(chk,ctx){return chk.write("<small class=\"error alt-margin-top\">This field is required.</small>");}return body_0;})(); });

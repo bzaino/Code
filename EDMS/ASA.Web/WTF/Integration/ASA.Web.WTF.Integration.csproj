@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B63E76A8-E705-4A19-95AC-4E30AAF289BA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ASA.Web.WTF.Integration</RootNamespace>
+    <AssemblyName>ASA.Web.WTF.Integration</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ASA.Log.ServiceLogger">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\SOA\Bin\InternalComponents\$(Configuration)\ASA.Log.ServiceLogger.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\3rdParty\Bin\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\3rdParty\Bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MVC3\ASAContextLoader.cs" />
+    <Compile Include="MVC3\AsaController.cs" />
+    <Compile Include="MVC3\AsaMvcApplication.cs" />
+    <Compile Include="MVC3\AvectraProfileProviderStub.cs" />
+    <Compile Include="MVC3\SecurityAdapterStub.cs" />
+    <Compile Include="MVC3\Mvc3Helper.cs" />
+    <Compile Include="MVC3\_configuration\AsaMvcConfig.csd.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AsaMvcConfig.csd</DependentUpon>
+    </Compile>
+    <Compile Include="MVC3\AsaWebSecurityAdapter.cs" />
+    <Compile Include="MVC3\AvectraProfileProvider.cs" />
+    <Compile Include="MVC3\DisableContentLoadAttribute.cs" />
+    <Compile Include="MVC3\MVCIntegrationException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\SOA\Web\SALTService\Common.Types\Common.Types.csproj">
+      <Project>{55C6DF8C-5C3E-46D0-9011-A4DC75C6B553}</Project>
+      <Name>Common.Types</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SOA\Web\SAL\Common\Source\ASA.Web.Services.Common\ASA.Web.Services.Common.csproj">
+      <Project>{C3BED31D-9AFF-4FDE-A672-3806F28596FE}</Project>
+      <Name>ASA.Web.Services.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SOA\Web\SAL\Common\Source\ASA.Web.Services.Proxies\ASA.Web.Services.Proxies.csproj">
+      <Project>{AE7B93ED-B4D2-456D-B8E3-4A0984B77461}</Project>
+      <Name>ASA.Web.Services.Proxies</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SOA\Web\SAL\SALServices\Membership\Source\ASA.Web.Services.ASAMemberService\ASA.Web.Services.ASAMemberService.csproj">
+      <Project>{4B9960C0-CA04-46CF-9DEA-55F9FE8C4F02}</Project>
+      <Name>ASA.Web.Services.ASAMemberService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Collections\ASA.Web.Collections.csproj">
+      <Project>{1C130373-1360-4D29-B924-2C465E00C4C0}</Project>
+      <Name>ASA.Web.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DirectoryServicesWrapper\DirectoryServicesWrapper.csproj">
+      <Project>{665C1628-CEB8-4932-8D48-51BDC85425A8}</Project>
+      <Name>DirectoryServicesWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\ASA.Web.Common.csproj">
+      <Project>{78A826B1-E5DB-4E4C-ACB9-2039272EFE9B}</Project>
+      <Name>ASA.Web.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\_root\ASA.Web.WTF.csproj">
+      <Project>{DC669184-0A6D-4EF7-B225-07A4F5C841A9}</Project>
+      <Name>ASA.Web.WTF</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="MVC3\_configuration\AsaMvcConfig.csd">
+      <Generator>CsdFileGenerator</Generator>
+      <LastGenOutput>AsaMvcConfig.csd.cs</LastGenOutput>
+    </None>
+    <None Include="MVC3\_configuration\AsaMvcConfig.csd.config">
+      <DependentUpon>AsaMvcConfig.csd</DependentUpon>
+    </None>
+    <None Include="MVC3\_configuration\AsaMvcConfig.csd.diagram">
+      <DependentUpon>AsaMvcConfig.csd</DependentUpon>
+    </None>
+    <None Include="MVC3\_configuration\AsaMvcConfig.csd.xsd">
+      <DependentUpon>AsaMvcConfig.csd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

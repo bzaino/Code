@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="Asa.Salt.Web.Services.Contracts.Operations" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="Asa.Salt.Web.Services.Contracts.Operations" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="Asa.Salt.Web.Services.Contracts.Operations/Imports">
+      <xsd:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd0" namespace="Asa.Salt.Web.Services.Contracts.Operations" />
+      <xsd:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" />
+      <xsd:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Common.Types.Enums" />
+      <xsd:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson1" />
+      <xsd:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons" />
+      <xsd:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson2" />
+      <xsd:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson3" />
+      <xsd:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/System" />
+      <xsd:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd10" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISaltService_AddInteraction_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddInteraction" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_AddInteraction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddInteractionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateInteraction_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateInteraction" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateInteraction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateInteractionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_DeleteInteraction_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteInteraction" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_DeleteInteraction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteInteractionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserInteractions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInteractions" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserInteractions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInteractionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserInteractionsByContentType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInteractionsByContentType" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserInteractionsByContentType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInteractionsByContentTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserByUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByUserId" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserByUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserByUsername_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByUsername" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserByUsername_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByUsernameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserByActiveDirectoryKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByActiveDirectoryKey" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserByActiveDirectoryKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByActiveDirectoryKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserOrganizations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserOrganizations" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserOrganizations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserOrganizationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_RegisterUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterUser" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_RegisterUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_DeactivateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeactivateUser" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_DeactivateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeactivateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_DeleteUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUser" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_DeleteUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateUserOrgAffiliation_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserOrgAffiliation" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateUserOrgAffiliation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserOrgAffiliationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserAlerts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserAlerts" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserAlerts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserAlertsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateUserProfileResponses_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserProfileResponses" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateUserProfileResponses_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserProfileResponsesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserActivityHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserActivityHistory" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserActivityHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserActivityHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetAllOrgs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrgs" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetAllOrgs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrgsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetOrgs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrgs" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetOrgs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrgsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetOrg_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrg" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetOrg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrgResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetOrgByExternalOrgID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrgByExternalOrgID" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetOrgByExternalOrgID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrgByExternalOrgIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetOrgByOrganizationId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrgByOrganizationId" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetOrgByOrganizationId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrgByOrganizationIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetOrgProducts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrgProducts" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetOrgProducts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrgProductsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetOrgProductsByMemberId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrgProductsByMemberId" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetOrgProductsByMemberId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrgProductsByMemberIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetAllProducts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllProducts" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetAllProducts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllProductsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetAllProfileQuestions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllProfileQuestions" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetAllProfileQuestions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllProfileQuestionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetAllProfileAnswers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllProfileAnswers" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetAllProfileAnswers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllProfileAnswersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetProfileResponses_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProfileResponses" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetProfileResponses_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProfileResponsesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetAllRefRegistrationSources_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRefRegistrationSources" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetAllRefRegistrationSources_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRefRegistrationSourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetAllRefRegistrationSourceTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRefRegistrationSourceTypes" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetAllRefRegistrationSourceTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRefRegistrationSourceTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetAllRefUserRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRefUserRoles" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetAllRefUserRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRefUserRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_AddRefRegistrationSource_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddRefRegistrationSource" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_AddRefRegistrationSource_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddRefRegistrationSourceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateRefRegistrationSource_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRefRegistrationSource" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateRefRegistrationSource_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRefRegistrationSourceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetAllRefCampaigns_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRefCampaigns" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetAllRefCampaigns_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRefCampaignsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_AddRefCampaign_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddRefCampaign" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_AddRefCampaign_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddRefCampaignResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateRefCampaign_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRefCampaign" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateRefCampaign_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRefCampaignResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetAllRefChannels_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRefChannels" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetAllRefChannels_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllRefChannelsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_DeleteAlert_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAlert" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_DeleteAlert_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAlertResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_DeleteLoan_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLoan" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_DeleteLoan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLoanResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateLoan_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLoan" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateLoan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLoanResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_DeleteUserLessonQuestionResponses_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserLessonQuestionResponses" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_DeleteUserLessonQuestionResponses_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserLessonQuestionResponsesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserPaymentReminders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPaymentReminders" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserPaymentReminders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPaymentRemindersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_SaveUserPaymentReminders_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveUserPaymentReminders" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_SaveUserPaymentReminders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveUserPaymentRemindersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_ImportUserLoans_InputMessage">
+    <wsdl:part name="parameters" element="tns:ImportUserLoans" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_ImportUserLoans_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ImportUserLoansResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserLoans_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserLoans" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserLoans_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserLoansResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserLoansRecordSourceList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserLoansRecordSourceList" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserLoansRecordSourceList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserLoansRecordSourceListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetReportedLoans_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportedLoans" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetReportedLoans_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportedLoansResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetSurveyById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSurveyById" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetSurveyById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSurveyByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserSurveyResults_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserSurveyResults" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserSurveyResults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserSurveyResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_PostSurvey_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostSurvey" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_PostSurvey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostSurveyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetLessonsReferenceData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLessonsReferenceData" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetLessonsReferenceData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLessonsReferenceDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserLessons_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserLessons" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserLessons_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserLessonsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_StartUserLesson_InputMessage">
+    <wsdl:part name="parameters" element="tns:StartUserLesson" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_StartUserLesson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StartUserLessonResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_PostLesson1_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostLesson1" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_PostLesson1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostLesson1Response" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_PostLesson2_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostLesson2" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_PostLesson2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostLesson2Response" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_PostLesson3_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostLesson3" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_PostLesson3_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostLesson3Response" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserLesson1Results_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserLesson1Results" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserLesson1Results_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserLesson1ResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserLesson2Results_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserLesson2Results" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserLesson2Results_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserLesson2ResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserLesson3Results_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserLesson3Results" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserLesson3Results_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserLesson3ResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_AssociateLessonsWithUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:AssociateLessonsWithUser" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_AssociateLessonsWithUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AssociateLessonsWithUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_CreateLoan_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateLoan" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_CreateLoan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateLoanResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateUserLesson_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserLesson" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateUserLesson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserLessonResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetVlcMemberProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVlcMemberProfile" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetVlcMemberProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVlcMemberProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateVlcMemberProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVlcMemberProfile" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateVlcMemberProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVlcMemberProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_AddVlcResponse_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddVlcResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_AddVlcResponse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddVlcResponseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_AddJellyVisionQuizResponse_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddJellyVisionQuizResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_AddJellyVisionQuizResponse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddJellyVisionQuizResponseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetCOLStates_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCOLStates" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetCOLStates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCOLStatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetCOLUrbanAreas_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCOLUrbanAreas" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetCOLUrbanAreas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCOLUrbanAreasResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetCOLResults_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCOLResults" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetCOLResults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCOLResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetRefMajors_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRefMajors" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetRefMajors_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRefMajorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetRefStates_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRefStates" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetRefStates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRefStatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetJSISchools_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetJSISchools" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetJSISchools_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetJSISchoolsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_PostJSIResponse_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostJSIResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_PostJSIResponse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostJSIResponseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetMembersAcademicInfoView_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMembersAcademicInfoView" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetMembersAcademicInfoView_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMembersAcademicInfoViewResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetMemberOrganizations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMemberOrganizations" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetMemberOrganizations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMemberOrganizationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetMemberProducts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMemberProducts" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetMemberProducts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMemberProductsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_AddMemberProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddMemberProduct" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_AddMemberProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddMemberProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateMemberProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMemberProduct" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateMemberProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMemberProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetMembersBySearchParms_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMembersBySearchParms" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetMembersBySearchParms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMembersBySearchParmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserActivationHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserActivationHistory" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetUserActivationHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserActivationHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateOrgInfoFlags_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOrgInfoFlags" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateOrgInfoFlags_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOrgInfoFlagsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpsertOrgToDoListItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertOrgToDoListItem" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpsertOrgToDoListItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertOrgToDoListItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateOrgProductsSubscription_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOrgProductsSubscription" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpdateOrgProductsSubscription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOrgProductsSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpsertQuestionAnswer_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertQuestionAnswer" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpsertQuestionAnswer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertQuestionAnswerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetMemberQuestionAnswer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMemberQuestionAnswer" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetMemberQuestionAnswer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMemberQuestionAnswerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetMemberToDos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMemberToDos" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetMemberToDos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMemberToDosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpsertMemberToDo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertMemberToDo" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpsertMemberToDo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertMemberToDoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetMemberRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMemberRoles" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_GetMemberRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMemberRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpsertMemberRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertMemberRoles" />
+  </wsdl:message>
+  <wsdl:message name="ISaltService_UpsertMemberRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertMemberRolesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISaltService">
+    <wsdl:operation name="AddInteraction">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/AddInteraction" message="tns:ISaltService_AddInteraction_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/AddInteractionResponse" message="tns:ISaltService_AddInteraction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInteraction">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateInteraction" message="tns:ISaltService_UpdateInteraction_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateInteractionResponse" message="tns:ISaltService_UpdateInteraction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInteraction">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/DeleteInteraction" message="tns:ISaltService_DeleteInteraction_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/DeleteInteractionResponse" message="tns:ISaltService_DeleteInteraction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInteractions">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserInteractions" message="tns:ISaltService_GetUserInteractions_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserInteractionsResponse" message="tns:ISaltService_GetUserInteractions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInteractionsByContentType">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserInteractionsByContentType" message="tns:ISaltService_GetUserInteractionsByContentType_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserInteractionsByContentTypeResponse" message="tns:ISaltService_GetUserInteractionsByContentType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByUserId">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserByUserId" message="tns:ISaltService_GetUserByUserId_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserByUserIdResponse" message="tns:ISaltService_GetUserByUserId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByUsername">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserByUsername" message="tns:ISaltService_GetUserByUsername_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserByUsernameResponse" message="tns:ISaltService_GetUserByUsername_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByActiveDirectoryKey">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserByActiveDirectoryKey" message="tns:ISaltService_GetUserByActiveDirectoryKey_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserByActiveDirectoryKeyResponse" message="tns:ISaltService_GetUserByActiveDirectoryKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserOrganizations">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserOrganizations" message="tns:ISaltService_GetUserOrganizations_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserOrganizationsResponse" message="tns:ISaltService_GetUserOrganizations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterUser">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/RegisterUser" message="tns:ISaltService_RegisterUser_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/RegisterUserResponse" message="tns:ISaltService_RegisterUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateUser">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/DeactivateUser" message="tns:ISaltService_DeactivateUser_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/DeactivateUserResponse" message="tns:ISaltService_DeactivateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/DeleteUser" message="tns:ISaltService_DeleteUser_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/DeleteUserResponse" message="tns:ISaltService_DeleteUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateUser" message="tns:ISaltService_UpdateUser_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateUserResponse" message="tns:ISaltService_UpdateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserOrgAffiliation">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateUserOrgAffiliation" message="tns:ISaltService_UpdateUserOrgAffiliation_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateUserOrgAffiliationResponse" message="tns:ISaltService_UpdateUserOrgAffiliation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserAlerts">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserAlerts" message="tns:ISaltService_GetUserAlerts_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserAlertsResponse" message="tns:ISaltService_GetUserAlerts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserProfileResponses">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateUserProfileResponses" message="tns:ISaltService_UpdateUserProfileResponses_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateUserProfileResponsesResponse" message="tns:ISaltService_UpdateUserProfileResponses_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserActivityHistory">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserActivityHistory" message="tns:ISaltService_GetUserActivityHistory_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserActivityHistoryResponse" message="tns:ISaltService_GetUserActivityHistory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrgs">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllOrgs" message="tns:ISaltService_GetAllOrgs_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllOrgsResponse" message="tns:ISaltService_GetAllOrgs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgs">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetOrgs" message="tns:ISaltService_GetOrgs_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetOrgsResponse" message="tns:ISaltService_GetOrgs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrg">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetOrg" message="tns:ISaltService_GetOrg_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetOrgResponse" message="tns:ISaltService_GetOrg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgByExternalOrgID">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetOrgByExternalOrgID" message="tns:ISaltService_GetOrgByExternalOrgID_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetOrgByExternalOrgIDResponse" message="tns:ISaltService_GetOrgByExternalOrgID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgByOrganizationId">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetOrgByOrganizationId" message="tns:ISaltService_GetOrgByOrganizationId_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetOrgByOrganizationIdResponse" message="tns:ISaltService_GetOrgByOrganizationId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgProducts">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetOrgProducts" message="tns:ISaltService_GetOrgProducts_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetOrgProductsResponse" message="tns:ISaltService_GetOrgProducts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrgProductsByMemberId">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetOrgProductsByMemberId" message="tns:ISaltService_GetOrgProductsByMemberId_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetOrgProductsByMemberIdResponse" message="tns:ISaltService_GetOrgProductsByMemberId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProducts">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllProducts" message="tns:ISaltService_GetAllProducts_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllProductsResponse" message="tns:ISaltService_GetAllProducts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProfileQuestions">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllProfileQuestions" message="tns:ISaltService_GetAllProfileQuestions_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllProfileQuestionsResponse" message="tns:ISaltService_GetAllProfileQuestions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProfileAnswers">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllProfileAnswers" message="tns:ISaltService_GetAllProfileAnswers_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllProfileAnswersResponse" message="tns:ISaltService_GetAllProfileAnswers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileResponses">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetProfileResponses" message="tns:ISaltService_GetProfileResponses_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetProfileResponsesResponse" message="tns:ISaltService_GetProfileResponses_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRefRegistrationSources">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllRefRegistrationSources" message="tns:ISaltService_GetAllRefRegistrationSources_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllRefRegistrationSourcesResponse" message="tns:ISaltService_GetAllRefRegistrationSources_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRefRegistrationSourceTypes">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllRefRegistrationSourceTypes" message="tns:ISaltService_GetAllRefRegistrationSourceTypes_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllRefRegistrationSourceTypesResponse" message="tns:ISaltService_GetAllRefRegistrationSourceTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRefUserRoles">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllRefUserRoles" message="tns:ISaltService_GetAllRefUserRoles_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllRefUserRolesResponse" message="tns:ISaltService_GetAllRefUserRoles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddRefRegistrationSource">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/AddRefRegistrationSource" message="tns:ISaltService_AddRefRegistrationSource_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/AddRefRegistrationSourceResponse" message="tns:ISaltService_AddRefRegistrationSource_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRefRegistrationSource">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateRefRegistrationSource" message="tns:ISaltService_UpdateRefRegistrationSource_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateRefRegistrationSourceResponse" message="tns:ISaltService_UpdateRefRegistrationSource_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRefCampaigns">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllRefCampaigns" message="tns:ISaltService_GetAllRefCampaigns_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllRefCampaignsResponse" message="tns:ISaltService_GetAllRefCampaigns_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddRefCampaign">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/AddRefCampaign" message="tns:ISaltService_AddRefCampaign_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/AddRefCampaignResponse" message="tns:ISaltService_AddRefCampaign_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRefCampaign">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateRefCampaign" message="tns:ISaltService_UpdateRefCampaign_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateRefCampaignResponse" message="tns:ISaltService_UpdateRefCampaign_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRefChannels">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllRefChannels" message="tns:ISaltService_GetAllRefChannels_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetAllRefChannelsResponse" message="tns:ISaltService_GetAllRefChannels_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAlert">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/DeleteAlert" message="tns:ISaltService_DeleteAlert_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/DeleteAlertResponse" message="tns:ISaltService_DeleteAlert_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLoan">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/DeleteLoan" message="tns:ISaltService_DeleteLoan_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/DeleteLoanResponse" message="tns:ISaltService_DeleteLoan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLoan">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateLoan" message="tns:ISaltService_UpdateLoan_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateLoanResponse" message="tns:ISaltService_UpdateLoan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserLessonQuestionResponses">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/DeleteUserLessonQuestionResponses" message="tns:ISaltService_DeleteUserLessonQuestionResponses_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/DeleteUserLessonQuestionResponsesResponse" message="tns:ISaltService_DeleteUserLessonQuestionResponses_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPaymentReminders">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserPaymentReminders" message="tns:ISaltService_GetUserPaymentReminders_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserPaymentRemindersResponse" message="tns:ISaltService_GetUserPaymentReminders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveUserPaymentReminders">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/SaveUserPaymentReminders" message="tns:ISaltService_SaveUserPaymentReminders_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/SaveUserPaymentRemindersResponse" message="tns:ISaltService_SaveUserPaymentReminders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportUserLoans">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/ImportUserLoans" message="tns:ISaltService_ImportUserLoans_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/ImportUserLoansResponse" message="tns:ISaltService_ImportUserLoans_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLoans">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserLoans" message="tns:ISaltService_GetUserLoans_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserLoansResponse" message="tns:ISaltService_GetUserLoans_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLoansRecordSourceList">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserLoansRecordSourceList" message="tns:ISaltService_GetUserLoansRecordSourceList_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserLoansRecordSourceListResponse" message="tns:ISaltService_GetUserLoansRecordSourceList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReportedLoans">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetReportedLoans" message="tns:ISaltService_GetReportedLoans_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetReportedLoansResponse" message="tns:ISaltService_GetReportedLoans_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSurveyById">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetSurveyById" message="tns:ISaltService_GetSurveyById_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetSurveyByIdResponse" message="tns:ISaltService_GetSurveyById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSurveyResults">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserSurveyResults" message="tns:ISaltService_GetUserSurveyResults_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserSurveyResultsResponse" message="tns:ISaltService_GetUserSurveyResults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostSurvey">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/PostSurvey" message="tns:ISaltService_PostSurvey_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/PostSurveyResponse" message="tns:ISaltService_PostSurvey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLessonsReferenceData">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetLessonsReferenceData" message="tns:ISaltService_GetLessonsReferenceData_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetLessonsReferenceDataResponse" message="tns:ISaltService_GetLessonsReferenceData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLessons">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserLessons" message="tns:ISaltService_GetUserLessons_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserLessonsResponse" message="tns:ISaltService_GetUserLessons_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StartUserLesson">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/StartUserLesson" message="tns:ISaltService_StartUserLesson_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/StartUserLessonResponse" message="tns:ISaltService_StartUserLesson_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostLesson1">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/PostLesson1" message="tns:ISaltService_PostLesson1_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/PostLesson1Response" message="tns:ISaltService_PostLesson1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostLesson2">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/PostLesson2" message="tns:ISaltService_PostLesson2_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/PostLesson2Response" message="tns:ISaltService_PostLesson2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostLesson3">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/PostLesson3" message="tns:ISaltService_PostLesson3_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/PostLesson3Response" message="tns:ISaltService_PostLesson3_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLesson1Results">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserLesson1Results" message="tns:ISaltService_GetUserLesson1Results_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserLesson1ResultsResponse" message="tns:ISaltService_GetUserLesson1Results_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLesson2Results">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserLesson2Results" message="tns:ISaltService_GetUserLesson2Results_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserLesson2ResultsResponse" message="tns:ISaltService_GetUserLesson2Results_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLesson3Results">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserLesson3Results" message="tns:ISaltService_GetUserLesson3Results_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserLesson3ResultsResponse" message="tns:ISaltService_GetUserLesson3Results_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AssociateLessonsWithUser">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/AssociateLessonsWithUser" message="tns:ISaltService_AssociateLessonsWithUser_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/AssociateLessonsWithUserResponse" message="tns:ISaltService_AssociateLessonsWithUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateLoan">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/CreateLoan" message="tns:ISaltService_CreateLoan_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/CreateLoanResponse" message="tns:ISaltService_CreateLoan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserLesson">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateUserLesson" message="tns:ISaltService_UpdateUserLesson_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateUserLessonResponse" message="tns:ISaltService_UpdateUserLesson_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVlcMemberProfile">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetVlcMemberProfile" message="tns:ISaltService_GetVlcMemberProfile_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetVlcMemberProfileResponse" message="tns:ISaltService_GetVlcMemberProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVlcMemberProfile">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateVlcMemberProfile" message="tns:ISaltService_UpdateVlcMemberProfile_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateVlcMemberProfileResponse" message="tns:ISaltService_UpdateVlcMemberProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddVlcResponse">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/AddVlcResponse" message="tns:ISaltService_AddVlcResponse_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/AddVlcResponseResponse" message="tns:ISaltService_AddVlcResponse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddJellyVisionQuizResponse">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/AddJellyVisionQuizResponse" message="tns:ISaltService_AddJellyVisionQuizResponse_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/AddJellyVisionQuizResponseResponse" message="tns:ISaltService_AddJellyVisionQuizResponse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCOLStates">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetCOLStates" message="tns:ISaltService_GetCOLStates_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetCOLStatesResponse" message="tns:ISaltService_GetCOLStates_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCOLUrbanAreas">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetCOLUrbanAreas" message="tns:ISaltService_GetCOLUrbanAreas_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetCOLUrbanAreasResponse" message="tns:ISaltService_GetCOLUrbanAreas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCOLResults">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetCOLResults" message="tns:ISaltService_GetCOLResults_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetCOLResultsResponse" message="tns:ISaltService_GetCOLResults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRefMajors">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetRefMajors" message="tns:ISaltService_GetRefMajors_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetRefMajorsResponse" message="tns:ISaltService_GetRefMajors_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRefStates">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetRefStates" message="tns:ISaltService_GetRefStates_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetRefStatesResponse" message="tns:ISaltService_GetRefStates_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJSISchools">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetJSISchools" message="tns:ISaltService_GetJSISchools_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetJSISchoolsResponse" message="tns:ISaltService_GetJSISchools_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostJSIResponse">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/PostJSIResponse" message="tns:ISaltService_PostJSIResponse_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/PostJSIResponseResponse" message="tns:ISaltService_PostJSIResponse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMembersAcademicInfoView">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetMembersAcademicInfoView" message="tns:ISaltService_GetMembersAcademicInfoView_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetMembersAcademicInfoViewResponse" message="tns:ISaltService_GetMembersAcademicInfoView_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberOrganizations">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetMemberOrganizations" message="tns:ISaltService_GetMemberOrganizations_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetMemberOrganizationsResponse" message="tns:ISaltService_GetMemberOrganizations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberProducts">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetMemberProducts" message="tns:ISaltService_GetMemberProducts_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetMemberProductsResponse" message="tns:ISaltService_GetMemberProducts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMemberProduct">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/AddMemberProduct" message="tns:ISaltService_AddMemberProduct_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/AddMemberProductResponse" message="tns:ISaltService_AddMemberProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMemberProduct">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateMemberProduct" message="tns:ISaltService_UpdateMemberProduct_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateMemberProductResponse" message="tns:ISaltService_UpdateMemberProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMembersBySearchParms">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetMembersBySearchParms" message="tns:ISaltService_GetMembersBySearchParms_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetMembersBySearchParmsResponse" message="tns:ISaltService_GetMembersBySearchParms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserActivationHistory">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserActivationHistory" message="tns:ISaltService_GetUserActivationHistory_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetUserActivationHistoryResponse" message="tns:ISaltService_GetUserActivationHistory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrgInfoFlags">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateOrgInfoFlags" message="tns:ISaltService_UpdateOrgInfoFlags_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateOrgInfoFlagsResponse" message="tns:ISaltService_UpdateOrgInfoFlags_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertOrgToDoListItem">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpsertOrgToDoListItem" message="tns:ISaltService_UpsertOrgToDoListItem_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpsertOrgToDoListItemResponse" message="tns:ISaltService_UpsertOrgToDoListItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOrgProductsSubscription">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateOrgProductsSubscription" message="tns:ISaltService_UpdateOrgProductsSubscription_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpdateOrgProductsSubscriptionResponse" message="tns:ISaltService_UpdateOrgProductsSubscription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertQuestionAnswer">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpsertQuestionAnswer" message="tns:ISaltService_UpsertQuestionAnswer_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpsertQuestionAnswerResponse" message="tns:ISaltService_UpsertQuestionAnswer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberQuestionAnswer">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetMemberQuestionAnswer" message="tns:ISaltService_GetMemberQuestionAnswer_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetMemberQuestionAnswerResponse" message="tns:ISaltService_GetMemberQuestionAnswer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberToDos">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetMemberToDos" message="tns:ISaltService_GetMemberToDos_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetMemberToDosResponse" message="tns:ISaltService_GetMemberToDos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertMemberToDo">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpsertMemberToDo" message="tns:ISaltService_UpsertMemberToDo_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpsertMemberToDoResponse" message="tns:ISaltService_UpsertMemberToDo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberRoles">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetMemberRoles" message="tns:ISaltService_GetMemberRoles_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/GetMemberRolesResponse" message="tns:ISaltService_GetMemberRoles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertMemberRoles">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpsertMemberRoles" message="tns:ISaltService_UpsertMemberRoles_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISaltService/UpsertMemberRolesResponse" message="tns:ISaltService_UpsertMemberRoles_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,89 @@
+/*************
+
+Modular level styling
+
+*************/
+.font-white, a.font-white, .font-white:hover a.font-white:hover{
+    color: white;
+}
+figure.headerimage img {
+    margin-left: 10px;
+    float: right;
+    padding: 0 0 0 .625em;
+}
+
+/* Use this to style the basic page headers in the SALT redesign */
+.page-title {
+  border-bottom: 1px solid black;
+}
+
+.page-title h2 {
+    margin-bottom: 0;
+}
+.author{
+    display:none;
+}
+/* Front Content block */
+/*.in-page-sidebar { margin-top: .625em;
+
+}*/
+.callout {
+    height:auto;
+    margin: .625em 0;
+    padding:  0;
+    border-bottom: 1px solid #ececec;
+    width:100%;
+}
+.controlbar-container {
+    padding: .5em 0 .5em 0;
+    margin: 0;
+}
+
+.callout h2  /*sometimes content editors make this Front Content headline h3 instead of h2. The design should be consistent*/ {
+    
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.callout ul {
+    margin: 0 auto 1em 1em;
+}
+
+/******* probably in use in profile page */
+.function-select {
+     width: 275px;
+     height: 40px;
+     top: 300px;
+     right: 0;
+     float:right;
+}
+
+.see_more {
+    margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    figure.headerimage img {
+        margin-left: 10px;
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    figure.headerimage img {
+        margin-left: 10px;
+        float: right;
+    }
+
+}
+@media only screen and (min-width: 40.063em) {
+    .callout {
+        width:47%;
+        float:left;
+        margin: 0 .625em .625em 0;
+    }
+    .full-width.callout {
+        width:100%;
+       
+    }
+}

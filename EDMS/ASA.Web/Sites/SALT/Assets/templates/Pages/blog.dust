@@ -1,0 +1,110 @@
+{>"page_parent" /}
+
+{<dynamicBody}
+	<div class="row ">
+	    <div class="user_goal_landing small-12 columns">
+	    	<article class=" show-for-small row collapse">
+	    		<figure class="small-12 text-center columns">
+	            	<img src="/Assets/images/salt-right-now-small.png">
+	    		</figure>
+	    	</article>
+	        <article class="value-prop hide-for-small row collapse">
+	            <div class="small-12 medium-10 large-12 columns medium-centered large-uncentered">
+	            	<div class="value-entry ">
+		        		<section class="columns banner-overlay medium-6">
+		            		<div class="small-12">
+		            			<header>
+		            				<h1 class="text-blue">What Matters Right Now</h1>
+		            			</header>
+		            			<div class="large-11 text-blue"> 
+		            				<p>Stay up-to-date on scholarships, student loans, and everything else that can affect your goals.</p> 
+		            			</div>
+		            		</div>
+		            	</section>
+		            </div>
+	    			<figure class="small-12 columns">
+	            		<img class="right" src="/Assets/images/hero-img-desktop-R.jpg">
+	            	</figure>
+	            </div>
+	        </article>
+	    </div>
+        <div class="user-goal-option small-12 columns padding-top">
+            <div class="user-goals-blocks small-12 medium-10 large-12 columns medium-centered large-uncentered">
+                <section class="user-goal-options row collapse noprint">
+                    <div class="user-goals-grid-member">
+                        <a href="#" id="MasterMoney" data-goal="MasterMoney" class="user-goal box radius" tabindex="2">Manage Money</a>
+                    </div>
+                    <div class="user-goals-grid-member">
+                        <a href="#" id="RepayStudentDebt" data-goal="RepayStudentDebt" class="user-goal box radius" tabindex="2">Repay Student Debt</a>
+                    </div>
+                    <div class="user-goals-grid-member">
+                        <a href="#" id="PayForSchool" data-goal="PayForSchool" class="user-goal box radius" tabindex="2">Plan School Costs</a>
+                    </div>
+                    <div class="user-goals-grid-member">
+                        <a href="#" id="FindAJob" data-goal="FindAJob" class="user-goal box radius" tabindex="2">Find A Job</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+	</div>
+    <div id="blog-content-container">
+        {> "Modules/BlogTilesSection" /}
+    </div>
+{/dynamicBody}
+
+<script>
+    require(['jquery', 'configuration', 'asa/ASAUtilities'], function ($, configuration, utility) {
+        /* We load the first four tiles by default.  The first fetch should start from the 5th record */
+        var index = 4;
+        var currentURL = 'blog?Ns=sys_contentpostdate|1&Ntk=Tags&Ntx=mode+matchany&Ntt=&Dims=305&No=';
+        $(document.body).on('click', '.js-load-more-blogs', function (e) {
+            $.getJSON(configuration.apiEndpointBases.GenericEndeca + currentURL + index, function (data) {
+            	/* increase the index for the next fetch */
+        		index += 4;
+
+        		/* Render and append the results */
+        		utility.renderDustTemplate('Modules/BlogTiles', data, function (err, out) {
+                    $('#blog-tiles-container').append(out);
+                });
+
+        		/* Hide the load more button on the last page of records */
+        		if (data.mainContent[0].lastRecNum === data.mainContent[0].totalNumRecs) {
+                    $('.load-more').hide();
+        	    }
+            });
+        });
+
+        $(document.body).on('click', '.user-goal', function (e) {
+            var encoded = '';
+            var btnActive = $(this).hasClass('active-user-goal');
+
+            /* Remove any active styling */
+            $('.user-goal').removeClass('active-user-goal');
+
+            if (!btnActive) {
+                /* Apply the active class to the clicked button */
+                $(this).addClass('active-user-goal');
+                
+                /* grab the goal value which is used as a key-value for the configuration object to get goalTags for a given goal */
+                var goalTags = configuration.goalTags[$(this).attr('data-goal')];
+
+                /* The endeca query expects the tags to be surrounded by quotes e.g. "budgeting"+"banking"+"credit" */
+                var splitTags = _.map(goalTags.split(','), function(obj, ind, arr) { 
+                    return '"' + obj + '"';
+                });
+
+                /* Join the tags now that they have quotes with a plus sign, encode the quote signs */
+                encoded = encodeURI(splitTags.join('+'))
+            }
+
+            /* set encoded search term parameter for "Ntt" */
+            currentURL = 'blog?Ns=sys_contentpostdate|1&Ntk=Tags&Ntx=mode+matchany&Ntt=' + encoded + '&Dims=305&No=0';
+
+            $.getJSON(configuration.apiEndpointBases.GenericEndeca + currentURL, function (data) {
+                /* We always grab the first page of results when we switch goals, set the index to be 4 so a load more click will fetch the 2nd page */
+                index = 4;
+                utility.renderDustTemplate('Modules/BlogTilesSection', {content: data}, function (err, out) {}, '#blog-content-container');
+            });
+        });
+    });
+</script>

@@ -1,0 +1,75 @@
+/* footer */
+.footer-container {
+    border-top: 5px solid #DCDBDE;
+    margin-top: .625em;
+    background: #fff;
+    color: #003763;
+}
+.footer-container nav {
+    margin: .8em 0 1em .625em;
+}
+.footer-container .inline-list {
+    margin-left: 0;
+    margin-bottom: .6rem;
+}
+.footer-container.bottom-fixed {
+    background-color: #fff;
+    bottom: 0px;
+    position: fixed;
+    width:100%;
+    z-index: 99;
+}
+.footer-container .footer-nav li {
+    margin: 0;
+}
+.footer-container .footer-nav li:first-child a {
+    padding-left: 0;
+}
+.footer-container .footer-nav li:last-child a {
+    border-right: 0;
+}
+.footer-container .footer-nav a {
+    border-right: 1px solid #d2d1cd;
+    font-size: .79em;
+    line-height: 1;
+    padding: 0 0.3em 1px 0.3em;
+}
+.footer-container .salt-copyright {
+    font-size: .6em;
+    line-height: 1.4em;
+    padding-left: 0;
+    margin-left:0;
+}
+.footer-container .salt-copyright .break {
+    display: block;
+}
+.footer-container .asa-copyright {
+    font-style: italic;
+}
+@media only screen and (min-width: 40.063em) {
+    .salt-copyright {
+        overflow: visible;
+    }
+
+    .reg-special-event .salt-copyright {
+        font-size: .8em;
+    }
+}
+@media only screen and (min-width: 52.063em) {
+    .footer-container .footer-nav a {
+        border-right: 2px solid #ccc;
+        line-height: 1;
+        padding: 0 .6em 1px 0.6em;
+    }
+    .footer-container .footer-nav a {
+        font-size: .95em;
+    }
+    .footer-container .salt-copyright {
+        font-size: .7em;
+    }
+}
+@media only screen and (min-width: 60.063em) {
+    .footer-container .footer-nav a, .salt-copyright {
+        font-size: 1em;
+    }
+}

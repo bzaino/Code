@@ -1,0 +1,22 @@
+
+All licenses have been reviewed to ensure compatability with ASA's use of these components. 
+
+
+Library Name					Project Type			License Type
+==========================================================================================================
+common.logging					Open Source			Apache <<== REMOVE THIS
+elmah						Open Source			Apache
+EntityFramework					Commercial			MS .NET REDIST
+json.net					Open Source			Custom FREE Software Lic.
+jquery						Open Source			MIT
+jquery.tmpl					Open Source			MIT
+jquery.validation				Open Source			MIT
+jquery-datalink					Open Source			MIT
+jqueryUI					Open Source			MIT
+json2						Open Source			Public Domain
+log4net						Open Source			Apache
+modernizr					Open Source			MIT
+moq						Open Source			Custom FREE Software Lic.
+
+Last Audit By: Joseph Magly
+Last Audited: 10-01-2011	

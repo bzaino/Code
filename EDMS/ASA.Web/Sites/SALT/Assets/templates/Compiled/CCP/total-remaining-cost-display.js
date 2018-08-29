@@ -1,0 +1,1 @@
+define(["dust"], function(dust) { (function(){dust.register("CCP/total-remaining-cost-display",body_0);function body_0(chk,ctx){return chk.write("<p class=\"deck\">Total remaining costs are about: <span class=\"higher\">$<span class=\"js-remaining-costs\">0</span></span> for your remaining <span class=\"js-remaining-years\"></span> of college.</p>");}return body_0;})(); });

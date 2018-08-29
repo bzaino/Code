@@ -1,0 +1,92 @@
+/* Styles for no access error page*/
+
+// the background color for the page
+
+
+//the corner design element 
+#design-container{ 
+		position: relative; 
+	}
+#design-element{
+	//background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMC4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDQxNCAzNDYuNSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDE0IDM0Ni41OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7Y2xpcC1wYXRoOnVybCgjU1ZHSURfMl8pO2ZpbGw6I0ZGRkZGRjt9DQoJLnN0MXtjbGlwLXBhdGg6dXJsKCNTVkdJRF8yXyk7fQ0KCS5zdDJ7ZmlsbDojMDAzNzYzO30NCgkuc3Qze2NsaXAtcGF0aDp1cmwoI1NWR0lEXzRfKTtmaWxsOiM2REJFNEY7fQ0KCS5zdDR7Y2xpcC1wYXRoOnVybCgjU1ZHSURfNF8pO30NCgkuc3Q1e2NsaXAtcGF0aDp1cmwoI1NWR0lEXzZfKTtmaWxsOiNGRkZGRkY7fQ0KCS5zdDZ7Y2xpcC1wYXRoOnVybCgjU1ZHSURfNl8pO30NCgkuc3Q3e2NsaXAtcGF0aDp1cmwoI1NWR0lEXzZfKTtmaWxsOm5vbmU7fQ0KCS5zdDh7Y2xpcC1wYXRoOnVybCgjU1ZHSURfOF8pO2ZpbGw6IzZEQkU0Rjt9DQoJLnN0OXtjbGlwLXBhdGg6dXJsKCNTVkdJRF84Xyk7fQ0KCS5zdDEwe2NsaXAtcGF0aDp1cmwoI1NWR0lEXzhfKTtmaWxsOm5vbmU7fQ0KCS5zdDExe2NsaXAtcGF0aDp1cmwoI1NWR0lEXzEwXyk7ZmlsbDojRkZGRkZGO30NCgkuc3QxMntjbGlwLXBhdGg6dXJsKCNTVkdJRF8xMF8pO30NCgkuc3QxM3tjbGlwLXBhdGg6dXJsKCNTVkdJRF8xMl8pO2ZpbGw6IzZEQkU0Rjt9DQoJLnN0MTR7Y2xpcC1wYXRoOnVybCgjU1ZHSURfMTJfKTt9DQoJLnN0MTV7ZmlsbDojNkRCRTRGO3N0cm9rZTojNkRCRTRGO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1taXRlcmxpbWl0OjEwO30NCgkuc3QxNntmaWxsOm5vbmU7c3Ryb2tlOiMwMDM3NjM7c3Ryb2tlLXdpZHRoOjM7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fQ0KCS5zdDE3e2ZpbGw6IzAwMzc2MztzdHJva2U6IzAwMzc2MztzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQoJLnN0MTh7ZmlsbDojNkRCRTRGO30NCgkuc3QxOXtmaWxsOiNGRkZGRkY7fQ0KCS5zdDIwe2ZpbGw6IzBDM0M2MTt9DQo8L3N0eWxlPg0KPGcgaWQ9IkxheWVyXzEiPg0KCTxnPg0KCQk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNNjkuMS0yMDEuMmMtMS42LTMwLjYsMTMuMy02MC42LDM5LTc4LjNjMjUuNi0xNy43LDU4LjEtMjAuNyw4Ni44LTguMWw0MjQuMywxODIuOA0KCQkJYzMxLjUsMTMuOCw1Miw0My41LDUzLjcsNzcuNXMtMTUuNSw2NS42LTQ1LjEsODIuNUwyMjQuMiwyODEuNWMtMjcsMTUuNC01OS4zLDE1LjctODYuNiwwLjhjLTI3LjMtMTQuOS00NS43LTQzLjItNDYuNy03My44djANCgkJCWMtMS0xMS42LDAuOS0yMy4yLDQuOC0zNC41QzExNSwxMTguNywxMjMuMSw2MC42LDEyMCwxLjZjLTMuMS01OS4xLTE3LjMtMTE1LjktNDIuMy0xNjlDNzIuNy0xNzguMiw2OS43LTE4OS42LDY5LjEtMjAxLjJ6DQoJCQkgTTIwOC4xLTNjMy43LDcwLjYtNi4yLDEzOS45LTI5LjIsMjA2LjFjLTAuMiwwLjYtMC4yLDAuOC0wLjIsMC44YzAuMSwwLjMsMSwxLDEuNSwxLjFjLTAuMSwwLDAuMi0wLjEsMC43LTAuM0w1ODQuMy0yMS42DQoJCQljMC4zLTAuMiwwLjQtMC4yLDAuNC0xLjFjMC0wLjgtMC4yLTAuOS0wLjgtMS4yTDE1OS42LTIwNi42Yy0wLjgtMC4zLTEuMS0wLjQtMS4xLTAuNGMtMC4zLDAuMS0xLDAuOC0xLjIsMS4zDQoJCQljMCwwLjEsMC4xLDAuNCwwLjMsMC43QzE4Ny40LTE0MS41LDIwNC40LTczLjYsMjA4LjEtM3oiLz4NCgk8L2c+DQo8L2c+DQo8ZyBpZD0idGV4dCI+DQo8L2c+DQo8ZyBpZD0iYnV0dG9uIj4NCjwvZz4NCjxnIGlkPSJMb2dvIj4NCjwvZz4NCjxnIGlkPSJDb250YWN0X3VzIj4NCjwvZz4NCjwvc3ZnPg==') no-repeat 0 0;	
+	position: absolute;
+	top: 0px;
+	right: -20px; 
+	width: 40%;
+	height: 40%;
+}
+
+// the left corner logo positioning
+#logo_noaccess{
+	width: 40%;
+	height: 40%;
+	position: fixed;
+	top: 0px;
+	left: -10px; 
+	background-repeat: no-repeat;
+	z-index: 99;
+}
+
+//Setting the font sizes
+.noaccess-font{ 
+	h1{ 
+		font-size: 3rem;
+		font-weight: bold; 
+		color: $growth-green;
+	}
+	h2{
+		font-size: 1.5rem;	
+	}
+	h3, h4{
+		font-size: .9rem;
+	}
+}
+
+// setting the color for the line 
+hr.line{
+	border:0;
+	height: 1px;
+	background: $salt-blue;
+}
+
+// setting the space for the block of text
+.text-section{
+	margin-top: 20%;
+}
+
+// for medium up screen size changing the size of logo and design element.
+@media #{$medium-up}{
+	
+	#design-element{
+		position: absolute; 
+		right: -40px;
+		top: 0px;	
+		width:35%;
+		height: 35%;
+	}
+	
+	#logo_noaccess{
+		width: 20%;
+		height: 20%;
+	}
+	.noaccess-font{ 
+		h1{ 
+		font-size: 6rem;
+		}
+		h2{
+		font-size: 2rem;	
+		}
+		h3, h4{
+		font-size: 1rem;
+		}
+	}
+}
+// making the design element fixed for large screen - the absolute position was not working well.
+@media #{$large-up}{
+	
+	#design-element{
+		position: fixed;
+		right: 0px;
+		top: 0px;	
+	}
+}

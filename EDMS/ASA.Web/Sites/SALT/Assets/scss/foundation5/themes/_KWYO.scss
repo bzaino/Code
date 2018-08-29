@@ -1,0 +1,431 @@
+/*************************
+
+KWYO specific styles
+
+**************************/
+
+/**********************
+
+Overlay styles
+
+***********************/
+// wraps the two data tables
+#grid-template {
+    h3 i {
+        font-size: smaller;
+        margin-left: 20px;
+    }
+    h6 {
+        font-size: 1em;
+        font-weight: bold;
+        margin:0;
+    }
+    table {
+        border: 0;
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin: 0;
+        width: 100%;
+        table-layout: fixed;
+    }
+    tr {
+        background-color: $white;
+        border: 0;
+        border-bottom: 1px solid $gray15;
+        margin: 0;
+        &.highlight {
+            border: 3px solid $pink;
+        }
+        &:first-child {
+            background: rgba($gray15, 0.2);
+            border: 1px solid $gray15;
+            font-size: 0.75em;
+            height: 18px;
+            padding: 5px;
+            text-transform: capitalize;
+        }
+    }
+    th {
+        border: 0;
+        margin: 0;
+        padding: 3px !important;
+        text-align: left;
+    }
+    td {
+        border: 0;
+        font-weight: 600;
+        font-size: .7rem;
+        line-height: 1em;
+        padding: 5px 3px 5px 0;
+        vertical-align: middle;
+    }
+    td:first-child, th:first-child {
+        border: 0;
+        width: 10px;
+        padding: 0 !important;
+    } 
+}
+#graph-template {
+    margin: 0 0 18px;
+    height: 300px;
+}
+.graph-container {
+    min-height: 200px;
+}
+.arrow-boxed-color {   
+    height: 45px;
+    margin: 2.5px 2px;
+}
+.fields .row {
+    margin-bottom: 0.4em !important;
+    label {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+#nextSteps {
+    padding: 0 10px;
+    header {
+        padding-top: 0.6rem;
+        h1 {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+    }
+}
+[class*=KWYO-button-] {
+    background: transparent url(/Assets/images/know-what-you-owe/SALT_KWYO_import_btns_rebrand.png) no-repeat 0 0;
+    display: inline-block;
+    height: 46px;
+    width: 46px;
+}
+[class*=KWYO-button-]:first-child {
+    margin-left: 0;
+}
+[class*=KWYO-button-]:hover {
+    cursor: pointer;
+}
+.KWYO-button-add {
+    background-position: -46px 0;
+}
+.KWYO-button-add:hover {
+    background-position: -46px -46px;
+}
+.KWYO-button-glossary {
+    background-position: -92px 0;
+}
+.KWYO-button-glossary:hover {
+    background-position: -92px -46px;
+}
+.KWYO-button-flip {
+    background-position: -138px 0;
+}
+.KWYO-button-flip:hover {
+    background-position: -138px -46px;
+}
+.KWYO-button-import:hover {
+    background-position: 0 -46px;
+}
+.add-loan-section {
+    line-height: 1;
+    text-align: right;
+    float:right;
+}
+.KWYO-button-add-loan {
+    background-position: -182px 0;
+    border: 0;
+    width: 93px;
+    height: 29px;
+    background-repeat: no-repeat;
+}
+.KWYO-button-add-loan:hover {
+    background-position: -182px -31px;
+    border: 0;
+    outline: none;
+}
+#loanDetailContent .fields .row .small-12 {
+    padding-bottom: 0;
+}
+#loanDetailContent .fields .row .small-12:nth-child(2) {
+    text-align: left;  
+}
+#loanDetailContent .fields .row .small-12:nth-child(2) label {
+    font-weight: normal;
+}
+.loan-detail-style {
+    .prev-next {
+        left: -1em;
+        bottom: 4.5em;
+        position: relative;
+        border: 0;
+        background-color: transparent;
+        margin-bottom: -4em;
+        a {
+            padding-left: inherit !important;
+        }
+    }
+    input {
+        &[type=number], &[type=text], &[type=date], &[type=balance], &[type=interest] {
+            padding: 1px;
+            padding-left: .75em;
+            margin-bottom: 0.7rem;
+            min-width: 85%;
+        }
+    }    
+    input[type=interest] {
+        width: 100%; 
+        &:focus {
+            background-color: $white;
+        }
+    }  
+    input[type=balance] {
+        padding-left: 1.7em;
+        width: 100%;
+        &:focus {
+            background-color: $white;
+        } 
+    }
+    a.button, button.button {
+        margin-top: 1em;
+        line-height: 1.5;
+        min-height: 2.1em;
+        z-index: 10;
+    }
+}
+.loan-detail-style .row.collapse, .addLoanForm .row.collapse {
+    border-bottom: 1px solid $gray15;
+    padding: 0;
+}
+/* Hide the date picker on disabled form too */
+.input-buttons.ws-disabled {
+    display: none;
+}
+.loan-delete-link {
+    position: relative;
+    top: 2.3em;
+    right: 1em;
+    z-index: 1;
+    &.federal-import-delete-link {
+        right: 1.5rem;
+    }
+}
+.federal-import-update {
+    left: 0.5em;
+}
+.detail-disclaimer {
+    font-size: 0.7em;
+    line-height: 1.2em;
+    font-style: italic;
+    padding: 1em  0 0 0 !important;
+    p {
+        font-size: 1.1em;
+    }
+}
+/****************
+
+Joyride Tour boxes
+
+*****************/
+.joyride-tip-guide.salt-joyride {
+    border: 1px solid $growth-green;
+    background: $white;
+    color: $black;
+    z-index:600;
+    .joyride-nub.bottom {
+        background: transparent url('/Assets/images/global/tooltip.png')no-repeat;
+        border: 0;
+        display: block;
+        width: 32px;
+        height: 8px;
+        position: absolute;
+        z-index: 661;
+        left: 40px;
+        top: auto;
+        bottom: -8px !important;
+    }
+    &.top-center-nub .joyride-nub.top {
+        left: auto !important;
+        right: 45%;
+    }
+    .joyride-nub.top {
+        background: transparent url('/Assets/images/global/tooltiptop.png')no-repeat;
+        border: 0;
+        display: block;
+        width: 32px;
+        height: 8px;
+        position: absolute;
+        z-index: 661;
+        top: -8px;
+    }
+}
+.joyride-modal-bg {
+    z-index: 102;
+}
+.joyride-content-wrapper {
+    width: 100%;
+    padding: 1rem 1rem 1.25rem;
+    p {
+        width: 93%;
+        line-height: 1.5;
+    }
+    .button {
+        float: right;
+        margin: 0 0 0.8em 0 !important;
+    }
+}
+.joyride-loan-btns, .joyride-glossary-btns {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    height: 75px;
+    width: 1px;
+}
+.joyride-totals {
+    height: 130px;
+    position: absolute;
+}
+.joyride-graph-background {
+    height: 170px;
+    position: absolute;
+}
+.input-buttons, .step-controls, .ws-popover-opener {
+    vertical-align: inherit;
+}
+li.under-line{
+    padding-left: 1em;
+}
+.under-line {
+    border-bottom: 1px solid $gray50;
+    padding-bottom: 0.4em;
+}
+a[title="next"] {
+    right: 1.7em;
+    bottom: 0.5em;
+}
+a[title="previous"] {
+    left: 0.25em;
+    bottom: 0.4em;
+}
+.totals-container {
+    padding-bottom: 10px;
+    .totals-data {
+        padding: 2px 0;
+        background: $salt-blue;
+        margin-bottom: 0.5em;
+        > .kwyo-total {
+            border-bottom: 1px solid #fff;
+        }
+        span {
+            color: $white;
+            font-weight: bold;
+        }
+    }
+}
+.next-steps {
+    margin: 0.8em 0;
+    border: 1px solid $gray15;
+    background: rgba($gray15, 0.2);
+    padding: 10px;
+    > h6 {
+        border-bottom: 1px solid;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+    }
+}
+.loans-table {
+    h3 {
+        display: inline;
+    }
+    .table-wrapper {
+        margin: 0.5em 0 2em 0;
+    }
+}
+.highcharts-title {
+    font-weight: bold;
+    font-size: 12px;
+}
+.highcharts-subtitle {
+    font-weight: bold;
+    //font-size of pie subtitle on mobile
+    font-size: 12px !important;
+    //Prioritize tooltip over label in the middle
+    z-index: -1 !important; 
+}
+@media only screen and (min-width: 40.063em) { /* min-width 641px, medium screens */
+    #loanDetailContent .fields .row .small-12 {
+        padding-bottom: 0.4em;
+        padding-top: 0;
+    }
+    #loanDetailContent .fields .row .small-12:nth-child(2) {
+        text-align: right;      
+    }
+    .button-menu-row {
+        float: right;
+        min-width: 234px;
+    }
+    .button-menu-row .button-menu-section {
+        width: 56px;
+    }
+    #graph-template {
+        height: 400px;
+    }
+   .loan-detail-style {
+        .row.collapse {
+            border-bottom: 1px solid #ccc;
+            padding: 0.625em 0 0 0;
+        }
+        .prev-next {
+            left: 0;
+        }
+    }
+    a[title="next"] {
+        right: inherit;
+    }
+    #grid-template table tr td {
+        font-weight: 700;
+        font-size: 0.9em;
+        padding: 5px !important;
+    }
+    .joyride-modal-bg {
+        cursor: default;
+    }
+    /* Hacky way to make bottom-left joyride stops for the button menu */
+    .joyride-loan-btns, .joyride-glossary-btns, .joyride-totals, .joyride-graph {
+        position: relative;
+    }
+    .joyride-loan-btns, .joyride-glossary-btns {
+        top: 25px;
+        left: -200px;
+        height: 5px;
+        width: 5px;
+    }
+    .joyride-glossary-btns {
+        left: -115px;
+    }
+
+    .joyride-graph-background {
+        height: 375px;
+        left: 15%;
+    }
+    .joyride-totals {
+        left: -80px;
+    }
+    .totals-container .totals-data > .kwyo-total {
+        border-bottom: none;
+    }
+    .highcharts-title {
+        font-weight: bold;
+        font-size: 17px;
+    }
+    .highcharts-subtitle {
+        font-weight: bold;
+        //font-size of pie subtitle on big screen
+        font-size: 17px !important; 
+        //Prioritize tooltip over label in the middle
+        z-index: -1 !important; 
+    }
+}
+
+

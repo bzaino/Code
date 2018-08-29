@@ -1,0 +1,103 @@
+startup: Coverity Desktop Analysis version 2017.07 on Windows 7 Enterprise, 64-bit, Service Pack 1 (build 7601)
+startup: Internal version numbers: 7a4de27b47 p-milo-push-30112.654
+startup: started at 2018-04-23 10:05:39
+startup: command line: C:\Program Files\Coverity\Coverity Static Analysis\bin\cov-run-desktop.exe --build --dir C:\SOA\wksp_03\SOA\Web\SAL\.cov\debug-mixed_platforms-idir\idir --code-base-dir C:\SOA\wksp_03\SOA\Web\SAL\ --auth-key-file C:\Users\bzaino.AMSA.003\AppData\Roaming\Coverity\authkeys\ak-coverity-80 --port 80 --host coverity --stream WEB_Salt_DEV_ASA.Web.Services --reference-snapshot latest --disconnected -sf C:\Program Files\Coverity\Coverity Static Analysis\bin\license.dat --tmpdir C:\Users\BZAINO~1.003\AppData\Local\Temp C:\Program Files (x86)\MSBuild\12.0\bin\\MSBuild.exe C:\SOA\wksp_03\SOA\Web\SAL\ASA.Web.Services.sln /m:2 /nr:false /t:Rebuild /p:platform=Mixed Platforms /p:configuration=Debug
+settings: {
+settings:   "type": "Coverity configuration",
+settings:   "format_version": 1,
+settings:   "format_minor_version": 5,
+settings:   "settings": {
+settings:     "add_compiler_configurations": [
+settings:     ],
+settings:     "compiler_config_file": "C:\\SOA\\wksp_03\\SOA\\Web\\SAL/data-coverity/v2017.07/config/coverity_config.xml",
+settings:     "compiler_configurations": [
+settings:       {
+settings:         "cov_configure_args": [
+settings:           "--javascript",
+settings:           "--if-supported-platform"
+settings:         ]
+settings:       },
+settings:       {
+settings:         "cov_configure_args": [
+settings:           "--php",
+settings:           "--if-supported-platform"
+settings:         ]
+settings:       },
+settings:       {
+settings:         "cov_configure_args": [
+settings:           "--python",
+settings:           "--if-supported-platform"
+settings:         ]
+settings:       },
+settings:       {
+settings:         "cov_configure_args": [
+settings:           "--ruby",
+settings:           "--if-supported-platform"
+settings:         ]
+settings:       },
+settings:       {
+settings:         "cov_configure_args": [
+settings:           "--gcc"
+settings:         ]
+settings:       },
+settings:       {
+settings:         "cov_configure_args": [
+settings:           "--java"
+settings:         ]
+settings:       },
+settings:       {
+settings:         "cov_configure_args": [
+settings:           "--msvc"
+settings:         ]
+settings:       },
+settings:       {
+settings:         "cov_configure_args": [
+settings:           "--cs"
+settings:         ]
+settings:       },
+settings:       {
+settings:         "cov_configure_args": [
+settings:           "--clang"
+settings:         ]
+settings:       },
+settings:       {
+settings:         "cov_configure_args": [
+settings:           "--swift"
+settings:         ]
+settings:       }
+settings:     ],
+settings:     "cov_run_desktop": {
+settings:       "allow_suffix_match": false,
+settings:       "build_record_with_source": false,
+settings:       "ignore_uncapturable_inputs": false,
+settings:       "prefer_suffix_match": false,
+settings:       "reference_snapshot": "latest"
+settings:     },
+settings:     "intermediate_dir": "C:\\SOA\\wksp_03\\SOA\\Web\\SAL\\.cov\\debug-mixed_platforms-idir\\idir",
+settings:     "known_installations": [
+settings:       {
+settings:         "directory": "C:\\Program Files\\Coverity\\Coverity Static Analysis",
+settings:         "kind": "cov-analysis",
+settings:         "platform": "win64",
+settings:         "version": "2017.07"
+settings:       }
+settings:     ],
+settings:     "license_file_dir": "C:\\SOA\\wksp_03\\SOA\\Web\\SAL/data-coverity/v2017.07/lic",
+settings:     "scm": {
+settings:     },
+settings:     "server": {
+settings:       "auth_key_file": "C:\\Users\\bzaino.AMSA.003\\AppData\\Roaming\\Coverity\\authkeys\\ak-coverity-80",
+settings:       "authenticate_ssl": false,
+settings:       "host": "coverity",
+settings:       "ldap_server": "",
+settings:       "port": 80,
+settings:       "ssl": false,
+settings:       "username": "bzaino"
+settings:     },
+settings:     "stream": "WEB_Salt_DEV_ASA.Web.Services",
+settings:     "tmpdir": "C:\\Users\\BZAINO~1.003\\AppData\\Local\\Temp"
+settings:   }
+settings: }
+C:\Program Files\Coverity\Coverity Static Analysis\bin\cov-build: running: C:\Program Files\Coverity\Coverity Static Analysis\bin\cov-build --no-banner --desktop --dir C:/SOA/wksp_03/SOA/Web/SAL/.cov/debug-mixed_platforms-idir/idir --config C:\SOA\wksp_03\SOA\Web\SAL/data-coverity/v2017.07/config/coverity_config.xml C:\Program Files (x86)\MSBuild\12.0\bin\\MSBuild.exe C:\SOA\wksp_03\SOA\Web\SAL\ASA.Web.Services.sln /m:2 /nr:false /t:Rebuild /p:platform=Mixed Platforms /p:configuration=Debug
+C:\Program Files\Coverity\Coverity Static Analysis\bin\cov-build: C:\Program Files\Coverity\Coverity Static Analysis\bin\cov-build took 39.8 seconds.
+shutdown: cov-run-desktop terminating with code 0 at 2018-04-23 10:06:19

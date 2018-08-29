@@ -1,0 +1,19 @@
+<meta name="description" content="{content.mainContent[0].record.attributes.page_description|trim}" />
+<meta name="keywords" content="{content.metaKeywords}" />
+<meta name="WT.site"   content="salt" />
+<meta name="WT.cg_n"   content="{content.mainContent[0].record.attributes.FlatTags[0]|returnFirstFlatTag}" />
+<meta name="WT.cg_s"   content="{content.mainContent[0].record.attributes.FlatTags[0]|returnSecondFlatTag}" />
+<meta name="WT.pn_sku" content="{content.mainContent[0].record.attributes.P_Primary_Key[0]}" />
+<meta name="WT.z_brnd" content="{?SiteMember.ActiveDirectoryKey}{@if cond="'{configuration.CurrentSchoolBrand}' !== 'nologo'"}1{:else}0{/if}{/SiteMember.ActiveDirectoryKey}" />
+
+{@if cond="'{content.mainContent[0].name}' === 'ProductDetail'"}
+    <meta name="WT.tx_e"   content="v" />
+    <meta name="WT.z_cg_t" content="{content.mainContent[0].record.attributes.ContentTypes}" />
+{/if}
+{?SiteMember.ActiveDirectoryKey}
+    <meta name="DCS.dcsaut" content="{SiteMember.MembershipId}" />
+    <meta name="WT.dcsvid" content="{SiteMember.MembershipId}" />
+    <meta name="WT.z_state" content="01" />
+{:else}
+    <meta name="WT.z_state" content="00" />
+{/SiteMember.ActiveDirectoryKey}

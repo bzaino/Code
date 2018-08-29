@@ -1,0 +1,47 @@
+<!-- Cash flow in the negative -->
+<div class='section'>
+  <h3>Select the options that you’re willing to explore.</h3>
+  <input id='cut-expenses' type='checkbox' value='cut-expenses' />
+  <label for='cut-expenses'>Cut your expenses</label>
+  <div class='hidden-modifiers'>
+    <p class='negative'>
+      You can try to cut at least
+      <span class='expenses'>$100</span>
+      from your monthly expenses.
+    </p>
+    <p class='positive'>
+      Sweet, you're saving an extra
+      <span class='expenses'>$100</span>
+      per month!
+    </p>
+    <a class='button-expenses open-expenses' href='#expenses-overlay' rel='expenses-overlay'>Let's do it</a>
+  </div>
+</div>
+<div class='section'>
+  <input id='more-money' type='checkbox' value='more-money' />
+  <label for='more-money'>Make more money</label>
+  <div class='hidden-modifiers'>
+    <p>
+      I can try to make
+      <input id='more-money-value' type='text' value='$' />
+      more each month by
+      <input class='big' placeholder='ex: babysitting' type='text' value='' />
+    </p>
+    <p>Taking on occasional jobs, like babysitting, tutoring or political canvassing.</p>
+    <a class='button-expenses more-money' href='#'>Update graph</a>
+  </div>
+</div>
+<div class='section last'>
+  <input id='reconsider-goal' type='checkbox' value='reconsider-goal' />
+  <label for='reconsider-goal'>I'll wait as long as it takes</label>
+  <div class='hidden-modifiers'>
+    <p class='new-goal'>
+      I'm willing to save for
+      <span class='months'>5 more months</span>
+      to reach my goal.
+    </p>
+  </div>
+</div>
+<div class='reset-changes'>
+  <p>Reset changes</p>
+</div>

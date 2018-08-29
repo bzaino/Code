@@ -1,0 +1,10 @@
+<td class="hide-for-small"></td>
+<td colspan="2">
+  <h6>My Total Federal Student Loan Debt:</h6>
+</td>
+<td>
+  <h6>${Total.federalBalance|currencyComma}</h6>
+</td>
+<td>
+  <h6>${Monthly.federalBalance|currencyComma}<i>/month</i></h6>
+</td>

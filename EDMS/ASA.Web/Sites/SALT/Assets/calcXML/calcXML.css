@@ -1,0 +1,1283 @@
+html, body {
+    margin:0;background-color: #ffffff;
+    font-family: 'Noto Sans', sans-serif !important;
+}
+.pure-g-r {
+    font-family: 'Noto Sans', sans-serif !important;
+}
+.pure-g-r [class *="pure-u"] {
+    font-family: 'Noto Sans', sans-serif !important;
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'), local('NotoSans'), url(https://themes.googleusercontent.com/static/fonts/notosans/v4/LeFlHvsZjXu2c3ZRgBq9nD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(https://themes.googleusercontent.com/static/fonts/notosans/v4/PIbvSEyHEdL91QLOQRnZ13hCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+
+h2.calcTitle {
+    margin-top: 0;
+}
+/* from PURE buttons-core.css */
+/*td.inputTableLabel{
+    font-size: .8em;
+}*/
+/* ===============  forms-responsive.css =================*/
+
+
+p {font-size: .9em;}
+
+input[size="10"] {
+        width: 7.5em;
+}
+input[size="25"], input[size="45"] {
+        width: 18em;
+}
+
+.inputTableHeader {
+        font-size: .8em;
+        font-weight: normal;
+}
+
+.pure-skin-cx .pure-button {
+    /* Structure */
+    display: inline-block;
+    *display: inline; /*IE 6/7*/
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.pure-skin-cx .pure-button::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+}
+/* end from PURE buttons-core.css */
+/* from PURE buttons.css */
+/*csslint unqualified-attributes:false*/
+.pure-skin-cx .pure-button {
+    background: transparent url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMjkuMzkxcHgiIGhlaWdodD0iMjUuNDM1cHgiIHZpZXdCb3g9IjAgMCAyOS4zOTEgMjUuNDM1IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyOS4zOTEgMjUuNDM1IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxjaXJjbGUgZmlsbD0iIzU4NjA3MiIgY3g9IjEyLjU2MSIgY3k9IjEyLjk3OSIgcj0iMTEuMDIyIi8+DQo8Zz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTUuNzMxLDE4LjA5NWwtOC43MjgtMy44NDl2LTEuMjU3bDguNzI4LTQuMzU5djIuMTA5bC02LjAxMiwyLjc4Nmw2LjAxMiwyLjQ3VjE4LjA5NXoiLz4NCjwvZz4NCjwvc3ZnPg==') 0 5px no-repeat;
+    color: #576172;
+    margin: .5rem 0;
+    padding-left: 2em !important;
+    font-weight: normal;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: .95rem;
+    font-weight: normal;
+  
+    margin: .5rem 0;
+      padding-left: 2em !important;
+    outline: none;
+    text-align: right;
+    text-decoration: none;
+   
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    white-space:nowrap;
+}
+.pure-skin-cx .pure-button-hover,
+.pure-skin-cx .pure-button:hover {
+    color: #748194;
+    background: transparent url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMjkuMzkxcHgiIGhlaWdodD0iMjUuNDM2cHgiIHZpZXdCb3g9IjAgMCAyOS4zOTEgMjUuNDM2IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyOS4zOTEgMjUuNDM2IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IHg9IjAiIHk9IjAiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyOS4zOTEiIGhlaWdodD0iMjUuNDM2Ii8+DQo8Y2lyY2xlIGZpbGw9IiM3NDgxOTQiIGN4PSIxMi41NjEiIGN5PSIxMi45NzkiIHI9IjExLjAyMiIvPg0KPGc+DQoJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTE1LjczMSwxOC4wOTVsLTguNzI4LTMuODV2LTEuMjU3bDguNzI4LTQuMzU5djIuMTA5bC02LjAxMiwyLjc4Nmw2LjAxMiwyLjQ3VjE4LjA5NXoiLz4NCjwvZz4NCjwvc3ZnPg==') 0 5px no-repeat;
+}
+.pure-skin-cx .pure-button.pure-button-primary {
+   background: #e32c88;
+    padding: 9px 25px;
+    color: #fff;
+    border-radius: 1.6rem;/* the base padding, font size, borders */
+    border: 0;
+   
+    font-family: 'Noto Sans', sans-serif;
+    font-size: .95rem;
+   
+    margin: .5rem 0; 
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    white-space:nowrap;
+    outline: none;
+}
+.pure-skin-cx .pure-button.pure-button-primary:hover, .pure-skin-cx .pure-button.pure-button-primary:focus {
+    background: #b3246e;
+    color: #fff;
+}
+.pure-button:not(.pure-button-primary):before {
+    content: "";
+}
+
+a, a:link {
+    color: #009DEB;
+    line-height: inherit;
+    text-decoration: none;
+}
+
+
+
+.pure-skin-cx .pure-button:focus {
+    outline: 0;
+}
+.pure-skin-cx .pure-button-active,
+.pure-skin-cx .pure-button:active {
+    box-shadow: none;
+}
+
+.pure-skin-cx .pure-button[disabled],
+.pure-skin-cx .pure-button-disabled,
+.pure-skin-cx .pure-button-disabled:hover,
+.pure-skin-cx .pure-button-disabled:active {
+    border: none;
+    background-image: none;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.pure-skin-cx .pure-button-hidden {
+    display: none;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.pure-skin-cx .pure-button::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+}
+
+.pure-skin-cx .pure-button-primary,
+.pure-skin-cx .pure-button-selected,
+.pure-skin-cx a.pure-button-primary,
+.pure-skin-cx a.pure-button-selected {
+     background-color: #19ffaf;
+     color: #000;
+}
+.pure-skin-cx .pure-button-primary:hover,
+.pure-button .pure-button-primary:hover {
+    
+}
+.pure-button-primary:after {
+    content: "";
+}
+/*! Copyright 2013 Yahoo! Inc. http://yuilibrary.com/license/ */
+/* This page lists core form styles adopted from Normalize.css. */
+/*! Copyright (c) Nicolas Gallagher and Jonathan Neal */
+
+/*! normalize.css v1.1.0 | MIT License | git.io/normalize */
+
+/* This page has Normalize.css form-specific style rules applied to a .yui3-form context */
+
+/* ==========
+Forms Core
+=========*/
+
+
+/*
+ * Corrects margin displayed oddly in IE 6/7.
+ */
+
+.pure-skin-cx .pure-form {
+    margin: 0;
+}
+
+/* Define consistent border, margin, and padding.*/
+ 
+
+.pure-skin-cx .pure-form fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 6/7/8/9.
+ * 2. Corrects text not wrapping in Firefox 3.
+ * 3. Corrects alignment displayed oddly in IE 6/7.
+ */
+
+.pure-skin-cx .pure-form legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+ /* 1 */
+.pure-skin-cx .pure-form button,
+.pure-skin-cx .pure-form input,
+.pure-skin-cx .pure-form select,
+.pure-skin-cx .pure-form textarea {
+    font-size: 1rem; /* 1 */
+    margin: 0; /* 2 */
+    margin-right:.4em;
+   
+}
+.pure-skin-cx .pure-form button {
+    font-size: 1rem;
+}
+/*
+ * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+.pure-skin-cx .pure-form button,
+.pure-skin-cx .pure-form input {
+    
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+.pure-skin-cx .pure-form button,
+.pure-skin-cx .pure-form input[type="button"], /* 1 */
+.pure-skin-cx .pure-form input[type="reset"],
+.pure-skin-cx .pure-form input[type="submit"] {
+     cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+
+.pure-skin-cx .pure-form button[disabled],
+.pure-skin-cx .pure-form input[disabled] {
+    cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ * 3. Removes excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+.pure-skin-cx .pure-form input[type="checkbox"],
+.pure-skin-cx .pure-form input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+.pure-skin-cx .pure-form input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+.pure-skin-cx .pure-form input[type="search"]::-webkit-search-cancel-button,
+.pure-skin-cx .pure-form input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 3+.
+ */
+
+.pure-skin-cx .pure-form button::-moz-focus-inner,
+.pure-skin-cx .pure-form input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+
+.pure-skin-cx .pure-form textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+
+/* ===============  forms.css =================================*/
+.pure-skin-cx .pure-form input[type="text"],
+.pure-skin-cx .pure-form input[type="password"],
+.pure-skin-cx .pure-form input[type="email"],
+.pure-skin-cx .pure-form input[type="url"],
+.pure-skin-cx .pure-form input[type="date"],
+.pure-skin-cx .pure-form input[type="month"],
+.pure-skin-cx .pure-form input[type="time"],
+.pure-skin-cx .pure-form input[type="datetime"],
+.pure-skin-cx .pure-form input[type="datetime-local"],
+.pure-skin-cx .pure-form input[type="week"],
+.pure-skin-cx .pure-form input[type="number"],
+.pure-skin-cx .pure-form input[type="search"],
+.pure-skin-cx .pure-form input[type="tel"],
+.pure-skin-cx .pure-form input[type="color"],
+.pure-skin-cx .pure-form select,
+.pure-skin-cx .pure-form textarea {
+    background: #e3f0f9; /* Old browsers */
+    background: -moz-linear-gradient(left,  #e3f0f9 0%, #f7f7f7 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#e3f0f9), color-stop(100%,#f7f7f7)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #e3f0f9 0%,#f7f7f7 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #e3f0f9 0%,#f7f7f7 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #e3f0f9 0%,#f7f7f7 100%); /* IE10+ */
+    background: linear-gradient(to right,  #e3f0f9 0%,#f7f7f7 100%); /* W3C */
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-color: rgba(200, 200, 200, 0);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 2px 2px 2px #888;
+    -webkit-box-shadow:  2px 2px 2px #888;
+    box-shadow: 2px 2px 2px #888;
+    color: #555;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    height: 1.85rem;
+    padding: 0.3rem 0.4rem;
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    -o-transition: all .15s linear;
+    transition: all .15s linear;
+}
+
+
+
+.pure-skin-cx   .pure-form input[type="text"]:focus,
+.pure-skin-cx .pure-form input[type="password"]:focus,
+.pure-skin-cx .pure-form input[type="email"]:focus,
+.pure-skin-cx .pure-form input[type="url"]:focus,
+.pure-skin-cx .pure-form input[type="date"]:focus,
+.pure-skin-cx .pure-form input[type="month"]:focus,
+.pure-skin-cx .pure-form input[type="time"]:focus,
+.pure-skin-cx .pure-form input[type="datetime"]:focus,
+.pure-skin-cx .pure-form input[type="datetime-local"]:focus,
+.pure-skin-cx .pure-form input[type="week"]:focus,
+.pure-skin-cx .pure-form input[type="number"]:focus,
+.pure-skin-cx .pure-form input[type="search"]:focus,
+.pure-skin-cx .pure-form input[type="tel"]:focus,
+.pure-skin-cx .pure-form input[type="color"]:focus,
+.pure-skin-cx .pure-form select:focus,
+.pure-skin-cx .pure-form textarea:focus {
+    outline: 0;
+    outline: thin dotted \9; /* IE6-9 */
+    border-color: #129FEA;
+}
+
+.pure-skin-cx .pure-form input[type="file"]:focus,
+.pure-skin-cx .pure-form input[type="radio"]:focus,
+.pure-skin-cx .pure-form input[type="checkbox"]:focus {
+    outline: thin dotted #333;
+    outline: 1px auto #129FEA;
+}
+.pure-skin-cx .pure-form .pure-checkbox,
+.pure-skin-cx .pure-form .pure-radio {
+    margin: 0.5em 0;
+    display: block;
+}
+.pure-skin-cx .pure-form input[type="text"][disabled],
+.pure-skin-cx .pure-form input[type="password"][disabled],
+.pure-skin-cx .pure-form input[type="email"][disabled],
+.pure-skin-cx .pure-form input[type="url"][disabled],
+.pure-skin-cx .pure-form input[type="date"][disabled],
+.pure-skin-cx .pure-form input[type="month"][disabled],
+.pure-skin-cx .pure-form input[type="time"][disabled],
+.pure-skin-cx .pure-form input[type="datetime"][disabled],
+.pure-skin-cx .pure-form input[type="datetime-local"][disabled],
+.pure-skin-cx .pure-form input[type="week"][disabled],
+.pure-skin-cx .pure-form input[type="number"][disabled],
+.pure-skin-cx .pure-form input[type="search"][disabled],
+.pure-skin-cx .pure-form input[type="tel"][disabled],
+.pure-skin-cx .pure-form input[type="color"][disabled],
+.pure-skin-cx .pure-form select[disabled],
+.pure-skin-cx .pure-form textarea[disabled] {
+    cursor: not-allowed;
+    box-shadow: inset 0 1px 10px #ededed;
+    background-color: #ededed;
+    color: #adadad;
+    border-color: #e6e6e6;
+}
+.pure-skin-cx .pure-form input[readonly],
+.pure-skin-cx .pure-form select[readonly],
+.pure-skin-cx .pure-form textarea[readonly],
+.pure-skin-cx .pure-form input[readonly]:focus,
+.pure-skin-cx .pure-form select[readonly]:focus,
+.pure-skin-cx .pure-form textarea[readonly]:focus {
+    background: #eee; /* menu hover bg color */
+    color: #777; /* menu text color */
+    border-color: #ccc;
+}
+.pure-skin-cx .pure-form input:focus:invalid,
+.pure-skin-cx .pure-form textarea:focus:invalid,
+.pure-skin-cx .pure-form select:focus:invalid {
+    color: #b94a48;
+    border: 1px solid #ee5f5b;
+}
+.pure-skin-cx .pure-form input:focus:invalid:focus,
+.pure-skin-cx .pure-form textarea:focus:invalid:focus,
+.pure-skin-cx .pure-form select:focus:invalid:focus {
+    border-color: #e9322d;
+}
+.pure-skin-cx .pure-form input[type="file"]:focus:invalid:focus,
+.pure-skin-cx .pure-form input[type="radio"]:focus:invalid:focus,
+.pure-skin-cx .pure-form input[type="checkbox"]:focus:invalid:focus {
+    outline-color: #e9322d;
+}
+.pure-skin-cx .pure-form select {
+    border: 1px solid #e6e6e6;
+    background-color: white;
+}
+.pure-skin-cx .pure-form select[multiple] {
+    height: auto;
+}
+.pure-skin-cx .pure-form label {
+    margin: 0.5em 0 0.2em;
+    color: #4f4f4f;
+    font-size:90%;
+}
+.pure-skin-cx .pure-form fieldset {
+    margin: 0;
+    padding: 0.35em 0 0.75em;
+    border: 0;
+}
+.pure-skin-cx .pure-form legend {
+    display: block;
+    width: 100%;
+    padding: 0.3em 0;
+    margin-bottom: 0;
+    font-size: 105%;
+    color: #262626;
+    border-bottom: 0;
+}
+
+.pure-skin-cx .pure-form-stacked input[type="text"],
+.pure-skin-cx .pure-form-stacked input[type="password"],
+.pure-skin-cx .pure-form-stacked input[type="email"],
+.pure-skin-cx .pure-form-stacked input[type="url"],
+.pure-skin-cx .pure-form-stacked input[type="date"],
+.pure-skin-cx .pure-form-stacked input[type="month"],
+.pure-skin-cx .pure-form-stacked input[type="time"],
+.pure-skin-cx .pure-form-stacked input[type="datetime"],
+.pure-skin-cx .pure-form-stacked input[type="datetime-local"],
+.pure-skin-cx .pure-form-stacked input[type="week"],
+.pure-skin-cx .pure-form-stacked input[type="number"],
+.pure-skin-cx .pure-form-stacked input[type="search"],
+.pure-skin-cx .pure-form-stacked input[type="tel"],
+.pure-skin-cx .pure-form-stacked input[type="color"],
+.pure-skin-cx .pure-form-stacked select,
+.pure-skin-cx .pure-form-stacked label,
+.pure-skin-cx .pure-form-stacked textarea {
+    display: block;
+    margin: 0.25em 0;
+}
+
+.pure-skin-cx .pure-form-aligned input,
+.pure-skin-cx .pure-form-aligned textarea,
+.pure-skin-cx .pure-form-aligned select,
+/* note: pure-help-inline is deprecated. Use .pure-form-message-inline instead */
+.pure-skin-cx .pure-form-aligned .pure-help-inline, 
+.pure-skin-cx .pure-form-message-inline {
+    display: inline-block;
+    *display: inline; /* IE7 inline-block hack */
+    *zoom: 1;
+    vertical-align: middle;
+}
+
+/* aligned Forms */
+.pure-skin-cx .pure-form-aligned .pure-control-group {
+    margin-bottom: 0.5em;
+}
+.pure-skin-cx .pure-form-aligned .pure-control-group label {
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    width: 10em;
+    margin: 0 1em 0 0;
+}
+.pure-skin-cx .pure-form-aligned .pure-controls {
+    margin: 1.5em 0 0 10em;
+}
+
+/* Rounded Inputs */
+.pure-skin-cx .pure-form input.pure-input-rounded,
+.pure-skin-cx .pure-form .pure-input-rounded {
+    border-radius: 30px;
+    padding: 0.5em 1em;
+}
+
+/* Grouped Inputs */
+.pure-skin-cx .pure-form .pure-group fieldset {
+    margin-bottom: 10px;
+}
+.pure-skin-cx .pure-form .pure-group input {
+    display: block;
+    padding: 0.5em 0.6em;
+    margin: 0;
+    border-radius: 0;
+    position: relative;
+    top: -1px;
+}
+.pure-skin-cx .pure-form .pure-group input:focus {
+    z-index: 2;
+}
+.pure-skin-cx .pure-form .pure-group input:first-child {
+    top: 1px;
+    border-radius: 4px 4px 0px 0px;
+}
+.pure-skin-cx .pure-form .pure-group input:last-child {
+    top: -2px;
+    border-radius: 0px 0px 4px 4px;
+}
+.pure-skin-cx .pure-form .pure-group button {
+    margin: 0.35em 0;
+}
+
+.pure-skin-cx .pure-form .pure-input-1 {
+    width: 100%;
+}
+.pure-skin-cx .pure-form .pure-input-2-3 {
+    width: 66%;
+}
+.pure-skin-cx .pure-form .pure-input-1-2 {
+    width: 50%;
+}
+.pure-skin-cx .pure-form .pure-input-1-3 {
+    width: 33%;
+}
+.pure-skin-cx .pure-form .pure-input-1-4 {
+    width: 25%;
+}
+
+/* Inline help for forms */
+/* Note: pure-help-inline is deprecated. Use .pure-form-message-inline instead */ 
+.pure-skin-cx .pure-form .pure-help-inline,
+.pure-skin-cx .pure-form-message-inline {
+    display: inline-block;
+    padding-left: 0.3em;
+    color: #adadad;
+    vertical-align: middle;
+    font-size: 90%;
+}
+
+/* Block help for forms */
+.pure-skin-cx .pure-form-message {
+    display: block;
+    color: #adadad;
+    font-size: 90%;
+}
+/* note no template for forms-r.css. no skinnable properties */
+
+/* foundational CSS */
+.pure-skin-cx .pure-table {
+    /* Remove spacing between table cells (from Normalize.css) */
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #EEE;
+}
+
+.pure-skin-cx .pure-table caption {
+    color: #adadad;
+    font: italic 85%/1 arial, sans-serif;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.pure-skin-cx .pure-table td,
+.pure-skin-cx .pure-table th {
+    border-left: 1px solid #EEE;/* inner column border */
+    border-width: 0 0 0 1px;
+    font-size: .9em;
+    margin: 0;
+    overflow: visible; /*to make ths where the title is really long work*/
+    padding: 0.3em 0.6em; /* cell padding */
+}
+
+.pure-skin-cx .pure-table td:first-child,
+.pure-skin-cx .pure-table th:first-child {
+    border-left-width: 0;
+}
+
+.pure-skin-cx .pure-table thead {
+    background-color: #fff;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+/*
+striping:
+   even - #fff (white)
+   odd  - #f2f2f2 (light gray)
+*/
+.pure-skin-cx .pure-table td {
+    background-color: #fff;
+    color: #000;
+}
+.pure-skin-cx .pure-table-odd td {
+    background-color: #EEE;
+    color: #2b3512;
+}
+
+/* nth-child selector for modern browsers */
+.pure-skin-cx .pure-table-striped tr:nth-child(2n-1) td {
+    background-color: #EEE;
+    color: #2b3512;
+}
+
+
+/* BORDERED TABLES */
+.pure-skin-cx .pure-table-bordered td {
+    border-bottom: 1px solid #EEE;
+}
+.pure-skin-cx .pure-table-bordered tbody > tr:last-child td,
+.pure-skin-cx .pure-table-horizontal tbody > tr:last-child td {
+    border-bottom-width: 0;
+}
+
+/* HORIZONTAL BORDERED TABLES */
+.pure-skin-cx .pure-table-horizontal td,
+.pure-skin-cx .pure-table-horizontal th {
+    border-width: 0 0 1px 0;
+    border-bottom:1px solid #EEE;
+}
+.pure-skin-cx .pure-table-horizontal tbody > tr:last-child td {
+    border-bottom-width: 0;
+}
+
+/* from PURE menu-core.css */
+/*csslint adjoining-classes:false, outline-none:false*/
+/*TODO: Remove this lint rule override after a refactor of this code.*/ 
+
+.pure-skin-cx .pure-menu ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.pure-skin-cx .pure-menu.pure-menu-open {
+    visibility: visible;
+    z-index: 2;
+    width: 100%;
+}
+
+.pure-skin-cx .pure-menu ul {
+    left: -10000px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: -10000px;
+    z-index: 1;
+}
+
+.pure-skin-cx .pure-menu > ul { position: relative; }
+
+.pure-skin-cx .pure-menu-open > ul {
+    left: 0;
+    top: 0;
+    visibility: visible;
+}
+
+.pure-skin-cx .pure-menu-open > ul:focus {
+    outline: 0;
+}
+
+.pure-skin-cx .pure-menu li {
+    position: relative;
+}
+
+.pure-skin-cx .pure-menu a, .pure-skin-cx .pure-menu .pure-menu-heading {
+    display: block;
+    color: inherit;
+    line-height: 1.5em;
+    padding: 0.35em 1.4em;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.pure-skin-cx .pure-menu.pure-menu-horizontal > .pure-menu-heading {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    margin: 0;
+    vertical-align: middle;
+}
+.pure-skin-cx .pure-menu.pure-menu-horizontal > ul {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+    /* height: 2.4em; removed for Skin Builder */
+}
+
+.pure-skin-cx .pure-menu li a { padding: 0.35em 1.4em; }
+
+.pure-skin-cx .pure-menu-can-have-children > .pure-menu-label:after {
+    content: '\25B8';
+    float: right;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif; /* These specific fonts have the Unicode char we need. */
+    margin-right: -20px;
+    margin-top: -1px;
+}
+
+.pure-skin-cx .pure-menu-can-have-children > .pure-menu-label {
+    padding-right: 30px;
+}
+
+.pure-skin-cx .pure-menu-separator {
+    background-color: #EEE;
+    display: block;
+    height: 1px;
+    font-size: 0;
+    margin: 7px 2px;
+    overflow: hidden;
+}
+
+.pure-skin-cx .pure-menu-hidden {
+    display: none;
+}
+
+/* FIXED MENU */
+.pure-skin-cx .pure-menu-fixed {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+}
+
+
+/* HORIZONTAL MENU CODE */
+
+/* Initial menus should be inline-block so that they are horizontal */
+.pure-skin-cx .pure-menu-horizontal li {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+/* Submenus should still be display:block; */
+.pure-skin-cx .pure-menu-horizontal li li {
+    display: block;
+}
+
+/* Content after should be down arrow */
+.pure-skin-cx .pure-menu-horizontal > .pure-menu-children > .pure-menu-can-have-children > .pure-menu-label:after {
+    content: "\25BE";
+}
+/*Add extra padding to elements that have the arrow so that the hover looks nice */
+.pure-skin-cx .pure-menu-horizontal > .pure-menu-children > .pure-menu-can-have-children > .pure-menu-label {
+    padding-right: 30px;
+}
+
+/* Adjusting separator for vertical menus */
+.pure-skin-cx .pure-menu-horizontal li.pure-menu-separator {
+    height: 50%;
+    width: 1px;
+    margin: 0 7px;
+}
+
+/* Submenus should be horizontal separator again */
+.pure-skin-cx .pure-menu-horizontal li li.pure-menu-separator {
+height: 1px;
+width: auto;
+margin: 7px 2px;
+}
+
+
+/* end from yuicss/menu-core.css *******************************************/
+/* from yuicss menu-paginator.css */
+/*csslint box-model:false*/
+/*TODO: Remove this lint rule override after a refactor of this code.*/ 
+
+.pure-skin-cx .pure-paginator {
+
+    /* `pure-g` Grid styles */
+    letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
+    *letter-spacing: normal; /* reset IE < 8 */
+    *word-spacing: -0.43em; /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
+
+    /* `pure-paginator` Specific styles */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.opera-only :-o-prefocus,
+.pure-skin-cx .pure-paginator {
+    word-spacing: -0.43em;
+}
+
+/* `pure-u` Grid styles */
+.pure-skin-cx .pure-paginator li {
+    display: inline-block;
+    *display: inline; /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+.pure-skin-cx .pure-paginator .pure-button {
+    border-radius: 0;
+    padding: 0.8em 1.4em;
+    vertical-align: top;
+    height: 1.1em;
+}
+.pure-skin-cx .pure-paginator .pure-button:focus,
+.pure-skin-cx .pure-paginator .pure-button:active {
+    outline-style: none;
+}
+.pure-skin-cx .pure-paginator .prev,
+.pure-skin-cx .pure-paginator .next {
+    /*color: #C0C1C3; allow .pure-button to color text*/
+}
+.pure-skin-cx .pure-paginator .prev {
+    border-radius: 4px 0px 0px 4px;
+}
+.pure-skin-cx .pure-paginator .next {
+    border-radius: 0px 4px 4px 0px;
+}
+/* end from PURE menu-paginator.css ******************************/
+/* from PURE menu.css *******************************************/
+/* MAIN MENU STYLING */
+/*csslint adjoining-classes:false*/
+/*TODO: Remove this lint rule override after a refactor of this code.*/ 
+
+.pure-skin-cx .pure-menu.pure-menu-open,
+.pure-skin-cx .pure-menu.pure-menu-horizontal li .pure-menu-children {
+    background: #fff; /* Old browsers */
+    border: 1px solid #EEE;
+}
+
+/* remove borders for horizontal menus */
+.pure-skin-cx .pure-menu.pure-menu-horizontal,
+.pure-skin-cx .pure-menu.pure-menu-horizontal .pure-menu-heading {
+    border: none;
+}
+
+
+/* LINK STYLES */
+
+.pure-skin-cx .pure-menu a {
+    border: 1px solid transparent;
+    border-left: none;
+    border-right: none;
+
+}
+
+.pure-skin-cx .pure-menu a,
+.pure-skin-cx .pure-menu .pure-menu-can-have-children > li:after {
+    color: #000;
+}
+
+.pure-skin-cx .pure-menu .pure-menu-can-have-children > li:hover:after {
+    color: #2b3512;
+}
+
+/* Focus style for a dropdown menu-item when the parent has been opened */
+.pure-skin-cx .pure-menu .pure-menu-open {
+    background: #d2e2ab;
+}
+
+.pure-skin-cx .pure-menu li a:hover,
+.pure-skin-cx .pure-menu li a:focus {
+    background: #d2e2ab;
+}
+
+/* DISABLED STATES */
+.pure-skin-cx .pure-menu li.pure-menu-disabled a:hover,
+.pure-skin-cx .pure-menu li.pure-menu-disabled a:focus {
+    background: #fff;
+    color: #92b63e;
+}
+
+.pure-skin-cx .pure-menu .pure-menu-disabled > a {
+    background-image: none;
+    border-color: transparent;
+    cursor: default;
+}
+
+.pure-skin-cx .pure-menu .pure-menu-disabled > a,
+.pure-skin-cx .pure-menu .pure-menu-can-have-children.pure-menu-disabled > a:after {
+    color: #92b63e;
+}
+
+/* HEADINGS */
+.pure-skin-cx .pure-menu .pure-menu-heading {
+    color: #1b220c;
+    text-transform: none;
+    font-size: 90%;
+    margin-top: 0.5em;
+    border-bottom: solid 1px #EEE;
+}
+
+
+/* SELECTED MENU ITEM */
+.pure-skin-cx .pure-menu li.pure-menu-selected a {
+    background-color: #EEE;
+    color: #030401;
+}
+
+/* FIXED MENU */
+.pure-skin-cx .pure-menu.pure-menu-open.pure-menu-fixed {
+    border: none;
+    border-bottom: 1px solid #EEE;
+}
+/* end from PURE menu.css ***********************************/
+/* from PURE menu-responsive.css ****************************/
+/* RESPONSIVE */
+
+.content p, .content h1, .content h2, .content h3, .content ul, .content table{
+    max-width:100%;
+}
+
+/* end from menu-responsive.css ******************/
+
+
+
+
+
+/* begin calcxml added ******************/
+/* master color #EEE */
+/* http://yui.github.io/skinbuilder/?mode=pureindex.html?opt=cx,EEE,ffffff,1,1,10,1.5&h=0,-30,60&n=0,-30,75&l=0,-30,80&b=0,-30,90&mode=pure */
+/* add margin:1%; to body at top of this css file.*/
+/* change alignment from right to left on this attribute above
+	.pure-skin-cx .pure-form-aligned .pure-control-group label { */
+
+#wrapper {
+width:100%;
+}
+
+.pure-skin-cx .pure-form {
+margin:0;
+}
+
+.pure-skin-cx .label2 {
+font-size:0.8em;
+}
+
+/* copy this from above -- search for "thead" then change vertical-align:bottom to top*/
+.pure-skin-cx .pure-table th {
+background-color:#fff;
+color:#000;
+text-align:left;
+vertical-align:top;
+}
+
+/* calc-specific adjustment to font size for wide data tables. */
+.ins12.pure-skin-cx .pure-table.pure-table-bordered th,.ins12.pure-skin-cx .pure-table.pure-table-bordered td,.hom06.pure-skin-cx .pure-table.pure-table-bordered th,.hom06.pure-skin-cx .pure-table.pure-table-bordered td,.ret02.pure-skin-cx .pure-table.pure-table-bordered th,.ret02.pure-skin-cx .pure-table.pure-table-bordered td,.ret03.pure-skin-cx .pure-table.pure-table-bordered th,.ret03.pure-skin-cx .pure-table.pure-table-bordered td {
+font-size:.75em;
+}
+
+.pure-skin-cx .pure-table th.sectionCenter {
+text-align:center;
+}
+
+.pure-skin-cx .inputTable2 {
+clear:both;
+width:100%;
+max-width:600px;
+}
+
+.pure-skin-cx .inputTable2Label {
+width:65%;
+}
+
+.pure-skin-cx .inputTable2Field {
+width:35%;
+}
+
+.pure-skin-cx .inputTable3Field {
+width:11%;
+}
+
+.pure-skin-cx .pure-button {
+margin:.4em!important;
+}
+
+.pure-skin-cx .pure-button.pure-button-help {
+    font-size:70%;
+    margin:.2em;
+    padding:.3em .6em;
+}
+
+.pure-skin-cx .pure-form-aligned .pure-control-group label {
+    width:50%;
+}
+
+.pure-skin-cx h1 {
+    font-size: 1em;
+    color: #414141;
+}
+
+.pure-skin-cx h2 {
+    font-weight: normal;
+}
+
+/* use background-color of ".pure-skin-cx .pure-button {" above. Copy/Replace for other instances below as well.*/
+.pure-skin-cx h3 {
+    color: #000;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.pure-skin-cx .pure-form legend {
+    color: #000;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.pure-skin-cx .validRange {
+font:italic .75em Arial;
+color:#4C4C4C;
+}
+
+.pure-skin-cx .disclaimer {
+clear:both;
+width:100%;
+font-size:.8em;
+font-weight:400;
+margin-top:2%;
+}
+
+.pure-skin-cx .poweredBy {
+margin-top:1%;
+}
+
+.pure-skin-cx .poweredByImg {
+border:none;
+display:none;
+vertical-align:middle;
+}
+
+.pure-skin-cx .poweredbylink a,.poweredByLink a:link,.poweredByLink a:visited,.poweredByLink a:active {
+color:#088ABE;
+font-size:.8em;
+text-decoration:none;
+display:none;
+}
+
+.pure-skin-cx .sectionTitle2 {
+float:left;
+width:100%;
+background-color:#646473;
+color:#FFF;
+margin-bottom:.5%;
+padding:1% 0 1% 1%;
+/* Fixes problem of padding increasing width of element. */
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.pure-skin-cx .cx-readonly {
+background-color:#f4f4f4;
+padding:5px 0;
+}
+
+.pure-skin-cx .miniDisplayTable {
+width:50%;
+border-collapse:collapse;
+border-bottom:1px solid #C6D992;
+}
+
+.pure-skin-cx .miniDisplayTable th {
+font-size:1em;
+text-align:center;
+background-color:#C6D992;
+color:#000;
+padding:3px 1px 3px 0;
+}
+
+.pure-skin-cx .miniDisplayTable tr {
+border-left:1px solid #C6D992;
+}
+
+.pure-skin-cx .miniDisplayTable td {
+font-size:1em;
+text-align:center;
+border-right:1px solid #C6D992;
+padding:0 1px;
+}
+
+.pure-skin-cx .leadGen {
+padding-top:4%;
+}
+
+.pure-skin-cx .leadGenHeader {
+width:100%;
+background-color:#C6D992;
+color:#000;
+margin-bottom:.5%;
+padding:1% 0;
+}
+
+.pure-skin-cx .leadGenFinal {
+clear:both;
+font-size:.8em;
+}
+
+.pure-skin-cx .ad-box {
+width:100%;
+margin:1% 0;
+}
+
+.term {
+font-size:.9em;
+text-decoration:underline;
+}
+
+.def {
+font-size:.8em;
+}
+.leftSide {
+float:left;	
+}
+.rightSide {
+float:right;	
+}
+.pure-skin-cx #chart1Container,.pure-skin-cx #chart2Container,.pure-skin-cx #chart3Container,.pure-skin-cx #chart4Container {
+width:100%;
+max-width:600px;
+max-height:400px;
+}
+
+.fist.pure-skin-cx .calcDescription {
+	display:none;
+}
+@media (max-width: 360px) {
+
+    .pure-skin-cx .pure-menu-horizontal {
+        width:100%;
+    }
+
+    .pure-skin-cx .pure-menu-children li {
+        display: block;
+        border-bottom:1px solid #EEE;
+    }
+    .content p, .content h1, .content h2, .content h3, .content ul, .content table {
+        max-width:290px;
+    }
+    .pure-skin-cx .inputTable2 {
+        clear:both;
+        width:100%;
+        max-width:300px;
+    }
+    .pure-skin-cx .pure-form-aligned .pure-control-group label {
+        width: 100%;
+    }
+    td input[size="10"] {
+        width:3.7em;
+    }
+    input[size="25"], td input[size="45"] {
+        width:13em;
+    }
+    .inputTableHeader {
+        font-size:.5em;
+        font-weight: normal;
+    }
+    .pure-skin-cx .pure-table td,
+    .pure-skin-cx .pure-table th {
+       
+        padding: 0.2em 0.2em !important; /* cell padding */
+    }
+
+    .pure-skin-cx .pure-form button[type="submit"] {
+    margin: 0.7em 0 0;
+    }
+
+    .pure-skin-cx .pure-form input[type="text"],
+    .pure-skin-cx .pure-form input[type="password"],
+    .pure-skin-cx .pure-form input[type="email"],
+    .pure-skin-cx .pure-form input[type="url"],
+    .pure-skin-cx .pure-form input[type="date"],
+    .pure-skin-cx .pure-form input[type="month"],
+    .pure-skin-cx .pure-form input[type="time"],
+    .pure-skin-cx .pure-form input[type="datetime"],
+    .pure-skin-cx .pure-form input[type="datetime-local"],
+    .pure-skin-cx .pure-form input[type="week"],
+    .pure-skin-cx .pure-form input[type="number"],
+    .pure-skin-cx .pure-form input[type="search"],
+    .pure-skin-cx .pure-form input[type="tel"],
+    .pure-skin-cx .pure-form input[type="color"],
+    .pure-skin-cx .pure-form label {
+        margin-bottom: 0.3em;
+        display: block;
+    }
+    
+    .pure-skin-cx .pure-group input[type="text"],
+    .pure-skin-cx .pure-group input[type="password"],
+    .pure-skin-cx .pure-group input[type="email"],
+    .pure-skin-cx .pure-group input[type="url"],
+    .pure-skin-cx .pure-group input[type="date"],
+    .pure-skin-cx .pure-group input[type="month"],
+    .pure-skin-cx .pure-group input[type="time"],
+    .pure-skin-cx .pure-group input[type="datetime"],
+    .pure-skin-cx .pure-group input[type="datetime-local"],
+    .pure-skin-cx .pure-group input[type="week"],
+    .pure-skin-cx .pure-group input[type="number"],
+    .pure-skin-cx .pure-group input[type="search"],
+    .pure-skin-cx .pure-group input[type="tel"],
+    .pure-skin-cx .pure-group input[type="color"] {
+        margin-bottom: 0;
+    }
+
+    .pure-skin-cx .pure-form-aligned .pure-control-group label {
+        margin-bottom: 0.3em;
+        text-align: left;
+        display: block;
+        width: 100%;
+    }
+
+    .pure-skin-cx .pure-form-aligned .pure-controls {
+        margin: 1.5em 0 0 0;
+    }
+
+    /* NOTE: pure-help-inline is deprecated. Use .pure-form-message-inline instead. */
+    .pure-skin-cx .pure-form .pure-help-inline,
+    .pure-skin-cx .pure-form-message-inline,
+    .pure-skin-cx .pure-form-message {
+        display: block;
+        font-size: 80%;
+        /* increased bottom padding to make it group with its related input element */
+        padding: 0.2em 0 0.8em;
+    }
+}

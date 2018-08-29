@@ -1,0 +1,9 @@
+{#secondaryContent}
+	{#records}
+		{?attributes.widget-button-1}
+		        {attributes.widget-button-1-help}
+		        <a href="/somepage" class="base-btn main-btn">{attributes.widget-button-1}</a>
+		        <p></p>
+		{/attributes.widget-button-1}
+	{/records}
+{/secondaryContent}

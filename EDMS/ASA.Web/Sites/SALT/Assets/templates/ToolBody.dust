@@ -1,0 +1,72 @@
+{#content}
+    {mainContent[0].record.attributes.webtrends-group}
+    <article id="tool-detail" class="content">
+        {>"Modules/ContentHeaderBar" /}
+        {#mainContent}
+            <header class="title-container js-hide">
+                {record.attributes.alt-headline}
+                <hgroup>
+                    {record.attributes.subhead}
+                    {>"Modules/DisplayAuthorAndDate" englishContent="english" /}
+                </hgroup>
+            </header>
+            <div class="row padding-top padding-bottom js-hide">
+            {@if cond="'{record.attributes.callout|trim}'.length"}
+                    <article class="callout full-width">
+                        <div id="englishCallout">
+                            {record.attributes.callout}
+                        </div>
+                    </article>
+               {/if}
+             </div>
+            <div class="row collapse">
+                {@if cond="'{record.attributes.page_tags}' === 'app-tool'"}
+                    <div class="large-5 medium-5 small-12 columns">
+                        <div class="js-glossary-scope ">
+                            {record.attributes.body}
+                        </div>
+                    </div>
+                {:else}
+                    <div class="large-6 medium-6 small-12 columns right longText js-hide">
+                        {@if cond="'{mainContent[0].record.attributes.carousel-module-body|trim}'.length"}
+                            {>"Modules/Carousel" recordKey="{mainContent[0].record.attributes.carousel-module-body|trim}" /}
+                        {:else}
+                            {@sizeImage imageSource="{record.attributes.content-image}" /}
+                        {/if}
+                    </div>
+                    <div class="js-glossary-scope longText js-hide js-{content.mainContent[0].record.attributes.ContentTypes}-body">
+                        {record.attributes.body}
+                    </div>
+                {/if}
+                {@if cond="'{record.attributes.page_tags}' !== ''"}
+                    {#record.attributes.page_tags}
+                        {@if cond="'{record.attributes.page_tags}' === 'college-cost-planner'"}
+                            {>"CCP/college-cost-planner" /}
+                        {:else}
+                            {>"Tools/{.}" /}
+                        {/if}
+                    {/record.attributes.page_tags}
+                {/if}
+            </div>
+            <div class="row">
+                {>"Modules/FlatTags" /}
+            </div>
+            {>"Modules/AuthorPartnerBlock" /}
+        {/mainContent}
+        {>"Modules/ContentFooter" /}
+    </article>
+{/content}
+
+<script>
+    require(['salt', 'modules/Dashboard'], function (SALT) {
+        {#content.mainContent[0].record}
+            /* Status 1 is Added. Only mark items in progress if they've been previously added */
+            {@if cond="'{attributes.RefToDoStatusID}' === '1'"}
+                /* Exclude Repayment Navigator, KWYO, Scholarship Search, and College Cost Planner.  These items have their own criteria for setting the status to be in progress */
+                if(('{attributes.P_Primary_Key}' !== '101-8645')  && ('{attributes.P_Primary_Key}' !== '101-13584') && ('{attributes.P_Primary_Key}' !== '101-7416') && ('{attributes.P_Primary_Key}' !== '101-23826')) {
+                    SALT.trigger('content:todo:inProgress', {contentId: '{attributes.P_Primary_Key}'});
+                }
+            {/if}
+        {/content.mainContent[0].record}
+    });
+</script>

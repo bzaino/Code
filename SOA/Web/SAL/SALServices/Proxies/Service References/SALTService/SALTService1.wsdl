@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="Asa.Salt.Web.Services.Contracts.Operations" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="Asa.Salt.Web.Services.Contracts.Operations" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="Asa.Salt.Web.Services.Contracts.Operations/Imports">
+      <xsd:import schemaLocation="http://localhost:8080/SALTService.svc?xsd=xsd0" namespace="Asa.Salt.Web.Services.Contracts.Operations" />
+      <xsd:import schemaLocation="http://localhost:8080/SALTService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8080/SALTService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISALTService_GetUserByUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByUserId" />
+  </wsdl:message>
+  <wsdl:message name="ISALTService_GetUserByUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISALTService_GetUserByActiveDirectoryKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByActiveDirectoryKey" />
+  </wsdl:message>
+  <wsdl:message name="ISALTService_GetUserByActiveDirectoryKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByActiveDirectoryKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISALTService_RegisterUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterUser" />
+  </wsdl:message>
+  <wsdl:message name="ISALTService_RegisterUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISALTService_DeactivateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeactivateUser" />
+  </wsdl:message>
+  <wsdl:message name="ISALTService_DeactivateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeactivateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISALTService_UpdateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="ISALTService_UpdateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISALTService_GetAlerts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAlerts" />
+  </wsdl:message>
+  <wsdl:message name="ISALTService_GetAlerts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAlertsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISALTService_GetSchools_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchools" />
+  </wsdl:message>
+  <wsdl:message name="ISALTService_GetSchools_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchoolsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISALTService">
+    <wsdl:operation name="GetUserByUserId">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISALTService/GetUserByUserId" message="tns:ISALTService_GetUserByUserId_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISALTService/GetUserByUserIdResponse" message="tns:ISALTService_GetUserByUserId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByActiveDirectoryKey">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISALTService/GetUserByActiveDirectoryKey" message="tns:ISALTService_GetUserByActiveDirectoryKey_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISALTService/GetUserByActiveDirectoryKeyResponse" message="tns:ISALTService_GetUserByActiveDirectoryKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterUser">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISALTService/RegisterUser" message="tns:ISALTService_RegisterUser_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISALTService/RegisterUserResponse" message="tns:ISALTService_RegisterUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateUser">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISALTService/DeactivateUser" message="tns:ISALTService_DeactivateUser_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISALTService/DeactivateUserResponse" message="tns:ISALTService_DeactivateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISALTService/UpdateUser" message="tns:ISALTService_UpdateUser_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISALTService/UpdateUserResponse" message="tns:ISALTService_UpdateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAlerts">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISALTService/GetAlerts" message="tns:ISALTService_GetAlerts_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISALTService/GetAlertsResponse" message="tns:ISALTService_GetAlerts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchools">
+      <wsdl:input wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISALTService/GetSchools" message="tns:ISALTService_GetSchools_InputMessage" />
+      <wsdl:output wsaw:Action="Asa.Salt.Web.Services.Contracts.Operations/ISALTService/GetSchoolsResponse" message="tns:ISALTService_GetSchools_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

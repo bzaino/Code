@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson1" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons" />
+  <xs:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" />
+  <xs:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Lesson1Contract">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons" minOccurs="0" name="Expenses" nillable="true" type="q1:ArrayOfExpenseContract" />
+      <xs:element minOccurs="0" name="Goal" nillable="true" type="tns:GoalContract" />
+      <xs:element minOccurs="0" name="Incomes" nillable="true" type="tns:ArrayOfIncomeContract" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="User" nillable="true" type="q2:MemberLessonContract" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="Lesson1Contract" nillable="true" type="tns:Lesson1Contract" />
+  <xs:complexType name="GoalContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LessonUserId" type="xs:int" />
+      <xs:element minOccurs="0" name="Months" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TargetAmount" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GoalContract" nillable="true" type="tns:GoalContract" />
+  <xs:complexType name="ArrayOfIncomeContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IncomeContract" nillable="true" type="tns:IncomeContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfIncomeContract" nillable="true" type="tns:ArrayOfIncomeContract" />
+  <xs:complexType name="IncomeContract">
+    <xs:sequence>
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons" minOccurs="0" name="Frequency" nillable="true" type="q3:FrequencyContract" />
+      <xs:element minOccurs="0" name="FrequencyId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="IncomeAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="IncomeSource" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LessonUserId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IncomeContract" nillable="true" type="tns:IncomeContract" />
+</xs:schema>

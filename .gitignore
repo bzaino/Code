@@ -23,6 +23,7 @@ SOA/Scripts/
 **/EDMS/ViewValidator/*
 **/EDMS/WebCITest/*
 **/EDMS/CleanupScriptBuilder/*
+**/EDMS/ASA.Web/SALT/Sites/Content/node_modules/*
 
 
 # NuGet Packages
@@ -31,3 +32,4 @@ SOA/Scripts/
 **/packages/*
 # except build/, which is used as an MSBuild target.
 !**/packages/build/
+EDMS/ASA\.Web/Sites/SALT/Content/node_modules/grpc/deps/grpc/third_party/boringssl/

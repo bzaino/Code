@@ -1,0 +1,4 @@
+<div class="js-choice-container suffix-div">
+    <a href="" class="deletable suffix js-remove-x" tabindex="1"><span class="remove-x">x</span></a>
+    <input type="text" tabindex="-1" readonly class="js-scholarship-choice deletable" data-questionid="{questionId}" data-choiceid="{data}" value="{value}" />
+</div>

@@ -1,0 +1,71 @@
+﻿@model ADTool.Models.ADUserDetails
+
+@{
+    ViewBag.Title = "ValidateUser";
+}
+
+@*<h2>@ViewBag.Message</h2>*@
+
+
+
+     
+@if (Model != null && Model.UserDetails.Count != 0)
+        {
+
+<table>
+        <tr style="outline-color:White">
+            <td class="grdhdr" style="color:Green">Mail|Username
+            </td><td class="grdhdr">Name
+            </td><td class="grdhdr">Creation Date
+            </td><td class="grdhdr">Environment Name 
+            </td><td class="grdhdr">User PrincipalName
+            </td><td class="grdhdr">CN
+            </td>  
+        </tr>
+        
+            @foreach (ADTool.Models.UserDetail User in Model.UserDetails)
+            {
+         <tr>
+             <td class="grdhdr">
+
+            
+
+            @Html.ActionLink(User.Mail, "InvokeWebservice", "Home", new { uri = User.EnvironmentName })
+
+             @*<a href='@Server.ServiceUrl'>
+             @Server.ServiceName </a>*@
+            </td><td class="grdbdy">@User.UserName
+            </td><td class="grdbdy">@User.DateOfCreation
+            </td>
+              @if (User.EnvironmentName.Equals("Non-Production"))
+              {
+              <td class="grdbdy" style="color:Green"> @User.EnvironmentName</td> 
+              }
+              else if (User.EnvironmentName.Equals("Production"))
+              {
+                <td class="grdbdy" style="color:Red"> @User.EnvironmentName</td>
+              }
+
+              else
+              {
+                  <td class="grdbdy" style="color:Green"> @User.EnvironmentName</td> 
+              }
+            <td class="grdbdy">@User.UserPrincipalName</td>
+            <td class="grdbdy">@User.CN</td>
+         </tr> 
+            }
+        
+		
+      
+      
+
+</table> 
+}
+        else { 
+          
+            <h2 style="color:Red">@ViewBag.Message</h2>
+           
+        }
+        
+
+

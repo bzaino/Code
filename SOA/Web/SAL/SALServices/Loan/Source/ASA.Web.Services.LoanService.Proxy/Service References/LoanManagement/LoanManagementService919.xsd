@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://asa.org/contracts/loanServiceCriteria" elementFormDefault="qualified" targetNamespace="http://asa.org/contracts/loanServiceCriteria" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://adevweb023.amsa.com/LoanManagementService/LoanManagementService.svc?xsd=xsd3" namespace="http://asa.org/contracts/commonTypes" />
+  <xs:complexType name="LoanServiceCriteriaType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MaxEntities" type="xs:long" />
+      <xs:element name="LogicalOperator" type="tns:LogicalOperatorType" />
+      <xs:element name="ListReturnTypes" nillable="true" type="tns:ReturnListType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="SortFields" nillable="true" type="tns:SortFields">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoanServiceCriteriaType" nillable="true" type="tns:LoanServiceCriteriaType" />
+  <xs:simpleType name="LogicalOperatorType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AND" />
+      <xs:enumeration value="OR" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="LogicalOperatorType" nillable="true" type="tns:LogicalOperatorType" />
+  <xs:complexType name="ReturnListType">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://asa.org/contracts/commonTypes" minOccurs="0" name="LoanTier2Type" type="q1:YNFlagType" />
+      <xs:element xmlns:q2="http://asa.org/contracts/commonTypes" minOccurs="0" name="LoanTier2DefermentsForbearanceArray" type="q2:YNFlagType" />
+      <xs:element xmlns:q3="http://asa.org/contracts/commonTypes" minOccurs="0" name="LoanTier2DisbursementsArray" type="q3:YNFlagType" />
+      <xs:element xmlns:q4="http://asa.org/contracts/commonTypes" minOccurs="0" name="LoanTier2OrganizationArray" type="q4:YNFlagType" />
+      <xs:element xmlns:q5="http://asa.org/contracts/commonTypes" minOccurs="0" name="LoanTier2PersonArray" type="q5:YNFlagType" />
+      <xs:element xmlns:q6="http://asa.org/contracts/commonTypes" minOccurs="0" name="LoanTier2DefaultInfoType" type="q6:YNFlagType" />
+      <xs:element xmlns:q7="http://asa.org/contracts/commonTypes" minOccurs="0" name="LoanTier2DelinquencyInfoType" type="q7:YNFlagType" />
+      <xs:element xmlns:q8="http://asa.org/contracts/commonTypes" minOccurs="0" name="LoanTier2LoanInfoType" type="q8:YNFlagType" />
+      <xs:element xmlns:q9="http://asa.org/contracts/commonTypes" minOccurs="0" name="LoanTier2RepaymentInfoType" type="q9:YNFlagType" />
+      <xs:element xmlns:q10="http://asa.org/contracts/commonTypes" minOccurs="0" name="LoanTier2CustomerType" type="q10:YNFlagType" />
+      <xs:element xmlns:q11="http://asa.org/contracts/commonTypes" minOccurs="0" name="LoanTier3Type" type="q11:YNFlagType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReturnListType" nillable="true" type="tns:ReturnListType" />
+  <xs:complexType name="SortFields">
+    <xs:sequence>
+      <xs:element name="IsArchived" nillable="true" type="tns:SortOperatorType" />
+      <xs:element name="InputFileReceivedDate" nillable="true" type="tns:SortOperatorType" />
+      <xs:element name="CustomerId" nillable="true" type="tns:SortOperatorType" />
+      <xs:element name="InputSourceId" nillable="true" type="tns:SortOperatorType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SortFields" nillable="true" type="tns:SortFields" />
+  <xs:simpleType name="SortOperatorType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ASC" />
+      <xs:enumeration value="DESC" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SortOperatorType" nillable="true" type="tns:SortOperatorType" />
+  <xs:complexType name="CriteriaLoan_CustomerPersonRole">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LoanServiceCriteriaType">
+        <xs:sequence>
+          <xs:element name="CriterionCustomerId" nillable="true" type="tns:CriterionCustomerIdType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CriterionPersonId" nillable="true" type="tns:CriterionPersonIdType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CriterionRoleId" nillable="true" type="tns:CriterionRoleIdType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="CriterionIsArchived" nillable="true" type="tns:CriterionIsArchivedType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriteriaLoan_CustomerPersonRole" nillable="true" type="tns:CriteriaLoan_CustomerPersonRole" />
+  <xs:complexType name="CriterionCustomerIdType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="CustomerId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionCustomerIdType" nillable="true" type="tns:CriterionCustomerIdType" />
+  <xs:complexType name="CriterionType">
+    <xs:sequence>
+      <xs:element name="RelationalOperator" type="tns:RelationalOperatorType" />
+      <xs:element name="LogicalOperator" type="tns:LogicalOperatorType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CriterionType" nillable="true" type="tns:CriterionType" />
+  <xs:simpleType name="RelationalOperatorType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="EQUALS" />
+      <xs:enumeration value="STARTSWITH" />
+      <xs:enumeration value="ENDSWITH" />
+      <xs:enumeration value="CONTAINS" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RelationalOperatorType" nillable="true" type="tns:RelationalOperatorType" />
+  <xs:complexType name="CriterionLoanIdType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="LoanId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionLoanIdType" nillable="true" type="tns:CriterionLoanIdType" />
+  <xs:complexType name="CriterionIsArchivedType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element xmlns:q12="http://asa.org/contracts/commonTypes" name="IsArchived" type="q12:YNFlagType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionIsArchivedType" nillable="true" type="tns:CriterionIsArchivedType" />
+  <xs:complexType name="CriterionPersonIdType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="PersonId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionPersonIdType" nillable="true" type="tns:CriterionPersonIdType" />
+  <xs:complexType name="CriterionSSNType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="SSN" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionSSNType" nillable="true" type="tns:CriterionSSNType" />
+  <xs:complexType name="CriterionExternalLoanIdType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="ExternalLoanId" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionExternalLoanIdType" nillable="true" type="tns:CriterionExternalLoanIdType" />
+  <xs:complexType name="CriterionRoleIdType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="RoleId" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionRoleIdType" nillable="true" type="tns:CriterionRoleIdType" />
+  <xs:complexType name="CriterionInputSourceIDType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="InputSourceId" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionInputSourceIDType" nillable="true" type="tns:CriterionInputSourceIDType" />
+  <xs:complexType name="CriteriaLoan_Ssn">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LoanServiceCriteriaType">
+        <xs:sequence>
+          <xs:element name="CriterionSSN" nillable="true" type="tns:CriterionSSNType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CriterionRoleId" nillable="true" type="tns:CriterionRoleIdType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="CriterionInputSourceId" nillable="true" type="tns:CriterionInputSourceIDType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="CriterionIsArchived" nillable="true" type="tns:CriterionIsArchivedType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriteriaLoan_Ssn" nillable="true" type="tns:CriteriaLoan_Ssn" />
+  <xs:complexType name="CriteriaLoan_CustomerLoanId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LoanServiceCriteriaType">
+        <xs:sequence>
+          <xs:element name="CriterionCustomerId" nillable="true" type="tns:CriterionCustomerIdType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CriterionLoanId" nillable="true" type="tns:CriterionLoanIdType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriteriaLoan_CustomerLoanId" nillable="true" type="tns:CriteriaLoan_CustomerLoanId" />
+  <xs:complexType name="CriteriaLoan_CustomerPerson">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LoanServiceCriteriaType">
+        <xs:sequence>
+          <xs:element name="CriterionCustomerId" nillable="true" type="tns:CriterionCustomerIdType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CriterionPersonId" nillable="true" type="tns:CriterionPersonIdType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="CriterionIsArchived" nillable="true" type="tns:CriterionIsArchivedType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriteriaLoan_CustomerPerson" nillable="true" type="tns:CriteriaLoan_CustomerPerson" />
+  <xs:complexType name="CriteriaLoan_CustomerExternalLoanId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LoanServiceCriteriaType">
+        <xs:sequence>
+          <xs:element name="CriterionCustomerId" nillable="true" type="tns:CriterionCustomerIdType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CriterionExternalLoanId" nillable="true" type="tns:CriterionExternalLoanIdType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriteriaLoan_CustomerExternalLoanId" nillable="true" type="tns:CriteriaLoan_CustomerExternalLoanId" />
+</xs:schema>

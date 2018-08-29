@@ -1,0 +1,1 @@
+define(["dust"], function(dust) { (function(){dust.register("CCP/exceed-coa-message",body_0);function body_0(chk,ctx){return chk.write("        <div class=\"small-12 columns js-exceed-coa-message\" hidden><h3><b>Your contributions exceed the total cost for this program of study. You may want to double-check and adjust your entries.</b></h3></div>");}return body_0;})(); });

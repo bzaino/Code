@@ -1,0 +1,1 @@
+<p>{@if cond="{daysSinceLS} >= 2"}It's been {daysSinceLS} days since your last scholarship search. {/if}More awards are added all the time, so see what's new or update your search criteria to get more results.</p>

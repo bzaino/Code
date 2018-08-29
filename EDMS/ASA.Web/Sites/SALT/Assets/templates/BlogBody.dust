@@ -1,0 +1,29 @@
+{#content}
+    <article>
+        <div class="content panel">
+            {>"Modules/ContentHeaderBar" /}
+            {#mainContent}
+                <div class="tabs-content">
+                    <div class="{english}" id="english-content">
+                        {>"Modules/EnglishOrSpanishContent" englishContent="english" callout="{record.attributes.callout}" /}
+                    </div>
+                    {>"Modules/AuthorPartnerBlock" /}
+                    {>"Modules/ContentFooter" /}
+                    {! dynamicCTA : -used by child templates to add unblocked CTA -Defaults to nothing !}
+                    {?unblocked}
+                        {+dynamicCTA}
+                        {/dynamicCTA}
+                    {/unblocked}
+                </div>
+
+                {^SiteMember.ActiveDirectoryKey}
+                    {@if cond="'{record.attributes.page_tags}' === 'registration'"}
+                        {>"RegistrationButton" /}
+                    {/if}
+                {/SiteMember.ActiveDirectoryKey}
+
+            {/mainContent}
+        </div>
+    </article>
+    {>"partial_featured" /}
+{/content}

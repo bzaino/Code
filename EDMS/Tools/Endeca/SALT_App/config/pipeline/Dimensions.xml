@@ -1,0 +1,2116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE DIMENSIONS SYSTEM "dimensions.dtd">
+<DIMENSIONS VERSION="1.0.0">
+
+  <DIMENSION NAME="RecordType" SRC_TYPE="AUTOGEN">
+    <DIMENSION_ID ID="1"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="1"/>
+        <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">RecordType</SYN>
+      </DVAL>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+  <DIMENSION NAME="ContentType" SRC_TYPE="AUTOGEN">
+    <DIMENSION_ID ID="2"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="2"/>
+        <SYN CLASSIFY="FALSE" DISPLAY="TRUE" SEARCH="FALSE">ContentType</SYN>
+      </DVAL>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+  <DIMENSION NAME="Topics" SRC_TYPE="INTERNAL">
+    <DIMENSION_ID ID="3"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="3"/>
+        <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Topics</SYN>
+      </DVAL>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="4"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Paying for College</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="5"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Alternative Sources of Money</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Paying for college/Alternative Sources of Money</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="6"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Federal Student Loans</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Paying for college/Federal Student Loans</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="7"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Graduate School Funding</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Paying for college/Graduate School Funding</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="61"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Life Happens</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Paying for college/Life Happens</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="62"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Paying for College Basics</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Paying for college/Paying for College Basics</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="63"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Private Student Loans</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Paying for college/Private Student Loans</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="64"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Scholarships and Grants</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Paying for college/Scholarships and Grants</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="65"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">School Choice Comparison</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Paying for college/School Choice Comparison</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="66"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Student Loan Repayment Options</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Paying for college/Student Loan Repayment Options</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="67"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Tuition Payment Plans</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Paying for college/Tuition Payment Plans</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="68"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Work Study</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Paying for college/Work Study</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="160"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Health Professions</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/Topics/Paying for college/Health Professions</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="161"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Law School</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/Topics/Paying for college/Law School</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="162"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">MBA</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/Topics/Paying for college/MBA</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="163"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Community College</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/Topics/Paying for college/Community College</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="8"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Banking</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="9"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Banking Basics</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Banking/Banking Basics</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="10"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Finding The Right Bank</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Banking/Finding The Right Bank</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="11"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Balancing Your Account</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Banking/Balancing Your Account</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="35"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Financial Attitudes</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="36"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Money Talk</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Financial Attitudes/Money Talk</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="60"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Changing Financial Behaviors</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Financial Attitudes/Changing Financial Behaviors</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="51"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Budgeting</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="52"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Budgeting Basics</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/Topics/Budgeting/Budgeting Basics</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="53"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Cash Flow Basics</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Budgeting/Cash Flow Basics</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="54"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Evaluating a Budget</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Budgeting/Evaluating a Budget</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="55"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Goal Setting</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Budgeting/Goal Setting</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="56"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Implementing a Budget</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Budgeting/Implementing a Budget</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="57"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Managing Expenses</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Budgeting/Managing Expenses</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="58"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Time Value of Money</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Budgeting/Time Value of Money</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="59"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Why Budget</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Budgeting/Why Budget</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="69"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Saving</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="70"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Savings basics</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Saving/Savings basics</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="71"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Investment tools</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Saving/Investment tools</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="72"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Retirement Savings</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Saving/Retierment Savings</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="73"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Credit</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="74"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Credit and Debit Card Basics</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Credit/Credit and Debit Card Basics</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="75"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Credit Reports</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Credit/Credit Reports</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="76"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Credit Scores</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Credit/Credit Scores</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="77"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Identify Theft</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Credit/Identify Theft</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="78"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Repaying Credit Card Debt</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Credit/Repaying Credit Card Debt</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="79"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Large Purchases</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="80"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Mortgages</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Large Purchases/Mortgages</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="81"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Net Worth</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Large Purchases/Net Worth</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="82"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Post-Graduate Study</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Large Purchases/Post-Graduate Study</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="83"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Vehicles</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Large Purchases/Vehicles</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="84"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Taxes</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="85"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Filing Taxes</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Taxes/Filing Taxes</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="86"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Tax Basics</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Taxes/Tax Basics</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="87"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Insurance</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="88"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Insurance Basics</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Insurance/Insurance Basics</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="89"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Evaluating Health Plans</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Insurance/Evaluating Health Plans</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="90"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Jobs</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="91"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Choosing a Career</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Jobs/Choosing a Career</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="92"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Dealing with Unemployment or Underemployment</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Jobs/Dealing with Unemployment or Underemployment</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="93"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Entrepreneurship and Freelancing</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Jobs/Entrepreneurship and Freelancing</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="94"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Evaluating Job Offers</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Jobs/Evaluating Job Offers</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="95"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Internships, Volunteering and Service Work</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Jobs/Internships, Volunteering and Service Work</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="96"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Positioning Yourself for Success</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Jobs/Positioning Yourself for Success</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="97"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Working While in School</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Jobs/Working While in School</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="164"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Changing Loan Repayment Plans</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/Topics/Changing Loan Repayment Plans</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="165"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Erasing Loan Debt</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/Topics/Erasing Loan Debt</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="166"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Dealing With Life Events</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/Topics/Dealing With Life Events</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="173"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Suspending Loan Payments</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+  <DIMENSION NAME="Test" SRC_TYPE="INTERNAL">
+    <DIMENSION_ID ID="29"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="29"/>
+        <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Test</SYN>
+      </DVAL>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="30"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Category One</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="31"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Category Two</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+  <DIMENSION NAME="KnowledgeLevels" SRC_TYPE="INTERNAL">
+    <DIMENSION_ID ID="32"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="32"/>
+        <SYN CLASSIFY="FALSE" DISPLAY="TRUE" SEARCH="FALSE">KnowledgeLevels</SYN>
+      </DVAL>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="22"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Advanced</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Knowledge Levels/Advanced</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="18"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Beginner</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Knowledge Levels/Beginner</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="19"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Beginner/Intermediate</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Knowledge Levels/Beginner-Intermediate</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="20"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Intermediate</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Knowledge Levels/Intermediate</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="21"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Intermediate/Advanced</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Knowledge Levels/Intermediate-Advanced</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+  <DIMENSION NAME="LifeStage" SRC_TYPE="INTERNAL">
+    <DIMENSION_ID ID="33"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="33"/>
+        <SYN CLASSIFY="FALSE" DISPLAY="TRUE" SEARCH="FALSE">LifeStage</SYN>
+      </DVAL>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="15"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Career Entry</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Life Stage/Career Entry</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="14"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Life Preparation</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Life Stage/Life Preparation</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="16"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Setting Up a Household</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Life Stage/Setting Up a Household</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+  <DIMENSION NAME="StateChange" SRC_TYPE="INTERNAL">
+    <DIMENSION_ID ID="34"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="34"/>
+        <SYN CLASSIFY="FALSE" DISPLAY="TRUE" SEARCH="FALSE">StateChange</SYN>
+      </DVAL>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="27"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Action</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/State change/Action</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="25"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Contemplation</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/State change/Contemplation</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="28"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Maintenance</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facet/State change/Maintenance</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="24"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Pre-contemplation</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/State change/Pre-contemplation</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="26"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Preperation</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/State change/Preperation</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+  <DIMENSION NAME="Gender" SRC_TYPE="INTERNAL">
+    <DIMENSION_ID ID="37"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="37"/>
+        <SYN CLASSIFY="FALSE" DISPLAY="TRUE" SEARCH="FALSE">Gender</SYN>
+      </DVAL>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="38"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Female</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Gender/Female</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="39"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Male</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Gender/Male</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+  <DIMENSION NAME="ContentTypes" SRC_TYPE="INTERNAL">
+    <DIMENSION_ID ID="40"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="40"/>
+        <SYN CLASSIFY="FALSE" DISPLAY="TRUE" SEARCH="FALSE">ContentTypes</SYN>
+      </DVAL>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="41"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Article</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Content-Types/Article</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="42"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Video</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Content-Types/Video</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="43"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Form</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Content-Types/Form</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="44"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Lesson</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Content-Types/Lesson</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="45"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Infographic</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Content-Types/Infographic</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="46"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Tool</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Content-Types/Tool</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="47"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Promo</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Content-Types/Brief</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="156"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Press</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/Content-Types/Announcement</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="157"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Comic</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/Content-Types/Comic</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="158"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Webinar</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/Content-Types/Webinar</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="159"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Definition</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/Content-Types/Definition</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="303"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">eBook</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/Content-Types/EBook</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="304"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Course</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Content-Types/Course</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="305"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Blog</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/Content-Types/Blog</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="306"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Alert</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Content-Types/Alert</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+  <DIMENSION NAME="Positioning" SRC_TYPE="INTERNAL">
+    <DIMENSION_ID ID="48"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="48"/>
+        <SYN CLASSIFY="FALSE" DISPLAY="TRUE" SEARCH="FALSE">Positioning</SYN>
+      </DVAL>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="49"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Featured</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Positioning/Featured</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="50"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Trending</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Positioning/Trending</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+  <DIMENSION NAME="Voicelevel" SRC_TYPE="INTERNAL">
+    <DIMENSION_ID ID="98"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="98"/>
+        <SYN CLASSIFY="FALSE" DISPLAY="TRUE" SEARCH="FALSE">Voicelevel</SYN>
+      </DVAL>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="99"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Beginner</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Voice level/Beginner</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="100"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Intermediate</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Voice level/Intermediate</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="101"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Advanced</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Voice level/Advanced</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+  <DIMENSION NAME="Language" SRC_TYPE="INTERNAL">
+    <DIMENSION_ID ID="102"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="102"/>
+        <SYN CLASSIFY="FALSE" DISPLAY="TRUE" SEARCH="FALSE">Language</SYN>
+      </DVAL>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="103"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">English</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Language/English</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="104"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Spanish</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Language/Spanish</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+  <DIMENSION NAME="Vendor" SRC_TYPE="INTERNAL">
+    <DIMENSION_ID ID="105"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="105"/>
+        <SYN CLASSIFY="FALSE" DISPLAY="TRUE" SEARCH="FALSE">Vendor</SYN>
+      </DVAL>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="106"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">HP</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Vendor/HP</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="107"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Dell</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Vendor/Dell</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+  <DIMENSION NAME="UserGoals" SRC_TYPE="INTERNAL">
+    <DIMENSION_ID ID="108"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="108"/>
+        <SYN CLASSIFY="FALSE" DISPLAY="TRUE" SEARCH="FALSE">UserGoals</SYN>
+      </DVAL>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="109"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Learn the Basics</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/User Goals/Learn the Basics</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="110"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Pay for Next Semester</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/User Goals/Pay for Next Semester</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="111"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Start My Career</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/Facets/User Goals/Start My Career</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="112"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Repay Student Loan Debt</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/User Goals/Repay Student Loan Debt</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="113"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Make a Large Purchase</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/User Goals/Make a Large Purchase</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="114"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Pay My Bills</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/User Goals/Pay My Bills</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+  <DIMENSION NAME="Standards" SRC_TYPE="INTERNAL">
+    <DIMENSION_ID ID="115"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="115"/>
+        <SYN CLASSIFY="FALSE" DISPLAY="TRUE" SEARCH="FALSE">Standards</SYN>
+      </DVAL>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="116"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Personal Financial Decisions</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Personal Financial Decisions</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="117"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Evaluate Financial Information</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Evaluate Financial Information</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="118"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Consumer Protection Laws</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Consumer Protection Laws</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="119"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Alternatives and Consequences</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Alternatives and Consequences</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="120"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Communication Strategies</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Communication Strategies</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="121"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Personal Information</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Personal Information</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="122"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Career Options</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/Facets/Standards/Career Options</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="123"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Personal Income Sources</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Personal Income Sources</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="124"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Take-Home Pay</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Take-Home Pay</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="125"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Spending and Saving</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Spending and Saving</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="126"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Financial Records</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Financial Records</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="127"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Payment Methods</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Payment Methods</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="128"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Purchase Decisions</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Purchase Decisions</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="129"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Charitable Giving</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Charitable Giving</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="130"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Personal Financial Plan</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Personal Financial Plan</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="131"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Importance of a Will</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Importance of a Will</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="132"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Types of Credit</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Types of Credit</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="133"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Credit Report</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Credit Report</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="134"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Debt Problems</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Debt Problems</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="135"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Consumer Credit Laws</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Consumer Credit Laws</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="136"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Risk Management</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Risk Management</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="137"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Property and Liability Insurance</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Property and Liability Insurance</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="138"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Health, Life and Disability Insurance</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Health, Life and Disability Insurance</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="139"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Saving</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Saving</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="140"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Investing</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Investing</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="141"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Investment Alternatives</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Investment Alternatives</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="142"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Buy and Sell Investments</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Buy and Sell Investments</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="143"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Investment Taxes</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Investment Taxes</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="144"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Financial Regulation</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Facets/Standards/Financial Regulation</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+  <DIMENSION NAME="Topics-Parent" SRC_TYPE="INTERNAL">
+    <DIMENSION_ID ID="145"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="145"/>
+        <SYN CLASSIFY="FALSE" DISPLAY="TRUE" SEARCH="FALSE">Topics-Parent</SYN>
+      </DVAL>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="146"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Taxes</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Taxes</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="147"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Saving</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Saving</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="148"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Banking</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Banking</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="149"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Budgeting</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Budgeting</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="150"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Credit</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Credit</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="151"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Financial Attitudes</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Financial Attitudes</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="152"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Paying for College</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Paying for college</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="153"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Large Purchases</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Large Purchases</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="154"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Jobs</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Jobs</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="155"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Insurance</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Insurance</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="172"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Erasing Loan Debt</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Topics/Erasing Loan Debt</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="174"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Changing Loan Repayment Plans</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/Topics/Changing Loan Repayment Plans</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="175"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Dealing With Life Events</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/Topics/Dealing With Life Events</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="176"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Suspending Loan Payments</SYN>
+          <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/Topics/Suspending Loan Payments</SYN>
+        </DVAL>
+      </DIMENSION_NODE>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+  <DIMENSION NAME="Tags" SRC_TYPE="AUTOGEN">
+    <DIMENSION_ID ID="177"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="177"/>
+        <SYN CLASSIFY="FALSE" DISPLAY="TRUE" SEARCH="FALSE">Tags</SYN>
+      </DVAL>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+  <DIMENSION NAME="SALT Standards" SRC_TYPE="INTERNAL">
+    <DIMENSION_ID ID="178"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="178"/>
+        <SYN CLASSIFY="FALSE" DISPLAY="TRUE" SEARCH="FALSE">SALT Standards</SYN>
+      </DVAL>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="179"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Fundamentals</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="180"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand your personal financial personality/philosophy</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/SALT Standards/1. Fundamentals/1.1 Understand your personal financial personality/philosophy</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="184"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand opportunity costs (pros and cons) of financial decisions</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/SALT Standards/1. Fundamentals/1.2 Understand opportunity costs (pros and cons) of financial decisions</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="185"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Differentiate between different types of financial institutions and financial products</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/SALT Standards/1. Fundamentals/1.3 Differentiate between different types of financial institutions and financial products</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="186"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand how to control personal information and avoid financial scams</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/SALT Standards/1. Fundamentals/1.4 Understand how to control personal information and avoid financial scams</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="187"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand where to go and how to communicate when you need help</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/SALT Standards/1. Fundamentals/1.5 Understand where to go and how to communicate when you need help</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="188"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">College Access and Planning</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="189"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand the payoff between education, earnings and student loan debt</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/SALT Standards/2. College Access and Planning/2.1 Understand the payoff between education, earnings and student loan debt</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="190"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Explore college options and the best fit philosophy</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/SALT Standards/2. College Access and Planning/2.2 Explore college options and the best fit philosophy</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="191"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand the college application process</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/SALT Standards/2. College Access and Planning/2.3 Understand the college application process</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="192"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Develop a system for school choice comparison</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/SALT Standards/2. College Access and Planning/2.4 Develop a system for school choice comparison</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="193"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand how to apply for financial aid</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/SALT Standards/2. College Access and Planning/2.5 Understand how to apply for financial aid</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="194"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand college financing options</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/SALT Standards/2. College Access and Planning/2.6 Understand college financing options</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="195"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Student Loans</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="196"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand borrower rights and responsibilities</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/SALT Standards/3. Student Loans /3.1 Understand borrower rights and responsibilities</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="197"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand industry players</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/SALT Standards/3. Student Loans /3.2 Understand industry players</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="198"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand loan repayment schedules</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/SALT Standards/3. Student Loans /3.3 Understand loan repayment schedules</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="199"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand postponement options</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/SALT Standards/3. Student Loans /3.4 Understand postponement options</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="200"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand loan forgiveness programs</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/SALT Standards/3. Student Loans /3.5 Understand loan forgiveness programs</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="201"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand loan repayment assistance programs</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/3. Student Loans /3.6 Understand loan repayment assistance programs</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="202"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Explore repayment challenge solutions</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/3. Student Loans /3.7 Explore repayment challenge solutions</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="203"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Develop your personal education debt tracker</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/3. Student Loans /3.8 Develop your personal education debt tracker</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="204"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Income and Careers</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="205"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Examine options for working while in school</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/4. Income and Careers/4.0 Examine options for working while in school</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="206"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand internships, volunteering and service work</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/4. Income and Careers/4.1 Understand internships, volunteering and service work</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="207"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Examine career options</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/4. Income and Careers/4.2 Examine career options</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="208"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Develop a job search plan</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/4. Income and Careers/4.3 Develop a job search plan</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="209"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Create career resources (resume, cover letter, online profiles)</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/4. Income and Careers/4.4 Create career resources (resume, cover letter, online profiles)</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="210"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Examine professional networking opportunities</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/4. Income and Careers/4.5 Examine professional networking opportunities</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="211"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand how to evaluate job offers</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/4. Income and Careers/4.6 Understand how to evaluate job offers</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="212"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand the factors that affect take home pay</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/4. Income and Careers/4.7 Understand the factors that affect take home pay</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="213"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand the basics of entrepreneurship/freelancing/portfolio careers</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/4. Income and Careers/4.8 Understand the basics of entrepreneurship/freelancing/portfolio careers</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="214"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand how to deal with unemployment or underemployment</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/4. Income and Careers/4.9 Understand how to deal with unemployment or underemployment</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="264"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Money Management</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="269"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand the goal of money management</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/5. Money Management/5.1 Understand the goal of money management</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="270"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand the components of a net worth statement</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/5. Money Management/5.2 Understand the components of a net worth statement</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="271"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Create a net worth statement</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/5. Money Management/5.3 Create a net worth statement</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="272"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand the components of a budget</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/5. Money Management/5.4 Understand the components of a budget</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="273"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Create a personal spending plan</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/5. Money Management/5.5 Create a personal spending plan</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="274"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand large purchase decision-making</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/5. Money Management/5.6 Understand large purchase decision-making</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="275"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Develop and prioritize short term and long term goals</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/5. Money Management/5.7 Develop and prioritize short term and long term goals</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="276"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Create realistic financial plans to meet goals</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/5. Money Management/5.8 Create realistic financial plans to meet goals</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="277"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand how to evaluate and modify spending and financial plans</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/5. Money Management/5.9 Understand how to evaluate and modify spending and financial plans</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="265"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Saving and Investing</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="278"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand the difference between saving and investing</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/6. Saving and Investing/6.1 Understand the difference between saving and investing</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="279"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand the principles of compound interest</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/6. Saving and Investing/6.2 Understand the principles of compound interest</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="280"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand the different types of investment vehicles and how to purchase them</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/6. Saving and Investing/6.3 Understand the different types of investment vehicles and how to purchase them</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="281"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Examine the risks and rewards related to investments</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/6. Saving and Investing/6.4 Examine the risks and rewards related to investments</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="282"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand the difference between retirement and non-retirement accounts</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/6. Saving and Investing/6.5 Understand the difference between retirement and non-retirement accounts</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="283"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Examine saving and investing needs by life-stage</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/6. Saving and Investing/6.6 Examine saving and investing needs by life-stage</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="266"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Credit and Debt Management</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="284"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand different types of credit</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/7. Credit and Debt Management/7.1 Understand different types of credit</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="285"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand how to use credit and debt appropriately</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/7. Credit and Debt Management/7.2 Understand how to use credit and debt appropriately</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="286"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand the credit application process</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/7. Credit and Debt Management/7.3 Understand the credit application process</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="287"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand the implications of co-signing a credit application</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/7. Credit and Debt Management/7.4 Understand the implications of co-signing a credit application</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="288"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Evaluate the elements of a credit report</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/7. Credit and Debt Management/7.5 Evaluate the elements of a credit report</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="289"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand consumer rights and how to dispute errors</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/7. Credit and Debt Management/7.6 Understand consumer rights and how to dispute errors</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="290"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Examine the impact and implications of credit scores</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/7. Credit and Debt Management/7.7 Examine the impact and implications of credit scores</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="267"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Risk Management</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="291"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Evaluate your risk tolerance level</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/8. Risk Management/8.1 Evaluate your risk tolerance level</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="292"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Evaluate your insurance needs and how they change over time</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/8. Risk Management/8.2 Evaluate your insurance needs and how they change over time</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="293"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand different types of insurance products</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/8. Risk Management/8.3 Understand different types of insurance products</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="294"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand the purpose and basics of a will</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/8. Risk Management/8.4 Understand the purpose and basics of a will</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="295"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Create a risk management strategy</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/8. Risk Management/8.5 Create a risk management strategy</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="268"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Taxes</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="296"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand tax rates and tax liability</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/9. Taxes/9.1 Understand tax rates and tax liability</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="297"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand different types of taxes</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/9. Taxes/9.2 Understand different types of taxes</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="298"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand different tax documents</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/9. Taxes/9.3 Understand different tax documents</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="299"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Understand tax filing basics</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/SALT Standards/9. Taxes/9.4 Understand tax filing basics</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+  <DIMENSION NAME="Persona" SRC_TYPE="INTERNAL">
+    <DIMENSION_ID ID="181"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="181"/>
+        <SYN CLASSIFY="FALSE" DISPLAY="TRUE" SEARCH="FALSE">Persona</SYN>
+      </DVAL>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="182"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">4</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="183"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">1</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="TRUE">/Categories/Persona/Bank Accounts/Savings</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="215"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">2</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Bank Accounts/Checking</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="216"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">3</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Bank Accounts/Neither</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="217"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">4</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Bank Accounts/Other</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="218"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">3</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="219"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">1</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Credit Cards/Debit Card</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="220"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">2</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Credit Cards/Credit Card</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="221"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">3</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Credit Cards/Neither</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="222"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">2</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="223"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">1</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Employment/Employed Part-time</SYN>
+            <PROP NAME="Employment">
+              <PVAL>Part-time</PVAL>
+            </PROP>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="224"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">2</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Employment/Employed Full-time</SYN>
+            <PROP NAME="Employment">
+              <PVAL>Full-time</PVAL>
+            </PROP>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="225"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">3</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Employment/Employed Seasonally</SYN>
+            <PROP NAME="Employment">
+              <PVAL>Seasonally</PVAL>
+            </PROP>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="226"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">4</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Employment/Seeking Employment</SYN>
+            <PROP NAME="Employment">
+              <PVAL>Seeking</PVAL>
+            </PROP>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="227"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">5</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Employment/None of the above</SYN>
+            <PROP NAME="Employment">
+              <PVAL>None of the above</PVAL>
+            </PROP>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="228"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">13</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="232"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">1</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Housing Type/Alone</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="233"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">2</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Housing Type/Roommate/friends</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="234"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">3</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Housing Type/Family</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="235"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">6</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="239"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">2</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Loan Payments/Repayment period has not started</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="241"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">3</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Loan Payments/In repayment, making payments on schedule</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="242"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">4</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Loan Payments/In repayment, but I am not making regular payments</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="240"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">1</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Loan Payments/In grace period</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="243"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">1</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="244"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">1</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Loan Type/Federal</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="245"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">2</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Loan Type/Private</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="246"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">3</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Loan Type/State/Institutional</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="247"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">4</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Loan Type/Other</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="248"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">5</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Loan Type/Yes, but I'm not sure which type</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="302"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">no</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="250"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">14</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="251"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">4</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Planning/Making a major purchase</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="252"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">5</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Planning/Buying a car</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="253"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">6</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Planning/Buying a house</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="254"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">7</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Planning/Attending college for the first time</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="255"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">8</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Planning/Going back to school (undergrad)</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="256"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">9</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Planning/Going to grad school</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="257"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">10</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Planning/Starting a family</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="258"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">11</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Planning/Switching careers</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="259"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">9</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="260"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Public School</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/School Type/Public School</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="261"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Private School</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/School Type/Private School</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="262"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Community College</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/School Type/Community College</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="263"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">Online School</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/School Type/Online School</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="300"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">5</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="236"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">1</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Loan Payments/Yes</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="237"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">2</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Loan Payments/No</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="238"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">3</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Loan Payments/Unsure</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+      <DIMENSION_NODE>
+        <DVAL TYPE="EXACT">
+          <DVAL_ID ID="301"/>
+          <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">12</SYN>
+        </DVAL>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="230"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">2</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Housing Type/On campus</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="231"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">3</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Housing Type/Off campus</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+        <DIMENSION_NODE>
+          <DVAL TYPE="EXACT">
+            <DVAL_ID ID="229"/>
+            <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">1</SYN>
+            <SYN CLASSIFY="TRUE" DISPLAY="FALSE" SEARCH="FALSE">/Categories/Persona/Housing Type/Home</SYN>
+          </DVAL>
+        </DIMENSION_NODE>
+      </DIMENSION_NODE>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+</DIMENSIONS>

@@ -1,0 +1,8 @@
+<div class="row collapse scholarship-results-item js-scholarship-results-item" data-scholarshipId="{ID}" >
+    <div class="small-9 columns">
+        <span class="js-scholarship-name">{Title}</span>
+        <br>
+        <span class="js-scholarship-deadline">Deadline: {DeadlineDate}</span>
+    </div>
+    <div class="small-3 columns text-right hilite"><span class="js-scholarship-amount">${NumericDollarAmount}</span></div>
+</div>

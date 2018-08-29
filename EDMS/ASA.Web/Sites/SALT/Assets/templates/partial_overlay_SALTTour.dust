@@ -1,0 +1,18 @@
+<div class="show-media-medium-up">
+	<div id="js-reveal-video-overlay" class="reveal-modal large" data-reveal>
+	    <div class="flex-video widescreen vimeo">
+                <video  id="myPlayerID" 
+                data-video-id="{attributes.b-video-id|trim}" 
+                data-account="1894469414001" 
+                data-player="SJLISQXFb" 
+                data-embed="default" 
+                data-application-id 
+                class="video-js flex-video" 
+                controls></video>
+	    </div>
+	    <script>
+            require(['bc']);
+        </script>
+	    <a class="close-reveal-modal" id="closeModal">&#215;</a>
+	</div>
+</div>

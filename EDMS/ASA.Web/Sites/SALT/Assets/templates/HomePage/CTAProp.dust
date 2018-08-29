@@ -1,0 +1,5 @@
+<footer class="value_prop show-for-medium-up">
+    <a href="#" data-window-shade="registrationOverlay" class="button base-btn main-btn cta-dark-bg registrationOverlay-link persona-signup-btn" > {records[0].attributes.cta-label}</a>
+    <!-- SWD-7216 Route 'small screen' users to signup page instead of signup overlay -->
+    <a href="/register"  class="registration-link" > {records[0].attributes.cta-label}</a>
+</footer>

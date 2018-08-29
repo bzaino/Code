@@ -1,0 +1,36 @@
+{>"page_parent" /}
+
+{<dynamicBody}
+    {#content}
+        <article>
+            <div class="margin-right">
+                <script>
+                    /* SWD-7345: special events routing */
+                    require(['asa/ASAUtilities', 'salt/models/SiteMember'], function (utility, SiteMember) {
+                        SiteMember.done(function (member) {
+                            if (member.IsAuthenticated === 'true') {
+                                var sURL = utility.lastvisitedURL();
+                                if (sURL) {
+                                    window.location.href = sURL.replace('index.html', 'home');
+                                } else {
+                                    window.location.href = '/home';
+                                }
+                            }
+                        });
+                    });
+                </script>
+                <div id="loginPage">
+                    <div class="row collapse">
+                        <div class="small-12 medium-6 columns">
+                            <header>
+                                <h2 class="padding-left">Already Have An Account?</h2>
+                            </header>
+                            {>"partial_logon_form"/}
+                        </div>
+                    </div>
+                    {>"Overlays/ConfirmPersonalInfo" /}
+                </div>
+            </div>
+        </article>
+    {/content}
+{/dynamicBody}

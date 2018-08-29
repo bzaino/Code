@@ -1,0 +1,36 @@
+﻿{
+	"ErrorList":[],
+	"Addresses":[{
+		"ErrorList":[],
+		"AddressLine1":"100 Cambridge St",
+		"AddressLine2":null,
+		"City":"Boston",
+		"Country":"UNITED STATES",
+		"CountryID":"US",
+		"State":"Massachusetts",
+		"StateID":"MA",
+		"Type":"Primary",
+		"TypeID":"P",
+		"Zip":"02114"
+	}],
+	"CustomerId":1,
+	"DOB":"\/Date(652852800000-0400)\/",
+	"Emails":[{
+		"ErrorList":[],
+		"EmailAddress":"test@asa.org",
+		"Type":"Primary",
+		"TypeID":"P"
+	}],
+	"ExternalId":null,
+	"FirstName":"TestFN",
+	"LastName":"TestLN",
+	"MiddleInitial":null,
+	"PersonId":77777,
+	"Phones":[{
+		"ErrorList":[],
+		"PhoneNumber":"6175555555",
+		"Type":"Primary",
+		"TypeID":"P"
+	}],
+	"SSN":"777777777"
+}

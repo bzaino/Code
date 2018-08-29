@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://amsa.com/contract/baserequestcontract/v1.0" elementFormDefault="qualified" targetNamespace="http://amsa.com/contract/baserequestcontract/v1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://adevweb023.amsa.com/LoanManagementService/LoanManagementService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="ParamList" nillable="true" type="q1:ArrayOfKeyValueOfstringstring" />
+</xs:schema>

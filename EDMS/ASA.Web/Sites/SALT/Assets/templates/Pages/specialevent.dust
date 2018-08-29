@@ -1,0 +1,195 @@
+{>"page_parent" /}
+
+{<dynamicTitle}
+    {#content}
+        {secondaryContent[0].records[0].attributes.page_title} - Salt
+    {/content}
+{/dynamicTitle}
+
+{<dynamicSpacer}
+    {?sidebarReg}
+        {^SiteMember.ActiveDirectoryKey}
+            no-menu
+        {/SiteMember.ActiveDirectoryKey}
+    {/sidebarReg}
+{/dynamicSpacer}
+
+{<dynamicBody}
+    {#content}
+        {<dynamicTopBar}
+            {?sidebarReg}
+                {^SiteMember.ActiveDirectoryKey}
+                    {>"Navigation/NoMenuSaltHeader" /}
+                {:else}
+                    {>"salt_header" /}
+                {/SiteMember.ActiveDirectoryKey}
+            {:else}
+                {>"salt_header" /}
+            {/sidebarReg}
+        {/dynamicTopBar}
+
+        <section class="js-special-event-page">
+            {#secondaryContent}
+                {^SiteMember.ActiveDirectoryKey}
+                    {@select key="{name}"}
+                        {@eq value="UnAuthPageImage"}
+                            {#records}
+                                {@select key="{attributes.sys_title}"}
+                                    {@eq value="share-your-way-to-10k-unauth"}
+                                        <script type="text/javascript">
+                                        (function(d, s, id) {
+                                          window.Wishpond = window.Wishpond || {};
+                                          Wishpond.merchantId = '1064441';
+                                          Wishpond.writeKey = '70c610867bea';
+                                          var js, wpjs = d.getElementsByTagName(s)[0];
+                                          if (d.getElementById(id)) return;
+                                          js = d.createElement(s); js.id = id;
+                                          js.src = "//cdn.wishpond.net/connect.js";
+                                          wpjs.parentNode.insertBefore(js, wpjs);
+                                        }(document, 'script', 'wishpond-connect'));
+                                        </script>
+                                    {/eq}
+                                {/select}
+                                <header class="special-events">
+                                    <figure>{attributes.rich-text-image}</figure>
+                                </header>
+                                <section id="FeaturedContent">
+                                    <div class="title-container content no-top-border">
+                                        {attributes.body}
+                                    </div>
+                                </section>
+                                {attributes.webtrends-group}
+                            {/records}
+                            {@if cond="'{metaKeywords}' === 'RegSlide'"}
+                            <script>
+                                require(['jquery','salt','modules/overlays'], function ($, SALT) {
+                                     $(window).load(function () {
+                                        setTimeout(function () {
+                                            SALT.trigger('open:customOverlay', 'registrationOverlay');
+                                        }, 1500);
+                                     });
+                                });
+                            </script>
+                            {/if}
+                        {/eq}
+                    {/select}
+                {:else}
+                    {@select key="{name}"}
+                        {@eq value="AuthPageImage"}
+                            {#records}
+                                <header class="special-events">
+                                    <figure>{attributes.rich-text-image}</figure>
+                                </header>
+                                <section id="FeaturedContent">
+                                    <div class="title-container content no-top-border">
+                                        {attributes.body}
+                                    </div>
+                                </section>
+                                <script>
+                                    require(['jquery','jquery.cookie'], function ($) {
+                                        if ($.cookie('WTGroup') !== '{attributes.webtrends-group}') {
+                                            $.cookie('WTGroup', '{attributes.webtrends-group}');
+                                            $('#FeaturedContent').append('{attributes.webtrends-group}');
+                                        }
+                                    });
+                                </script>
+                            {/records}
+                                 <!-- Google Code for Account Registration Conversion Page -->
+                            <script type="text/javascript">
+                                /* <![CDATA[ */
+                                var google_conversion_id = 991766413;
+                                var google_conversion_language = "en";
+                                var google_conversion_format = "3";
+                                var google_conversion_color = "ffffff";
+                                var google_conversion_label = "LyRcCIvKwAQQjc_02AM";
+                                var google_conversion_value = 0;
+                                /* ]]> */
+                            </script>
+                            <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+                            <noscript>
+                                <div style="display:inline;">
+                                    <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/991766413/?value=0&amp;label=LyRcCIvKwAQQjc_02AM&amp;guid=ON&amp;script=0"/>
+                                </div>
+                            </noscript>
+
+                        {/eq}
+                    {/select}
+                {/SiteMember.ActiveDirectoryKey}
+            {/secondaryContent}
+            {#mainContent}
+                {^SiteMember.ActiveDirectoryKey}
+                    {@select key="{name}"}
+                        {@eq value="ContentTiles"}
+                        <div class="flex-container">
+                            {#records}
+                               <div class="small-6 medium-4 large-6 tile columns">
+                                {>"partial_tiles" /}
+                                </div>
+                            {/records}
+                        </div>
+                        {/eq}
+                    {/select}
+                {:else}
+                    {@select key="{name}"}
+                        {@eq value="AuthContentTiles"}
+                        <div class="flex-container">
+                            {#records}
+                               <div class="small-6 medium-4 large-6 tile columns">
+                                {>"partial_tiles" /}
+                                </div>
+                            {/records}
+                        </div>
+                        {/eq}
+                    {/select}
+                {/SiteMember.ActiveDirectoryKey}
+            {/mainContent}
+        </section>
+    {/content}
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-39274714-4']);
+        _gaq.push(['_setDomainName', 'saltmoney.org']);
+        _gaq.push(['_setCampaignCookieTimeout', 2628000000]);
+        _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+    </script>
+{/dynamicBody}
+
+{<dynamicSideBar}
+    {?sidebarReg}
+        {^SiteMember.ActiveDirectoryKey}
+            <div id="sidebar-forms">
+                {> "Overlays/LogOn" /}
+                {> "Overlays/ForgotPassword" /}
+
+                <div id="registrationOverlay" class="registration-overlay custom-overlay bordered">
+                    {>"partial_registration_form" RegistrationSource="{content.secondaryContent[0].records[0].attributes.registration-source[0]|trim}" /}
+                </div>
+                <script>
+                    require(['salt', 'salt/registration'], function (SALT) {
+                        SALT.trigger('prePopulateSchool');
+                    });
+                </script>
+
+                {>"Modules/Carousel" recordKey="{content.secondaryContent[0].records[0].attributes.carousel-module-sidebar-1|trim}" /}
+                {>"Modules/Carousel" recordKey="{content.secondaryContent[0].records[0].attributes.carousel-module-sidebar-2|trim}" /}
+                {>"Modules/Carousel" recordKey="{content.secondaryContent[0].records[0].attributes.carousel-module-sidebar-3|trim}" /}
+                {>"Modules/Carousel" recordKey="{content.secondaryContent[0].records[0].attributes.carousel-module-sidebar-4|trim}" /}
+
+                {#content}
+                    {>"Modules/ReachOutDelegate" /}
+                {/content}
+                {>"Modules/LiveChatWinnerBadge" /}
+            </div>
+        {:else}
+            {>"partial_sidebar_se" /}
+        {/SiteMember.ActiveDirectoryKey}
+    {:else}
+        {>"partial_sidebar_se" /}
+    {/sidebarReg}
+{/dynamicSideBar}

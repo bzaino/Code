@@ -1,0 +1,88 @@
+{>"page_parent" /}
+
+{<dynamicBody}
+    {#content}
+      {#mainContent}
+        {@select key="{name}"}
+          {@eq value="Main-Content"}
+            {#records}
+             <header class="title-container padded">
+                <h1>{attributes.headline}</h1>
+                <h5>{attributes.subhead}</h5>
+              </header>
+            {/records}
+          {/eq}
+        {/select}
+      {/mainContent}
+    {/content}
+
+    <div class="row collapse">
+        <div class="small-12 columns left">
+              {#content}
+                 {#mainContent}
+                     {@select key="{name}"}
+                          {@eq value="Spotlight Records"}
+                              {#records}
+                                <div class="{name}-container padded small-12 columns">
+                                    <article class="{name} small-12 columns thin-border left no-padding">
+                                        <figure class="left small-6 columns no-padding show-for-medium-up"> {attributes.rich-text-image}</figure>
+                                        <section class ="right small-12 medium-6 large-6 columns">
+                                            <br><h3>{attributes.subhead}</h3>
+                                            <header>
+                                                <h2>{attributes.headline}</h2>
+                                            </header>
+                                            <div class="WhyUseSalt tileText">{attributes.body}</div>
+                                        </section>
+                                        <footer class="corner-btn-container small-12 small-only-right columns">
+                                            {attributes.button-area}
+                                        </footer>
+                                    </article>
+                                </div>
+                              {/records}
+                          {/eq}
+                     {/select}
+                 {/mainContent}
+              {/content}
+          </div>
+    </div>
+{/dynamicBody}
+
+{<dynamicSideBar}
+    {#content}
+        {#secondaryContent}
+            {@select key="{name}"}
+                {@eq value="Featured Content"}
+                    {#records}
+                      <div class="{name}-container">
+                        <article class="{name} PromoTile padded">
+                            {@if cond="'{attributes.ContentTypes}' ==='Video' || '{title}'==='YoutubeOverlay' || '{title}'==='BrightCoveOverlay'"}
+                                <!-- Adds sidebar video and/or overlay for youtube salt tutorial -->
+                                {>"partial_sidebar_promovideo" /}
+                            {/if}
+                            {@if cond="'{title}' !=='YoutubeOverlay' && '{title}' !=='BrightCoveOverlay'"}
+                            <figure class="featured">
+                                <a href="/content/media{detailsAction.recordState}" title="{attributes.resource_link_title}" class="tileImgLink">
+                                    {attributes.tile-image-2014}
+                                </a>
+                            </figure>
+
+                            <header class="padding-top">
+                                <h3> <a href="/content/media{detailsAction.recordState}" title="{attributes.resource_link_title}" class="tileImgLink">See How We Help >></a></h3>
+                            </header>
+                            {/if}
+                        </article>
+                        {> "Modules/Carousel" recordKey="{mainContent[1].records[0].attributes.carousel-module-sidebar-1|trim}" /}
+                        {> "Modules/Carousel" recordKey="{mainContent[1].records[0].attributes.carousel-module-sidebar-2|trim}" /}
+                        {> "Modules/Carousel" recordKey="{mainContent[1].records[0].attributes.carousel-module-sidebar-3|trim}" /}
+                        {> "Modules/Carousel" recordKey="{mainContent[1].records[0].attributes.carousel-module-sidebar-4|trim}" /}
+                      </div>
+                    {/records}
+                {/eq}
+            {/select}
+        {/secondaryContent}
+        {>"Modules/ReachOutDelegate" /}
+    {/content}
+    <section class="row">
+        <p class="small-12 columns"> </p>
+    </section>
+{/dynamicSideBar}

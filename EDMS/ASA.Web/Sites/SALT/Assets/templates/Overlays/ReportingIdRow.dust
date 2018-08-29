@@ -1,0 +1,12 @@
+{#Organizations}
+	<div id="reporting-id-row">
+	    <label for="reporting-id-{OrganizationId}" class="labelText">{OrganizationName}</label>
+	    <div>
+	    	<label for="reporting-id-{OrganizationId}" id="js-reporting-id-label{OrganizationId}"><p>Please enter your Organization/School ID or you will not get credit for the courses you complete.</p></label>
+	    	<input id="reporting-id-{OrganizationId}" class="js-reporting-id" name="reporting-id-{OrganizationId}" type="text" pattern="reporting_id" value={ReportingId}>
+	    	{>"ErrorMessages/ReportingID"/}
+	    </div>
+	    <input id="organization-id" class="js-organization-id" name="organization-id" type="hidden" value={OrganizationId} />
+	    <div><label id="lblerrorMsg" text =""></label></div>
+	</div>
+{/Organizations}

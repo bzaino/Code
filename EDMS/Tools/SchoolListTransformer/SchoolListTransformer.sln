@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolListTransformer", "SchoolListTransformer\SchoolListTransformer.csproj", "{0EFE37DD-F1E9-4C87-BA30-E05FFFD45C29}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SchoolListTransformerDeploy", "SchoolListTransformerDeploy\SchoolListTransformerDeploy.vdproj", "{2D18980F-7938-4429-9556-5A75A4CAA237}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EFE37DD-F1E9-4C87-BA30-E05FFFD45C29}.Debug|x86.ActiveCfg = Debug|x86
+		{0EFE37DD-F1E9-4C87-BA30-E05FFFD45C29}.Debug|x86.Build.0 = Debug|x86
+		{0EFE37DD-F1E9-4C87-BA30-E05FFFD45C29}.Release|x86.ActiveCfg = Release|x86
+		{0EFE37DD-F1E9-4C87-BA30-E05FFFD45C29}.Release|x86.Build.0 = Release|x86
+		{2D18980F-7938-4429-9556-5A75A4CAA237}.Debug|x86.ActiveCfg = Debug
+		{2D18980F-7938-4429-9556-5A75A4CAA237}.Debug|x86.Build.0 = Debug
+		{2D18980F-7938-4429-9556-5A75A4CAA237}.Release|x86.ActiveCfg = Release
+		{2D18980F-7938-4429-9556-5A75A4CAA237}.Release|x86.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

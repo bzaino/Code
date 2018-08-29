@@ -1,0 +1,30 @@
+<objects xmlns="http://www.springframework.net" xmlns:v="http://www.springframework.net/validation">
+  <!-- Reusable Regular Expressions -->
+
+  <object name="NumberExpression" type="String">
+    <constructor-arg value="^[0-9]+$"/>
+  </object>
+  
+  <!--  PERSON VALIDATION -->
+  <v:group id="SelfReportedLoanModelValidator">
+    <!-- REQUIRED STUFF-->
+    <v:required id="PersonIdRequiredValidator" test="PersonId">
+      <v:message id="error_personid_required" providers="SelfReportedLoanModelErrorProvider"/>
+    </v:required>
+    <!-- LENGTH STUFF-->
+    <v:condition id="LoanStatusIdLengthValidator" test="LoanStatusId.Length &lt;= 2">
+      <v:message id="error_loanstatusid_length_invalid" providers="SelfReportedLoanModelErrorProvider"/>
+    </v:condition>
+  </v:group>
+
+  <!--
+        //        <xsd:element name="InterestRate" type="xsd:double" minOccurs="0" nillable="true"/>
+        //        <xsd:element name="PrincipalBalanceOutstandingAmount" type="cmn:MoneyType" minOccurs="0" nillable="true"/>
+        //        <xsd:element name="PaymentDueAmount" type="cmn:MoneyType" minOccurs="0" nillable="true"/>
+        //        <xsd:element name="NextPaymentDueAmount" type="cmn:MoneyType" minOccurs="0" nillable="true"/>
+        //        <xsd:element name="NextPaymentDueDate" type="xsd:dateTime" minOccurs="0" nillable="true"/>
+        //        <xsd:element name="IsActive" type="cmn:vchar1" minOccurs="0" nillable="true"/>
+        //        <xsd:element name="RecordVersion" type="xsd:base64Binary" nillable="true" minOccurs="0"/>
+  -->
+  
+</objects>

@@ -1,0 +1,4 @@
+<div class="small-12 medium-6 columns padding-top js-ccp-graph" id="CCPGraph">
+    
+    <div class="js-ccp-graph ccp-graph" id="js-ccp-chart" {display}></div>
+</div>

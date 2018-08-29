@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title=""  description="">
+    <siteMapNode url="~/Loans/" title="Crunch your numbers"  description="" />
+    <siteMapNode url="~/LoanInfo" title="Demystify Student Loans"  description="Demystify Student Loans"  >
+    </siteMapNode>
+    <siteMapNode url="~/MyMoney101/SignIn" title="get money smart"  description="" />
+    <siteMapNode url="~/Benefits" title="Find benefits and deals"  description="" />
+    <siteMapNode url="~/Benefits/ContactUs" title="contact us"  description="" />
+  </siteMapNode>
+</siteMap>

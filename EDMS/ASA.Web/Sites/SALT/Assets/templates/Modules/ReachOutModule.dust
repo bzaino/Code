@@ -1,0 +1,39 @@
+{@if cond="'{showLiveChatVal}' == 'sponsored' || '{showLiveChatVal}' == 'auth' || '{showLiveChatVal}' == 'all'"}
+    <div class="small-12 columns js-reachout-module">
+        {@if cond="'{showLiveChatVal}' == 'all'"}
+            {?usePanelBackground}
+                <div class="row collapse panel help-panel hide-for-medium-down">
+            {/usePanelBackground}
+            {>"Modules/LiveChatReachOut" /}
+        {/if}
+        {@if cond="'{showLiveChatVal}' == 'auth'"}
+            {?SiteMember.ActiveDirectoryKey}
+                {?usePanelBackground}
+                    <div class="row collapse panel help-panel hide-for-medium-down">
+                {/usePanelBackground}
+                {>"Modules/LiveChatReachOut" /}
+            {/SiteMember.ActiveDirectoryKey}
+        {/if}
+        {@if cond="'{showLiveChatVal}' == 'sponsored'"}
+            {?SiteMember.ActiveDirectoryKey}
+                {?SiteMember.MemberShipFlag}
+                    {?usePanelBackground}
+                        <div class="row collapse panel help-panel hide-for-medium-down">
+                    {/usePanelBackground}
+                    {>"Modules/LiveChatReachOut" /}
+                {/SiteMember.MemberShipFlag}
+            {/SiteMember.ActiveDirectoryKey}
+        {/if}
+    </div>
+    <script>
+        require(['modules/ReachOut', 'jquery'], function (reachOutModule, $) {
+            $(document).ready(function () {
+                reachOutModule.init($('#content'));
+            });
+            if(!($('.js-reachout-module').children().length)) {
+                $('#js-support-btn').addClass('hide');
+                $('#rendered-content, .salt-header').addClass('no-support-panel');
+            }
+        });
+    </script>
+{/if}

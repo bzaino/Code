@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson3" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson3" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" />
+  <xs:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Lesson3Contract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DefermentOptions" nillable="true" type="tns:DefermentContract" />
+      <xs:element minOccurs="0" name="FasterRepaymentOptions" nillable="true" type="tns:FasterRepaymentContract" />
+      <xs:element minOccurs="0" name="FavoriteRepaymentPlans" nillable="true" type="tns:ArrayOfFavoriteRepaymentPlanContract" />
+      <xs:element minOccurs="0" name="LoanTypes" nillable="true" type="tns:ArrayOfLoanTypeContract" />
+      <xs:element minOccurs="0" name="LowerPaymentOptions" nillable="true" type="tns:LowerPaymentContract" />
+      <xs:element minOccurs="0" name="StandardRepaymentOptions" nillable="true" type="tns:StandardRepaymentContract" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" minOccurs="0" name="User" nillable="true" type="q1:MemberLessonContract" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="Lesson3Contract" nillable="true" type="tns:Lesson3Contract" />
+  <xs:complexType name="DefermentContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Forbearance" nillable="true" type="tns:ForbearanceContract" />
+      <xs:element minOccurs="0" name="HardshipDeferment" nillable="true" type="tns:HardshipDefermentContract" />
+      <xs:element minOccurs="0" name="InSchoolDeferment" nillable="true" type="tns:InSchoolDefermentContract" />
+      <xs:element minOccurs="0" name="LessonUserId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DefermentContract" nillable="true" type="tns:DefermentContract" />
+  <xs:complexType name="ForbearanceContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ForbearanceMonths" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ForbearanceContract" nillable="true" type="tns:ForbearanceContract" />
+  <xs:complexType name="HardshipDefermentContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DefermentMonths" type="xs:int" />
+      <xs:element minOccurs="0" name="ExtraAmount" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HardshipDefermentContract" nillable="true" type="tns:HardshipDefermentContract" />
+  <xs:complexType name="InSchoolDefermentContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DefermentMonths" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InSchoolDefermentContract" nillable="true" type="tns:InSchoolDefermentContract" />
+  <xs:complexType name="FasterRepaymentContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AdditionalMonthlyPayment" nillable="true" type="tns:AdditionalPaymentContract" />
+      <xs:element minOccurs="0" name="BetterInterestRate" nillable="true" type="tns:BetterInterestRateContract" />
+      <xs:element minOccurs="0" name="LessonUserId" type="xs:int" />
+      <xs:element minOccurs="0" name="LoanPaymentTimeline" nillable="true" type="tns:CustomTimelineContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FasterRepaymentContract" nillable="true" type="tns:FasterRepaymentContract" />
+  <xs:complexType name="AdditionalPaymentContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MonthlyPayment" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AdditionalPaymentContract" nillable="true" type="tns:AdditionalPaymentContract" />
+  <xs:complexType name="BetterInterestRateContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LowerInterestRate" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BetterInterestRateContract" nillable="true" type="tns:BetterInterestRateContract" />
+  <xs:complexType name="CustomTimelineContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Timeline" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomTimelineContract" nillable="true" type="tns:CustomTimelineContract" />
+  <xs:complexType name="ArrayOfFavoriteRepaymentPlanContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FavoriteRepaymentPlanContract" nillable="true" type="tns:FavoriteRepaymentPlanContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFavoriteRepaymentPlanContract" nillable="true" type="tns:ArrayOfFavoriteRepaymentPlanContract" />
+  <xs:complexType name="FavoriteRepaymentPlanContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="RepaymentPlan" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FavoriteRepaymentPlanContract" nillable="true" type="tns:FavoriteRepaymentPlanContract" />
+  <xs:complexType name="ArrayOfLoanTypeContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LoanTypeContract" nillable="true" type="tns:LoanTypeContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLoanTypeContract" nillable="true" type="tns:ArrayOfLoanTypeContract" />
+  <xs:complexType name="LoanTypeContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AnnualIncome" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DegreeType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FinancialDependents" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="InterestRate" type="xs:decimal" />
+      <xs:element minOccurs="0" name="LessonUserId" type="xs:int" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoanTypeContract" nillable="true" type="tns:LoanTypeContract" />
+  <xs:complexType name="LowerPaymentContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ExtendedRepayment" nillable="true" type="tns:ExtendedRepaymentContract" />
+      <xs:element minOccurs="0" name="IncomeBasedRepayment" nillable="true" type="tns:IncomeBasedRepaymentContract" />
+      <xs:element minOccurs="0" name="IncomeSensitiveRepayment" nillable="true" type="tns:IncomeSensitiveRepaymentContract" />
+      <xs:element minOccurs="0" name="LessonUserId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LowerPaymentContract" nillable="true" type="tns:LowerPaymentContract" />
+  <xs:complexType name="ExtendedRepaymentContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ExtensionYears" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExtendedRepaymentContract" nillable="true" type="tns:ExtendedRepaymentContract" />
+  <xs:complexType name="IncomeBasedRepaymentContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnnualIncome" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FinancialDependents" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IncomeBasedRepaymentContract" nillable="true" type="tns:IncomeBasedRepaymentContract" />
+  <xs:complexType name="IncomeSensitiveRepaymentContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnnualIncome" type="xs:decimal" />
+      <xs:element minOccurs="0" name="IncomePercentage" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IncomeSensitiveRepaymentContract" nillable="true" type="tns:IncomeSensitiveRepaymentContract" />
+  <xs:complexType name="StandardRepaymentContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LessonUserId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StandardRepaymentContract" nillable="true" type="tns:StandardRepaymentContract" />
+  <xs:complexType name="RepaymentOptionsContract">
+    <xs:sequence />
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="RepaymentOptionsContract" nillable="true" type="tns:RepaymentOptionsContract" />
+</xs:schema>

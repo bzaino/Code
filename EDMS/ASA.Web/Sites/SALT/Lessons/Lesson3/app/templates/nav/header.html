@@ -1,0 +1,76 @@
+<div class="bottom"></div>
+<div id="header-content">
+  <div class="header clearfix" id="header-left">
+    <h1 id="logo">
+      <a href="/">$alt</a>
+    </h1>
+    <div class="user-info">
+      <div class="user-info-content clearfix hidden">
+        <div class="fb-profile">
+          <img alt="fb picture" class="image" src="/Assets/images/lessons/lesson3/global/fb-profile.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header clearfix" id="header-center">
+    <span class="step step1">Step <%= currentStep %></span>
+    <span class="of">of</span>
+    <span class="step step2"><%= stepsLength %></span>
+    <span class="slash">/</span>
+    <span class="chapter"><%= stepName %></span>
+    <div id="header-dropdown">
+      <ul>
+        <li><a href="/step/1">go to step 1 </a></li>
+        <li><a href="/step/2">go to step 2 </a></li>
+        <li><a href="/step/3">go to step 3 </a></li> 
+        <li><a href="/step/4">go to step 4 </a></li>
+        <li><a href="/step/5">go to step 5 </a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="header clearfix" id="header-right">
+    <a class="save-and-exit" href="/">Save &amp; Exit</a>
+    <a href="/Account/LogOn" id="loginSubmit" class="visuallyhidden unauthenticatedUser__logonButton cboxElement loginButton" rel="tall">Log On</a>
+  </div>
+</div>
+<div id="header-progress">
+  <div class="progress"></div>
+</div>
+
+<div class="confirm-overlay" id="preload-data">
+  <div class="overlay-content">
+    <h1>Whoa, there!</h1>
+    <p>We’ve saved the data you entered last time you were here. Do you want us to import that for you and pick up where you left off?</p>
+  </div>
+  <div class="buttons clearfix">
+    <a class="yes" href="#" title="Yes, keep going">Yes, keep going</a>
+    <a class="no" href="#" title="No, start over">No, start over</a>
+  </div>
+</div>
+
+
+<div class="confirm-overlay" id="save-exit">
+  <div class="overlay-content">
+    <h1>Whoa, there!</h1>
+    <p>Are you sure you want to exit?</p>
+  </div>
+  <div class="buttons clearfix">
+    <a class="yes" href="#" title="Yes, keep going">Yes, exit</a>
+    <a class="no" href="#" title="No, start over">No, keep going!</a>
+  </div>
+</div>
+
+<div class="confirm-overlay" id="bookmark">
+  <div class="overlay-content">
+    <h1>Hold up!</h1>
+    <p class="favorites">
+      Star the plans you think are good for you and we’ll present them at the end for comparison
+    </p>
+    <p>– Think about the short-term benefits against the long-term cost</p>
+    <p>– Remember that we don’t have all your details, so the numbers you’ll see are for illustrative purposes</p>
+  </div>
+  <div class="buttons clearfix">
+    <a class="ok" href="#" title="Ok, got it">Ok, got it</a>
+  </div>
+</div>

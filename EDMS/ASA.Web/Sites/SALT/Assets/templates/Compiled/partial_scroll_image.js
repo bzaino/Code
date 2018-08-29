@@ -1,0 +1,1 @@
+define(["dust"], function(dust) { (function(){dust.register("partial_scroll_image",body_0);function body_0(chk,ctx){return chk.write("<div class=\"scroll-button\"><input class=\"js-scroll-top-button scroll-to-top\" type=\"button\" /></div>");}return body_0;})(); });

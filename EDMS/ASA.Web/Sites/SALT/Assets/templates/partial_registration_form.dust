@@ -1,0 +1,266 @@
+<script>
+    require([
+        'salt',
+        'jquery',
+        'salt/registration',
+        'salt/pschecker',
+        'modules/overlays',
+        'salt/analytics/webtrends'
+    ], function (SALT, $) {
+        $(function () {
+            if ($(window).width() > 640 && !$('.js-reg-overlay-identifier').length) {
+               SALT.publish('Registration:Start');
+               $('#FirstName').focus();
+            } else {
+                $('#FirstName').one('focus', function (e) {
+                    if (!$('.js-reg-overlay-identifier').length) {
+                      SALT.publish('Registration:Start');
+                    }
+                });
+            }
+        });
+        window.regWTTag = $('meta[name="regWTTag"]').attr("content") || 'Member Registration';
+        {?configuration.CurrentSchool}{^configuration.IsSchool} $('.js-organization.js-firstAffiliation.js-SCHL').find('.yearDropdown').prop('required', false); {/configuration.IsSchool}{/configuration.CurrentSchool}
+    });
+</script>
+<div class="subcontent">
+    <div class="row ">
+        <div class="small-11 columns">
+            <header>
+                <h2>Create Your Free Account</h2>
+            </header>
+        </div>
+    </div>
+
+    <form action="" autocomplete="off" id="regForm" method="post" name="regForm" data-abide="ajax">
+        <div class="row">
+            <div class="small-6  columns reg-first-name">
+                  <input type="text" pattern="alpha" id="FirstName" placeholder="First Name" name="FirstName" tabindex="1" required/>
+                  {>"ErrorMessages/name" /}
+            </div>
+            <div class="small-6 columns reg-last-name">
+                <input type="text" pattern="alpha" id="LastName" placeholder="Last Name"  name="LastName" value="" tabindex="1" required/>
+                {>"ErrorMessages/name" /}
+            </div>
+        </div>
+        <div class="password-container row">
+            <div class="small-12 columns reg-email" >
+                <input id="EmailAddress" placeholder="Email" name="EmailAddress" type="text" pattern="email" data-tooltip data-options="disable_for_touch:true" class=" has-tip tip-top" title="This will be your Salt username." tabindex="1" required />
+                {>"ErrorMessages/username" /}
+            </div>
+            <div class="meter-txt small-12 columns reg-password relative">
+                <span class="meter-txt"></span>
+                <input id="Password" placeholder="Password" class="strong-password meter has-tip tip-top" data-tooltip data-options="disable_for_touch:true" title="Your password must be at least eight characters. We recommend mixing letters, numbers, and special characters to increase its security." type="password" name="Password" pattern="password" tabindex="1" required/> <div class="js-pw-show-hide pw-show-hide"><small><a class="js-show-hide-text js-void-href" href="" tabindex="1" >Show</a></small></div>
+                {>"ErrorMessages/password" /}
+            </div>
+            <p><span class="error-msg small error"></span></p>
+            <input id="OECode" name="OECode" type="hidden" value=""/>
+        </div>
+        <div class="row">
+            <div class="small-12 columns reg-yob">
+                <div class="styled-select">
+                    <select id="YearOfBirth" name="YearOfBirth" required tabindex="1">
+                        <option value="">Year Of Birth</option>
+                        {@yearDropdown startYear="-5" range="-104" /}
+                    </select>
+                    {>"ErrorMessages/Age" /}
+                </div>
+            </div>
+        </div> 
+        <div class="row padding-top">
+            <div id="AffiliationSection" class="reg-school-search small-12 columns">
+                <h3 class="js-select-aff-msg">Select Your Affiliations <em>(up to two)</em></h3>
+                <div id="rb-container" class="row padding-bottom collapse{?configuration.CurrentSchool} hidden{/configuration.CurrentSchool}">
+                    <div class="small-4 columns margin-right-adj">
+                      <input type="radio" {?configuration.CurrentSchool}{?configuration.IsSchool} CHECKED {/configuration.IsSchool}{:else} CHECKED {/configuration.CurrentSchool}name="affiliationRadioBtn" id="School" tabindex="1" value="School" class="css-checkbox"/>
+                      <label class="{?rapidRegCssLabel}{rapidRegCssLabel}{:else}css-label{/rapidRegCssLabel}" for="School">School</label>
+                    </div>
+                   <div class="small-4 columns">
+                      <input type="radio" {?configuration.CurrentSchool}{^configuration.IsSchool} CHECKED {/configuration.IsSchool}{/configuration.CurrentSchool}name="affiliationRadioBtn" id="Organization" tabindex="1" value="Organization" class="css-checkbox"/>
+                      <label class="{?rapidRegCssLabel}{rapidRegCssLabel}{:else}css-label{/rapidRegCssLabel}" for="Organization">Organization</label>
+                    </div>
+                    <div class="small-4 columns margin-right-adj2">
+                      <input type="radio" name="affiliationRadioBtn" id="Neither" tabindex="1" value="Neither" class="css-checkbox"/>
+                      <label class="{?rapidRegCssLabel}{rapidRegCssLabel}{:else}css-label{/rapidRegCssLabel}" for="Neither">Neither</label>
+                    </div>
+                </div>
+                <div class="js-organization js-firstAffiliation js-SCHL {?configuration.CurrentSchool}{^configuration.IsSchool}hidden{/configuration.IsSchool}{/configuration.CurrentSchool}">
+                  <div class="row collapse">
+                    <div class="small-12 columns">
+                        <div class="js-organization-search">
+                            <div>
+                                <input id="qa-sch-1" type="text" autocomplete="off" class="has-tip tip-top SCHL organizationFilter js-org" name="organizationFilter" value="{?configuration.IsSchool}{configuration.CurrentSchool}{/configuration.IsSchool}" tabindex="1" placeholder="School Name" data-tooltip data-options="disable_for_touch:true" title="Access special content and benefits based on our partnership with your school." data-abide-validator="organizationLookup"/>
+                                {>"ErrorMessages/organizationName" organizationValidation="a school"/}
+                            </div>
+                            <input class="OEBranch" name="OEBranch" type="hidden" value="{?configuration.CurrentSchool}{?configuration.IsSchool}{configuration.OEBranch}{/configuration.IsSchool}{/configuration.CurrentSchool}"/>
+                            <input class="OECode" name="OECode" type="hidden" value="{?configuration.CurrentSchool}{?configuration.IsSchool}{configuration.OECode}{/configuration.IsSchool}{/configuration.CurrentSchool}" />
+                            <input class="SchoolType" name="SchoolType" type="hidden" value="" />
+                            <input class="OrganizationId" name="OrganizationId" type="hidden" value="{?configuration.CurrentSchool}{?configuration.IsSchool}{configuration.OrgId}{/configuration.IsSchool}{/configuration.CurrentSchool}" />
+                        </div>
+                    </div>
+                  </div>
+                  <div class="row collapse">
+                      <div class="small-12 columns">
+                        <div class="styled-select">
+                          <select id="qa-sch-yr-1" class="yearDropdown js-org" name="GraduationDate" required tabindex="1">
+                              <option value="">Graduation Year</option>
+                              {@yearDropdown startYear="15" range="-99" gradDate="{.ExpectedGraduationYear}" /}
+                              <option value="1900" {@checkGradYear gradDate="{ExpectedGraduationYear}" /}>Unknown</option>
+                          </select>
+                          {>"ErrorMessages/GradDate" /}
+                        </div>
+                      </div>
+                  </div>
+                  {?configuration.CurrentSchool}
+                    {?configuration.IsSchool}
+                      {>"partial_organization_remove_button" tabIndex="1" class="" /}
+                    {:else}
+                      {>"partial_organization_remove_button" tabIndex="1" class="padding-top" /}
+                    {/configuration.IsSchool}
+                  {:else}
+                    {>"partial_organization_remove_button" tabIndex="1" class="hidden" /}
+                  {/configuration.CurrentSchool}
+                    <h3 class="js-pre-popped-msg hidden">Add a Second Affiliation <em>(if applicable)</em></h3>
+                </div>
+                <div class="js-organization js-firstAffiliation js-WELL {?configuration.CurrentSchool}{?configuration.IsSchool}hidden{/configuration.IsSchool}{:else}hidden{/configuration.CurrentSchool}">
+                  <div class="row collapse">
+                    <div class="small-12 columns">
+                        <div class="js-organization-search">
+                            <div>
+                              <input id="qa-org-1" type="text" autocomplete="off" class="has-tip tip-top WELL organizationFilter js-org no-bottom-margin" name="organizationFilter"  tabindex="1" value="{^configuration.IsSchool}{configuration.CurrentSchool}{/configuration.IsSchool}"  placeholder="Organization Name" data-tooltip data-options="disable_for_touch:true" title="Access special content and benefits based on our partnership with your community organization, credit union, or college access institution." data-abide-validator="organizationLookup"/>
+                              {>"ErrorMessages/organizationName" organizationValidation="an organization"/}
+                            </div>
+                            <input class="OEBranch" name="OEBranch" type="hidden" value="{?configuration.CurrentSchool}{^configuration.IsSchool}{configuration.OEBranch}{/configuration.IsSchool}{/configuration.CurrentSchool}"/>
+                            <input class="OECode" name="OECode" type="hidden" value="{?configuration.CurrentSchool}{^configuration.IsSchool}{configuration.OECode}{/configuration.IsSchool}{/configuration.CurrentSchool}" />
+                            <input class="SchoolType" name="SchoolType" type="hidden" value="" />
+                            <input class="OrganizationId" name="OrganizationId" type="hidden" value="{?configuration.CurrentSchool}{^configuration.IsSchool}{configuration.OrgId}{/configuration.IsSchool}{/configuration.CurrentSchool}" />
+                        </div>
+                    </div>
+                  </div>
+                  {?configuration.CurrentSchool}
+                    {?configuration.IsSchool}
+                      {>"partial_organization_remove_button" tabIndex="1" class="hidden padding-top" /}
+                    {:else}
+                      {>"partial_organization_remove_button" tabIndex="1" class=" padding-top" /}
+                    {/configuration.IsSchool}
+                  {:else}
+                    {>"partial_organization_remove_button" tabIndex="1" class="hidden padding-top" /}
+                  {/configuration.CurrentSchool}
+                    <h3 class="js-pre-popped-msg hidden">Add a Second Affiliation <em>(if applicable)</em></h3>
+                </div>
+                
+                <div id="noAffiliationInfo" class="hidden">
+                   <p class="small-i">You can always add a school or organization later to access special content and benefits.</p>
+                </div>
+                {?configuration.CurrentSchool}
+                  {?configuration.IsSchool}
+                    {>"partial_organization_add_button" tabIndex="1" initialVisibility="hidden"/}
+                  {:else}
+                    {>"partial_organization_add_button" tabIndex="1" initialVisibility=""/}
+                  {/configuration.IsSchool}
+                {:else}
+                  {>"partial_organization_add_button" tabIndex="1" initialVisibility="hidden"/}
+                {/configuration.CurrentSchool}
+            </div>
+        </div>
+        <div class="row padding-top">
+            <div class="small-12 columns">
+                <input type="checkbox" checked="checked" name="myContactPref" id="myContactPref" class="css-checkbox" value="true" tabindex="1"/>
+                <label for="myContactPref" class="{?rapidRegCssLabel}{rapidRegCssLabel}{:else}css-label{/rapidRegCssLabel}">
+                    <p><small>Send me tips and guidance about money.</small></p>
+               </label>
+            </div>
+       </div>
+        <div class="row reg-agree padding-top">
+            <div class="small-12 columns">
+                 <input id="AcceptTerms" name="AcceptTerms" type="checkbox" class="css-checkbox" required tabindex="1" />
+                 <label for="AcceptTerms" class="{?rapidRegCssLabel}{rapidRegCssLabel}{:else}css-label{/rapidRegCssLabel}">
+                    <p><small>
+                        By selecting 'Sign Up',  I acknowledge that I have read and agree to Salt's <a href="/Home/terms.html" tabindex="1" target="_blank" onclick="dcsMultiTrack('WT.z_type','Link Clicks','WT.z_name','Internal Page Link','WT.z_action','/Home/terms.html');">Terms Of Use</a> and <a href="/Home/privacy.html" tabindex="1" target="_blank" onclick="dcsMultiTrack('WT.z_type','Link Clicks','WT.z_name','Internal Page Link','WT.z_action','/Home/privacy.html');">Privacy Policy</a>.
+                    </small></p>
+                 </label>
+                 {>"ErrorMessages/terms" /}
+                <div class="error server-error js-server-error-text" id="regErrorCode"> </div>
+                <div class="hidden error server-error" id="email-reused" name="email-reused">
+                     Please log in <a href="" class="js-void-href loginButton" data-window-shade="loginOverlay">here</a> or reset your password <a class="forgotPassButton js-void-href" data-window-shade="forgotPasswordOverlay" href="">here</a>.
+                </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="small-12  columns reg-submit">
+                <button class="button base-btn main-btn registrationSubmit" type="submit"  tabindex="1" onclick="dcsMultiTrack('WT.z_type','Tool Usage', 'WT.si_n', regWTTag, 'WT.z_actname', '', 'WT.z_acttype', '', 'WT.z_acttx', '', 'WT.si_x', '12');" disabled><span>{?btnRegSpecialEventText}{btnRegSpecialEventText}{:else}Sign Up{/btnRegSpecialEventText}</span>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-12 columns already-registered">
+                <small class="show-on-overlay">Need help? <a href="/home/contact.html" tabindex="1" >Contact Us</a>.</small>
+                <small>Already registered? 
+                <a data-window-shade="loginOverlay" href="" class="js-void-href registrationOverlay-link loginButton" tabindex="1">Log in</a>
+                <!-- SWD-7217 Route 'small screen' users to logon page instead of logon overlay -->
+                <a href="/logon" class="registration-link" tabindex="1">Log in</a>.</small>
+            </div>
+        </div>
+        <input id="inviteToken" name="inviteToken" type="hidden" value=""/>
+        <input id="IndividualId" name="IndividualId" type="hidden" value=""/>
+        <input id="SpecialEvent" name="SpecialEvent" type="hidden" value=""/>
+        <input id="OEBranch" name="OEBranch" type="hidden" value=""/>
+        <input id="OrganizationId" name="OrganizationId" type="hidden" value=""/>
+        <input class="regCheck" name="AcceptTerms" type="hidden" value="false" />
+        <input id="registration-source" name="Source" type="hidden" value="{RegistrationSource}" />
+    </form>
+    <div class="affiliationTemplates hidden">
+          <div class="schoolAddTemplate">
+              <div class="js-organization js-newAffiliation js-SCHL">
+                  <div class="row collapse">
+                      <div class="small-12 columns">
+                          <div class="js-organization-search">
+                              <div>
+                                <input type="text" autocomplete="off" tabindex="1" class="no-bottom-margin has-tip tip-top SCHL organizationFilter js-org" data-options="disable_for_touch:true" name="organizationFilter" value=""  placeholder="School Name" data-tooltip title="Access special content and benefits based on our partnership with your school." data-abide-validator="organizationLookup"/>
+                                {>"ErrorMessages/organizationName" organizationValidation="a school"/}
+                              </div>
+                              <input class="OEBranch" name="OEBranch" type="hidden" value=""/>
+                              <input class="OECode" name="OECode" type="hidden" value="" />
+                              <input class="SchoolType" name="SchoolType" type="hidden" value="" />
+                              <input class="OrganizationId" name="OrganizationId" type="hidden" value="" />
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Grad Year new school-->
+                  <div class="row padding-top collapse">
+                      <div class="small-12 columns">
+                          <div class="styled-select">
+                              <select class="yearDropdown js-org" name="GraduationDate" required tabindex="1">
+                                <option value="">Graduation Year</option>
+                                  {@yearDropdown startYear="15" range="-99" gradDate="{.ExpectedGraduationYear}" /}
+                                <option value="1900" {@checkGradYear gradDate="{ExpectedGraduationYear}" /}>Unknown</option>
+                                </select>
+                                {>"ErrorMessages/GradDate" /}
+                          </div>
+                      </div>
+                  </div>
+                   {>"partial_organization_remove_button" tabIndex="1" /}
+              </div>
+          </div>
+          <div class="organizationAddTemplate">
+              <div class="js-organization js-newAffiliation js-WELL">
+                  <div class="row collapse">
+                      <div class="small-12 columns">
+                          <div class="js-organization-search">
+                              <div>
+                                  <input type="text" autocomplete="off" tabindex="1" class="no-bottom-margin has-tip tip-top WELL organizationFilter js-org" data-options="disable_for_touch:true" name="organizationFilter" value="" placeholder="Organization Name" data-tooltip title="Access special content and benefits based on our partnership with your community organization, credit union, or college access institution." data-abide-validator="organizationLookup"/>
+                                  {>"ErrorMessages/organizationName" organizationValidation="an organization"/}
+                              </div>
+                              <input class="OEBranch" name="OEBranch" type="hidden" value=""/>
+                              <input class="OECode" name="OECode" type="hidden" value="" />
+                              <input class="SchoolType" name="SchoolType" type="hidden" value="" />
+                              <input class="OrganizationId" name="OrganizationId" type="hidden" value="" /> 
+                          </div>
+                       </div>
+                  </div>
+                  {>"partial_organization_remove_button" tabIndex="1" class="padding-top"/}
+              </div>
+          </div>
+    </div>
+</div>
+{>"Overlays/RegistrationStatus" /}

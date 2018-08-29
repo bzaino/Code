@@ -1,0 +1,7 @@
+File Name                    	UPDATED       	URI									ReleaseNotes							Documentation
+====================================================================================================================================================================================================================================
+additional-methods.js		9-30-2011	http://jquery.bassistance.de/validate/jquery-validation-1.8.1.zip	http://jquery.bassistance.de/validate/changelog.txt		http://docs.jquery.com/Plugins/Validation
+additional-methods.min.js	9-30-2011	""									""								""
+jquery.validate.js		9-30-2011	""									""								""
+jquery.validate.min.js		9-30-2011	""									""								""
+jquery.validate-vsdoc.js	9-30-2011	""									""								""

@@ -1,0 +1,14 @@
+{! used on the profile page for reporting id - there is another one for reportingId overlay!}
+<div id="js-profile-reporting-id-row" class="js-profile-reporting-id-row js-toggle{OrganizationId}" {class}>
+	<div class="row no-bottom-margin">
+		<div class="small-12 medium-6 columns">
+			<label for="reporting-id{OrganizationId}" class="labelText organization-name">{OrganizationName}</label>
+		</div>
+	    <div class="small-12 medium-6 columns">
+			<input id="reporting-id{OrganizationId}" class="js-profile-reporting-id" name="reporting-id{OrganizationId}" type="text" pattern="reporting_id" value="{ReportingId}" tabindex="2"/>
+		    {>"ErrorMessages/ReportingID"/}
+		</div>
+	    <input id="organization-id" class="js-profile-organization-id" name="organization-id" type="hidden" value="{OrganizationId}" />
+	    <div><label id="lblerrorMsg" text ='' ></label></div>
+	 </div>
+</div>

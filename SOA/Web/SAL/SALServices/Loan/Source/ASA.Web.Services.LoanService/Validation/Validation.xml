@@ -1,0 +1,8 @@
+﻿<objects xmlns="http://www.springframework.net" xmlns:v="http://www.springframework.net/validation">
+  
+  <!-- This is where Spring.NET validators for LoanModel objects will go if we ever need it. -->
+    <object name="SSNExpression" type="String">
+        <constructor-arg value="^\d{3}[- ]?\d{2}[- ]?\d{4}$"/>
+    </object>
+  
+</objects>

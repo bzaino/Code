@@ -1,0 +1,15 @@
+<li class="boldText row collapse widget-row">
+    <a class="small-8 columns scroll-top" href="#RepaymentStandard1">Standard (10 Years)</a><span class="small-4 columns widgetGrayText text-right upperCase">{RepaymentStandard}</span>
+</li>
+<li class="boldText row collapse widget-row">
+    <a class="small-8 columns scroll-top" href="#RepaymentHHI-HHS">Income Driven (Varies)</a><span class="small-4 columns widgetGrayText text-right upperCase">{IncomeDriven}</span>
+</li>
+<li class="boldText row collapse widget-row">
+    <a class="small-8 columns scroll-top" href="#RepaymentExtended1">Extended (25 Years)</a><span class="small-4 columns widgetGrayText text-right upperCase">{RepaymentExtended}</span>
+</li>
+<li class="boldText row collapse widget-row">
+    <a class="small-8 columns scroll-top" href="#RepaymentGraduated1">Graduated (10 Years)</a><span class="small-4 columns widgetGrayText text-right upperCase">{RepaymentGraduated}</span>
+</li>
+<li class="boldText row collapse widget-row">
+    <a class="small-8 columns scroll-top" href="#Consolidation">Consolidation (Varies)</a><span class="small-4 columns widgetGrayText text-right upperCase">{Consolidation}</span>
+</li>

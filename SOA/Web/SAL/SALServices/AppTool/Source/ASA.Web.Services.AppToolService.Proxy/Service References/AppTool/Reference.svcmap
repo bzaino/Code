@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b655e17f-68b5-41e0-ac74-8cff1ceefe5c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://adevweb014.amsa.com/AppToolService/AppToolService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AppToolService9.xsd" MetadataType="Schema" ID="d3829a3a-cf0c-4f84-8bb2-5f188ffbd897" SourceId="1" SourceUrl="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?xsd=xsd6" />
+    <MetadataFile FileName="AppTool1.wsdl" MetadataType="Wsdl" ID="93a4e8ea-8444-40e2-a216-3fd09d19f5ab" SourceId="1" SourceUrl="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?wsdl" />
+    <MetadataFile FileName="AppToolService91.xsd" MetadataType="Schema" ID="0876ef9c-8daf-49bd-8693-ffd24e00da78" SourceId="1" SourceUrl="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?xsd=xsd8" />
+    <MetadataFile FileName="AppToolService92.xsd" MetadataType="Schema" ID="beceb01f-fa41-499f-aed9-7b802466b62c" SourceId="1" SourceUrl="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?xsd=xsd7" />
+    <MetadataFile FileName="AppToolService93.xsd" MetadataType="Schema" ID="79363056-a248-465a-9dfd-4edf51f40f58" SourceId="1" SourceUrl="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?xsd=xsd4" />
+    <MetadataFile FileName="AppToolService94.xsd" MetadataType="Schema" ID="54bec85f-d694-4646-ad26-ed5658b4032a" SourceId="1" SourceUrl="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?xsd=xsd0" />
+    <MetadataFile FileName="AppToolService95.xsd" MetadataType="Schema" ID="69293f90-49ad-401a-b9d3-ba9a23914cab" SourceId="1" SourceUrl="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?xsd=xsd1" />
+    <MetadataFile FileName="AppToolService96.xsd" MetadataType="Schema" ID="81dca28d-f4ba-44fc-af4c-7cf61c9dcb60" SourceId="1" SourceUrl="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?xsd=xsd2" />
+    <MetadataFile FileName="AppToolService97.xsd" MetadataType="Schema" ID="ff5091f9-9967-48c9-b1ab-9e0a5e2830cd" SourceId="1" SourceUrl="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?xsd=xsd3" />
+    <MetadataFile FileName="AppToolService1.disco" MetadataType="Disco" ID="2ea6d994-d85b-427d-9584-d622bd255a7e" SourceId="1" SourceUrl="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?disco" />
+    <MetadataFile FileName="AppToolService98.xsd" MetadataType="Schema" ID="24c0a0d0-d47d-4408-8b54-1584e245bc1c" SourceId="1" SourceUrl="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

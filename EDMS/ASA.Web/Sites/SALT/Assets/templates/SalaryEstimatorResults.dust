@@ -1,0 +1,29 @@
+Students who complete a <b>{MajorText}</b> graduate degree from {SchoolText} in {StateText} earn an average starting salary of:
+<br><br>
+<h4 class="row collapse">
+    <span class="small-8 columns">
+        Average Salary
+    </span>
+    <span class="small-3 columns">
+        $<span class='finalAverage emphasis'></span>
+    </span>
+</h4>
+<br>
+Here are some of the most common jobs and salaries that new graduates of this program typically have:
+<br>
+<hr>
+{#JSIQuizList}
+    <h4 class="row collapse">
+        <span class="small-8 columns">
+            {OccupationName}
+            <br>
+            <br>
+        </span>
+        <span class="small-3 columns right">
+            $<span class="average emphasis">{EstimatedSalaryAmount}</span>
+            <br>
+            <br>
+        </span>
+        <hr>
+    </h4>
+{/JSIQuizList}

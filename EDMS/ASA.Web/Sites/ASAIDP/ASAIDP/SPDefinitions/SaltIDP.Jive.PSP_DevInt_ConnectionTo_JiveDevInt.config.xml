@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PartnerConfig PartnerName="SaltIDP/Jive/PSP_DevInt_ConnectionTo_JiveDevInt">
+
+  <LoggedOutPage>~/</LoggedOutPage>
+
+  <EncryptionKey>1b652e26331c9098af3f9d9c54e4df3a</EncryptionKey>
+  <EncryptionType>AES128</EncryptionType>
+  
+  <IDPURL>https://asa.ssoexchange.com/saml-idp/idp/saml2/SSOService/DevIntSaltIDP</IDPURL>
+  <IDPLogoutURL>https://asa.ssoexchange.com/saml-idp/idp/saml2/LogoutService/DevIntSaltIDP</IDPLogoutURL>
+  
+  <TokenTimeout>500</TokenTimeout>
+
+  <IDVerifierName>ASAIDP.SSO.Plugins.SiteMemberPlugin</IDVerifierName>
+
+</PartnerConfig>

@@ -1,0 +1,12 @@
+<div class="row left">
+	<div class="small-3 small-offset-5 medium-2 medium-offset-8 columns">
+	    <a class="js-delete-loan loan-delete-link back js-void-href" href="">
+	    	Delete
+	    </a>
+	</div>
+	<div class="small-4 medium-2 columns">
+		<button type="submit" class="js-save-loan-button button base-btn main-btn right">
+			Save
+		</button>
+	</div>
+</div>

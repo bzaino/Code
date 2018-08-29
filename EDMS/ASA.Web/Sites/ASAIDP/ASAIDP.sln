@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASAIDP", "ASAIDP\ASAIDP.csproj", "{FC142421-745E-4F83-BACD-FC8C34929259}"
+	ProjectSection(ProjectDependencies) = postProject
+		{56EBD781-9C34-4F8E-8288-F0386B8CB923} = {56EBD781-9C34-4F8E-8288-F0386B8CB923}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASAIDP.Tests", "ASAIDP.Tests\ASAIDP.Tests.csproj", "{739BC2FE-3B29-4CC1-838B-17B3D9A2104F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SALTCoursesWSClient", "SALTCoursesWSClient\SALTCoursesWSClient.csproj", "{56EBD781-9C34-4F8E-8288-F0386B8CB923}"
+	ProjectSection(ProjectDependencies) = postProject
+		{10A3B223-354D-4FDF-B863-17756ADFD5AE} = {10A3B223-354D-4FDF-B863-17756ADFD5AE}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SALTCoursesWSClient.Tests", "SALTCoursesWSClient.Tests\SALTCoursesWSClient.Tests.csproj", "{D5485D97-6454-4A1B-9640-EE18405343E9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{56EBD781-9C34-4F8E-8288-F0386B8CB923} = {56EBD781-9C34-4F8E-8288-F0386B8CB923}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpsRequestWrapper", "..\..\HttpsRequestWrapper\HttpsRequestWrapper.csproj", "{10A3B223-354D-4FDF-B863-17756ADFD5AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASA.Web.Common", "..\..\Common\ASA.Web.Common.csproj", "{78A826B1-E5DB-4E4C-ACB9-2039272EFE9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC142421-745E-4F83-BACD-FC8C34929259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC142421-745E-4F83-BACD-FC8C34929259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC142421-745E-4F83-BACD-FC8C34929259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC142421-745E-4F83-BACD-FC8C34929259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{739BC2FE-3B29-4CC1-838B-17B3D9A2104F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{739BC2FE-3B29-4CC1-838B-17B3D9A2104F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{739BC2FE-3B29-4CC1-838B-17B3D9A2104F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{739BC2FE-3B29-4CC1-838B-17B3D9A2104F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56EBD781-9C34-4F8E-8288-F0386B8CB923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56EBD781-9C34-4F8E-8288-F0386B8CB923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56EBD781-9C34-4F8E-8288-F0386B8CB923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56EBD781-9C34-4F8E-8288-F0386B8CB923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5485D97-6454-4A1B-9640-EE18405343E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5485D97-6454-4A1B-9640-EE18405343E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5485D97-6454-4A1B-9640-EE18405343E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5485D97-6454-4A1B-9640-EE18405343E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10A3B223-354D-4FDF-B863-17756ADFD5AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10A3B223-354D-4FDF-B863-17756ADFD5AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10A3B223-354D-4FDF-B863-17756ADFD5AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10A3B223-354D-4FDF-B863-17756ADFD5AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78A826B1-E5DB-4E4C-ACB9-2039272EFE9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A826B1-E5DB-4E4C-ACB9-2039272EFE9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A826B1-E5DB-4E4C-ACB9-2039272EFE9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A826B1-E5DB-4E4C-ACB9-2039272EFE9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

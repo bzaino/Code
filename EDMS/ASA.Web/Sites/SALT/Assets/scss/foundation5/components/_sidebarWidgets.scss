@@ -1,0 +1,126 @@
+/* This file contains stylings for the internals of the Right Rail/Profile Dropdown */
+.rr-course {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid $gray15;
+    padding: 8px 0px;
+    &.hide {
+        display: none;
+    }
+}
+.sidebar-module-data-color {
+    color: $pink-copy;
+    font-weight: bold;
+}
+.sidebar-module-data-complete-color {
+    color: $growth-green;
+    font-weight: bold;
+}
+.rr-courses-container {
+    padding: 0;
+    overflow: hidden;
+    transition: height 1s;
+    height: auto;
+    max-height: 0px * $rr-num-initially-visible-courses;
+    &.expanded {
+        height: auto;
+        max-height: none;
+    }
+    .rr-course:last-child {
+        border-bottom: none;
+    }
+}
+
+.rr-course-name {
+    color: $light-blue;
+    text-decoration: underline;
+    a:focus &, &:hover{
+        text-decoration: none;
+    }
+}
+
+.rr-courses-toggle {
+    height: 30px;
+    background-color: $salt-blue;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 0 19px 19px;
+
+    &:hover, &:focus, &:active {
+        background-color: scale-color($salt-blue, $lightness: 15%);
+    }
+    &.expanded {
+        .fa:before {
+            content: "\f077";
+        }
+    }
+    .fa:before {
+        content: "\f078";
+        font-size: 1.75em;
+    }
+}
+
+// Courses module checkmarks
+.checkmark {
+    font-size: 16px; 
+    position: relative; 
+    height: 29px;
+    width: 29px;
+    left: 0px;
+    top: 0px;
+    &.completed {
+        &:before {
+            border-color: #5bc500;
+        }
+    }
+    &:before, &:after {
+        content: "";
+        display: block;
+        position: absolute;
+    }
+    &:before {
+        border: solid 0.9em $gray15;
+        border-radius: 100px; 
+        height: 0;
+        width: 0;
+        left: 0;
+        top: 0; 
+        margin-top:0;
+    }
+    &:after {
+        width: 0.6em; 
+        height: 1.1em;
+        border: solid white;
+        border-width: 0 0.25em 0.25em 0; 
+        left: .5em;
+        top: 3px;
+        @include prefix(transform, rotate(45deg), webkit moz o);
+    }
+}
+
+@media #{$large-up} {
+    .goal-ranking-slot {
+        background-color: #fff;
+        > .rr-icon-container {
+            &:first-child {
+                display: none;
+            }
+            &:nth-child(2) {
+                display: table-cell;
+            }
+        }
+    }
+    .profile-link-slot {
+        display: none;
+    }
+    .profile-widget {
+        display: none;
+        .dashboard-enabled & {
+            display: block;
+        }
+    }
+    .rr-courses-container {
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,57 @@
+<form class="addLoanForm" id="addLoanForm">
+    <header class="row">
+        <div class="headline">
+            {content.secondaryContent[7].records[0].attributes.answer-1-button-text}
+        </div>
+    </header>
+    <div class="row collapse">
+        <div class="small-12 medium-6 columns">
+            <label>{content.secondaryContent[7].records[0].attributes.answer-2-button-text}</label>
+        </div>
+        <div class="small-12 medium-6 columns">
+            <div class="styled-select">
+                <select id="form-name" name="formName" class="user-success">
+                    <option value="">Please select a debt type</option>
+                    <option value="manualFed-form" data-loanType="FD">Federal Student Loan</option>
+                    <option value="allTypes-form" data-loanType="PR">Private Student Loan</option>
+                    <option value="allTypes-form" data-loanType="IS">State/Institutional Student Loan</option>
+                    <option value="cc-form" data-loanType="CC">Credit Card</option>
+                    <option value="allTypes-form" data-loanType="AL">Car Loan</option>
+                    <option value="allTypes-form" data-loanType="MG">Mortgage</option>
+                    <option value="allTypes-form" data-loanType="HP">Healthcare Professionals Student Loan</option>
+                    <option value="allTypes-form" data-loanType="OT">Other</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</form>
+<div id="loan-forms" class="loan-detail-style">
+    <form class="hide" id="cc-form" data-abide="ajax">
+         {>"KWYO/KWYO_forms_sharedFields.dust" required="required"  LoanLabel="Debt Name:"/}
+        <div class="row">
+           <button  type="submit" class="button base-btn main-btn js-add-loan-button right">Add This Debt</button>
+        </div>
+    </form>
+    <form class="hide" id="allTypes-form" data-abide="ajax">
+        {>"KWYO/KWYO_forms_sharedFields.dust" required="required" LoanLabel="Debt Name:" /}
+        {>"KWYO/KWYO_forms_sharedFields_nonCC.dust" /}
+        <div class="row">
+            <button  type="submit" class="button base-btn main-btn js-add-loan-button right">Add This Debt</button>
+        </div>
+    </form>
+    <form class="hide" id="manualFed-form" data-abide="ajax">
+        {>"KWYO/KWYO_forms_sharedFields.dust" fedInterest="4.45" LoanLabel="Debt Name:" FedLoanAsterisk="*"/}
+        {>"KWYO/KWYO_forms_sharedFields_nonCC.dust" /}
+        {@if cond="'{content.secondaryContent[4].records[0].attributes.federal-loan-content|trim}'.length"}
+            <div class="row">
+               <section class="small-12 columns detail-disclaimer">   
+                   {content.secondaryContent[4].records[0].attributes.federal-loan-content}
+                </section>
+            </div>
+        {/if}
+        <div class="row">
+            <button  type="submit" class="button base-btn main-btn js-add-loan-button right">{content.secondaryContent[7].records[0].attributes.answer-1-page-name}</button>
+        </div>
+    </form>
+    <input class="hide" value="" id="js-dynamicLoanTypeId" name="LoanTypeId"/>
+</div>

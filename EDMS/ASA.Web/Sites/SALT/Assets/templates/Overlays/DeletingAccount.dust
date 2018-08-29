@@ -1,0 +1,20 @@
+<div id="deleting-account-overlay-closing" class="reveal-modal tiny" data-reveal>
+     <div class="close-reveal-modal cancel-circle overlayClose"></div>
+    <p>
+        <h2>We're Sorry</h2>
+        <br>
+        you are currently ineligible for Salt<sup>&reg;</sup>.
+        <br>
+        We are required to close your account at this time.
+    </p>
+</div>
+<div id="deleting-account-overlay-closed" class="reveal-modal tiny" data-reveal>
+     <div class="close-reveal-modal cancel-circle overlayClose"></div>
+    <p>
+        <h2>Closing Your account</h2>
+        <br>
+        You will be signed out of Salt<sup>&reg;</sup>.
+    </p>
+</div>
+
+

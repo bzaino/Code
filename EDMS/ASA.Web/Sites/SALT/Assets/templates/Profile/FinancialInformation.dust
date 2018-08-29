@@ -1,0 +1,71 @@
+<section>
+    <header>
+        <div class="row collapse js-show-hide show-hide">
+            <div class="small-10 columns">
+                <h2> Financial Information</h2>
+            </div>
+            <div class="small-2 columns">
+                   <a href="" class="js-void-href" title="Open or close" tabindex="2"><div class="hide-btn"><i class="fa fa-sort-asc"></i></div></a>
+            </div>
+        </div>
+    </header>
+    <article class="panel">
+        <div class="row">
+            <h4 class="small-12 columns">Loan Repayment Details</h4>
+        </div>
+        <form id="financial-information-form" data-abide="ajax">
+            <!-- Do you have any student loans? -->
+            {>"Profile/ProfileRadioCheckboxQuestion" type="multi" styleType="checkbox" currentQuestion=QuestionsAnswers[1]/}
+            <!-- Are you employed? -->
+            {>"Profile/ProfileRadioCheckboxQuestion" type="multi" styleType="checkbox" currentQuestion=QuestionsAnswers[2]/}
+
+           <!--  Do you have a credit or debit card? -->
+            {>"Profile/ProfileRadioCheckboxQuestion" type="multi" styleType="checkbox" currentQuestion=QuestionsAnswers[3]/}
+
+            <!-- What kind of bank account(s) do you have? -->
+                {>"Profile/ProfileRadioCheckboxQuestion" type="multi" styleType="checkbox" currentQuestion=QuestionsAnswers[4]/}
+
+            <!-- Have you started repaying your student loans?  -->
+            {>"Profile/ProfileRadioCheckboxQuestion" type="single" styleType="radio" currentQuestion=QuestionsAnswers[5]/}
+
+            <!-- What’s the status of your student loans? -->
+            <div class="row">
+                <div class="small-12 medium-6 columns">
+                    <label for="Q8">{QuestionsAnswers[6].Question} </label>
+                </div>
+                <div class="small-12 medium-6 columns">
+                    <div class="styled-select">
+                        <select id="Q6" name="single-qid-{QuestionsAnswers[6].QuestionID}" tabindex="2">
+                            <option value=""></option>
+                            {#QuestionsAnswers[6].Answers}
+                            <option value="{AnsID}" {@checkProfileSelect responsesObj=QuestionsAnswers[6].Responses ansVal="{AnsID}" /}>{AnsDescription}</option>
+                            {/QuestionsAnswers[6].Answers}
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- What’s your total household income? -->
+             <div class="row">
+                <div class="small-12 medium-6 columns">
+                    <label for="Q7">{QuestionsAnswers[7].Question} </label>
+                </div>
+                <div class="small-12 medium-6 columns">
+                    <div class="styled-select">
+                        <select id="Q7" name="single-qid-{QuestionsAnswers[7].QuestionID}" tabindex="2">
+                            <option value=""></option>
+                            {#QuestionsAnswers[7].Answers}
+                            <option value="{AnsID}" {@checkProfileSelect responsesObj=QuestionsAnswers[7].Responses ansVal="{AnsID}" /}>{AnsDescription}</option>
+                            {/QuestionsAnswers[7].Answers}
+                        </select>
+                    </div>
+                </div>
+            </div>
+           <div class="row">
+                <div class="small-12 columns">
+                    <button type="submit" class="button base-btn main-btn submit right" tabindex="2" disabled>Save</button>
+                </div>
+            </div>
+        </form>
+        {>"Profile/AjaxMessages" /}
+    </article>
+</section>

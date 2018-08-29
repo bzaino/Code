@@ -1,0 +1,9 @@
+﻿<objects xmlns="http://www.springframework.net">
+
+  <description>
+    The ASA.Security layer where security authentication is performed
+  </description>
+
+  <object id="ASARoleProvider" type="ASA.Security.ASARoleProvider, ASA.Security"/>
+
+</objects>

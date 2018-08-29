@@ -1,0 +1,83 @@
+{! User profile section !}    
+<li id="js-Profile-widget" class="small-11 column small-centered side-nav-profile-panel hide-for-large-up">
+    <div class="left js-rr-module-header">
+        <i>Hi, <a class="" href="/manageprofile/" tabindex="1">{SiteMember.FirstName}!</a></i>
+    </div>
+    <div class="right">
+        <a href="/Account/LogOff" class="button sidenav-button xtiny radius" tabindex="1">Log Out</a>
+    </div>
+</li>
+{! End user profile section !} 
+
+{?SiteMember.DashboardEnabled}
+    {! User goal section !}
+    <li class="row">
+    {?SiteMember.MemberShipFlag}
+        <ul class="dashboard-goal-button-group small-12">
+    {:else}  
+        <ul class="dashboard-goal-button-group NonContract small-12">
+    {/SiteMember.MemberShipFlag}
+            <li class="">
+                <label class="goal-button small-12"><span> Goal{@if cond="'{SiteMember.enabledGoalCount}' > '1'"} 1{/if}: </span><span id="js-goal1">{goalRankResponses[0].AnsDescription}{^goalRankResponses[0].AnsDescription}- - -{/goalRankResponses[0].AnsDescription}</span></label>
+            </li>
+            <li class=""><input type="button" id="goal-btn" class="js-manage-rank button goal-button-edit small small-12" value="{@if cond="'{SiteMember.enabledGoalCount}' > '1'"} Edit {:else} open {/if}" /></li>
+        </ul>
+    </li>
+    {! End User goal section !}
+
+    {! Progress section !}
+    {?SiteMember.MemberShipFlag}
+    <li class="side-panel panel radius row">
+        <div class="row collapse js-quick-look quick-look">
+            <h1>Progress</h1>
+    {:else}
+    <!-- What's going on in this else block, why doesn't the second li terminate,
+        and can someone get here while logged in without being a member? -->
+    <li class="row">
+
+        <div id="js-goalwidget-container" class="padding-top">        
+            {#goalRankResponses}
+            <div class="dynamic-panel">
+                {> "Modules/Widget-{nameWithNoSpaces}" /}
+            </div>
+            {/goalRankResponses}
+        </div>
+    </li>
+    <li class="NonContract-side-panel collapse row">
+        <div class="row collapse js-quick-look quick-look">
+    {/SiteMember.MemberShipFlag}
+
+        {?SiteMember.ShowMM101}
+        <div id="js-Courses-wrapper" class="courses-panel rr-courses-wrapper hide">
+            <div id="js-Courses-widget" class="js-rr-module">
+        	    <div class="left small-8">
+        	        <h2 class="sidebar-module-header left js-rr-module-header">Salt Courses</h2>
+                    <a href class="js-refresh refresh-link js-void-href"><i class="reload small salticon right"></i></a>
+                </div>
+                <div class="right MM101">
+                    <a href="#" class="button sidenav-button xtiny radius js-salt-courses-link">open</a>
+                </div>           
+            </div>
+            <div id="js-Courses-container" class="rr-courses-container columns">
+                <span class="small-12 centered columns loading">{>"Modules/SpinnerCSS" /}</span>
+            </div>
+
+            <a href class="js-void-href js-rr-courses-toggle">
+                <div class="rr-courses-toggle small-12 columns">
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+            </a>
+        </div>
+        {/SiteMember.ShowMM101}
+{/SiteMember.DashboardEnabled}
+        {> "Modules/Chatbot" /}
+{?SiteMember.DashboardEnabled}
+        <div id="js-goalwidget-container">        
+            {#goalRankResponses}
+                {> "Modules/Widget-{nameWithNoSpaces}" /}
+            {/goalRankResponses}
+        </div>
+    </div>
+
+{! End Progress section !}
+{/SiteMember.DashboardEnabled}

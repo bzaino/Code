@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PartnerConfig PartnerName="SaltIDP/RemoteLearner/PSP_Stage_ConnectionTo_MoodlePortal">
+  
+  <!-- where to forward browsers that do support IWA -->
+  <LoggedOutPage>https://stg-www.saltmoney.org/Account/LogOff</LoggedOutPage> <!-- where to go when you are all logged out (unless overriden be relay state -->
+
+  <EncryptionKey>2f837c84e608936ae2cd11ef31e334b5</EncryptionKey>
+  <EncryptionType>AES128</EncryptionType>
+  
+  <IDPURL>https://asa.ssoexchange.com/saml-idp/idp/saml2/SSOService/StageSaltIDP</IDPURL>
+  <IDPLogoutURL>https://asa.ssoexchange.com/saml-idp/idp/saml2/LogoutService/StageSaltIDP</IDPLogoutURL>
+  
+  <TokenTimeout>500</TokenTimeout>
+
+<!--   <IDVerifierName>SSO.Plugins.MyPortalUserPrincipalSSOPlugin</IDVerifierName> -->
+	<IDVerifierName>ASAIDP.SSO.Plugins.SiteMemberPlugin</IDVerifierName>
+</PartnerConfig>

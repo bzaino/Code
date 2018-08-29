@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://asa.org/contracts/loan" elementFormDefault="qualified" targetNamespace="http://asa.org/contracts/loan" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:1000/LoanManagementService.svc?xsd=xsd3" namespace="http://asa.org/contracts/commonTypes" />
+  <xs:complexType name="LoanCanonicalType">
+    <xs:sequence>
+      <xs:element name="LoanTier1" nillable="true" type="tns:LoanTier1Type">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="LoanTier2" nillable="true" type="tns:LoanTier2Type">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="LoanTier3" nillable="true" type="tns:LoanTier3Type">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoanCanonicalType" nillable="true" type="tns:LoanCanonicalType" />
+  <xs:complexType name="LoanTier1Type">
+    <xs:sequence>
+      <xs:element name="CustomerId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoanTier1Type" nillable="true" type="tns:LoanTier1Type" />
+  <xs:complexType name="LoanTier2Type">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DefermentsForbearanceArray" nillable="true" type="tns:LoanTier2Type.DefermentsForbearanceArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="DisbursementsArray" nillable="true" type="tns:LoanTier2Type.DisbursementsArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="OrganizationArray" nillable="true" type="tns:LoanTier2Type.OrganizationArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="PersonArray" nillable="true" type="tns:LoanTier2Type.PersonArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="DefaultInfoType" nillable="true" type="tns:LoanTier2Type.DefaultInfoTypeType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="DelinquencyInfoType" nillable="true" type="tns:LoanTier2Type.DelinquencyInfoTypeType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="LoanInfoType" nillable="true" type="tns:LoanTier2Type.LoanInfoTypeType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="RepaymentInfoType" nillable="true" type="tns:LoanTier2Type.RepaymentInfoTypeType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="CustomerType" nillable="true" type="tns:LoanTier2Type.CustomerTypeType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ExternalLoanId" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoanTier2Type" nillable="true" type="tns:LoanTier2Type" />
+  <xs:complexType name="LoanTier2Type.DefermentsForbearanceArrayType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DefermentsForbearances" nillable="true" type="tns:DefermentsForbearanceType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoanTier2Type.DefermentsForbearanceArrayType" nillable="true" type="tns:LoanTier2Type.DefermentsForbearanceArrayType" />
+  <xs:complexType name="DefermentsForbearanceType">
+    <xs:sequence>
+      <xs:element name="DefermentsForbearanceTypeId" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EndDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="NumberOfMonthsGranted" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="EffectiveDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RecordVersion" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DefermentsForbearanceType" nillable="true" type="tns:DefermentsForbearanceType" />
+  <xs:complexType name="LoanTier2Type.DisbursementsArrayType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Disbursements" nillable="true" type="tns:DisbursementType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoanTier2Type.DisbursementsArrayType" nillable="true" type="tns:LoanTier2Type.DisbursementsArrayType" />
+  <xs:complexType name="DisbursementType">
+    <xs:sequence>
+      <xs:element name="SequenceNumber" type="xs:int" />
+      <xs:element name="DisbursementDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="GrossDisbursementAmount" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RecordVersion" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DisbursementType" nillable="true" type="tns:DisbursementType" />
+  <xs:complexType name="LoanTier2Type.OrganizationArrayType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Organization" nillable="true" type="tns:OrganizationType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoanTier2Type.OrganizationArrayType" nillable="true" type="tns:LoanTier2Type.OrganizationArrayType" />
+  <xs:complexType name="OrganizationType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ExternalOrganizationId" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="OrganizationId" type="xs:int" />
+      <xs:element name="OrganizationRoleId" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ReadOnlyOrganizationName" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="RecordVersion" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrganizationType" nillable="true" type="tns:OrganizationType" />
+  <xs:complexType name="LoanTier2Type.PersonArrayType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Person" nillable="true" type="tns:PersonType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoanTier2Type.PersonArrayType" nillable="true" type="tns:LoanTier2Type.PersonArrayType" />
+  <xs:complexType name="PersonType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ExternalPersonId" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="PersonId" type="xs:int" />
+      <xs:element name="RoleId" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="RecordVersion" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonType" nillable="true" type="tns:PersonType" />
+  <xs:complexType name="LoanTier2Type.DefaultInfoTypeType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DefaultedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DefaultedAmount" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RehabilitatedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RecordVersion" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoanTier2Type.DefaultInfoTypeType" nillable="true" type="tns:LoanTier2Type.DefaultInfoTypeType" />
+  <xs:complexType name="LoanTier2Type.DelinquencyInfoTypeType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DelinquencyStatusTypeId" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="DelinquencyStatusDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FirstDelinquentDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LastDelinquentDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DelinquentAmount" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FrozenNumberOfDaysDelinquent" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="NumberOfDaysDelinquent" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="LastCuredDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LastCuredReasonTypeId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumberOfCures" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="DaysDelinquent" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="RecordVersion" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoanTier2Type.DelinquencyInfoTypeType" nillable="true" type="tns:LoanTier2Type.DelinquencyInfoTypeType" />
+  <xs:complexType name="LoanTier2Type.LoanInfoTypeType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LoanTypeId" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="LoanId" type="xs:int" />
+      <xs:element minOccurs="0" name="LoanStatusId" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="LoanStatusDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LoanApprovedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ApprovedLoanAmount" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="EnteredRepaymentDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="OutstandingPrincipalBalance" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="OutstandingPrincipalBalanceDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="AccruedInterest" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CapitalizedInterest" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CapitalizedInterestPaid" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalPrincipalPaid" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalInterestPaid" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="InterestRate" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="InterestTypeId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GradeLevelId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LoanStartDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LoanEndDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SourceOrganizationId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InputSourceId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InputSourceName" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="InputFileReceivedDate" type="xs:dateTime" />
+      <xs:element xmlns:q1="http://asa.org/contracts/commonTypes" minOccurs="0" name="IsArchived" type="q1:YNFlagType" />
+      <xs:element minOccurs="0" name="ReadOnlyDataSourceOrgShortName" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="DataSourceId" type="xs:int" />
+      <xs:element minOccurs="0" name="RecordVersion" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoanTier2Type.LoanInfoTypeType" nillable="true" type="tns:LoanTier2Type.LoanInfoTypeType" />
+  <xs:complexType name="LoanTier2Type.RepaymentInfoTypeType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="RepaymentStatusTypeId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RepaymentStatusDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="NumberOfPaymentsMade" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="NumberOfPaymentsRemaining" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="LastPaymentDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LastPaymentAmount" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RepaymentPlanTypeId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RepaymentPlanStartDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RepaymentPlanEndDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PaymentMethodTypeId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NextPaymentDueDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="NextPaymentDueAmount" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PaymentAmountDue" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PastDueAmount" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RecordVersion" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoanTier2Type.RepaymentInfoTypeType" nillable="true" type="tns:LoanTier2Type.RepaymentInfoTypeType" />
+  <xs:complexType name="LoanTier2Type.CustomerTypeType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ReadOnlyCustomerName" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoanTier2Type.CustomerTypeType" nillable="true" type="tns:LoanTier2Type.CustomerTypeType" />
+  <xs:complexType name="LoanTier3Type">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LoanApplicationId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ApplicationReceivedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ServicerResponsibilityDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="GuaranteeTransferDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SoldDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SeparationDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LoanSelfReportedEntryArray" nillable="true" type="tns:LoanTier3Type.LoanSelfReportedEntryArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="RecordVersion" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoanTier3Type" nillable="true" type="tns:LoanTier3Type" />
+  <xs:complexType name="LoanTier3Type.LoanSelfReportedEntryArrayType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LoanSelfReportedEntry" nillable="true" type="tns:LoanSelfReportedEntryType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoanTier3Type.LoanSelfReportedEntryArrayType" nillable="true" type="tns:LoanTier3Type.LoanSelfReportedEntryArrayType" />
+  <xs:complexType name="LoanSelfReportedEntryType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LoanSelfReportedEntryId" type="xs:int" />
+      <xs:element name="PersonId" type="xs:int" />
+      <xs:element minOccurs="0" name="LoanStatusId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LoanTypeId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AccountNickname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HolderName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SchoolName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ServicerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ServicerWebAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InterestRate" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="PrincipalBalanceOutstandingAmount" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PaymentDueAmount" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NextPaymentDueAmount" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NextPaymentDueDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecordVersion" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoanSelfReportedEntryType" nillable="true" type="tns:LoanSelfReportedEntryType" />
+  <xs:complexType name="ArrayOfLoanCanonicalType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LoanCanonicalType" nillable="true" type="tns:LoanCanonicalType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLoanCanonicalType" nillable="true" type="tns:ArrayOfLoanCanonicalType" />
+</xs:schema>

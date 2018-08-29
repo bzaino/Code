@@ -1,0 +1,105 @@
+{! New Tab Links -- open SALT content or external links in new tab !}
+
+  {@if cond="'{mainContent[0].records[0].attributes.new-tab-help-1|trim}'.length !== 0"}
+  <div class="row collapse relative">
+    <div class="small-8 medium-7 columns left btnHelp">{mainContent[0].records[0].attributes.new-tab-help-1}</div>
+      <div class="small-4 medium-5 columns right absolute-bottom">
+        <a href="{mainContent[0].records[0].attributes.new-tab-link-1}" target="_blank" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.new-tab-text-1}</a>
+      </div>
+  </div>
+    {:else}
+    {@if cond="'{mainContent[0].records[0].attributes.new-tab-link-1|trim}'.length !== 0"}
+      <a href="{mainContent[0].records[0].attributes.new-tab-link-1}" target="_blank" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.new-tab-text-1}</a>
+    {/if}
+  {/if}
+
+  {@if cond="'{mainContent[0].records[0].attributes.new-tab-help-2|trim}'.length !== 0"}
+  <div class="row collapse relative">
+    <div class="small-8 medium-7 columns left btnHelp">{mainContent[0].records[0].attributes.new-tab-help-2}</div>
+    <div class="small-4 medium-5 columns right absolute-bottom">
+      <a href="{mainContent[0].records[0].attributes.new-tab-link-2}" target="_blank" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.new-tab-text-2}</a>
+    </div>
+  </div>
+    {:else}
+    {@if cond="'{mainContent[0].records[0].attributes.new-tab-link-2|trim}'.length !== 0"}
+      <a href="{mainContent[0].records[0].attributes.new-tab-link-2}" target="_blank" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.new-tab-text-2}</a>
+    {/if}
+  {/if}
+
+  {@if cond="'{mainContent[0].records[0].attributes.new-tab-help-3|trim}'.length !== 0"}
+  <div class="row collapse relative">
+    <div class="small-8 medium-7 columns left btnHelp">{mainContent[0].records[0].attributes.new-tab-help-3}</div>
+    <div class="small-4 medium-5 columns right absolute-bottom">
+      <a href="{mainContent[0].records[0].attributes.new-tab-link-3}" target="_blank" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.new-tab-text-3}</a>
+    </div>
+  </div>
+    {:else}
+    {@if cond="'{mainContent[0].records[0].attributes.new-tab-link-3|trim}'.length !== 0"}
+      <a href="{mainContent[0].records[0].attributes.new-tab-link-3}" target="_blank" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.new-tab-text-3}</a>
+    {/if}
+  {/if}
+
+  {@if cond="'{mainContent[0].records[0].attributes.new-tab-help-4|trim}'.length !== 0"}
+  <div class="row collapse relative">
+    <div class="small-8 medium-7 columns left btnHelp">{mainContent[0].records[0].attributes.new-tab-help-4}</div>
+    <div class="small-4 medium-5 columns right absolute-bottom">
+      <a href="{mainContent[0].records[0].attributes.new-tab-link-4}" target="_blank" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.new-tab-text-4}</a>
+    </div>
+  </div>
+    {:else}
+    {@if cond="'{mainContent[0].records[0].attributes.new-tab-link-4|trim}'.length !== 0"}
+      <a href="mainContent[0].records[0].attributes.new-tab-link-4}" target="_blank" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.new-tab-text-4}</a>
+    {/if}
+  {/if}
+
+  {@if cond="'{mainContent[0].records[0].attributes.new-tab-help-5|trim}'.length !== 0"}
+  <div class="row collapse relative">
+    <div class="small-8 medium-7 columns left btnHelp">{mainContent[0].records[0].attributes.new-tab-help-5}</div>
+    <div class="small-4 medium-5 columns right absolute-bottom">
+      <a href="{mainContent[0].records[0].attributes.new-tab-link-5}" target="_blank" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.new-tab-text-5} </a>
+    </div>
+  </div>
+    {:else}
+    {@if cond="'{mainContent[0].records[0].attributes.new-tab-link-5|trim}'.length !== 0"}
+      <a href="{mainContent[0].records[0].attributes.new-tab-link-5}" target="_blank" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.new-tab-text-5}</a>
+    {/if}
+  {/if}
+
+  {@if cond="'{mainContent[0].records[0].attributes.new-tab-help-6|trim}'.length !== 0"}
+  <div class="row collapse relative">
+    <div class="small-8 medium-7 columns left btnHelp">{mainContent[0].records[0].attributes.new-tab-help-6}</div>
+    <div class="small-4 medium-5 columns right absolute-bottom">
+      <a href="{mainContent[0].records[0].attributes.new-tab-link-6}" target="_blank" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.new-tab-text-6}</a>
+    </div>
+  </div>
+    {:else}
+    {@if cond="'{mainContent[0].records[0].attributes.new-tab-link-6|trim}'.length !== 0"}
+      <a href="{mainContent[0].records[0].attributes.new-tab-link-6}" target="_blank" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.new-tab-text-6}</a>
+    {/if}
+  {/if}
+
+  {@if cond="'{mainContent[0].records[0].attributes.new-tab-help-7|trim}'.length !== 0"}
+  <div class="row collapse relative">
+    <div class="small-8 medium-7 columns left btnHelp">{mainContent[0].records[0].attributes.new-tab-help-7}</div>
+    <div class="small-4 medium-5 columns right absolute-bottom">
+      <a href="{mainContent[0].records[0].attributes.new-tab-link-7}" target="_blank" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.new-tab-text-7}</a>
+    </div>
+  </div>
+    {:else}
+    {@if cond="'{mainContent[0].records[0].attributes.new-tab-link-7|trim}'.length !== 0"}
+      <a href="{mainContent[0].records[0].attributes.new-tab-link-7}" target="_blank" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.new-tab-text-7}</a>
+    {/if}
+  {/if}
+
+  {@if cond="'{mainContent[0].records[0].attributes.new-tab-help-8|trim}'.length !== 0"}
+  <div class="row collapse relative">
+    <div class="small-8 medium-7 columns left btnHelp">{mainContent[0].records[0].attributes.new-tab-help-8}</div>
+    <div class="small-4 medium-5 columns right absolute-bottom">
+      <a href="{mainContent[0].records[0].attributes.new-tab-link-8}" target="_blank" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.new-tab-text-8}</a>
+    </div>
+  </div>
+    {:else}
+    {@if cond="'{mainContent[0].records[0].attributes.new-tab-link-8|trim}'.length !== 0"}
+      <a href="{mainContent[0].records[0].attributes.new-tab-link-8}" target="_blank" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.new-tab-text-8}</a>
+    {/if}
+  {/if}

@@ -1,0 +1,16 @@
+<header class="js-reachout-header reachout-header-section right small-12 columns">
+   <h1 class="text-white">{records[0].attributes.headline|trim}</h1>
+</header>
+<div class="row collapse chat-row">
+    <div class="small-9 columns">
+        <hgroup>
+            <h2 class="header">{records[0].attributes.subhead|trim}</h2>
+            <h3 class="status">Status: <strong class="js-livechat-online text-green online hide">{records[0].attributes.button-area|trim}</strong>
+            <strong class="js-livechat-offline offline header-text-color text-white hide">{records[0].attributes.auth-button-area|trim}</strong></h3>
+        </hgroup>
+    </div>
+    <div class="small-3 text-right columns">
+        <a href="" class="liveChatLink js-livechat-online button sidenav-help-button xtiny radius hide" data-wt-value="Live Chat ReachOut" tabindex="{tabindex_ind}">chat</a>
+        <a href="" class="liveChatLink js-livechat-offline button sidenav-help-button xtiny radius hide" data-wt-value="Live Chat ReachOut" tabindex="{tabindex_ind}">email</a>
+    </div>
+</div>

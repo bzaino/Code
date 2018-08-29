@@ -1,0 +1,1 @@
+define(["dust", "Compiled/partial_tiles"], function(dust) { (function(){dust.register("partial_featured_se",body_0);function body_0(chk,ctx){return chk.section(ctx.get("records"),ctx,{"block":body_1},null);}function body_1(chk,ctx){return chk.partial("partial_tiles.dust",ctx,null);}return body_0;})(); });

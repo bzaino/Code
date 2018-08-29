@@ -1,0 +1,165 @@
+/* --------------text-------------- */
+ul.accordion.value-prop div.title h1, ul.accordion.value-prop div.title h2, ul.accordion.value-prop div.title h3 {
+  color: #000 !important;
+  margin: 0;
+}
+
+ul.accordion.value-prop > li div.panel li, ul.accordion.value-prop > li div.panel li span {
+  font-size: 15px;
+  list-style-type: disc;
+  line-height: 17px;
+  color: #434343;
+}
+
+.val-prop-h3 {
+  color: #000 !important;
+  font-size: 20px !important;
+  font-weight: normal;
+  line-height: 19px;
+}
+
+.val-prop-h2 {
+  margin-bottom: 10px;
+}
+
+.message-valprop ul {
+  list-style: disc;
+}
+
+ul.accordion.value-prop > li .panel {
+  display: none;
+  padding: 15px;
+}
+
+ul.accordion.value-prop > li .panel p {
+  margin-bottom: 10px;
+}
+
+div.cbox {
+  float: left;
+}
+
+div.panel.message-valprop > ul > li > span {
+  color: #000 !important;
+}
+
+/* -------------------------------- */
+/* -----------container-------------- */
+.value-prop {
+  margin-left: 0;
+}
+
+.val-prop {
+  background: #d6d6d6;
+  border-width: 2px 1px;
+  border-style: solid;
+  border-color: #19ffaf;
+}
+
+ul.accordion.value-prop {
+  margin: 0 0 0;
+  border-bottom: none;
+  float: left;
+}
+
+/* -------------------------------------- */
+/* ---------------buttons---------------- */
+.green-gradient {
+  background: #008484;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #008484 0%, #006867 74%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #008484), color-stop(74%, #006867));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #008484 0%, #006867 74%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #008484 0%, #006867 74%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #008484 0%, #006867 74%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #008484 0%, #006867 74%);
+  /* W3C */
+}
+
+.green-gradient:hover {
+  background: #008484;
+}
+
+/* -------------------------------------- */
+/* ---------------layout--------------- */
+ul.accordion.value-prop > li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #d7d7d7;
+}
+
+div.panel.message-valprop > hr {
+  border-top: 2px solid #c3c3c3;
+}
+
+ul.accordion.value-prop > li, ul.accordion.value-prop > li.active {
+  border-top: none;
+}
+
+ul.accordion.value-prop > li > div.title {
+  cursor: pointer;
+  background: #d6d6d6;
+  padding: 0;
+  margin: 0 15px;
+  position: relative;
+  border-left: 1px solid #d7d7d7;
+  border-right: 1px solid #d7d7d7;
+}
+
+ul.accordion.value-prop > li > div.title:after {
+  content: "";
+  display: none;
+  width: 0;
+  height: 0;
+  border: solid 6px;
+  border-color: transparent #9d9d9d transparent transparent;
+  position: absolute;
+  right: 15px;
+  top: 21px;
+}
+
+ul.accordion.value-prop > li.active div.title {
+  display: none;
+}
+
+ul.accordion.value-prop > li div.title, ul.accordion.value-prop > li.active .title {
+  background: #d6d6d6;
+  padding-top: 0;
+}
+
+ul.accordion.value-prop > li div.title:after, ul.accordion.value-prop > li.active .title:after {
+  content: none;
+  display: block;
+  width: 0;
+  height: 0;
+  border: none;
+  border-color: none;
+}
+
+ul.accordion.value-prop > li.active .panel {
+  background: #d7d7d7;
+  display: block;
+  border-left: none;
+  border-right: none;
+}
+
+.valprop-section1 {
+  padding-bottom: 0 !important;
+}
+
+.valprop-section1 form {
+  margin-bottom: 0 !important;
+}
+
+/*.main-btn{
+	margin:10px 0;
+}
+ -------------------------------------- */
+
+/*# sourceMappingURL=valueprop.css.map */

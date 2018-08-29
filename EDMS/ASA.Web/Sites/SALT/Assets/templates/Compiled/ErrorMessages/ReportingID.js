@@ -1,0 +1,1 @@
+define(["dust"], function(dust) { (function(){dust.register("ErrorMessages/ReportingID",body_0);function body_0(chk,ctx){return chk.write("<small class=\"error\">Please provide an Organization/School id that is no more than 100 characters long.</small>");}return body_0;})(); });

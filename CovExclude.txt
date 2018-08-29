@@ -1,0 +1,6 @@
+Elmah
+log4net
+Newtonsoft.Json
+Moq
+RazorEngine
+Microsoft.Practices.ServiceLocation

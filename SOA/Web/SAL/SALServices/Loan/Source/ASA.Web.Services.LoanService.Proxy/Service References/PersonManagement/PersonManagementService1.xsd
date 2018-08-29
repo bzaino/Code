@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://asa.org/contracts/person" elementFormDefault="qualified" targetNamespace="http://asa.org/contracts/person" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd3" namespace="http://asa.org/contracts/demogTypes" />
+  <xs:import schemaLocation="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd4" namespace="http://asa.org/contracts/commonTypes" />
+  <xs:complexType name="PersonCanonicalType">
+    <xs:sequence>
+      <xs:element name="PersonTier1" nillable="true" type="tns:PersonTier1Type">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="PersonTier2" nillable="true" type="tns:PersonTier2Type">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="PersonTier2History" nillable="true" type="tns:PersonTier2HistoryType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="PersonTier2DemogFlexInput" nillable="true" type="tns:PersonTier2DemogFlexInputType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="PersonTier3" nillable="true" type="tns:PersonTier3Type">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonCanonicalType" nillable="true" type="tns:PersonCanonicalType" />
+  <xs:complexType name="PersonTier1Type">
+    <xs:sequence>
+      <xs:element name="CustomerId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier1Type" nillable="true" type="tns:PersonTier1Type" />
+  <xs:complexType name="PersonTier2Type">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ModelArray" nillable="true" type="tns:PersonTier2Type.ModelArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="AddressArray" nillable="true" type="tns:PersonTier2Type.AddressArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="EmailArray" nillable="true" type="tns:PersonTier2Type.EmailArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="FaxArray" nillable="true" type="tns:PersonTier2Type.FaxArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="PhoneArray" nillable="true" type="tns:PersonTier2Type.PhoneArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="WebArray" nillable="true" type="tns:PersonTier2Type.WebArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="PersonInfoType" nillable="true" type="tns:PersonTier2Type.PersonInfoTypeType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="LoanSummary" nillable="true" type="tns:PersonTier2Type.LoanSummaryType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="PersonContactChannelConstraintArray" nillable="true" type="tns:PersonTier2Type.PersonContactChannelConstraintArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="PersonHoldReasonConstraintArray" nillable="true" type="tns:PersonTier2Type.PersonHoldReasonConstraintArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="CommunicationFollowupArray" nillable="true" type="tns:PersonTier2Type.CommunicationFollowupArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ExternalPersonId" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="IndividualKey" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AffiliationKey" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GradeLevelId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2Type" nillable="true" type="tns:PersonTier2Type" />
+  <xs:complexType name="PersonTier2Type.ModelArrayType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Model" nillable="true" type="tns:ModelType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2Type.ModelArrayType" nillable="true" type="tns:PersonTier2Type.ModelArrayType" />
+  <xs:complexType name="ModelType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ModelScoreTypeId" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ModelScore" type="xs:int" />
+      <xs:element minOccurs="0" name="ModelScoreEffectiveDate" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ModelType" nillable="true" type="tns:ModelType" />
+  <xs:complexType name="PersonTier2Type.AddressArrayType">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://asa.org/contracts/demogTypes" minOccurs="0" maxOccurs="unbounded" name="Address" nillable="true" type="q1:AddressType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2Type.AddressArrayType" nillable="true" type="tns:PersonTier2Type.AddressArrayType" />
+  <xs:complexType name="PersonTier2Type.EmailArrayType">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://asa.org/contracts/demogTypes" minOccurs="0" maxOccurs="unbounded" name="Email" nillable="true" type="q2:EmailType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2Type.EmailArrayType" nillable="true" type="tns:PersonTier2Type.EmailArrayType" />
+  <xs:complexType name="PersonTier2Type.FaxArrayType">
+    <xs:sequence>
+      <xs:element xmlns:q3="http://asa.org/contracts/demogTypes" minOccurs="0" maxOccurs="unbounded" name="Fax" nillable="true" type="q3:FaxType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2Type.FaxArrayType" nillable="true" type="tns:PersonTier2Type.FaxArrayType" />
+  <xs:complexType name="PersonTier2Type.PhoneArrayType">
+    <xs:sequence>
+      <xs:element xmlns:q4="http://asa.org/contracts/demogTypes" minOccurs="0" maxOccurs="unbounded" name="Phone" nillable="true" type="q4:PhoneType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2Type.PhoneArrayType" nillable="true" type="tns:PersonTier2Type.PhoneArrayType" />
+  <xs:complexType name="PersonTier2Type.WebArrayType">
+    <xs:sequence>
+      <xs:element xmlns:q5="http://asa.org/contracts/demogTypes" minOccurs="0" maxOccurs="unbounded" name="Web" nillable="true" type="q5:WebType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2Type.WebArrayType" nillable="true" type="tns:PersonTier2Type.WebArrayType" />
+  <xs:complexType name="PersonTier2Type.PersonInfoTypeType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SSN" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="PersonId" type="xs:int" />
+      <xs:element minOccurs="0" name="DateOfBirth" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="MiddleInitial" nillable="true" type="xs:string" />
+      <xs:element xmlns:q6="http://asa.org/contracts/commonTypes" minOccurs="0" name="Gender" nillable="true" type="q6:GenderType" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Suffix" nillable="true" type="xs:string" />
+      <xs:element xmlns:q7="http://asa.org/contracts/commonTypes" minOccurs="0" name="IsDeceased" type="q7:YNFlagType" />
+      <xs:element minOccurs="0" name="DeceasedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TotalPermDisabilityDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TotalPermDisabilityResolvedDate" nillable="true" type="xs:dateTime" />
+      <xs:element xmlns:q8="http://asa.org/contracts/commonTypes" minOccurs="0" name="IsTotalPermDisabilityVeteran" nillable="true" type="q8:YNFlagType" />
+      <xs:element minOccurs="0" name="PreferredContactMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankruptcyType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GrossMonthlyHouseholdIncome" nillable="true" type="xs:decimal" />
+      <xs:element xmlns:q9="http://asa.org/contracts/commonTypes" minOccurs="0" name="IsHousingOwner" type="q9:YNFlagType" />
+      <xs:element minOccurs="0" name="TotalMonthlyHousingPayment" nillable="true" type="xs:decimal" />
+      <xs:element xmlns:q10="http://asa.org/contracts/commonTypes" minOccurs="0" name="HasHomeEquityLink" type="q10:YNFlagType" />
+      <xs:element minOccurs="0" name="EnrollmentStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EnrollmentStatusNotifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EnrollmentStatusCertifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EnrollmentStatusEffectiveDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ExpectedGradDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="GradDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="OrganizationSchoolId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ExternalOrganizationSchoolId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PreferredName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NameChangeReason" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NameEffectiveDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="AKAFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AKALastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FamilySize" nillable="true" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="BankruptcyFileDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FACTAlertEffectiveDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FACTAlertId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataSourceId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="RecordVersion" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="ServiceTerminationReasonId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ServiceTerminationModificationDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="MasterPersonId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="LastSuccessfulContactDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ExternalDataSourceId" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2Type.PersonInfoTypeType" nillable="true" type="tns:PersonTier2Type.PersonInfoTypeType" />
+  <xs:complexType name="PersonTier2Type.LoanSummaryType">
+    <xs:sequence>
+      <xs:element xmlns:q11="http://asa.org/contracts/commonTypes" minOccurs="0" name="HasDefaultedLoan" type="q11:YNFlagType" />
+      <xs:element xmlns:q12="http://asa.org/contracts/commonTypes" minOccurs="0" name="HasDelinquentLoan" type="q12:YNFlagType" />
+      <xs:element xmlns:q13="http://asa.org/contracts/commonTypes" minOccurs="0" name="HasLoanInGoodStanding" type="q13:YNFlagType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2Type.LoanSummaryType" nillable="true" type="tns:PersonTier2Type.LoanSummaryType" />
+  <xs:complexType name="PersonTier2Type.PersonContactChannelConstraintArrayType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PersonContactChannelConstraint" nillable="true" type="tns:PersonContactChannelConstraintType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2Type.PersonContactChannelConstraintArrayType" nillable="true" type="tns:PersonTier2Type.PersonContactChannelConstraintArrayType" />
+  <xs:complexType name="PersonContactChannelConstraintType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PersonContactChannelConstraintId" type="xs:int" />
+      <xs:element name="ContactChannelId" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q14="http://asa.org/contracts/commonTypes" name="IsActive" type="q14:YNFlagType" />
+      <xs:element minOccurs="0" name="SetBy" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="SetDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RecordVersion" nillable="true" type="xs:base64Binary">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonContactChannelConstraintType" nillable="true" type="tns:PersonContactChannelConstraintType" />
+  <xs:complexType name="PersonTier2Type.PersonHoldReasonConstraintArrayType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PersonHoldReasonConstraint" nillable="true" type="tns:PersonHoldReasonConstraintType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2Type.PersonHoldReasonConstraintArrayType" nillable="true" type="tns:PersonTier2Type.PersonHoldReasonConstraintArrayType" />
+  <xs:complexType name="PersonHoldReasonConstraintType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PersonHoldReasonConstraintId" type="xs:int" />
+      <xs:element name="HoldReasonId" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="HoldReasonExpirationDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SetBy" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="SetDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RecordVersion" nillable="true" type="xs:base64Binary">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonHoldReasonConstraintType" nillable="true" type="tns:PersonHoldReasonConstraintType" />
+  <xs:complexType name="PersonTier2Type.CommunicationFollowupArrayType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CommunicationFollowup" nillable="true" type="tns:CommunicationFollowupType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2Type.CommunicationFollowupArrayType" nillable="true" type="tns:PersonTier2Type.CommunicationFollowupArrayType" />
+  <xs:complexType name="CommunicationFollowupType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CommunicationFollowupId" type="xs:int" />
+      <xs:element name="FollowupStatusID" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="FollowupReasonID" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="FollowupDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FollowupComments" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ModifiedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RecordVersion" nillable="true" type="xs:base64Binary">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CommunicationFollowupType" nillable="true" type="tns:CommunicationFollowupType" />
+  <xs:complexType name="PersonTier2HistoryType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddressHistoryArray" nillable="true" type="tns:PersonTier2HistoryType.AddressHistoryArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="EmailHistoryArray" nillable="true" type="tns:PersonTier2HistoryType.EmailHistoryArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="FaxHistoryArray" nillable="true" type="tns:PersonTier2HistoryType.FaxHistoryArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="PhoneHistoryArray" nillable="true" type="tns:PersonTier2HistoryType.PhoneHistoryArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="WebHistoryArray" nillable="true" type="tns:PersonTier2HistoryType.WebHistoryArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2HistoryType" nillable="true" type="tns:PersonTier2HistoryType" />
+  <xs:complexType name="PersonTier2HistoryType.AddressHistoryArrayType">
+    <xs:sequence>
+      <xs:element xmlns:q15="http://asa.org/contracts/demogTypes" minOccurs="0" maxOccurs="unbounded" name="AddressHistory" nillable="true" type="q15:AddressHistoryType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2HistoryType.AddressHistoryArrayType" nillable="true" type="tns:PersonTier2HistoryType.AddressHistoryArrayType" />
+  <xs:complexType name="PersonTier2HistoryType.EmailHistoryArrayType">
+    <xs:sequence>
+      <xs:element xmlns:q16="http://asa.org/contracts/demogTypes" minOccurs="0" maxOccurs="unbounded" name="EmailHistory" nillable="true" type="q16:EmailHistoryType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2HistoryType.EmailHistoryArrayType" nillable="true" type="tns:PersonTier2HistoryType.EmailHistoryArrayType" />
+  <xs:complexType name="PersonTier2HistoryType.FaxHistoryArrayType">
+    <xs:sequence>
+      <xs:element xmlns:q17="http://asa.org/contracts/demogTypes" minOccurs="0" maxOccurs="unbounded" name="FaxHistory" nillable="true" type="q17:FaxHistoryType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2HistoryType.FaxHistoryArrayType" nillable="true" type="tns:PersonTier2HistoryType.FaxHistoryArrayType" />
+  <xs:complexType name="PersonTier2HistoryType.PhoneHistoryArrayType">
+    <xs:sequence>
+      <xs:element xmlns:q18="http://asa.org/contracts/demogTypes" minOccurs="0" maxOccurs="unbounded" name="PhoneHistory" nillable="true" type="q18:PhoneHistoryType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2HistoryType.PhoneHistoryArrayType" nillable="true" type="tns:PersonTier2HistoryType.PhoneHistoryArrayType" />
+  <xs:complexType name="PersonTier2HistoryType.WebHistoryArrayType">
+    <xs:sequence>
+      <xs:element xmlns:q19="http://asa.org/contracts/demogTypes" minOccurs="0" maxOccurs="unbounded" name="WebHistory" nillable="true" type="q19:WebHistoryType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2HistoryType.WebHistoryArrayType" nillable="true" type="tns:PersonTier2HistoryType.WebHistoryArrayType" />
+  <xs:complexType name="PersonTier2DemogFlexInputType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddressDemogInputArray" nillable="true" type="tns:PersonTier2DemogFlexInputType.AddressDemogInputArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="EmailDemogInputArray" nillable="true" type="tns:PersonTier2DemogFlexInputType.EmailDemogInputArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="FaxDemogInputArray" nillable="true" type="tns:PersonTier2DemogFlexInputType.FaxDemogInputArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="PhoneDemogInputArray" nillable="true" type="tns:PersonTier2DemogFlexInputType.PhoneDemogInputArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="WebDemogInputArray" nillable="true" type="tns:PersonTier2DemogFlexInputType.WebDemogInputArrayType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2DemogFlexInputType" nillable="true" type="tns:PersonTier2DemogFlexInputType" />
+  <xs:complexType name="PersonTier2DemogFlexInputType.AddressDemogInputArrayType">
+    <xs:sequence>
+      <xs:element xmlns:q20="http://asa.org/contracts/demogTypes" minOccurs="0" maxOccurs="unbounded" name="AddressDemogInput" nillable="true" type="q20:AddressHistoryType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2DemogFlexInputType.AddressDemogInputArrayType" nillable="true" type="tns:PersonTier2DemogFlexInputType.AddressDemogInputArrayType" />
+  <xs:complexType name="PersonTier2DemogFlexInputType.EmailDemogInputArrayType">
+    <xs:sequence>
+      <xs:element xmlns:q21="http://asa.org/contracts/demogTypes" minOccurs="0" maxOccurs="unbounded" name="EmailDemogInput" nillable="true" type="q21:EmailHistoryType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2DemogFlexInputType.EmailDemogInputArrayType" nillable="true" type="tns:PersonTier2DemogFlexInputType.EmailDemogInputArrayType" />
+  <xs:complexType name="PersonTier2DemogFlexInputType.FaxDemogInputArrayType">
+    <xs:sequence>
+      <xs:element xmlns:q22="http://asa.org/contracts/demogTypes" minOccurs="0" maxOccurs="unbounded" name="FaxDemogInput" nillable="true" type="q22:FaxHistoryType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2DemogFlexInputType.FaxDemogInputArrayType" nillable="true" type="tns:PersonTier2DemogFlexInputType.FaxDemogInputArrayType" />
+  <xs:complexType name="PersonTier2DemogFlexInputType.PhoneDemogInputArrayType">
+    <xs:sequence>
+      <xs:element xmlns:q23="http://asa.org/contracts/demogTypes" minOccurs="0" maxOccurs="unbounded" name="PhoneDemogInput" nillable="true" type="q23:PhoneHistoryType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2DemogFlexInputType.PhoneDemogInputArrayType" nillable="true" type="tns:PersonTier2DemogFlexInputType.PhoneDemogInputArrayType" />
+  <xs:complexType name="PersonTier2DemogFlexInputType.WebDemogInputArrayType">
+    <xs:sequence>
+      <xs:element xmlns:q24="http://asa.org/contracts/demogTypes" minOccurs="0" maxOccurs="unbounded" name="WebDemogInput" nillable="true" type="q24:WebHistoryType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier2DemogFlexInputType.WebDemogInputArrayType" nillable="true" type="tns:PersonTier2DemogFlexInputType.WebDemogInputArrayType" />
+  <xs:complexType name="PersonTier3Type">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="OFACStatusDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="OFACStatusId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecordVersion" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonTier3Type" nillable="true" type="tns:PersonTier3Type" />
+  <xs:complexType name="ArrayOfPersonCanonicalType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PersonCanonicalType" nillable="true" type="tns:PersonCanonicalType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPersonCanonicalType" nillable="true" type="tns:ArrayOfPersonCanonicalType" />
+</xs:schema>

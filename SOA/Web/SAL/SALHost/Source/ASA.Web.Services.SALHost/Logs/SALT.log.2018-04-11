@@ -1,0 +1,16 @@
+2018-04-11 15:20:48.199 | 115 | AMSA\bzaino [ 1] INFO  | ASA.Web.Services.SALHost.Global                    SAL Host Startup 
+2018-04-11 15:20:48.219 | 135 | AMSA\bzaino [ 1] INFO  | ASA.Web.Services.SALHost.Global                    inside register routes 
+2018-04-11 15:20:48.220 | 136 | AMSA\bzaino [ 1] INFO  | ASA.Web.Services.SALHost.Global                    about to attach routes 
+2018-04-11 15:20:48.585 | 501 | AMSA\bzaino [10] INFO  | ASA.Web.Services.SearchService.Search              ASA.Web.Services.SearchService.Search() object being created ... 
+2018-04-11 15:23:40.600 | 172516 | AMSA\bzaino [ 8] INFO  | ASA.Web.Services.SALHost.Global                    SAL Host Shutdown 
+2018-04-11 15:24:19.283 | 152 | AMSA\bzaino [ 1] INFO  | ASA.Web.Services.SALHost.Global                    SAL Host Startup 
+2018-04-11 15:24:19.327 | 196 | AMSA\bzaino [ 1] INFO  | ASA.Web.Services.SALHost.Global                    inside register routes 
+2018-04-11 15:24:19.327 | 196 | AMSA\bzaino [ 1] INFO  | ASA.Web.Services.SALHost.Global                    about to attach routes 
+2018-04-11 15:24:19.621 | 490 | AMSA\bzaino [20] INFO  | ASA.Web.Services.SearchService.Search              ASA.Web.Services.SearchService.Search() object being created ... 
+2018-04-11 15:24:47.596 | 28464 | AMSA\bzaino [ 9] INFO  | ASA.Web.Services.SearchService.Search              ASA.Web.Services.SearchService.Search() object being created ... 
+2018-04-11 15:32:35.400 | 496268 | AMSA\bzaino [ 6] INFO  | ASA.Web.Services.SALHost.Global                    SAL Host Shutdown 
+2018-04-11 15:45:08.882 | 117 | AMSA\bzaino [ 1] INFO  | ASA.Web.Services.SALHost.Global                    SAL Host Startup 
+2018-04-11 15:45:08.925 | 160 | AMSA\bzaino [ 1] INFO  | ASA.Web.Services.SALHost.Global                    inside register routes 
+2018-04-11 15:45:08.926 | 161 | AMSA\bzaino [ 1] INFO  | ASA.Web.Services.SALHost.Global                    about to attach routes 
+2018-04-11 15:45:09.155 | 390 | AMSA\bzaino [44] INFO  | ASA.Web.Services.SearchService.Search              ASA.Web.Services.SearchService.Search() object being created ... 
+2018-04-11 16:06:45.953 | 1297187 | AMSA\bzaino [88] INFO  | ASA.Web.Services.SALHost.Global                    SAL Host Shutdown 

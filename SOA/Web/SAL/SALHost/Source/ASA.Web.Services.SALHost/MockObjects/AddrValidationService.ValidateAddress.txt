@@ -1,0 +1,27 @@
+﻿{
+	"ErrorList":[],
+	"SuggestedAddresses":{
+		"ErrorList":[],
+		"Addresses":[
+			{
+			"ErrorList":[],
+			"AddressLine1":"String content",
+			"AddressLine2":"String content",
+			"City":"String content",
+			"CountryID":"String content",
+			"StateID":"String content",
+			"Zip":"String content"
+			}
+		]
+	},
+	"VerifiedAddress":{
+		"ErrorList":[],
+		"AddressLine1":"100 Cambridge St",
+		"AddressLine2":null,
+		"City":"Boston",
+		"CountryID":"USA",
+		"StateID":"MA",
+		"Zip":"02114"
+	},
+	"VerifyLevel":"Verified"
+}

@@ -1,0 +1,27 @@
+﻿{
+	"ErrorList":[],
+	"Alerts":[
+		{
+		"ErrorList":[],
+		"DateIssued":"\/Date(928164000000-0400)\/",
+		"ID":"alert1",
+		"IndividualId":"1627aea5-8e0a-4371-9022-9b504344e724",
+		"Link":"http://www.google.com",
+		"Logo":"",
+		"Message":"You need to be aware of something!",
+		"Title":"Pay attention to this alert!",
+		"ActiveFlag":true
+		},
+		{
+		"ErrorList":[],
+		"DateIssued":"\/Date(928164000000-0400)\/",
+		"ID":"alert2",
+		"IndividualId":"1627aea5-8e0a-4371-9022-9b504344e724",
+		"Link":"http://www.yahoo.com",
+		"Logo":"http://www.google.com/intl/en_com/images/srpr/logo3w.png",
+		"Message":"You need to be aware of something!",
+		"Title":"Pay attention to this alert again!",
+		"ActiveFlag":true
+		}
+	]
+}

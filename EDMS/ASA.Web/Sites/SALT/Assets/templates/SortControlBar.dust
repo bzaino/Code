@@ -1,0 +1,68 @@
+<div class="sort-control-bar">
+    <!-- filters -->
+    <div class="value-prop-controls row collapse noprint">
+        <div class="value-prop-filter columns small-12 large-4">
+            <div id="LeftBarDiv" data-dropdown="drop-featured" class="multi-select-type-style js-tab-marker" tabindex="2">
+                <span class="fa-sort-down"></span>
+                {sortControlBarLeftVal}
+            </div>
+            <ul class="f-dropdown filter-bar clearfix" id="drop-featured" data-dropdown-content aria-autoclose="false">
+                {^hideGoals}
+                    <div class="bordered">
+                        <li><a href="" goal="MasterMoney" class="user-goal" tabindex="2">Master Money</a></li>
+                        <li><a href="" goal="RepayStudentDebt" class="user-goal" tabindex="2">Repay Student Debt</a></li>
+                        <li><a href="" goal="PayForSchool" class="user-goal" tabindex="2">Pay For School</a></li>
+                        <li><a href="" goal="FindAJob" class="user-goal" tabindex="2">Find A Job</a></li>
+                    </div>
+                    <li><a href="" id="" class="SiteWide" tabindex="2">Featured</a></li>
+                {/hideGoals}
+                <li><a href="" id="All" class="SiteWide" tabindex="2">All Items</a></li>
+            </ul>
+        </div>
+        <div id="js-sorting-menu" class="columns small-6 large-4">
+            <div href="#" data-dropdown="drop-middle" class="multi-select-type-style js-tab-marker" tabindex="2">
+                <span class="fa-sort-down"></span>
+                {sortControlBarMiddleVal}
+            </div>
+            <ul id="drop-middle" class="f-dropdown filter-bar clearfix" data-dropdown-content aria-autoclose="false">
+              <li><a href="#" id="BR" class="js-recommended-sort" tabindex="2" style="display: none;">By Recommended</a></li>
+              <li><a href="#" id="P_Hits_Last_30_Days|1" tabindex="2">By Popularity</a></li>
+              <li><a href="#" id="" tabindex="2">By Relevance</a></li>
+              <li><a href="#" id="P_Rating|1" tabindex="2">By Usefulness</a></li>
+            </ul>
+        </div>
+        <div class="columns small-6 large-4 contentfilter">
+            <div id="selectedType" data-dropdown="drop-content-types" class="multi-select-type-style js-tab-marker" tabindex="2">
+                <span class="fa-sort-down"></span>
+                By Type
+            </div>
+            <div class="f-dropdown content filter-bar clearfix" id="drop-content-types" data-dropdown-content aria-autoclose="false">
+                 <div class="row padding-top">
+                    <div class="small-12 columns a-normal">
+                        <a href="" id="clearAllBtn" data-selected="off" tabindex="2">Clear</a> | <a href="" id="select-all-types" data-selected="off" tabindex="2">Select All</a>
+                    </div>
+                </div>
+                <div class="row">
+                    {#sortControlBarRightOptions}
+                        {@iterate on=.}
+                            <div class="filter-option">
+                                <input id="content-type-{value}" type="checkbox" class="css-checkbox js-content-type-option" value="{value}" tabindex="2"><label for="content-type-{value}" class="css-label"><small>{key}</small></label>
+                            </div>
+                        {/iterate}
+                    {/sortControlBarRightOptions}
+                    <div class="spanish-filter-wrapper">
+                        <div class="filter-option margin-bottom">
+                            <input id="content-type-104" type="checkbox" class="css-checkbox" value="104" tabindex="2"><label for="content-type-104" class="css-label"><small>En Espa&#241;ol</small></label>
+                        </div>
+                        <div class="columns apply-button-wrapper">
+                            <button id="typesApplyBtn" class="base-btn main-btn right" tabindex="2">Go</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    require(['salt/SortControlBarDelegate']);
+</script>

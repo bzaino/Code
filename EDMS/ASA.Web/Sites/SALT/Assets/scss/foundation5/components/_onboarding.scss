@@ -1,0 +1,266 @@
+.onboarding-container {
+    border: 1px solid $gray15;
+    background-color: $gray10;
+    float: left;
+    min-width: 100%;
+    position: relative;
+    .outer-progress-meter-wrapper {
+        position: relative;
+        bottom: 90px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        background: $gray15;
+    }
+    .progress-meter-wrapper {
+        width: 70%;
+        margin: 0 auto;
+        .progress {
+            background-color: $white;
+            width: 100%;
+            padding: 0;
+            height: 15px;
+            border: 2px solid darken($gray15, 5);
+            border-radius: 11px;
+            .meter {
+                width: 0%;
+                background-color: $salt-blue;
+                border-radius: 8px;
+                transition: 1s ease-in;
+            }
+        }
+    }
+    .button {
+        z-index: 2;
+    }
+}
+
+.onboarding-header {
+    // mobile 
+    position: relative;
+    float: left;
+    left: -20px;
+    background: $salt-blue;
+    min-width: 225px;
+    width: auto;
+    padding: 0.5em 35px 0.5em 8px;
+    border-radius: 0px 15px 60px 0px;
+    margin-bottom: 0.8em;
+    &:after {
+        content: '';
+        position: absolute;
+        height: 50px;
+        width: 10px;
+        background: $gray10;
+        top: 0;
+        right: 1px;
+        transform: rotateZ(39deg);
+    }
+}
+
+.onboarding-greeting {
+    color: white;
+    margin-bottom: 0px;
+    padding-left: 1px;
+    span {
+        color: white;
+        font-weight: bold;
+    }
+}
+
+.qa-nav-wrapper {
+    border-top: 1px solid $gray15; 
+    margin-top: 1em;
+    padding-top: 1em;
+    // mobile only
+    position: relative;
+    top: 50px;
+}
+
+#sortable-goals {
+    min-width: 12.5em;
+}
+
+.row.onboarding-question {
+    margin-top: 15px;
+}
+
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+//onboarding module subhead to be placed at the bottom of the goal. 
+.subhead-single{
+    position: absolute;
+    bottom: 70px;
+    width: 60%;
+    width: 95%;
+}
+#goal-rank-num li label { 
+  /* visually hidden offscreen so it still benefits screen readers */
+    position: absolute;
+    left: -9999px;
+}
+.goal-rank-wrapper {
+   height: 180px;
+   padding-left: 0px;
+}
+
+.goal-table-div {
+    margin-bottom: 1.25em;
+    padding-left: 0px;
+}
+.goal-rank-div {
+    display: table-cell;
+    vertical-align: middle;
+    width: 80%;
+}
+.goal-numbers ul {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+}
+.goal-rank {
+    background: $salt-blue;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: $white;
+    font-size: .85em;
+    font-weight: bold;
+    margin: 7px 6px 10px 0px;
+    padding: 2px;
+    text-align: center;
+    border: none;
+}
+.rank-goal-text {
+    font-weight: bold;
+}
+.singlegoal-style{
+    list-style: none;
+    font-size: 1.1em;
+}
+.goal-line{
+   border-right: 1px solid $gray15;
+   border-top: 1px solid $gray15;
+   border-bottom: 1px solid $gray15;
+   width: 4px;
+}
+.goal-rate {
+    padding-left: 10px;
+    width: 100px;
+    position: relative;
+}
+.highest-goal, .lowest-goal {
+    position:absolute;
+    font-size: .75em;
+}
+.highest-goal{
+    top: 0;
+}
+.lowest-goal{
+    bottom: 0;
+}
+.section-container {
+    padding: 0 0.625em;
+    display: none;
+    &.active-panel {
+        display: block;
+    }
+    h1 {
+        display: inline-block;
+        line-height: 0.2em;
+    }
+    .question-container:first-of-type {
+        padding-top: 1.6em;
+    }
+    .question-container:last-of-type {
+        border-bottom: 2px solid $gray15;
+        padding-bottom: 2em;
+    }
+    .other-ans {
+        input {
+            background-color: #fdfdfd;
+            border: 1px solid #dcddde;
+        }
+    }
+}
+.salt3 .section-container .back.main-btn {
+    background-color: $gray10;
+}
+.top-border {
+    border-top: 1px solid #ccc;
+}
+.ranking-button-arrows {
+    padding-top: 2px;
+}
+.onboarding-question {
+    font-weight: bold;
+}
+.onboarding-exit-wrapper {
+    position: absolute;
+    display: none;
+    right: 1.25em;
+    top: 1.25em;
+    z-index: 1;
+}
+.progress-circles {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border: 2px solid $salt-blue;
+    border-radius: 100%;
+    margin-right: 5px;
+    &.active {
+        background: $salt-blue;
+    }
+}
+@media only screen and (min-width: 40.063em) {
+    .goal-image-div{
+        width: 35%;
+        position: absolute;
+        right: 0px;
+        bottom: -2px;
+    }
+    .goal-table-div{
+        width: 65%;
+    }
+    .onboarding-container {
+        border-width: 2px;
+        border-radius: 20px 80px;
+        padding: 20px 0;
+    }
+    .onboarding-header {
+        left: -40px;
+        padding-left: 30px;
+    }
+    .onboarding-exit-wrapper {
+        right: 4em;
+        top: 2em;
+    }
+    .section-container {
+        padding: 0 30px;
+    }
+    .subhead-single{
+        width: 60%;
+    }
+    .onboarding-container {
+        .outer-progress-meter-wrapper {
+            position: absolute;
+            bottom: 45px;
+            padding-top: 0;
+            padding-bottom: 0;
+            background: none;
+        }
+        .progress-meter-wrapper {
+            width: 50%;
+        }
+    }
+    .qa-nav-wrapper {
+        top: 0px;
+    }
+}

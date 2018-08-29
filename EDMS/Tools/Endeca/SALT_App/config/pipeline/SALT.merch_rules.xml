@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE MERCH_RULES SYSTEM "merch_rules.dtd">
+<MERCH_RULES>
+
+  <MERCH_RULE_GROUP_REF IS_REDIRECT_GROUP="FALSE" URL="SALT.merch_rule_group_default.xml"/>
+
+  <MERCH_RULE_GROUP_REF IS_REDIRECT_GROUP="TRUE" URL="SALT.merch_rule_group_default_redirects.xml"/>
+
+</MERCH_RULES>

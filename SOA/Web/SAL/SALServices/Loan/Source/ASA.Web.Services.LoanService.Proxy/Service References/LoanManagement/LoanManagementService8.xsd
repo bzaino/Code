@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://asa.org/servicecontract/loanManagement/v1.2" elementFormDefault="qualified" targetNamespace="http://asa.org/servicecontract/loanManagement/v1.2" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://adevweb022.amsa.com/LoanManagementService/LoanManagementService.svc?xsd=xsd2" namespace="http://asa.org/contracts/loan" />
+  <xs:import schemaLocation="http://adevweb022.amsa.com/LoanManagementService/LoanManagementService.svc?xsd=xsd6" namespace="http://amsa.com/contract/ASA.Common.ResponseMessage/v1.0" />
+  <xs:import schemaLocation="http://adevweb022.amsa.com/LoanManagementService/LoanManagementService.svc?xsd=xsd8" namespace="http://asa.org/contracts/loanServiceCriteria" />
+  <xs:element name="SaveLoanRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://asa.org/contracts/loan" minOccurs="0" name="LoanCanonical" nillable="true" type="q1:LoanCanonicalType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveLoanResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://asa.org/contracts/loan" minOccurs="0" name="LoanCanonical" nillable="true" type="q2:LoanCanonicalType" />
+        <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+        <xs:element xmlns:q3="http://amsa.com/contract/ASA.Common.ResponseMessage/v1.0" minOccurs="0" name="ResponseMessageList" nillable="true" type="q3:ResponseMessageList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLoanRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://asa.org/contracts/loanServiceCriteria" minOccurs="0" name="Criteria" nillable="true" type="q4:LoanServiceCriteriaType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLoanResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://asa.org/contracts/loan" minOccurs="0" name="LoanCanonical" nillable="true" type="q5:ArrayOfLoanCanonicalType" />
+        <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+        <xs:element xmlns:q6="http://amsa.com/contract/ASA.Common.ResponseMessage/v1.0" minOccurs="0" name="ResponseMessageList" nillable="true" type="q6:ResponseMessageList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

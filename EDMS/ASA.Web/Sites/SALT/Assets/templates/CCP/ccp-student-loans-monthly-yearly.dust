@@ -1,0 +1,33 @@
+            <div class="js-loans-by-{type}" hidden>
+                <header class="row collapse">
+                    <hgroup class="small-12 columns">
+                        <h3 class="js-{type}ly-payment"><b>Estimated {@if cond="'{type}' ==='month' "}Monthly{:else}Total Annual{/if} Payment</b></h3> 
+                    </hgroup>
+                </header>
+                <div class="items-col">
+                    <div class="row collapse">
+                        <div class="small-6 columns padding-bottom">
+                            Federal Student Loans
+                        </div>
+                         <div class="small-6 columns nowrap text-right">
+                            <span class="js-student-loans js-loans-{type}ly js-loans-{type}ly-fsl" />                            
+                        </div>
+                    </div>
+                    <div class="row collapse">
+                        <div class="small-6 columns padding-bottom">
+                            Federal PLUS Loans
+                        </div>
+                         <div class="small-6 columns nowrap text-right">
+                            <span class="js-student-loans js-loans-{type}ly js-loans-{type}ly-fppl" />
+                        </div>
+                    </div>
+                    <div class="row collapse">
+                        <div class="small-6 columns padding-bottom">
+                            Private/Other Loans
+                        </div>
+                         <div class="small-6 columns nowrap text-right">
+                            <span class="js-student-loans js-loans-{type}ly js-loans-{type}ly-other" />
+                        </div>
+                    </div>
+                </div>
+            </div>

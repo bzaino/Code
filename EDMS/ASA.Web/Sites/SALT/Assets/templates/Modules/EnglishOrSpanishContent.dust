@@ -1,0 +1,78 @@
+<header class="title-container margin-bottom">
+    {@if cond="'{mainContent[0].record.attributes.ContentTypes[0]}' === 'Article'"}
+        {?englishContent}{record.attributes.headline}{:else}{record.attributes.spanish-headline}{/englishContent}
+        <div class="row">
+            <div class="small-12 columns no-padding">
+                {?englishContent}{record.attributes.subhead}{:else}{record.attributes.spanish-subhead}{/englishContent}
+                {>"Modules/DisplayAuthorAndDate" /}
+            </div>
+         </div>
+        </header>
+        {?englishContent}
+            {@if cond="'{record.attributes.callout|trim}'.length"}
+                {@if cond="'{record.attributes.page_tags}' !== 'noimage' && '{record.attributes.ContentTypes}' !== 'Form'"}
+                    <article class="callout" >
+                {:else}
+                    <article class="callout full-width">
+                {/if}
+                    <div id="englishCallout">
+                        {record.attributes.callout}
+                    </div>
+                </article>
+            {/if}
+        {/englishContent}
+        {?spanishContent}
+             {@if cond="'{record.attributes.spanish-callout|trim}'.length"}
+                {@if cond="'{record.attributes.page_tags}' !== 'noimage' && '{record.attributes.ContentTypes}' !== 'Form'"}
+                    <article class="callout" >
+                {:else}
+                    <article class="callout full-width">
+                {/if}
+                    <div id="spanishCallout">
+                        {record.attributes.spanish-callout}
+                    </div>
+                </article>
+            {/if}
+        {/spanishContent}
+        {@if cond="'{record.attributes.page_tags}' !== 'noimage' && '{record.attributes.ContentTypes}' !== 'Form'"}
+            <div class="large-6 medium-6 small-12 columns right">
+                {@if cond="'{mainContent[0].record.attributes.carousel-module-body|trim}'.length"}
+                    {>"Modules/Carousel" recordKey="{mainContent[0].record.attributes.carousel-module-body|trim}" /}
+                {:else}
+                    <figure class="headerimage hide-for-small noprint">
+                      {@sizeImage imageSource="{record.attributes.tile-image-2014}" /}
+                    </figure>
+                {/if}
+            </div>
+        {/if}
+    {:else}
+        <div class="row">
+            <div class="small-12 columns no-padding">
+                {?englishContent}{record.attributes.headline}{:else}{record.attributes.spanish-headline}{/englishContent}
+                {record.attributes.subhead}
+                {>"Modules/DisplayAuthorAndDate" /}
+            </div>
+            
+        </div>
+        </header>
+    {/if}
+<div class="{?blockedContent} noprint {/blockedContent} article-body">
+    {?englishContent}
+        <div class="js-glossary-scope">
+            {@if cond="'{record.attributes.ContentTypes}' === 'Infographic' || '{record.attributes.ContentTypes}' === 'Comic'"}
+            <div class="image-body">
+                {record.attributes.body}
+            </div>
+            {:else}
+                {record.attributes.body}
+            {/if}
+        </div>
+        {record.attributes.button-area}
+    {:else}
+        <div class="js-glossary-scope">
+            {record.attributes.spanish-body}
+        </div>
+        {record.attributes.spanish-button-area}
+    {/englishContent}
+    {>"Modules/FlatTags" /}
+</div>

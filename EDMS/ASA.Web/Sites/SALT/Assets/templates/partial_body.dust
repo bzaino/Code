@@ -1,0 +1,64 @@
+{#content}
+        <article>
+            <div class="content">
+                {>"Modules/ContentHeaderBar" /}
+                {#mainContent}
+                    <div class="tabs-content">
+                        <div class="{english}" id="english-content">
+                            {>"Modules/EnglishOrSpanishContent" englishContent="english" callout="{record.attributes.callout}" /}
+                        </div>
+                        <div class="{spanish}" id="spanish-content">
+                            {>"Modules/EnglishOrSpanishContent" spanishContent="spanish" callout="{record.attributes.spanish-callout}" /}
+                        </div>
+                        {?endOfIncompleteContent}
+                            <div id="js-end-of-content"></div>
+                        {/endOfIncompleteContent}
+                        {>"Modules/AuthorPartnerBlock" /}
+                        {>"Modules/ContentFooter" /}
+                        {! dynamicCTA : -used by child templates to add unblocked CTA -Defaults to nothing !}
+                        {?unblocked}
+                            {+dynamicCTA}
+                            {/dynamicCTA}
+                        {/unblocked}
+                    </div>
+
+                    {^SiteMember.ActiveDirectoryKey}
+                        {@if cond="'{record.attributes.page_tags}' === 'registration'"}
+                            {>"RegistrationButton" /}
+                        {/if}
+                    {/SiteMember.ActiveDirectoryKey}
+
+                {/mainContent}
+            </div>
+        </article>
+        {>"partial_featured" /}
+
+{/content}
+
+<script>
+    require(['jquery', 'asa/ASAUtilities'], function ($, Utility) {
+        $('#spanish-tab, #english-tab').on('keydown', function (e) {
+            if (e.type === 'click' || e.which === 13) {
+                $(e.currentTarget).children().click();
+            }
+        });
+        /* Toggle content (not sure why don't do this with standard foundation tabs) and some custom code to make 508 tabbing work */
+        $('.tabs').on('toggled', function (event, tab) {
+            /* spanish tab was clicked */
+            if (tab.attr('id') === 'spanish-tab') {
+                $('#englishCallout, #english-content').hide();
+                $('#spanishCallout, #spanish-content').show();
+            } else {
+                $('#spanishCallout, #spanish-content').hide();
+                $('#englishCallout, #english-content').show();
+            }
+            tab.prop('tabindex', '-1');
+            tab.children().prop('tabindex', '-1');
+            tab.siblings().prop('tabindex', '2');
+            tab.siblings().focus();
+        });
+        /* make the links themselves untabbable, make the inactive tab tabbable */
+        $('#spanish, #english').prop('tabindex', '-1');
+        $('#spanish-tab:not(".active"), #english-tab:not(".active")').prop('tabindex', '2');
+    });
+</script>

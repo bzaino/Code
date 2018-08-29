@@ -1,0 +1,24 @@
+{>"page_parent" /}
+
+{<dynamicTitle}{#content}{title}{/content} - Salt{/dynamicTitle}
+
+{<dynamicBody}
+    {#content}
+        <article>
+            <div class="content">
+                <header class="title-container no-bottom-padding margin-bottom">
+                    {secondaryContent[0].records[0].attributes.headline}
+                        <div class="row">
+                            <div class="small-12 columns no-padding">
+                                {secondaryContent[0].records[0].attributes.subhead}
+                            </div>
+                        </div>
+                </header>
+                {secondaryContent[0].records[0].attributes.body}
+                {>"partial_social" /}
+            </div>
+        </article>
+    {/content}
+
+    {> "Modules/AddThis" /}
+{/dynamicBody}

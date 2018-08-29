@@ -1,0 +1,69 @@
+<section class="row hide-for-small padded">
+<div id="slider">
+    <div id="featured" data-name="home">
+      <ul data-orbit data-options="navigation_arrows: false; slide_number: false; timer_speed: 6000; resume_on_mouseout: true;">
+        {#content}
+            {#secondaryContent}
+                {^SiteMember.ActiveDirectoryKey}
+                    {@select key="{name}"}
+                        {@eq value="UnAuthCarousel"}
+                            {#records}
+                              <li>
+                                <div class="orbit-background-img">
+                                  {attributes.rich-text-image}
+                                </div>
+                                <div class="orbit-caption caption-default-container" id="{attributes.sys_title}">
+                                  {attributes.headline}
+                                  {attributes.body}
+                                  {attributes.button-area}
+                                </div>
+                              </li>
+                            {/records}
+                        {/eq}
+                    {/select}
+                {:else}
+                    {@select key="{name}"}
+                        {@eq value="AuthCarousel"}
+                            {#records}
+                              {@if cond="'{attributes.rich-text-image}' === '   '"}
+                                <li class="orbit-background-img">
+                                    <img src="/assets/images/backgrounds/{configuration.CurrentSchoolBrand}-web.jpg" alt="{configuration.CurrentSchool}" title="{configuration.CurrentSchool}" />
+                                    <div class="orbit-caption" id="{attributes.sys_title}">
+                                        {@if cond="'{configuration.CurrentSchoolBrand}' !== 'nologo'"}
+                                            <div class="logo-placement right small-3 columns">
+                                                <p><img src="/assets/images/logos/large/{configuration.CurrentSchoolBrand}-web.png" alt="{configuration.CurrentSchool}" title="{configuration.CurrentSchool}" /></p>
+                                            </div>
+                                        {/if}
+                                        <div class="orbit-caption-container-branded">
+                                            <div class="orbit-caption-container">
+                                                {attributes.headline}
+                                                {attributes.body}
+                                                <div class="orbit-caption-button">{attributes.button-area}</div>
+                                            </div>
+                                        </div>
+                                  </div>
+                                </li>
+                              {:else}
+                                <li>
+                                  <div class="orbit-background-img">
+                                    {attributes.rich-text-image}
+                                  </div>
+                                  <div class="orbit-caption caption-default-container" id="{attributes.sys_title}">
+                                    {attributes.headline}
+                                    {attributes.body}
+                                    {attributes.button-area}
+                                  </div>
+                                </li>
+                              {/if}
+                            {/records}
+                          {/eq}
+                      {/select}
+                  {/SiteMember.ActiveDirectoryKey}
+              {/secondaryContent}
+          {/content}
+      </ul>
+    </div>
+</div>
+</section>
+
+<script>require(['homepage-carousel']);</script>

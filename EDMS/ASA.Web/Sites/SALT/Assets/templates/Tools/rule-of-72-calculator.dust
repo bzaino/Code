@@ -1,0 +1,54 @@
+<link type="text/css" href="/Tools/css/all.css" media="screen" rel="stylesheet" />
+<link type="text/css" href="/Tools/css/main.css" media="screen" rel="stylesheet" />
+<link type="text/css" href="/Tools/css/quiz.css" media="screen" rel="stylesheet" />
+<link type="text/css" href="/Tools/css/calculators.css" media="screen" rel="stylesheet" />
+    
+
+<script>
+	require([
+		'Tools/validation',
+		'Tools/ruleOf72'
+		])
+</script>
+
+    <div class="ruleOf72">
+<div class="tool-wrap clearfix calculator">
+    <div class="stage-wrap{?blockedContent} noprint{/blockedContent}">
+        <div class="slides-wrapper">
+            <div class="slide">
+                <div class="slide-title clearfix">
+					<ul class="title-icons">
+						
+					</ul>
+					<h1>Rule of 72 Calculator</h1>
+				</div>
+				<div class="slide-content clearfix">
+				    <div class="slide-left">
+				        <p><span class="sentence-container">How long would it take my money to double at the annual interest rate of</span><span class="percent-container"> <input type="text" name="annual-inteters-rate" class="percentage inlineInput tool-input"  tabindex="1"></span></p>
+				    </div>
+				    <div class="slide-right totals">
+				        <div class="rule-wrapper">
+				        <p>72 / <span class="white-block"></span></p>  
+				        </div>
+				        <div class="values">
+				            <p>It will double in <span class="years"></span></p>
+				        </div>
+				        <div class="additional-info clearfix">
+				            <p>Learn more about <a href="/content/media/Article/how-does-interest-work/_/R-101-20123">how the rule of 72 works.</a></p>
+				           
+				        </div>
+				        <div class="salt-logo-wrapper"><div class="salt-tool-logo"></div></div>
+				    </div>
+				</div>
+            </div>  
+        </div>
+    </div>
+    <div class="slide title-wrapper">
+		<h1>Rule of 72 Calculator</h1>
+		<h3>Investments have various interest rates, but the rule of 72 is the great equalizer. No matter your investment amount, this calculator can determine how many years it will take for it to double—all with the power of the number "72."</h3>
+		<a href="#" id="startBtn">Start</a>
+		<!-- <div class="salt-logo-wrapper"><div class="salt-tool-logo"></div></div> -->
+	</div>
+</div>
+</div>
+  

@@ -1,0 +1,101 @@
+{@if cond="'{attributes.ContentTypes}' !== 'Alert' "}
+<article class="{name} small-12 tiles clearfix">
+    <section>
+        <div class="row{?SaltSuggests} salt-suggests-banner{/SaltSuggests}">
+            {@if cond="'{name}' !=='WhyUseSalt' "}
+                <div class="contentFlag {attributes.ContentTypes} small-6 medium-5 columns noprint">
+                    <p class="contentTypeText">
+                        {@if cond="'{name}' ==='PromoTile' "}
+                            {attributes.page_tags}
+                        {:else}
+                            {attributes.ContentTypes}
+                        {/if}
+                    </p>
+                </div>
+            {/if}
+            {?SaltSuggests}
+                <div class="small-6 medium-7 columns text-left isRecommended noprint">
+                    <p>Salt suggests</p>
+                </div>
+            {/SaltSuggests}
+        </div>
+        {@if cond="'{attributes.ContentTypes}' ==='Video' || '{title}' ==='YoutubeOverlay' || '{title}' ==='BrightCoveOverlay'"}
+            <!-- Adds sidebar video and/or overlay for youtube salt tutorial -->
+            {>"partial_sidebar_promovideo" /}
+        {/if}
+        {@if cond="'{title}' !=='YoutubeOverlay' && '{title}' !=='BrightCoveOverlay'"}
+            <figure class="featured {@if cond="'{name}' !=='PromoTile' && '{name}' !=='WhyUseSalt'"}small-only-left {?SaltSuggests}small-6 {:else}small-12 salt-suggests{/SaltSuggests}{/if} medium-12 ">
+                {@if cond="'{attributes.external-url|trim}'.length"}
+                    {@if cond="'{attributes.ContentTypes}' === 'Course'"}
+                        <a href="#" data-coursepath="{attributes.external-url}" class="js-salt-courses-link" title="{attributes.resource_link_title}" class="tileImgLink" tabindex="-1">
+                    {:else}
+                        <a href="{attributes.external-url}" title="{attributes.resource_link_title}" class="tileImgLink" {@if cond="'{name}' !== 'WhyUseSalt'"}tabindex="-1"{/if}>
+                    {/if}
+                {:else}
+                    <a href="/content/media{detailsAction.recordState}" title="{attributes.resource_link_title}" class="tileImgLink" tabindex="-1">
+                {/if}
+                {@if cond="'{name}' === 'WhyUseSalt'"}
+                    {@responsiveImage imageSource="{attributes.tile-image-2014}" mediumAvailable="true" altVal="{attributes.headline}" /}
+                {:else}
+                    {@responsiveImage imageSource="{attributes.tile-image-2014}" altVal="{attributes.headline}" /}
+                {/if}
+                </a>
+            </figure>
+        {/if}
+        {@if cond="'{attributes.ContentTypes}' !== '' && '{title}' !=='YoutubeOverlay' && '{title}' !=='BrightCoveOverlay'"}
+            <div class="topicName small-12 show-for-medium-up">
+                {@flatTagsSeperator str="{attributes.FlatTags}"/}
+            </div>
+        {/if}
+        {@if cond="'{attributes.ContentTypes}' !== '' && '{attributes.ContentTypes}' !== 'Lesson' && '{title}' !=='YoutubeOverlay' && '{title}' !=='BrightCoveOverlay'"}
+            <div class="small-12 columns ratings-widget show-for-medium-up noprint">
+                <ul class="review-{attributes.P_Primary_Key} no-margin js-tile-review-container">
+                    <input class="js-tile-rating" type="hidden" value="{attributes.P_Rating}" />
+                    <input class="js-tile-pkey" type="hidden" value="{attributes.P_Primary_Key}" />
+                </ul>
+                <small class="position-absolute padding-top">&nbsp;({attributes.P_Rating_Count|currencyComma})</small>
+            </div>
+            <script>
+                require([
+                    'jquery',
+                    'modules/StarRatingWidget'
+                ], function ($) {
+                    $('.review-{attributes.P_Primary_Key}').ratings(5, Math.round(Number('{attributes.P_Rating}'), false));
+                });
+        </script>
+        {/if}
+        {@if cond="'{name}' !=='WhyUseSalt' && '{title}' !=='YoutubeOverlay' && '{title}' !=='BrightCoveOverlay'"}
+            <header class="tileHeader {@if cond="'{name}' !=='PromoTile' "} small-only-right {?SaltSuggests} small-6 {:else} small-12 {/SaltSuggests} {/if} medium-12 columns">
+                {@if cond="'{attributes.external-url|trim}'.length"}
+                    {@if cond="'{attributes.ContentTypes}' === 'Course'"}
+                        <a href="#" data-coursepath="{attributes.external-url}" class="js-salt-courses-link" title="{attributes.resource_link_title}">
+                    {:else}
+                        <a href="{attributes.external-url}" title="{attributes.resource_link_title}" tabindex="3">
+                    {/if}
+                    {attributes.headline} </a>
+                {:else}
+                    <a href="/content/media{detailsAction.recordState}" title="{attributes.resource_link_title}">{attributes.headline} </a>
+                {/if}
+            </header>
+        {/if}
+        {@if cond="'{attributes.ContentTypes}' !== '' &&  '{attributes.page_summary}' !==''"}
+            <div class="tileText tile-summary small-only-right small-6 medium-12 columns">
+                {attributes.page_summary}
+            </div>
+        {/if}
+        {@if cond="'{attributes.ContentTypes}' !== '' && '{title}' !=='YoutubeOverlay' && '{title}' !=='BrightCoveOverlay'"}
+            <ul class="tile-bottom-icons content-utility-icons js-video-icon show-for-medium-up noprint">
+                {>"Modules/ConsumptionTime" /}
+                {@if cond="'{attributes.Language[0]}' === 'English' && '{attributes.Language[1]}' === 'Spanish'"}
+                    <li class="spanishLink">
+                        <a href="/content/media{@fixSpanishQuerystring url="{detailsAction.recordState}" /}" title="{attributes.resource_link_title}">
+                            En Espa&#241;ol
+                        </a>
+                    </li>
+                {/if}
+            </ul>
+            <div class="tile-spacer hide-for-small"> </div>
+        {/if}
+    </section>
+</article>
+{/if}

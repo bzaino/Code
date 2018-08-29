@@ -1,0 +1,112 @@
+﻿<#@ template debug="true" hostSpecific="true" #>
+<#@ output extension=".generated.cs" #>
+<#@ Assembly Name="System.Data" #>
+<#@ assembly name="System.Configuration" #>
+<#@ import namespace="System.Data" #>
+<#@ import namespace="System.Data.SqlClient" #>
+<#@ import namespace="System.Configuration" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Text.RegularExpressions" #>
+<#@ include file="EF.Utility.CS.ttinclude"#>
+using System;
+using System.CodeDom.Compiler;
+
+namespace <#= GetSubNamespace() #>
+{
+		public class LessonQuestionAttributes
+		{
+		<#
+			string path = "";
+			var buildConfig = Path.Combine(Host.ResolvePath(@"..\"), "App.config");
+			var config = ConfigurationManager.OpenMappedExeConfiguration(new ExeConfigurationFileMap { ExeConfigFilename = buildConfig }, ConfigurationUserLevel.None);
+			var connectionString = config.ConnectionStrings.ConnectionStrings["SALTEntities"].ConnectionString;
+
+			var sqlConnection = new SqlConnection(connectionString);
+			var lessonsSql= string.Format("select LessonID,LessonName from Lesson");
+			var lessonsCommand = new SqlCommand(lessonsSql, sqlConnection);
+
+			sqlConnection.Open();
+
+			var lessonsSqlReader = lessonsCommand.ExecuteReader();
+
+			while (lessonsSqlReader.Read()){
+			#>
+
+					/// <summary>
+					/// LessonQuestionAttributes auto generated constants
+					/// </summary>
+					[GeneratedCode("TextTemplatingFileGenerator", "11")]
+					public class Lesson<#= Pascalize(lessonsSqlReader["LessonID"]) #>
+					{
+					<#
+						var lessonStepConnection = new SqlConnection(connectionString);
+						var lessonStepSql = "SELECT LessonStepName, LessonStepId FROM LessonStep WHERE LessonID =" +  lessonsSqlReader["LessonID"] ;
+
+						var lessonStepCommand = new SqlCommand(lessonStepSql, lessonStepConnection);
+
+						lessonStepConnection.Open();
+
+						var lessonStepReader = lessonStepCommand.ExecuteReader();
+    
+						while(lessonStepReader.Read())
+						{
+						#>
+								public class <#= Pascalize(lessonStepReader["LessonStepName"]) #>
+								{
+
+								<#
+								var lessonQuestionConnection = new SqlConnection(connectionString);
+								var lessonQuestionSql = "SELECT lq.Question, lq.LessonQuestionID FROM LessonQuestion lq INNER JOIN LessonStep ls on ls.LessonStepID = lq.LessonStepID INNER JOIN Lesson l on l.LessonID = ls.LessonID WHERE l.LessonID =" +  lessonsSqlReader["LessonID"]  + " AND lq.LessonStepID = " + lessonStepReader["LessonStepID"];
+
+								var lessonQuestionCommand = new SqlCommand(lessonQuestionSql, lessonQuestionConnection);
+
+								lessonQuestionConnection.Open();
+
+								var lessonQuetionReader = lessonQuestionCommand.ExecuteReader();
+    
+								while(lessonQuetionReader.Read())
+								{
+								#>
+										public class <#= Pascalize(lessonQuetionReader["Question"]) #>
+										{
+										<#
+											var conn = new SqlConnection(connectionString);
+											var command = "SELECT lqa.LessonQuestionAttributeID,lq.Question,lqa.AttributeName FROM		dbo.LessonQuestionAttribute lqa INNER JOIN	dbo.LessonQuestion lq ON lqa.LessonQuestionID = lq.LessonQuestionID  INNER JOIN LessonStep ls on ls.LessonStepID = lq.LessonStepID INNER JOIN Lesson l on l.LessonID = ls.LessonID WHERE l.LessonID =" +  lessonsSqlReader["LessonID"] + " AND lq.LessonQuestionID = " + lessonQuetionReader["LessonQuestionID"] + " AND lq.LessonStepID = " + lessonStepReader["LessonStepID"];
+
+											var comm = new SqlCommand(command, conn);
+
+											conn.Open();
+
+											var reader = comm.ExecuteReader();
+											bool loop = reader.Read();
+
+											while(loop)
+											{	
+											#>      
+
+											public const int <#= Pascalize(reader["AttributeName"]) #> = <#= reader["LessonQuestionAttributeID"] #><# loop = reader.Read(); #><#= loop ? ";\r\n" : ";" #>
+											
+											<#}#>
+										}
+								<#}#>
+								}
+						<#}#>
+					}
+				<#}#>
+			}
+		}
+										
+
+<#+
+    private string Pascalize(object value)
+    {
+        Regex rx = new Regex(@"(?:[^a-zA-Z0-9]*)(?<first>[a-zA-Z0-9])(?<reminder>[a-zA-Z0-9]*)(?:[^a-zA-Z0-9]*)");
+        return rx.Replace(value.ToString(), m => m.Groups["first"].ToString().ToUpper() + m.Groups["reminder"].ToString().ToLower());
+    }
+
+    private string GetSubNamespace()
+    {
+        CodeGenerationTools code = new CodeGenerationTools(this){FullyQualifySystemTypes = true, CamelCaseFields = false};
+		return code.VsNamespaceSuggestion();
+    }
+#>

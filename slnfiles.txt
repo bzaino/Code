@@ -1,0 +1,7 @@
+InternalComponents\Framework\ASA.Framework\ASA.Framework.sln,
+Automation\EDMS\Selenium\SaltSeleniumTests\SaltSeleniumTests.sln,
+EDMS\ASA.Web\Sites\ASAIDP\ASAIDP.sln,
+SOA\Web\SAL\ASA.Web.Services.sln,
+SOA\Web\SALTService\SALTWebServices.sln,
+SOA\Tools\SALTShaker\SALTShaker.sln,
+EDMS\ASA.Web\Sites\SALT\ASA.Web.Sites.SALT.sln,

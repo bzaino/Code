@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE DIMENSIONS SYSTEM "dimensions.dtd">
+<DIMENSIONS VERSION="1.0.0">
+
+  <DIMENSION NAME="RecordType" SRC_TYPE="AUTOGEN">
+    <DIMENSION_ID ID="1"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="1"/>
+        <SYN CLASSIFY="TRUE" DISPLAY="TRUE" SEARCH="TRUE">RecordType</SYN>
+      </DVAL>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+  <DIMENSION NAME="ContentType" SRC_TYPE="AUTOGEN">
+    <DIMENSION_ID ID="2"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="2"/>
+        <SYN CLASSIFY="FALSE" DISPLAY="TRUE" SEARCH="FALSE">ContentType</SYN>
+      </DVAL>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+  <DIMENSION NAME="Tags" SRC_TYPE="AUTOGEN">
+    <DIMENSION_ID ID="177"/>
+    <DIMENSION_NODE>
+      <DVAL TYPE="EXACT">
+        <DVAL_ID ID="177"/>
+        <SYN CLASSIFY="FALSE" DISPLAY="TRUE" SEARCH="FALSE">Tags</SYN>
+      </DVAL>
+    </DIMENSION_NODE>
+  </DIMENSION>
+
+</DIMENSIONS>

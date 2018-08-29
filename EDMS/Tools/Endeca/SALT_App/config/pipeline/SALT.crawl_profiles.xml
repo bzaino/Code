@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE CRAWL_PROFILES SYSTEM "crawl_profiles.dtd">
+<CRAWL_PROFILES NEXT_ID="2">
+
+  <CRAWL_PROFILE_REF URL="crawl_profile_1.xml"/>
+
+</CRAWL_PROFILES>

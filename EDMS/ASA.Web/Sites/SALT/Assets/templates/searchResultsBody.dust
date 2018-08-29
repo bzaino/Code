@@ -1,0 +1,59 @@
+{?SiteMember.DashboardEnabled}
+    <div class="controlbar-container row padding-top">
+        {@if cond="'{name}' === 'Search Results'"}
+        <div class="small-9 medium-10 columns">
+            <div class="search-text">
+                <h2>
+                    {@if cond="'{mainContent[1].adjustedSearches}'"}
+                        {#mainContent[1].adjustedSearches}
+                            {@searchResultsHeader origTerm="{mainContent[1].originalTerms}" numRecords="{secondaryContent[0]|countWithoutDefinitions}" termObject=./}
+                        {/mainContent[1].adjustedSearches}
+                    {:else}
+                        {@searchResultsHeader origTerm="{secondaryContent[1].searchCrumbs[0].terms}" numRecords="{secondaryContent[0]|countWithoutDefinitions}" /}
+                    {/if}
+                </h2>
+            </div>
+        </div>
+        <div class="small-3 medium-2 columns">
+             <div class="btn-dropdown-container right">
+                <span class="sort-filter-text">Sort & Filter</span>
+                <input type="button" data-dropdown="drop-content-types" aria-controls="drop-content-types" aria-expanded="false" class="btn-dropdown js-dropdown dd-opener" tabindex="3"/>
+             </div>
+        </div>
+        {>"Modules/Salt3SortControl"/}
+        {/if}
+    </div>
+{:else}
+    <div class="controlbar-container no-top-padding padding-left padding-right">
+        <div class="articles-container row collapse">
+            {@if cond="'{name}' === 'Search Results'"}
+                <section class="small-12 columns">
+                    <div class="featured-controls no-top-padding">
+                        <h2 class="featured-title-sort">
+                            {@if cond="'{mainContent[1].adjustedSearches}'"}
+                                {#mainContent[1].adjustedSearches}
+                                    {@searchResultsHeader origTerm="{mainContent[1].originalTerms}" numRecords="{secondaryContent[0]|countWithoutDefinitions}" termObject=./}
+                                {/mainContent[1].adjustedSearches}
+                            {:else}
+                                {@searchResultsHeader origTerm="{secondaryContent[1].searchCrumbs[0].terms}" numRecords="{secondaryContent[0]|countWithoutDefinitions}" /}
+                            {/if}
+                        </h2>
+                    </div>
+                </section>
+            {/if}
+            {>"SortControlBar" /}
+        </div>
+    </div>
+{/SiteMember.DashboardEnabled}
+
+{#mainContent[2]}
+    {@if cond="'{records[0].attributes.ContentTypes}' === 'Definition' "}
+        <div class="padded no-top-padding js-definition-result">
+            {@glossaryTile records=records search="{secondaryContent[1].searchCrumbs[0].terms}" adjustedSearches=mainContent[1].adjustedSearches /}
+        </div>
+    {/if}
+{/mainContent[2]}
+
+<div id="search-content" class="js-home-tiles no-padding flex-container">
+    {>"tiles" /}
+</div>

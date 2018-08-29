@@ -1,0 +1,12 @@
+<small class="noprint right padding-top hide-for-small-only">&nbsp;({record.attributes.P_Rating_Count|currencyComma})</small>
+<ul class="js-AverageRating ratings-widget no-margin right overflow-hidden"></ul>
+<div class="js-avgRatingValue hide hidden">{record.attributes.P_Rating}</div>
+<script>
+    require([
+        'jquery',
+        'modules/StarRatingWidget'
+    ], function ($) {
+        var avgRating = Math.round(Number($('.js-avgRatingValue').text()));
+        $('.js-AverageRating').ratings(5, avgRating, false);
+    });
+</script>

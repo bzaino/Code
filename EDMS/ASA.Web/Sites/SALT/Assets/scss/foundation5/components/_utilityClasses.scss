@@ -1,0 +1,403 @@
+/* Utility helper classes not included in Foundation */
+.fixed{
+    position: fixed !important;
+}
+.position-absolute {
+    position: absolute;
+}
+.position-relative, .relative {
+    position: relative;
+}
+.short-page-spacer {
+    padding: 2em 0 24em 0;
+}
+.relative-high-z {
+    position: relative;
+    z-index: 10;
+}
+.inset {
+    margin: 1em 2em;
+}
+.cursor-default {
+    cursor: initial !important;
+}
+.padding-top {
+    padding-top:.625em !important;
+}
+.half-padding-top {
+    padding-top:.385em !important;
+}
+.double-padding-top {
+   padding-top:1.2em !important;
+}
+.alt-padding-top {
+    padding-top:2.2em !important;
+}
+.padding-bottom {
+    padding-bottom:.625em !important;
+}
+.half-padding-bottom {
+    padding-bottom:.385em !important;
+}
+.padding-sides {
+    padding: 0 .625em !important;
+}
+.triple-padding-sides {
+    padding-right: 1.725em;
+}
+.double-padding {
+    padding: 0;
+}
+.content.double-padding {
+    padding: .625em;
+}
+.double-padding-bottom {
+    padding-bottom: 1.1em !important;
+}
+.double-padding-top {
+    padding-top: 1.1em !important;
+}
+.triple-padding-bottom {
+    padding-bottom: 1.1em !important;
+}
+.padding-right {
+    padding-right:.625em !important;
+}
+.padding-left {
+    padding-left:.625em !important;
+}
+.double-margin-right {
+    margin-right: 1.20em !important;
+}
+.triple-margin-right {
+    margin-right: 2em !important;
+}
+.double-padding-left {
+    padding-left: 1.1em !important;
+}
+.double-padding-right {
+    padding-right: 1.1em !important;
+}
+.articles_container .half-padding-left {
+    padding-left: 0 !important;
+}
+.half-padding-right {
+     padding-right: .312em !important;
+}
+.half-padding-horiz {
+     padding: 0 .312em !important;
+}
+.margins-all {
+    margin: .625em !important;
+}
+.margin-left {
+    margin-left: .625em !important;
+}
+.margin-right {
+    margin-right: .625em !important;
+}
+.margin-top {
+    margin-top: .625em !important;
+}
+.margin-sides {
+    margin: 0 .625em !important;
+}
+.alt-margin-top {
+    margin-top: 1em !important;
+}
+.margin-bottom {
+    margin-bottom:  .625em !important;
+}
+.double-margin-bottom {
+    margin-bottom: 1.2em !important;
+}
+.double-margin-top {
+    margin-top: 1.25em;
+}
+.triple-plus-margin-top {
+   margin-top: 2.7em !important; 
+}
+.alt-margin-top {
+    margin-top: 2em;
+}
+.five-margin-top {
+    margin-top: 5px;
+}
+.no-padding {
+    padding: 0 !important;
+}
+.tiny-top-padding {
+    padding-top: 1px;
+}
+.no-top-padding {
+    padding-top: 0 !important;
+}
+.no-right-padding {
+    padding-right: 0 !important;
+}
+.no-bottom-padding {
+    padding-bottom: 0 !important;
+}
+.no-left-padding {
+    padding-left: 0 !important;
+}
+.no-margin {
+    margin: 0 !important;
+}
+.no-top-margin {
+    margin-top: 0 !important;
+}
+.no-right-margin {
+    margin-right: 0;
+}
+.no-bottom-margin {
+    margin-bottom: 0 !important;
+}
+.panel .row.no-bottom-margin {
+    margin-bottom:0em !important;
+}
+.no-left-margin {
+    margin-left: 0;
+}
+.no-top-border {
+    border-top: 0 !important;
+    border-collapse: collapse;
+}
+.no-bottom-border {
+    border-bottom: 0 !important;
+    border-collapse: collapse;
+}
+.no-background {
+    background: transparent !important;
+}
+.top-bottom-margin {
+    margin:  0.625em 0;
+}
+.unmargin-top {
+    margin-top: -3em;
+}
+
+aside .bordered {
+   border: 1px solid #ccc;
+   margin: 0 .625em 1em .625em;
+   padding:1em .25em .25em .25em;
+}
+ul.list-style-none {
+    display: block;
+    list-style: none;
+    list-style-position: outside;
+    margin: 0;
+}
+table.no-border {
+    border: 0;
+    border-collapse: collapse;
+}
+table.no-border td {
+    background-color: #fff !important;
+    border-bottom: 1px solid #ccc;
+    border-left: 0;
+    padding: 1em .625em 1em 0;
+    border-collapse: collapse;
+}
+/* provide text for screen readers that is hidden to others.
+You can use this where you would use 'alt' attributes but are not able to,
+like in CSS background image icons */
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.nowrap {
+    white-space: nowrap;
+}
+.align-right {
+    text-align: right;
+}
+.vert-align-bottom {
+    line-height:1.2em;
+    vertical-align: bottom ;
+}
+.vert-align-top {
+    line-height:1.2em;
+    vertical-align: top;
+}
+.shift-left {
+    margin-left:-5px;
+}
+.absolute-bottom {
+    position: absolute;
+    bottom: 22px;
+    right: 0;
+}
+p.clearfix {
+   margin-bottom: 0;
+}
+/*
+ * Image replacement
+ */
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    text-indent: -9999px;
+}
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+.centered {
+    text-align: center;
+}
+.upperCase {
+    text-transform: uppercase;
+}
+.overflow-hidden {
+    overflow: hidden !important;
+}
+.overflow-visible {
+    overflow: visible;
+}
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+    display: none;
+}
+/*
+ * Jquery overides all children items in a dome if hidden is used as a class name for
+ display none style. Using hiddenitem for the name seems to prevent this issue
+ */
+.hiddenitem {
+    display: none !important;
+}
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+.invisible {
+    visibility: hidden;
+}
+
+.show-for-medium-no-important {
+    display: none;
+}
+/* Utility classes for medium-up */
+@media #{$medium-up} {
+    .alt-padding-top {
+       padding-top:.312em !important;
+    }
+    .no-margin-large {
+        margin: 0;
+    }
+    .double-padding {
+        padding: 1.1em !important;
+    }
+    .alt-margin-top {
+      margin-top:1em;
+    }
+    .half-padding-left {
+        padding-left:.312em !important;
+    }
+    .half-padding-right {
+        padding-right:.312em !important;
+    }
+    .triple-padding-bottom {
+        padding-bottom: 2em !important;
+    }
+    .alt-margin-top {
+      margin-top: -1px;
+    }
+    .short-page-spacer {
+        padding: 2em 0 25em 0;
+    }
+    .show-for-medium-no-important {
+        display: block;
+    }
+}
+
+/* Utility classes for mobile medium-down */
+@media only screen and (max-device-width : 680px) { 
+    .show-media-small-down, .show-media-medium-up {
+        display: inherit !important; 
+    }
+    .show-media-medium-up {
+        display: none !important;
+    }
+}
+
+/* Utility classes for mobile medium-up */
+@media only screen and (min-device-width : 680px) {
+    .show-media-small-down, .show-media-medium-up {
+        display: inherit !important; 
+    }
+    .show-media-small-down {
+        display: none !important;
+    }
+}
+
+/* Utility classes for SAMSUNG/iphones/others 2px mobile medium-down */
+@media only screen and (max-device-width : 680px) and (-webkit-device-pixel-ratio: 2) { 
+    .show-media-small-down, .show-media-medium-up {
+        display: inherit !important; 
+    }
+    .show-media-medium-up {
+        display: none !important;
+    }
+}
+
+/* Utility classes for SAMSUNG/iphones/others 2px mobile medium-down */
+@media only screen and (min-device-width : 680px) and (-webkit-device-pixel-ratio: 2) {
+    .show-media-small-down, .show-media-medium-up {
+        display: inherit !important; 
+    }
+    .show-media-small-down {
+        display: none !important;
+    }
+}
+
+/* Utility classes for SAMSUNG/iphone 6+ 3px mobile medium-down */
+@media only screen and (max-device-width : 680px) and (-webkit-device-pixel-ratio: 3) { 
+    .show-media-small-down, .show-media-medium-up {
+        display: inherit !important; 
+    }
+    .show-media-medium-up {
+        display: none !important;
+    }
+}
+
+/* Utility classes for SAMSUNG/iphone 6+ 3px mobile medium-down */
+@media only screen and (min-device-width : 680px) and (-webkit-device-pixel-ratio: 3) {
+    .show-media-small-down, .show-media-medium-up {
+        display: inherit !important; 
+    }
+    .show-media-small-down {
+        display: none !important;
+    }
+}

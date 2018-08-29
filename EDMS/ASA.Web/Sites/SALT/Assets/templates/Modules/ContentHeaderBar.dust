@@ -1,0 +1,31 @@
+<section class="row collapse noprint article-top js-todoContainer" data-primary-key="{mainContent[0].record.attributes.P_Primary_Key}" data-content-type="{mainContent[0].record.attributes.ContentTypes}" data-content-title="{mainContent[0].record.attributes.resource_link_title}">
+    {?SiteMember.DashboardEnabled}
+        {#mainContent[0].record}
+            {>"Modules/TodoUtilityBar" $idx="1" detailPage="true" /}
+        {/mainContent[0].record}
+    {/SiteMember.DashboardEnabled}
+    <div class="small-4 columns">
+        <ul class="content-utility-icons noprint js-video-top-icon">
+            {#mainContent[0].record}
+                {>"Modules/ConsumptionTime" classParams="time-to-read-top noprint nopipe"/}
+            {/mainContent[0].record}
+        </ul>
+    </div>
+  <div class="small-4 columns">
+        {@if cond="'{mainContent[0].record.attributes.Language[1]}' === 'Spanish'"}
+            <dl class="tabs languageToggle" data-tab>
+                <dd class="{englishToggle}" id="english-tab" tabindex="-1">
+                    <a id="english" href ="#english" onclick="return false;" class="english-button">In English</a>
+                </dd>
+                <dd class="{spanishToggle}" id="spanish-tab" tabindex="-1">
+                    <a id="spanish" href="#spanish" onclick="return false;" class="spanish-button">En Espa&#241;ol</a>
+                </dd>
+            </dl>
+        {/if}
+    </div>
+    <div class="small-4 columns text-right">
+        {#mainContent[0]}
+            {>"AverageRatingWidget"/}
+        {/mainContent[0]}
+    </div>
+</section>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE DVAL_RANKS SYSTEM "dval_ranks.dtd">
+<DVAL_RANKS>
+
+  <DVAL_RANK ID="179" RANK="9"/>
+
+  <DVAL_RANK ID="188" RANK="8"/>
+
+  <DVAL_RANK ID="185" RANK="3"/>
+
+  <DVAL_RANK ID="186" RANK="2"/>
+
+  <DVAL_RANK ID="297" RANK="3"/>
+
+  <DVAL_RANK ID="299" RANK="1"/>
+
+  <DVAL_RANK ID="240" RANK="4"/>
+
+  <DVAL_RANK ID="236" RANK="3"/>
+
+  <DVAL_RANK ID="237" RANK="2"/>
+
+  <DVAL_RANK ID="238" RANK="1"/>
+
+  <DVAL_RANK ID="242" RANK="1"/>
+
+  <DVAL_RANK ID="239" RANK="3"/>
+
+  <DVAL_RANK ID="241" RANK="2"/>
+
+  <DVAL_RANK ID="243" RANK="10"/>
+
+  <DVAL_RANK ID="250" RANK="1"/>
+
+  <DVAL_RANK ID="259" RANK="4"/>
+
+  <DVAL_RANK ID="245" RANK="5"/>
+
+  <DVAL_RANK ID="247" RANK="3"/>
+
+  <DVAL_RANK ID="246" RANK="4"/>
+
+  <DVAL_RANK ID="248" RANK="2"/>
+
+  <DVAL_RANK ID="251" RANK="8"/>
+
+  <DVAL_RANK ID="230" RANK="2"/>
+
+  <DVAL_RANK ID="231" RANK="1"/>
+
+  <DVAL_RANK ID="1" RANK="1"/>
+
+  <DVAL_RANK ID="99" RANK="3"/>
+
+  <DVAL_RANK ID="101" RANK="1"/>
+
+  <DVAL_RANK ID="100" RANK="2"/>
+
+  <DVAL_RANK ID="117" RANK="0"/>
+
+  <DVAL_RANK ID="125" RANK="0"/>
+
+  <DVAL_RANK ID="127" RANK="0"/>
+
+  <DVAL_RANK ID="128" RANK="0"/>
+
+  <DVAL_RANK ID="158" RANK="0"/>
+
+  <DVAL_RANK ID="266" RANK="3"/>
+
+  <DVAL_RANK ID="204" RANK="6"/>
+
+  <DVAL_RANK ID="264" RANK="5"/>
+
+  <DVAL_RANK ID="267" RANK="2"/>
+
+  <DVAL_RANK ID="195" RANK="7"/>
+
+  <DVAL_RANK ID="265" RANK="4"/>
+
+  <DVAL_RANK ID="268" RANK="1"/>
+
+  <DVAL_RANK ID="271" RANK="7"/>
+
+  <DVAL_RANK ID="273" RANK="5"/>
+
+  <DVAL_RANK ID="276" RANK="2"/>
+
+  <DVAL_RANK ID="275" RANK="3"/>
+
+  <DVAL_RANK ID="277" RANK="1"/>
+
+  <DVAL_RANK ID="274" RANK="4"/>
+
+  <DVAL_RANK ID="272" RANK="6"/>
+
+  <DVAL_RANK ID="269" RANK="9"/>
+
+  <DVAL_RANK ID="270" RANK="8"/>
+
+  <DVAL_RANK ID="283" RANK="1"/>
+
+  <DVAL_RANK ID="281" RANK="3"/>
+
+  <DVAL_RANK ID="278" RANK="6"/>
+
+  <DVAL_RANK ID="282" RANK="2"/>
+
+  <DVAL_RANK ID="280" RANK="4"/>
+
+  <DVAL_RANK ID="279" RANK="5"/>
+
+  <DVAL_RANK ID="184" RANK="4"/>
+
+  <DVAL_RANK ID="180" RANK="5"/>
+
+  <DVAL_RANK ID="187" RANK="1"/>
+
+  <DVAL_RANK ID="192" RANK="3"/>
+
+  <DVAL_RANK ID="190" RANK="5"/>
+
+  <DVAL_RANK ID="194" RANK="1"/>
+
+  <DVAL_RANK ID="193" RANK="2"/>
+
+  <DVAL_RANK ID="189" RANK="6"/>
+
+  <DVAL_RANK ID="191" RANK="4"/>
+
+  <DVAL_RANK ID="203" RANK="1"/>
+
+  <DVAL_RANK ID="196" RANK="8"/>
+
+  <DVAL_RANK ID="202" RANK="2"/>
+
+  <DVAL_RANK ID="197" RANK="7"/>
+
+  <DVAL_RANK ID="200" RANK="4"/>
+
+  <DVAL_RANK ID="201" RANK="3"/>
+
+  <DVAL_RANK ID="198" RANK="6"/>
+
+  <DVAL_RANK ID="199" RANK="5"/>
+
+  <DVAL_RANK ID="209" RANK="6"/>
+
+  <DVAL_RANK ID="208" RANK="7"/>
+
+  <DVAL_RANK ID="207" RANK="8"/>
+
+  <DVAL_RANK ID="205" RANK="10"/>
+
+  <DVAL_RANK ID="210" RANK="5"/>
+
+  <DVAL_RANK ID="214" RANK="1"/>
+
+  <DVAL_RANK ID="206" RANK="9"/>
+
+  <DVAL_RANK ID="211" RANK="4"/>
+
+  <DVAL_RANK ID="213" RANK="2"/>
+
+  <DVAL_RANK ID="212" RANK="3"/>
+
+  <DVAL_RANK ID="288" RANK="3"/>
+
+  <DVAL_RANK ID="290" RANK="1"/>
+
+  <DVAL_RANK ID="284" RANK="7"/>
+
+  <DVAL_RANK ID="289" RANK="2"/>
+
+  <DVAL_RANK ID="285" RANK="6"/>
+
+  <DVAL_RANK ID="286" RANK="5"/>
+
+  <DVAL_RANK ID="287" RANK="4"/>
+
+  <DVAL_RANK ID="295" RANK="1"/>
+
+  <DVAL_RANK ID="291" RANK="5"/>
+
+  <DVAL_RANK ID="292" RANK="4"/>
+
+  <DVAL_RANK ID="293" RANK="3"/>
+
+  <DVAL_RANK ID="294" RANK="2"/>
+
+  <DVAL_RANK ID="298" RANK="2"/>
+
+  <DVAL_RANK ID="296" RANK="4"/>
+
+  <DVAL_RANK ID="228" RANK="2"/>
+
+  <DVAL_RANK ID="222" RANK="9"/>
+
+  <DVAL_RANK ID="218" RANK="8"/>
+
+  <DVAL_RANK ID="182" RANK="7"/>
+
+  <DVAL_RANK ID="300" RANK="6"/>
+
+  <DVAL_RANK ID="235" RANK="5"/>
+
+  <DVAL_RANK ID="244" RANK="6"/>
+
+  <DVAL_RANK ID="257" RANK="2"/>
+
+  <DVAL_RANK ID="252" RANK="7"/>
+
+  <DVAL_RANK ID="258" RANK="1"/>
+
+  <DVAL_RANK ID="253" RANK="6"/>
+
+  <DVAL_RANK ID="254" RANK="5"/>
+
+  <DVAL_RANK ID="255" RANK="4"/>
+
+  <DVAL_RANK ID="256" RANK="3"/>
+
+  <DVAL_RANK ID="301" RANK="3"/>
+
+  <DVAL_RANK ID="229" RANK="3"/>
+
+</DVAL_RANKS>

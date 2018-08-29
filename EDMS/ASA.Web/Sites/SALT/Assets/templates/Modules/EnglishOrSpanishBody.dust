@@ -1,0 +1,5 @@
+{?configuration.isSpanish}
+    {>"partial_body" spanish="active" spanishToggle="active" english="hide"/}
+{:else}
+    {>"partial_body" english="active" englishToggle="active" spanish="hide"/}
+{/configuration.isSpanish}

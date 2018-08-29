@@ -1,0 +1,20 @@
+{>"page_parent" /}
+
+{<dynamicTitle}
+    {#content}
+        {mainContent[0].record.attributes.page_title} - Salt
+    {/content}
+{/dynamicTitle}
+
+{<dynamicBody}
+    {> "{PageContentType}Body" /}
+{/dynamicBody}
+
+<script>
+    require(['jquery', 'asa/ASAUtilities'], function ($, utility) {
+        $(function () {
+            utility.instantiateGlossaryTerms();
+        });
+    });
+</script>
+{> "Modules/AddThis" /}

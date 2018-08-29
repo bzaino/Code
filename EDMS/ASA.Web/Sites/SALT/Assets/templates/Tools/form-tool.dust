@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="/Assets/css/tool-Landing.css" type="text/css" media="all" />
+{^SiteMember.ActiveDirectoryKey}
+	{>"RegistrationButton" /}
+{:else}
+	{#content}
+		{#mainContent}
+			{record.attributes.button-area}
+		{/mainContent}
+	{/content}
+{/SiteMember.ActiveDirectoryKey}
+
+

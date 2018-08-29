@@ -1,0 +1,44 @@
+<ul class="side-nav">
+    {! Org logo section !}
+    <li class="row">{>"partial_schoolLogo" /}</li>
+        {^SiteMember.ActiveDirectoryKey}
+            <div class="noprint margin-left margin-bottom">
+                <a href="" class="js-void-href registrationOverlay-link" data-window-shade="registrationOverlay">
+                    {@if cond="'{content.mainContent[0].record.attributes.alt-rich-text-image|trim}'.length"} 
+                    <span>{content.mainContent[0].record.attributes.alt-rich-text-image}</span>
+                    {:else}
+                    <span>{@gloatImage tagList="{content.mainContent[0].record.attributes.FlatTags}"/}</span>
+                    {/if}
+                </a>
+            </div>
+            <!-- SWD-7216 Route 'small screen' users to signup page instead of signup overlay -->
+            <div class="noprint margin-left margin-bottom">
+                <a href="/register" class="registration-link"><span>{@gloatImage tagList="{content.mainContent[0].record.attributes.FlatTags}"/}</span></a>
+            </div>
+        {:else}
+            {>"partial_sidebar_progress" /}
+        {/SiteMember.ActiveDirectoryKey}
+
+        <section id="sidebar-carousels" class="row">
+            {#content}
+                {>"Modules/SidebarCarouselChooser" /}
+            {/content}
+        </section>
+    </li>
+    <li class="row">
+        {! Live Chat section !}    
+        {#content}
+            {>"Modules/ReachOutDelegate" usePanelBackground="true" /}
+        {/content}
+    </li>
+</ul>
+
+<script>
+    require(['jquery'], function ($) {
+        if ($(window).width() > 1025) {
+            $('#js-sidebar').attr('data-dropdown-content', null);
+        } else {
+            $('#js-sidebar').attr('data-dropdown-content', '');
+        }
+    });
+</script>

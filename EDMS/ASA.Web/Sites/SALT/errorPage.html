@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--[if IE 9]>
+<html class="no-js lt-ie10">
+<![endif]-->
+<html>
+   <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="SALT 404 Error Page" />
+    <meta name="keywords" content="Error" />
+    <meta name="WT.site"   content="salt" />
+    <meta name="WT.cg_n"   content="Error Page" />
+    <meta name="WT.cg_s"   content="Generic Error" />
+
+    <title>Salt - Error</title>
+    <!-- SWD-4786 removed some og tags in favor or dynamic script -->
+    <meta property="og:description" content="ErrorPage" />
+    <meta property="og:title" content="ErrorPage"/>
+
+    <meta property="og:site_name" content="SALT" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_us" />
+    <meta property="og:locale" content="en_US"/>
+
+    <!-- using separate files for now. IE9 stops loading css stylesheets that are more than around 200kb -->
+    <link href="/assets/css/normalize.css" rel='stylesheet' />
+    <link href="/assets/css/foundation5/foundation.css" rel='stylesheet' />
+    <link href="/assets/css/f5/concat.css" rel='stylesheet'/>
+
+    <!--[if lt IE 9]>
+    <script src="/assets/scripts/js/libs/selectivizr.js"> </script>
+    <script src="/assets/scripts/js/libs/css3-mediaqueries.js"> </script>
+    <![endif]-->
+
+    <!-- custom modernizr needed for the HTML5 fallback shim -->
+    <script src="/Assets/Scripts/OptimizedJS/js/libs/modernizr/modernizr.js"></script>
+    <script data-main="/assets/scripts/OptimizedJS/js/" src="/assets/scripts/OptimizedJS/js/require.js"></script>
+    <script src="/assets/scripts/OptimizedJS/js/require-config.js"></script>
+    <script src="/assets/scripts/OptimizedJS/js/main.js"></script>
+</head>
+    <body class="main_article off-canvas">
+        <div class="off-canvas-wrap">
+            <div class="inner-wrap ">
+                    <!--[if lt IE 7]>
+                        <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+                    <![endif]-->
+
+                <!--Whole Page Container-->
+                <div role="main">
+                    <!-- Content Container -->
+                    <div>
+                        <div><!-- Front Content for mobile --><!-- Articles Content -->
+                            <section id="" class="row collapse"><!-- Content  -->
+                                <section class="small-12 columns">
+                                        <header class="title_container small-12 columns bottom-padding-top text-center">
+                                             <h1 class="logo"><a href="/" title="saltmoney.org" alt="Salt logo. Education unlocked. Dreams Unlimited." tabindex="1"></a></h1>
+                                        </header>
+                                        <article class="small-12 columns">
+                                            <header class="small-12 medium-7 columns small-centered text-center">
+                                                <br><h1>WELL, THIS IS AWKWARD...</h1>
+                                                <h3 class="text-left">Looks like you found a page on our site that isn&rsquo;t working.</h3>
+                                            </header>
+
+                                            <section class="small-12 medium-7 columns small-centered">
+                                                <p></p>
+                                                <h3>Here's what you can do:</h3>
+                                                <ol>
+                                                    <li>Try refreshing the page.</li>
+                                                    <li>Go back to the <a href="/index.html" onclick="dcsMultiTrack('WT.z_type','Link Clicks','WT.z_name','Internal Page Link','WT.z_action','/index.html');">Salt home page</a>.</li>
+                                                    <li><a href="/home/contact.html">Contact Us.</a></li>
+                                                </ol>
+
+                                            </section>
+                                            <section class="row"><hr class="small-11 medium-8 columns small-centered"></section>
+                                    </article>
+                                </section>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- End Content Container -->
+                </div>
+                <!--End Whole Site Container-->
+
+                <script>
+                    /* WebTrends SmartSource Data Collector Tag v10.2.55
+                    Copyright (c) 2013 Webtrends Inc.  All rights reserved.
+                    Tag Builder Version: 4.1.0.42
+                    Created: 2013.01.22 */
+                    window.webtrendsAsyncInit=function(){
+                        var dcs=new Webtrends.dcs().init({
+                            dcsid:"dcsxx1gz6wz5bd051hwv5wjc4_1i1g",
+                            domain:"statse.webtrendslive.com",
+                            timezone:-5,
+                            i18n:true,
+                            offsite:true,
+                            download:true,
+                            downloadtypes:"xls,doc,pdf,txt,csv,zip,docx,xlsx,rar,gzip",
+                            anchor:true,
+                            onsitedoms:"saltmoney.org",
+                            fpcdom:".saltmoney.org",
+                            plugins:{
+                                hm:{src:"//s.webtrends.com/js/webtrends.hm.js"}
+                            }
+                            }).track();
+                    };
+                    (function(){
+                        var s=document.createElement("script"); s.async=true; s.src="/assets/scripts/js/libs/webtrends/webtrends.min.js";
+                        var s2=document.getElementsByTagName("script")[0]; s2.parentNode.insertBefore(s,s2);
+                    }());
+                </script>
+                <!-- SWD-4786 -->
+                <script language='javascript'>
+                    /* INSERT OPEN GRAPH META TAGS */
+                    $('head').append(
+                        '<meta property="og:url" content="'+window.location.href+'"/>' +
+                        '<meta property="og:image:secure_url" content="https://www.saltmoney.org/Assets/images/logos/salt-logo_v2.gif"/>' +
+                        '<meta property="og:image:type" content="image/gif"/>' +
+                        '<meta property="og:image:width" content="137"/>' +
+                        '<meta property="og:image:height" content="75"/>'
+                    );
+                    /*SWD-4643 HTTP Requests with blocked extensions do not redirect to HTTPS*/
+                    if (window.location.protocol !== 'https:') {
+                       window.location.protocol = 'https:';  //keeps ie from rerouting to page 2x
+                       var httpsURL = 'https://' + window.location.hostname + window.location.pathname;
+                       window.location = httpsURL;
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+</html>

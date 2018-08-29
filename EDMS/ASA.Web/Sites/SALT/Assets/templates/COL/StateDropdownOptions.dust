@@ -1,0 +1,4 @@
+<option value="">State</option>
+{#State}
+    <option value="{StateId}">{StateCode}</option>
+{/State}

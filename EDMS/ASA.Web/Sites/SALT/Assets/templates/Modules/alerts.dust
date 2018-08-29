@@ -1,0 +1,20 @@
+{#mainContent}	    
+	{@if cond="'{name}' === 'Alerts' "}
+
+    {?records}
+	    {#records}
+	    <div class="no-padding small-12 Content-Type_{attributes.ContentTypes}  primary-key_{attributes.P_Primary_Key}">
+	    {@if cond="'{attributes.ContentTypes}' === 'Alert' "}
+			{attributes.alert-msg}
+    	{/if}
+    	</div>
+	    {/records}
+	{:else}
+		<section data-alert class="hidden" tabindex="0" aria-live="assertive" role="alertdialog">
+			<p>No alerts!</p>
+			<a href="#" class="close">&times;</a>
+		</section>
+		<!--<script src="Assets/Scripts/js/libs/foundation5/ReferencePlugins/foundation.alert.js"></script>-->
+	{/records}
+	{/if}
+{/mainContent}

@@ -1,0 +1,103 @@
+{#secondaryContent}
+    {@select key="{name}"}
+        {@eq value="Featured"}
+        <!-- move featured section to client template and backbone view ? -->
+            <div class="toggleBlock">
+                <div class="block row collapse small-12 columns VLCMain tileToggle_controls">
+                    <div class="column small-8">
+                        <h2 class="articles-container featured-title">FEATURED</h2>
+                    </div>
+                    <div class="controls_container column small-3 hide-for-small">
+                        <ul class="layout_controls for_nav right">
+                            <li>
+                                <a href="#" id="" class="listViewToggle-grid activeBtn listViewToggle">
+                                    <div class="calendar"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" id="" class="listViewToggle-List listViewToggle">
+                                    <div class="control_list_btn "></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="articles-container row">
+                    {#records}
+
+                        <article class="block entry_block column small-6 switchView">
+
+                        <script type="text/javascript">
+                            require([
+                                'jquery',
+                                'jquery.dotdotdot'
+                            ], function ($) {
+                            $(document).ready(function () {
+
+                                $('.tileText').dotdotdot({
+                                    wrap: 'word',
+                                    watch: 'window',
+                                    ellipsis: '... ',
+                                    height: null,
+                                });
+
+                            });
+                        });
+                        </script>
+                        <section style="height:inherit;">
+
+
+                                    <div class="imgAndContentType">
+                                        <div>
+                                            <div class="contentFlag {attributes.ContentTypes} noprint">
+                                                <i class="icon-indication">&nbsp;<!-- indication icon --></i><p class="contentTypeText">{attributes.ContentTypes}</p>
+                                            </div>
+                                        </div>
+                                            {@ne key="{attributes.ContentTypes}" value="Video"}
+                                                <figure class="featured">
+                                                    <a href="/content/media{detailsAction.recordState}" target="_blank" title="{attributes.resource_link_title}" class="tileImgLink"><!-- desktop size, being resized by design team-->{attributes.rich-text-image}
+                                                    <!-- use a special 85x85 image for mobile view? use the foundation sized square image?  -->{attributes.rich-text-image}
+                                                    </a>
+                                                </figure>
+                                            {/ne}
+
+                                            {@if cond="'{attributes.ContentTypes}' === 'Video'"}
+                                                <div class="featured" id="featplayerContainer{attributes.b-video-id|trim}" >
+                                                    <a href="/content/media{detailsAction.contentPath}{detailsAction.recordState}" target="_blank" title="{attributes.resource_link_title}">
+                                                        <img src="/Assets/images/home/playIcon.png" class="videoOverlay" />
+                                                        <div id="playerContainer{attributes.b-video-id|trim}">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            {/if}
+
+
+                                    </div>
+                                    <div class="tileText"> <!-- the title and description text -->
+                                        <!-- <div class="ellipsisWrapper"> -->
+                                            <header class="tileHeader"><a href="/content/media{detailsAction.recordState}" target="_blank" title="{attributes.resource_link_title}">{attributes.headline}</a>
+                                            </header>
+                                            <p class="topicName"> {@flatTagsSeperator str="{attributes.FlatTags}"/}</p>
+                                                <!-- <section class="description"> -->
+                                                    <div>
+                                                        {attributes.page_summary}
+                                                     </div>
+                                                <!-- </section> -->
+                                        <!-- </div> -->
+                                    </div>
+                                    <div class="spanishAndProgress"> <!-- the bottom links/images -->
+                                        <ul class="ProgressAndSpanish">
+                                            <li class="spanishLink">{@if cond="'{attributes.Language[0]}' === 'English' && '{attributes.Language[1]}' === 'Spanish'"}<a href="/content/media{detailsAction.recordState}?s=1" target="_blank" title="{attributes.resource_link_title}">En Espa&#241;ol</a>{:else}&nbsp;{/if}</li> <!-- {! spanishLink or something similar !}-->
+                                        </ul>
+                                    </div>
+                            <!-- Entry Content -->
+                        </section>
+
+                        </article>
+
+                    {/records}
+                </div>
+            </div>
+        {/eq}
+    {/select}
+{/secondaryContent}

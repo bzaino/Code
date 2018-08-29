@@ -1,0 +1,1 @@
+define(["dust"], function(dust) { (function(){dust.register("ErrorMessages/password",body_0);function body_0(chk,ctx){return chk.write("<small class=\"error\">Your password should be between 8 and 32 characters long.</small>");}return body_0;})(); });

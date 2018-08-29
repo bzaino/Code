@@ -1,0 +1,21 @@
+﻿{
+	"ErrorList":[],
+	"Records":[
+		{"Fields":[
+			{"Key":"P_Content_Type","Value":["Reward"]},
+			{"Key":"P_Enrollment_Status","Value":["Enrolled Full Time"]},
+			{"Key":"P_Grade_Level","Value":["Senior\/Fourth Year"]},
+			{"Key":"P_Loan_Status","Value":["Paid"]},
+			{"Key":"P_Loan_Type","Value":["Plus"]},
+			{"Key":"P_Membership_Level","Value":["Guest"]},
+			{"Key":"P_Primary_Key","Value":["Tile-102"]},
+			{"Key":"P_School","Value":["Boston University"]},
+			{"Key":"P_School_Type","Value":["Graduate"]},
+			{"Key":"P_Tile_ID","Value":["102"]},
+			{"Key":"P_Tile_Xml_Path","Value":["http:\/\/www.asa.org\/103"]},
+			{"Key":"Content Type","Value":["Reward"]},
+			{"Key":"Record Type","Value":["Tile"]}
+		]}
+	],
+	"ResultsMessage":"Records were found"
+}

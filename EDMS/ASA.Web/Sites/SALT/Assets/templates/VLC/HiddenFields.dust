@@ -1,0 +1,6 @@
+<div id="itemVersion">
+    {mainContent[0].records[0].attributes.Item_Version}
+</div>
+<div id="questionID">
+    {mainContent[0].records[0].attributes.P_Primary_Key}
+</div>  

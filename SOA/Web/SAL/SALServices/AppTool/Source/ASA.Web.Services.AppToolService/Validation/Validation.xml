@@ -1,0 +1,96 @@
+<objects xmlns="http://www.springframework.net" xmlns:v="http://www.springframework.net/validation">
+  <!-- Reusable Regular Expressions -->
+
+  <object name = "MoneyExpression" type="String">
+    <constructor-arg value="^[0-9.]+$"/>
+  </object>
+
+  <object name="NumberExpression" type="String">
+    <constructor-arg value="^[0-9]+$"/>
+  </object>
+
+  <!--  APPTOOL VALIDATION -->
+  <v:group id="AppToolModelValidator">
+    <!-- General Calculator Regex Validations -->
+    <v:regex id="AppToolTypeRegexValidator" test="AppToolType">
+      <v:property name="Expression" ref="NumberExpression" />
+      <v:message id="error_apptooltype_invalid" providers="AppToolModelErrorProvider" />
+    </v:regex>
+    <v:regex id="PrincipalAmountRegexValidator" test="PrincipalAmount">
+      <v:property name="Expression" ref="MoneyExpression" />
+      <v:message id="error_principalamount_invalid" providers="AppToolModelErrorProvider" />
+    </v:regex>
+    <v:regex id="InterestRateRegexValidator" test="InterestRate">
+      <v:property name="Expression" ref="MoneyExpression" />
+      <v:message id="error_interestrate_invalid" providers="AppToolModelErrorProvider" />
+    </v:regex>
+    <v:regex id="MonthlyIncomeRegexValidator" test="MonthlyIncome">
+      <v:property name="Expression" ref="MoneyExpression" />
+      <v:message id="error_montlyincome_invalid" providers="AppToolModelErrorProvider" />
+    </v:regex>
+    <v:regex id="ForbearancePaymentAmountRegexValidator" test="ForbearancePaymentAmount">
+      <v:property name="Expression" ref="MoneyExpression" />
+      <v:message id="error_forbearancepaymentamount_invalid" providers="AppToolModelErrorProvider" />
+    </v:regex>
+    <v:regex id="BalanceAtStartDefermentRegexValidator" test="BalanceAtStartDeferment">
+      <v:property name="Expression" ref="MoneyExpression" />
+      <v:message id="error_balanceatstartdeferment_invalid" providers="AppToolModelErrorProvider" />
+    </v:regex>
+    <v:regex id="NumberOfPaymentsRegexValidator" test="NumberOfPayments">
+      <v:property name="Expression" ref="NumberExpression" />
+      <v:message id="error_numberofpayments_invalid" providers="AppToolModelErrorProvider" />
+    </v:regex>
+    <v:regex id="NumberOfMonthsInForbearanceRegexValidator" test="NumberOfMonthsInForbearance">
+      <v:property name="Expression" ref="NumberExpression" />
+      <v:message id="error_numberofmonthsinforbearance_invalid" providers="AppToolModelErrorProvider" />
+    </v:regex>
+    <v:regex id="NumberOfForbearancePaymentsRegexValidator" test="NumberOfForbearancePayments">
+      <v:property name="Expression" ref="NumberExpression" />
+      <v:message id="error_numberofforbearancepayments_invalid" providers="AppToolModelErrorProvider" />
+    </v:regex>
+    <v:regex id="NumberOfMonthsInDefermentRegexValidator" test="NumberOfMonthsInDeferment">
+      <v:property name="Expression" ref="NumberExpression" />
+      <v:message id="error_numberofmonthsindeferment_invalid" providers="AppToolModelErrorProvider" />
+    </v:regex>
+    <!-- General Calculator Length Condition Validations -->
+
+    <!-- General Condition Validations -->
+        <!--note: AppToolType < 6 "for now"... this num will need to change when we add more calculators! -->
+    <v:condition id="AppToolTypeValueValidator" test="AppToolType &lt; 6" >
+      <v:message id="error_apptooltype_value_invalid" providers="AppToolModelErrorProvider"/>
+    </v:condition>
+    <!-- Standard Repayment Calculator Validations -->
+    <v:required id="PrincipalAmountSrcrequiredValidator" test="PrincipalAmount" when="AppToolType == 0">
+      <v:message id="error_src_principalamount_required" providers="AppToolModelErrorProvider"/>
+    </v:required>
+    <v:required id="InterestRateSrcrequiredValidator" test="InterestRate" when="AppToolType == 0">
+      <v:message id="error_src_interestrate_required" providers="AppToolModelErrorProvider"/>
+    </v:required>
+    <v:required id="NumberOfPaymentsSrcrequiredValidator" test="NumberOfPayments" when="AppToolType == 0">
+      <v:message id="error_src_numberofpayments_required" providers="AppToolModelErrorProvider"/>
+    </v:required>
+    <v:condition id="PrincipalAmountSrcvalueValidator" test="PrincipalAmount &gt; 0" when="AppToolType == 0">
+      <v:message id="error_src_principalamount_value_invalid" providers="AppToolModelErrorProvider"/>
+    </v:condition>
+    <v:condition id="InterestRateSrcvalueValidator" test="InterestRate &gt; 0" when="AppToolType == 0">
+      <v:message id="error_src_interestrate_value_invalid" providers="AppToolModelErrorProvider"/>
+    </v:condition>
+    <v:condition id="NumberOfPaymentsSrcvalueValidator" test="NumberOfPayments &gt; 0" when="AppToolType == 0">
+      <v:message id="error_src_numberofpayments_value_invalid" providers="AppToolModelErrorProvider"/>
+    </v:condition>
+    <!-- Graduated Repayment Calculator Validations -->
+    <v:required id="PrincipalAmountGrcrequiredValidator" test="PrincipalAmount" when="AppToolType == 1">
+        <v:message id="error_grc_principalamount_required" providers="AppToolModelErrorProvider"/>
+    </v:required>
+    <v:required id="InterestRateGrcrequiredValidator" test="InterestRate" when="AppToolType == 1">
+        <v:message id="error_grc_interestrate_required" providers="AppToolModelErrorProvider"/>
+    </v:required>
+    <v:condition id="PrincipalAmountGrcvalueValidator" test="PrincipalAmount &gt; 0" when="AppToolType == 1">
+        <v:message id="error_grc_principalamount_value_invalid" providers="AppToolModelErrorProvider"/>
+    </v:condition>
+    <v:condition id="InterestRateGrcvalueValidator" test="InterestRate &gt; 0" when="AppToolType == 1">
+        <v:message id="error_grc_interestrate_value_invalid" providers="AppToolModelErrorProvider"/>
+    </v:condition>
+  </v:group>
+
+</objects>

@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://asa.org/contracts/personServiceCriteria" elementFormDefault="qualified" targetNamespace="http://asa.org/contracts/personServiceCriteria" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd4" namespace="http://asa.org/contracts/commonTypes" />
+  <xs:complexType name="PersonServiceCriteriaType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MaxEntities" type="xs:int" />
+      <xs:element name="LogicalOperator" type="tns:LogicalOperatorType" />
+      <xs:element name="ListReturnTypes" nillable="true" type="tns:ReturnListType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonServiceCriteriaType" nillable="true" type="tns:PersonServiceCriteriaType" />
+  <xs:simpleType name="LogicalOperatorType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AND" />
+      <xs:enumeration value="OR" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="LogicalOperatorType" nillable="true" type="tns:LogicalOperatorType" />
+  <xs:complexType name="ReturnListType">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://asa.org/contracts/commonTypes" minOccurs="0" name="PersonTier2Type" type="q1:YNFlagType" />
+      <xs:element xmlns:q2="http://asa.org/contracts/commonTypes" minOccurs="0" name="PersonTier2PersonInfoType" type="q2:YNFlagType" />
+      <xs:element xmlns:q3="http://asa.org/contracts/commonTypes" minOccurs="0" name="PersonTier2LoanSummary" type="q3:YNFlagType" />
+      <xs:element xmlns:q4="http://asa.org/contracts/commonTypes" minOccurs="0" name="PersonTier2ModelArray" type="q4:YNFlagType" />
+      <xs:element xmlns:q5="http://asa.org/contracts/commonTypes" minOccurs="0" name="PersonTier2AddressArray" type="q5:YNFlagType" />
+      <xs:element xmlns:q6="http://asa.org/contracts/commonTypes" minOccurs="0" name="PersonTier2EmailArray" type="q6:YNFlagType" />
+      <xs:element xmlns:q7="http://asa.org/contracts/commonTypes" minOccurs="0" name="PersonTier2FaxArray" type="q7:YNFlagType" />
+      <xs:element xmlns:q8="http://asa.org/contracts/commonTypes" minOccurs="0" name="PersonTier2PhoneArray" type="q8:YNFlagType" />
+      <xs:element xmlns:q9="http://asa.org/contracts/commonTypes" minOccurs="0" name="PersonTier2WebArray" type="q9:YNFlagType" />
+      <xs:element xmlns:q10="http://asa.org/contracts/commonTypes" minOccurs="0" name="PersonTier2History" type="q10:YNFlagType" />
+      <xs:element xmlns:q11="http://asa.org/contracts/commonTypes" minOccurs="0" name="PersonTier2HistoryAddressHistoryArray" type="q11:YNFlagType" />
+      <xs:element xmlns:q12="http://asa.org/contracts/commonTypes" minOccurs="0" name="PersonTier2HistoryEmailHistoryArray" type="q12:YNFlagType" />
+      <xs:element xmlns:q13="http://asa.org/contracts/commonTypes" minOccurs="0" name="PersonTier2HistoryFaxHistoryArray" type="q13:YNFlagType" />
+      <xs:element xmlns:q14="http://asa.org/contracts/commonTypes" minOccurs="0" name="PersonTier2HistoryPhoneHistoryArray" type="q14:YNFlagType" />
+      <xs:element xmlns:q15="http://asa.org/contracts/commonTypes" minOccurs="0" name="PersonTier2HistoryWebHistoryArray" type="q15:YNFlagType" />
+      <xs:element xmlns:q16="http://asa.org/contracts/commonTypes" minOccurs="0" name="PersonTier2PersonContactChannelConstraintArray" type="q16:YNFlagType" />
+      <xs:element xmlns:q17="http://asa.org/contracts/commonTypes" minOccurs="0" name="PersonTier2PersonHoldReasonConstraintArray" type="q17:YNFlagType" />
+      <xs:element xmlns:q18="http://asa.org/contracts/commonTypes" minOccurs="0" name="PersonTier2CommunicationFollowupArray" type="q18:YNFlagType" />
+      <xs:element xmlns:q19="http://asa.org/contracts/commonTypes" minOccurs="0" name="PersonTier3Type" type="q19:YNFlagType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReturnListType" nillable="true" type="tns:ReturnListType" />
+  <xs:complexType name="CriteriaPSC1CanonicalType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PersSvcCustomerIdRequiredCriteriaType">
+        <xs:sequence>
+          <xs:element name="CriterionExternalPersonId" nillable="true" type="tns:CriterionExternalPersonIdType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriteriaPSC1CanonicalType" nillable="true" type="tns:CriteriaPSC1CanonicalType" />
+  <xs:complexType name="PersSvcCustomerIdRequiredCriteriaType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PersonServiceCriteriaType">
+        <xs:sequence>
+          <xs:element name="CriterionCustomerID" nillable="true" type="tns:CriterionCustomerIdType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PersSvcCustomerIdRequiredCriteriaType" nillable="true" type="tns:PersSvcCustomerIdRequiredCriteriaType" />
+  <xs:complexType name="CriterionCustomerIdType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="CustomerId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionCustomerIdType" nillable="true" type="tns:CriterionCustomerIdType" />
+  <xs:complexType name="CriterionType">
+    <xs:sequence>
+      <xs:element name="RelationalOperator" type="tns:RelationalOperatorType" />
+      <xs:element name="LogicalOperator" type="tns:LogicalOperatorType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CriterionType" nillable="true" type="tns:CriterionType" />
+  <xs:simpleType name="RelationalOperatorType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="EQUALS" />
+      <xs:enumeration value="STARTSWITH" />
+      <xs:enumeration value="ENDSWITH" />
+      <xs:enumeration value="LESSTHAN_EQUAL" />
+      <xs:enumeration value="GREATERTHAN_EQUAL" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RelationalOperatorType" nillable="true" type="tns:RelationalOperatorType" />
+  <xs:complexType name="CriterionFromDateType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="FromDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionFromDateType" nillable="true" type="tns:CriterionFromDateType" />
+  <xs:complexType name="CriterionNorthAmericanNumberType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="NorthAmericanNumber" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionNorthAmericanNumberType" nillable="true" type="tns:CriterionNorthAmericanNumberType" />
+  <xs:complexType name="CriterionCreatedByType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="CreatedBy" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionCreatedByType" nillable="true" type="tns:CriterionCreatedByType" />
+  <xs:complexType name="CriterionSSNType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="SSN" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionSSNType" nillable="true" type="tns:CriterionSSNType" />
+  <xs:complexType name="CriterionPersonIdType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PersonId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionPersonIdType" nillable="true" type="tns:CriterionPersonIdType" />
+  <xs:complexType name="CriterionExternalPersonIdType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="ExternalPersonId" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionExternalPersonIdType" nillable="true" type="tns:CriterionExternalPersonIdType" />
+  <xs:complexType name="CriterionFirstNameType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="FirstName" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionFirstNameType" nillable="true" type="tns:CriterionFirstNameType" />
+  <xs:complexType name="CriterionLastNameType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="LastName" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionLastNameType" nillable="true" type="tns:CriterionLastNameType" />
+  <xs:complexType name="CriterionPhoneTypeIdType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="PhoneTypeID" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionPhoneTypeIdType" nillable="true" type="tns:CriterionPhoneTypeIdType" />
+  <xs:complexType name="CriterionForeignPhoneNumberType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="ForeignPhoneNumber" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionForeignPhoneNumberType" nillable="true" type="tns:CriterionForeignPhoneNumberType" />
+  <xs:complexType name="CriterionEmailTypeIDType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="EmailTypeID" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionEmailTypeIDType" nillable="true" type="tns:CriterionEmailTypeIDType" />
+  <xs:complexType name="CriterionEmailAddressType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="EmailAddress" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionEmailAddressType" nillable="true" type="tns:CriterionEmailAddressType" />
+  <xs:complexType name="CriterionMasterPersonIdType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="MasterPersonId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionMasterPersonIdType" nillable="true" type="tns:CriterionMasterPersonIdType" />
+  <xs:complexType name="CriterionDateOfBirthType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="DateOfBirth" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionDateOfBirthType" nillable="true" type="tns:CriterionDateOfBirthType" />
+  <xs:complexType name="CriterionToDateType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CriterionType">
+        <xs:sequence>
+          <xs:element name="ToDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriterionToDateType" nillable="true" type="tns:CriterionToDateType" />
+  <xs:complexType name="CriteriaPSC7CanonicalType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PersSvcCustomerIdRequiredCriteriaType">
+        <xs:sequence>
+          <xs:element name="CriterionNorthAmericanNumber" nillable="true" type="tns:CriterionNorthAmericanNumberType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriteriaPSC7CanonicalType" nillable="true" type="tns:CriteriaPSC7CanonicalType" />
+  <xs:complexType name="CriteriaPSC8CanonicalType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PersSvcCustomerIdRequiredCriteriaType">
+        <xs:sequence>
+          <xs:element name="CriterionPhoneTypeID" nillable="true" type="tns:CriterionPhoneTypeIdType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CriterionForeignPhoneNumber" nillable="true" type="tns:CriterionForeignPhoneNumberType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriteriaPSC8CanonicalType" nillable="true" type="tns:CriteriaPSC8CanonicalType" />
+  <xs:complexType name="CriteriaPSC9CanonicalType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PersSvcCustomerIdRequiredCriteriaType">
+        <xs:sequence>
+          <xs:element name="CriterionForeignPhoneNumber" nillable="true" type="tns:CriterionForeignPhoneNumberType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriteriaPSC9CanonicalType" nillable="true" type="tns:CriteriaPSC9CanonicalType" />
+  <xs:complexType name="CriteriaPSC11CanonicalType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PersSvcCustomerIdRequiredCriteriaType">
+        <xs:sequence>
+          <xs:element name="CriterionEmailAddress" nillable="true" type="tns:CriterionEmailAddressType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriteriaPSC11CanonicalType" nillable="true" type="tns:CriteriaPSC11CanonicalType" />
+  <xs:complexType name="CriteriaPSC3CanonicalType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PersSvcCustomerIdRequiredCriteriaType">
+        <xs:sequence>
+          <xs:element name="CriterionFirstName" nillable="true" type="tns:CriterionFirstNameType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriteriaPSC3CanonicalType" nillable="true" type="tns:CriteriaPSC3CanonicalType" />
+  <xs:complexType name="CriteriaPSC4CanonicalType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PersSvcCustomerIdRequiredCriteriaType">
+        <xs:sequence>
+          <xs:element name="CriterionLastName" nillable="true" type="tns:CriterionLastNameType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriteriaPSC4CanonicalType" nillable="true" type="tns:CriteriaPSC4CanonicalType" />
+  <xs:complexType name="CriteriaPerson_CustomerIdFirstNameLastNameDOB">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PersSvcCustomerIdRequiredCriteriaType">
+        <xs:sequence>
+          <xs:element name="CriterionFirstName" nillable="true" type="tns:CriterionFirstNameType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CriterionLastName" nillable="true" type="tns:CriterionLastNameType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CriterionDateOfBirth" nillable="true" type="tns:CriterionDateOfBirthType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriteriaPerson_CustomerIdFirstNameLastNameDOB" nillable="true" type="tns:CriteriaPerson_CustomerIdFirstNameLastNameDOB" />
+  <xs:complexType name="CriteriaPSC2CanonicalType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PersSvcCustomerIdRequiredCriteriaType">
+        <xs:sequence>
+          <xs:element name="CriterionSSN" nillable="true" type="tns:CriterionSSNType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriteriaPSC2CanonicalType" nillable="true" type="tns:CriteriaPSC2CanonicalType" />
+  <xs:complexType name="CriteriaPSC5CanonicalType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PersSvcCustomerIdRequiredCriteriaType">
+        <xs:sequence>
+          <xs:element name="CriterionFirstName" nillable="true" type="tns:CriterionFirstNameType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CriterionLastName" nillable="true" type="tns:CriterionLastNameType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriteriaPSC5CanonicalType" nillable="true" type="tns:CriteriaPSC5CanonicalType" />
+  <xs:complexType name="CriteriaPSC6CanonicalType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PersSvcCustomerIdRequiredCriteriaType">
+        <xs:sequence>
+          <xs:element name="CriterionPhoneTypeID" nillable="true" type="tns:CriterionPhoneTypeIdType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CriterionNorthAmericanNumber" nillable="true" type="tns:CriterionNorthAmericanNumberType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriteriaPSC6CanonicalType" nillable="true" type="tns:CriteriaPSC6CanonicalType" />
+  <xs:complexType name="CriteriaPSC10CanonicalType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PersSvcCustomerIdRequiredCriteriaType">
+        <xs:sequence>
+          <xs:element name="CriterionEmailAddress" nillable="true" type="tns:CriterionEmailAddressType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CriterionEmailTypeID" nillable="true" type="tns:CriterionEmailTypeIDType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriteriaPSC10CanonicalType" nillable="true" type="tns:CriteriaPSC10CanonicalType" />
+  <xs:complexType name="CriteriaPSC13CanonicalType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PersonServiceCriteriaType">
+        <xs:sequence>
+          <xs:element name="CriterionFromDate" nillable="true" type="tns:CriterionFromDateType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CriterionToDate" nillable="true" type="tns:CriterionToDateType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="CriterionCreatedBy" nillable="true" type="tns:CriterionCreatedByType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriteriaPSC13CanonicalType" nillable="true" type="tns:CriteriaPSC13CanonicalType" />
+  <xs:complexType name="CriteriaPSC1_1CanonicalType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PersonServiceCriteriaType">
+        <xs:sequence>
+          <xs:element name="CriterionPersonId" nillable="true" type="tns:CriterionPersonIdType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriteriaPSC1_1CanonicalType" nillable="true" type="tns:CriteriaPSC1_1CanonicalType" />
+  <xs:complexType name="CriteriaPSC12CanonicalType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PersonServiceCriteriaType">
+        <xs:sequence>
+          <xs:element name="CriterionMasterPersonId" nillable="true" type="tns:CriterionMasterPersonIdType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CriteriaPSC12CanonicalType" nillable="true" type="tns:CriteriaPSC12CanonicalType" />
+</xs:schema>

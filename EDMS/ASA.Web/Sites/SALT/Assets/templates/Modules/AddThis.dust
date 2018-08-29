@@ -1,0 +1,12 @@
+<script>
+    var js,
+        tagName = 'script',
+        fjs = document.getElementsByTagName(tagName)[0],
+        addthis_config = {
+            ui_508_compliant: true
+        };
+    js = document.createElement(tagName);
+    js.src = '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50cb196828b45006';
+    js.id = 'addThis';
+    fjs.parentNode.insertBefore(js, fjs);
+</script>

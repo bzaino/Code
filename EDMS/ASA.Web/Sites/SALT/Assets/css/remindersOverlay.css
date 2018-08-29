@@ -1,0 +1,78 @@
+#ReminderContainer .row .view {
+  display: block;
+}
+
+.reminderRow {
+  border-bottom: 1px solid #eee;
+  margin-top: .5em;
+}
+
+#ReminderContainer .row.editing .view {
+  display: none;
+}
+
+#ReminderContainer .row .edit {
+  display: none;
+}
+
+#ReminderContainer .row.editing .edit {
+  display: block;
+}
+
+.button.reminders {
+  margin: 0;
+}
+
+.reminder-label {
+  font-weight: normal;
+  font-size: .9em;
+  color: #003763;
+}
+
+.reminders-action-btn {
+  min-width: 95px !important;
+}
+
+.button.openReminders {
+  margin-right: 5px;
+}
+
+.button.main-btn.save {
+  max-width: 200px;
+  min-width: 100px;
+}
+
+.otherMode {
+  display: block;
+  margin-top: 20px;
+}
+
+.error {
+  display: block;
+}
+
+.view {
+  z-index: 10;
+}
+
+#ServicerName, .servicerName.dropdown {
+  z-index: 15;
+}
+
+#dayOfMonth, .dayOfMonth.dropdown {
+  z-index: 14;
+}
+
+#dueDateMonth, .dueDateMonth.dropdown {
+  z-index: 13;
+}
+
+#NumberOfLoans, .NumberOfLoans.dropdown {
+  z-index: 12;
+}
+
+.serviceNameColumn {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=remindersOverlay.css.map */

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coverity SYSTEM "config.dtd">
+<coverity>
+
+<metrics>
+    <metric>
+        <name>time</name>
+        <value>40</value>
+    </metric>
+    <metric>
+        <name>args</name>
+        <value>C:\Program Files\Coverity\Coverity Static Analysis\bin\cov-build --no-banner --desktop --dir C:/SOA/wksp_03/SOA/Web/SAL/.cov/debug-mixed_platforms-idir/idir --config C:\SOA\wksp_03\SOA\Web\SAL/data-coverity/v2017.07/config/coverity_config.xml</value>
+    </metric>
+    <metric>
+        <name>host</name>
+        <value>BOSVSM009</value>
+    </metric>
+    <metric>
+        <name>short-platform</name>
+        <value>win64</value>
+    </metric>
+    <metric>
+        <name>platform</name>
+        <value>Windows 7 Enterprise, 64-bit, Service Pack 1 (build 7601)</value>
+    </metric>
+    <metric>
+        <name>ident</name>
+        <value>2017.07 (build 7a4de27b47 p-milo-push-30112.654)</value>
+    </metric>
+    <metric>
+        <name>user</name>
+        <value>bzaino</value>
+    </metric>
+    <metric>
+        <name>cwd</name>
+        <value>C:\SOA\wksp_03\SOA\Web\SAL</value>
+    </metric>
+    <metric>
+        <name>config</name>
+        <value>C:\SOA\wksp_03\SOA\Web\SAL\data-coverity\v2017.07\config\coverity_config.xml</value>
+    </metric>
+    <metric>
+        <name>intermediatedir</name>
+        <value>C:\SOA\wksp_03\SOA\Web\SAL\.cov\debug-mixed_platforms-idir\idir</value>
+    </metric>
+    <metric>
+        <name>outputdir</name>
+        <value>C:\SOA\wksp_03\SOA\Web\SAL\.cov\debug-mixed_platforms-idir\idir\output</value>
+    </metric>
+    <metric>
+        <name>emitdir</name>
+        <value>C:\SOA\wksp_03\SOA\Web\SAL\.cov\debug-mixed_platforms-idir\idir\emit</value>
+    </metric>
+    <metric>
+        <name>force</name>
+        <value>no</value>
+    </metric>
+    <metric>
+        <name>cygwin</name>
+        <value>no</value>
+    </metric>
+    <metric>
+        <name>failures</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>successes</name>
+        <value>12</value>
+    </metric>
+    <metric>
+        <name>recoverable-errors</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>cs-webapps-detected</name>
+        <value>1</value>
+    </metric>
+    <metric>
+        <name>cs-webapp-successes</name>
+        <value>1</value>
+    </metric>
+    <metric>
+        <name>cs-webapp-compilation-secs</name>
+        <value>9</value>
+    </metric>
+    <metric>
+        <name>buildcmd</name>
+        <value>C:\Program Files (x86)\MSBuild\12.0\bin\\MSBuild.exe C:\SOA\wksp_03\SOA\Web\SAL\ASA.Web.Services.sln /m:2 /nr:false /t:Rebuild /p:platform=Mixed Platforms /p:configuration=Debug</value>
+    </metric>
+</metrics>
+</coverity>

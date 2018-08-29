@@ -1,0 +1,81 @@
+#WelcomeOverlay {
+width:700px;
+}
+#bodyContainer {
+height:450px;
+
+}
+#ctaContainer {
+    float:left; 
+    width:380px; 
+    background-color:white; 
+    margin: 15px 15px 15px 30px; 
+    margin-right:20px;
+    padding-bottom:40px;
+}
+#ctaHeader {
+    padding-left:20px;
+    font-size:25px;
+    font-weight:normal;
+    color:black;
+    text-transform:uppercase;
+    font-style: italic;
+}
+#ctaContainer h3 {
+    margin-bottom:0px;
+}
+#ctaUndertitle {
+    font-size:17px;
+}
+#alternateContent {
+    width:190px; 
+    background-color:#F7F7F7; 
+    float:left; 
+    margin:15px 5px 15px 10px; 
+    padding:15px; 
+    border: 1px solid #D5CECE;
+}
+#alternateContentHeader {
+    border-bottom:1px solid #D5CECE;
+    font-size: 18px;
+}
+#alternateContentBody {
+    margin-top:10px; 
+    font-size:16px;
+    font-weight:400;
+}
+.ctaBtn {
+    background-color:black;
+    height: 60px;
+    margin:10px 30px 10px 20px;
+    list-style:none;
+    color:white;
+    padding:3px 0 3px 3px;
+}
+.ctaIcon {
+    margin: 5px 0 0 2px;
+    border-radius: 3px 3px 3px 3px;
+}
+#ctaList {
+    margin:0px;
+    padding: 0;
+}
+#ctaList a {
+    text-decoration:none;
+    color:#fff;
+} 
+.ctaText {
+    display: inline-block; 
+    font-size: 1.6em;
+    font-weight: normal;
+    font-style: italic;
+    vertical-align: -7px;
+    color:#fff;
+}
+.ctaText a:visited{
+	color:#fff;
+}
+#welcomeOverlayHead {
+    border-bottom:10px solid gray;
+    background-color: white;
+}

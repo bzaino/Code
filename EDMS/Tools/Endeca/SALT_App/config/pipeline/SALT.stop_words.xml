@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE STOP_WORDS SYSTEM "stop_words.dtd">
+<STOP_WORDS>
+
+  <STOP_WORD>a</STOP_WORD>
+
+  <STOP_WORD>above</STOP_WORD>
+
+  <STOP_WORD>and</STOP_WORD>
+
+  <STOP_WORD>do</STOP_WORD>
+
+  <STOP_WORD>for</STOP_WORD>
+
+  <STOP_WORD>have</STOP_WORD>
+
+  <STOP_WORD>me</STOP_WORD>
+
+  <STOP_WORD>or</STOP_WORD>
+
+  <STOP_WORD>show</STOP_WORD>
+
+  <STOP_WORD>when</STOP_WORD>
+
+  <STOP_WORD>why</STOP_WORD>
+
+  <STOP_WORD>you</STOP_WORD>
+
+  <STOP_WORD>about</STOP_WORD>
+
+  <STOP_WORD>an</STOP_WORD>
+
+  <STOP_WORD>any</STOP_WORD>
+
+  <STOP_WORD>find</STOP_WORD>
+
+  <STOP_WORD>from</STOP_WORD>
+
+  <STOP_WORD>how</STOP_WORD>
+
+  <STOP_WORD>not</STOP_WORD>
+
+  <STOP_WORD>over</STOP_WORD>
+
+  <STOP_WORD>the</STOP_WORD>
+
+  <STOP_WORD>where</STOP_WORD>
+
+  <STOP_WORD>with</STOP_WORD>
+
+  <STOP_WORD>your</STOP_WORD>
+
+  <STOP_WORD>are</STOP_WORD>
+
+</STOP_WORDS>

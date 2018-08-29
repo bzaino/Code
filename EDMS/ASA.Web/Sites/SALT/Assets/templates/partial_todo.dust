@@ -1,0 +1,73 @@
+<article class="{name} small-12 todoTile clearfix">
+    <section>
+        {> "Modules/TodoUtilityBar" /}
+        {@if cond="'{attributes.ContentTypes}' ==='Video' || '{title}' ==='YoutubeOverlay' || '{title}' ==='BrightCoveOverlay'"}
+            <!-- Adds sidebar video and/or overlay for youtube salt tutorial -->
+            {>"partial_sidebar_promovideo" /}
+        {/if}
+        {@if cond="'{title}' !=='YoutubeOverlay' && '{title}' !=='BrightCoveOverlay'"}
+        <div class="row collapse">
+            <figure class="featured{?attributes.ToDoComplete} completed-overlay{/attributes.ToDoComplete} small-3 medium-2 columns">
+                {@if cond="'{attributes.external-url|trim}'.length"}
+                    {@if cond="'{attributes.ContentTypes}' === 'Course'"}
+                        <a href="#" data-coursepath="{attributes.external-url}"  title="{attributes.resource_link_title}" class="todoImgLink js-wt-todoheader js-salt-courses-link" tabindex="-1">
+                    {:else}
+                        <a href="{attributes.external-url}" title="{attributes.resource_link_title}" class="todoImgLink js-wt-todoheader" tabindex="-1">
+                    {/if}
+                {:else}
+                    <a href="/content/media{detailsAction.recordState}" title="{attributes.resource_link_title}" class="js-wt-todoheader todoImgLink" tabindex="-1">
+                {/if}
+                {@sizeImage imageSource="{attributes.tile-image-2014}" size="small"/}
+                </a>
+            </figure>
+        {/if}
+
+        {@if cond="'{title}' !=='YoutubeOverlay' && '{title}' !=='BrightCoveOverlay'"}
+            <header class="todoHeader small-9 medium-10 columns padding-right">
+                {@if cond="'{attributes.external-url|trim}'.length"}
+                    {@if cond="'{attributes.ContentTypes}' === 'Course'"}
+                        <a href="#" data-coursepath="{attributes.external-url}"  title="{attributes.resource_link_title}" class="js-wt-todoheader todo-header-link js-salt-courses-link js-todo-header">{attributes.headline}</a>
+                    {:else}
+                        <a href="{attributes.external-url}" title="{attributes.resource_link_title}" class="js-wt-todoheader todo-header-link js-todo-header">{attributes.headline}</a>
+                    {/if}
+                    {attributes.page_summary}
+                {:else}
+                    <a href="/content/media{detailsAction.recordState}" title="{attributes.resource_link_title}" class="js-wt-todoheader todo-header-link js-todo-header">{attributes.headline}</a>
+                    {attributes.page_summary}
+                {/if}
+                <div class="todo-flat-tags">
+                    Tags: {@flatTagsSeperator str="{attributes.FlatTags}"/}
+                </div>
+            </header>
+        {/if}
+        {@if cond="'{attributes.ContentTypes}' !== '' && '{attributes.ContentTypes}' !== 'Lesson' && '{attributes.ContentTypes}' !== 'Course' && '{title}' !=='YoutubeOverlay' && '{title}' !=='BrightCoveOverlay'"}
+        <div class="small-4 columns ratings-widget hide-for-small noprint">
+            <ul class="review-{attributes.P_Primary_Key} no-margin js-tile-review-container">
+                <input class="js-tile-rating" type="hidden" value="{attributes.P_Rating}" />
+                <input class="js-tile-pkey" type="hidden" value="{attributes.P_Primary_Key}" />
+            </ul>
+            <small class="position-absolute padding-top">&nbsp;({attributes.P_Rating_Count|currencyComma})</small>
+        </div>
+        <script>
+            require([
+                'jquery',
+                'modules/StarRatingWidget'
+            ], function ($) {
+                $('.review-{attributes.P_Primary_Key}').ratings(5, Math.round(Number('{attributes.P_Rating}'), false));
+            });
+        </script>
+        {/if}
+        <ul class="subheader right hide-for-small">
+        {>"Modules/ConsumptionTime" /}
+
+        {@if cond="'{attributes.Language[0]}' === 'English' && '{attributes.Language[1]}' === 'Spanish'"}
+            <div class="spanishLink right hide-for-small">
+                <a href="/content/media{@fixSpanishQuerystring url="{detailsAction.recordState}" /}" title="{attributes.resource_link_title}" class="subheader">
+                  En Espa&#241;ol
+                </a>
+            </div>
+        {/if}
+        </ul>
+        </div>
+    </section>
+</article>

@@ -1,0 +1,3 @@
+{#configuration}
+   <img src="/assets/images/logos/large/{CurrentSchoolBrand}-web.png" alt="{CurrentSchool}" title="{CurrentSchool}" />
+{/configuration}

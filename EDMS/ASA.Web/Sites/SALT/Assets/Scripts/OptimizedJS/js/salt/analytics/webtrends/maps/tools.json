@@ -1,0 +1,81 @@
+{
+	"tool:savings_calc:start": [
+	    "{tags.ACTIVITY_NAME}",                       "tool",
+        "{tags.ACTIVITY_SUB_NAME}",                   "savings_calc",
+        "{tags.ACTIVITY_TYPE}",                       "start",
+        "{tags.ACTIVITY_TRANSACTION}",                "1",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+	],
+
+	"tool:savings_calc:complete": [
+	    "{tags.ACTIVITY_NAME}",                       "tool",
+        "{tags.ACTIVITY_SUB_NAME}",                   "savings_calc_{whichField}",
+        "{tags.ACTIVITY_TYPE}",                       "complete",
+        "{tags.ACTIVITY_TRANSACTION}",                "1",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+	],
+
+	"tool:carloan_calc:start": [
+	    "{tags.ACTIVITY_NAME}",                       "tool",
+        "{tags.ACTIVITY_SUB_NAME}",                   "carloan_calc",
+        "{tags.ACTIVITY_TYPE}",                       "start",
+        "{tags.ACTIVITY_TRANSACTION}",                "1",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+	],
+
+	"tool:carloan_calc:complete": [
+	    "{tags.ACTIVITY_NAME}",                       "tool",
+        "{tags.ACTIVITY_SUB_NAME}",                   "carloan_calc",
+        "{tags.ACTIVITY_TYPE}",                       "complete",
+        "{tags.ACTIVITY_TRANSACTION}",                "1",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+	],
+
+	"tool:networth_calc:start": [
+	    "{tags.ACTIVITY_NAME}",                       "tool",
+        "{tags.ACTIVITY_SUB_NAME}",                   "networth_calc",
+        "{tags.ACTIVITY_TYPE}",                       "start",
+        "{tags.ACTIVITY_TRANSACTION}",                "1",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+	],
+
+	"tool:networth_calc:start": [
+	    "{tags.ACTIVITY_NAME}",                       "tool",
+        "{tags.ACTIVITY_SUB_NAME}",                   "networth_calc",
+        "{tags.ACTIVITY_TYPE}",                       "start",
+        "{tags.ACTIVITY_TRANSACTION}",                "1",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+	],
+
+	"tool:networth_calc:liability": [
+	    "{tags.ACTIVITY_NAME}",                       "tool",
+        "{tags.ACTIVITY_SUB_NAME}",                   "networth_calc",
+        "WT.z_nwl",									  "1",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}",
+        "WT.Z_nwl_{fieldName}",						  "{fieldValue}"
+	],
+
+	"tool:networth_calc:asset": [
+	    "{tags.ACTIVITY_NAME}",                       "tool",
+        "{tags.ACTIVITY_SUB_NAME}",                   "networth_calc",
+        "WT.z_nwa",									  "1",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}",
+        "WT.Z_nwa_{fieldName}",						  "{fieldValue}"
+	],
+
+	"tool:double_calc:start": [
+	    "{tags.ACTIVITY_NAME}",                       "tool",
+        "{tags.ACTIVITY_SUB_NAME}",                   "double_calc",
+        "{tags.ACTIVITY_TYPE}",                       "start",
+        "{tags.ACTIVITY_TRANSACTION}",                "1",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+	],
+
+	"tool:double_calc:complete": [
+	    "{tags.ACTIVITY_NAME}",                       "tool",
+        "{tags.ACTIVITY_SUB_NAME}",                   "double_calc",
+        "{tags.ACTIVITY_TYPE}",                       "complete",
+        "{tags.ACTIVITY_TRANSACTION}",                "1",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+	]
+}

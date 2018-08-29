@@ -1,0 +1,1196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2001, 2012, Oracle and/or its affiliates. All rights reserved.
+  ~ Oracle and Java are registered trademarks of Oracle and/or its
+  ~ affiliates. Other names may be trademarks of their respective owners.
+  ~ UNIX is a registered trademark of The Open Group.
+  ~
+  ~ This software and related documentation are provided under a license
+  ~ agreement containing restrictions on use and disclosure and are
+  ~ protected by intellectual property laws. Except as expressly permitted
+  ~ in your license agreement or allowed by law, you may not use, copy,
+  ~ reproduce, translate, broadcast, modify, license, transmit, distribute,
+  ~ exhibit, perform, publish, or display any part, in any form, or by any
+  ~ means. Reverse engineering, disassembly, or decompilation of this
+  ~ software, unless required by law for interoperability, is prohibited.
+  ~ The information contained herein is subject to change without notice
+  ~ and is not warranted to be error-free. If you find any errors, please
+  ~ report them to us in writing.
+  ~ U.S. GOVERNMENT END USERS: Oracle programs, including any operating
+  ~ system, integrated software, any programs installed on the hardware,
+  ~ and/or documentation, delivered to U.S. Government end users are
+  ~ "commercial computer software" pursuant to the applicable Federal
+  ~ Acquisition Regulation and agency-specific supplemental regulations.
+  ~ As such, use, duplication, disclosure, modification, and adaptation
+  ~ of the programs, including any operating system, integrated software,
+  ~ any programs installed on the hardware, and/or documentation, shall be
+  ~ subject to license terms and license restrictions applicable to the
+  ~ programs. No other rights are granted to the U.S. Government.
+  ~ This software or hardware is developed for general use in a variety
+  ~ of information management applications. It is not developed or
+  ~ intended for use in any inherently dangerous applications, including
+  ~ applications that may create a risk of personal injury. If you use
+  ~ this software or hardware in dangerous applications, then you shall
+  ~ be responsible to take all appropriate fail-safe, backup, redundancy,
+  ~ and other measures to ensure its safe use. Oracle Corporation and its
+  ~ affiliates disclaim any liability for any damages caused by use of this
+  ~ software or hardware in dangerous applications.
+  ~ This software or hardware and documentation may provide access to or
+  ~ information on content, products, and services from third parties.
+  ~ Oracle Corporation and its affiliates are not responsible for and
+  ~ expressly disclaim all warranties of any kind with respect to
+  ~ third-party content, products, and services. Oracle Corporation and
+  ~ its affiliates will not be responsible for any loss, costs, or damages
+  ~ incurred due to your access to or use of third-party content, products,
+  ~ or services.
+  -->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       ">
+
+    <!-- Create a properties object -->
+    <bean id="properties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="location" value="WEB-INF/assembler.properties" />
+    </bean>
+
+    <!-- Expose the properties object to spring -->
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="properties" ref="properties" />
+    </bean>
+
+    <import resource="endeca-seo-url-config.xml"/>
+    <import resource="perf-logging-config.xml"/>
+    
+    <bean id="springUtility" class="com.endeca.infront.web.spring.SpringUtility" scope="singleton"/>
+
+    <!--
+        ########################################################################
+        # ASSEMBLER SERVLET RESPONSE WRITERS
+        #
+        # Each response writer is required if you wish to use the Assembler
+        # Servlet with the corresponding type of output (e.g., if you want to
+        # configure the servlet to output JSON, then you need to define the
+        # JsonResponseWriter here).
+        #
+    -->
+    <bean id="jsonResponseWriter" class="com.endeca.infront.assembler.servlet.JsonResponseWriter"
+          scope="singleton"/>
+
+    <bean id="xmlResponseWriter" class="com.endeca.infront.assembler.servlet.XmlResponseWriter"
+          scope="singleton"/>
+
+    <!--
+        ########################################################################
+        # ASSEMBLER FACTORY
+        #
+        # Required.
+        #
+    -->
+    <bean id="assemblerFactory" class="com.endeca.infront.assembler.spring.SpringAssemblerFactory"
+          scope="singleton">
+        <constructor-arg>
+            <bean class="com.endeca.infront.assembler.AssemblerSettings">
+                <property name="previewEnabled" value="${preview.enabled}" />
+                <property name="previewModuleUrl" value="http://${workbench.host}:${workbench.port}/preview" />
+            </bean>
+        </constructor-arg>
+        <constructor-arg>
+            <list>
+                <bean class="com.endeca.infront.logger.SLF4JAssemblerEventLogger" />
+                <bean class="com.endeca.infront.assembler.event.request.ContentItemAugmentAdapter">
+                    <constructor-arg ref="springUtility"/>
+                </bean>
+                <!-- Remove the following lines to disable logging to an Oracle Endeca Log Server -->
+                <bean class="com.endeca.infront.navigation.event.LogServerAdapter">
+                    <constructor-arg ref="springUtility"/>
+                    <constructor-arg value="${logserver.host}"/>
+                    <constructor-arg value="${logserver.port}"/>
+                </bean>
+                <!-- Remove up to here to disable logging to an Oracle Endeca Log Server -->
+            </list>
+        </constructor-arg>
+    </bean>
+    
+    <!--
+        ########################################################################
+        # CARTRIDGE SUPPORT
+        #
+        # The following section configures managers and other supporting objects.
+        #
+    -->
+    
+    <bean id="httpServletRequest" scope="request"
+          factory-bean="springUtility"
+          factory-method="getHttpServletRequest" />
+    
+    <bean id="mdexResource" scope="request"
+          class="com.endeca.infront.navigation.model.MdexResource">
+        <property name="host" value="${mdex.host}" />
+        <property name="port" value="${mdex.port}" />
+        <property name="recordSpecName" value="P_Primary_Key" />
+    </bean>
+
+    <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ Navigation state (including record state) and related config
+    -->
+
+    <bean id="navigationStateBuilder" scope="request"
+          class="com.endeca.infront.navigation.url.UrlNavigationStateBuilder">
+        <property name="urlFormatter" ref="seoUrlFormatter" />
+        <property name="mdexRequestBroker" ref="mdexRequestBroker"/>
+        <property name="defaultSearchKey" value="All" />
+        <property name="defaultMatchMode" value="ALLPARTIAL" />
+        <property name="defaultFilterState">
+            <bean scope="singleton" class="com.endeca.infront.navigation.model.FilterState">
+                 <property name="rollupKey" value="" /> 
+                <property name="autoPhraseEnabled" value="true" />
+                <property name="securityFilter" value="AND(RecordType:Content)" />
+                <!-- <property name="languageId" value="en" /> -->
+            </bean>
+        </property>
+        <property name="removeAlways">
+            <list>
+                <value>contentText</value>
+                <value>Nty</value>
+                <value>Dy</value>
+                <value>collection</value>
+                <!-- Added by NavigationContainerHandler for LinkBuilder/MediaBrowser.
+                     Will be removed in a future release. -->
+                <value>dimensionToExpand</value>
+            </list>
+        </property>
+        <property name="removeOnUpdateFilterState">
+            <list>
+                <value>No</value>
+            </list>
+        </property>
+        <property name="removeOnClearFilterState">
+            <list>
+                <value>Ns</value>
+                <value>Nrpp</value>
+                <value>more</value>
+            </list>
+        </property>
+        <property name="recordDetailsDimensionNames">
+            <list>
+                <!-- <value>product.category</value> -->
+				<!-- add dimensions to return with JSON here -->
+            </list>
+        </property>
+    </bean>
+
+    <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ Changes to the bean id 'navigationState' will require an update to
+        ~ the canonical.tag as it references this bean by id.
+    -->
+    <bean id="navigationState"
+          scope="request"
+          factory-bean="navigationStateBuilder"
+          factory-method="parseNavigationState" >
+        <constructor-arg ref="httpServletRequest" />
+    </bean>
+    
+    <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ Changes to the bean id 'recordState' will require an update to
+        ~ the canonical.tag as it references this bean by id.
+    -->
+    <bean id="recordState"
+          scope="request"
+          factory-bean="navigationStateBuilder"
+          factory-method="parseRecordState" >
+        <constructor-arg ref="httpServletRequest" />
+    </bean>
+
+    <bean id="mdexRequestBroker" scope="request"
+          class="com.endeca.infront.navigation.MdexRequestBroker">
+        <constructor-arg ref="mdexResource" />
+        <!-- Debug Enabled Parameter. When set to true, allows debug information to be returned from the Assembler -->
+        <constructor-arg value="false"/>
+    </bean>
+    <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ User Profiles
+    -->
+    <bean id="previewUserStateBuilder" class="com.endeca.infront.content.PreviewUserStateBuilder"
+            scope="singleton" />
+    
+    <bean id="previewUserState" scope="request"
+          factory-bean="previewUserStateBuilder"
+          factory-method="createUserState" >
+        <constructor-arg ref="httpServletRequest" />
+    </bean>
+    
+	<bean id="liveUserStateBuilder" class="com.endeca.infront.content.RequestParamUserStateBuilder"
+        scope="singleton" >           
+    </bean>
+    
+    <!-- Set the user segment URL parameter name -->
+    <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+  	  	<property name="targetObject">
+        	<ref local="liveUserStateBuilder"/>
+  	  	</property>
+   	 	<property name="targetMethod">
+        	<value>setUserSegmentsParam</value>
+   	 	</property>
+   	 	<property name="arguments">
+        	<list>
+           		 <value>Endeca_user_segments</value>            
+   	    	</list>
+   	 	</property>
+	</bean>
+    
+    <bean id="liveUserState" scope="request" 
+          factory-bean="liveUserStateBuilder"
+          factory-method="createUserState" >
+        <constructor-arg ref="httpServletRequest" />
+        
+    </bean>
+    
+    <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ Content Sources
+    -->
+    <bean id="contentSource" class="com.endeca.infront.content.source.WorkbenchContentSource"
+          scope="singleton" destroy-method="destroy">
+        <!-- Common parameters -->
+        <constructor-arg index="0" value="${preview.enabled}" />
+        <constructor-arg index="1" value="${workbench.app.name}" />
+        <constructor-arg index="2" value="/pages" />
+        <constructor-arg index="3" value="${workbench.host}" />
+        <!-- AuthoringContentSource parameters -->
+        <constructor-arg index="4" type="int" value="${workbench.port}" />
+        <constructor-arg index="5" value="admin" />
+        <constructor-arg index="6" value="admin" />
+        <constructor-arg index="7" value="false" />
+        <!-- LiveContentSource parameters -->
+        <constructor-arg index="8" type="int" value="${workbench.publishing.serverPort}" />
+        <constructor-arg index="9" type="int" value="${workbench.publishing.clientPort}"/>
+        <constructor-arg index="10">
+            <bean factory-bean="springUtility" factory-method="getContextPath" />
+        </constructor-arg >
+        <constructor-arg index="11">
+            <bean factory-bean="springUtility" factory-method="getRealPath" />
+        </constructor-arg >
+    </bean>
+    
+    <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ Media Sources
+    -->
+    <bean id="liveMediaSources" class="java.util.ArrayList" lazy-init="true">
+        <constructor-arg>
+            <list>
+                <bean class="com.endeca.infront.cartridge.model.MediaSourceConfig">
+                    <property name="sourceName" value="IFCRSource" />
+                    <property name="sourceValue" value="/images/" />
+                </bean>
+                <bean class="com.endeca.infront.cartridge.model.MediaSourceConfig">
+                    <property name="sourceName" value="default" />
+                    <property name="sourceValue" value="/images/" />
+                </bean>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="authoringMediaSources" class="java.util.ArrayList" lazy-init="true">
+        <constructor-arg>
+            <list>
+                <bean class="com.endeca.infront.cartridge.model.MediaSourceConfig">
+                    <property name="sourceName" value="IFCRSource" />
+                    <property name="sourceValue" value="http://${workbench.host}:${workbench.port}/ifcr/sites/${workbench.app.name}/media/" />
+                </bean>
+                <bean class="com.endeca.infront.cartridge.model.MediaSourceConfig">
+                    <property name="sourceName" value="default" />
+                    <property name="sourceValue" value="http://${workbench.host}:${workbench.port}/ifcr/sites/${workbench.app.name}/media/" />
+                </bean>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <!--
+        ########################################################################
+        # CARTRIDGE HANDLERS
+        #
+        # The following section contains registered cartridge handlers.
+        #
+        # CartridgeHandler instances are registered in this file with the
+        # following naming convention:
+        #
+        # CartridgeHandler_${CARTRIDGE_TYPE}
+        #
+        # Where ${CARTRIDGE_TYPE} refers to the 'template id' when constructing
+        # cartridge templates for Experience Manager.
+        #
+    -->
+
+    <bean id="NavigationCartridgeHandler" abstract="true">
+        <property name="navigationState" ref="navigationState" />
+        <property name="mdexRequestBroker" ref="mdexRequestBroker" />
+        <property name="actionPathProvider">
+            <bean scope="request" class="com.endeca.infront.refapp.navigation.BasicActionPathProvider">
+                <constructor-arg index="0" ref="contentSource"/>
+                <constructor-arg index="1" ref="httpServletRequest"/>
+                <!-- navigationActionUriMap -->
+                <constructor-arg index="2">
+                    <map>
+                       
+                        <entry key="^/pages/Detail$" value="/pages/Sort" />
+                      
+                    </map>
+                </constructor-arg>
+                <!-- recordActionUriMap -->
+                <constructor-arg index="3">
+                    <map>
+                      
+                        <entry key="^/pages/.*$" value="/pages/Detail" />
+                        
+                    </map>
+                </constructor-arg>
+            </bean>
+        </property>
+    </bean>
+
+    <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ BEAN: CartridgeHandler_Breadcrumbs
+    -->
+    <bean id="CartridgeHandler_Breadcrumbs" class="com.endeca.infront.cartridge.BreadcrumbsHandler"
+          parent="NavigationCartridgeHandler" scope="prototype"/>
+
+    <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ BEAN: CartridgeHandler_ResultsList
+    -->
+    <bean id="CartridgeHandler_ResultsList" class="com.endeca.infront.cartridge.ResultsListHandler"
+          parent="NavigationCartridgeHandler" scope="prototype">
+        <property name="contentItemInitializer">
+            <bean class="com.endeca.infront.cartridge.ConfigInitializer" scope="request">
+                <property name="defaults">
+                    <bean class="com.endeca.infront.cartridge.ResultsListConfig" scope="singleton">
+                        <!-- <property name="whyMatchEnabled" value="true"/> -->
+                        <!-- <property name="whyRankEnabled" value="true"/> -->
+                        <property name="fieldNames">
+                            <list>
+                                <value>P_Primary_Key</value>
+                                <value>headline</value>
+                                <value>FlatTags</value>
+                                <value>page_summary</value>
+                                <value>sys_title</value>
+                                <value>sys_contentpostdate</value>
+                                <value>b-video-id</value>
+                                <value>Collection</value>
+                                <value>ContentTypes</value>
+                                <value>resource_link_title</value>
+                                <value>rich-text-image</value>
+                                <value>publication-date</value>
+                                <value>source</value>
+                                <value>publication</value>
+                                <value>external-url</value>
+                                <value>iframe-url</value>
+                                <value>third-party-video</value>
+                                <value>Language</value>
+                                <value>Topics-Parent</value>
+                                <value>blade-image</value>
+                                <value>content-image</value>
+                                <value>tile-image</value>	
+                                <value>URL</value>
+                                <value>subhead</value>
+                                <value>alt-subhead</value>
+                                <value>return-subhead</value>
+                                <value>webtrends-group</value>
+                                <value>body</value>
+                                <value>term</value>
+                                <value>letter</value>
+                                <value>Auth-Headline</value>
+                                <value>Auth-Body</value>
+                                <value>auth-alt-headline</value>
+                                <value>Word-Count</value>
+                                <value>P_Hits_Last_24_Hrs</value>
+                                <value>P_Hits_Last_30_Days</value>
+                                <value>P_Hits_Last_365_Days</value>
+                                <value>P_Hits_Last_7_Days</value>
+                                <value>P_Rating</value>
+                                <value>P_Rating_Count</value>
+                                <value>tile-image-2014</value>
+                                <value>selection-intro-copy</value>
+                                <value>column1-header-copy</value>
+                                <value>column2-header-copy</value>
+                                <value>column1-button-copy</value>
+                                <value>column2-button-copy</value>
+                                <value>bullet-list-copy</value>
+                                <value>cta-headline</value>
+                                <value>cta-label</value>
+                                <value>banner-image</value>
+                                <value>mobile-banner-image</value>
+                                <value>persona-link-copy</value>
+                                <value>persona-links</value>
+                                <value>column1-button-links</value>
+                                <value>column2-button-links</value>
+                                <value>tablet-image</value>
+                                <value>page_title</value>
+                                <value>isUnblocked</value>
+                                <value>iframe-height-class</value>
+                                <value>author-name</value>
+                                <value>author-image</value>
+                                <value>third-party-image</value>
+                                <value>third-party-copy</value>
+                                <value>registration-source</value>
+                                <value>acronym</value>
+                                <value>consumption-time</value>
+                                <value>show-livechat-reachout</value>
+                                <value>show-community-reachout</value>
+                                <value>enable_proactive_chat</value>
+                                <value>tool-images</value>
+                                <value>additional_head_content</value>
+                                <value>Item_Version</value>
+                            </list>
+                        </property>
+                        <!-- <property name="subRecordsPerAggregateRecord"<value>b-video-id</value> value="ALL"/>
+                        <property name="subRecordFieldNames">
+                            <list>
+                                <value>product.price</value>
+                            </list>
+                        </property> -->
+                        <property name="sortOption">
+                            <bean class="com.endeca.infront.navigation.model.SortOption">
+                                <property name="label" value="Title" />
+                                <property name="sorts">
+                                    <list>
+                                        <bean class="com.endeca.infront.navigation.model.SortSpec">
+                                            <property name="key" value="page_title" />
+                                            <property name="descending" value="false" />
+                                        </bean>
+                                    </list>
+                                </property>
+                            </bean>
+                        </property>
+                        <property name="relRankKey" value="All" />
+						<property name="relRankMatchMode" value="ALLPARTIAL" />
+  						<property name="relRankStrategy" value="nterms,maxfield,exact,static(page_title,descending)" />
+                        <property name="recordsPerPage" value="12" />
+                        <property name="recordDisplayFieldName" value="page_title" />
+                    </bean>
+                </property>
+                <property name="requestParamMarshaller">
+                    <bean class="com.endeca.infront.cartridge.ResultsListRequestParamMarshaller" scope="request">
+                        <property name="httpServletRequest" ref="httpServletRequest" />
+                    </bean>
+                </property>
+            </bean>
+        </property>
+		<property name="sortOptions">
+            <list>
+                <bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+                    <property name="label" value="Most Relevant"/>
+                    <property name="value" value=""/>
+                </bean>
+				<bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+                    <property name="label" value="Most Useful"/>
+                    <property name="value" value="P_Rating|1"/>
+                </bean>
+				<bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+                    <property name="label" value="Popular24h (Descending)"/>
+                    <property name="value" value="P_Hits_Last_24_Hrs|1"/>
+                </bean>
+				<bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+                    <property name="label" value="Most Viewed"/>
+                    <property name="value" value="P_Hits_Last_30_Days|1"/>
+                </bean>
+				<bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+                    <property name="label" value="Popular365d (Descending)"/>
+                    <property name="value" value="P_Hits_Last_365_Days|1"/>
+                </bean>
+				<bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+                    <property name="label" value="Popular7d (Descending)"/>
+                    <property name="value" value="P_Hits_Last_7_Days|1"/>
+                </bean>
+                <bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+                    <property name="label" value="Title (Ascending)"/>
+                    <property name="value" value="page_title|0"/>
+                </bean>
+                <bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+                    <property name="label" value="Title (Descending)"/>
+                    <property name="value" value="page_title|1"/>
+                </bean>
+            </list>
+        </property>
+    </bean>
+	
+    <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ BEAN: CartridgeHandler_ContentInformationList
+    -->
+    <bean id="CartridgeHandler_ContentInformationList" class="com.endeca.infront.cartridge.ResultsListHandler"
+          parent="NavigationCartridgeHandler" scope="prototype">
+        <property name="contentItemInitializer">
+            <bean class="com.endeca.infront.cartridge.ConfigInitializer" scope="request">
+                <property name="defaults">
+                    <bean class="com.endeca.infront.cartridge.ResultsListConfig" scope="singleton">
+                        <!-- <property name="whyMatchEnabled" value="true"/> -->
+                        <!-- <property name="whyRankEnabled" value="true"/> -->
+                        <property name="fieldNames">
+                            <list>
+                                <value>P_Primary_Key</value>		
+								<value>page_title</value>
+                                <value>ContentTypes</value>
+                            </list>
+                        </property>
+                        <property name="sortOption">
+                            <bean class="com.endeca.infront.navigation.model.SortOption">
+                                <property name="label" value="Title" />
+                                <property name="sorts">
+                                    <list>
+                                        <bean class="com.endeca.infront.navigation.model.SortSpec">
+                                            <property name="key" value="page_title" />
+                                            <property name="descending" value="false" />
+                                        </bean>
+                                    </list>
+                                </property>
+                            </bean>
+                        </property>
+                        <property name="relRankKey" value="All" />
+						<property name="relRankMatchMode" value="ALLPARTIAL" />
+  						<property name="relRankStrategy" value="nterms,maxfield,exact,static(page_title,descending)" />
+                        <property name="recordsPerPage" value="12" />
+                        <property name="recordDisplayFieldName" value="page_title" />
+                    </bean>
+                </property>
+                <property name="requestParamMarshaller">
+                    <bean class="com.endeca.infront.cartridge.ResultsListRequestParamMarshaller" scope="request">
+                        <property name="httpServletRequest" ref="httpServletRequest" />
+                    </bean>
+                </property>
+            </bean>
+        </property>
+		<property name="sortOptions">
+            <list>
+                <bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+                    <property name="label" value="Most Relevant"/>
+                    <property name="value" value=""/>
+                </bean>
+				<bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+                    <property name="label" value="Most Useful"/>
+                    <property name="value" value="P_Rating|1"/>
+                </bean>
+				<bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+                    <property name="label" value="Popular24h (Descending)"/>
+                    <property name="value" value="P_Hits_Last_24_Hrs|1"/>
+                </bean>
+				<bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+                    <property name="label" value="Most Viewed"/>
+                    <property name="value" value="P_Hits_Last_30_Days|1"/>
+                </bean>
+				<bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+                    <property name="label" value="Popular365d (Descending)"/>
+                    <property name="value" value="P_Hits_Last_365_Days|1"/>
+                </bean>
+				<bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+                    <property name="label" value="Popular7d (Descending)"/>
+                    <property name="value" value="P_Hits_Last_7_Days|1"/>
+                </bean>
+                <bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+                    <property name="label" value="Title (Ascending)"/>
+                    <property name="value" value="page_title|0"/>
+                </bean>
+                <bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+                    <property name="label" value="Title (Descending)"/>
+                    <property name="value" value="page_title|1"/>
+                </bean>
+            </list>
+        </property>
+    </bean>		
+  <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ BEAN: CartridgeHandler_PredictiveList
+    -->
+  <bean id="CartridgeHandler_PredictiveList" class="com.endeca.infront.cartridge.ResultsListHandler"
+        parent="NavigationCartridgeHandler" scope="prototype">
+    <property name="contentItemInitializer">
+      <bean class="com.endeca.infront.cartridge.ConfigInitializer" scope="request">
+        <property name="defaults">
+          <bean class="com.endeca.infront.cartridge.ResultsListConfig" scope="singleton">
+            <!-- <property name="whyMatchEnabled" value="true"/> -->
+            <!-- <property name="whyRankEnabled" value="true"/> -->
+            <property name="fieldNames">
+              <list>
+                <value>headline</value>
+                <value>FlatTags</value>
+                <value>ContentTypes</value>
+                <value>external-url</value>
+                <value>iframe-url</value>
+                <value>sys_title</value>
+              </list>
+            </property>
+            <!-- <property name="subRecordsPerAggregateRecord"<value>b-video-id</value> value="ALL"/>
+                        <property name="subRecordFieldNames">
+                            <list>
+                                <value>product.price</value>
+                            </list>
+                        </property> -->
+            <property name="sortOption">
+              <bean class="com.endeca.infront.navigation.model.SortOption">
+                <property name="label" value="Title" />
+                <property name="sorts">
+                  <list>
+                    <bean class="com.endeca.infront.navigation.model.SortSpec">
+                      <property name="key" value="page_title" />
+                      <property name="descending" value="false" />
+                    </bean>
+                  </list>
+                </property>
+              </bean>
+            </property>
+            <property name="relRankKey" value="All" />
+            <property name="relRankMatchMode" value="ALLPARTIAL" />
+            <property name="relRankStrategy" value="nterms,maxfield,exact,static(page_title,descending)" />
+            <property name="recordsPerPage" value="12" />
+            <property name="recordDisplayFieldName" value="page_title" />
+          </bean>
+        </property>
+        <property name="requestParamMarshaller">
+          <bean class="com.endeca.infront.cartridge.ResultsListRequestParamMarshaller" scope="request">
+            <property name="httpServletRequest" ref="httpServletRequest" />
+          </bean>
+        </property>
+      </bean>
+    </property>
+    <property name="sortOptions">
+      <list>
+        <bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+          <property name="label" value="Most Relevant"/>
+          <property name="value" value=""/>
+        </bean>
+        <bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+          <property name="label" value="Most Useful"/>
+          <property name="value" value="P_Rating|1"/>
+        </bean>
+        <bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+          <property name="label" value="Popular24h (Descending)"/>
+          <property name="value" value="P_Hits_Last_24_Hrs|1"/>
+        </bean>
+        <bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+          <property name="label" value="Most Viewed"/>
+          <property name="value" value="P_Hits_Last_30_Days|1"/>
+        </bean>
+        <bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+          <property name="label" value="Popular365d (Descending)"/>
+          <property name="value" value="P_Hits_Last_365_Days|1"/>
+        </bean>
+        <bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+          <property name="label" value="Popular7d (Descending)"/>
+          <property name="value" value="P_Hits_Last_7_Days|1"/>
+        </bean>
+        <bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+          <property name="label" value="Title (Ascending)"/>
+          <property name="value" value="page_title|0"/>
+        </bean>
+        <bean class="com.endeca.infront.cartridge.model.SortOptionConfig">
+          <property name="label" value="Title (Descending)"/>
+          <property name="value" value="page_title|1"/>
+        </bean>
+      </list>
+    </property>
+  </bean>
+
+  <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ BEAN: CartridgeHandler_RefinementMenu
+    -->
+    <bean id="CartridgeHandler_RefinementMenu" class="com.endeca.infront.cartridge.RefinementMenuHandler"
+          scope="prototype" parent="NavigationCartridgeHandler">
+        <property name="contentItemInitializer">
+            <bean class="com.endeca.infront.cartridge.ConfigInitializer" scope="request">
+                <property name="defaults">
+                    <bean class="com.endeca.infront.cartridge.RefinementMenuConfig" scope="singleton">
+                        <property name="moreLinkText" value="More..."/>
+                        <property name="lessLinkText" value="Less..."/>
+                        <!-- <property name="whyPrecedenceRuleFired" value="true"/> -->
+                    </bean>
+                </property>
+                <property name="requestParamMarshaller">
+                    <bean class="com.endeca.infront.cartridge.RefinementMenuRequestParamMarshaller" scope="request">
+                        <property name="httpServletRequest" ref="httpServletRequest" />
+                    </bean>
+                </property>
+            </bean>
+        </property>
+    </bean>
+
+    <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ BEAN: CartridgeHandler_DimensionSearchResults
+    -->
+
+    <bean id="DimensionSearchResultsConfigInitializer"
+          class="com.endeca.infront.cartridge.ConfigInitializer" scope="request">
+        <property name="defaults">
+            <bean class="com.endeca.infront.cartridge.DimensionSearchResultsConfig" scope="singleton">
+                <property name="relRankStrategy" value="exact,static(nbins,desc)" />
+                <property name="enabled" value="true" />
+                <property name="showCountsEnabled" value="true" />
+                <property name="dimensionList">
+                    <list>
+                        <value>100972</value> <!-- product.category -->
+                        <value>20001</value>  <!-- product.brand.name -->
+                        <value>100031</value> <!-- product.features -->
+                    </list>
+                </property>
+            </bean>
+        </property>
+        <property name="requestParamMarshaller">
+            <bean class="com.endeca.infront.cartridge.DimensionSearchResultsRequestParamMarshaller"
+                  scope="request">
+                <property name="httpServletRequest" ref="httpServletRequest"/>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="CartridgeHandler_DimensionSearchResults"
+          class="com.endeca.infront.cartridge.DimensionSearchResultsHandler"
+          parent="NavigationCartridgeHandler" scope="prototype">
+        <property name="contentItemInitializer" ref="DimensionSearchResultsConfigInitializer"/>
+    </bean>
+
+    <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ BEAN: CartridgeHandler_DimensionSearchAutoSuggestItem
+    -->
+    <bean id="CartridgeHandler_DimensionSearchAutoSuggestItem"
+          class="com.endeca.infront.cartridge.DimensionSearchResultsHandler"
+          parent="NavigationCartridgeHandler" scope="prototype">
+        <property name="contentItemInitializer" ref="DimensionSearchResultsConfigInitializer"/>
+    </bean>
+
+    <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ BEAN: CartridgeHandler_ProductDetail
+    -->
+    <bean id="CartridgeHandler_ProductDetail" class="com.endeca.infront.cartridge.RecordDetailsHandler"
+          parent="NavigationCartridgeHandler" scope="prototype" >
+        <property name="recordState" ref="recordState" />
+    </bean>
+
+    <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ BEAN: CartridgeHandler_RecordSpotlight
+    -->
+    <bean id="CartridgeHandler_RecordSpotlight" class="com.endeca.infront.cartridge.RecordSpotlightHandler"
+          parent="NavigationCartridgeHandler" scope="prototype">
+        <property name="contentItemInitializer">
+            <bean class="com.endeca.infront.cartridge.ConfigInitializer" scope="request">
+                <property name="defaults">
+                    <bean class="com.endeca.infront.cartridge.RecordSpotlightConfig" scope="singleton">
+                        <property name="fieldNames">
+                            <list>
+                                <value>P_Primary_Key</value>
+                                <value>headline</value>
+                                <value>FlatTags</value>
+                                <value>spanish-headline</value>
+                                <value>page_summary</value>
+                                <value>spanish-summary</value>
+                                <value>sys_title</value>
+                                <value>sys_contentpostdate</value>
+                                <value>ContentTypes</value>
+                                <value>b-video-id</value>
+                                <value>resource_link_title</value>
+                                <value>rich-text-image</value>
+                                <value>alt-rich-text-image</value>
+                                <value>page_tags</value>
+                                <value>body</value>
+                                <value>spanish-body</value>
+                                <value>auth-body</value>
+                                <value>callout</value>
+                                <value>spanish-callout</value>
+                                <value>button-area</value>
+                                <value>auth-button-area</value>
+                                <value>subhead</value>
+                                <value>alt-subhead</value>
+                                <value>return-subhead</value>
+                                <value>spanish-subhead</value>
+                                <value>publication-date</value>
+                                <value>source</value>
+                                <value>publication</value>
+                                <value>external-url</value>
+                                <value>iframe-url</value>
+                                <value>third-party-video</value>
+                                <value>answer-1-button-text</value>
+                                <value>answer-1-page-name</value>
+                                <value>answer-1-help-text</value>
+                                <value>answer-2-button-text</value>
+                                <value>answer-2-page-name</value>
+                                <value>answer-2-help-text</value>
+                                <value>answer-3-button-text</value>
+                                <value>answer-3-page-name</value>
+                                <value>answer-3-help-text</value>
+                                <value>answer-4-button-text</value>
+                                <value>answer-4-page-name</value>
+                                <value>answer-4-help-text</value>
+                                <value>answer-5-button-text</value>
+                                <value>answer-5-page-name</value>
+                                <value>answer-5-help-text</value>
+                                <value>answer-6-button-text</value>
+                                <value>answer-6-page-name</value>
+                                <value>answer-6-help-text</value>
+                                <value>answer-7-button-text</value>
+                                <value>answer-7-page-name</value>
+                                <value>answer-7-help-text</value>
+                                <value>answer-8-button-text</value>
+                                <value>answer-8-page-name</value>
+                                <value>answer-8-help-text</value>
+                                <value>btn-link-text-1</value>
+                                <value>btn-page-name-1</value>
+                                <value>btn-help-1</value>
+                                <value>btn-link-text-2</value>
+                                <value>btn-page-name-2</value>
+                                <value>btn-help-2</value>
+                                <value>btn-link-text-3</value>
+                                <value>btn-page-name-3</value>
+                                <value>btn-help-3</value>
+                                <value>btn-link-text-4</value>
+                                <value>btn-page-name-4</value>
+                                <value>btn-help-4</value>
+                                <value>btn-link-text-5</value>
+                                <value>btn-page-name-5</value>
+                                <value>btn-help-5</value>
+                                <value>btn-link-text-6</value>
+                                <value>btn-page-name-6</value>
+                                <value>btn-help-6</value>
+                                <value>btn-link-text-7</value>
+                                <value>btn-page-name-7</value>
+                                <value>btn-help-7</value>
+                                <value>btn-link-text-8</value>
+                                <value>btn-page-name-8</value>
+                                <value>btn-help-8</value>
+                                <value>new-tab-text-1</value>
+                                <value>new-tab-link-1</value>
+                                <value>new-tab-help-1</value>
+                                <value>new-tab-text-2</value>
+                                <value>new-tab-link-2</value>
+                                <value>new-tab-help-2</value>
+                                <value>new-tab-text-3</value>
+                                <value>new-tab-link-3</value>
+                                <value>new-tab-help-3</value>
+                                <value>new-tab-text-4</value>
+                                <value>new-tab-link-4</value>
+                                <value>new-tab-help-4</value>
+                                <value>new-tab-text-5</value>
+                                <value>new-tab-link-5</value>
+                                <value>new-tab-help-5</value>
+                                <value>new-tab-text-6</value>
+                                <value>new-tab-link-6</value>
+                                <value>new-tab-help-6</value>
+                                <value>new-tab-text-7</value>
+                                <value>new-tab-link-7</value>
+                                <value>new-tab-help-7</value>
+                                <value>new-tab-text-8</value>
+                                <value>new-tab-link-8</value>
+                                <value>new-tab-help-8</value>
+                                <value>special-content-1</value>
+                                <value>special-content-2</value>
+                                <value>special-content-3</value>
+                                <value>special-content-4</value>
+                                <value>special-content-5</value>
+                                <value>help-text</value>
+                                <value>widget-button-1</value>
+                                <value>widget-button-1-help</value>
+                                <value>widget-button-1-link</value>
+                                <value>SetRepaymentPlan</value>
+                                <value>SetWebTrendsTag</value>
+                                <value>learnedTopic</value>
+                                <value>Language</value>
+                                <value>Topics-Parent</value>
+                                <value>blade-image</value>
+                                <value>content-image</value>
+                                <value>tile-image</value>
+                                <value>Item_Version</value>
+                                <value>webtrends-group</value>
+                                <value>URL</value>
+                                <value>acronym</value>
+                                <value>letter</value>
+                                <value>term</value>
+                                <value>header-1</value>
+                                <value>header-2</value>
+                                <value>header-3</value>
+                                <value>header-4</value>
+                                <value>loan-subhead</value>
+                                <value>loan-subhead-pagename</value>
+                                <value>addloans-btn-text</value>
+                                <value>addloans-btn-pagename</value>
+                                <value>grad-date-text</value>
+                                <value>loan-payment-text</value>
+                                <value>standard-disclaimer</value>
+                                <value>graduated-disclaimer</value>
+                                <value>extended-disclaimer</value>
+                                <value>income-based-disclaimer</value>
+                                <value>enroll-status-text</value>
+                                <value>enroll-status-page-name</value>
+                                <value>payment-plans-header</value>
+                                <value>postpone-payments-header</value>
+                                <value>loan-forgiveness-header</value>
+                                <value>default-header</value>
+                                <value>button-text-only</value>
+                                <value>auth-button-text-only</value>
+                                <value>Auth-Headline</value>
+                                <value>Auth-Body</value>
+                                <value>auth-alt-headline</value>
+                                <value>Word-Count</value>
+                                <value>car-content</value>
+                                <value>credit-card-content</value>
+                                <value>mortgage-content</value>
+                                <value>federal-loan-content</value>
+                                <value>private-loan-content</value>
+                                <value>healthcare-loan-content</value>
+                                <value>other-loan-content</value>
+                                <value>state-loan-content</value>
+                                <value>imported-loan-content</value>
+                                <value>P_Hits_Last_24_Hrs</value>
+                                <value>P_Hits_Last_30_Days</value>
+                                <value>P_Hits_Last_365_Days</value>
+                                <value>P_Hits_Last_7_Days</value>
+                                <value>P_Rating</value>
+                                <value>P_Rating_Count</value>
+                                <value>tour-step-1</value>
+                                <value>tour-step-2</value>
+                                <value>tour-step-3</value>
+                                <value>tour-step-4</value>
+                                <value>tour-step-5</value>
+                                <value>tour-step-6</value>
+                                <value>tour-step-7</value>
+                                <value>tile-image-2014</value>
+                                <value>selection-intro-copy</value>
+                                <value>column1-header-copy</value>
+                                <value>column2-header-copy</value>
+                                <value>column1-button-copy</value>
+                                <value>column2-button-copy</value>
+                                <value>bullet-list-copy</value>
+                                <value>cta-headline</value>
+                                <value>cta-label</value>
+                                <value>banner-image</value>
+                                <value>mobile-banner-image</value>
+                                <value>persona-link-copy</value>
+                                <value>persona-links</value>
+                                <value>column1-button-links</value>
+                                <value>column2-button-links</value>
+                                <value>tablet-image</value>
+                                <value>page_title</value>
+                                <value>isUnblocked</value>
+                                <value>iframe-height-class</value>
+                                <value>author-name</value>
+                                <value>author-image</value>
+                                <value>third-party-image</value>
+                                <value>third-party-copy</value>
+                                <value>registration-source</value>
+                                <value>consumption-time</value>
+                                <value>show-livechat-reachout</value>
+                                <value>show-community-reachout</value>
+                                <value>spanish-modified-date</value>
+                                <value>carousel-module-body</value>
+                                <value>carousel-module-sidebar-1</value>
+                                <value>carousel-module-sidebar-2</value>
+                                <value>carousel-module-sidebar-3</value>
+                                <value>carousel-module-sidebar-4</value>
+                                <value>carousel-headline</value>
+                                <value>carousel-body-1</value>
+                                <value>carousel-body-2</value>
+                                <value>carousel-body-3</value>
+                                <value>carousel-body-4</value>
+                                <value>carousel-body-5</value>
+                                <value>carousel-image-1</value>
+                                <value>carousel-image-2</value>
+                                <value>carousel-image-3</value>
+                                <value>carousel-image-4</value>
+                                <value>carousel-image-5</value>
+                                <value>carousel-author-1</value>
+                                <value>carousel-author-2</value>
+                                <value>carousel-author-3</value>
+                                <value>carousel-author-4</value>
+                                <value>carousel-author-5</value>
+                                <value>enable_proactive_chat</value>
+                                <value>additional_head_content</value>
+								<value>alert-msg</value>
+                            </list>
+                        </property>
+                    </bean>
+                </property>
+            </bean>
+        </property>
+    </bean>
+	
+    <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ BEAN: CartridgeHandler_PredictiveRecordSpotlight
+    -->
+    <bean id="CartridgeHandler_PredictiveRecordSpotlight" class="com.endeca.infront.cartridge.RecordSpotlightHandler"
+          parent="NavigationCartridgeHandler" scope="prototype">
+        <property name="contentItemInitializer">
+            <bean class="com.endeca.infront.cartridge.ConfigInitializer" scope="request">
+                <property name="defaults">
+                    <bean class="com.endeca.infront.cartridge.RecordSpotlightConfig" scope="singleton">
+                        <property name="fieldNames">
+                            <list>
+                                <value>term</value>
+                                <value>acronym</value>
+                            </list>
+                        </property>
+                    </bean>
+                </property>
+            </bean>
+        </property>
+    </bean>	
+
+    <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ BEAN: CartridgeHandler_HorizontalRecordSpotlight
+    -->
+    <bean id="CartridgeHandler_HorizontalRecordSpotlight" parent="CartridgeHandler_RecordSpotlight"
+          scope="prototype"/>
+
+    <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ BEAN: CartridgeHandler_SearchAdjustments
+    -->
+    <bean id="CartridgeHandler_SearchAdjustments" class="com.endeca.infront.cartridge.SearchAdjustmentsHandler"
+          parent="NavigationCartridgeHandler" scope="prototype">
+        <property name="contentItemInitializer">
+            <bean class="com.endeca.infront.cartridge.ConfigInitializer" scope="request">
+                <property name="defaults">
+                    <bean class="com.endeca.infront.cartridge.SearchAdjustmentsConfig" scope="singleton">
+                         <!-- <property name="showWordInterp" value="true"/> -->
+                    </bean>
+                </property>
+                <property name="requestParamMarshaller">
+                    <bean class="com.endeca.infront.cartridge.SearchAdjustmentsRequestParamMarshaller" scope="request">
+                        <property name="httpServletRequest" ref="httpServletRequest" />
+                    </bean>
+                </property>
+            </bean>
+        </property>
+    </bean>
+
+    <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ BEAN: CartridgeHandler_MediaBanner
+    -->
+    <bean id="CartridgeHandler_MediaBanner" class="com.endeca.infront.cartridge.MediaBannerHandler"
+          parent="NavigationCartridgeHandler" scope="prototype">
+        <property name="mediaSourceList" ref="${media.sources.ref}"/>
+        <property name="navigationStateBuilder" ref="navigationStateBuilder"/>
+        <property name="contentSource" ref="contentSource"/>
+    </bean>
+
+    <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ BEAN: CartridgeHandler_NavigationContainer
+    -->
+    <bean id="CartridgeHandler_NavigationContainer" class="com.endeca.infront.cartridge.NavigationContainerHandler"
+          parent="NavigationCartridgeHandler" scope="prototype">
+        <property name="contentItemInitializer">
+            <bean class="com.endeca.infront.cartridge.ConfigInitializer" scope="request">
+                <property name="defaults">
+                    <bean class="com.endeca.infront.cartridge.NavigationContainerConfig" scope="singleton">
+                        <property name="whyPrecedenceRuleFired" value="true"/>
+                        <property name="moreLinkText" value="More..."/>
+                        <property name="lessLinkText" value="Less..."/>
+                    </bean>
+                </property>
+                <property name="requestParamMarshaller">
+                    <bean class="com.endeca.infront.cartridge.NavigationContainerRequestParamMarshaller" scope="request">
+                        <property name="httpServletRequest" ref="httpServletRequest" />
+                    </bean>
+                </property>
+            </bean>
+        </property>
+        <property name="refinementMenuType" value="RefinementMenu" />
+    </bean>
+    
+    <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ BEAN: CartridgeHandler_ContentSlotList
+    -->
+    <bean id="CartridgeHandler_ContentSlotList" class="com.endeca.infront.cartridge.ContentSlotListHandler"
+          scope="prototype">
+        <property name="contentItemInitializer">
+            <bean class="com.endeca.infront.cartridge.ConfigInitializer" scope="request">
+                <property name="defaults">
+                    <bean class="com.endeca.infront.cartridge.ContentSlotListConfig" scope="singleton">
+                        <property name="contentSlotList">
+                            <list>
+                                <bean class="com.endeca.infront.cartridge.ContentSlotConfig" scope="singleton">
+                                    <property name="contentCollection" value="/content/Right Column Spotlights"/>
+                                    <property name="ruleLimit" value="3"/>
+                                </bean>
+                            </list>   
+                        </property>
+                    </bean>
+                </property>
+            </bean>
+        </property>
+    </bean>
+
+    <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ BEAN: CartridgeHandler_ContentInclude
+        ~ Used by the assembler service when keyword redirects are not enabled
+    -->
+    <bean id="CartridgeHandler_ContentInclude" class="com.endeca.infront.cartridge.ContentIncludeHandler"
+          scope="prototype">
+        <property name="contentSource" ref="contentSource" />
+    </bean>
+
+    <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ BEAN: CartridgeHandler_RedirectAwareContentInclude
+        ~ For root calls to the assembler when keyword redirects are desired
+    -->
+    <bean id="CartridgeHandler_RedirectAwareContentInclude" class="com.endeca.infront.cartridge.RedirectAwareContentIncludeHandler"
+          scope="prototype">
+        <property name="contentSource" ref="contentSource" />
+        <property name="contentBroker" ref="contentRequestBroker" />
+        <property name="navigationState" ref="navigationState" />
+        <property name="defaultFullAssembleOnRedirect" value="false"/>
+    </bean>        
+	
+	<!--
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ~ BEAN: CartridgeHandler_ContentSlot
+    -->
+     <bean id="contentRequestBroker" scope="request"
+          class="com.endeca.infront.content.MdexContentRequestBroker" >
+        <constructor-arg ref="mdexResource" />
+        <constructor-arg ref="${user.state.ref}" />
+        <constructor-arg ref="navigationState" />
+        <constructor-arg value="${preview.enabled}" />
+    </bean>       
+	
+	
+	<bean id="CartridgeHandler_ContentSlot" class="com.endeca.infront.cartridge.ContentSlotHandler"
+          scope="prototype">
+        <property name="contentBroker"
+			ref="contentRequestBroker" 
+		/>          
+    </bean>
+
+    <bean id="CartridgeHandler_ContentSlotHeader" parent="CartridgeHandler_ContentSlot"
+          scope="prototype"/>
+
+    <bean id="CartridgeHandler_ContentSlotSecondary" parent="CartridgeHandler_ContentSlot"
+          scope="prototype"/>
+
+    <bean id="CartridgeHandler_ContentSlotMain" parent="CartridgeHandler_ContentSlot"
+          scope="prototype"/>
+
+    <bean id="CartridgeHandler_PageSlot" parent="CartridgeHandler_ContentSlot"
+          scope="prototype"/>
+
+    <bean id="CartridgeHandler_StatsPage" class="com.endeca.infront.cartridge.StatsPageCartridgeHandler"
+        scope="prototype">
+        <property name="statsPageSerializer" ref="statsListener" />
+    </bean>
+
+</beans>

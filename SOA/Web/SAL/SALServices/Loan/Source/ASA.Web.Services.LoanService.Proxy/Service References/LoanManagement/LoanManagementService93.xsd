@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://asa.org/contracts/commonTypes" elementFormDefault="qualified" targetNamespace="http://asa.org/contracts/commonTypes" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="YNFlagType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="U" />
+      <xs:enumeration value="Y" />
+      <xs:enumeration value="N" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="YNFlagType" nillable="true" type="tns:YNFlagType" />
+</xs:schema>

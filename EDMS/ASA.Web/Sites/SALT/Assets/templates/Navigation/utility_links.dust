@@ -1,0 +1,6 @@
+<li><a href="/home/about.html" title="About" tabindex="{tabindex_ind}">About</a></li>
+<li><a href="/home/contact.html" title="Contact" tabindex="{tabindex_ind}">Contact</a></li>
+<li><a href="https://www.asa.org/press-release/" title="Press" target="_blank" tabindex="{tabindex_ind}">Press</a></li>
+<li><a href="/home/terms.html" title="Terms of Use" tabindex="{tabindex_ind}">Terms of Use</a></li>
+<li><a href="/home/privacy.html" title="Privacy" tabindex="{tabindex_ind}">Privacy</a></li>
+<li><a href="/home/system_requirements.html" title="Accessibility" tabindex="{tabindex_ind}">Accessibility</a></li>

@@ -1,0 +1,47 @@
+<div id="close-account-modal" class="reveal-modal small" data-reveal>
+    <a href class="close-reveal-modal cancel-circle overlayClose"></a>
+    <div class="row collapse">
+        <div class="columns small-12">
+            <header>
+                <h2>We're Sad to See You Leave</h2>
+            </header>
+            <p>
+               Closing your Salt account will unsubscribe you from future email communications. <br>
+                You will also lose access to the Salt website and Salt benefits.</p>
+            <p>
+                Your school has asked us to keep you financially savvy, so you cannot cancel 
+                <i>all</i> communications. You will continue to receive certain information.</p>
+            <p>
+                Are you sure you want to close your Salt account?
+            </p>
+        </div>
+    </div>
+    <div class="row collapse">
+        <div class="columns small-6">
+            <button id="deactivate-cancel" class="button base-btn main-btn back">Cancel</button>
+        </div>
+        <div class="columns small-6">
+            <button id="deactivate-submit" class="button base-btn main-btn right">Close My Account</button>
+        </div>
+    </div>
+    <div class="small-12">
+        {> "LoadingSpinner" /}
+    </div>
+</div>
+<span id="DeactivateAccountbackEndError" class="error" style="display: none;">Oops, an error has occurred. Please contact Member Support for assistance (855.469.2724).</span>
+<div id="close-account-confirmation-modal" class="reveal-modal small padded" data-reveal>
+    <a href class="close-reveal-modal cancel-circle overlayClose"></a>
+    <div class="row">
+        <header>
+            <h2>Your Salt Account Is Closed.</h2>
+        </header>
+        <h2>
+            We sent you an email to confirm that you closed your online Salt account.
+        </h2>
+    </div>
+    <div class="row">
+        <div class="columns small-12">
+            <button class="button base-btn main-btn right js-reveal-close"><span>Close</span></button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC669184-0A6D-4EF7-B225-07A4F5C841A9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ASA.Web.WTF</RootNamespace>
+    <AssemblyName>ASA.Web.WTF</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ASA.Log.ServiceLogger">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\SOA\Bin\InternalComponents\$(Configuration)\ASA.Log.ServiceLogger.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging">
+      <HintPath>..\..\..\..\3rdParty\Bin\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net">
+      <HintPath>..\..\..\..\3rdParty\Bin\Common.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\..\3rdParty\Bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="configuration\DependencyConfigurationElement.cs" />
+    <Compile Include="configuration\DependencyConfigurationElementCollection.cs" />
+    <Compile Include="configuration\DependencyConfigurationSection.cs" />
+    <Compile Include="Integration\DotNetMembership\DotNetMembershipAdapter.cs" />
+    <Compile Include="Integration\DotNetMembership\MembershipExtensions.cs" />
+    <Compile Include="Integration\DotNetMembership\MembershipUserWrapper.cs" />
+    <Compile Include="ISiteMembership.cs" />
+    <Compile Include="SiteMembershipStub.cs" />
+    <Compile Include="WTFSession.cs" />
+    <Compile Include="_account\MemberAuthInfo.cs" />
+    <Compile Include="_dataObject\ContextDataObjectList.cs" />
+    <Compile Include="Integration\DataProviderException.cs" />
+    <Compile Include="Integration\SecurityAdapterException.cs" />
+    <Compile Include="_interface\IContextDataObjectList.cs" />
+    <Compile Include="_profile\_dataObject\MemberEmailData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_profile\_dataObject\MemberEmailList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_profile\_dataObject\MemberOrganizationData.cs" />
+    <Compile Include="_profile\_dataObject\MemberOrganizationList.cs" />
+    <Compile Include="_profile\_interface\IMemberEmail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_profile\_interface\IMemberEmailList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_profile\_interface\IMemberOrganization.cs" />
+    <Compile Include="_profile\_interface\IMemberOrganizationList.cs" />
+    <Compile Include="_validation\ContextActionValidationRequest.cs" />
+    <Compile Include="_validation\ContextActionValidatorBase.cs" />
+    <Compile Include="Integration\ContextDataProviderBase.cs" />
+    <Compile Include="Integration\IntegrationLoader.cs" />
+    <Compile Include="_account\MemberAccount.cs" />
+    <Compile Include="_account\MemberAccountData.cs" />
+    <Compile Include="_profile\MemberProfile.cs" />
+    <Compile Include="_profile\_dataObject\MemberProfileData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiteMember.cs" />
+    <Compile Include="SiteMembership.cs" />
+    <Compile Include="_validation\validators\ManageOwnRecordsValidator.cs" />
+    <Compile Include="_validation\validators\MustbeLoggedInValidator.cs" />
+    <Compile Include="WtfException.cs" />
+    <Compile Include="_enum\ChangePasswordStatus.cs" />
+    <Compile Include="_enum\MemberCreationStatus.cs" />
+    <Compile Include="_validation\_interface\IContextActionValidationRequest.cs" />
+    <Compile Include="_validation\_interface\IContextActionValidator.cs" />
+    <Compile Include="_interface\IContextDataObject.cs" />
+    <Compile Include="Integration\_interface\IContextDataProvider.cs" />
+    <Compile Include="Integration\_interface\IContextWrapper.cs" />
+    <Compile Include="_account\_interface\IMemberAccount.cs" />
+    <Compile Include="_account\_interface\IMemberAccountData.cs" />
+    <Compile Include="_profile\_interface\IMemberProfile.cs" />
+    <Compile Include="_profile\_interface\IMemberProfileData.cs" />
+    <Compile Include="Integration\_interface\ISecurityAdapter.cs" />
+    <Compile Include="_interface\ISiteMember.cs" />
+    <Compile Include="_interface\IUpdateable.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Collections\ASA.Web.Collections.csproj">
+      <Project>{1C130373-1360-4D29-B924-2C465E00C4C0}</Project>
+      <Name>ASA.Web.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DirectoryServicesWrapper\DirectoryServicesWrapper.csproj">
+      <Project>{665C1628-CEB8-4932-8D48-51BDC85425A8}</Project>
+      <Name>DirectoryServicesWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\ASA.Web.Common.csproj">
+      <Project>{78A826B1-E5DB-4E4C-ACB9-2039272EFE9B}</Project>
+      <Name>ASA.Web.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

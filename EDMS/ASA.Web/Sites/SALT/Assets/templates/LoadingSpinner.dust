@@ -1,0 +1,3 @@
+<div class="js-profile-saved-img profile-saved-img small-12 centered hide">
+   {>"Modules/SpinnerCSS" /}
+</div>

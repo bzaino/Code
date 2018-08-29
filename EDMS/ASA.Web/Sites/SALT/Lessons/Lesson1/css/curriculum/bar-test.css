@@ -1,0 +1,81 @@
+.keep-going,
+.add-expense {
+  margin: 0 50%; }
+
+#barGraph {
+  font: lighter 19px "FoundersGroteskCond-Reg", sans-serif;
+  text-align: center;
+  margin: 40px auto 17px;
+  width: 300px; }
+  #barGraph h4 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 15px 0 0; }
+  #barGraph .bars {
+    background: url("/Assets/images/lessons/lesson1/curriculum/vis-grid-bg.png") repeat;
+    margin: 0 auto;
+    position: relative;
+    height: 474px;
+    width: 298px; }
+    #barGraph .bars #balance {
+      position: relative;
+      margin: 0 0 0 58px;
+      width: 184px;
+      height: 100%; }
+      #barGraph .bars #balance .zero {
+        background: url("/Assets/images/lessons/lesson1/curriculum/bar-graph/bar-zero.png") 0 0 no-repeat;
+        position: absolute;
+        bottom: 0;
+        height: 32px;
+        width: 184px; }
+      #barGraph .bars #balance .bar-box {
+        display: none; }
+        #barGraph .bars #balance .bar-box .top {
+          background: url("/Assets/images/lessons/lesson1/curriculum/bar-graph/bar-tp.png") 0 0 no-repeat;
+          position: absolute;
+          height: 32px;
+          width: 184px; }
+        #barGraph .bars #balance .bar-box .mid {
+          background-color: #00d46a;
+          height: 0;
+          position: absolute;
+          bottom: 32px;
+          width: 184px; }
+        #barGraph .bars #balance .bar-box .bottom {
+          background: url("/Assets/images/lessons/lesson1/curriculum/bar-graph/bar-bt.png") 0 0 no-repeat;
+          height: 32px;
+          position: absolute;
+          bottom: 0;
+          width: 184px; }
+    #barGraph .bars #expense {
+      position: absolute;
+      bottom: 0;
+      margin: 0 0 0 58px;
+      width: 184px;
+      height: 100%; }
+      #barGraph .bars #expense .zero {
+        display: none;
+        background: url("/Assets/images/lessons/lesson1/curriculum/bar-graph/bar-bl-zero.png") 0 0 no-repeat;
+        height: 32px;
+        width: 184px; }
+      #barGraph .bars #expense .bar-box .top {
+        background: url("/Assets/images/lessons/lesson1/curriculum/bar-graph/bar-bl-tp.png") 0 0 no-repeat;
+        position: absolute;
+        height: 32px;
+        width: 184px; }
+      #barGraph .bars #expense .bar-box .mid {
+        background-color: #05d5e8;
+        position: absolute;
+        height: 0;
+        width: 184px; }
+      #barGraph .bars #expense .bar-box .bottom {
+        background: url("/Assets/images/lessons/lesson1/curriculum/bar-graph/bar-bl-bt.png") 0 0 no-repeat;
+        position: absolute;
+        height: 32px;
+        width: 184px; }
+  #barGraph .total-number {
+    color: #00e070;
+    font: bold 24px "FoundersGroteskCond-Reg", sans-serif;
+    margin: 15px 0 0 0; }
+  #barGraph .title {
+    text-transform: lowercase; }

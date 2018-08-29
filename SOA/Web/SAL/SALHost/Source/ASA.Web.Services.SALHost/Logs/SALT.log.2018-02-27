@@ -1,0 +1,6 @@
+2018-02-27 13:10:36.232 | 107 | AMSA\bzaino [ 1] INFO  | ASA.Web.Services.SALHost.Global                    SAL Host Startup 
+2018-02-27 13:10:36.294 | 169 | AMSA\bzaino [ 1] INFO  | ASA.Web.Services.SALHost.Global                    inside register routes 
+2018-02-27 13:10:36.296 | 171 | AMSA\bzaino [ 1] INFO  | ASA.Web.Services.SALHost.Global                    about to attach routes 
+2018-02-27 13:10:36.639 | 514 | AMSA\bzaino [12] INFO  | ASA.Web.Services.SearchService.Search              ASA.Web.Services.SearchService.Search() object being created ... 
+2018-02-27 13:10:41.769 | 5643 | AMSA\bzaino [12] INFO  | ASA.Web.Services.SearchService.Search              ASA.Web.Services.SearchService.Search() object being created ... 
+2018-02-27 13:32:34.763 | 1318637 | AMSA\bzaino [68] INFO  | ASA.Web.Services.SALHost.Global                    SAL Host Shutdown 

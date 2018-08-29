@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PartnerConfig PartnerName="SaltIDP/Jive/PSP_PROD_ConnectionTo_JivePROD">
+  
+  <!-- where to forward browsers that do support IWA -->
+  <LoggedOutPage>https://www.saltmoney.org/Account/LogOff</LoggedOutPage> <!-- where to go when you are all logged out (unless overriden be relay state -->
+
+  <EncryptionKey>43d75ebe60419890cc7706ea2eb4e3e6</EncryptionKey>
+  <EncryptionType>AES128</EncryptionType>
+  
+  <IDPURL>https://asa.ssoexchange.com/saml-idp/idp/saml2/SSOService/ProdSaltIDP</IDPURL>
+  <IDPLogoutURL>https://asa.ssoexchange.com/saml-idp/idp/saml2/LogoutService/ProdSaltIDP</IDPLogoutURL>
+  
+  <TokenTimeout>500</TokenTimeout>
+
+  <!-- <IDVerifierName>SSO.Plugins.MyPortalUserPrincipalSSOPlugin</IDVerifierName> -->
+  <IDVerifierName>ASAIDP.SSO.Plugins.SiteMemberPlugin</IDVerifierName>
+
+</PartnerConfig>

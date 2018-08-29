@@ -1,0 +1,27 @@
+<div class="row {?displayBelow}collapse double-padding-top {/displayBelow}js-question-container question-container">
+    <div class="small-12 columns prof-label-wrap">
+      <label for="Q{currentQuestion.QuestionID}">
+        <span class="js-onboarding-question onboarding-question">{currentQuestion.Question}</span>
+        {@if cond="'{currentQuestion.Question}' !== ''"}<br>{/if}
+      </label>
+    </div>
+    <div class="small-12 columns">
+      <ul class="row">
+          {#currentQuestion.Answers}
+            {@if cond="'{IsProfileAnswerActive}' === 'true'"}
+              <li class="left double-padded-bottom qa-input-below">
+                <input type="{styleType}" tabindex="2" name="{type}-qid-{currentQuestion.QuestionID}" id="ans-{AnsID}" class="css-checkbox {@profileSpecialAnswer ansType="{AnsName}" /}" value="{AnsID}{@if cond="'{AnsName}' === 'Other'"}{?currentQuestion.otherAnswer}-{currentQuestion.otherAnswer}{/currentQuestion.otherAnswer}{/if}" data-segmentName="Dashboard-QA-{currentQuestion.QuestionID}-{AnsName}" {@isProfileInputChecked responsesObj=currentQuestion.Responses ansVal="{AnsID}" /} >
+                <label class="qa-label" for="ans-{AnsID}">{AnsDescription}</label>
+                {@if cond="'{AnsName}' === 'Other'"}
+                    <div class="other-ans {@profileOtherInputVisibilty responsesObject=currentQuestion.Responses /}">
+                      <label for="other-ans-{AnsID}">Other:</label>
+                      <input type="text" pattern="profile_other" id="other-ans-{AnsID}" class="css-checkbox js-other-input" value="{currentQuestion.otherAnswer}" data-segmentName="Dashboard-QA-{currentQuestion.QuestionID}-{AnsName}" tabindex="2"/>
+                      {>"ErrorMessages/ProfileOtherEntry" /}
+                    </div>
+                {/if}
+              </li>
+              {/if}
+          {/currentQuestion.Answers}
+      </ul>
+    </div>
+</div>

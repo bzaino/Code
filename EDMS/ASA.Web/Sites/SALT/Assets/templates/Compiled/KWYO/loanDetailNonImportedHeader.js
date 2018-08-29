@@ -1,0 +1,1 @@
+define(["dust"], function(dust) { (function(){dust.register("KWYO/loanDetailNonImportedHeader",body_0);function body_0(chk,ctx){return chk.write("<header><div class=\"headline\"><h1>").reference(ctx.get("TypeName"),ctx,"h").write("</h1></div></header>");}return body_0;})(); });

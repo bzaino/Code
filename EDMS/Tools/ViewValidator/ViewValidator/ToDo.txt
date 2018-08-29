@@ -1,0 +1,32 @@
+﻿Known Bugs:
+
+1) I see the check for "<message name=", "<label name=" and "<widget name=". Lists is the fourth one? Should this be compared as well??
+
+2) The program repeats certain step many times, killing performance. The ReportList checks for dusplicates and does not add 
+the same error more than once, but each Report object increments its counter. This value is displayed in the first column. 
+This bug should be fixed but doesn ot seem to impact the quality of the error list.
+
+
+ToDo:
+
+Fix the URL's tests for .png, .css and |% %| url's
+
+Check for tags on page, such as ~/LoanInfo/Index#loanTypes
+
+Verify the hard coded test works and add more details to the output
+
+Test duplicate reports removal to be sure only true duplicates are being removed
+
+Refine the algorithm in the IsMatch() function
+
+Are all the files being compared?
+
+Are all the URL's being discovered?
+
+Unit tests for certain functions
+
+Add in Arguments functionality so that input params are handled like other Console tools at ASA
+
+Validate the CSS tags in the Razor, the XML and the CSS folder of PublishedContent
+
+Get updated folder tree from Joe Rav (PublishedContent) and Joe Magly (Views)

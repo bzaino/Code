@@ -1,0 +1,4 @@
+--no-default-triage-filters
+--triage-attribute-regex
+classification
+^Unclassified$|^Pending$|^Bug$|^Untested$

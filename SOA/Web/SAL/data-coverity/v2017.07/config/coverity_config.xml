@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coverity SYSTEM "coverity_config.dtd">
+<coverity>
+<!-- Version 2017.07 -->
+    <cit_version>1</cit_version>
+    <config>
+      <include>$CONFIGDIR$\template-javascript-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-html-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-web-app-config-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-php-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-python-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-ruby-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-gcc-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-g++-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-gcc-config-1\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-gcc-config-2\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-g++-config-1\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-g++-config-2\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-ld-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-javac-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-java-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-apt-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-javaw-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-jsp-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-android-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-msvc-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-msvc_devenv-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-msvc_msbuild-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-msvc_link-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-csc-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-csc-config-1\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-clangcc-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-clangcxx-config-0\coverity_config.xml</include>
+      <include>$CONFIGDIR$\template-swiftc-config-0\coverity_config.xml</include>
+    </config>
+</coverity>
+

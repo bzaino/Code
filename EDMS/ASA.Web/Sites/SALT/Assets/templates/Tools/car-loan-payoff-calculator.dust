@@ -1,0 +1,87 @@
+<link type="text/css" href="/Tools/css/all.css" media="screen" rel="stylesheet" />
+<link type="text/css" href="/Tools/css/main.css" media="screen" rel="stylesheet" />
+<link type="text/css" href="/Tools/css/quiz.css" media="screen" rel="stylesheet" />
+<link type="text/css" href="/Tools/css/calculators.css" media="screen" rel="stylesheet" />
+<link type="text/css" href="/Assets/css/plugins/dropkick.css" media="screen" rel="stylesheet" />
+	
+	<script>
+	require([
+		'jquery.dropkick',
+		'jquery.formatCurrency',
+		'Tools/helpers',
+		'Tools/validation',
+		'Tools/carLoanPayoff'
+		])
+	</script>
+
+    <div class="carLoanCalculator">
+<div class="tool-wrap clearfix calculator">
+    <div class="stage-wrap{?blockedContent} noprint{/blockedContent}">
+        <div class="slides-wrapper">
+            <div class="slide">
+                <div class="slide-title clearfix">
+					<ul class="title-icons">
+						
+					</ul>
+					<h1>Car Loan Payoff Calculator</h1>
+				</div>
+				<div class="slide-content clearfix">
+				    <div class="slide-left equal">
+				    <div class="pad-it  clearfix">
+				        <ul class="car-values clearfix">
+				            <li><label>Price of car</label> <input type="text" name="price-of-car" class="money tool-input" maxlength="8" tabindex="1" placeholder="$"></li>
+				            <li><label>Interest rate</label> <input type="text" name="interest-rate" class="percentage tool-input" maxlength="5" tabindex="2"></li>
+				            <li class="float-inline"><label><span>Term</span> <span>of</span> <span>loan</span></label>
+			                <div class="styled-select">
+				                <select name="months" class="months-drop" tabindex="3">
+				                    <option value="24" selected="selected">24 Months</option>
+				                    <option value="36">36 Months</option>
+				                    <option value="48">48 Months</option>
+				                    <option value="60">60 Months</option>
+				                    <option value="72">72 Months</option>
+				                </select>
+			                </div>
+				            </li>
+				        </ul>
+				        <div class="principle">
+				            <div class="carLoanCheck" tabindex="4"></div> I made  principal payment of  <input type="text" class="money tool-input down-payment" name="down-payment" maxlength="8" disabled="disabled" tabindex="5" placeholder="$">
+				        </div>
+				    </div>
+				    </div>
+				    <div class="slide-right totals equal">
+				        <div class="active-wrapper">
+				        <div class="totals-wrapper clearfix">
+				            <div class="left">
+				                <p class="small">Total</p>
+				                <p class="bold total"></p>
+				            </div>
+				            <div class="right">
+				                <p class="small">In interest</p>
+				                <p class="interest"></p>
+				            </div>
+				        </div>
+				        <div class="additional-info clearfix">
+				            <p>Learn what's important when <a href="/content/media/Article/making-large-purchases-responsibly/_/R-101-2405">buying a car or another major purchase.</a></p>
+				        </div>
+				        <div class="salt-logo-wrapper">
+				        	<div class="salt-tool-logo"></div>
+				        </div>
+				        </div>
+				        <div class="inactive-wrapper">
+				            <p>Enter your info and we'll tell you the real cost of that car.</p>
+				        
+				        </div>
+				        
+				    </div>
+				</div>
+            </div>  
+        </div>
+    </div>
+    <div class="slide title-wrapper">
+		<h1>Car Loan Payoff Calculator</h1>
+		<h3>Buying a car can be very complicated, with dealership financing, bank loans, and credit union options to choose from. This calculator can help you compare rates and see how financing options stack up over time.</h3>
+		<a href="#" id="startBtn">Start</a>
+		<!-- <div class="salt-logo-wrapper"><div class="salt-tool-logo"></div></div> -->
+	</div>
+</div>
+</div>

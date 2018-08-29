@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script type="text/javascript">
+    setInterval("$('#Status').load('/Home/Status')", 100); 
+</script>
+ <h3>@ViewBag.Message</h3>
+    <p align="right" style="vertical-align:top">
+    *Please Click Help for Information on how to use ADTool.
+</p>
+
+
+<div id="Status" style="vertical-align:top"></div>
+@*<h3>@ViewBag.Quote</h3>*@

@@ -1,0 +1,129 @@
+<link type="text/css" href="/Tools/css/all.css" media="screen" rel="stylesheet" />
+<link type="text/css" href="/Tools/css/main.css" media="screen" rel="stylesheet" />
+<link type="text/css" href="/Tools/css/quiz.css" media="screen" rel="stylesheet" />
+<link type="text/css" href="/Tools/css/calculators.css" media="screen" rel="stylesheet" />
+<script>
+require([
+	'jquery.formatCurrency',
+	'Tools/helpers',
+	'Tools/validation',
+	'Tools/netWorth'
+	])
+</script>
+    <div class="tool-wrap clearfix calculator netWorthCalculator">
+	<div class="stage-wrap{?blockedContent} noprint{/blockedContent}">
+		<div class="slides-wrapper">
+			<div class="slide assets equal">
+				<div class="slide-title clearfix " >
+					<ul class="title-icons">
+
+					</ul>
+					<h1 class="left">Net-Worth Calculator</h1>
+					<a href="next" class="next-btn button base-btn main-btn right" data="assets">Next</a>
+				</div>
+				<div class="slide-content clearfix">
+					<div class="totals clearfix">
+						<p class="assets-subtitle">
+							<span class="big">Enter your assets.</span><span class="small"> (Your assets are any property or investments you own outright.)<span>
+						</p>
+						<p class="total-assets print-total">
+							 Assets Total: <span>$0</span>
+						</p>
+					</div>
+					<form>
+						<ul class="input-wrapper-left">
+							<li><span class="left"><div class="cbox" tabindex="1"></div><label for="house">House</label></span><span class="right js-to-hide hidden"><input type="text" name="house" maxlength="8" value="" class=" tool-input" placeholder="$" tabindex="2"></span></li>
+							<li><span class="left"><div class="cbox" tabindex="3"></div><label for="savings">Savings</label></span><span class="right js-to-hide hidden"><input type="text" name="savings" maxlength="8" value="" class=" tool-input" placeholder="$" tabindex="4"></span></li>
+							<li><span class="left"><div class="cbox" tabindex="5"></div><label for="vehicles">Vehicles</label></span><span class="right js-to-hide hidden"><input type="text" name="vehicles" maxlength="8" value="" class=" tool-input" placeholder="$" tabindex="6"></span></li>
+						</ul>
+						<ul class="input-wrapper-right">
+							<li><span class="left"><div class="cbox" tabindex="7"></div><label for="investments">Investments</label></span><span class="right js-to-hide hidden"><input type="text" name="investments" maxlength="8" value="" class="tool-input" placeholder="$" tabindex="8"></span></li>
+							<li><span class="left"><div class="cbox" tabindex="9"></div><label for="valuable-items">Valuable Items</label></span><span class="right js-to-hide hidden"><input type="text" name="valuable-items" maxlength="8" value="" class=" tool-input" placeholder="$" tabindex="10"></span></li>
+							<li><span class="left"><div class="cbox" tabindex="11"></div><label for="art">Art</label></span><span class="right js-to-hide hidden"><input type="text" name="art" maxlength="8" value="" class=" tool-input" placeholder="$" tabindex="12"></span></li>
+						</ul>
+						<div class="clearfix add-more-wrap">
+							<div class="additional-input hidden">
+								<span class="left"><div class="cbox checked" tabindex="13"></div><input type="text" maxlength="8" value="" placeholder="title" class="added-assets"></span><span class="js-to-hide right"><input type="text" maxlength="8" value="" class=" tool-input" placeholder="$" tabindex="14"></span>
+							</div>
+							<a href="#" title="add another asset" class="add plus-one"></a>
+							<label for="add another asset">Add Another</label>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="slide liabilities equal">
+				<div class="slide-title clearfix" >
+					<ul class="title-icons">
+					</ul>
+					<h1 class="left">Net-Worth Calculator</h1>
+					<a href="#" class="next-btn button base-btn main-btn right"  data="liabilities">Next</a>
+					<a href="#" class="prev-btn button base-btn main-btn cta-back right" data="prev">Back</a>
+				</div>
+				<div class="slide-content clearfix">
+					<div class="totals clearfix">
+						<p class="assets-subtitle">
+							<span class="big">Enter your liabilities.</span><span class="small"> (Your liabilities are any debts you owe, like loans and mortgages)<span>
+						</p>
+						<p class="total-assets print-total">
+							 Liabilities Total: <span>$0</span>
+						</p>
+					</div>
+					<form>
+						<ul class="input-wrapper-left">
+							<li><span class="left"><div class="cbox" tabindex="15"></div><label for="mortgage">Mortgage</label></span><span class="right js-to-hide hidden"><input type="text" name="mortgage" maxlength="8" value="" class=" tool-input" placeholder="$" tabindex="16"></span></li>
+							<li><span class="left"><div class="cbox" tabindex="17"></div><label for="vehicles-financed">Vehicles financed</label></span><span class="right js-to-hide hidden"><input type="text" name="vehicles-financed" maxlength="8" value="" class=" tool-input" placeholder="$" tabindex="18"></span></li>
+						</ul>
+						<ul class="input-wrapper-right">
+							<li><span class="left"><div class="cbox" tabindex="19"></div><label for="student-loans">Student loans</label></span><span class="right js-to-hide"><input type="text" name="student-loans" maxlength="8" value="" class=" tool-input" placeholder="$" tabindex="20"></span></li>
+							<li><span class="left"><div class="cbox" tabindex="21"></div><label for="private-loans">Private loans</label></span><span class="right js-to-hide hidden"><input type="text" name="private-loans" maxlength="8" value="" class=" tool-input" placeholder="$" tabindex="22"></span></li>
+						</ul>
+						<div class="clearfix add-more-wrap">
+							<div class="additional-input hidden">
+								<span class="left"><div class="cbox checked" tabindex="23"></div><input type="text" maxlength="8" value="" placeholder="title" class="added-assets"></span><span class="right js-to-hide"><input type="text" maxlength="8" value="" class=" tool-input" placeholder="$" tabindex="24"></span>
+							</div>
+							<a href="#" title="add another asset" class="add plus-one"></a>
+							<label for="add another asset">Add Another</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div data="score" class="slide scoreSlide equal{?blockedContent} noprint{/blockedContent}">
+		<div class="slide-title clearfix" >
+			<h1 class="left">Net-Worth Calculator</h1>
+			<ul class="title-icons">
+			</ul>
+			<a title="start over" class="start-over right" href="#">Restart <span class="reload small salticon right js-refresh"></span></a>
+		</div>
+		<div class="slide-left" >
+			<h2>Your net-worth is <span class="total-net-worth text-pink-copy"></span></h2>
+		</div>
+		<div class="slide-right award">
+
+		<ul class="positive-negative">
+			<p class="subtitle">
+				 <span class="negative">A negative number is totally OK&mdash;especially if it’s due to student loans or a mortgage. Keep up with your payments, and those investments will pay off!</span>
+				 <span class="positive">Having a positive number is great&mdash;no matter how big or small it is.</span>
+			</p>
+		</ul>
+
+			<div  >
+			<p class="bottom-link">
+			Increase your net worth by knowing where your money is going. Get on top of it with our <a href="/content/media/lesson/how-does-your-cash-flow/_/R-101-2702">cash flow lesson.</a> </p>
+			</div>
+			<div>
+			<p>
+			<div class="salt-logo-wrapper"><div class="salt-tool-logo"></div></div>
+			</p>
+			</div>
+
+		</div>
+	</div>
+	<div class="slide title-wrapper">
+		<h1>Net Worth Calculator</h1>
+		<h3>Your net worth is the value of everything you own, minus the total of what you owe. Use this calculator to determine your net worth, as it is, right now.</h3>
+		<a href="#" id="startBtn">Start</a>
+		<!-- <div class="salt-logo-wrapper"><div class="salt-tool-logo"></div></div> -->
+	</div>
+</div>

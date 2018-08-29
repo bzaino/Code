@@ -1,0 +1,42 @@
+<!-- Reporting ID -->
+<!-- Set up conditions for product participation in reporting id-->
+<script type="text/javascript">
+    var mm101url = "{configuration.mm101B}";
+
+    require(['modules/ReportingStatus'], function (reportingStatus) {
+        reportingStatus.showReportingIdQuestion();
+    });
+
+</script>
+
+<div id="reportModal" class="reveal-modal tiny" data-reveal>
+    <div class="row">
+        <form action="" id="FrmReportId" data-abide="ajax">
+            <a name="IDFrm"></a>
+            <header class="report_head" class="">
+                <h2>Complete Your Salt Courses Profile</h2>
+            </header>
+
+            <div>
+                <label class="labelText">Select your current academic program enrollment status.</label>
+                <select id="selectEnrollmentStatusOverlay">
+                    <option value="Q"> </option>
+                    <option id="F-selected" value="F">I'm enrolled full time</option>
+                    <option id="H-selected" value="H">I'm enrolled half time</option>
+                    <option id="L-selected" value="L">I'm enrolled less than half time</option>
+                    <option id="G-selected" value="G">I already graduated</option>
+                    <option id="W-selected" value="W">I left before graduating</option>
+                    <option id="X-selected" value="X">I haven't gone to college</option>
+                </select>
+            </div>
+            <label class="error" id="js-reporting-id-status-message" text ="Please select a status from the drop down" ></label>
+            <div class="js-reporting-id-block">
+                <div class="js-individual-reporting-id"></div>
+            </div>
+            <div class="right">
+                <button  type="submit" class="button base-btn main-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <a href class="close-reveal-modal cancel-circle overlayClose"></a>
+</div>

@@ -1,0 +1,58 @@
+<?php
+    global $CFG;
+
+    // set to defaults if undefined
+    if (!isset($config->tokenExpiration)) {
+        $config->tokenExpiration  = '60';
+    }
+    if (!isset($config->LogoutRedirectURI)) {
+        $config->LogoutRedirectURI = 'http://asa.org';
+    }
+    
+    if (!isset($config->studentRoleId)) {
+        $config->studentRoleId = $CFG->defaultcourseroleid;
+    }    
+
+?>
+
+<table cellspacing="0" cellpadding="5" border="0">
+<tr valign="top" class="required">
+    <td align="right"><label for="tokenExpiration">Token Expiry in Minutes (max time = 720)</label></td>
+    <td>
+        <input id="tokenExpiration" name="tokenExpiration" type="text" size="30" value="<?php echo $config->tokenExpiration?>" />
+        <?php
+
+        if (isset($err["tokenExpiration"])) {
+            formerr($err["tokenExpiration"]);
+        }
+
+        ?>
+    </td>
+</tr>
+<tr valign="top" class="required">
+    <td align="right"><label for="LogoutRedirectURI">Logout Redirect URI</label></td>
+    <td>
+        <input id="LogoutRedirectURI" name="LogoutRedirectURI" type="text" size="30" value="<?php echo $config->LogoutRedirectURI?>" />
+        <?php
+
+        if (isset($err["LogoutRedirectURI"])) {
+            formerr($err["LogoutRedirectURI"]);
+        }
+
+        ?>
+    </td>
+</tr>
+<tr valign="top" class="required">
+    <td align="right"><label for="studentRoleId">Student Role Id</label></td>
+    <td>
+        <input id="studentRoleId" name="studentRoleId" type="text" size="5" value="<?php echo $config->studentRoleId?>" />
+        <?php
+
+        if (isset($err["studentRoleId"])) {
+            formerr($err["studentRoleId"]);
+        }
+
+        ?>
+    </td>
+</tr>
+</table>

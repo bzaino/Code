@@ -1,0 +1,3 @@
+<div class="flat-tags small-12">
+    {@flatTagsSeperator str=record.attributes.FlatTags[0] /}
+</div>

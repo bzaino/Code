@@ -1,0 +1,11 @@
+{> "page_parent" /}
+
+{<dynamicBody}
+    {> "searchResultsBody" /}
+{/dynamicBody}
+
+{<singlePageApp}
+    <script>
+        require(['modules/HomePage/Application']);
+    </script>
+{/singlePageApp}

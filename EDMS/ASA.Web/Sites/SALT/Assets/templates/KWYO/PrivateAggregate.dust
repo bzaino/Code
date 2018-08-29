@@ -1,0 +1,11 @@
+<td class="hide-for-small"></td>
+<td colspan="2">
+  <h6>My Total Debt (Not Including My Federal Student Loans):</h6>
+</td>
+<td>
+  <h6>${Total.privateBalance|currencyComma}</h6>
+</td>
+<td>
+  <h6>${Monthly.privateBalance|currencyComma}<i>/month</i></h6>
+</td>
+

@@ -1,0 +1,9 @@
+"C:\Program Files\Coverity\Coverity Static Analysis\bin\cov-analyze" @@C:/Users/BZAINO~1.003/AppData/Local/Temp/cov-bzaino/f8e4b9f78bb4c3e16a2b1b1abf0bbc69/cov-analyze.default.txt 
+Analysis summary report:
+------------------------
+Files analyzed                 : 248
+Total LoC input to cov-analyze : 37228
+Functions analyzed             : 5255
+Paths analyzed                 : 56314
+Time taken by analysis         : 00:00:12
+Defect occurrences found       : 4 NULL_RETURNS

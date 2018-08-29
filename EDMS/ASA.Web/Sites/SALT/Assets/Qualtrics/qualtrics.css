@@ -1,0 +1,72 @@
+/* Place your CSS here */
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+body{ font-family: "Noto Sans", Arial, sans-serif;} /* Global font NOTO SANS as used on SALT*/
+.Skin #Buttons #NextButton, .skin#Buttons#PreviousButtons {
+	background-color: #5BC500;border-radius:15px;margin-right:350px; /* Button color */
+}
+
+/* this whole group of code is to add a gradient to the check box, this gradient slightly mirors select button on SALT*/
+.Skin label.q-radio.q-checked{background: #003763; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #003763 0%, #003763 35%, #003763 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #003763 0%,#003763 35%,#003763 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #003763 0%,#003763 35%,#003763 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003763', endColorstr='#003763',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
+
+
+
+.Skin label.q-checkbox.q-checked {
+	background-color: #003763;
+}
+
+.Skin label.q-checkbox.q-checked.q-focused {
+	background-color: #003763;
+}
+
+.QSISlider span {
+	color: #ffffff !important;
+}
+
+.Skin label.q-checkbox.q-focused {
+	background-color: #ffffff;
+}
+
+.Skin label.q-radio.q-focused {
+	background-color: #003763;
+}
+
+.Skin label.q-checkbox, .Skin label.q-radio {
+	border: 2px solid #003763;
+}
+
+#ProgressBar{display:none;}
+
+.Skin #Buttons {
+    margin-top: 1px;
+
+}/* adding a 1 pixel margin on top of the submit button*/
+
+
+.LabelWrapper label {font-size:16px;}/* adjusting the font size to 16px*/
+
+.Skin .QuestionText {
+    font-size: 16px;
+		color: #003763;
+
+}/* adjusting the question font size to 16px*/
+
+.Skin .QuestionBody {
+	color: #003763;
+}
+
+.QSISlider .SI_0PuvZg41Vuuoj7T_SliderContainer span span {
+	color: #ffffff;
+}
+
+#RestoredResponseBar, .Skin, .Skin .yui-skin-sam .yui-calcontainer, .Skin button, .Skin input, .Skin select, .Skin textarea{
+	 font-family: "Noto Sans", Arial, sans-serif;/* Global font NOTO SANS as used on SALT*/
+	}
+
+.LabelWrapper label {
+    font-size: 14px;
+}

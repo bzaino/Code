@@ -1,0 +1,15 @@
+{@if cond="'{record.attributes.author-name|trim}'.length"}
+    <div class="row article-info">
+        {record.attributes.author-image}
+        <p><a href="/content/search?ntk=author-name&searchCriteria={record.attributes.author-name|trim|uc}" class="js-SPA">{record.attributes.author-name}</a>{@if cond="'{record.attributes.author-info|trim}'.length"} - {/if}</p>
+        {@if cond="'{record.attributes.author-info|trim}'.length"}
+            {record.attributes.author-info}
+        {/if} 
+    </div>
+{/if}
+{@if cond="'{record.attributes.third-party-copy|trim}'.length"}
+    <div class="row article-info collapse">
+        <div class="small-12 medium-4 columns padding-right">{record.attributes.third-party-image}</div>
+        <div class="small-12 medium-8 columns">{record.attributes.third-party-copy}</div>
+    </div>
+{/if}

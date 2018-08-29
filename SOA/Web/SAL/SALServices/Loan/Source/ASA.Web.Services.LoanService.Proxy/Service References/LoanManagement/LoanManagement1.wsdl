@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://asa.org/servicecontract/loanManagement/v1.3" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://asa.org/servicecontract/loanManagement/v1.2" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LoanManagement" targetNamespace="http://asa.org/servicecontract/loanManagement/v1.3" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://asa.org/servicecontract/loanManagement/v1.2" location="http://localhost:1000/LoanManagementService.svc?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://asa.org/servicecontract/loanManagement/v1.3/Imports">
+      <xsd:import schemaLocation="http://localhost:1000/LoanManagementService.svc?xsd=xsd0" namespace="http://asa.org/servicecontract/loanManagement/v1.3" />
+      <xsd:import schemaLocation="http://localhost:1000/LoanManagementService.svc?xsd=xsd5" namespace="http://amsa.com/contract/baserequestcontract/v1.0" />
+      <xsd:import schemaLocation="http://localhost:1000/LoanManagementService.svc?xsd=xsd7" namespace="http://amsa.com/contract/errorHandling/v1.0" />
+      <xsd:import schemaLocation="http://localhost:1000/LoanManagementService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:1000/LoanManagementService.svc?xsd=xsd2" namespace="http://asa.org/contracts/loan" />
+      <xsd:import schemaLocation="http://localhost:1000/LoanManagementService.svc?xsd=xsd3" namespace="http://asa.org/contracts/commonTypes" />
+      <xsd:import schemaLocation="http://localhost:1000/LoanManagementService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:1000/LoanManagementService.svc?xsd=xsd6" namespace="http://amsa.com/contract/ASA.Common.ResponseMessage/v1.0" />
+      <xsd:import schemaLocation="http://localhost:1000/LoanManagementService.svc?xsd=xsd8" namespace="http://asa.org/contracts/loanServiceCriteria" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="SaveLoanRequest">
+    <wsdl:part name="parameters" element="tns:SaveLoanRequest" />
+  </wsdl:message>
+  <wsdl:message name="SaveLoanRequest_Headers">
+    <wsdl:part xmlns:q1="http://amsa.com/contract/baserequestcontract/v1.0" name="ParamList" element="q1:ParamList" />
+  </wsdl:message>
+  <wsdl:message name="SaveLoanResponse">
+    <wsdl:part name="parameters" element="tns:SaveLoanResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoanManagement_SaveLoan_ASAFaultDetailFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://amsa.com/contract/errorHandling/v1.0" name="detail" element="q2:ASAFaultDetail" />
+  </wsdl:message>
+  <wsdl:message name="ILoanManagement_SaveLoan_ASABusinessFaultDetailFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://amsa.com/contract/errorHandling/v1.0" name="detail" element="q3:ASABusinessFaultDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetLoanRequest">
+    <wsdl:part name="parameters" element="tns:GetLoanRequest" />
+  </wsdl:message>
+  <wsdl:message name="GetLoanRequest_Headers">
+    <wsdl:part xmlns:q4="http://amsa.com/contract/baserequestcontract/v1.0" name="ParamList" element="q4:ParamList" />
+  </wsdl:message>
+  <wsdl:message name="GetLoanResponse">
+    <wsdl:part name="parameters" element="tns:GetLoanResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoanManagement_GetLoan_ASABusinessFaultDetailFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://amsa.com/contract/errorHandling/v1.0" name="detail" element="q5:ASABusinessFaultDetail" />
+  </wsdl:message>
+  <wsdl:message name="ILoanManagement_GetLoan_ASAFaultDetailFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://amsa.com/contract/errorHandling/v1.0" name="detail" element="q6:ASAFaultDetail" />
+  </wsdl:message>
+  <wsdl:message name="SaveLoanSelfReportedEntryRequest">
+    <wsdl:part name="parameters" element="tns:SaveLoanSelfReportedEntryRequest" />
+  </wsdl:message>
+  <wsdl:message name="SaveLoanSelfReportedEntryRequest_Headers">
+    <wsdl:part xmlns:q7="http://amsa.com/contract/baserequestcontract/v1.0" name="ParamList" element="q7:ParamList" />
+  </wsdl:message>
+  <wsdl:message name="SaveLoanSelfReportedEntryResponse">
+    <wsdl:part name="parameters" element="tns:SaveLoanSelfReportedEntryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoanManagement_SaveLoanSelfReportedEntry_ASAFaultDetailFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://amsa.com/contract/errorHandling/v1.0" name="detail" element="q8:ASAFaultDetail" />
+  </wsdl:message>
+  <wsdl:message name="ILoanManagement_SaveLoanSelfReportedEntry_ASABusinessFaultDetailFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://amsa.com/contract/errorHandling/v1.0" name="detail" element="q9:ASABusinessFaultDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetLoanSelfReportedEntryRequest">
+    <wsdl:part name="parameters" element="tns:GetLoanSelfReportedEntryRequest" />
+  </wsdl:message>
+  <wsdl:message name="GetLoanSelfReportedEntryRequest_Headers">
+    <wsdl:part xmlns:q10="http://amsa.com/contract/baserequestcontract/v1.0" name="ParamList" element="q10:ParamList" />
+  </wsdl:message>
+  <wsdl:message name="GetLoanSelfReportedEntryResponse">
+    <wsdl:part name="parameters" element="tns:GetLoanSelfReportedEntryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoanManagement_GetLoanSelfReportedEntry_ASABusinessFaultDetailFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://amsa.com/contract/errorHandling/v1.0" name="detail" element="q11:ASABusinessFaultDetail" />
+  </wsdl:message>
+  <wsdl:message name="ILoanManagement_GetLoanSelfReportedEntry_ASAFaultDetailFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://amsa.com/contract/errorHandling/v1.0" name="detail" element="q12:ASAFaultDetail" />
+  </wsdl:message>
+  <wsdl:portType name="ILoanManagement">
+    <wsdl:operation name="SaveLoan">
+      <wsdl:input wsaw:Action="SaveLoan" name="SaveLoanRequest" message="tns:SaveLoanRequest" />
+      <wsdl:output wsaw:Action="http://asa.org/servicecontract/loanManagement/v1.3/ILoanManagement/SaveLoanResponse" name="SaveLoanResponse" message="tns:SaveLoanResponse" />
+      <wsdl:fault wsaw:Action="ASAFaultDetail" name="ASAFaultDetailFault" message="tns:ILoanManagement_SaveLoan_ASAFaultDetailFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="ASABusinessFaultDetail" name="ASABusinessFaultDetailFault" message="tns:ILoanManagement_SaveLoan_ASABusinessFaultDetailFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLoan">
+      <wsdl:input wsaw:Action="GetLoan" name="GetLoanRequest" message="tns:GetLoanRequest" />
+      <wsdl:output wsaw:Action="http://asa.org/servicecontract/loanManagement/v1.3/ILoanManagement/GetLoanResponse" name="GetLoanResponse" message="tns:GetLoanResponse" />
+      <wsdl:fault wsaw:Action="ASABusinessFaultDetail" name="ASABusinessFaultDetailFault" message="tns:ILoanManagement_GetLoan_ASABusinessFaultDetailFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="ASAFaultDetail" name="ASAFaultDetailFault" message="tns:ILoanManagement_GetLoan_ASAFaultDetailFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveLoanSelfReportedEntry">
+      <wsdl:input wsaw:Action="SaveLoanSelfReportedEntry" name="SaveLoanSelfReportedEntryRequest" message="tns:SaveLoanSelfReportedEntryRequest" />
+      <wsdl:output wsaw:Action="http://asa.org/servicecontract/loanManagement/v1.3/ILoanManagement/SaveLoanSelfReportedEntryResponse" name="SaveLoanSelfReportedEntryResponse" message="tns:SaveLoanSelfReportedEntryResponse" />
+      <wsdl:fault wsaw:Action="ASAFaultDetail" name="ASAFaultDetailFault" message="tns:ILoanManagement_SaveLoanSelfReportedEntry_ASAFaultDetailFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="ASABusinessFaultDetail" name="ASABusinessFaultDetailFault" message="tns:ILoanManagement_SaveLoanSelfReportedEntry_ASABusinessFaultDetailFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLoanSelfReportedEntry">
+      <wsdl:input wsaw:Action="GetLoanSelfReportedEntry" name="GetLoanSelfReportedEntryRequest" message="tns:GetLoanSelfReportedEntryRequest" />
+      <wsdl:output wsaw:Action="http://asa.org/servicecontract/loanManagement/v1.3/ILoanManagement/GetLoanSelfReportedEntryResponse" name="GetLoanSelfReportedEntryResponse" message="tns:GetLoanSelfReportedEntryResponse" />
+      <wsdl:fault wsaw:Action="ASABusinessFaultDetail" name="ASABusinessFaultDetailFault" message="tns:ILoanManagement_GetLoanSelfReportedEntry_ASABusinessFaultDetailFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="ASAFaultDetail" name="ASAFaultDetailFault" message="tns:ILoanManagement_GetLoanSelfReportedEntry_ASAFaultDetailFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="LoanManagement">
+    <wsdl:port name="BasicHttpBinding_ILoanManagement" binding="i0:BasicHttpBinding_ILoanManagement">
+      <soap:address location="http://localhost:1000/LoanManagementService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

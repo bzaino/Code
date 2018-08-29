@@ -1,0 +1,25 @@
+<link type="text/css" rel="stylesheet" media="all" href="/Assets/css/valueprop.css" />
+{^SiteMember.ActiveDirectoryKey}
+    {>"Modules/Carousel" recordKey="{content.secondaryContent[0].records[0].attributes.carousel-module-sidebar-1|trim}" /}
+    {>"Modules/Carousel" recordKey="{content.secondaryContent[0].records[0].attributes.carousel-module-sidebar-2|trim}" /}
+    {>"Modules/Carousel" recordKey="{content.secondaryContent[0].records[0].attributes.carousel-module-sidebar-3|trim}" /}
+    {>"Modules/Carousel" recordKey="{content.secondaryContent[0].records[0].attributes.carousel-module-sidebar-4|trim}" /}
+    <section>
+        <article>
+            <a href="" class="js-void-href registrationOverlay-link" data-window-shade="registrationOverlay"><img src="/assets/images/articles/tiles/signUpPromo.jpg" title="Sign Up" alt="Sign Up" width="300" height="102" /></a>
+            <!-- SWD-7216 Route 'small screen' users to signup page instead of signup overlay -->
+                <a href="/register" class="registration-link"><img src="/assets/images/articles/tiles/signUpPromo.jpg" title="Sign Up" alt="Sign Up" width="300" height="102" /></a>
+         </article>
+     </section>
+{:else}
+    {>"partial_schoolLogo" /}
+    {>"Modules/Carousel" recordKey="{content.secondaryContent[1].records[0].attributes.carousel-module-sidebar-1|trim}" /}
+    {>"Modules/Carousel" recordKey="{content.secondaryContent[1].records[0].attributes.carousel-module-sidebar-2|trim}" /}
+    {>"Modules/Carousel" recordKey="{content.secondaryContent[1].records[0].attributes.carousel-module-sidebar-3|trim}" /}
+    {>"Modules/Carousel" recordKey="{content.secondaryContent[1].records[0].attributes.carousel-module-sidebar-4|trim}" /}
+{/SiteMember.ActiveDirectoryKey}
+
+{#content}
+    {>"Modules/ReachOutDelegate" /}
+{/content}
+{>"Modules/LiveChatWinnerBadge" /}

@@ -1,0 +1,280 @@
+/*******************************************************
+This file is for keepign track of CSS we know we must refactor the HTML for
+*******************************************************/
+
+
+
+/*******************************************************
+PPC pages
+*******************************************************/
+.ppc_notext_container {
+    display: none;
+}
+header.ppc {
+    height: 350px;
+    overflow: hidden;
+}
+header.ppc hgroup {
+    z-index: 2;
+}
+header.ppc hgroup.thankyou {
+    margin-top: -285px;
+}
+header.ppc hgroup.thankyoualt {
+    margin-top: -265px;
+}
+header.ppc hgroup.thankyoualtmiddle {
+    margin-top: -275px;
+}
+header.ppc hgroup.thankyoualthigher {
+    margin-top: -285px;
+}
+header.ppc hgroup.marginalt {
+    margin-top: -365px;
+}
+header.ppc h1 {
+    font-size: 48px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0;
+    text-shadow: 1px 1px 1px #000;
+    color: #fff;
+}
+header.ppc h1 span.smaller {
+    font-size: 40px;
+}
+header.ppc h1.yellow {
+    color: #fff600;
+}
+header.ppc h1.white {
+    background: none;
+}
+header.ppc h1.maroon {
+    color: #420015;
+    text-shadow: 1px 1px 1px #ff0b8d;
+}
+header.ppc h1.blackmaroon {
+    color: #020001;
+    text-shadow: 1px 1px 1px #ff0b8d;
+}
+header.ppc h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    font-weight: normal;
+}
+header.ppc h5 {
+    text-transform: none;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 10px 0 10px 0;
+    padding: 0;
+    color: #fff;
+}
+header.ppc h5.black {
+    color: #000;
+}
+.block.entry_block.auth-tile-school-specific {background-color:#ffffff;height:100%;min-height:240px;margin-bottom:20px;}
+.block.entry_block.auth-tile-school-specific .tilePromoText {padding:20px 5px;}
+.block.entry_block.auth-tile-school-specific .tilePromoText p {text-align: center;margin-bottom:10px;margin-top: 10px;}
+.promotile img{ display: block;
+               margin-left: auto;
+               margin-right: auto; 
+               padding-left: 10px;
+               padding-right: 10px;
+               margin-top:20px;}
+
+
+.tilePromoText h1 {margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;}
+.tilePromoText h2 {margin-top:10px;margin-bottom:10px;text-align: center;padding-left: 10px;
+    padding-right: 10px; }
+.tilePromoText p{text-align: center;padding-bottom:20px;
+   }
+
+/*Left align for schools with <li>*/
+.leftalignedPromo {
+    text-align: left !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+   
+}
+
+.leftalignedPromo h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left ;
+    
+}
+
+.leftalignedPromo h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left ;
+   
+}
+
+.leftalignedPromo p{
+text-align: left;padding-bottom:20px;
+}
+
+ .promoli{
+    margin-left: 15%;
+   
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    /*******************************************************
+PPC pages
+*******************************************************/
+    header.ppc {
+        padding: 5px;
+        color: #000;
+        height: 200px;
+        overflow: hidden;
+        margin-bottom: 5px;
+    }
+    header.ppc figure {
+        display: none;
+    }
+    header.ppc hgroup {
+        position: relative;
+        z-index: 1;
+        margin: 0;
+        color: #000;
+        text-shadow: none;
+        padding: 5px;
+    }
+    header.ppc hgroup.thankyou {
+        margin-top: 0;
+    }
+    header.ppc hgroup.thankyoualt {
+        margin-top: 0;
+    }
+    header.ppc hgroup.thankyoualtmiddle {
+        margin-top: 0;
+    }
+    header.ppc hgroup.thankyoualthigher {
+        margin-top: 0;
+    }
+    header.ppc hgroup.marginalt {
+        margin-top: 0;
+    }
+    header.ppc hgroup h1, header.ppc hgroup h1 span.smaller {
+        font-size: 24px;
+        font-weight:normal;
+        margin: 0;
+        padding: 0 0;
+        text-shadow: none;
+        color: #000;
+    }
+    header.ppc hgroup h1.maroon, header.ppc hgroup h1.yellow, header.ppc hgroup h1.blackmaroon {
+        color: #000;
+        text-shadow: none;
+    }
+    header.ppc hgroup h5 {
+        font-size: 14px;
+        font-weight: normal;
+        margin: 5px 0 5px 0;
+        padding: 0 0;
+        color: #000;
+    }
+    header.ppc hgroup h1 br {
+        display: none;
+    }
+    header.ppc hgroup h1 span.smaller br {
+        display: none;
+    }
+    header.ppc hgroup h5 br {
+        display: none;
+    }
+
+    .promotile img{vertical-align: middle;}
+}
+
+@media only screen and (max-width: 767px) {
+    .ppc_notext_container {
+        display: block;
+    }
+    header.ppc {
+        padding: 5px;
+        color: #000;
+        height: 100%;
+        overflow: hidden;
+        margin-bottom: 5px;
+    }
+    header.ppc figure {
+        display: none;
+    }
+    header.ppc hgroup {
+        position: relative;
+        z-index: 1;
+        margin: 0;
+        color: #000;
+        text-shadow: none;
+        padding: 0px;
+    }
+    header.ppc hgroup.thankyou {
+        margin-top: 0;
+    }
+    header.ppc hgroup.thankyoualt {
+        margin-top: 0;
+    }
+    header.ppc hgroup.thankyoualtmiddle {
+        margin-top: 0;
+    }
+    header.ppc hgroup.thankyoualthigher {
+        margin-top: 0;
+    }
+    header.ppc hgroup.marginalt {
+        margin-top: 0;
+    }
+    header.ppc hgroup h1, header.ppc hgroup h1 span.smaller {
+        font-size: 32px;
+        font-weight: normal;
+        margin: 0;
+        padding: 0 0;
+        text-shadow: none;
+        color: #000;
+        text-indent: 0;
+    }
+    header.ppc hgroup h5 {
+        text-transform: none;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 5px 0 5px 0;
+        padding: 0 0;
+        color: #000;
+        text-indent: 0;
+    }
+    header.ppc hgroup h1 br {
+        display: none;
+    }
+    header.ppc hgroup h1 span.smaller br {
+        display: none;
+    }
+    header.ppc hgroup h5 br {
+        display: none;
+    }
+    header.ppc hgroup h1.maroon, header.ppc hgroup h1.yellow, header.ppc hgroup h1.blackmaroon {
+        color: #000;
+        text-shadow: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .block.entry_block {
+        height: 245px;
+    }
+    .entry_block .featured {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+}

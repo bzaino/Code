@@ -1,0 +1,71 @@
+<h2>School</h2>
+<div class='divider'></div>
+<div class='description'>
+  <p>What are your school expenses? These can be tricky since they tend to come at the beginning of each semester and then taper off.</p>
+</div>
+<div class='question'>
+  <h1 class='clearfix'>
+    <span>For</span>
+    <span>school</span>
+    <span>expenses,</span>
+    <span>I</span>
+    <span>pay</span>
+    <span>for</span>
+  </h1>
+  <form class='smaller-form school-form'>
+    <div class='box-wrapper clearfix'>
+      <input data-display='Tuition &amp; School Fees' id='tuition' tabindex='1' type='checkbox' value='tuition' />
+      <label for='tuition'>Tuition &amp; School Fees</label>
+      <div class='tip'>
+        <div class='wing'></div>
+        <p>This is any school tuition or fees that you pay out-of-pocket (not payed by financial aid or loans).</p>
+        <div class='details'>
+          <input id='tuition-expense' maxlength='8' tabindex='2' type='text' value='$' />
+          <span>/</span>
+          <select class='dropdown' name='tuition' tabindex='3'>
+            <option value='week'>week</option>
+            <option selected='selected' value='month'>month</option>
+            <option value='semester'>semester</option>
+            <option value='year'>year</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class='box-wrapper clearfix'>
+      <input data-display='Textbooks / Supplies' id='textbooks' tabindex='4' type='checkbox' value='textbooks' />
+      <label for='textbooks'>Textbooks / School Supplies</label>
+      <div class='tip'>
+        <div class='wing'></div>
+        <p>Buying used textbooks and purchasing textbooks online can save big bucks. Remember to sell back your books at the end of semester for some extra cash.</p>
+        <div class='details'>
+          <input id='textbooks-expense' maxlength='8' tabindex='5' type='text' value='$' />
+          <span>/</span>
+          <select class='dropdown' name='textbooks' tabindex='6'>
+            <option value='week'>week</option>
+            <option selected='selected' value='month'>month</option>
+            <option value='semester'>semester</option>
+            <option value='year'>year</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class='box-wrapper clearfix'>
+      <input data-display='Loan Payments' id='loan' tabindex='7' type='checkbox' value='loan' />
+      <label for='loan'>Loan Payments</label>
+      <div class='tip'>
+        <div class='wing'></div>
+        <p>Include any payments you're making on your loans, even if you're just paying the interest while you're still enrolled.</p>
+        <div class='details'>
+          <input id='phone' maxlength='8' tabindex='8' type='text' value='$' />
+          <span>/</span>
+          <select class='dropdown' name='loan' tabindex='9'>
+            <option value='week'>week</option>
+            <option selected='selected' value='month'>month</option>
+            <option value='semester'>semester</option>
+            <option value='year'>year</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

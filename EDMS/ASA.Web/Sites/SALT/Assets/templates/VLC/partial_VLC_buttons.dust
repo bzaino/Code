@@ -1,0 +1,72 @@
+{! Link buttons within VLC. Open another VLC slide in one-page experience !}
+
+
+    {@if cond="'{mainContent[0].records[0].attributes.btn-help-1|trim}'.length !== 0"}
+    <div class="row collapse relative">
+      <div class="small-8 medium-7 columns left btnHelp">{mainContent[0].records[0].attributes.btn-help-1}</div>
+      <div class="small-4 medium-5 columns right answer absolute-bottom">
+          <a href="#{mainContent[0].records[0].attributes.btn-page-name-1}" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.btn-link-text-1}</a>
+      </div>
+    </div>
+    {/if}
+
+    {@if cond="'{mainContent[0].records[0].attributes.btn-help-2|trim}'.length !== 0"}
+    <div class="row collapse relative">
+      <div class="small-8 medium-7 columns left btnHelp">{mainContent[0].records[0].attributes.btn-help-2}</div>
+      <div class="small-4 medium-5 columns right answer absolute-bottom">
+        <a href="#{mainContent[0].records[0].attributes.btn-page-name-2}" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.btn-link-text-2}</a>
+      </div>
+    </div>
+    {/if}
+    {@if cond="'{mainContent[0].records[0].attributes.btn-help-3|trim}'.length !== 0"}
+    <div class="row collapse relative">
+      <div class="small-8 medium-7 columns left btnHelp">{mainContent[0].records[0].attributes.btn-help-3}</div>
+      <div class="small-4 medium-5 columns right answer absolute-bottom">
+        <a href="#{mainContent[0].records[0].attributes.btn-page-name-3}" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.btn-link-text-3}</a>
+      </div>
+    </div>
+    {/if}
+    {@if cond="'{mainContent[0].records[0].attributes.btn-help-4|trim}'.length !== 0"}
+    <div class="row collapse relative">
+      <div class="small-8 medium-7 columns left btnHelp">{mainContent[0].records[0].attributes.btn-help-4}</div>
+      <div class="small-4 medium-5 columns right answer absolute-bottom">
+        <a href="#{mainContent[0].records[0].attributes.btn-page-name-4}" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.btn-link-text-4}</a>
+      </div>
+    </div>
+    {/if}
+    {@if cond="'{mainContent[0].records[0].attributes.btn-help-5|trim}'.length !== 0"}
+    <div class="row collapse relative">
+      <div class="small-8 medium-7 columns left btnHelp">{mainContent[0].records[0].attributes.btn-help-5}</div>
+      <div class="small-4 medium-5 columns right answer absolute-bottom">
+        <a href="#{mainContent[0].records[0].attributes.btn-page-name-5}" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.btn-link-text-5}</a>
+      </div>
+    </div>
+    {/if}
+    {@if cond="'{mainContent[0].records[0].attributes.btn-help-6|trim}'.length !== 0"}
+    <div class="row collapse relative">
+      <div class="small-8 medium-7 columns left btnHelp">{mainContent[0].records[0].attributes.btn-help-6}</div>
+      <div class="small-4 medium-5 columns right answer absolute-bottom">
+        <a href="#{mainContent[0].records[0].attributes.btn-page-name-6}" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.btn-link-text-6}</a>
+      </div>
+    </div>
+    {/if}
+    {@if cond="'{mainContent[0].records[0].attributes.btn-help-7|trim}'.length !== 0"}
+    <div class="row collapse relative">
+      <div class="small-8 medium-7 columns left btnHelp">{mainContent[0].records[0].attributes.btn-help-7}</div>
+      <div class="small-4 medium-5 columns right answer absolute-bottom">
+        <a href="#{mainContent[0].records[0].attributes.btn-page-name-7}" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.btn-link-text-7}</a>
+      </div>
+    </div>
+    {/if}
+    {@if cond="'{mainContent[0].records[0].attributes.btn-help-8|trim}'.length !== 0"}
+    <div class="row collapse relative">
+      <div class="small-8 medium-7 columns left btnHelp">{mainContent[0].records[0].attributes.btn-help-8}</div>
+      <div class="small-4 medium-5 columns right answer absolute-bottom">
+        <a href="#{mainContent[0].records[0].attributes.btn-page-name-8}" class="button base-btn alt-btn right">{mainContent[0].records[0].attributes.btn-link-text-8}</a>
+      </div>
+    </div>
+    {/if}
+
+    <div class="row collapse">
+
+    </div>

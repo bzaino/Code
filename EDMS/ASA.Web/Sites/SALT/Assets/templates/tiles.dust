@@ -1,0 +1,33 @@
+{#mainContent}
+    {@if cond="'{attributes.ContentTypes}' !== 'Alert' "}
+    {#contents}
+        {?records} 
+            {#records}
+                {@if cond="'{attributes.ContentTypes}' !== 'Definition' "}
+		    <div class="small-12 {?useTodoTileDesign} {?SaltSuggests} salt-suggests {/SaltSuggests} {/useTodoTileDesign} columns js-tileContainer tile js-todoContainer clearfix" data-primary-key="{attributes.P_Primary_Key}" data-content-title="{attributes.resource_link_title}" data-content-type="{attributes.ContentTypes}">
+                        {>"partial_todo" section-identifier="pageFirstRecNum-{mainContent[0].contents[0].firstRecNum}"/}
+                    </div>
+                {/if}
+            {/records}
+            {@if cond="'{secondaryContent[0]|countWithoutDefinitions}' === '0'"}
+                <div class="js-no-records short-page-spacer">
+                </div>
+            {/if}
+        {:else}
+            {! Only show this message when there is no records found, but not when infinite scroll reaches the end !}
+            {@if cond="'{totalNumRecs}' === '0'"}
+                <div class="js-no-records short-page-spacer">
+                    <div class="small-12 columns">
+                        <h2>Nothing To See Here, Folks </h2>
+                        <p>Sorry we couldn't find what you're looking for. Choose a different option to check out something else. </p>
+                    </div>
+                </div>
+            {:else}
+                <div class="js-no-records"></div>
+            {/if}
+        {/records}
+    {/contents}
+    {/if}
+{/mainContent}
+
+<div class="">{> "LoadingSpinner" /}</div>

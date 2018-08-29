@@ -1,0 +1,12 @@
+<div class="app-resources medium-7 small-12 columns" >
+    {#content}
+        {#mainContent}
+            <figure class="headerimage hide-for-small noprint">
+                {record.attributes.content-image}
+            </figure>
+            <div class="app-button">
+                {record.attributes.button-area}
+            </div>
+        {/mainContent}
+    {/content} 
+ </div>

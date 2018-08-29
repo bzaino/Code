@@ -1,0 +1,1 @@
+define(["dust"], function(dust) { (function(){dust.register("ErrorMessages/confirmPassword",body_0);function body_0(chk,ctx){return chk.write("<small class=\"error\">Passwords do not match.</small>");}return body_0;})(); });

@@ -1,0 +1,1636 @@
+No type resolving constraints for class System.Predicate`1 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Collections/ActiveObjectList.cs (TU 89) was found
+No type resolving constraints for class System.Action`1 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Collections/PrimaryObjectList.cs (TU 90) was found
+No type resolving constraints for class System.Predicate`1 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Collections/PrimaryObjectList.cs (TU 90) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Common/BaseSession.cs (TU 573) was found
+No type resolving constraints for class System.Collections.IDictionary referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Common/BaseSession.cs (TU 573) was found
+No type resolving constraints for class System.Web.SessionState.SessionIDManager referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Common/BaseSession.cs (TU 573) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Common/Extensions/HttpContextExtension.cs (TU 574) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Common/Extensions/HttpContextExtension.cs (TU 574) was found
+No type resolving constraints for class System.Web.HttpContextBase referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Common/Extensions/HttpContextExtension.cs (TU 574) was found
+No type resolving constraints for class System.Web.HttpRequestBase referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Common/Extensions/HttpContextExtension.cs (TU 574) was found
+No type resolving constraints for class System.Web.HttpResponseBase referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Common/Extensions/HttpContextExtension.cs (TU 574) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.ValidationAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Common/Validation/DateStringValidator.cs (TU 576) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.ValidationAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Common/Validation/EmailValidator.cs (TU 577) was found
+No type resolving constraints for class System.Text.RegularExpressions.Regex referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Common/Validation/EmailValidator.cs (TU 577) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.ValidationAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Common/Validation/PasswordStandardsASAValidator.cs (TU 578) was found
+No type resolving constraints for class System.Text.RegularExpressions.Regex referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Common/Validation/PasswordStandardsASAValidator.cs (TU 578) was found
+No type resolving constraints for class System.AttributeUsageAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Common/Validation/RequiredIfValidator.cs (TU 580) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Common/Validation/RequiredIfValidator.cs (TU 580) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.ValidationAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Common/Validation/RequiredIfValidator.cs (TU 580) was found
+No type resolving constraints for class System.ComponentModel.PropertyDescriptor referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Common/Validation/RequiredIfValidator.cs (TU 580) was found
+No type resolving constraints for class System.ComponentModel.PropertyDescriptorCollection referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Common/Validation/RequiredIfValidator.cs (TU 580) was found
+No type resolving constraints for class System.ComponentModel.TypeDescriptor referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Common/Validation/RequiredIfValidator.cs (TU 580) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.ValidationAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Common/Validation/YOBValidator.cs (TU 581) was found
+No type resolving constraints for class System.Int16 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/Common/Validation/YOBValidator.cs (TU 581) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.Boolean referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.Collections.Hashtable referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.ComponentModel.Component referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.Configuration.Provider.ProviderBase referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.DirectoryServices.DirectoryEntries referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.DirectoryServices.DirectoryEntry referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.DirectoryServices.DirectorySearcher referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.DirectoryServices.DirectoryServicesCOMException referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.DirectoryServices.DirectoryServicesPermission referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.DirectoryServices.DirectoryServicesPermissionAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.DirectoryServices.PropertyCollection referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.DirectoryServices.PropertyValueCollection referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.DirectoryServices.SearchResult referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.Runtime.InteropServices.COMException referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.Security.CodeAccessPermission referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.Security.SecuritySafeCriticalAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.Threading.Thread referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.Web.Security.ActiveDirectoryConnectionProtection referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.Web.Security.ActiveDirectoryMembershipProvider referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.Web.Security.Membership referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.Web.Security.MembershipPasswordFormat referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.Web.Security.MembershipProvider referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.Web.Security.MembershipUser referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class log4net.LogManager referenced from C:/SOA/wksp_03/EDMS/ASA.Web/DirectoryServicesWrapper/SaltADMembershipProvider.cs (TU 96) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/EDMS/ASA.Web/HttpsRequestWrapper/HttpsRequestProvider.cs (TU 158) was found
+No type resolving constraints for class System.IO.Stream referenced from C:/SOA/wksp_03/EDMS/ASA.Web/HttpsRequestWrapper/HttpsRequestProvider.cs (TU 158) was found
+No type resolving constraints for class System.IO.StreamReader referenced from C:/SOA/wksp_03/EDMS/ASA.Web/HttpsRequestWrapper/HttpsRequestProvider.cs (TU 158) was found
+No type resolving constraints for class System.IO.TextReader referenced from C:/SOA/wksp_03/EDMS/ASA.Web/HttpsRequestWrapper/HttpsRequestProvider.cs (TU 158) was found
+No type resolving constraints for class System.Net.HttpWebRequest referenced from C:/SOA/wksp_03/EDMS/ASA.Web/HttpsRequestWrapper/HttpsRequestProvider.cs (TU 158) was found
+No type resolving constraints for class System.Net.HttpWebResponse referenced from C:/SOA/wksp_03/EDMS/ASA.Web/HttpsRequestWrapper/HttpsRequestProvider.cs (TU 158) was found
+No type resolving constraints for class System.Net.WebRequest referenced from C:/SOA/wksp_03/EDMS/ASA.Web/HttpsRequestWrapper/HttpsRequestProvider.cs (TU 158) was found
+No type resolving constraints for class System.Net.WebResponse referenced from C:/SOA/wksp_03/EDMS/ASA.Web/HttpsRequestWrapper/HttpsRequestProvider.cs (TU 158) was found
+No type resolving constraints for class System.Security.Permissions.PermissionSetAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/HttpsRequestWrapper/HttpsRequestProvider.cs (TU 158) was found
+No type resolving constraints for class System.Security.SecuritySafeCriticalAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/HttpsRequestWrapper/HttpsRequestProvider.cs (TU 158) was found
+No type resolving constraints for class System.Text.Encoding referenced from C:/SOA/wksp_03/EDMS/ASA.Web/HttpsRequestWrapper/HttpsRequestProvider.cs (TU 158) was found
+No type resolving constraints for class log4net.LogManager referenced from C:/SOA/wksp_03/EDMS/ASA.Web/HttpsRequestWrapper/HttpsRequestProvider.cs (TU 158) was found
+No type resolving constraints for class System.Collections.IDictionary referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/ASAContextLoader.cs (TU 176) was found
+No type resolving constraints for class System.EventArgs referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/ASAContextLoader.cs (TU 176) was found
+No type resolving constraints for class System.EventHandler referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/ASAContextLoader.cs (TU 176) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/ASAContextLoader.cs (TU 176) was found
+No type resolving constraints for class System.Uri referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/ASAContextLoader.cs (TU 176) was found
+No type resolving constraints for class System.Web.IHttpHandler referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/ASAContextLoader.cs (TU 176) was found
+No type resolving constraints for class System.Web.Mvc.MvcHandler referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/ASAContextLoader.cs (TU 176) was found
+No type resolving constraints for class System.Collections.IDictionary referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaController.cs (TU 177) was found
+No type resolving constraints for class System.Security.Principal.IIdentity referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaController.cs (TU 177) was found
+No type resolving constraints for class System.Security.Principal.IPrincipal referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaController.cs (TU 177) was found
+No type resolving constraints for class System.Text.StringBuilder referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaController.cs (TU 177) was found
+No type resolving constraints for class System.Uri referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaController.cs (TU 177) was found
+No type resolving constraints for class System.Web.Caching.Cache referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaController.cs (TU 177) was found
+No type resolving constraints for class System.Web.HttpApplication referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaController.cs (TU 177) was found
+No type resolving constraints for class System.Web.HttpContextBase referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaController.cs (TU 177) was found
+No type resolving constraints for class System.Web.HttpRequestBase referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaController.cs (TU 177) was found
+No type resolving constraints for class System.Web.Mvc.ActionExecutedContext referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaController.cs (TU 177) was found
+No type resolving constraints for class System.Web.Mvc.ActionExecutingContext referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaController.cs (TU 177) was found
+No type resolving constraints for class System.Web.Mvc.AjaxRequestExtensions referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaController.cs (TU 177) was found
+No type resolving constraints for class System.Web.Mvc.Controller referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaController.cs (TU 177) was found
+No type resolving constraints for class System.Web.Mvc.ControllerContext referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaController.cs (TU 177) was found
+No type resolving constraints for class System.Web.Mvc.ExceptionContext referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaController.cs (TU 177) was found
+No type resolving constraints for class System.Web.Mvc.HandleErrorInfo referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaController.cs (TU 177) was found
+No type resolving constraints for class System.Web.Routing.RequestContext referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaController.cs (TU 177) was found
+No type resolving constraints for class System.Web.Routing.RouteData referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaController.cs (TU 177) was found
+No type resolving constraints for class System.Web.Routing.RouteValueDictionary referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaController.cs (TU 177) was found
+No type resolving constraints for class System.Boolean referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class System.Collections.ObjectModel.Collection`1 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class System.Enum referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class System.EventArgs referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class System.EventHandler referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class System.Uri referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class System.Web.HttpApplication referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class System.Web.HttpServerUtility referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class System.Web.IHttpHandler referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class System.Web.Mvc.Filter referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class System.Web.Mvc.GlobalFilterCollection referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class System.Web.Mvc.GlobalFilters referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class System.Web.Mvc.HandleErrorAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class System.Web.Mvc.MvcHandler referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class System.Web.Mvc.RouteCollectionExtensions referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class System.Web.Routing.IRouteHandler referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class System.Web.Routing.Route referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class System.Web.Routing.RouteBase referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class System.Web.Routing.RouteCollection referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class System.Web.Routing.RouteTable referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class log4net.Config.XmlConfigurator referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaMvcApplication.cs (TU 178) was found
+No type resolving constraints for class System.Collections.IDictionary referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaWebSecurityAdapter.cs (TU 183) was found
+No type resolving constraints for class System.Enum referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AsaWebSecurityAdapter.cs (TU 183) was found
+No type resolving constraints for class System.Boolean referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AvectraProfileProvider.cs (TU 184) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AvectraProfileProvider.cs (TU 184) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2/KeyCollection referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AvectraProfileProvider.cs (TU 184) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AvectraProfileProvider.cs (TU 184) was found
+No type resolving constraints for class System.Collections.IDictionary referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AvectraProfileProvider.cs (TU 184) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AvectraProfileProviderStub.cs (TU 179) was found
+No type resolving constraints for class System.NotImplementedException referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/AvectraProfileProviderStub.cs (TU 179) was found
+No type resolving constraints for class System.SerializableAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/MVCIntegrationException.cs (TU 186) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/Mvc3Helper.cs (TU 181) was found
+No type resolving constraints for class System.NotImplementedException referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/SecurityAdapterStub.cs (TU 180) was found
+No type resolving constraints for class System.Boolean referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/_configuration/AsaMvcConfig.csd.cs (TU 182) was found
+No type resolving constraints for class System.CodeDom.Compiler.GeneratedCodeAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/_configuration/AsaMvcConfig.csd.cs (TU 182) was found
+No type resolving constraints for class System.ComponentModel.DescriptionAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/_configuration/AsaMvcConfig.csd.cs (TU 182) was found
+No type resolving constraints for class System.Configuration.ConfigurationCollectionAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/_configuration/AsaMvcConfig.csd.cs (TU 182) was found
+No type resolving constraints for class System.Configuration.ConfigurationElement referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/_configuration/AsaMvcConfig.csd.cs (TU 182) was found
+No type resolving constraints for class System.Configuration.ConfigurationElementCollection referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/_configuration/AsaMvcConfig.csd.cs (TU 182) was found
+No type resolving constraints for class System.Configuration.ConfigurationPropertyAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/_configuration/AsaMvcConfig.csd.cs (TU 182) was found
+No type resolving constraints for class System.Configuration.ConfigurationSection referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/_configuration/AsaMvcConfig.csd.cs (TU 182) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Integration/MVC3/_configuration/AsaMvcConfig.csd.cs (TU 182) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.Assert referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Tests/ASA.Web.WTF.Tests/SiteMembershipTests.cs (TU 221) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Tests/ASA.Web.WTF.Tests/SiteMembershipTests.cs (TU 221) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Tests/ASA.Web.WTF.Tests/SiteMembershipTests.cs (TU 221) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/Tests/ASA.Web.WTF.Tests/SiteMembershipTests.cs (TU 221) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/Integration/ContextDataProviderBase.cs (TU 122) was found
+No type resolving constraints for class System.SerializableAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/Integration/DataProviderException.cs (TU 109) was found
+No type resolving constraints for class System.NotImplementedException referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/Integration/DotNetMembership/DotNetMembershipAdapter.cs (TU 101) was found
+No type resolving constraints for class System.Security.Principal.IIdentity referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/Integration/DotNetMembership/DotNetMembershipAdapter.cs (TU 101) was found
+No type resolving constraints for class System.Security.Principal.IPrincipal referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/Integration/DotNetMembership/DotNetMembershipAdapter.cs (TU 101) was found
+No type resolving constraints for class System.Web.Security.Membership referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/Integration/DotNetMembership/DotNetMembershipAdapter.cs (TU 101) was found
+No type resolving constraints for class System.Web.Security.MembershipCreateStatus referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/Integration/DotNetMembership/DotNetMembershipAdapter.cs (TU 101) was found
+No type resolving constraints for class System.Web.Security.MembershipCreateUserException referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/Integration/DotNetMembership/DotNetMembershipAdapter.cs (TU 101) was found
+No type resolving constraints for class System.Web.Security.MembershipUser referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/Integration/DotNetMembership/DotNetMembershipAdapter.cs (TU 101) was found
+No type resolving constraints for class System.Web.Security.MembershipUser referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/Integration/DotNetMembership/MembershipExtensions.cs (TU 102) was found
+No type resolving constraints for class System.Web.Security.MembershipUser referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/Integration/DotNetMembership/MembershipUserWrapper.cs (TU 103) was found
+No type resolving constraints for class System.Activator referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/Integration/IntegrationLoader.cs (TU 123) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/Integration/IntegrationLoader.cs (TU 123) was found
+No type resolving constraints for class System.Configuration.ConfigurationElementCollection referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/Integration/IntegrationLoader.cs (TU 123) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/Integration/IntegrationLoader.cs (TU 123) was found
+No type resolving constraints for class System.SerializableAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/Integration/SecurityAdapterException.cs (TU 110) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/Integration/_interface/IContextDataProvider.cs (TU 139) was found
+No type resolving constraints for class System.Web.Security.Membership referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/SiteMember.cs (TU 129) was found
+No type resolving constraints for class System.Web.Security.MembershipUser referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/SiteMember.cs (TU 129) was found
+No type resolving constraints for class ASA.Web.WTF.MemberCreationStatus referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/SiteMembership.cs (TU 130) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/SiteMembership.cs (TU 130) was found
+No type resolving constraints for class System.Threading.Thread referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/SiteMembership.cs (TU 130) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/SiteMembership.cs (TU 130) was found
+No type resolving constraints for class System.Web.HttpContextBase referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/SiteMembership.cs (TU 130) was found
+No type resolving constraints for class System.Web.HttpContextWrapper referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/SiteMembership.cs (TU 130) was found
+No type resolving constraints for class System.NotImplementedException referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/SiteMembershipStub.cs (TU 105) was found
+No type resolving constraints for class System.SerializableAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/WtfException.cs (TU 133) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_account/MemberAccountData.cs (TU 125) was found
+No type resolving constraints for class System.Runtime.Serialization.DataContractAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_account/MemberAccountData.cs (TU 125) was found
+No type resolving constraints for class System.Runtime.Serialization.SerializationInfo referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_account/MemberAccountData.cs (TU 125) was found
+No type resolving constraints for class System.Runtime.Serialization.StreamingContext referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_account/MemberAccountData.cs (TU 125) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_account/MemberAccountData.cs (TU 125) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_interface/IContextDataObject.cs (TU 138) was found
+No type resolving constraints for class System.Char referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_profile/MemberProfile.cs (TU 126) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_profile/MemberProfile.cs (TU 126) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_profile/_dataObject/MemberEmailData.cs (TU 112) was found
+No type resolving constraints for class System.Runtime.Serialization.DataContractAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_profile/_dataObject/MemberEmailData.cs (TU 112) was found
+No type resolving constraints for class System.Runtime.Serialization.SerializationInfo referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_profile/_dataObject/MemberEmailData.cs (TU 112) was found
+No type resolving constraints for class System.Runtime.Serialization.StreamingContext referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_profile/_dataObject/MemberEmailData.cs (TU 112) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_profile/_dataObject/MemberEmailData.cs (TU 112) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_profile/_dataObject/MemberOrganizationData.cs (TU 114) was found
+No type resolving constraints for class System.Runtime.Serialization.DataContractAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_profile/_dataObject/MemberOrganizationData.cs (TU 114) was found
+No type resolving constraints for class System.Runtime.Serialization.SerializationInfo referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_profile/_dataObject/MemberOrganizationData.cs (TU 114) was found
+No type resolving constraints for class System.Runtime.Serialization.StreamingContext referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_profile/_dataObject/MemberOrganizationData.cs (TU 114) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_profile/_dataObject/MemberOrganizationData.cs (TU 114) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_profile/_dataObject/MemberProfileData.cs (TU 127) was found
+No type resolving constraints for class System.Runtime.Serialization.DataContractAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_profile/_dataObject/MemberProfileData.cs (TU 127) was found
+No type resolving constraints for class System.Runtime.Serialization.SerializationInfo referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_profile/_dataObject/MemberProfileData.cs (TU 127) was found
+No type resolving constraints for class System.Runtime.Serialization.StreamingContext referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_profile/_dataObject/MemberProfileData.cs (TU 127) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_profile/_dataObject/MemberProfileData.cs (TU 127) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_validation/ContextActionValidationRequest.cs (TU 120) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_validation/_interface/IContextActionValidationRequest.cs (TU 136) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_validation/_interface/IContextActionValidator.cs (TU 137) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_validation/validators/ManageOwnRecordsValidator.cs (TU 131) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/_validation/validators/MustbeLoggedInValidator.cs (TU 132) was found
+No type resolving constraints for class System.Configuration.ConfigurationElement referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/configuration/DependencyConfigurationElement.cs (TU 98) was found
+No type resolving constraints for class System.Configuration.ConfigurationPropertyAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/configuration/DependencyConfigurationElement.cs (TU 98) was found
+No type resolving constraints for class System.Configuration.ConfigurationElement referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/configuration/DependencyConfigurationElementCollection.cs (TU 99) was found
+No type resolving constraints for class System.Configuration.ConfigurationElementCollection referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/configuration/DependencyConfigurationElementCollection.cs (TU 99) was found
+No type resolving constraints for class System.Configuration.ConfigurationElement referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/configuration/DependencyConfigurationSection.cs (TU 100) was found
+No type resolving constraints for class System.Configuration.ConfigurationPropertyAttribute referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/configuration/DependencyConfigurationSection.cs (TU 100) was found
+No type resolving constraints for class System.Configuration.ConfigurationSection referenced from C:/SOA/wksp_03/EDMS/ASA.Web/WTF/_root/configuration/DependencyConfigurationSection.cs (TU 100) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/ASAModelValidator.cs (TU 563) was found
+No type resolving constraints for class System.Collections.Generic.IDictionary`2 referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/ASAModelValidator.cs (TU 563) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.ValidationContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/ASAModelValidator.cs (TU 563) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.ValidationResult referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/ASAModelValidator.cs (TU 563) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.Validator referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/ASAModelValidator.cs (TU 563) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/ASAModelValidator.cs (TU 563) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/BaseWebModel.cs (TU 564) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/BaseWebModel.cs (TU 564) was found
+No type resolving constraints for class System.Boolean referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/Config.cs (TU 565) was found
+No type resolving constraints for class System.Collections.Hashtable referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/Config.cs (TU 565) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.StringLengthAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/ErrorModel.cs (TU 566) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/ErrorModel.cs (TU 566) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/HttpHeadersHelper.cs (TU 562) was found
+No type resolving constraints for class System.Net.WebHeaderCollection referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/HttpHeadersHelper.cs (TU 562) was found
+No type resolving constraints for class System.ServiceModel.Web.IncomingWebRequestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/HttpHeadersHelper.cs (TU 562) was found
+No type resolving constraints for class System.ServiceModel.Web.OutgoingWebResponseContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/HttpHeadersHelper.cs (TU 562) was found
+No type resolving constraints for class System.ServiceModel.Web.WebOperationContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/HttpHeadersHelper.cs (TU 562) was found
+No type resolving constraints for class System.Text.StringBuilder referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/HttpHeadersHelper.cs (TU 562) was found
+No type resolving constraints for class Newtonsoft.Json.JsonConvert referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/MockJsonLoader.cs (TU 567) was found
+No type resolving constraints for class System.IO.StreamReader referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/MockJsonLoader.cs (TU 567) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/MockJsonLoader.cs (TU 567) was found
+No type resolving constraints for class System.ServiceModel.ICommunicationObject referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/ProxyHelper.cs (TU 569) was found
+No type resolving constraints for class System.TimeoutException referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/ProxyHelper.cs (TU 569) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/ResultCodeModel.cs (TU 570) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/UtilityFunctions.cs (TU 571) was found
+No type resolving constraints for class System.ComponentModel.DescriptionAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/UtilityFunctions.cs (TU 571) was found
+No type resolving constraints for class System.Enum referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/UtilityFunctions.cs (TU 571) was found
+No type resolving constraints for class System.Net.Mail.MailAddressCollection referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/UtilityFunctions.cs (TU 571) was found
+No type resolving constraints for class System.Net.Mail.SmtpClient referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/UtilityFunctions.cs (TU 571) was found
+No type resolving constraints for class System.Reflection.FieldInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/UtilityFunctions.cs (TU 571) was found
+No type resolving constraints for class System.Reflection.MemberInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/UtilityFunctions.cs (TU 571) was found
+No type resolving constraints for class System.Text.RegularExpressions.Regex referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/UtilityFunctions.cs (TU 571) was found
+No type resolving constraints for class System.Text.StringBuilder referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/UtilityFunctions.cs (TU 571) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/UtilityFunctions.cs (TU 571) was found
+No type resolving constraints for class System.Web.HttpUtility referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Common/UtilityFunctions.cs (TU 571) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/ISaltServiceAgent.cs (TU 149) was found
+No type resolving constraints for class System.CodeDom.Compiler.GeneratedCodeAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Properties/Settings.Designer.cs (TU 151) was found
+No type resolving constraints for class System.Configuration.ApplicationSettingsBase referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Properties/Settings.Designer.cs (TU 151) was found
+No type resolving constraints for class System.Configuration.SettingsBase referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Properties/Settings.Designer.cs (TU 151) was found
+No type resolving constraints for class System.Runtime.CompilerServices.CompilerGeneratedAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Properties/Settings.Designer.cs (TU 151) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/SaltServiceAgent.cs (TU 152) was found
+No type resolving constraints for class System.AsyncCallback referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/SaltServiceAgent.cs (TU 152) was found
+No type resolving constraints for class System.Linq.Expressions.Expression`1 referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/SaltServiceAgent.cs (TU 152) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/SaltServiceAgentStubs.cs (TU 153) was found
+No type resolving constraints for class System.AsyncCallback referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/SaltServiceProxy.cs (TU 154) was found
+No type resolving constraints for class System.Func`1 referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/SaltServiceProxy.cs (TU 154) was found
+No type resolving constraints for class System.GC referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/SaltServiceProxy.cs (TU 154) was found
+No type resolving constraints for class System.IAsyncResult referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/SaltServiceProxy.cs (TU 154) was found
+No type resolving constraints for class System.Linq.Expressions.Expression referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/SaltServiceProxy.cs (TU 154) was found
+No type resolving constraints for class System.Linq.Expressions.Expression`1 referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/SaltServiceProxy.cs (TU 154) was found
+No type resolving constraints for class System.Linq.Expressions.LambdaExpression referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/SaltServiceProxy.cs (TU 154) was found
+No type resolving constraints for class System.Linq.Expressions.MethodCallExpression referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/SaltServiceProxy.cs (TU 154) was found
+No type resolving constraints for class System.Reflection.MemberInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/SaltServiceProxy.cs (TU 154) was found
+No type resolving constraints for class System.Reflection.MethodInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/SaltServiceProxy.cs (TU 154) was found
+No type resolving constraints for class System.ServiceModel.ClientBase`1 referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/SaltServiceProxy.cs (TU 154) was found
+No type resolving constraints for class log4net.LogManager referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/SaltServiceProxy.cs (TU 154) was found
+No type resolving constraints for class Asa.Salt.Web.Common.Types.Enums.LessonUpdateStatus referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class Asa.Salt.Web.Common.Types.Enums.LoanInterestRateType referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class Asa.Salt.Web.Common.Types.Enums.MemberUpdateStatus referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.Boolean referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.Byte referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.CodeDom.Compiler.GeneratedCodeAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.ComponentModel.BrowsableAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.ComponentModel.INotifyPropertyChanged referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.ComponentModel.PropertyChangedEventArgs referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.ComponentModel.PropertyChangedEventHandler referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.Data.DataTable referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.Decimal referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.Diagnostics.DebuggerStepThroughAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.Double referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.Enum referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.Int16 referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.NonSerializedAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.Runtime.Serialization.DataContractAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.Runtime.Serialization.DataMemberAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.Runtime.Serialization.ExtensionDataObject referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.Runtime.Serialization.IExtensibleDataObject referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.Runtime.Serialization.KnownTypeAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.Runtime.Serialization.OptionalFieldAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.SerializableAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.ServiceModel.Channels.Binding referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.ServiceModel.Channels.IChannel referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.ServiceModel.ClientBase`1 referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.ServiceModel.EndpointAddress referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.ServiceModel.IClientChannel referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.ServiceModel.ICommunicationObject referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.ServiceModel.IContextChannel referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.ServiceModel.IExtensibleObject`1 referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.Tuple`2 referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Source/ASA.Web.Services.Proxies/Service References/SALTService/Reference.cs (TU 155) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.Assert referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ASAModelValidatorTests.cs (TU 161) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ASAModelValidatorTests.cs (TU 161) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ASAModelValidatorTests.cs (TU 161) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ASAModelValidatorTests.cs (TU 161) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.Assert referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/CommonModelTests.cs (TU 162) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/CommonModelTests.cs (TU 162) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/CommonModelTests.cs (TU 162) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/CommonModelTests.cs (TU 162) was found
+No type resolving constraints for class System.IO.FileNotFoundException referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ConfigUtility.cs (TU 163) was found
+No type resolving constraints for class System.InvalidOperationException referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ConfigUtility.cs (TU 163) was found
+No type resolving constraints for class System.Reflection.Assembly referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ConfigUtility.cs (TU 163) was found
+No type resolving constraints for class System.Xml.XmlAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ConfigUtility.cs (TU 163) was found
+No type resolving constraints for class System.Xml.XmlAttributeCollection referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ConfigUtility.cs (TU 163) was found
+No type resolving constraints for class System.Xml.XmlDocument referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ConfigUtility.cs (TU 163) was found
+No type resolving constraints for class System.Xml.XmlNode referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ConfigUtility.cs (TU 163) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.Assert referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ErrorModelTest.cs (TU 164) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ErrorModelTest.cs (TU 164) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ErrorModelTest.cs (TU 164) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ErrorModelTest.cs (TU 164) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.StringLengthAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ErrorModelTest.cs (TU 164) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ProxyHelperTests.cs (TU 166) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ProxyHelperTests.cs (TU 166) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ProxyHelperTests.cs (TU 166) was found
+No type resolving constraints for class System.EventArgs referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ProxyHelperTests.cs (TU 166) was found
+No type resolving constraints for class System.EventHandler referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ProxyHelperTests.cs (TU 166) was found
+No type resolving constraints for class System.ServiceModel.IClientChannel referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ProxyHelperTests.cs (TU 166) was found
+No type resolving constraints for class System.ServiceModel.ICommunicationObject referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ProxyHelperTests.cs (TU 166) was found
+No type resolving constraints for class System.Threading.Thread referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/ProxyHelperTests.cs (TU 166) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.Assert referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/UtilityFunctionsTest.cs (TU 167) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/UtilityFunctionsTest.cs (TU 167) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/Common/Tests/ASA.Web.Services.Common.Tests/UtilityFunctionsTest.cs (TU 167) was found
+No type resolving constraints for class System.Boolean referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALHost/Source/ASA.Web.Services.SALHost/Config.cs (TU 351) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALHost/Source/ASA.Web.Services.SALHost/Global.asax.cs (TU 352) was found
+No type resolving constraints for class System.Collections.ObjectModel.Collection`1 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALHost/Source/ASA.Web.Services.SALHost/Global.asax.cs (TU 352) was found
+No type resolving constraints for class System.EventArgs referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALHost/Source/ASA.Web.Services.SALHost/Global.asax.cs (TU 352) was found
+No type resolving constraints for class System.ServiceModel.Activation.ServiceHostFactoryBase referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALHost/Source/ASA.Web.Services.SALHost/Global.asax.cs (TU 352) was found
+No type resolving constraints for class System.ServiceModel.Activation.ServiceRoute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALHost/Source/ASA.Web.Services.SALHost/Global.asax.cs (TU 352) was found
+No type resolving constraints for class System.ServiceModel.Activation.WebServiceHostFactory referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALHost/Source/ASA.Web.Services.SALHost/Global.asax.cs (TU 352) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALHost/Source/ASA.Web.Services.SALHost/Global.asax.cs (TU 352) was found
+No type resolving constraints for class System.Web.HttpApplication referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALHost/Source/ASA.Web.Services.SALHost/Global.asax.cs (TU 352) was found
+No type resolving constraints for class System.Web.Routing.RouteBase referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALHost/Source/ASA.Web.Services.SALHost/Global.asax.cs (TU 352) was found
+No type resolving constraints for class System.Web.Routing.RouteCollection referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALHost/Source/ASA.Web.Services.SALHost/Global.asax.cs (TU 352) was found
+No type resolving constraints for class System.Web.Routing.RouteTable referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALHost/Source/ASA.Web.Services.SALHost/Global.asax.cs (TU 352) was found
+No type resolving constraints for class log4net.Config.XmlConfigurator referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALHost/Source/ASA.Web.Services.SALHost/Global.asax.cs (TU 352) was found
+No type resolving constraints for class ASA.Web.Services.SALHost.Global_Accessor referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALHost/Tests/ASA.Web.Services.SALHost.Tests/GlobalAsaxTests.cs (TU 360) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALHost/Tests/ASA.Web.Services.SALHost.Tests/GlobalAsaxTests.cs (TU 360) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALHost/Tests/ASA.Web.Services.SALHost.Tests/GlobalAsaxTests.cs (TU 360) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALHost/Tests/ASA.Web.Services.SALHost.Tests/GlobalAsaxTests.cs (TU 360) was found
+No type resolving constraints for class System.EventArgs referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALHost/Tests/ASA.Web.Services.SALHost.Tests/GlobalAsaxTests.cs (TU 360) was found
+No type resolving constraints for class System.Web.Routing.RouteCollection referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALHost/Tests/ASA.Web.Services.SALHost.Tests/GlobalAsaxTests.cs (TU 360) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/AskMe.cs (TU 191) was found
+No type resolving constraints for class System.Text.Encoding referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/AskMe.cs (TU 191) was found
+No type resolving constraints for class System.Collections.Hashtable referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/Config.cs (TU 192) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/DataContracts/AlertListModel.cs (TU 194) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RegularExpressionAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/DataContracts/AlertModel.cs (TU 195) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/DataContracts/AlertModel.cs (TU 195) was found
+No type resolving constraints for class System.ComponentModel.DefaultValueAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/DataContracts/AlertModel.cs (TU 195) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/DataContracts/AlertModel.cs (TU 195) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.DataTypeAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/DataContracts/AskMeRequestModel.cs (TU 196) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/DataContracts/AskMeRequestModel.cs (TU 196) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.StringLengthAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/DataContracts/AskMeRequestModel.cs (TU 196) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/DataContracts/AskMeRequestModel.cs (TU 196) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.DataTypeAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/DataContracts/ContentFeedBackModel.cs (TU 197) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/DataContracts/ContentFeedBackModel.cs (TU 197) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.StringLengthAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/DataContracts/ContentFeedBackModel.cs (TU 197) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/DataContracts/ContentFeedBackModel.cs (TU 197) was found
+No type resolving constraints for class System.CodeDom.Compiler.GeneratedCodeAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/Validation/ErrorMessages.Designer.cs (TU 206) was found
+No type resolving constraints for class System.ComponentModel.EditorBrowsableAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/Validation/ErrorMessages.Designer.cs (TU 206) was found
+No type resolving constraints for class System.Diagnostics.CodeAnalysis.SuppressMessageAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/Validation/ErrorMessages.Designer.cs (TU 206) was found
+No type resolving constraints for class System.Diagnostics.DebuggerNonUserCodeAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/Validation/ErrorMessages.Designer.cs (TU 206) was found
+No type resolving constraints for class System.Globalization.CultureInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/Validation/ErrorMessages.Designer.cs (TU 206) was found
+No type resolving constraints for class System.Reflection.Assembly referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/Validation/ErrorMessages.Designer.cs (TU 206) was found
+No type resolving constraints for class System.Resources.ResourceManager referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/Validation/ErrorMessages.Designer.cs (TU 206) was found
+No type resolving constraints for class System.Runtime.CompilerServices.CompilerGeneratedAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/Validation/ErrorMessages.Designer.cs (TU 206) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Source/ASA.Web.Services.AlertService/Validation/ErrorMessages.Designer.cs (TU 206) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.Assert referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Tests/ASA.Web.Services.AlertService.Tests/AlertTests.cs (TU 338) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.IgnoreAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Tests/ASA.Web.Services.AlertService.Tests/AlertTests.cs (TU 338) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Tests/ASA.Web.Services.AlertService.Tests/AlertTests.cs (TU 338) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Tests/ASA.Web.Services.AlertService.Tests/AlertTests.cs (TU 338) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Tests/ASA.Web.Services.AlertService.Tests/AlertTests.cs (TU 338) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.Assert referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Tests/ASA.Web.Services.AlertService.Tests/ValidationTests.cs (TU 339) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Tests/ASA.Web.Services.AlertService.Tests/ValidationTests.cs (TU 339) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Tests/ASA.Web.Services.AlertService.Tests/ValidationTests.cs (TU 339) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Tests/ASA.Web.Services.AlertService.Tests/ValidationTests.cs (TU 339) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RegularExpressionAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Alert/Tests/ASA.Web.Services.AlertService.Tests/ValidationTests.cs (TU 339) was found
+No type resolving constraints for class System.Reflection.MemberInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/ContentService/Content.cs (TU 169) was found
+No type resolving constraints for class System.Reflection.MethodBase referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/ContentService/Content.cs (TU 169) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/ContentService/Content.cs (TU 169) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.StringLengthAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/ContentService/MemberContentInteraction.cs (TU 171) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.Assert referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/ContentService/Tests/ASA.Web.Services.ContentService.Tests/ContentServiceTests.cs (TU 349) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/ContentService/Tests/ASA.Web.Services.ContentService.Tests/ContentServiceTests.cs (TU 349) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/ContentService/Tests/ASA.Web.Services.ContentService.Tests/ContentServiceTests.cs (TU 349) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/ContentService/Tests/ASA.Web.Services.ContentService.Tests/ContentServiceTests.cs (TU 349) was found
+No type resolving constraints for class System.Enum referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/ContentService/Tests/ASA.Web.Services.ContentService.Tests/ContentServiceTests.cs (TU 349) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Lessons/Source/ASA.Web.Services.LessonsService/ServiceContracts/Lessons.cs (TU 263) was found
+No type resolving constraints for class System.Globalization.CultureInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Lessons/Source/ASA.Web.Services.LessonsService/ServiceContracts/Lessons.cs (TU 263) was found
+No type resolving constraints for class System.IFormatProvider referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Lessons/Source/ASA.Web.Services.LessonsService/ServiceContracts/Lessons.cs (TU 263) was found
+No type resolving constraints for class System.Reflection.PropertyInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Lessons/Source/ASA.Web.Services.LessonsService/ServiceContracts/Lessons.cs (TU 263) was found
+No type resolving constraints for class System.Text.RegularExpressions.Regex referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Lessons/Source/ASA.Web.Services.LessonsService/ServiceContracts/Lessons.cs (TU 263) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Lessons/Source/ASA.Web.Services.LessonsService/ServiceContracts/Lessons.cs (TU 263) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Lessons/Source/ASA.Web.Services.LessonsService/TranslateModel.cs (TU 265) was found
+No type resolving constraints for class SALTCoursesWSClient.CourseModel referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/ASAMemberAdapter.cs (TU 583) was found
+No type resolving constraints for class SALTCoursesWSClient.MoodleUser referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/ASAMemberAdapter.cs (TU 583) was found
+No type resolving constraints for class System.Action referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/ASAMemberAdapter.cs (TU 583) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/ASAMemberAdapter.cs (TU 583) was found
+No type resolving constraints for class System.AsyncCallback referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/ASAMemberAdapter.cs (TU 583) was found
+No type resolving constraints for class System.Boolean referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/ASAMemberAdapter.cs (TU 583) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/ASAMemberAdapter.cs (TU 583) was found
+No type resolving constraints for class System.Func`1 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/ASAMemberAdapter.cs (TU 583) was found
+No type resolving constraints for class System.IAsyncResult referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/ASAMemberAdapter.cs (TU 583) was found
+No type resolving constraints for class System.Linq.IOrderedEnumerable`1 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/ASAMemberAdapter.cs (TU 583) was found
+No type resolving constraints for class System.Threading.Tasks.Task referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/ASAMemberAdapter.cs (TU 583) was found
+No type resolving constraints for class System.Threading.Tasks.TaskFactory referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/ASAMemberAdapter.cs (TU 583) was found
+No type resolving constraints for class System.Threading.Tasks.Task`1 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/ASAMemberAdapter.cs (TU 583) was found
+No type resolving constraints for class System.Web.Security.Membership referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/ASAMemberAdapter.cs (TU 583) was found
+No type resolving constraints for class System.Web.Security.MembershipUser referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/ASAMemberAdapter.cs (TU 583) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/ASAMemberAdapterStub.cs (TU 584) was found
+No type resolving constraints for class System.NotImplementedException referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/ASAMemberAdapterStub.cs (TU 584) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RegularExpressionAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/ASAMemberModel.cs (TU 585) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/ASAMemberModel.cs (TU 585) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/ASAMemberModel.cs (TU 585) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.DataTypeAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/CommunityEmailModel.cs (TU 598) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/CommunityEmailModel.cs (TU 598) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.StringLengthAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/CommunityEmailModel.cs (TU 598) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/CommunityEmailModel.cs (TU 598) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/MemberAddressModel.cs (TU 601) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/MemberCourseModel.cs (TU 588) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/MemberEmailModel.cs (TU 603) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.StringLengthAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/MemberEmailModel.cs (TU 603) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/MemberEmailModel.cs (TU 603) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/MemberOrganizationModel.cs (TU 589) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.StringLengthAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/MemberOrganizationModel.cs (TU 589) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/MemberOrganizationModel.cs (TU 589) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/MemberPhoneModel.cs (TU 604) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/MemberProductModel.cs (TU 605) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/MemberQAModel.cs (TU 599) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.StringLengthAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/MemberQAModel.cs (TU 599) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/MemberQAModel.cs (TU 599) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/MemberToDoModel.cs (TU 611) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/OrganizationProductModel.cs (TU 590) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/QuestionAnswerReponseModel.cs (TU 596) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/DataContracts/VLCMemberProfileModel.cs (TU 610) was found
+No type resolving constraints for class Newtonsoft.Json.Linq.JObject referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Qualtrics.cs (TU 612) was found
+No type resolving constraints for class Newtonsoft.Json.Linq.JToken referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Qualtrics.cs (TU 612) was found
+No type resolving constraints for class System.Action referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Qualtrics.cs (TU 612) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Qualtrics.cs (TU 612) was found
+No type resolving constraints for class System.Threading.Tasks.Task referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Qualtrics.cs (TU 612) was found
+No type resolving constraints for class System.Threading.Tasks.TaskFactory referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Qualtrics.cs (TU 612) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/ServiceContracts/IASAMemberAdapter.cs (TU 613) was found
+No type resolving constraints for class SALTCoursesWSClient.CourseModel referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/TranslateModel.cs (TU 615) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/TranslateModel.cs (TU 615) was found
+No type resolving constraints for class System.Globalization.CultureInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/TranslateModel.cs (TU 615) was found
+No type resolving constraints for class System.IFormatProvider referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/TranslateModel.cs (TU 615) was found
+No type resolving constraints for class System.Collections.Generic.IDictionary`2 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Validation/MemberOrganizationValidation.cs (TU 617) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.ValidationContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Validation/MemberOrganizationValidation.cs (TU 617) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.ValidationResult referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Validation/MemberOrganizationValidation.cs (TU 617) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.Validator referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Validation/MemberOrganizationValidation.cs (TU 617) was found
+No type resolving constraints for class System.Collections.Generic.IDictionary`2 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Validation/MemberProductValidation.cs (TU 618) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.ValidationContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Validation/MemberProductValidation.cs (TU 618) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.ValidationResult referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Validation/MemberProductValidation.cs (TU 618) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.Validator referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Validation/MemberProductValidation.cs (TU 618) was found
+No type resolving constraints for class System.Collections.Generic.IDictionary`2 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Validation/MemberProfileResponseValidation.cs (TU 619) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.ValidationContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Validation/MemberProfileResponseValidation.cs (TU 619) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.ValidationResult referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Validation/MemberProfileResponseValidation.cs (TU 619) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.Validator referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Validation/MemberProfileResponseValidation.cs (TU 619) was found
+No type resolving constraints for class System.Collections.Generic.IDictionary`2 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Validation/ModelValidation.cs (TU 620) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.ValidationContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Validation/ModelValidation.cs (TU 620) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.ValidationResult referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Validation/ModelValidation.cs (TU 620) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.Validator referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Validation/ModelValidation.cs (TU 620) was found
+No type resolving constraints for class System.Collections.Generic.IDictionary`2 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Validation/VLCMemberProfileValidation.cs (TU 621) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.ValidationContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Validation/VLCMemberProfileValidation.cs (TU 621) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.ValidationResult referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Validation/VLCMemberProfileValidation.cs (TU 621) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.Validator referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Source/ASA.Web.Services.ASAMemberService/Validation/VLCMemberProfileValidation.cs (TU 621) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.Assert referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ASAMemberTests.cs (TU 309) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ASAMemberTests.cs (TU 309) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.IgnoreAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ASAMemberTests.cs (TU 309) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ASAMemberTests.cs (TU 309) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ASAMemberTests.cs (TU 309) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ASAMemberTests.cs (TU 309) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ASAMemberTests.cs (TU 309) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ASAMemberTests.cs (TU 309) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ASAMemberTests.cs (TU 309) was found
+No type resolving constraints for class System.IO.MemoryStream referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ASAMemberTests.cs (TU 309) was found
+No type resolving constraints for class System.IO.Stream referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ASAMemberTests.cs (TU 309) was found
+No type resolving constraints for class System.IO.StreamWriter referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ASAMemberTests.cs (TU 309) was found
+No type resolving constraints for class System.IO.TextWriter referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ASAMemberTests.cs (TU 309) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ASAMemberTests.cs (TU 309) was found
+No type resolving constraints for class System.Uri referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ASAMemberTests.cs (TU 309) was found
+No type resolving constraints for class System.Web.HttpUtility referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ASAMemberTests.cs (TU 309) was found
+No type resolving constraints for class System.NotImplementedException referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/Stubs/MembershipProviderStub.cs (TU 310) was found
+No type resolving constraints for class System.Web.Security.MembershipProvider referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/Stubs/MembershipProviderStub.cs (TU 310) was found
+No type resolving constraints for class System.Web.Security.MembershipUser referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/Stubs/MembershipProviderStub.cs (TU 310) was found
+No type resolving constraints for class System.Web.Security.MembershipUserCollection referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/Stubs/MembershipProviderStub.cs (TU 310) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.Assert referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/Stubs/SecurityAdapterStub.cs (TU 311) was found
+No type resolving constraints for class System.NotImplementedException referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/Stubs/SecurityAdapterStub.cs (TU 311) was found
+No type resolving constraints for class System.Web.Security.MembershipUser referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/Stubs/SecurityAdapterStub.cs (TU 311) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.Assert referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/TranslateModelTests.cs (TU 313) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/TranslateModelTests.cs (TU 313) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/TranslateModelTests.cs (TU 313) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/TranslateModelTests.cs (TU 313) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/TranslateModelTests.cs (TU 313) was found
+No type resolving constraints for class SALTCoursesWSClient.CourseModel referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/TranslateModelTests.cs (TU 313) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/TranslateModelTests.cs (TU 313) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.Assert referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ValidationTests.cs (TU 314) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.IgnoreAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ValidationTests.cs (TU 314) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ValidationTests.cs (TU 314) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ValidationTests.cs (TU 314) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ValidationTests.cs (TU 314) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ValidationTests.cs (TU 314) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RegularExpressionAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Membership/Tests/ASA.Web.Services.ASAMemberService.Test/ValidationTests.cs (TU 314) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Source/ASA.Web.Services.ReminderService/DataContracts/ReminderListModel.cs (TU 227) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RangeAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Source/ASA.Web.Services.ReminderService/DataContracts/ReminderModel.cs (TU 228) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RegularExpressionAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Source/ASA.Web.Services.ReminderService/DataContracts/ReminderModel.cs (TU 228) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Source/ASA.Web.Services.ReminderService/DataContracts/ReminderModel.cs (TU 228) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.StringLengthAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Source/ASA.Web.Services.ReminderService/DataContracts/ReminderModel.cs (TU 228) was found
+No type resolving constraints for class System.ComponentModel.DefaultValueAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Source/ASA.Web.Services.ReminderService/DataContracts/ReminderModel.cs (TU 228) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Source/ASA.Web.Services.ReminderService/DataContracts/ReminderModel.cs (TU 228) was found
+No type resolving constraints for class System.Runtime.Serialization.SerializationInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Source/ASA.Web.Services.ReminderService/Exceptions/ReminderBadDataException.cs (TU 223) was found
+No type resolving constraints for class System.Runtime.Serialization.StreamingContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Source/ASA.Web.Services.ReminderService/Exceptions/ReminderBadDataException.cs (TU 223) was found
+No type resolving constraints for class System.SerializableAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Source/ASA.Web.Services.ReminderService/Exceptions/ReminderBadDataException.cs (TU 223) was found
+No type resolving constraints for class System.Runtime.Serialization.SerializationInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Source/ASA.Web.Services.ReminderService/Exceptions/ReminderMappingException.cs (TU 224) was found
+No type resolving constraints for class System.Runtime.Serialization.StreamingContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Source/ASA.Web.Services.ReminderService/Exceptions/ReminderMappingException.cs (TU 224) was found
+No type resolving constraints for class System.SerializableAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Source/ASA.Web.Services.ReminderService/Exceptions/ReminderMappingException.cs (TU 224) was found
+No type resolving constraints for class System.Runtime.Serialization.SerializationInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Source/ASA.Web.Services.ReminderService/Exceptions/ReminderOperationException.cs (TU 225) was found
+No type resolving constraints for class System.Runtime.Serialization.StreamingContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Source/ASA.Web.Services.ReminderService/Exceptions/ReminderOperationException.cs (TU 225) was found
+No type resolving constraints for class System.SerializableAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Source/ASA.Web.Services.ReminderService/Exceptions/ReminderOperationException.cs (TU 225) was found
+No type resolving constraints for class log4net.LogManager referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Source/ASA.Web.Services.ReminderService/ReminderAdapter.cs (TU 231) was found
+No type resolving constraints for class System.Globalization.CultureInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Source/ASA.Web.Services.ReminderService/TranslateReminderModel.cs (TU 226) was found
+No type resolving constraints for class System.IFormatProvider referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Source/ASA.Web.Services.ReminderService/TranslateReminderModel.cs (TU 226) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.Assert referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Tests/ASA.Web.Services.ReminderService.Tests/ReminderTests.cs (TU 317) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.IgnoreAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Tests/ASA.Web.Services.ReminderService.Tests/ReminderTests.cs (TU 317) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Tests/ASA.Web.Services.ReminderService.Tests/ReminderTests.cs (TU 317) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Tests/ASA.Web.Services.ReminderService.Tests/ReminderTests.cs (TU 317) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Tests/ASA.Web.Services.ReminderService.Tests/ReminderTests.cs (TU 317) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.Assert referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Tests/ASA.Web.Services.ReminderService.Tests/ValidationTests.cs (TU 318) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Tests/ASA.Web.Services.ReminderService.Tests/ValidationTests.cs (TU 318) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Tests/ASA.Web.Services.ReminderService.Tests/ValidationTests.cs (TU 318) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Tests/ASA.Web.Services.ReminderService.Tests/ValidationTests.cs (TU 318) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RangeAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Tests/ASA.Web.Services.ReminderService.Tests/ValidationTests.cs (TU 318) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RegularExpressionAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Tests/ASA.Web.Services.ReminderService.Tests/ValidationTests.cs (TU 318) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Tests/ASA.Web.Services.ReminderService.Tests/ValidationTests.cs (TU 318) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.StringLengthAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Reminder/Tests/ASA.Web.Services.ReminderService.Tests/ValidationTests.cs (TU 318) was found
+No type resolving constraints for class System.Collections.Hashtable referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Config.cs (TU 327) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/DataContracts/Location.cs (TU 320) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/DataContracts/OrganizationProductModel.cs (TU 321) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/DataContracts/SchoolProductModel.cs (TU 322) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/DataContracts/SearchQueryModel.cs (TU 323) was found
+No type resolving constraints for class System.Text.RegularExpressions.Regex referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/DataContracts/SearchQueryModel.cs (TU 323) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/DataContracts/SearchResultsModel.cs (TU 328) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/DataContracts/UnigoChoicesModel.cs (TU 324) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/EndecaUtility.cs (TU 325) was found
+No type resolving constraints for class System.Web.HttpUtility referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/EndecaUtility.cs (TU 325) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/MockSearchAdapter.cs (TU 329) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/MockSearchAdapter.cs (TU 329) was found
+No type resolving constraints for class System.NotImplementedException referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/MockSearchAdapter.cs (TU 329) was found
+No type resolving constraints for class Asa.Salt.Web.Common.Types.Enums.OrganizationTypes referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class Newtonsoft.Json.JsonConvert referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class Newtonsoft.Json.Linq.JEnumerable`1 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class Newtonsoft.Json.Linq.JObject referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class Newtonsoft.Json.Linq.JProperty referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class Newtonsoft.Json.Linq.JToken referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.Action`1 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2/KeyCollection referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.Enum referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.IO.File referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.IO.MemoryStream referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.IO.Stream referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.IO.StreamReader referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.IO.TextReader referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.Net.HttpWebResponse referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.Net.WebException referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.Net.WebRequest referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.Net.WebResponse referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.ObsoleteAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.Reflection.MemberInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.Reflection.MethodBase referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.Runtime.Serialization.Json.DataContractJsonSerializer referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.ServiceModel.Web.IncomingWebRequestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.ServiceModel.Web.OutgoingWebResponseContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.ServiceModel.Web.WebOperationContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.Text.Encoding referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.Uri referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.UriTemplateMatch referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.Web.Caching.Cache referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.Web.HttpServerUtility referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.Xml.XmlReader referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.Xml.XmlTextReader referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/Search.cs (TU 331) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/SearchAdapter.cs (TU 333) was found
+No type resolving constraints for class System.Random referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/SearchAdapter.cs (TU 333) was found
+No type resolving constraints for class System.Text.StringBuilder referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/SearchAdapter.cs (TU 333) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/ServiceContracts/ISearchAdapter.cs (TU 330) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/TranslateModel.cs (TU 326) was found
+No type resolving constraints for class Endeca.Data.Dimension referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/TranslateSearchResultsModel.cs (TU 334) was found
+No type resolving constraints for class Endeca.Data.DimensionValueCollection referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/TranslateSearchResultsModel.cs (TU 334) was found
+No type resolving constraints for class Endeca.Data.IAttributeValue referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/TranslateSearchResultsModel.cs (TU 334) was found
+No type resolving constraints for class Endeca.Data.NavigationResult referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/TranslateSearchResultsModel.cs (TU 334) was found
+No type resolving constraints for class Endeca.Data.PropertyMap referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/TranslateSearchResultsModel.cs (TU 334) was found
+No type resolving constraints for class Endeca.Data.Record referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/TranslateSearchResultsModel.cs (TU 334) was found
+No type resolving constraints for class Endeca.Data.RecordsResult referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/TranslateSearchResultsModel.cs (TU 334) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/TranslateSearchResultsModel.cs (TU 334) was found
+No type resolving constraints for class System.Collections.ObjectModel.ReadOnlyCollection`1 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Source/ASA.Web.Services.SearchService/TranslateSearchResultsModel.cs (TU 334) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.Assert referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Tests/ASA.Web.Services.SearchService.Tests/ServiceTests.cs (TU 345) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Tests/ASA.Web.Services.SearchService.Tests/ServiceTests.cs (TU 345) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Tests/ASA.Web.Services.SearchService.Tests/ServiceTests.cs (TU 345) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Tests/ASA.Web.Services.SearchService.Tests/ServiceTests.cs (TU 345) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Tests/ASA.Web.Services.SearchService.Tests/ServiceTests.cs (TU 345) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.Assert referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Tests/ASA.Web.Services.SearchService.Tests/ValidationTests.cs (TU 346) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Tests/ASA.Web.Services.SearchService.Tests/ValidationTests.cs (TU 346) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Tests/ASA.Web.Services.SearchService.Tests/ValidationTests.cs (TU 346) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Tests/ASA.Web.Services.SearchService.Tests/ValidationTests.cs (TU 346) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Tests/ASA.Web.Services.SearchService.Tests/ValidationTests.cs (TU 346) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RegularExpressionAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Tests/ASA.Web.Services.SearchService.Tests/ValidationTests.cs (TU 346) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.StringLengthAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Search/Tests/ASA.Web.Services.SearchService.Tests/ValidationTests.cs (TU 346) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/DataContracts/SelfReportedLoanListModel.cs (TU 209) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RangeAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/DataContracts/SelfReportedLoanModel.cs (TU 210) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RegularExpressionAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/DataContracts/SelfReportedLoanModel.cs (TU 210) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/DataContracts/SelfReportedLoanModel.cs (TU 210) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.StringLengthAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/DataContracts/SelfReportedLoanModel.cs (TU 210) was found
+No type resolving constraints for class System.ComponentModel.DefaultValueAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/DataContracts/SelfReportedLoanModel.cs (TU 210) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/DataContracts/SelfReportedLoanModel.cs (TU 210) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/MultiPartParser.cs (TU 211) was found
+No type resolving constraints for class System.Buffer referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/MultiPartParser.cs (TU 211) was found
+No type resolving constraints for class System.IO.MemoryStream referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/MultiPartParser.cs (TU 211) was found
+No type resolving constraints for class System.IO.Stream referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/MultiPartParser.cs (TU 211) was found
+No type resolving constraints for class System.Text.Encoding referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/MultiPartParser.cs (TU 211) was found
+No type resolving constraints for class System.Text.RegularExpressions.Capture referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/MultiPartParser.cs (TU 211) was found
+No type resolving constraints for class System.Text.RegularExpressions.Group referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/MultiPartParser.cs (TU 211) was found
+No type resolving constraints for class System.Text.RegularExpressions.Match referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/MultiPartParser.cs (TU 211) was found
+No type resolving constraints for class System.Text.RegularExpressions.Regex referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/MultiPartParser.cs (TU 211) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/SelfReported.cs (TU 213) was found
+No type resolving constraints for class System.IO.Stream referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/SelfReported.cs (TU 213) was found
+No type resolving constraints for class System.IO.StreamReader referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/SelfReported.cs (TU 213) was found
+No type resolving constraints for class System.Reflection.MemberInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/SelfReported.cs (TU 213) was found
+No type resolving constraints for class System.Reflection.MethodBase referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/SelfReported.cs (TU 213) was found
+No type resolving constraints for class System.Text.Encoding referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/SelfReported.cs (TU 213) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/SelfReported.cs (TU 213) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/TranslateSelfReportedModel.cs (TU 216) was found
+No type resolving constraints for class System.Globalization.CultureInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/TranslateSelfReportedModel.cs (TU 216) was found
+No type resolving constraints for class System.IFormatProvider referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/TranslateSelfReportedModel.cs (TU 216) was found
+No type resolving constraints for class System.CodeDom.Compiler.GeneratedCodeAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/Validation/ErrorMessages.Designer.cs (TU 217) was found
+No type resolving constraints for class System.ComponentModel.EditorBrowsableAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/Validation/ErrorMessages.Designer.cs (TU 217) was found
+No type resolving constraints for class System.Diagnostics.CodeAnalysis.SuppressMessageAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/Validation/ErrorMessages.Designer.cs (TU 217) was found
+No type resolving constraints for class System.Diagnostics.DebuggerNonUserCodeAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/Validation/ErrorMessages.Designer.cs (TU 217) was found
+No type resolving constraints for class System.Globalization.CultureInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/Validation/ErrorMessages.Designer.cs (TU 217) was found
+No type resolving constraints for class System.Reflection.Assembly referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/Validation/ErrorMessages.Designer.cs (TU 217) was found
+No type resolving constraints for class System.Resources.ResourceManager referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/Validation/ErrorMessages.Designer.cs (TU 217) was found
+No type resolving constraints for class System.Runtime.CompilerServices.CompilerGeneratedAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/Validation/ErrorMessages.Designer.cs (TU 217) was found
+No type resolving constraints for class System.Type referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Source/ASA.Web.Services.SelfReportedService/Validation/ErrorMessages.Designer.cs (TU 217) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.Assert referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Test/ASA.Web.Services.SelfReportedService.Tests/ServiceTests.cs (TU 236) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Test/ASA.Web.Services.SelfReportedService.Tests/ServiceTests.cs (TU 236) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Test/ASA.Web.Services.SelfReportedService.Tests/ServiceTests.cs (TU 236) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Test/ASA.Web.Services.SelfReportedService.Tests/ServiceTests.cs (TU 236) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Test/ASA.Web.Services.SelfReportedService.Tests/ServiceTests.cs (TU 236) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.Assert referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Test/ASA.Web.Services.SelfReportedService.Tests/ValidationTests.cs (TU 237) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Test/ASA.Web.Services.SelfReportedService.Tests/ValidationTests.cs (TU 237) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Test/ASA.Web.Services.SelfReportedService.Tests/ValidationTests.cs (TU 237) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Test/ASA.Web.Services.SelfReportedService.Tests/ValidationTests.cs (TU 237) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RangeAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Test/ASA.Web.Services.SelfReportedService.Tests/ValidationTests.cs (TU 237) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RegularExpressionAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Test/ASA.Web.Services.SelfReportedService.Tests/ValidationTests.cs (TU 237) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Test/ASA.Web.Services.SelfReportedService.Tests/ValidationTests.cs (TU 237) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.StringLengthAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/SelfReported/Test/ASA.Web.Services.SelfReportedService.Tests/ValidationTests.cs (TU 237) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/DataContracts/CostOfLivingModels.cs (TU 287) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/DataContracts/CostOfLivingModels.cs (TU 287) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/DataContracts/JSIQuizListModel.cs (TU 289) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/DataContracts/JSIQuizModel.cs (TU 290) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/DataContracts/JellyVisionQuizResponseModel.cs (TU 288) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.StringLengthAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/DataContracts/JellyVisionQuizResponseModel.cs (TU 288) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/DataContracts/SurveyListModel.cs (TU 297) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RegularExpressionAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/DataContracts/SurveyModel.cs (TU 298) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/DataContracts/SurveyModel.cs (TU 298) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.StringLengthAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/DataContracts/SurveyModel.cs (TU 298) was found
+No type resolving constraints for class System.ComponentModel.DefaultValueAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/DataContracts/SurveyModel.cs (TU 298) was found
+No type resolving constraints for class System.ComponentModel.DisplayNameAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/DataContracts/SurveyModel.cs (TU 298) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/DataContracts/VLCQuestionModel.cs (TU 291) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.StringLengthAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/DataContracts/VLCQuestionModel.cs (TU 291) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/DataContracts/VLCQuestionResponseModel.cs (TU 292) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.StringLengthAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/DataContracts/VLCQuestionResponseModel.cs (TU 292) was found
+No type resolving constraints for class System.ComponentModel.DefaultValueAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/DataContracts/VLCQuestionResponseModel.cs (TU 292) was found
+No type resolving constraints for class System.Runtime.Serialization.SerializationInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Exceptions/SurveyBadDataException.cs (TU 293) was found
+No type resolving constraints for class System.Runtime.Serialization.StreamingContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Exceptions/SurveyBadDataException.cs (TU 293) was found
+No type resolving constraints for class System.SerializableAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Exceptions/SurveyBadDataException.cs (TU 293) was found
+No type resolving constraints for class System.Runtime.Serialization.SerializationInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Exceptions/SurveyMappingException.cs (TU 294) was found
+No type resolving constraints for class System.Runtime.Serialization.StreamingContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Exceptions/SurveyMappingException.cs (TU 294) was found
+No type resolving constraints for class System.SerializableAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Exceptions/SurveyMappingException.cs (TU 294) was found
+No type resolving constraints for class System.Runtime.Serialization.SerializationInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Exceptions/SurveyOperationException.cs (TU 295) was found
+No type resolving constraints for class System.Runtime.Serialization.StreamingContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Exceptions/SurveyOperationException.cs (TU 295) was found
+No type resolving constraints for class System.SerializableAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Exceptions/SurveyOperationException.cs (TU 295) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Survey.cs (TU 299) was found
+No type resolving constraints for class System.Net.WebHeaderCollection referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Survey.cs (TU 299) was found
+No type resolving constraints for class System.ServiceModel.Web.OutgoingWebResponseContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Survey.cs (TU 299) was found
+No type resolving constraints for class System.ServiceModel.Web.WebOperationContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Survey.cs (TU 299) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/SurveyAdapter.cs (TU 301) was found
+No type resolving constraints for class System.Collections.Generic.Dictionary`2 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/SurveyAdapter.cs (TU 301) was found
+No type resolving constraints for class System.Globalization.CultureInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/SurveyAdapter.cs (TU 301) was found
+No type resolving constraints for class System.IFormatProvider referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/SurveyAdapter.cs (TU 301) was found
+No type resolving constraints for class log4net.LogManager referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/SurveyAdapter.cs (TU 301) was found
+No type resolving constraints for class System.Globalization.CultureInfo referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/TranslateSurveyModel.cs (TU 296) was found
+No type resolving constraints for class System.IFormatProvider referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/TranslateSurveyModel.cs (TU 296) was found
+No type resolving constraints for class System.Web.HttpUtility referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/TranslateSurveyModel.cs (TU 296) was found
+No type resolving constraints for class System.Collections.Generic.IDictionary`2 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Validation/JellyVisionQuizResponseValidation.cs (TU 304) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.ValidationContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Validation/JellyVisionQuizResponseValidation.cs (TU 304) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.ValidationResult referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Validation/JellyVisionQuizResponseValidation.cs (TU 304) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.Validator referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Validation/JellyVisionQuizResponseValidation.cs (TU 304) was found
+No type resolving constraints for class System.Collections.Generic.IDictionary`2 referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Validation/VLCQuestionResponseValidation.cs (TU 306) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.ValidationContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Validation/VLCQuestionResponseValidation.cs (TU 306) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.ValidationResult referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Validation/VLCQuestionResponseValidation.cs (TU 306) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.Validator referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Source/ASA.Web.Services.SurveyService/Validation/VLCQuestionResponseValidation.cs (TU 306) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.Assert referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Tests/ASA.Web.Services.SurveyService.Tests/SurveyTests.cs (TU 356) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Tests/ASA.Web.Services.SurveyService.Tests/SurveyTests.cs (TU 356) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Tests/ASA.Web.Services.SurveyService.Tests/SurveyTests.cs (TU 356) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Tests/ASA.Web.Services.SurveyService.Tests/SurveyTests.cs (TU 356) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Tests/ASA.Web.Services.SurveyService.Tests/SurveyTests.cs (TU 356) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.Assert referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Tests/ASA.Web.Services.SurveyService.Tests/TranslateModelTests.cs (TU 357) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Tests/ASA.Web.Services.SurveyService.Tests/TranslateModelTests.cs (TU 357) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Tests/ASA.Web.Services.SurveyService.Tests/TranslateModelTests.cs (TU 357) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Tests/ASA.Web.Services.SurveyService.Tests/TranslateModelTests.cs (TU 357) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Tests/ASA.Web.Services.SurveyService.Tests/TranslateModelTests.cs (TU 357) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.Assert referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Tests/ASA.Web.Services.SurveyService.Tests/ValidationTests.cs (TU 358) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Tests/ASA.Web.Services.SurveyService.Tests/ValidationTests.cs (TU 358) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Tests/ASA.Web.Services.SurveyService.Tests/ValidationTests.cs (TU 358) was found
+No type resolving constraints for class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Tests/ASA.Web.Services.SurveyService.Tests/ValidationTests.cs (TU 358) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RegularExpressionAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Tests/ASA.Web.Services.SurveyService.Tests/ValidationTests.cs (TU 358) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.RequiredAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Tests/ASA.Web.Services.SurveyService.Tests/ValidationTests.cs (TU 358) was found
+No type resolving constraints for class System.ComponentModel.DataAnnotations.StringLengthAttribute referenced from C:/SOA/wksp_03/SOA/Web/SAL/SALServices/Survey/Tests/ASA.Web.Services.SurveyService.Tests/ValidationTests.cs (TU 358) was found
+No type resolving constraints for class System.CodeDom.Compiler.GeneratedCodeAttribute referenced from C:/SOA/wksp_03/SOA/Web/SALTService/Common.Types/Constants/LessonQuestion.generated.cs (TU 70) was found
+No type resolving constraints for class System.CodeDom.Compiler.GeneratedCodeAttribute referenced from C:/SOA/wksp_03/SOA/Web/SALTService/Common.Types/Constants/LessonQuestionAttribute.generated.cs (TU 71) was found
+No type resolving constraints for class System.CodeDom.Compiler.GeneratedCodeAttribute referenced from C:/SOA/wksp_03/SOA/Web/SALTService/Common.Types/Constants/LessonStep1.generated.cs (TU 67) was found
+No type resolving constraints for class Microsoft.Practices.Unity.IUnityContainer referenced from C:/SOA/wksp_03/SOA/Web/SALTService/Common.Types/Unity/LazyResolver.cs (TU 87) was found
+No type resolving constraints for class Microsoft.Practices.Unity.ResolverOverride referenced from C:/SOA/wksp_03/SOA/Web/SALTService/Common.Types/Unity/LazyResolver.cs (TU 87) was found
+No type resolving constraints for class Microsoft.Practices.Unity.UnityContainerExtensions referenced from C:/SOA/wksp_03/SOA/Web/SALTService/Common.Types/Unity/LazyResolver.cs (TU 87) was found
+No type resolving constraints for class System.Array referenced from C:/SOA/wksp_03/SOA/Web/SALTService/Common.Types/Unity/LazyResolver.cs (TU 87) was found
+Generated classes:
+public class ASA.Web.Services.SALHost.Global_Accessor {
+  public virtual void Application_End(System.Object, System.EventArgs);
+  public virtual void Application_Start();
+  public Global_Accessor();
+}
+public enum ASA.Web.WTF.MemberCreationStatus {
+}
+public enum Asa.Salt.Web.Common.Types.Enums.LessonUpdateStatus {
+}
+public enum Asa.Salt.Web.Common.Types.Enums.LoanInterestRateType {
+}
+public enum Asa.Salt.Web.Common.Types.Enums.MemberUpdateStatus {
+}
+public enum Asa.Salt.Web.Common.Types.Enums.OrganizationTypes {
+}
+public class Endeca.Data.Dimension {
+  public virtual System.String get_Name();
+}
+public class Endeca.Data.DimensionValueCollection {
+  public virtual System.Collections.Generic.IEnumerable<Endeca.Data.Dimension> get_Dimensions();
+}
+public interface Endeca.Data.IAttributeValue {
+  virtual System.String get_Value();
+}
+public class Endeca.Data.NavigationResult {
+  public virtual Endeca.Data.RecordsResult get_RecordsResult();
+}
+public class Endeca.Data.PropertyMap {
+  public virtual System.Collections.ObjectModel.ReadOnlyCollection<Endeca.Data.IAttributeValue> ByKey(System.String);
+  public virtual System.Collections.Generic.IEnumerable<System.String> get_Keys();
+}
+public class Endeca.Data.Record {
+  public virtual Endeca.Data.DimensionValueCollection get_DimensionValues();
+  public virtual System.String get_Item(System.String);
+  public virtual Endeca.Data.PropertyMap get_Properties();
+}
+public class Endeca.Data.RecordsResult {
+  public virtual System.Collections.ObjectModel.ReadOnlyCollection<Endeca.Data.Record> get_Records();
+  public virtual long get_TotalRecordCount();
+}
+public interface Microsoft.Practices.Unity.IUnityContainer {
+}
+public abstract class Microsoft.Practices.Unity.ResolverOverride {
+}
+public static sealed class Microsoft.Practices.Unity.UnityContainerExtensions {
+  public static T Resolve<T>(Microsoft.Practices.Unity.IUnityContainer, Microsoft.Practices.Unity.ResolverOverride[]);
+  public static T Resolve<T>(Microsoft.Practices.Unity.IUnityContainer, System.String, Microsoft.Practices.Unity.ResolverOverride[]);
+}
+public static sealed class Microsoft.VisualStudio.TestTools.UnitTesting.Assert {
+  public static void AreEqual(System.Object, System.Object);
+  public static void AreEqual<T>(T, T);
+  public static void AreEqual<T>(T, T, System.String);
+  public static void IsFalse(bool);
+  public static void IsFalse(bool, System.String);
+  public static void IsNotNull(System.Object);
+  public static void IsNotNull(System.Object, System.String);
+  public static void IsNull(System.Object, System.String);
+  public static void IsTrue(bool);
+  public static void IsTrue(bool, System.String);
+}
+public sealed class Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute {
+  public ClassInitializeAttribute();
+}
+public sealed class Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute {
+  public ExpectedExceptionAttribute(System.Type);
+  public ExpectedExceptionAttribute(System.Type, System.String);
+}
+public sealed class Microsoft.VisualStudio.TestTools.UnitTesting.IgnoreAttribute {
+  public IgnoreAttribute();
+}
+public sealed class Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute {
+  public TestCategoryAttribute(System.String);
+}
+public sealed class Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute {
+  public TestClassAttribute();
+}
+public abstract class Microsoft.VisualStudio.TestTools.UnitTesting.TestContext {
+}
+public sealed class Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute {
+  public TestInitializeAttribute();
+}
+public sealed class Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute {
+  public TestMethodAttribute();
+}
+public static sealed class Newtonsoft.Json.JsonConvert {
+  public static T DeserializeObject<T>(System.String);
+  public static System.String SerializeObject(System.Object);
+}
+public sealed struct Newtonsoft.Json.Linq.JEnumerable<T0> {
+  public virtual System.Collections.Generic.IEnumerator<T> GetEnumerator();
+}
+public class Newtonsoft.Json.Linq.JObject {
+  public virtual Newtonsoft.Json.Linq.JToken get_Item(System.String);
+  public virtual void set_Item(System.String, Newtonsoft.Json.Linq.JToken);
+  public JObject();
+  public static Newtonsoft.Json.Linq.JObject Parse(System.String);
+}
+public class Newtonsoft.Json.Linq.JProperty {
+  public virtual Newtonsoft.Json.Linq.JToken get_Value();
+}
+public abstract class Newtonsoft.Json.Linq.JToken {
+  public virtual Newtonsoft.Json.Linq.JEnumerable<Newtonsoft.Json.Linq.JToken> Children();
+  public virtual Newtonsoft.Json.Linq.JEnumerable<T> Children<T>();
+  public virtual System.String ToString();
+  public virtual Newtonsoft.Json.Linq.JToken get_Item(System.Object);
+  public virtual Newtonsoft.Json.Linq.JTokenType get_Type();
+  public virtual void set_Item(System.Object, Newtonsoft.Json.Linq.JToken);
+  public static explicit operator string(Newtonsoft.Json.Linq.JToken);
+  public static implicit operator JToken(bool);
+  public static implicit operator JToken(int);
+  public static implicit operator JToken(System.DateTime?);
+}
+public class SALTCoursesWSClient.CourseModel {
+  public virtual int get_classid();
+  public virtual int get_completestatusid();
+  public virtual System.String get_contentid();
+  public virtual int get_credits();
+  public virtual System.String get_fullname();
+  public virtual double get_grade();
+  public virtual int get_id();
+  public virtual System.String get_idnumber();
+  public virtual System.String get_shortname();
+  public virtual int get_userid();
+  public virtual void set_classid(int);
+  public virtual void set_completestatusid(int);
+  public virtual void set_contentid(System.String);
+  public virtual void set_credits(int);
+  public virtual void set_fullname(System.String);
+  public virtual void set_grade(double);
+  public virtual void set_id(int);
+  public virtual void set_idnumber(System.String);
+  public virtual void set_shortname(System.String);
+  public virtual void set_userid(int);
+  public CourseModel();
+}
+public class SALTCoursesWSClient.MoodleUser {
+  public virtual System.Collections.Generic.List<SALTCoursesWSClient.CourseModel> BuildCoursesFromConfig();
+  public virtual System.Collections.Generic.List<SALTCoursesWSClient.CourseModel> GetUserCourses(bool);
+  public MoodleUser(System.String);
+}
+public sealed delegate System.Action {
+}
+public sealed delegate System.Action<T0> {
+  public virtual void Invoke(T);
+}
+public sealed class System.Activator {
+  public static System.Object CreateInstance(System.Type);
+}
+public abstract class System.Array {
+  public static int IndexOf<T>(T[], T, int);
+}
+public sealed delegate System.AsyncCallback {
+}
+public sealed class System.AttributeUsageAttribute {
+  public AttributeUsageAttribute(System.AttributeTargets);
+}
+public sealed struct System.Boolean {
+  public virtual int CompareTo(bool);
+  public virtual bool Equals(bool);
+  public static bool Parse(System.String);
+  public static bool TryParse(System.String, out bool);
+}
+public static sealed class System.Buffer {
+  public static void BlockCopy(System.Array, int, System.Array, int, int);
+}
+public sealed struct System.Byte {
+  public virtual bool Equals(byte);
+}
+public sealed struct System.Char {
+}
+public sealed class System.CodeDom.Compiler.GeneratedCodeAttribute {
+  public GeneratedCodeAttribute(System.String, System.String);
+}
+public class System.Collections.Generic.Dictionary<T0,T1> {
+  public virtual void Add(TKey, TValue);
+  public virtual bool ContainsKey(TKey);
+  public virtual int get_Count();
+  public virtual TValue get_Item(TKey);
+  public virtual System.Collections.Generic.Dictionary<TKey,TValue>.KeyCollection get_Keys();
+  public virtual void set_Item(TKey, TValue);
+  public Dictionary();
+}
+public sealed class System.Collections.Generic.Dictionary`2.KeyCollection {
+  public virtual System.Collections.Generic.Dictionary<TKey,TValue>.KeyCollection.Enumerator GetEnumerator();
+}
+public sealed struct System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator {
+  public virtual void Dispose();
+  public virtual bool MoveNext();
+  public virtual TKey get_Current();
+}
+public interface System.Collections.Generic.IDictionary<T0,T1> {
+}
+public class System.Collections.Hashtable {
+  public virtual System.Object get_Item(System.Object);
+}
+public interface System.Collections.IDictionary {
+  virtual void Add(System.Object, System.Object);
+  virtual bool Contains(System.Object);
+  virtual void Remove(System.Object);
+  virtual System.Object get_Item(System.Object);
+  virtual void set_Item(System.Object, System.Object);
+}
+public class System.Collections.ObjectModel.Collection<T0> {
+  public virtual void Add(T);
+  public virtual System.Collections.Generic.IEnumerator<T> GetEnumerator();
+}
+public class System.Collections.ObjectModel.ReadOnlyCollection<T0> {
+  public virtual System.Collections.Generic.IEnumerator<T> GetEnumerator();
+}
+public sealed class System.ComponentModel.BrowsableAttribute {
+  public BrowsableAttribute(bool);
+}
+public class System.ComponentModel.Component {
+  public virtual void Dispose();
+}
+public class System.ComponentModel.DataAnnotations.DataTypeAttribute {
+  public DataTypeAttribute(System.ComponentModel.DataAnnotations.DataType);
+}
+public class System.ComponentModel.DataAnnotations.RangeAttribute {
+  public virtual bool IsValid(System.Object);
+  public RangeAttribute(double, double);
+  public RangeAttribute(int, int);
+}
+public class System.ComponentModel.DataAnnotations.RegularExpressionAttribute {
+  public virtual bool IsValid(System.Object);
+  public RegularExpressionAttribute(System.String);
+}
+public class System.ComponentModel.DataAnnotations.RequiredAttribute {
+  public virtual bool IsValid(System.Object);
+  public RequiredAttribute();
+}
+public class System.ComponentModel.DataAnnotations.StringLengthAttribute {
+  public virtual bool IsValid(System.Object);
+  public virtual void set_MinimumLength(int);
+  public StringLengthAttribute(int);
+}
+public abstract class System.ComponentModel.DataAnnotations.ValidationAttribute {
+  public ValidationAttribute();
+}
+public sealed class System.ComponentModel.DataAnnotations.ValidationContext {
+  public ValidationContext(System.Object, System.IServiceProvider, System.Collections.Generic.IDictionary<System.Object,System.Object>);
+}
+public class System.ComponentModel.DataAnnotations.ValidationResult {
+  public virtual System.String get_ErrorMessage();
+  public virtual System.Collections.Generic.IEnumerable<System.String> get_MemberNames();
+}
+public static sealed class System.ComponentModel.DataAnnotations.Validator {
+  public static bool TryValidateObject(System.Object, System.ComponentModel.DataAnnotations.ValidationContext, System.Collections.Generic.ICollection<System.ComponentModel.DataAnnotations.ValidationResult>, bool);
+}
+public class System.ComponentModel.DefaultValueAttribute {
+  public DefaultValueAttribute(int);
+  public DefaultValueAttribute(System.String);
+}
+public class System.ComponentModel.DescriptionAttribute {
+  public virtual System.String get_Description();
+  public DescriptionAttribute(System.String);
+}
+public class System.ComponentModel.DisplayNameAttribute {
+  public DisplayNameAttribute(System.String);
+}
+public sealed class System.ComponentModel.EditorBrowsableAttribute {
+  public EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState);
+}
+public interface System.ComponentModel.INotifyPropertyChanged {
+}
+public class System.ComponentModel.PropertyChangedEventArgs {
+  public PropertyChangedEventArgs(System.String);
+}
+public sealed delegate System.ComponentModel.PropertyChangedEventHandler {
+  public virtual void Invoke(System.Object, System.ComponentModel.PropertyChangedEventArgs);
+}
+public abstract class System.ComponentModel.PropertyDescriptor {
+  public virtual System.Object GetValue(System.Object);
+}
+public class System.ComponentModel.PropertyDescriptorCollection {
+  public virtual System.ComponentModel.PropertyDescriptor Find(System.String, bool);
+}
+public sealed class System.ComponentModel.TypeDescriptor {
+  public static System.ComponentModel.PropertyDescriptorCollection GetProperties(System.Object);
+}
+public abstract class System.Configuration.ApplicationSettingsBase {
+  public ApplicationSettingsBase();
+}
+public sealed class System.Configuration.ConfigurationCollectionAttribute {
+  public ConfigurationCollectionAttribute(System.Type);
+}
+public abstract class System.Configuration.ConfigurationElement {
+  public virtual System.Object get_Item(System.String);
+  public virtual void set_Item(System.String, System.Object);
+  public ConfigurationElement();
+}
+public abstract class System.Configuration.ConfigurationElementCollection {
+  public virtual void BaseAdd(System.Configuration.ConfigurationElement);
+  public virtual void BaseAdd(int, System.Configuration.ConfigurationElement);
+  public virtual System.Configuration.ConfigurationElement BaseGet(int);
+  public virtual System.Configuration.ConfigurationElement BaseGet(System.Object);
+  public virtual void BaseRemove(System.Object);
+  public virtual void BaseRemoveAt(int);
+  public virtual System.Collections.IEnumerator GetEnumerator();
+  public ConfigurationElementCollection();
+}
+public sealed class System.Configuration.ConfigurationPropertyAttribute {
+  public ConfigurationPropertyAttribute(System.String);
+}
+public abstract class System.Configuration.ConfigurationSection {
+  public ConfigurationSection();
+}
+public abstract class System.Configuration.Provider.ProviderBase {
+  public virtual System.String get_Description();
+  public virtual System.String get_Name();
+}
+public abstract class System.Configuration.SettingsBase {
+  public static System.Configuration.SettingsBase Synchronized(System.Configuration.SettingsBase);
+}
+public class System.Data.DataTable {
+}
+public sealed struct System.Decimal {
+  public virtual bool Equals(decimal);
+}
+public sealed class System.Diagnostics.CodeAnalysis.SuppressMessageAttribute {
+  public SuppressMessageAttribute(System.String, System.String);
+}
+public sealed class System.Diagnostics.DebuggerNonUserCodeAttribute {
+  public DebuggerNonUserCodeAttribute();
+}
+public sealed class System.Diagnostics.DebuggerStepThroughAttribute {
+  public DebuggerStepThroughAttribute();
+}
+public class System.DirectoryServices.DirectoryEntries {
+  public virtual System.DirectoryServices.DirectoryEntry Find(System.String);
+}
+public class System.DirectoryServices.DirectoryEntry {
+  public virtual void Close();
+  public virtual void CommitChanges();
+  public virtual System.Object Invoke(System.String, System.Object[]);
+  public virtual void RefreshCache();
+  public virtual void Rename(System.String);
+  public virtual System.DirectoryServices.DirectoryEntries get_Children();
+  public virtual System.String get_NativeGuid();
+  public virtual System.DirectoryServices.PropertyCollection get_Properties();
+  public DirectoryEntry(System.String, System.String, System.String, System.DirectoryServices.AuthenticationTypes);
+}
+public class System.DirectoryServices.DirectorySearcher {
+  public virtual System.DirectoryServices.SearchResult FindOne();
+  public virtual void set_Filter(System.String);
+  public virtual void set_SearchScope(System.DirectoryServices.SearchScope);
+  public DirectorySearcher(System.DirectoryServices.DirectoryEntry);
+}
+public class System.DirectoryServices.DirectoryServicesCOMException {
+}
+public sealed class System.DirectoryServices.DirectoryServicesPermission {
+  public DirectoryServicesPermission(System.Security.Permissions.PermissionState);
+}
+public class System.DirectoryServices.DirectoryServicesPermissionAttribute {
+  public DirectoryServicesPermissionAttribute(System.Security.Permissions.SecurityAction);
+}
+public class System.DirectoryServices.PropertyCollection {
+  public virtual System.DirectoryServices.PropertyValueCollection get_Item(System.String);
+}
+public class System.DirectoryServices.PropertyValueCollection {
+  public virtual int Add(System.Object);
+  public virtual void Remove(System.Object);
+  public virtual void set_Value(System.Object);
+}
+public class System.DirectoryServices.SearchResult {
+  public virtual System.DirectoryServices.DirectoryEntry GetDirectoryEntry();
+}
+public sealed struct System.Double {
+  public virtual bool Equals(double);
+}
+public abstract class System.Enum {
+  public virtual bool Equals(System.Object);
+  public virtual System.String ToString();
+}
+public class System.EventArgs {
+  public static System.EventArgs Empty;
+}
+public sealed delegate System.EventHandler {
+  public virtual void Invoke(System.Object, System.EventArgs);
+}
+public sealed delegate System.Func<T0> {
+  public virtual System.IAsyncResult BeginInvoke(System.AsyncCallback, System.Object);
+  public virtual TResult EndInvoke(System.IAsyncResult);
+}
+public static sealed class System.GC {
+  public static void SuppressFinalize(System.Object);
+}
+public class System.Globalization.CultureInfo {
+  public static System.Globalization.CultureInfo get_InvariantCulture();
+}
+public interface System.IAsyncResult {
+}
+public interface System.IFormatProvider {
+}
+public static sealed class System.IO.File {
+  public static bool Exists(System.String);
+}
+public class System.IO.FileNotFoundException {
+}
+public class System.IO.MemoryStream {
+  public virtual byte[] ToArray();
+  public virtual void Write(byte[], int, int);
+  public MemoryStream();
+  public MemoryStream(byte[]);
+}
+public abstract class System.IO.Stream {
+  public virtual void Close();
+  public virtual void Dispose();
+  public virtual int Read(byte[], int, int);
+  public virtual void Write(byte[], int, int);
+}
+public class System.IO.StreamReader {
+  public virtual void Close();
+  public virtual System.String ReadToEnd();
+  public StreamReader(System.IO.Stream);
+  public StreamReader(System.IO.Stream, bool);
+  public StreamReader(System.IO.Stream, System.Text.Encoding);
+  public StreamReader(System.String);
+}
+public class System.IO.StreamWriter {
+  public StreamWriter(System.IO.Stream);
+}
+public abstract class System.IO.TextReader {
+  public virtual void Dispose();
+}
+public abstract class System.IO.TextWriter {
+}
+public sealed struct System.Int16 {
+  public virtual bool Equals(short);
+}
+public class System.InvalidOperationException {
+  public InvalidOperationException(System.String);
+}
+public abstract class System.Linq.Expressions.Expression {
+}
+public sealed class System.Linq.Expressions.Expression<T0> {
+  public virtual TDelegate Compile();
+}
+public abstract class System.Linq.Expressions.LambdaExpression {
+  public virtual System.Linq.Expressions.Expression get_Body();
+}
+public class System.Linq.Expressions.MethodCallExpression {
+  public virtual System.Reflection.MethodInfo get_Method();
+}
+public interface System.Linq.IOrderedEnumerable<T0> {
+}
+public class System.Net.HttpWebRequest {
+  public virtual System.IO.Stream GetRequestStream();
+  public virtual System.Net.WebResponse GetResponse();
+  public virtual void set_ContentLength(long);
+  public virtual void set_ContentType(System.String);
+  public virtual void set_KeepAlive(bool);
+  public virtual void set_Method(System.String);
+  public virtual void set_Timeout(int);
+}
+public class System.Net.HttpWebResponse {
+  public virtual System.IO.Stream GetResponseStream();
+}
+public class System.Net.Mail.MailAddressCollection {
+}
+public class System.Net.Mail.SmtpClient {
+  public virtual void Dispose();
+  public virtual void Send(System.Net.Mail.MailMessage);
+  public SmtpClient(System.String, int);
+}
+public class System.Net.WebException {
+  public WebException(System.String);
+}
+public class System.Net.WebHeaderCollection {
+  public virtual void Add(System.Net.HttpResponseHeader, System.String);
+  public virtual void Add(System.String, System.String);
+  public virtual System.String GetKey(int);
+  public virtual System.String[] GetValues(System.String);
+  public virtual int get_Count();
+}
+public abstract class System.Net.WebRequest {
+  public virtual System.Net.WebResponse GetResponse();
+  public static System.Net.WebRequest Create(System.String);
+}
+public abstract class System.Net.WebResponse {
+  public virtual void System.IDisposable.Dispose();
+}
+public sealed class System.NonSerializedAttribute {
+  public NonSerializedAttribute();
+}
+public class System.NotImplementedException {
+  public NotImplementedException();
+}
+public sealed class System.ObsoleteAttribute {
+  public ObsoleteAttribute(System.String);
+}
+public sealed delegate System.Predicate<T0> {
+}
+public class System.Random {
+  public virtual int Next(int, int);
+  public Random();
+}
+public abstract class System.Reflection.Assembly {
+  public virtual System.String get_Location();
+  public static System.Reflection.Assembly GetExecutingAssembly();
+}
+public abstract class System.Reflection.FieldInfo {
+}
+public abstract class System.Reflection.MemberInfo {
+  public virtual System.Object[] GetCustomAttributes(System.Type, bool);
+  public virtual System.Type get_DeclaringType();
+  public virtual System.String get_Name();
+}
+public abstract class System.Reflection.MethodBase {
+  public static System.Reflection.MethodBase GetCurrentMethod();
+}
+public abstract class System.Reflection.MethodInfo {
+}
+public abstract class System.Reflection.PropertyInfo {
+  public virtual System.Object GetValue(System.Object, System.Object[]);
+  public virtual void SetValue(System.Object, System.Object, System.Object[]);
+}
+public class System.Resources.ResourceManager {
+  public virtual System.String GetString(System.String, System.Globalization.CultureInfo);
+  public ResourceManager(System.String, System.Reflection.Assembly);
+}
+public sealed class System.Runtime.CompilerServices.CompilerGeneratedAttribute {
+  public CompilerGeneratedAttribute();
+}
+public class System.Runtime.InteropServices.COMException {
+}
+public sealed class System.Runtime.Serialization.DataContractAttribute {
+  public DataContractAttribute();
+}
+public sealed class System.Runtime.Serialization.DataMemberAttribute {
+  public DataMemberAttribute();
+}
+public sealed class System.Runtime.Serialization.ExtensionDataObject {
+}
+public interface System.Runtime.Serialization.IExtensibleDataObject {
+}
+public sealed class System.Runtime.Serialization.Json.DataContractJsonSerializer {
+  public virtual void WriteObject(System.IO.Stream, System.Object);
+  public DataContractJsonSerializer(System.Type);
+}
+public sealed class System.Runtime.Serialization.KnownTypeAttribute {
+  public KnownTypeAttribute(System.Type);
+}
+public sealed class System.Runtime.Serialization.OptionalFieldAttribute {
+  public OptionalFieldAttribute();
+}
+public sealed class System.Runtime.Serialization.SerializationInfo {
+  public virtual void AddValue(System.String, bool);
+  public virtual void AddValue(System.String, System.DateTime);
+  public virtual void AddValue(System.String, int);
+  public virtual void AddValue(System.String, System.Object);
+  public virtual bool GetBoolean(System.String);
+  public virtual System.DateTime GetDateTime(System.String);
+  public virtual short GetInt16(System.String);
+  public virtual int GetInt32(System.String);
+  public virtual System.String GetString(System.String);
+  public virtual System.Object GetValue(System.String, System.Type);
+}
+public sealed struct System.Runtime.Serialization.StreamingContext {
+}
+public abstract class System.Security.CodeAccessPermission {
+  public virtual void Assert();
+}
+public sealed class System.Security.Permissions.PermissionSetAttribute {
+  public PermissionSetAttribute(System.Security.Permissions.SecurityAction);
+}
+public interface System.Security.Principal.IIdentity {
+  virtual bool get_IsAuthenticated();
+  virtual System.String get_Name();
+}
+public interface System.Security.Principal.IPrincipal {
+  virtual System.Security.Principal.IIdentity get_Identity();
+}
+public sealed class System.Security.SecuritySafeCriticalAttribute {
+  public SecuritySafeCriticalAttribute();
+}
+public sealed class System.SerializableAttribute {
+  public SerializableAttribute();
+}
+public abstract class System.ServiceModel.Activation.ServiceHostFactoryBase {
+}
+public class System.ServiceModel.Activation.ServiceRoute {
+  public ServiceRoute(System.String, System.ServiceModel.Activation.ServiceHostFactoryBase, System.Type);
+}
+public class System.ServiceModel.Activation.WebServiceHostFactory {
+  public WebServiceHostFactory();
+}
+public abstract class System.ServiceModel.Channels.Binding {
+}
+public interface System.ServiceModel.Channels.IChannel {
+}
+public abstract class System.ServiceModel.ClientBase<T0> {
+  public virtual void Abort();
+  public virtual void Close();
+  public virtual TChannel get_Channel();
+  public ClientBase();
+  public ClientBase(System.ServiceModel.Channels.Binding, System.ServiceModel.EndpointAddress);
+  public ClientBase(System.String);
+  public ClientBase(System.String, System.ServiceModel.EndpointAddress);
+  public ClientBase(System.String, System.String);
+}
+public class System.ServiceModel.EndpointAddress {
+}
+public interface System.ServiceModel.IClientChannel {
+}
+public interface System.ServiceModel.ICommunicationObject {
+  virtual void Abort();
+  virtual void Close();
+  virtual void add_Closed(System.EventHandler);
+  virtual void add_Closing(System.EventHandler);
+  virtual void add_Opening(System.EventHandler);
+  virtual System.ServiceModel.CommunicationState get_State();
+}
+public interface System.ServiceModel.IContextChannel {
+}
+public interface System.ServiceModel.IExtensibleObject<T0> {
+}
+public class System.ServiceModel.Web.IncomingWebRequestContext {
+  public virtual System.Net.WebHeaderCollection get_Headers();
+  public virtual System.UriTemplateMatch get_UriTemplateMatch();
+}
+public class System.ServiceModel.Web.OutgoingWebResponseContext {
+  public virtual System.Net.WebHeaderCollection get_Headers();
+  public virtual void set_ContentType(System.String);
+}
+public class System.ServiceModel.Web.WebOperationContext {
+  public virtual System.ServiceModel.Web.IncomingWebRequestContext get_IncomingRequest();
+  public virtual System.ServiceModel.Web.OutgoingWebResponseContext get_OutgoingResponse();
+  public static System.ServiceModel.Web.WebOperationContext get_Current();
+}
+public abstract class System.Text.Encoding {
+  public virtual byte[] GetBytes(System.String);
+  public virtual System.String GetString(byte[]);
+  public static System.Text.Encoding GetEncoding(System.String);
+  public static System.Text.Encoding get_ASCII();
+  public static System.Text.Encoding get_Default();
+  public static System.Text.Encoding get_UTF8();
+}
+public class System.Text.RegularExpressions.Capture {
+  public virtual int get_Index();
+  public virtual int get_Length();
+  public virtual System.String get_Value();
+}
+public class System.Text.RegularExpressions.Group {
+  public virtual bool get_Success();
+}
+public class System.Text.RegularExpressions.Match {
+}
+public class System.Text.RegularExpressions.Regex {
+  public virtual bool IsMatch(System.String);
+  public virtual System.Text.RegularExpressions.Match Match(System.String);
+  public Regex(System.String);
+  public static bool IsMatch(System.String, System.String, System.Text.RegularExpressions.RegexOptions);
+  public static System.String Replace(System.String, System.String, System.String);
+}
+public sealed class System.Text.StringBuilder {
+  public virtual System.Text.StringBuilder Append(System.String);
+  public virtual System.Text.StringBuilder AppendLine(System.String);
+  public virtual System.String ToString();
+  public StringBuilder();
+  public StringBuilder(System.String);
+}
+public class System.Threading.Tasks.Task {
+  public static System.Threading.Tasks.TaskFactory get_Factory();
+}
+public class System.Threading.Tasks.TaskFactory {
+  public virtual System.Threading.Tasks.Task StartNew(System.Action);
+  public virtual System.Threading.Tasks.Task<TResult> StartNew<TResult>(System.Func<TResult>);
+}
+public class System.Threading.Tasks.Task<T0> {
+}
+public sealed class System.Threading.Thread {
+  public static void Sleep(int);
+}
+public class System.TimeoutException {
+}
+public class System.Tuple<T0,T1> {
+}
+public abstract class System.Type {
+  public virtual System.Reflection.FieldInfo GetField(System.String);
+  public virtual System.Reflection.PropertyInfo[] GetProperties();
+  public virtual System.Reflection.Assembly get_Assembly();
+  public virtual System.String get_AssemblyQualifiedName();
+  public virtual System.String get_FullName();
+  public static System.Type GetType(System.String);
+  public static bool operator ==(System.Type, System.Type);
+}
+public class System.Uri {
+  public virtual System.String ToString();
+  public virtual System.String get_AbsoluteUri();
+  public virtual System.String get_Host();
+  public virtual System.String get_Query();
+  public Uri(System.String);
+  public static bool operator !=(System.Uri, System.Uri);
+}
+public class System.UriTemplateMatch {
+  public virtual System.Uri get_RequestUri();
+}
+public sealed class System.Web.Caching.Cache {
+  public virtual System.Object Remove(System.String);
+  public virtual System.Object get_Item(System.String);
+  public virtual void set_Item(System.String, System.Object);
+}
+public class System.Web.HttpApplication {
+  public virtual void Init();
+  public virtual void add_BeginRequest(System.EventHandler);
+  public virtual void add_EndRequest(System.EventHandler);
+  public virtual void add_MapRequestHandler(System.EventHandler);
+  public virtual void add_PostRequestHandlerExecute(System.EventHandler);
+  public virtual System.Web.HttpContext get_Context();
+  public virtual System.Web.HttpResponse get_Response();
+  public virtual System.Web.HttpServerUtility get_Server();
+  public HttpApplication();
+}
+public abstract class System.Web.HttpContextBase {
+  public virtual System.Web.HttpApplication get_ApplicationInstance();
+  public virtual System.Web.Caching.Cache get_Cache();
+  public virtual bool get_IsCustomErrorEnabled();
+  public virtual System.Collections.IDictionary get_Items();
+  public virtual System.Web.HttpRequestBase get_Request();
+  public virtual System.Web.HttpResponseBase get_Response();
+}
+public class System.Web.HttpContextWrapper {
+  public HttpContextWrapper(System.Web.HttpContext);
+}
+public abstract class System.Web.HttpRequestBase {
+  public virtual System.Web.HttpCookieCollection get_Cookies();
+  public virtual System.Uri get_Url();
+  public virtual System.Uri get_UrlReferrer();
+}
+public abstract class System.Web.HttpResponseBase {
+  public virtual System.Web.HttpCookieCollection get_Cookies();
+}
+public sealed class System.Web.HttpServerUtility {
+  public virtual System.Exception GetLastError();
+  public virtual System.String MapPath(System.String);
+}
+public sealed class System.Web.HttpUtility {
+  public static System.String HtmlDecode(System.String);
+  public static System.Collections.Specialized.NameValueCollection ParseQueryString(System.String);
+  public static System.String UrlDecode(System.String);
+}
+public interface System.Web.IHttpHandler {
+}
+public class System.Web.Mvc.ActionExecutedContext {
+}
+public class System.Web.Mvc.ActionExecutingContext {
+}
+public static sealed class System.Web.Mvc.AjaxRequestExtensions {
+  public static bool IsAjaxRequest(System.Web.HttpRequestBase);
+}
+public abstract class System.Web.Mvc.Controller {
+  public virtual void OnActionExecuted(System.Web.Mvc.ActionExecutedContext);
+  public virtual void OnActionExecuting(System.Web.Mvc.ActionExecutingContext);
+  public virtual void OnException(System.Web.Mvc.ExceptionContext);
+  public virtual System.Web.HttpContextBase get_HttpContext();
+  public virtual System.Web.HttpRequestBase get_Request();
+  public virtual System.Web.Routing.RouteData get_RouteData();
+  public virtual System.Security.Principal.IPrincipal get_User();
+  public Controller();
+}
+public class System.Web.Mvc.ControllerContext {
+  public virtual System.Web.HttpContextBase get_HttpContext();
+  public virtual System.Web.Routing.RequestContext get_RequestContext();
+  public virtual System.Web.Routing.RouteData get_RouteData();
+}
+public class System.Web.Mvc.ExceptionContext {
+  public virtual System.Exception get_Exception();
+  public virtual void set_ExceptionHandled(bool);
+}
+public class System.Web.Mvc.Filter {
+  public virtual System.Object get_Instance();
+  public virtual int get_Order();
+  public virtual System.Web.Mvc.FilterScope get_Scope();
+}
+public sealed class System.Web.Mvc.GlobalFilterCollection {
+  public virtual void Add(System.Object);
+  public virtual System.Collections.Generic.IEnumerator<System.Web.Mvc.Filter> GetEnumerator();
+}
+public static sealed class System.Web.Mvc.GlobalFilters {
+  public static System.Web.Mvc.GlobalFilterCollection get_Filters();
+}
+public class System.Web.Mvc.HandleErrorAttribute {
+  public HandleErrorAttribute();
+}
+public class System.Web.Mvc.HandleErrorInfo {
+  public HandleErrorInfo(System.Exception, System.String, System.String);
+}
+public class System.Web.Mvc.MvcHandler {
+  public static void set_DisableMvcResponseHeader(bool);
+}
+public static sealed class System.Web.Mvc.RouteCollectionExtensions {
+  public static void IgnoreRoute(System.Web.Routing.RouteCollection, System.String);
+}
+public interface System.Web.Routing.IRouteHandler {
+}
+public class System.Web.Routing.RequestContext {
+  public virtual System.Web.HttpContextBase get_HttpContext();
+}
+public class System.Web.Routing.Route {
+  public virtual System.Web.Routing.IRouteHandler get_RouteHandler();
+  public virtual System.String get_Url();
+}
+public abstract class System.Web.Routing.RouteBase {
+}
+public class System.Web.Routing.RouteCollection {
+  public virtual System.IDisposable GetReadLock();
+}
+public class System.Web.Routing.RouteData {
+  public virtual System.Web.Routing.RouteValueDictionary get_Values();
+}
+public class System.Web.Routing.RouteTable {
+  public static System.Web.Routing.RouteCollection get_Routes();
+}
+public class System.Web.Routing.RouteValueDictionary {
+  public virtual System.Object get_Item(System.String);
+}
+public enum System.Web.Security.ActiveDirectoryConnectionProtection {
+}
+public class System.Web.Security.ActiveDirectoryMembershipProvider {
+  public virtual System.Web.Security.MembershipUser CreateUser(System.String, System.String, System.String, System.String, System.String, bool, System.Object, out System.Web.Security.MembershipCreateStatus);
+  public virtual System.Web.Security.MembershipUser GetUser(System.String, bool);
+  public virtual void Initialize(System.String, System.Collections.Specialized.NameValueCollection);
+  public virtual bool ValidateUser(System.String, System.String);
+  public virtual System.String get_ApplicationName();
+  public virtual System.Web.Security.ActiveDirectoryConnectionProtection get_CurrentConnectionProtection();
+  public virtual bool get_EnablePasswordReset();
+  public virtual bool get_EnablePasswordRetrieval();
+  public virtual bool get_EnableSearchMethods();
+  public virtual int get_MaxInvalidPasswordAttempts();
+  public virtual int get_MinRequiredNonAlphanumericCharacters();
+  public virtual int get_MinRequiredPasswordLength();
+  public virtual int get_PasswordAnswerAttemptLockoutDuration();
+  public virtual int get_PasswordAttemptWindow();
+  public virtual System.Web.Security.MembershipPasswordFormat get_PasswordFormat();
+  public virtual System.String get_PasswordStrengthRegularExpression();
+  public virtual bool get_RequiresQuestionAndAnswer();
+  public virtual bool get_RequiresUniqueEmail();
+  public ActiveDirectoryMembershipProvider();
+}
+public static sealed class System.Web.Security.Membership {
+  public static System.Web.Security.MembershipUser CreateUser(System.String, System.String, System.String);
+  public static bool DeleteUser(System.String, bool);
+  public static System.Web.Security.MembershipUser GetUser();
+  public static System.Web.Security.MembershipUser GetUser(System.Object);
+  public static System.Web.Security.MembershipUser GetUser(System.String);
+  public static bool ValidateUser(System.String, System.String);
+  public static int get_MinRequiredPasswordLength();
+  public static System.Web.Security.MembershipProvider get_Provider();
+}
+public enum System.Web.Security.MembershipCreateStatus {
+}
+public class System.Web.Security.MembershipCreateUserException {
+  public virtual System.Web.Security.MembershipCreateStatus get_StatusCode();
+}
+public enum System.Web.Security.MembershipPasswordFormat {
+}
+public abstract class System.Web.Security.MembershipProvider {
+  public MembershipProvider();
+}
+public class System.Web.Security.MembershipUser {
+  public virtual bool ChangePassword(System.String, System.String);
+  public virtual System.String ResetPassword();
+  public virtual System.String ResetPassword(System.String);
+  public virtual bool UnlockUser();
+  public virtual System.DateTime get_CreationDate();
+  public virtual bool get_IsApproved();
+  public virtual bool get_IsLockedOut();
+  public virtual System.String get_PasswordQuestion();
+  public virtual System.Object get_ProviderUserKey();
+  public virtual System.String get_UserName();
+  public MembershipUser(System.String, System.String, System.Object, System.String, System.String, System.String, bool, bool, System.DateTime, System.DateTime, System.DateTime, System.DateTime, System.DateTime);
+}
+public sealed class System.Web.Security.MembershipUserCollection {
+}
+public class System.Web.SessionState.SessionIDManager {
+  public virtual System.String CreateSessionID(System.Web.HttpContext);
+  public virtual void SaveSessionID(System.Web.HttpContext, System.String, out bool, out bool);
+  public SessionIDManager();
+}
+public class System.Xml.XmlAttribute {
+  public virtual System.String get_Value();
+  public virtual void set_Value(System.String);
+}
+public sealed class System.Xml.XmlAttributeCollection {
+  public virtual System.Xml.XmlAttribute get_ItemOf(System.String);
+}
+public class System.Xml.XmlDocument {
+  public virtual void Load(System.String);
+  public virtual void Save(System.String);
+  public XmlDocument();
+}
+public abstract class System.Xml.XmlNode {
+  public virtual System.Xml.XmlNode SelectSingleNode(System.String);
+  public virtual System.Xml.XmlAttributeCollection get_Attributes();
+}
+public abstract class System.Xml.XmlReader {
+  public virtual System.Xml.XmlNodeType MoveToContent();
+  public virtual void System.IDisposable.Dispose();
+}
+public class System.Xml.XmlTextReader {
+  public virtual void Close();
+  public virtual bool Read();
+  public virtual System.String get_Name();
+  public virtual System.Xml.XmlNodeType get_NodeType();
+  public virtual System.String get_Value();
+  public XmlTextReader(System.String);
+}
+public sealed class log4net.Config.XmlConfigurator {
+  public static void Configure();
+}
+public sealed class log4net.LogManager {
+  public static log4net.ILog GetLogger(System.String);
+}

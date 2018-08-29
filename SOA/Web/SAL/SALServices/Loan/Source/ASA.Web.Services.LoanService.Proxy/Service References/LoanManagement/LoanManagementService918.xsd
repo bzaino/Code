@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://amsa.com/contract/errorHandling/v1.0" elementFormDefault="qualified" targetNamespace="http://amsa.com/contract/errorHandling/v1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://adevweb023.amsa.com/LoanManagementService/LoanManagementService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ASABusinessFaultDetail">
+    <xs:sequence>
+      <xs:element name="Message" nillable="true" type="xs:string" />
+      <xs:element name="Id" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ASABusinessFaultDetail" nillable="true" type="tns:ASABusinessFaultDetail" />
+  <xs:complexType name="ASAFaultDetail">
+    <xs:sequence>
+      <xs:element name="Message" nillable="true" type="xs:string" />
+      <xs:element name="Id" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ASAFaultDetail" nillable="true" type="tns:ASAFaultDetail" />
+</xs:schema>

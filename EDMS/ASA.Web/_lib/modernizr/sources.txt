@@ -1,0 +1,4 @@
+File Name                    	UPDATED       	URI							ReleaseNotes							Documentation
+==============================================================================================================================================================================================================
+modernizr-2.0.6-dev.js		9-30-2011	http://www.modernizr.com/download/			N/A								http://www.modernizr.com/docs/
+modernizr-2.0.6-full.js		9-30-2011	""							""								""

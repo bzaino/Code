@@ -1,0 +1,105 @@
+{>"page_parent" /}
+
+{<dynamicTitle}Contact Us - Salt{/dynamicTitle}
+
+{<dynamicBody}
+    {#content}
+    <article>
+        <div class="content">
+            {#secondaryContent}
+                {^SiteMember.ActiveDirectoryKey}
+                    {@select key="{name}"}
+                        {@eq value="UnAuthPageContent"}
+                            {#records}
+                                <!-- End Social -->
+                                <header class="title-container">
+                                        {attributes.headline}
+                                        <div class="row">
+                                            <div class="small-12 columns no-padding">
+                                                {attributes.subhead}
+                                            </div>
+                                        </div>
+                                </header>
+                                <div id="unAuthBody" class="padding-top">
+                                {attributes.auth-alt-headline}
+                                {@if cond="'{metaKeywords}' == 'LiveChat'"}
+                                    <div class="row">
+                                        <div class="left">
+                                            <a href="#" class="js-void-href liveChatLink"><img id="js-lhnchatimg" border="0" alt="Live help" src=""></a>
+                                            <input class="js-livechat-WT-act" hidden value="Live Chat ContactUs" />
+                                        </div>
+                                    </div>
+                                {/if}
+                                {attributes.body}</div>
+                            {/records}
+                        {/eq}
+                    {/select}
+                {:else}
+                    {@select key="{name}"}
+                        {@eq value="AuthPageContent"}
+                            {#records}
+                                <!-- End Social -->
+                                {?SiteMember.MemberShipFlag}
+                                <header class="title-container">
+                                    {attributes.headline}
+                                    <div class="row">
+                                        <div class="small-12 columns no-padding">
+                                            {attributes.subhead}
+                                        </div>
+                                    </div>
+                                </header>
+                                <div id="authBody" class="padding-top">
+                                    {@if cond="'{metaKeywords}' == 'LiveChat'"}
+                                        <div class="row">
+                                            <div class="left">
+                                                <a href="#" class="js-void-href liveChatLink"><img id="js-lhnchatimg" border="0" alt="Live help" src=""></a>
+                                                <input class="js-livechat-WT-act" hidden value="Live Chat ContactUs" />
+                                            </div>
+                                        </div>
+                                    {/if}
+                                    <div id="authBodyWithSchool">{attributes.callout}</div>
+                                    {attributes.auth-alt-headline}
+                                    {attributes.body}
+                                </div>
+                            {:else}
+                                <header class="title-container">
+                                        {attributes.headline}
+                                        {attributes.Auth-Headline}
+                                </header>
+                                <div id="authBody" class="padding-top">
+                                    {@if cond="'{metaKeywords}' == 'LiveChat'"}
+                                        <div class="row">
+                                            <div class="left">
+                                                <a href="#" class="js-void-href liveChatLink"><img id="js-lhnchatimg" border="0" alt="Live help" src=""></a>
+                                                <input class="js-livechat-WT-act" hidden value="Live Chat ContactUs" />
+                                            </div>
+                                        </div>
+                                    {/if}
+                                    {attributes.body}
+                                </div>
+                            {/SiteMember.MemberShipFlag}
+                            {/records}
+                        {/eq}
+                    {/select}
+                {/SiteMember.ActiveDirectoryKey}
+            {/secondaryContent}
+            {>"partial_social" /}
+        </div>
+    </article>
+    {/content}
+
+    <script>
+        require(['jquery', 'asa/ASAUtilities'], function ($, Utility) {
+            Utility.waitForAsyncScript('bLHNOnline', function () {
+                var $livechatBtn = $('#js-lhnchatimg');
+                if (window.bLHNOnline) {
+                    $livechatBtn.attr('src', 'https://www.livehelpnow.net/clients/asa/live_chat_online.png');
+                } else {
+                    $livechatBtn.attr('src', 'https://www.livehelpnow.net/clients/asa/live_chat_offline.png');
+                }
+            });
+        });
+    </script>
+{/dynamicBody}
+
+{> "Modules/AddThis" /}

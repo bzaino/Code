@@ -1,0 +1,8 @@
+Cross Domain API Call To: https://api.unigo.com/scholarshipsearch/allchoices?auth=eec6029a-4c6d-4042-81d6-7e755c0cd21c  Succeeded!
+retryFetchAnswerData - answerData cached
+retryFetchAnswerData - answerData cached cancelling setInterval for retryFetchAnswerData
+request = {"eventName":"WELCOME","lang":"en-US","projectId":"cps-proto-orig","sessionId":"f46ccfa0-99fe-3a46-9797-f25a7d51a301"}
+Chatbase response: 
+{ message_id: '6064137624', status: 200 }
+Chatbase response: 
+{ message_id: '6081560059', status: 200 }

@@ -1,0 +1,3 @@
+SSIS\CM1\WebContentToInsight\WebContentToInsight.sln,
+SSIS\SALT\SSICostOfLivingIndex\SSICostOfLivingIndex.sln,
+SSIS\SALT\SalesforceOrgDataToSALT\SalesforceOrgDataToSALT.sln

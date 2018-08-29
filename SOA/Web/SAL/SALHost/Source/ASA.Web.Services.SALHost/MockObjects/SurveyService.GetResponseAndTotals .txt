@@ -1,0 +1,11 @@
+﻿{
+	"ErrorList":[],
+	"Surveys":[
+		{
+		"ErrorList":[],
+		"surveyId":1,
+		"listOfResponse":"MockResponse - Each week, how much do you spend on your social life and entertainment?",
+		"listOfResponseCounts":"MockResponseCounts - 5;50;20;35",
+		}
+	]
+}

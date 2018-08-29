@@ -1,0 +1,61 @@
+<section id="rendered-content" class="header-buffer clearfix {+dynamicSpacer}{/dynamicSpacer}">
+    {! dynamicBody - used by child templates to choose which body partial to include
+        ie. video will include partial_video_body !}
+    {+dynamicUnauthHome}
+          <section class="position-relative item {?SiteMember.DashboardEnabled}dashboard-enabled {/SiteMember.DashboardEnabled}double-margin-top">
+            <div class="row collapse js-row-expandable">
+                <section class="small-12 medium-12 large-8 columns js-main-content">
+                    {+dynamicBody}
+                    {/dynamicBody}
+                </section>
+                {!-- Side rail --!}
+                <aside id="js-sidebar" data-dropdown-content class="js-header-dropdown global-sidebar clearfix {?SiteMember.ActiveDirectoryKey} f-dropdown uni-side-nav {:else} small-12 large-4 columns{/SiteMember.ActiveDirectoryKey}" aria-autoclose="false" tabindex="0">
+                    <div id="js-sidebar-content" class="sidebar-content main-content-text">
+                    {+dynamicSideBar}
+                        {> "Modules/UnifiedSidebar" /}
+                    {/dynamicSideBar}
+                    </div>
+                </aside>
+                {!-- Side rail --!}
+
+                {?SiteMember.ActiveDirectoryKey}
+                    <aside id="js-dropdown-support" data-dropdown-content class="js-header-dropdown dropdown-panel f-dropdown" aria-autoclose="false">
+                        <div id="js-support-content" class="sidebar-content main-content-text row collapse">
+                            {#content}
+                                {>"Modules/ReachOutDelegate" tabindex_ind="1"/}
+                            {/content}
+                        </div>
+                    </aside>
+                {/SiteMember.ActiveDirectoryKey}
+                {> "partial_scroll_image" /}
+            </div>
+        </section>
+        {^SiteMember.ActiveDirectoryKey}
+            <section class="h-prop-wrap noprint js-reg-wall" {^blockedContent}hidden{/blockedContent}>
+                {> "horizontal_prop" /}
+            </section>
+        {/SiteMember.ActiveDirectoryKey}
+    {/dynamicUnauthHome}
+
+    <script>
+        var lhnAccountN = '{@liveChatAccount /}',
+            lhnButtonN = 5152,
+            lhnChatPosition = 'default',
+            lhnWindowN = '{@liveChatWindow adKey=SiteMember.ActiveDirectoryKey /}',
+            lhnDepartmentN = '{@liveChatDepartment /}',
+            {?SiteMember.ActiveDirectoryKey}
+                {?SiteMember.MemberShipFlag}
+                    {@if cond="'{content.mainContent[0].record.attributes.enable_proactive_chat|trim}' === 'true' "}
+            lhnInviteEnabled = 1,
+            lhnInviteChime = 1,
+                    {/if}
+                {/SiteMember.MemberShipFlag}
+            {/SiteMember.ActiveDirectoryKey}
+            lhnJsHost = 'https://';
+        {?SiteMember.ActiveDirectoryKey}
+            var lhnCustom1 = '{SiteMember.FirstName} {SiteMember.LastName}',
+                lhnCustom2 = '{SiteMember.Emails[0].EmailAddress}',
+                lhnCustom3 = '{SiteMember.Organizations[0].OrganizationName}';
+        {/SiteMember.ActiveDirectoryKey}
+    </script>
+</section>

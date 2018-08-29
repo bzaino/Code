@@ -1,0 +1,3356 @@
+/* line 11, global.css.sass */
+body {
+  /* display: none */
+}
+
+/* line 14, global.css.sass */
+body, html {
+  height: 100%;
+}
+
+/* Layout styles */
+/* line 17, global.css.sass */
+#header {
+  width: 100%;
+  background: #272525;
+  position: fixed;
+  top: 0px;
+  z-index: 10001;
+  border-bottom: 1px solid #d6d6d6;
+}
+/* line 24, global.css.sass */
+#header .bottom.shadow {
+  width: 65.9%;
+  height: 4px;
+  background: url(/Assets/images/lessons/lesson3/global/header-shadow.png) repeat;
+  position: absolute;
+  bottom: -5px;
+}
+/* line 30, global.css.sass */
+#header #header-progress {
+  background: white;
+  width: 100%;
+}
+/* line 33, global.css.sass */
+#header #header-progress .progress {
+  background: #0fe278;
+  width: 0%;
+  height: 8px;
+}
+/* line 37, global.css.sass */
+#header #header-content {
+  margin: 0 auto;
+  padding: 0;
+  min-width: 1000px;
+  height: 50px;
+  position: relative;
+}
+/* line 43, global.css.sass */
+#header #header-content .header {
+  position: absolute;
+}
+/* line 45, global.css.sass */
+#header #header-content #header-left {
+  left: 5.3%;
+}
+/* line 47, global.css.sass */
+#header #header-content #header-left #logo {
+  float: left;
+  width: 63px;
+  height: 26px;
+  margin: 12px 0 0;
+  background: url("/Assets/images/lessons/lesson3/global/salt-logo.gif");
+}
+/* line 53, global.css.sass */
+#header #header-content #header-left #logo a {
+  text-indent: -3000px;
+  display: block;
+}
+/* line 56, global.css.sass */
+#header #header-content #header-left .user-info {
+  border-left: 1px solid #4d4b4b;
+  float: left;
+  margin-left: 20px;
+  height: 50px;
+}
+/* line 61, global.css.sass */
+#header #header-content #header-left .user-info .user-info-content {
+  border-left: 1px solid black;
+  padding: 13px 0 0 20px;
+  height: 37px;
+}
+/* line 65, global.css.sass */
+#header #header-content #header-left .user-info .user-info-content .fb-profile {
+  width: 24px;
+  height: 24px;
+  float: left;
+  position: relative;
+  border: 1px solid #4d4b4b;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -moz-box-shadow: inset 0 0 10px black;
+  -webkit-box-shadow: inset 5px 5px 10px black;
+  box-shadow: inset 0 0 10px black;
+}
+/* line 78, global.css.sass */
+#header #header-content #header-left .user-info .user-info-content .fb-profile img {
+  position: relative;
+  z-index: -1;
+  width: 24px;
+  height: 24px;
+}
+/* line 83, global.css.sass */
+#header #header-content #header-center {
+  /* width: 300px */
+  color: white;
+  margin: 0 auto;
+  padding: 6px 30px 0 13px;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  margin-left: -115px;
+}
+/* line 94, global.css.sass */
+#header #header-content #header-center .step {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "FoundersGroteskCond-SmBd", sans-serif;
+  font-weight: lighter;
+}
+/* line 99, global.css.sass */
+#header #header-content #header-center .step.step1 {
+  margin-left: 17px;
+}
+/* line 101, global.css.sass */
+#header #header-content #header-center .of {
+  font-family: "Georgia", serif;
+  font-size: 13px;
+  font-style: italic;
+  padding: 3px;
+  position: relative;
+  top: -3px;
+}
+/* line 108, global.css.sass */
+#header #header-content #header-center .slash {
+  padding: 5px;
+  font-size: 18px;
+  font-family: "FoundersGroteskCond-Reg", sans-serif;
+  font-weight: lighter;
+}
+/* line 113, global.css.sass */
+#header #header-content #header-center .chapter {
+  font-size: 22px;
+  font-family: "FoundersGroteskCond-Reg", sans-serif;
+  font-weight: lighter;
+  padding-right: 13px;
+  background: url("/Assets/images/lessons/lesson3/global/chapters-arrow.gif") no-repeat right 7px;
+}
+/* line 119, global.css.sass */
+#header #header-content #header-center #header-dropdown {
+  display: none;
+}
+/* line 121, global.css.sass */
+#header #header-content #header-center:hover {
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1), 0 0 0 1px #cccccc;
+  -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1), 0 0 0 1px #cccccc;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1), 0 0 0 1px #cccccc;
+}
+/* line 125, global.css.sass */
+#header #header-content #header-center:hover .chapter {
+  background: url("/Assets/images/lessons/lesson3/global/curriculum-header-arrow-active.png") no-repeat right 7px;
+}
+/* line 127, global.css.sass */
+#header #header-content #header-center:hover #header-dropdown {
+  display: block;
+  font-family: "FoundersGroteskCond-Reg", sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+}
+/* line 133, global.css.sass */
+#header #header-content #header-center:hover #header-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 9px 0 0;
+}
+/* line 137, global.css.sass */
+#header #header-content #header-center:hover #header-dropdown ul li {
+  cursor: default;
+  display: block;
+  padding: 13px 0 7px;
+  width: 233px;
+  line-height: 1em;
+  background: url("/Assets/images/lessons/lesson3/global/bg-dropdown-dots.png") repeat-x bottom;
+  position: relative;
+}
+/* line 145, global.css.sass */
+#header #header-content #header-center:hover #header-dropdown ul li:last-child {
+  background: none;
+}
+/* line 147, global.css.sass */
+#header #header-content #header-center:hover #header-dropdown ul li a {
+  cursor: default;
+  display: block;
+  zoom: 1;
+  color: #737070;
+}
+/* line 152, global.css.sass */
+#header #header-content #header-center:hover #header-dropdown ul li a span {
+  display: block;
+  float: left;
+}
+/* line 155, global.css.sass */
+#header #header-content #header-center:hover #header-dropdown ul li a span.number {
+  font-family: "FoundersGroteskCond-SmBd", sans-serif;
+  font-weight: lighter;
+  width: 22px;
+  text-align: center;
+  margin-right: 12px;
+}
+/* line 161, global.css.sass */
+#header #header-content #header-center:hover #header-dropdown ul li a:before, #header #header-content #header-center:hover #header-dropdown ul li a:after {
+  content: "";
+  display: table;
+}
+/* line 165, global.css.sass */
+#header #header-content #header-center:hover #header-dropdown ul li a:after {
+  clear: both;
+}
+/* line 167, global.css.sass */
+#header #header-content #header-center:hover #header-dropdown ul li a:hover {
+  /* color: $greyText */
+}
+/* line 170, global.css.sass */
+#header #header-content #header-center:hover #header-dropdown ul li.current a {
+  color: #272525;
+}
+/* line 172, global.css.sass */
+#header #header-content #header-center:hover #header-dropdown ul li .indicator {
+  background: url("/Assets/images/lessons/lesson3/global/bg-indicator.png") no-repeat 0 0;
+  width: 85px;
+  height: 21px;
+  color: #005b27;
+  font: normal 11px/21px Arial, Helvetica, sans-serif;
+  padding: 0 4px;
+  text-transform: uppercase;
+  position: absolute;
+  left: -63px;
+  top: 10px;
+  cursor: default;
+}
+/* line 185, global.css.sass */
+#header #header-content #header-center:hover #header-dropdown ul li.completed a {
+  color: black;
+  cursor: default;
+}
+/* line 188, global.css.sass */
+#header #header-content #header-center:hover #header-dropdown ul li.completed a span.number {
+  background: url("/Assets/images/lessons/lesson3/global/bg-completed.png") no-repeat 0 0;
+  height: 0;
+  padding-top: 17px;
+  overflow: hidden;
+  width: 17px;
+  margin-left: 5px;
+}
+/* line 196, global.css.sass */
+#header #header-content #header-center:hover #header-dropdown ul li.ready a {
+  cursor: pointer;
+  color: black;
+}
+/* line 199, global.css.sass */
+#header #header-content #header-right {
+  right: 5.3%;
+  top: 0;
+  padding-top: 14px;
+}
+
+/* line 200, global.css.sass */
+#header #header-content #header-right .save-and-exit {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  display: block;
+  height: 17px;
+  width: 67px;
+  padding: 4px 0 0 26px;
+  
+  font-size: 11px;
+  background: #3d3c3c url("/Assets/images/lessons/lesson3/global/header-save-and-exit.png") no-repeat 0 -21px;
+  color: #ebe6e6;
+  opacity: .7;
+
+}
+/* line 209, global.css.sass */
+#header #header-content #header-right .save-and-exit:hover {
+  opacity: 1;
+}
+.lt-ie9 #header #header-content #header-right .save-and-exit:hover { 
+  color: #737070;
+  background-position: 0 0;
+}
+
+/* line 216, global.css.sass */
+#main {
+  margin: 0px auto;
+  z-index: 1;
+  min-width: 1000px;
+  position: relative;
+  height: 100%;
+}
+/* line 222, global.css.sass */
+#main #content {
+  width: 66%;
+  height: 100%;
+  position: absolute;
+  margin: 0 34% 0 0;
+  left: -800%;
+}
+/* line 228, global.css.sass */
+#main #content #step {
+  margin: 0 auto;
+  width: 91.6%;
+  padding: 59px 0 88px 0;
+}
+/* line 232, global.css.sass */
+#main #content #step h2 {
+  font: lighter 22px "FoundersGroteskCond-SmBd", Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 40px 0 0;
+  letter-spacing: 1px;
+}
+/* line 237, global.css.sass */
+#main #content #step .divider {
+  width: 22px;
+  height: 1px;
+  background: black;
+  margin: 18px auto 27px;
+}
+/* line 242, global.css.sass */
+#main #content #step .description {
+  font-family: "Georgia", serif;
+  font-size: 15px;
+  line-height: 22px;
+  color: #737070;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 34px;
+  padding-bottom: 49px;
+  border-bottom: 1px solid #d9d9d9;
+}
+/* line 253, global.css.sass */
+#main #content #step .description p {
+  width: 560px;
+  margin: 0 auto;
+}
+/* line 256, global.css.sass */
+#main #content #step .question {
+  width: 97%;
+  font: lighter 45px/60px "FoundersGroteskCond-Reg", Arial, Helvetica, sans-serif;
+}
+/* line 259, global.css.sass */
+#main #content #step .question span,
+#main #content #step .question .dd-large {
+  /* float: left */
+}
+
+/* line 266, global.css.sass */
+#main #content #step .question span.dd-wrapper {
+  position: relative;
+  padding: 0;
+}
+/* line 269, global.css.sass */
+#main #content #step .question span.dd-wrapper .dd-large {
+  position: absolute;
+}
+/* line 272, global.css.sass */
+#main #content #step .question form .box-wrapper {
+  margin-bottom: 18px;
+}
+/* line 274, global.css.sass */
+#main #content #step .question form .box-wrapper .cbox,
+#main #content #step .question form .box-wrapper input[type=checkbox] {
+  float: left;
+  margin-right: 17px;
+}
+/* line 278, global.css.sass */
+#main #content #step .question form .box-wrapper label.bold {
+  font-weight: bold;
+}
+/* line 280, global.css.sass */
+#main #content #step .question form .box-wrapper label {
+  float: left;
+}
+/* line 283, global.css.sass */
+#main #content #step .question form .box-wrapper .tip .details {
+  position: absolute;
+  top: -35px;
+  right: 0;
+  display: none;
+}
+/* line 288, global.css.sass */
+#main #content #step .question form .box-wrapper .tip .details input {
+  float: left;
+}
+/* line 290, global.css.sass */
+#main #content #step .question form .box-wrapper .tip .details .dd {
+  float: left;
+}
+/* line 292, global.css.sass */
+#main #content #step .question form .box-wrapper .tip .details span {
+  float: left;
+  color: #f0f0f0;
+  font-size: 23px;
+  margin: 0 5px;
+}
+/* line 297, global.css.sass */
+#main #content #step .question form .box-wrapper .tip.none {
+  border: 0;
+  height: 0;
+  margin: 0;
+}
+/* line 301, global.css.sass */
+#main #content #step .question form .box-wrapper .tip.none .wing {
+  display: none;
+}
+/* line 303, global.css.sass */
+#main #content #step .question form .box-wrapper .tip.none .details {
+  top: -26px;
+}
+/* line 305, global.css.sass */
+#main #content #footer {
+  background: white;
+  border-top: 1px solid #d9d9d9;
+  height: 70px;
+  padding-top: 18px;
+  position: fixed;
+  bottom: 0px;
+  z-index: 9;
+  margin: 0 0 0 2.7%;
+  width: 60.5%;
+  min-width: 600px;
+  left: -800%;
+}
+/* line 317, global.css.sass */
+#main #content #footer .top.shadow {
+  height: 4px;
+  background: url(/Assets/images/lessons/lesson3/curriculum/curriculum-shadow.png) repeat;
+  position: absolute;
+  top: -5px;
+  width: 100%;
+}
+/* line 323, global.css.sass */
+#main #content #footer .left {
+  float: left;
+  width: 35%;
+}
+/* line 327, global.css.sass */
+#main #content #footer .left #total .value {
+  font-family: "FoundersGroteskCond-SmBd", sans-serif;
+  font-size: 22px;
+  font-weight: lighter;
+  color: black;
+  display: inline;
+  padding: 10px 4px 0px 4px;
+}
+/* line 334, global.css.sass */
+#main #content #footer .left #total .value.negative {
+  color: #ff0099;
+}
+/* line 336, global.css.sass */
+#main #content #footer .left #total .value.positive {
+  color: #0fe278;
+}
+/* line 338, global.css.sass */
+#main #content #footer .left #total .value-message {
+  display: inline;
+  font-family: "FoundersGroteskCond-reg", sans-serif;
+  font-weight: lighter;
+  font-size: 22px;
+}
+/* line 343, global.css.sass */
+#main #content #footer .left #up-next {
+  font-size: 12px;
+}
+/* line 345, global.css.sass */
+#main #content #footer .left #up-next .first {
+  display: inline;
+  font-weight: bold;
+}
+/* line 348, global.css.sass */
+#main #content #footer .left #up-next .second {
+  display: inline;
+  color: #737070;
+}
+/* line 351, global.css.sass */
+#main #content #footer .right {
+  float: right;
+  height: 47px;
+  position: relative;
+  width: 64%;
+}
+/* line 356, global.css.sass */
+#main #content #footer .right .error-msg {
+  color: #5d0e40;
+  font-weight: bold;
+  background-color: #ffe5f5;
+  position: absolute;
+  z-index: 500;
+  top: -32px;
+  right: 0px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  padding: 6px 10px 5px;
+  height: 13px;
+  display: none;
+}
+/* line 368, global.css.sass */
+#main #content #footer .right .error-msg:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #ffe5f5;
+  position: absolute;
+  top: 24px;
+  right: 15px;
+  margin-left: -6px;
+}
+/* line 380, global.css.sass */
+#main #content #footer .right .button-wrapper {
+  position: absolute;
+  right: 0;
+  width: 181px;
+}
+/* line 384, global.css.sass */
+#main #content #footer .right .button-wrapper .left-button {
+  float: right;
+  border: 1px solid #cccccc;
+  background: #fafafa url(/Assets/images/lessons/lesson3/global/btn-arrow-back.png) no-repeat center center;
+  width: 42px;
+  height: 32px;
+  margin: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 392, global.css.sass */
+#main #content #footer .right .button-wrapper .left-button:hover {
+  border: 1px solid #272525;
+}
+/* line 389, global.css.sass */
+#main #content #footer .right .button-wrapper .right-button {
+  float: right;
+  color: #272525;
+  border: 1px solid #cccccc;
+  background: #fafafa url(/Assets/images/lessons/lesson3/global/btn-arrow-next.png) no-repeat 90% center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  margin-left: 9px;
+  padding: 15px 40px 6px 15px;
+  text-transform: uppercase;
+  font-family: "FoundersGroteskCond-SmBd", sans-serif;
+  font-size: 15px;
+  line-height: .7;
+}
+.ie #main #content #footer .right .button-wrapper .right-button {
+   padding: 10px 40px 11px 15px;
+}
+/* line 402, global.css.sass */
+#main #content #footer .right .button-wrapper .right-button:hover {
+  border: 1px solid #272525;
+}
+/* line 411, global.css.sass */
+#main #left-column {
+  border-left: 1px solid #d6d6d6;
+  height: 100%;
+  width: 34%;
+  position: fixed;
+  left: -800%;
+  overflow-y: scroll;
+  background: #f0f0f0;
+}
+/* line 419, global.css.sass */
+#main #left-column .content {
+  float: right;
+  width: 70%;
+  min-width: 345px;
+  font-size: 14px;
+  line-height: 19px;
+  padding-bottom: 100px;
+  padding-top: 68px;
+}
+/* line 427, global.css.sass */
+#main #left-column .content .reset-changes {
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline;
+  position: relative;
+  padding-bottom: 68px;
+}
+/* line 434, global.css.sass */
+#main #left-column .content .reset-changes p {
+  display: inline;
+  color: #00a3cc;
+  background: url(/Assets/images/lessons/lesson3/curriculum/icon-restore-cashflow.png) no-repeat right 4px;
+  padding-top: 1px;
+  padding-right: 14px;
+}
+/* line 440, global.css.sass */
+#main #left-column .content .section {
+  padding: 30px 10% 20px 0;
+  border-bottom: 1px solid #d6d6d6;
+}
+/* line 443, global.css.sass */
+#main #left-column .content .section.first {
+  border-bottom: none;
+  padding: 40px 5% 0 0;
+}
+/* line 446, global.css.sass */
+#main #left-column .content .section.last {
+  border-bottom: none;
+}
+/* line 448, global.css.sass */
+#main #left-column .content .section h3 {
+  font: lighter 24px "FoundersGroteskCond-SmBd", sans-serif;
+  margin: 0 0 20px;
+}
+/* line 451, global.css.sass */
+#main #left-column .content .section p {
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0 0 11px 0;
+}
+/* line 455, global.css.sass */
+#main #left-column .content .section .cbox {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+/* line 459, global.css.sass */
+#main #left-column .content .section input[type="text"] {
+  background: #fafafa;
+  border: 1px solid #cccccc;
+}
+/* line 462, global.css.sass */
+#main #left-column .content .section input.big {
+  margin: 4px 0 0 0;
+  width: 190px;
+}
+/* line 465, global.css.sass */
+#main #left-column .content .section label {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 0 0 5px;
+}
+/* line 469, global.css.sass */
+#main #left-column .content .section .button-expenses {
+  background-color: white;
+  border: 1px solid #cccccc;
+  color: #00a3cc;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 3px 17px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 483, global.css.sass */
+#main #left-column .content .section .hidden-modifiers {
+  display: none;
+  margin: 10px 0 0 0;
+}
+/* line 486, global.css.sass */
+#main #left-column .content .section .compare {
+  color: #00a3d9;
+  display: block;
+  background: url(/Assets/images/lessons/lesson3/global/compare-icon.gif) 0 3px no-repeat;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: normal;
+  padding: 0 0 20px 15px;
+}
+/* line 494, global.css.sass */
+#main #left-column .sub {
+  font-size: 11px;
+  color: #8c8989;
+}
+/* line 498, global.css.sass */
+#main #left-column .sub h4 {
+  font: lighter 19px "FoundersGroteskCond-Reg", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 40px 0 17px;
+}
+/* line 505, global.css.sass */
+#main #right-column {
+  border-left: 1px solid #d6d6d6;
+  height: 100%;
+  width: 34%;
+  min-width: 320px;
+  position: fixed;
+  right: 800%;
+  background: #f0f0f0;
+  z-index: 10;
+  /*padding-top: 57px /*moved from #main, was 68px */
+}
+/* line 514, global.css.sass */
+#main #right-column .wrapper {
+  padding: 59px 0 0 0;
+}
+/* line 517, global.css.sass */
+#main #right-column .content {
+  margin: 0px auto;
+  width: 298px;
+  height: 100%;
+}
+/* line 521, global.css.sass */
+#main #right-column .content h4 {
+  font: lighter 19px "FoundersGroteskCond-Reg", sans-serif;
+  text-align: center;
+  margin: 40px 0 17px;
+}
+/* line 525, global.css.sass */
+#main #right-column .content #vis {
+  width: 298px;
+  height: 472px;
+  margin: 0 auto;
+  background: url("/Assets/images/lessons/lesson3/bar-graph/bar-grid-bg.png") repeat;
+  position: relative;
+  top: 0;
+  border-bottom: 1px solid #dcdbdb;
+  text-align: center;
+}
+/* line 534, global.css.sass */
+#main #right-column .content #vis #bars {
+  margin: 0 auto;
+  position: relative;
+  height: 473px;
+  width: 298px;
+}
+/* line 539, global.css.sass */
+#main #right-column .content #vis #bars #balance {
+  position: relative;
+  margin: 0 0 0 58px;
+  width: 184px;
+  height: 100%;
+}
+/* line 544, global.css.sass */
+#main #right-column .content #vis #bars #balance .zero {
+  background: url("/Assets/images/lessons/lesson3/bar-graph/bar-gr-zero.png") 0 0 no-repeat;
+  position: absolute;
+  bottom: 0;
+  height: 32px;
+  width: 184px;
+}
+/* line 550, global.css.sass */
+#main #right-column .content #vis #bars #balance .bar-box {
+  display: none;
+}
+/* line 552, global.css.sass */
+#main #right-column .content #vis #bars #balance .bar-box .top {
+  background: url("/Assets/images/lessons/lesson3/bar-graph/bar-gr-tp.png") 0 0 no-repeat;
+  position: absolute;
+  height: 32px;
+  width: 184px;
+}
+/* line 557, global.css.sass */
+#main #right-column .content #vis #bars #balance .bar-box .mid {
+  background-color: #00d46a;
+  height: 0;
+  position: absolute;
+  bottom: 32px;
+  width: 184px;
+}
+/* line 563, global.css.sass */
+#main #right-column .content #vis #bars #balance .bar-box .bottom {
+  background: url("/Assets/images/lessons/lesson3/bar-graph/bar-gr-bt.png") 0 0 no-repeat;
+  height: 32px;
+  position: absolute;
+  bottom: 0px;
+  width: 184px;
+}
+/* line 569, global.css.sass */
+#main #right-column .content #vis #bars #expenses {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 0 58px;
+  width: 184px;
+  height: 100%;
+}
+/* line 576, global.css.sass */
+#main #right-column .content #vis #bars #expenses .zero {
+  display: none;
+  background: url("/Assets/images/lessons/lesson3/bar-graph/bar-bl-zero.png") 0 0 no-repeat;
+  height: 32px;
+  width: 184px;
+}
+/* line 582, global.css.sass */
+#main #right-column .content #vis #bars #expenses .bar-box .top {
+  background: url("/Assets/images/lessons/lesson3/bar-graph/bar-bl-tp.png") 0 0 no-repeat;
+  position: absolute;
+  height: 32px;
+  width: 184px;
+}
+/* line 587, global.css.sass */
+#main #right-column .content #vis #bars #expenses .bar-box .mid {
+  background-color: #05d5e8;
+  position: absolute;
+  height: 0;
+  width: 184px;
+}
+/* line 592, global.css.sass */
+#main #right-column .content #vis #bars #expenses .bar-box .bottom {
+  background: url("/Assets/images/lessons/lesson3/bar-graph/bar-bl-bt.png") 0 0 no-repeat;
+  position: absolute;
+  height: 32px;
+  width: 184px;
+}
+/* line 597, global.css.sass */
+#main #right-column .content #vis #bars #purchases {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 0 58px;
+  width: 184px;
+  height: 100%;
+}
+/* line 604, global.css.sass */
+#main #right-column .content #vis #bars #purchases .zero {
+  display: none;
+  background: url("/Assets/images/lessons/lesson3/bar-graph/bar-pl-zero.png") 0 0 no-repeat;
+  height: 32px;
+  width: 184px;
+}
+/* line 610, global.css.sass */
+#main #right-column .content #vis #bars #purchases .bar-box .top {
+  background: url("/Assets/images/lessons/lesson3/bar-graph/bar-pl-tp.png") 0 0 no-repeat;
+  position: absolute;
+  height: 32px;
+  width: 184px;
+}
+/* line 615, global.css.sass */
+#main #right-column .content #vis #bars #purchases .bar-box .mid {
+  background-color: #9b26b6;
+  position: absolute;
+  height: 0;
+  width: 184px;
+}
+/* line 620, global.css.sass */
+#main #right-column .content #vis #bars #purchases .bar-box .bottom {
+  background: url("/Assets/images/lessons/lesson3/bar-graph/bar-pl-bt.png") 0 0 no-repeat;
+  position: absolute;
+  height: 32px;
+  width: 184px;
+}
+/* line 626, global.css.sass */
+#main #right-column .content .total-number {
+  color: #00e070;
+  font: bold 24px "FoundersGroteskCond-Reg", sans-serif;
+  margin: 15px 0 0 0;
+}
+/* line 630, global.css.sass */
+#main #right-column .content .title {
+  text-transform: lowercase;
+}
+
+/* Common Anchor/Button Styles */
+/* line 634, global.css.sass */
+a.read-more {
+  display: inline-block;
+  color: #272525;
+  font: bold 12px Arial, Helvetica, sans-serif;
+}
+/* line 638, global.css.sass */
+a.read-more:hover {
+  border-bottom: 1px solid #00a3cc;
+}
+/* line 640, global.css.sass */
+a.read-more span {
+  font-size: 14px;
+  color: #00a3cc;
+}
+
+/* line 644, global.css.sass */
+a.facebook {
+  width: 146px;
+  height: 32px;
+  background: url("/Assets/images/lessons/lesson3/global/bg-facebook-button.png") no-repeat;
+  padding: 0 0 0 46px;
+  color: white;
+  font: bold 12px/32px Arial, Helvetica, sans-serif;
+  display: block;
+}
+/* line 652, global.css.sass */
+a.facebook:hover {
+  cursor: pointer;
+  background-position: 0 -32px;
+}
+
+/* line 656, global.css.sass */
+a.add-another {
+  display: block;
+  padding-left: 27px;
+  background: url("/Assets/images/lessons/lesson3/global/btn-add.png") no-repeat 0 0;
+  font: normal 20px/27px "FoundersGroteskCond-Reg", Arial, Helvetica, sans-serif;
+  color: #272525;
+  margin: 50px 0;
+}
+
+/* line 664, global.css.sass */
+a.btn-remove {
+  display: block;
+  width: 20px;
+  height: 0;
+  padding-top: 19px;
+  overflow: hidden;
+  background: url("/Assets/images/lessons/lesson3/global/btn-remove.png") no-repeat 0 0;
+  float: left;
+}
+
+/* line 673, global.css.sass */
+.cbox {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #737070;
+  background: #fafafa;
+  cursor: pointer;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 680, global.css.sass */
+.cbox.checked {
+  border: 1px solid #00994c;
+  background: #e5fff2 url(/Assets/images/lessons/lesson3/curriculum/checkbox-checked-bg.png) no-repeat center center;
+}
+
+/* line 683, global.css.sass */
+.cbox:focus {
+  outline: none;
+  border: 1px solid #272525;
+}
+
+/* line 686, global.css.sass */
+.cbox.checked:focus {
+  outline: none;
+  border: 1px solid #272525;
+}
+
+/* line 689, global.css.sass */
+.cbox.error {
+  border: 1px solid #ff0099;
+}
+
+/* line 691, global.css.sass */
+.cbox.partial-select {
+  border: 1px solid #00994c;
+  background: #e5fff2 url(/Assets/images/lessons/lesson3/curriculum/checkbox-partial-select-bg.png) no-repeat 2px 5px;
+}
+
+/* line 694, global.css.sass */
+.radio {
+  width: 14px;
+  height: 14px;
+  background: url("/Assets/images/lessons/lesson3/curriculum/radio-unchecked-bg.png") no-repeat;
+  cursor: pointer;
+}
+
+/* line 699, global.css.sass */
+.radio.checked {
+  background: url("/Assets/images/lessons/lesson3/curriculum/radio-checked-bg.png") no-repeat;
+}
+
+/* line 702, global.css.sass */
+input[type="text"] {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background: #f0f0f0;
+  color: black;
+  font-size: 14px;
+  border: 1px solid #f0f0f0;
+  width: 54px;
+  height: 19px;
+  padding-left: 5px;
+}
+/* line 711, global.css.sass */
+input[type="text"]:focus {
+  background: #fafafa;
+  border: 1px solid #cccccc;
+}
+/* line 714, global.css.sass */
+input[type="text"].error {
+  background-color: #ffe5f5;
+  border: 1px solid #ff0099;
+}
+
+/* placeholders */
+/* line 719, global.css.sass */
+::-webkit-input-placeholder {
+  color: #bfbbbb;
+}
+
+/* line 721, global.css.sass */
+input:-moz-placeholder {
+  color: #bfbbbb;
+}
+
+/* line 724, global.css.sass */
+input[type="text"].large {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background: #f0f0f0;
+  color: black;
+  font-size: 34px;
+  border: 1px solid #f0f0f0;
+  width: 268px;
+  height: 41px;
+  padding: 4px 0 0 5px;
+}
+/* line 734, global.css.sass */
+input[type="text"].large.time {
+  width: 70px;
+}
+/* line 736, global.css.sass */
+input[type="text"].large:focus, input[type="text"].large.focus {
+  background: #fafafa;
+  border: 1px solid #cccccc;
+  color: black !important;
+}
+/* line 741, global.css.sass */
+input[type="text"].large.error {
+  background: #fee5f7;
+  border: 1px solid #ff0099;
+}
+/* line 744, global.css.sass */
+input[type="text"].large.placeholder {
+  color: #999999;
+}
+
+/* line 747, global.css.sass */
+input[type="text"].large.value {
+  width: 137px;
+}
+/* line 749, global.css.sass */
+input[type="text"].large.value.placeholder {
+  color: black;
+}
+/* line 751, global.css.sass */
+input[type="text"].large.value::-webkit-input-placeholder {
+  color: black;
+}
+/* line 753, global.css.sass */
+input[type="text"].large.value:-moz-placeholder {
+  color: black;
+}
+/* line 755, global.css.sass */
+input[type="text"].large.value:-ms-input-placeholder {
+  color: black;
+}
+
+/* Dropdown */
+/* line 759, global.css.sass */
+.dd:hover {
+  background: #fafafa;
+  border: 1px solid #cccccc;
+}
+
+/* line 762, global.css.sass */
+.dd {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #f0f0f0 !important;
+  background: #f0f0f0;
+  margin: 0px;
+  padding: 4px 0 2px;
+  float: left;
+  z-index: 1;
+  position: relative;
+}
+/* line 771, global.css.sass */
+.dd.active {
+  background: #fafafa;
+  border: 1px solid #cccccc;
+  z-index: 5;
+}
+/* line 775, global.css.sass */
+.dd dt {
+  background: none;
+  margin: 0;
+  padding-right: 5px;
+  padding-left: 9px;
+}
+/* line 780, global.css.sass */
+.dd dt a {
+  background: url(/Assets/images/lessons/lesson3/curriculum/curriculum-dropdown-arrow-sml.png) no-repeat right center;
+  padding-right: 27px;
+  color: black;
+  display: block;
+  width: auto;
+  height: 15px;
+  font-size: 12px;
+  outline: none;
+}
+/* line 789, global.css.sass */
+.dd dt a span {
+  display: none;
+}
+/* line 791, global.css.sass */
+.dd dd {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: block;
+}
+/* line 796, global.css.sass */
+.dd dd ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 801, global.css.sass */
+.dd dd ul li {
+  height: 18px;
+  margin-top: 5px;
+  padding: 5px 0 0 9px;
+}
+/* line 805, global.css.sass */
+.dd dd ul li:hover {
+  background: #faff00;
+}
+/* line 807, global.css.sass */
+.dd dd ul li a {
+  font-size: 12px;
+  color: black;
+  display: block;
+  height: 20px;
+}
+/* line 812, global.css.sass */
+.dd dd ul li span {
+  display: none;
+}
+
+/* Dropdown large */
+/* line 815, global.css.sass */
+.dd-large:hover {
+  background: #fafafa;
+  border: 1px solid #cccccc;
+}
+
+/* line 818, global.css.sass */
+.dd-large {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #f0f0f0;
+  background: #f0f0f0;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+  min-width: 131px;
+  float: left;
+}
+/* line 827, global.css.sass */
+.dd-large.active {
+  background: #fafafa;
+  border: 1px solid #cccccc;
+  z-index: 5;
+}
+/* line 831, global.css.sass */
+.dd-large dt {
+  margin: 0;
+}
+/* line 833, global.css.sass */
+.dd-large dt a {
+  background: url("/Assets/images/lessons/lesson3/curriculum/curriculum-dropdown-arrow-lrg.png") no-repeat right center;
+  padding: 1px 27px 1px 9px;
+  margin-right: 14px;
+  color: black;
+  display: block;
+  width: auto;
+  height: 45px;
+  font-size: 45px;
+  line-height: 60px;
+  outline: none;
+  text-decoration: none;
+}
+/* line 845, global.css.sass */
+.dd-large dt a span {
+  display: none;
+}
+/* line 847, global.css.sass */
+.dd-large dd {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+/* line 851, global.css.sass */
+.dd-large dd ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 856, global.css.sass */
+.dd-large dd ul li {
+  margin-top: 5px;
+}
+/* line 858, global.css.sass */
+.dd-large dd ul li:hover {
+  background: #faff00;
+}
+/* line 860, global.css.sass */
+.dd-large dd ul li a {
+  font-size: 45px;
+  color: black;
+  display: block;
+  height: 45px;
+  padding: 5px 9px;
+  text-decoration: none;
+}
+/* line 867, global.css.sass */
+.dd-large dd ul li span {
+  display: none;
+}
+
+/* restore graph button */
+/* line 871, global.css.sass */
+.restore-graph {
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+  display: inline;
+  position: relative;
+  top: -1px;
+  margin-left: 10px;
+}
+/* line 879, global.css.sass */
+.restore-graph p {
+  display: inline;
+  color: #00a3cc;
+  background: url(/Assets/images/lessons/lesson3/curriculum/icon-restore-cashflow.gif) no-repeat right 0px;
+  padding-top: 1px;
+  padding-right: 14px;
+}
+
+/* line 886, global.css.sass */
+#goalPageMessage {
+  display: inline;
+  font-size: 27px;
+  text-transform: none;
+}
+
+/* local header */
+/* line 898, global.css.sass */
+.local-header {
+  width: 60.6%;
+  height: 108px;
+  position: fixed;
+  background: white;
+  z-index: 999;
+  top: 67px;
+  border-bottom: 1px solid #d9d9d9;
+}
+/* line 906, global.css.sass */
+.local-header .local-header-content {
+  width: 823px;
+  margin: 0px auto;
+  position: relative;
+}
+/* line 910, global.css.sass */
+.local-header .bottom {
+  background: url("/Assets/images/lessons/lesson3/global/header-shadow.png") repeat;
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+}
+/* line 915, global.css.sass */
+.local-header .bottom.active {
+  height: 4px;
+}
+
+/* line 919, global.css.sass */
+ul.suggestion-box {
+  margin: 40px 0 0 !important;
+  padding: 4px 0 0;
+  list-style: none;
+  font: lighter 45px/44px "FoundersGroteskCond-Reg", Arial, Helvetica, sans-serif;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  width: 308px;
+  background: #fafafa;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 24px;
+  z-index: 100;
+}
+/* line 933, global.css.sass */
+ul.suggestion-box li {
+  margin-top: 4px;
+}
+/* line 935, global.css.sass */
+ul.suggestion-box li.suggestion-box-top {
+  background: url("/Assets/images/lessons/lesson3/curriculum/autocomplete-top.png") no-repeat top center;
+  height: 16px;
+  margin-top: -20px;
+}
+/* line 939, global.css.sass */
+ul.suggestion-box li a {
+  color: #272525;
+  display: block;
+  cursor: pointer;
+  padding: 6px 0 0 11px;
+  height: 44px;
+}
+/* line 945, global.css.sass */
+ul.suggestion-box li a:hover {
+  background: #faff00;
+}
+
+/* moved .tips */
+/* line 949, global.css.sass */
+.tip-container {
+  display: inline-block;
+  position: relative;
+  width: 430px;
+}
+
+/* line 953, global.css.sass */
+.tip {
+  font-family: "arial", "helvetica", sans-serif;
+  font-size: 13px;
+  display: none;
+  padding: 0 9px;
+  width: 410px;
+  line-height: 1.231;
+  margin: 9px 0;
+  float: left;
+  background: #d9faea;
+  border: 1px solid #9ff3ca;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  *zoom: 1;
+}
+/* line 968, global.css.sass */
+.tip:before, .tip:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 973, global.css.sass */
+.tip .wing {
+  position: absolute;
+  background: url(/Assets/images/lessons/lesson3/global/tip-wing.png) no-repeat;
+  height: 17px;
+  left: 29px;
+  top: -7px;
+  width: 11px;
+}
+/* line 980, global.css.sass */
+.tip p {
+  float: left;
+  padding: 13px 0;
+  margin: 0;
+}
+/* line 984, global.css.sass */
+.tip .buttons {
+  float: right;
+  padding-top: 8px;
+}
+/* line 987, global.css.sass */
+.tip .buttons button {
+  color: #4b5a53;
+  font-weight: bold;
+  border: 1px solid #7dd2a8;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #e5fbef;
+  float: left;
+  margin-right: 3px;
+}
+/* line 998, global.css.sass */
+.tip.interim {
+  background-color: whitesmoke;
+  border: none;
+}
+/* line 1003, global.css.sass */
+.tip.interim .buttons button#cc-cancel {
+  border: 1px solid transparent;
+  background: transparent;
+  color: #00a3cc;
+  font-weight: normal;
+}
+/* line 1008, global.css.sass */
+.tip.interim .buttons button#cc-save {
+  border: 1px solid #cccccc;
+  background: #fafafa;
+  color: #00a3cc;
+}
+
+/* simple expenses padding */
+/* line 1015, global.css.sass */
+#content-container .simple {
+  padding-bottom: 170px;
+}
+
+/* Windows Fix */
+/* line 1022, global.css.sass */
+.windows .question h1 .dd-large {
+  margin-top: 8px !important;
+}
+/* line 1025, global.css.sass */
+.windows .question h1 .dd-large dt a {
+  margin-top: -8px !important;
+  padding-bottom: 8px !important;
+}
+/* line 1029, global.css.sass */
+.windows .question h1 span input {
+  margin-top: 8px !important;
+}
+
+/* line 1032, global.css.sass */
+.lt-ie9 #main #content #footer .right .button-wrapper .right-button {
+  line-height: 0.6em;
+}
+
+/* dropkick normal theme */
+/* line 1040, global.css.sass */
+.dk_container {
+  background: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #272525;
+}
+/* line 1046, global.css.sass */
+.dk_container:focus {
+  outline: 0px;
+  background: #fafafa;
+}
+/* line 1049, global.css.sass */
+.dk_container a {
+  display: block;
+  line-height: 22px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* line 1054, global.css.sass */
+.dk_container:hover {
+  background: #fafafa;
+}
+
+/* line 1057, global.css.sass */
+.dk_toggle {
+  background: url(/Assets/images/lessons/lesson3/global/dropdown-arrow-sml.png) no-repeat 93% center;
+  color: #272525;
+  display: block;
+  padding: 0px 0px 0px 9px;
+  min-width: 80px;
+  height: 19px;
+  text-align: left;
+}
+/* line 1065, global.css.sass */
+.dk_toggle span {
+  margin: 0;
+  height: auto;
+  padding: 0;
+}
+
+/* line 1070, global.css.sass */
+.dk_toggle:hover {
+  color: #272525;
+}
+
+/* line 1073, global.css.sass */
+.dk_container .dk_label {
+  margin: 0px !important;
+  height: 19px !important;
+  padding: 0px !important;
+}
+
+/* line 1077, global.css.sass */
+.dk_open {
+  z-index: 10;
+  background: #f0f0f0;
+}
+
+/* line 1083, global.css.sass */
+.dk_options a {
+  line-height: normal;
+  display: block;
+  color: #272525;
+  text-align: left;
+  background-color: #f0f0f0;
+  padding-left: 9px;
+  padding-top: 5px;
+}
+/* line 1091, global.css.sass */
+.dk_options a:hover {
+  color: #272525;
+  background: #faff00;
+  text-decoration: none;
+}
+
+/* line 1096, global.css.sass */
+.dk_option_current a {
+  background: #faff00;
+}
+
+/* line 1100, global.css.sass */
+.dk_options_inner {
+  margin: 0px;
+  color: #272525;
+}
+
+/* line 1105, global.css.sass */
+.dk_options_inner a {
+  height: 19px;
+}
+
+/* line 1108, global.css.sass */
+.dk_touch .dk_options {
+  max-height: 250px;
+}
+
+/* end normal theme */
+/* dropkick large theme */
+/* line 1114, global.css.sass */
+.dk_theme_large {
+  font: lighter 45px "FoundersGroteskCond-Reg", Arial, Helvetica, sans-serif;
+  background: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  color: #272525;
+}
+/* line 1120, global.css.sass */
+.dk_theme_large:focus {
+  outline: 0px;
+  background: #fafafa;
+}
+/* line 1123, global.css.sass */
+.dk_theme_large a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* line 1126, global.css.sass */
+.dk_container:hover {
+  background: #fafafa;
+}
+
+/* line 1129, global.css.sass */
+.dk_theme_large .dk_toggle {
+  font-size: 45px;
+  height: 33px;
+  line-height: 42px;
+  background: url(/Assets/images/lessons/lesson3/global/dropdown-arrow-lrg.png) no-repeat 93% center;
+  color: #272525;
+  height: 43px;
+  /* padding: 12px 0px 0px 9px */
+  padding-right: 55px;
+  text-align: left;
+}
+
+/* line 1139, global.css.sass */
+.lt-ie9 .dk_theme_large .dk_label {
+  line-height: 42px;
+}
+
+/* line 1142, global.css.sass */
+.lt-ie9 .dk_theme_large .dk_options a {
+  line-height: 42px;
+}
+
+/* line 1146, global.css.sass */
+.dk_toggle:hover {
+  color: #272525;
+}
+
+/* line 1149, global.css.sass */
+.dk_theme_large .dk_label {
+  line-height: 61px;
+  font-size: 45px;
+  display: block;
+  margin: 0px !important;
+  height: 43px !important;
+  padding: 0px !important;
+}
+
+/* line 1157, global.css.sass */
+.dk_open {
+  z-index: 10;
+  background: #f0f0f0;
+}
+
+/* line 1163, global.css.sass */
+.dk_theme_large .dk_options a {
+  height: 42px;
+  font-size: 45px;
+  display: block;
+  color: #272525;
+  text-align: left;
+  background-color: #f0f0f0;
+  padding-left: 9px;
+  padding-top: 10px;
+}
+/* line 1172, global.css.sass */
+.dk_theme_large .dk_options a:hover {
+  color: #272525;
+  background-color: #faff00;
+  text-decoration: none;
+}
+
+/* line 1177, global.css.sass */
+.dk_theme_large .dk_option_current a {
+  /* background-color: #faff00; */
+}
+
+.ie .dk_theme_large .dk_label {
+  line-height: 42px; }
+
+.dk_theme_large .dk_options a {
+  line-height: 42px; }
+
+/* line 1181, global.css.sass */
+.dk_options_inner {
+  margin: 0px;
+  color: #272525;
+}
+
+/* line 1188, global.css.sass */
+.dk_touch .dk_options {
+  max-height: 250px;
+}
+
+/* end large theme */
+/* dropkick large-transportation theme */
+/* line 1194, global.css.sass */
+.dk_theme_large-transportation {
+  font: lighter 45px "FoundersGroteskCond-Reg", Arial, Helvetica, sans-serif;
+  background: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  color: #272525;
+}
+/* line 1200, global.css.sass */
+.dk_theme_large-transportation:focus {
+  outline: 0px;
+  background: #fafafa;
+}
+/* line 1203, global.css.sass */
+.dk_theme_large-transportation a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* line 1208, global.css.sass */
+.dk_theme_large-transportation .dk_toggle {
+  font-size: 45px;
+  height: 33px;
+  line-height: 42px;
+  background: url(/Assets/images/lessons/lesson3/curriculum/curriculum-dropdown-arrow-lrg.png) no-repeat 93% center;
+  color: #272525;
+  height: 43px;
+  /* padding: 12px 0px 0px 9px */
+  padding-right: 55px;
+  width: 261px;
+  min-width: 261px;
+  text-align: left;
+}
+
+/* line 1220, global.css.sass */
+.lt-ie9 .dk_theme_large-transportation .dk_label {
+  line-height: 42px;
+}
+
+/* line 1223, global.css.sass */
+.lt-ie9 .dk_theme_large-transportation .dk_options a {
+  line-height: 42px;
+}
+
+/* line 1228, global.css.sass */
+.dk_theme_large-transportation .dk_label {
+  line-height: 61px;
+  font-size: 45px;
+  display: block;
+  margin: 0px !important;
+  height: 43px !important;
+  padding: 0px !important;
+}
+
+/* line 1239, global.css.sass */
+.dk_theme_large-transportation .dk_options a {
+  height: 42px;
+  font-size: 45px;
+  display: block;
+  color: #272525;
+  text-align: left;
+  background-color: #f0f0f0;
+  padding-left: 9px;
+  padding-top: 5px;
+}
+/* line 1248, global.css.sass */
+.dk_theme_large-transportation .dk_options a:hover {
+  color: #272525;
+  background-color: #faff00;
+  text-decoration: none;
+}
+
+/* line 1253, global.css.sass */
+.dk_theme_large-transportation .dk_option_current a {
+  background-color: #faff00;
+}
+
+/* end large-transportation theme */
+/* line 1259, global.css.sass */
+.dk_container {
+  display: none;
+  float: left;
+  position: relative;
+}
+/* line 1263, global.css.sass */
+.dk_container a {
+  outline: 0;
+}
+
+/* line 1266, global.css.sass */
+.dk_toggle {
+  width: auto !important;
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  position: relative;
+  zoom: 1;
+}
+
+/* line 1274, global.css.sass */
+.dk_open {
+  position: relative;
+}
+/* line 1276, global.css.sass */
+.dk_open .dk_options {
+  left: -1px;
+  display: block;
+  margin-top: 1px;
+  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+/* line 1283, global.css.sass */
+.dk_open .dk_label {
+  margin: 0px;
+  height: auto;
+  padding: 0px;
+  color: inherit;
+}
+
+/* line 1289, global.css.sass */
+.dk_options {
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  left: 0px;
+}
+/* line 1296, global.css.sass */
+.dk_options a:link, .dk_options a:visited {
+  display: block;
+}
+
+/* line 1299, global.css.sass */
+.dk_options_inner {
+  position: relative;
+  list-style: none;
+  padding: 0px;
+}
+
+/* line 1305, global.css.sass */
+.dk_touch .dk_options {
+  overflow: hidden;
+}
+/* line 1307, global.css.sass */
+.dk_touch .dk_options_inner {
+  max-height: none;
+  overflow: visible;
+}
+
+/* line 1311, global.css.sass */
+.dk_fouc select {
+  position: relative;
+  top: -99999em;
+  visibility: hidden;
+}
+
+/* line 1317, global.css.sass */
+.lt-ie9 .dk_theme_large, .lt-ie9 .dk_theme_large-transportation {
+  top: 10px;
+}
+
+/* line 1321, global.css.sass */
+.ie9 .dk_theme_large, .ie9 .dk_theme_large-transportation {
+  top: 8px;
+}
+/* line 1323, global.css.sass */
+.ie9 .dk_theme_large .dk_label, .ie9 .dk_theme_large-transportation .dk_label {
+  line-height: 42px;
+}
+/* line 1325, global.css.sass */
+.ie9 .dk_theme_large .dk_options_inner li a, .ie9 .dk_theme_large-transportation .dk_options_inner li a {
+  line-height: 32px;
+}
+
+/* line 1329, global.css.sass */
+.lt-ie9 input[type=checkbox] {
+  margin: 2px 0 0 0;
+}
+
+/* line 1333, global.css.sass */
+.ie9 input[type=checkbox] {
+  margin: 2px 0 0 0;
+}
+
+/* line 1338, global.css.sass */
+#payment-graph-container {
+  /* display: none */
+}
+
+/* line 1341, global.css.sass */
+#select-repayment-options {
+  cursor: pointer;
+  position: relative;
+}
+/* line 1344, global.css.sass */
+#select-repayment-options .dk_theme_large {
+  background: white;
+  width: 308px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+}
+#dk_container_repayment-selector {
+  width: 360px !important;
+}
+/* line 1353, global.css.sass */
+#select-repayment-options .dk_theme_large .dk_label {
+  font-size: 28px;
+  line-height: 55px;
+}
+/* line 1356, global.css.sass */
+#select-repayment-options .dk_theme_large .dk_toggle {
+  padding-left: 45px;
+  height: 48px;
+}
+/* line 1359, global.css.sass */
+#select-repayment-options .dk_theme_large .dk_options {
+  z-index: 2;
+}
+/* line 1361, global.css.sass */
+#select-repayment-options .dk_theme_large .dk_options a {
+  font-size: 28px;
+  line-height: 45px;
+  padding-left: 45px;
+}
+/* line 1366, global.css.sass */
+#select-repayment-options .dk_theme_large.single .dk_toggle {
+  background: none;
+}
+/* line 1368, global.css.sass */
+#select-repayment-options .dk_theme_large.single .dk_options {
+  display: none;
+}
+/* line 1371, global.css.sass */
+#select-repayment-options #favorites {
+  background: url(/Assets/images/lessons/lesson3/global/favorites-off.png) 0 0 no-repeat;
+  width: 25px;
+  height: 48px;
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  z-index: 10000;
+}
+/* line 1379, global.css.sass */
+#select-repayment-options #favorites:hover {
+  background: url(/Assets/images/lessons/lesson3/global/favorites-hover.png) 0 0 no-repeat;
+}
+/* line 1381, global.css.sass */
+#select-repayment-options #favorites.on {
+  background: url(/Assets/images/lessons/lesson3/global/favorites-on.png) 0 0 no-repeat;
+}
+
+/* line 1384, global.css.sass */
+.step1-content .btn-remove {
+  float: none;
+}
+
+/* line 1389, global.css.sass */
+.step1-content .dk_theme_large {
+  width: 456px;
+}
+
+/* line 1393, global.css.sass */
+#former-expenses {
+  width: 75%;
+}
+
+/* line 1397, global.css.sass */
+#left-column .repayment-option {
+  display: none;
+}
+
+/* line 1400, global.css.sass */
+input.large.short {
+  width: 60px;
+}
+
+/* line 1403, global.css.sass */
+p.optional {
+  font: normal 22px "FoundersGroteskCond-Reg", Arial, Helvetica, sans-serif;
+  color: #737070;
+  margin: 40px 0;
+}
+
+/* line 1408, global.css.sass */
+#main #content #step .question span.inline {
+  float: none;
+  display: inline-block;
+  position: relative;
+  top: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1416, global.css.sass */
+.lt-ie9 #main #content #step .question span.inline {
+  top: 0;
+}
+
+/* line 1419, global.css.sass */
+.step3-content a.btn-remove {
+  display: none;
+  float: none;
+}
+
+/* line 1423, global.css.sass */
+.one-time-expense {
+  margin: 0 0 40px 0;
+}
+
+/* line 1428, global.css.sass */
+#main #content #step .question .minimum-payment {
+  line-height: 15px;
+  margin: 40px 0 0 0;
+}
+/* line 1431, global.css.sass */
+#main #content #step .question .minimum-payment .checker {
+  float: left;
+}
+/* line 1433, global.css.sass */
+#main #content #step .question .minimum-payment span {
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+/* line 1437, global.css.sass */
+#main #content #step .question .minimum-payment label {
+  display: inline;
+  float: left;
+  font-family: "arial", sans-serif;
+  font-size: 15px;
+}
+
+/* line 1444, global.css.sass */
+.step5-content {
+  padding-bottom: 100px;
+}
+
+/* line 1447, global.css.sass */
+#graph-header {
+  position: relative;
+  z-index: 0;
+  font-size: 27px;
+  font-family: "FoundersGroteskCond-Reg", sans-serif;
+  font-weight: normal;
+  /* margin: 0 auto 0px 144px */
+  margin: 0px 0px 15px 144px;
+  padding: 40px 0 0;
+  text-align: center;
+  width: 74%;
+  position: relative;
+  height: 77px;
+  overflow: hidden;
+}
+/* line 1462, global.css.sass */
+#graph-header .heading {
+  line-height: 1;
+  width: 97%;
+  /* margin-left: 5% */
+}
+/* line 1465, global.css.sass */
+#graph-header .heading #graph-selectors {
+  position: absolute;
+  width: 265px;
+  left: 34%;
+  font-size: 12px;
+}
+
+/* line 1470, global.css.sass */
+#view-selector {
+  position: absolute;
+  bottom: 45px;
+  right: 40px;
+}
+
+/* line 1474, global.css.sass */
+#view-selector a {
+  height: 28px;
+  display: block;
+  float: left;
+  background: url("/Assets/images/lessons/lesson3/graph/graph-list-view-selector-sprite.gif");
+  text-indent: -30000px;
+}
+
+/* line 1480, global.css.sass */
+#show-graphs {
+  width: 35px;
+  background-position: 0px -28px !important;
+}
+/* line 1483, global.css.sass */
+#show-graphs.selected {
+  background-position: 0px 0px !important;
+}
+
+/* line 1485, global.css.sass */
+#show-list {
+  width: 37px;
+  background-position: -35px 0px !important;
+}
+/* line 1488, global.css.sass */
+#show-list.selected {
+  background-position: -35px -28px !important;
+}
+
+/* line 1490, global.css.sass */
+#header-hidden-nav {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 210px;
+  z-index: 900;
+}
+/* line 1497, global.css.sass */
+#header-hidden-nav .wrapper {
+  position: absolute;
+  bottom: 0px;
+  width: 275px;
+  left: 41%;
+}
+/* line 1502, global.css.sass */
+#header-hidden-nav .hidden-btn {
+  float: left;
+  display: block;
+  width: 120px;
+  height: 28px;
+  /* opacity: .2 */
+}
+/* line 1508, global.css.sass */
+#header-hidden-nav .monthly-payment {
+  /* background: lime */
+  width: 145px;
+}
+/* line 1511, global.css.sass */
+#header-hidden-nav .loan-balance {
+  /* background: navy */
+  width: 113px;
+}
+
+/* line 1514, global.css.sass */
+#list-view {
+  margin-top: 30px;
+}
+/* line 1516, global.css.sass */
+#list-view dl {
+  margin: 0px;
+  padding: 0px;
+  background: url(/Assets/images/lessons/lesson3/global/bg-dotted.png) repeat-x bottom left;
+  height: 22px;
+  margin-top: 10px;
+}
+/* line 1522, global.css.sass */
+#list-view dl.last {
+  background: none;
+}
+/* line 1524, global.css.sass */
+#list-view dl dt {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+/* line 1528, global.css.sass */
+#list-view dl dd {
+  float: right;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 1534, global.css.sass */
+#graph-nav {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 210px;
+  width: 100%;
+}
+/* line 1540, global.css.sass */
+#graph-nav .wrapper {
+  position: absolute;
+  background: lime;
+  bottom: 0px;
+  border: 1px solid #c8cbcc;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  left: 41%;
+}
+/* line 1547, global.css.sass */
+#graph-nav a {
+  padding-left: 11px;
+  padding-top: 9px;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #00a3d9;
+  background: white;
+  overflow: hidden;
+  width: 124px;
+  height: 19px;
+  float: left;
+  display: block;
+}
+/* line 1559, global.css.sass */
+#graph-nav .loan-balance {
+  width: 102px;
+  border-right: 1px solid #c8cbcc;
+}
+/* line 1562, global.css.sass */
+#graph-nav .active {
+  color: #8c8989;
+  background: #e9eaea;
+}
+
+/* line 1566, global.css.sass */
+ul#key {
+  background: #f2f2f2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  padding: 3px 3px 3px 9px;
+  display: inline;
+  float: left;
+  margin: 40px 0 0 100px;
+}
+/* line 1573, global.css.sass */
+ul#key li {
+  font-family: "arial", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0 15px 0 0;
+  display: inline;
+  float: left;
+}
+/* line 1580, global.css.sass */
+ul#key li.principle {
+  background: url("/Assets/images/lessons/lesson3/step5/key-green.gif") 0 2px no-repeat;
+  padding: 0 0 0 15px;
+}
+/* line 1583, global.css.sass */
+ul#key li.blue {
+  background: url("/Assets/images/lessons/lesson3/step5/key-blue.gif") 0 2px no-repeat;
+  padding: 0 0 0 15px;
+}
+/* line 1586, global.css.sass */
+ul#key li.red {
+  background: url("/Assets/images/lessons/lesson3/step5/key-red.gif") 0 2px no-repeat;
+  padding: 0 0 0 15px;
+}
+
+/* line 1589, global.css.sass */
+ul#time-scale {
+  display: inline;
+  float: right;
+  margin: 40px 50px 0 0;
+  padding: 0;
+}
+/* line 1594, global.css.sass */
+ul#time-scale li {
+  font-family: "arial", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  display: inline;
+  float: right;
+  margin: 0 0 0 20px;
+}
+/* line 1601, global.css.sass */
+ul#time-scale li a {
+  color: #00a3d9;
+}
+/* line 1604, global.css.sass */
+ul#time-scale li.selected a {
+  color: black;
+}
+
+/* line 1606, global.css.sass */
+.update-graph {
+  background-color: white;
+  border: 1px solid #cccccc;
+  color: #00a3cc;
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 3px 17px;
+  margin: 25px 0 30px 0;
+  width: 85px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 1622, global.css.sass */
+.update-graph:hover {
+  color: #00a3cc;
+}
+
+/* line 1625, global.css.sass */
+.pay-extra {
+  position: relative;
+  margin: 20px 0 0 0 !important;
+  width: 239px;
+  height: 23px;
+}
+/* line 1630, global.css.sass */
+.pay-extra .extra-text {
+  font-weight: normal !important;
+  position: absolute;
+  left: 0;
+}
+/* line 1634, global.css.sass */
+.pay-extra .dk_container {
+  position: absolute;
+  right: 0;
+  background: white;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #272525;
+  padding: 0 0 3px 0;
+}
+/* line 1647, global.css.sass */
+.pay-extra .dk_toggle {
+  min-width: 50px;
+}
+.interestRate {
+  position:relative;
+}
+/* line 1650, global.css.sass */
+.modify-interest {
+  display: inline-block;
+  width:120px;
+  max-height:34px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  padding-left: 8px !important;
+  position: relative;
+  top: 0;
+}
+.ie .modify-interest {
+ position: relative;
+  top: 5px;
+}
+.webkit .modify-interest {
+  position: relative;
+  top: -5px;
+}
+.flex-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex-cell {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.modify-interest.large input[type="text"] {
+  padding: 6px 0 5px 10px;
+  font-size: 20px;
+  width: 76px;
+}
+.modify-interest.large a#interest-less, .modify-interest.large a#interest-more {
+  cursor: pointer;
+  font-size: .65em;
+  line-height: 1.5em;
+  color: #555;
+  outline: none;
+ }
+.ie .modify-interest.large a#interest-less, .ie .modify-interest.large a#interest-more {
+   line-height: 1.3em;
+ }
+/* line 1720, global.css.sass */
+#main #content #step .step6-content .description {
+  margin: 0 auto 5px;
+}
+input[type="text"]:disabled {
+  background-color: transparent !important;
+  border: 0 !important;
+  padding: 0;
+  font-size: 15px;
+}
+.interest input[type="text"]:disabled {
+  width: 22px;
+}
+/* line 1723, global.css.sass */
+.step6-content .table-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  position: absolute;
+}
+/* line 1728, global.css.sass */
+.step6-content .table-container .table {
+  margin: 0 auto;
+  text-align: left;
+}
+/* line 1732, global.css.sass */
+.step6-content .table-container .table .thead .th {
+  font-weight: normal;
+  width: 21.5%;
+  margin: 0 20px 0 0;
+  padding: 5px 0 25px 10px;
+  display: inline-block;
+}
+/* line 1738, global.css.sass */
+.step6-content .table-container .table .thead .th.first {
+  width: 25.5%;
+  margin: 0 20px 0 0;
+  padding: 0.25% 0 0.25% 1%;
+}
+/* line 1742, global.css.sass */
+.step6-content .table-container .table .thead .th:nth-child(even) {
+  background-color: #faf7f7;
+}
+/* line 1744, global.css.sass */
+.step6-content .table-container .table .thead .th:last-child {
+  margin: 0;
+}
+/* line 1747, global.css.sass */
+.step6-content .table-container .table .tbody .tr:hover {
+  background-color: #e6fcfe;
+  width: auto;
+}
+/* line 1750, global.css.sass */
+.step6-content .table-container .table .tbody .tr:hover .td:nth-child(even) {
+  background-color: #e6fcfe;
+}
+/* line 1752, global.css.sass */
+.step6-content .table-container .table .tbody .tr:hover .td:nth-child(odd) {
+  background-color: #e6fcfe;
+}
+/* line 1754, global.css.sass */
+.step6-content .table-container .table .tbody .tr.last:hover {
+  background-color: #e6fcfe;
+}
+/* line 1756, global.css.sass */
+.step6-content .table-container .table .tbody .tr.last:hover .td:nth-child(even) {
+  background-color: #e6fcfe;
+}
+/* line 1759, global.css.sass */
+.step6-content .table-container .table .tbody .tr.last .td {
+  background: none;
+}
+/* line 1761, global.css.sass */
+.step6-content .table-container .table .tbody .tr.last .td:nth-child(even) {
+  background-color: #faf7f7;
+}
+/* line 1763, global.css.sass */
+.step6-content .table-container .table .tbody .td {
+  font-weight: bold;
+  background: url("/Assets/images/lessons/lesson3/global/dot-col2.gif") 0 100% repeat-x;
+  width: 21.5%;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  margin: 0 20px 0 0;
+}
+/* line 1770, global.css.sass */
+.step6-content .table-container .table .tbody .td.first {
+  font-weight: normal;
+  background: url("/Assets/images/lessons/lesson3/global/dot-col1.gif") 0 100% repeat-x;
+  width: 25.5%;
+  margin: 0 20px 0 0;
+  padding: 0.25% 0 0.25% 1%;
+}
+/* line 1776, global.css.sass */
+.step6-content .table-container .table .tbody .td.first.sub {
+  width: 24.5%;
+  padding: 0.25% 0 0.25% 2%;
+}
+/* line 1779, global.css.sass */
+.step6-content .table-container .table .tbody .td:last-child {
+  margin: 0;
+}
+/* line 1781, global.css.sass */
+.step6-content .table-container .table .tbody .td:nth-child(even) {
+  background-color: #faf7f7;
+}
+
+/* line 1785, global.css.sass */
+#repayment-options a {
+  color: #00a3d9;
+  font-weight: bold;
+  font-size: 12px;
+}
+/* line 1789, global.css.sass */
+#repayment-options .left {
+  display: inline;
+  float: left;
+  margin: 0 5px 0 0;
+}
+/* line 1793, global.css.sass */
+#repayment-options .dk_container {
+  background: white;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #272525;
+  padding: 0 0 3px 0;
+  margin: 0 3px 0 0;
+}
+/* line 1805, global.css.sass */
+#repayment-options .dk_container .dk_options {
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 1814, global.css.sass */
+#repayment-options .dk_container a {
+  font-family: sans-serif;
+  color: #272525;
+  font-weight: normal;
+}
+/* line 1818, global.css.sass */
+#repayment-options .dk_toggle {
+  min-width: 50px;
+}
+
+/* line 1821, global.css.sass */
+.no-favorites {
+  margin: 80px auto 0;
+  text-align: center;
+}
+/* line 1824, global.css.sass */
+.no-favorites h1 {
+  background: url("/Assets/images/lessons/lesson3/global/woops-header.png") no-repeat 0 0;
+  margin: 0 auto 15px auto;
+  width: 121px;
+  height: 26px;
+  overflow: hidden;
+  text-indent: -99999px;
+}
+/* line 1831, global.css.sass */
+.no-favorites p {
+  color: #737070;
+  font-size: 15px;
+  width: 550px;
+  margin: 0 auto;
+}
+
+/* Global Declaration */
+/* line 1843, global.css.sass */
+div.radio span {
+  background-image: url(/Assets/images/lessons/lesson3/global/form/sprite.png);
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 1848, global.css.sass */
+div.checker span {
+  background-image: url(/Assets/images/lessons/lesson3/global/form/checkbox-sprite.png);
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 1853, global.css.sass */
+.radio,
+.checker,
+.radio *,
+.checker * {
+  margin: 0;
+  padding: 0;
+}
+
+/* Checkbox */
+/* line 1862, global.css.sass */
+div.checker {
+  width: 14px;
+  height: 14px;
+}
+
+/* line 1866, global.css.sass */
+div.checker input {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+/* line 1871, global.css.sass */
+div.checker span {
+  background-position: 0px 0px;
+  height: 14px;
+  width: 14px;
+}
+
+/* line 1890, global.css.sass */
+div.checker span.checked {
+  background-position: -56px 0px;
+}
+
+/* Radio */
+/* line 1919, global.css.sass */
+div.radio {
+  width: 18px;
+  height: 18px;
+}
+
+/* line 1923, global.css.sass */
+div.radio input {
+  width: 18px;
+  height: 18px;
+}
+
+/* line 1927, global.css.sass */
+div.radio span {
+  height: 18px;
+  width: 18px;
+  background-position: 0px -279px;
+}
+
+/* line 1932, global.css.sass */
+div.radio:active span,
+div.radio.active span {
+  background-position: -18px -279px;
+}
+
+/* line 1936, global.css.sass */
+div.radio.focus span,
+div.radio:hover span {
+  background-position: -36px -279px;
+}
+
+/* line 1940, global.css.sass */
+div.radio.focus:active span,
+div.radio:active:hover span,
+div.radio.active:hover span,
+div.radio.active.focus span {
+  background-position: -54px -279px;
+}
+
+/* line 1946, global.css.sass */
+div.radio span.checked {
+  background-position: -72px -279px;
+}
+
+/* line 1950, global.css.sass */
+div.radio:active span.checked,
+div.radio.active span.checked {
+  background-position: -90px -279px;
+}
+
+/* line 1954, global.css.sass */
+div.radio.focus span.checked, div.radio:hover span.checked {
+  background-position: -108px -279px;
+}
+
+/* line 1957, global.css.sass */
+div.radio.focus:active span.checked,
+div.radio:hover:active span.checked,
+div.radio.focus.active span.checked,
+div.radio.active:hover span.checked {
+  background-position: -126px -279px;
+}
+
+/* line 1963, global.css.sass */
+div.radio.disabled span,
+div.radio.disabled:active span,
+div.radio.disabled.active span {
+  background-position: -144px -279px;
+}
+
+/* line 1968, global.css.sass */
+div.radio.disabled span.checked,
+div.radio.disabled:active span.checked,
+div.radio.disabled.active span.checked {
+  background-position: -162px -279px;
+}
+
+/* Checker */
+/* line 1974, global.css.sass */
+div.checker {
+  margin-right: 5px;
+}
+
+/* Radio */
+/* line 1978, global.css.sass */
+div.radio {
+  margin-right: 3px;
+}
+
+/* line 1983, global.css.sass */
+.checker,
+.radio {
+  display: -moz-inline-box;
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 1991, global.css.sass */
+.radio input:focus, .checker input:focus {
+  outline: 0;
+}
+
+/* Checker */
+/* line 1996, global.css.sass */
+div.checker {
+  position: relative;
+}
+
+/* line 1999, global.css.sass */
+div.checker span {
+  display: -moz-inline-box;
+  display: inline-block;
+  text-align: center;
+}
+
+/* line 2004, global.css.sass */
+div.checker input {
+  opacity: 0;
+  display: inline-block;
+  background: none;
+}
+
+/* Radio */
+/* line 2012, global.css.sass */
+div.radio {
+  position: relative;
+}
+
+/* line 2015, global.css.sass */
+div.radio span {
+  display: -moz-inline-box;
+  display: inline-block;
+  text-align: center;
+}
+
+/* line 2020, global.css.sass */
+div.radio input {
+  opacity: 0;
+  text-align: center;
+  display: inline-block;
+  background: none;
+}
+
+/* line 2027, global.css.sass */
+.highcharts-tooltip {
+  z-index: 800;
+}
+
+/* confirm overlay */
+/* line 2031, global.css.sass */
+.confirm-overlay {
+  width: 370px;
+  height: 193px;
+  text-align: center;
+  background-color: #fafafa;
+  border: 1px solid #d9d9d9;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  position: relative;
+  display: none;
+}
+/* line 2040, global.css.sass */
+.confirm-overlay .overlay-content {
+  padding: 29px 29px 6px;
+  border-bottom: 1px solid #d9d9d9;
+}
+/* line 2043, global.css.sass */
+.confirm-overlay .overlay-content h1 {
+  background: url("/Assets/images/lessons/lesson3/global/headline-confirm.png") no-repeat 0 0;
+  margin: 0 auto;
+  width: 200px;
+  height: 0;
+  padding-top: 28px;
+  overflow: hidden;
+}
+/* line 2050, global.css.sass */
+.confirm-overlay .overlay-content p {
+  font-size: 15px;
+  line-height: 20px;
+  height: 60px;
+}
+/* line 2054, global.css.sass */
+.confirm-overlay .buttons {
+  position: absolute;
+  bottom: 0;
+  height: 39px;
+}
+/* line 2058, global.css.sass */
+.confirm-overlay .buttons a {
+  display: block;
+  float: left;
+  width: 184px;
+  height: 39px;
+  line-height: 39px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #00a3cc;
+}
+/* line 2067, global.css.sass */
+.confirm-overlay .buttons a:hover {
+  background-color: #f2f2f2;
+}
+/* line 2069, global.css.sass */
+.confirm-overlay .buttons .yes {
+  border-right: 1px solid #d9d9d9;
+}
+/* line 2071, global.css.sass */
+.confirm-overlay .buttons .no {
+  width: 185px;
+}
+
+/* compare overlay */
+/* line 2075, global.css.sass */
+#compare-overlay {
+  width: 1200px;
+  height: 590px;
+  text-align: center;
+  background-color: #fafafa;
+  border: 1px solid #d9d9d9;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  position: relative;
+  display: none;
+}
+/* line 2084, global.css.sass */
+#compare-overlay .overlay-content {
+  padding: 29px 0px 6px;
+}
+/* line 2086, global.css.sass */
+#compare-overlay .overlay-content h1 {
+  margin: 0 auto;
+  padding: 0 0 29px 0;
+}
+/* line 2089, global.css.sass */
+#compare-overlay .overlay-content .title {
+  margin: 0 0 29px 0;
+  border-bottom: 1px solid #d9d9d9;
+  position: relative;
+}
+/* line 2093, global.css.sass */
+#compare-overlay .overlay-content .title ul {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  padding: 0 30px 0 0;
+  margin: 0;
+}
+/* line 2099, global.css.sass */
+#compare-overlay .overlay-content .title ul li {
+  display: inline-block;
+  float: left;
+}
+/* line 2102, global.css.sass */
+#compare-overlay .overlay-content .title ul li a {
+  color: #00a3d9;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 0 0 0 20px;
+}
+/* line 2107, global.css.sass */
+#compare-overlay .overlay-content .title ul li a.print {
+  background: url(/Assets/images/lessons/lesson3/global/print-icon.gif) 0 1px no-repeat;
+  border-right: 1px solid #d9d9d9;
+  padding: 0 10px 0 20px;
+  margin: 0 10px 0 0;
+}
+/* line 2112, global.css.sass */
+#compare-overlay .overlay-content .title ul li a.email {
+  background: url(/Assets/images/lessons/lesson3/global/email-icon.gif) 0 2px no-repeat;
+}
+/* line 2114, global.css.sass */
+#compare-overlay .overlay-content .title ul li a.email span {
+  display: none !important;
+}
+/* line 2116, global.css.sass */
+#compare-overlay .overlay-content .overlay-body {
+  padding: 0 29px;
+  overflow-x: hidden;
+}
+/* line 2119, global.css.sass */
+#compare-overlay .table-container {
+  width: 1150px;
+  min-height: 375px;
+  margin: 0 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+/* line 2125, global.css.sass */
+#compare-overlay .table-container .table {
+  text-align: left;
+}
+/* line 2128, global.css.sass */
+#compare-overlay .table-container .table .thead .th {
+  font-weight: normal;
+  width: 215px;
+  margin: 0 20px 0 0;
+  padding: 5px 0 25px 10px;
+  display: inline-block;
+}
+/* line 2134, global.css.sass */
+#compare-overlay .table-container .table .thead .th.first {
+  width: 375px;
+  margin: 0 20px 0 0;
+  padding: 5px 0 20px 10px;
+}
+/* line 2138, global.css.sass */
+#compare-overlay .table-container .table .thead .th:last-child {
+  margin: 0;
+}
+/* line 2140, global.css.sass */
+#compare-overlay .table-container .table .thead .th:nth-child(even) {
+  background-color: #faf7f7;
+}
+/* line 2142, global.css.sass */
+#compare-overlay .table-container .table .thead .th:nth-child(even) .dk_theme_large {
+  background-color: #faf7f7;
+}
+/* line 2144, global.css.sass */
+#compare-overlay .table-container .table .thead .th:nth-child(even) .dk_theme_large .dk_options a {
+  background-color: #faf7f7;
+}
+/* line 2148, global.css.sass */
+#compare-overlay .table-container .table .tbody .tr:hover {
+  background-color: #e6fcfe;
+}
+/* line 2150, global.css.sass */
+#compare-overlay .table-container .table .tbody .tr:hover .td:nth-child(even) {
+  background-color: #e6fcfe;
+}
+/* line 2152, global.css.sass */
+#compare-overlay .table-container .table .tbody .tr.last:hover {
+  background-color: #e6fcfe;
+}
+/* line 2154, global.css.sass */
+#compare-overlay .table-container .table .tbody .tr.last:hover .td:nth-child(even) {
+  background-color: #e6fcfe;
+}
+/* line 2157, global.css.sass */
+#compare-overlay .table-container .table .tbody .tr.last .td {
+  background-image: none;
+}
+/* line 2159, global.css.sass */
+#compare-overlay .table-container .table .tbody .tr.last .td:nth-child(even) {
+  background-color: #faf7f7;
+}
+/* line 2161, global.css.sass */
+#compare-overlay .table-container .table .tbody .td {
+  font-weight: bold;
+  background: url("/Assets/images/lessons/lesson3/global/dot-col2.gif") 0 100% no-repeat;
+  width: 215px;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  margin: 0 20px 0 0;
+}
+/* line 2168, global.css.sass */
+#compare-overlay .table-container .table .tbody .td.first {
+  font-weight: normal;
+  background: url("/Assets/images/lessons/lesson3/global/dot-col1.gif") 0 100% no-repeat;
+  width: 375px;
+  margin: 0 20px 0 0;
+  padding: 5px 0 5px 10px;
+}
+/* line 2174, global.css.sass */
+#compare-overlay .table-container .table .tbody .td.first.sub {
+  width: 345px;
+  padding: 5px 0 5px 40px;
+}
+/* line 2177, global.css.sass */
+#compare-overlay .table-container .table .tbody .td:last-child {
+  margin: 0;
+}
+/* line 2179, global.css.sass */
+#compare-overlay .table-container .table .tbody .td:nth-child(even) {
+  background-color: #faf7f7;
+}
+/* line 2183, global.css.sass */
+#compare-overlay .buttons {
+  border-top: 1px solid #d9d9d9;
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+}
+/* line 2189, global.css.sass */
+#compare-overlay .buttons a {
+  display: block;
+  height: 40px;
+  line-height: 39px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #00a3cc;
+  text-align: center;
+}
+/* line 2197, global.css.sass */
+#compare-overlay .buttons a:hover {
+  background-color: #f2f2f2;
+}
+/* line 2200, global.css.sass */
+#compare-overlay .dk_container {
+  float: none;
+}
+/* line 2202, global.css.sass */
+#compare-overlay .dk_theme_large {
+  background: #fafafa;
+  border: none;
+  width: 205px;
+}
+/* line 2206, global.css.sass */
+#compare-overlay .dk_theme_large .dk_toggle {
+  background: url(/Assets/images/lessons/lesson3/global/dropdown-arrow-sml.png) no-repeat 93% center;
+  height: 15px;
+  padding: 0 30px 0 0;
+}
+/* line 2210, global.css.sass */
+#compare-overlay .dk_theme_large .dk_label {
+  line-height: 15px;
+  font-family: arial, sans-serif;
+  font-size: 15px;
+  display: block;
+  margin: 0px !important;
+  height: 20px !important;
+  padding: 0px !important;
+}
+/* line 2218, global.css.sass */
+#compare-overlay .dk_theme_large .dk_options {
+  border: none;
+  width: 180px;
+}
+/* line 2221, global.css.sass */
+#compare-overlay .dk_theme_large .dk_options a {
+  height: 20px;
+  font-family: arial, sans-serif;
+  font-size: 15px;
+  display: block;
+  color: #272525;
+  text-align: left;
+  background-color: #f0f0f0;
+  padding-left: 0px;
+  padding-top: 10px;
+  width: 205px;
+}
+
+/* bookmark overlay */
+/* line 2234, global.css.sass */
+.confirm-overlay#bookmark {
+  width: 520px;
+  height: 360px;
+  text-align: center;
+  background-color: #fafafa;
+  border: 1px solid #d9d9d9;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  position: relative;
+  display: none;
+}
+/* line 2243, global.css.sass */
+.confirm-overlay#bookmark .overlay-content {
+  border-bottom: none;
+  padding: 29px 29px 6px;
+}
+/* line 2246, global.css.sass */
+.confirm-overlay#bookmark .overlay-content h1 {
+  background: url("/Assets/images/lessons/lesson3/global/headline-bookmark.png") no-repeat 0 0;
+  margin: 0 auto 15px auto;
+  width: 132px;
+  height: 0;
+  padding-top: 28px;
+  overflow: hidden;
+}
+/* line 2253, global.css.sass */
+.confirm-overlay#bookmark .overlay-content p {
+  font-size: 15px;
+  line-height: 20px;
+  height: auto;
+  margin: 0 0 15px 0;
+  text-align: left;
+}
+/* line 2259, global.css.sass */
+.confirm-overlay#bookmark .overlay-content p.favorites {
+  background: url("/Assets/images/lessons/lesson3/global/favorites-pop-up.png") no-repeat 0 0;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 25px 0 35px 65px;
+  margin: 0 0 25px 0;
+}
+/* line 2265, global.css.sass */
+.confirm-overlay#bookmark .buttons {
+  border-top: 1px solid #d9d9d9;
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+}
+/* line 2271, global.css.sass */
+.confirm-overlay#bookmark .buttons a {
+  display: block;
+  height: 40px;
+  line-height: 39px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #00a3cc;
+  text-align: center;
+  width: 100%;
+}
+/* line 2280, global.css.sass */
+.confirm-overlay#bookmark .buttons a:hover {
+  background-color: #f2f2f2;
+}
+
+/* bookmark overlay */
+/* line 2284, global.css.sass */
+#qualify-overlay {
+  width: 700px;
+  height: 351px;
+  text-align: center;
+  background-color: #fafafa;
+  border: 1px solid #d9d9d9;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  position: relative;
+  display: none;
+}
+/* line 2293, global.css.sass */
+#qualify-overlay .overlay-content {
+  border-bottom: none;
+  padding: 29px 29px 6px;
+}
+/* line 2296, global.css.sass */
+#qualify-overlay .overlay-content .center-content {
+  width: 639px;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 20px;
+}
+/* line 2300, global.css.sass */
+#qualify-overlay .overlay-content .center-content .column {
+  margin-right: 3%;
+  float: left;
+  background: url(/Assets/images/lessons/lesson3/global/qualify-overlay-arrow.png) no-repeat right center;
+  width: 31%;
+}
+/* line 2305, global.css.sass */
+#qualify-overlay .overlay-content .center-content .column h3 {
+  margin: 0px;
+  color: #ff0099;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: left;
+}
+/* line 2311, global.css.sass */
+#qualify-overlay .overlay-content .center-content .column p {
+  font-size: 12px;
+  width: 82%;
+}
+/* line 2314, global.css.sass */
+#qualify-overlay .overlay-content .center-content .right-column {
+  background: none;
+  margin-right: 0;
+}
+/* line 2317, global.css.sass */
+#qualify-overlay .overlay-content .bottom {
+  width: 396px;
+  margin: 39px auto 0px auto;
+  font-size: 12px;
+}
+/* line 2321, global.css.sass */
+#qualify-overlay .overlay-content .bottom p {
+  text-align: center;
+}
+/* line 2323, global.css.sass */
+#qualify-overlay .overlay-content h1 {
+  margin: 0 auto;
+  padding: 0 0 29px 0;
+  color: #272525;
+  font-size: 34px;
+  font-family: "FoundersGroteskCond-SmBd", sans-serif;
+}
+/* line 2329, global.css.sass */
+#qualify-overlay .overlay-content p {
+  font-size: 15px;
+  line-height: 20px;
+  height: auto;
+  margin: 0 0 15px 0;
+  text-align: left;
+}
+/* line 2336, global.css.sass */
+#qualify-overlay .buttons {
+  border-top: 1px solid #d9d9d9;
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+}
+/* line 2342, global.css.sass */
+#qualify-overlay .buttons a {
+  display: block;
+  height: 40px;
+  line-height: 39px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #00a3cc;
+  text-align: center;
+  width: 100%;
+}
+/* line 2351, global.css.sass */
+#qualify-overlay .buttons a:hover {
+  background-color: #f2f2f2;
+}
+
+/* line 2355, global.css.sass */
+.fancybox-lock .fancybox-overlay {
+  overflow: hidden !important;
+  overflow-y: hidden !important;
+}
+
+@media print {
+  /* line 2360, global.css.sass */
+  #main {
+    display: none;
+    overflow: hidden;
+  }
+  /* line 2363, global.css.sass */
+  #main #left-column {
+    display: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  /* line 2367, global.css.sass */
+  #header {
+    display: none;
+  }
+
+  /* line 2369, global.css.sass */
+  #right-column {
+    display: none;
+    overflow: hidden;
+  }
+
+  /* line 2372, global.css.sass */
+  #content {
+    display: none;
+    overflow: hidden;
+  }
+
+  /* line 2375, global.css.sass */
+  .fancybox-overlay-fixed {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+
+  /* line 2379, global.css.sass */
+  .fancybox-wrap {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+
+  /* line 2383, global.css.sass */
+  .fancybox-overlay {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+  }
+
+  /* line 2387, global.css.sass */
+  #compare-overlay {
+    display: block;
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    font-size: 12px;
+    width: 640px;
+  }
+  /* line 2394, global.css.sass */
+  #compare-overlay .title ul {
+    display: none;
+  }
+  /* line 2396, global.css.sass */
+  #compare-overlay a.ok {
+    display: none;
+  }
+  /* line 2398, global.css.sass */
+  #compare-overlay .overlay-body {
+    padding: 0 !important;
+  }
+  /* line 2400, global.css.sass */
+  #compare-overlay .table-container {
+    overflow: hidden;
+    width: 100%;
+  }
+  /* line 2405, global.css.sass */
+  #compare-overlay .table-container .table .thead .th.first {
+    width: 250px;
+    margin: 0 5px 0 0;
+  }
+  /* line 2408, global.css.sass */
+  #compare-overlay .table-container .table .thead .th {
+    margin: 0 5px 0 0;
+    padding: 5px 0 25px 10px;
+    width: 100px;
+  }
+  /* line 2413, global.css.sass */
+  #compare-overlay .table-container .table .tbody .td.first {
+    width: 250px;
+    margin: 0 5px 0 0;
+  }
+  /* line 2416, global.css.sass */
+  #compare-overlay .table-container .table .tbody .td {
+    margin: 0 5px 0 0;
+    width: 100px;
+  }
+  /* line 2419, global.css.sass */
+  #compare-overlay .table-container .table .tbody .td.first.sub {
+    width: 250px;
+    padding: 5px 0 5px 10px;
+    margin: 0 5px 0 0;
+  }
+  /* line 2423, global.css.sass */
+  #compare-overlay .dk_theme_large .dk_label {
+    font-size: 12px;
+  }
+}
+
+.addthis_toolbox {
+  position: absolute;
+  right: 20px;
+  top: 70px;
+  z-index: 1000;
+}
+.addthis_toolbox a {
+  color: #fff;
+}
+
+
+.disclaimer {
+  font-size: 12px;
+  color: #333;
+}

@@ -1,0 +1,30 @@
+<div id="inline-questions-container" class="noprint margin-top ">
+    <form id="questions-form" data-abide="ajax" class="hide  no-bottom-margin">
+
+        <div class="row margin-top collapse">
+            <div class="small-12 medium-8 columns">
+                <label for="selectGraduationYear">What is your graduation year?</label>
+            </div>
+             <div class="small-6 medium-4 columns left">
+                <div class="styled-select">
+                    <select id="selectGraduationYear" name="selectGraduationYear">
+                        <option value=""></option>
+                        {@yearDropdown startYear="15" range="-99" /}
+                        <option value="1900">Unknown</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-top no-bottom-margin collapse"> 
+            <div class="small-12 columns text-right">
+                <button type="submit" id="btnSubmit" class="button base-btn main-btn">Save</button>
+            </div>
+        </div>
+        <script>
+            require(['modules/Profile/myProfileQuestions'], function (ProfileQuestions) {
+            var profileQuestionsView = new ProfileQuestions({el: '#inline-questions-container'});
+            });
+        </script>
+    </form>
+    {>"Profile/AjaxMessages" /}
+</div>

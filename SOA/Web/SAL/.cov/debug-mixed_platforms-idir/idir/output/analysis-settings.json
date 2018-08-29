@@ -1,0 +1,12 @@
+{
+  covAnalyzeArgs : [
+    "--fb-include",
+    "coverity-default",
+    "--fb-exclude",
+    "desktop",
+    "--enable",
+    "PARSE_ERROR"
+  ],
+  fileOptions : [],
+  fileCheckerOptions : []
+}

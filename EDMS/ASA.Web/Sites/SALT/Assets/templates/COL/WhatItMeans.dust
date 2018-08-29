@@ -1,0 +1,22 @@
+<div id="{blockID}" class="js-what-it-means-blocks hide">
+    <div class="row collapse">
+        <a href class="close-reveal-modal cancel-circle overlayClose"></a>
+        
+        <div class="headline">
+            <h1>{header}</h1> 
+        </div>
+    </div>
+    <div class="small-12 medium-6 columns no-left-padding">
+        <div class="margin-bottom whatitmeans-text">
+            {body}
+        </div>
+        <article class="link-list full-width">
+            <ul class="no-left-margin">
+                {links}
+            </ul>
+        </article>
+    </div>
+    <div class="small-12 medium-6 columns no-left-padding">
+        {image}
+    </div>
+</div>

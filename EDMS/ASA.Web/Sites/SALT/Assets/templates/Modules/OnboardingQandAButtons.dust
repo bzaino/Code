@@ -1,0 +1,5 @@
+<div class="qa-nav-wrapper">
+	<a href class="button base-btn main-btn cta-back js-back js-SPA js-panel-navigation" data-navigation="Back"> Back</a>
+	<a href class="button main-btn base-btn right js-panel-navigation js-SPA" data-navigation="Next">Next</a>
+	<a href class="button main-btn base-btn right js-panel-navigation js-get-started js-SPA" data-navigation="Next"data-url="/home#fndtn-MySALT">Next</a>
+</div>

@@ -1,0 +1,9 @@
+﻿{
+	"ErrorList":[{
+		"BusinessMessage":"Delete was successful.",
+		"Code":"",
+		"DetailMessage":"Delete was successful.",
+		"ServiceName":"Web Reminder Service"
+	}],
+	"ResultCode":1
+}

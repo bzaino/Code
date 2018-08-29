@@ -1,0 +1,7 @@
+{#mainContent}
+    {#records}
+        <div class="row collapse js-todoContainer todo" data-primary-key="{attributes.P_Primary_Key}" data-content-type="{attributes.ContentTypes}">
+            {>"partial_todo" section-identifier="{sectionMapKey}-pageFirstRecNum-{mainContent[0].firstRecNum}"/}
+        </div>
+    {/records}
+{/mainContent}

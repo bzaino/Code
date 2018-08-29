@@ -1,0 +1,22 @@
+{@if cond="'{SiteMember.ActiveDirectoryKey}' || '{content.name}' === 'SchoolActivation' && '{configuration.CurrentSchool}'"}
+	<div class="logo-row">
+		{@returnOrgLogos}
+			{@math key=orgIndex method="mod" operand=2}
+				{@eq value=0}
+					{@eq key=orgLength value="1" type="number"}
+						<div class="js-school-logo small-12 columns centered">
+							<img src="/assets/images/logos/large/{Brand}-web.png" alt="{OrganizationName} Logo" title="{OrganizationName}" class="vert-align-top" />
+					{:else}
+						<div class="js-school-logo small-6 columns school-logo">
+							<img src="/assets/images/logos/large/{Brand}-web.png" alt="{OrganizationName} Logo" title="{OrganizationName}" class="vert-align-top" />
+					{/eq}
+					</div>
+				{:else}
+					<div class="js-school-logo small-6 columns school-logo"><img src="/assets/images/logos/large/{Brand}-web.png" alt="{OrganizationName} Logo" title="{OrganizationName}" class="vert-align-top" /></div>
+					</div>
+					<div class="row logo-row">
+				{/eq}
+			{/math}
+		{/returnOrgLogos}
+	</div>
+{/if}

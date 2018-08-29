@@ -1,0 +1,333 @@
+<div class="row padded dashboard-container">
+    {@if cond="'{enabledGoalCount}' >= '1'"}
+        <div class="onboarding-container">
+            <div class="js-onboarding-exit onboarding-exit-wrapper">
+                <a href class="js-panel-navigation js-skip-questions js-void-href cancel-circle" download="" data-url="/home#fndtn-MySALT" ata-navigation="Exit"></a>
+            </div>
+            <div id="js-rank-container" class="small-12 columns section-container active-panel">
+                <div class="small-12 columns">
+                    <div class="onboarding-header">
+                        <h1 id="rank-header" class="onboarding-greeting">
+                            <span>Welcome, <b>{SiteMember.FirstName}</b>!</span>
+                        </h1>
+                    </div>
+                </div>
+                {@if cond="'{enabledGoalCount}' > '1'"}
+                    <p id="rank-subheader" class="subhead">Drag and drop the goals below in order of importance to you. Next, answer a few questions about each to get info and advice that matters to you.</p>
+                {:else}
+                    <h1>Achieve Your Financial Goal</h1>
+                    <p id="rank-subheader" class="subhead subhead-single">Select "next" to answer a few quick questions. We'll use your responses to provide you with relevant info and advice.</p>
+                {/if}
+                <div class="goal-rank-wrapper columns medium-12">
+                    <div class="small-11 medium-7 columns table goal-table-div">
+                        {@if cond="'{enabledGoalCount}' > '1'"}  
+                            <div class="goal-numbers">
+                                <ul id="goal-rank-num">
+                                    {?previouslyRankedGoals}
+                                        {#goalRankResponses}
+                                            <li>
+                                            <label>New order:</label>
+                                            <input maxlength="1" min="1" max="4" class="goal-rank" data-externalID="{AnsExternalId}" data-description="{AnsDescription}">
+                                            </li>
+                                        {/goalRankResponses}
+                                    {:else}
+                                        {#SiteMember.enabledGoals}                           
+                                            {@iterate on=.}
+                                                {?value}
+                                                <li>
+                                                <label>New order:</label>
+                                                <input maxlength="1" min="1" max="4" class="goal-rank" data-externalID="{AnsExternalId}" data-description="{AnsDescription}">
+                                                </li>
+                                                {/value}
+                                            {/iterate}
+                                        {/SiteMember.enabledGoals}                            
+                                    {/previouslyRankedGoals}
+                                </ul>
+                            </div>  
+                        {/if}             
+                        <div class="no-left-padding goal-rank-div">
+                            <ul id="sortable-goals" class="no-left-margin no-bottom-margin padding-right">
+                                {?previouslyRankedGoals}
+                                    {#goalRankResponses}
+                                        <li class="{@if cond="'{enabledGoalCount}' > '1'"} button bw-btn {:else} singlegoal-style {/if}">
+                                            <span class="js-goal-rank" data-externalID="{AnsExternalId}" data-segmentName="Dashboard-TopGoal-{AnsName}" data-description="{AnsDescription}"></span>
+                                            <span class="rank-goal-text">{AnsDescription}</span>
+                                        </li>
+                                    {/goalRankResponses}
+                                {:else}
+                                    {?SiteMember.enabledGoals.RepayStudentDebt}
+                                        <li class="{@if cond="'{enabledGoalCount}' > '1'"} button bw-btn {:else} singlegoal-style {/if}">
+                                            <span class="js-goal-rank" data-externalID="4" data-segmentName="Dashboard-TopGoal-Repay Student Debt" data-description="Repay Student Debt"></span>
+                                            <span class="rank-goal-text">Repay Student Debt</span>
+                                        </li>
+                                    {/SiteMember.enabledGoals.RepayStudentDebt}
+                                    {?SiteMember.enabledGoals.PayForSchool}
+                                        <li class="{@if cond="'{enabledGoalCount}' > '1'"} button bw-btn {:else} singlegoal-style {/if}">
+                                            <span class="js-goal-rank" data-externalID="2" data-segmentName="Dashboard-TopGoal-Pay For School" data-description="Plan School Costs"></span>
+                                            <span class="rank-goal-text">Plan School Costs</span>
+                                        </li>
+                                    {/SiteMember.enabledGoals.PayForSchool}
+                                    {?SiteMember.enabledGoals.MasterMoney}
+                                        <li class="{@if cond="'{enabledGoalCount}' > '1'"} button bw-btn {:else} singlegoal-style {/if}">
+                                            <span class="js-goal-rank" data-externalID="1" data-segmentName="Dashboard-TopGoal-Master Money" data-description="Manage Money">
+                                            </span>
+                                            <span class="rank-goal-text">Manage Money</span>
+                                        </li>
+                                    {/SiteMember.enabledGoals.MasterMoney}
+                                    {?SiteMember.enabledGoals.FindAJob}
+                                        <li class="{@if cond="'{enabledGoalCount}' > '1'"} button bw-btn {:else} singlegoal-style {/if}">
+                                            <span class="js-goal-rank" data-externalID="3" data-segmentName="Dashboard-TopGoal-Find A Job" data-description="Find A Job">
+                                            </span>
+                                            <span class="rank-goal-text">Find A Job</span>
+                                        </li>
+                                    {/SiteMember.enabledGoals.FindAJob}
+
+                                {/previouslyRankedGoals}
+                            </ul>
+                        </div>
+                        <div class="goal-rank-div {@if cond="'{enabledGoalCount}' > '1'"} goal-line {/if}">&nbsp;</div>
+                        <div class="goal-rank-div goal-rate">
+                            {@if cond="'{enabledGoalCount}' > '1'"}
+                                <div class="highest-goal">highest</div>
+                                <div class="lowest-goal">lowest</div>
+                            {/if}
+                        </div>
+                    </div>{! close float left div !}
+                    <div class="hide-for-small medium-3 columns goal-image-div">
+                        <div class="hide-for-small goal-img salticon">
+                        </div>
+                    </div>
+                </div>
+                <div class="small-12 columns top-border">
+                    {?previouslyRankedGoals}
+                        <a href class="button base-btn main-btn cta-back js-back-out js-void-href" data-navigation="Back"> Back</a>
+                    {/previouslyRankedGoals}
+                    <a href class="js-SPA button main-btn base-btn right js-set-goal-rank" data-navigation="Next">Next</a>
+                </div>
+            </div>
+            <div class="js-profileQA-container profileQA-container">
+                {?SiteMember.enabledGoals.MasterMoney}
+                    <form id="js-onboarding-questions-1" class="small-12 columns section-container"  data-abide="ajax">
+                        <div class="small-12 columns">
+                            <div class="onboarding-header">
+                                <h1 class="onboarding-greeting">
+                                    <span class="js-onboarding-goal">Manage Money</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <p class="subhead">Let's give you the financial know-how to take charge of your money.</p>
+                        <!-- How is your spending -->
+                        {>"Profile/ProfileRadioCheckboxQuestion" type="single" styleType="radio" displayBelow="true" currentQuestion=ProfileQandAs[27]/}
+                        <!--  Do you have a credit or debit card? -->
+                        {>"Profile/ProfileRadioCheckboxQuestion" type="multi" styleType="checkbox" displayBelow="true" currentQuestion=ProfileQandAs[3]/}
+                        <!-- What kind of bank account(s) do you have? -->
+                        {>"Profile/ProfileRadioCheckboxQuestion" type="multi" styleType="checkbox" displayBelow="true" currentQuestion=ProfileQandAs[4]/}
+
+                        {>"Modules/OnboardingQandAButtons" /}
+                    </form>
+                {/SiteMember.enabledGoals.MasterMoney}
+                {?SiteMember.enabledGoals.PayForSchool}
+                    <form id="js-onboarding-questions-2" class="small-12 columns section-container" data-abide="ajax">
+                        <div class="small-12 columns">
+                            <div class="onboarding-header">
+                                <h1 class="onboarding-greeting">
+                                    <span class="js-onboarding-goal">Plan School Costs</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <p class="subhead">Let's find college financing options that work for you.</p>
+                        <!--What type of program are you enrolled in?-->
+                        {>"Profile/ProfileRadioCheckboxQuestion" type="single" styleType="radio" displayBelow="true" currentQuestion=ProfileQandAs[9]/}
+                        <!-- Are you currently paying for or saving for college? -->
+                        {>"Profile/ProfileRadioCheckboxQuestion" type="multi" styleType="checkbox" displayBelow="true" currentQuestion=ProfileQandAs[32]/}
+                        <!-- What types of financial aid interest you? -->
+                        {>"Profile/ProfileRadioCheckboxQuestion" type="multi" styleType="checkbox" displayBelow="true" currentQuestion=ProfileQandAs[33]/}
+                        {>"Modules/OnboardingQandAButtons" /}
+                    </form>
+                {/SiteMember.enabledGoals.PayForSchool}
+                {?SiteMember.enabledGoals.FindAJob}
+                    <form id="js-onboarding-questions-3" class="small-12 columns section-container" data-abide="ajax">
+                        <div class="small-12 columns">
+                            <div class="onboarding-header">
+                                <h1 class="onboarding-greeting">
+                                    <span class="js-onboarding-goal">Find A Job</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <p class="subhead">Let's figure out what you need to move your career ahead.</p>
+                        <!-- What can we help you with your job search? -->
+                        {>"Profile/ProfileRadioCheckboxQuestion" type="multi" styleType="checkbox" displayBelow="true" currentQuestion=ProfileQandAs[30]/}
+                        <!-- What can we help you to advance your career? -->
+                        {>"Profile/ProfileRadioCheckboxQuestion" type="multi" styleType="checkbox" displayBelow="true" currentQuestion=ProfileQandAs[31]/}
+                        <!-- Are you employed? -->
+                        {>"Profile/ProfileRadioCheckboxQuestion" type="multi" styleType="checkbox" displayBelow="true" currentQuestion=ProfileQandAs[2]/}
+                        {>"Modules/OnboardingQandAButtons" /}
+                    </form>
+                {/SiteMember.enabledGoals.FindAJob}
+                {?SiteMember.enabledGoals.RepayStudentDebt}
+                    <form id="js-onboarding-questions-4" class="small-12 columns section-container" data-abide="ajax">
+                        <div class="small-12 columns">
+                            <div class="onboarding-header">
+                                <h1 class="onboarding-greeting">
+                                    <span class="js-onboarding-goal">Repay Student Debt</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <p class="subhead">Let's build a plan to defeat your debt: Tell us about your loans.</p>
+                        <!-- Do you have any student loans? -->
+                        {>"Profile/ProfileRadioCheckboxQuestion" type="multi" styleType="checkbox" displayBelow="true" currentQuestion=ProfileQandAs[1]/}
+                        <!-- What is the status of your student loans? -->
+                        {>"Profile/ProfileRadioCheckboxQuestion" type="single" styleType="radio" displayBelow="true" currentQuestion=ProfileQandAs[6]/}
+                        <!-- Which loan repayment strategies interest you? -->
+                        {>"Profile/ProfileRadioCheckboxQuestion" type="multi" styleType="checkbox" displayBelow="true" currentQuestion=ProfileQandAs[29]/}
+                        {>"Modules/OnboardingQandAButtons" /}
+                    </form>
+                {/SiteMember.enabledGoals.RepayStudentDebt}
+            </div>
+            <div id="js-tag-selection-container">
+                <form id="js-tag-selection-1" class="small-12 columns section-container" data-abide="ajax" hidden>
+                    <div class="small-12 columns">
+                        <div class="onboarding-header">
+                            <h1 class="onboarding-greeting">
+                                <span class="js-onboarding-goal">Before You Go!</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <h1>Tell Us Your Interests</h1>
+                    <p class="subhead">Choose what interests you from your top goal. We'll point you in the right direction.</p>
+                    <!-- What are your mastermoney interests? -->
+                    {>"Profile/ProfileRadioCheckboxQuestion" type="multi" styleType="checkbox" displayBelow="true" currentQuestion=ProfileQandAs[23]/}
+                    {>"Modules/OnboardingTagSelectionButtons" /}
+                </form>
+                <form id="js-tag-selection-2" class="small-12 columns section-container" data-abide="ajax" hidden>
+                    <div class="small-12 columns">
+                        <div class="onboarding-header">
+                            <h1 class="onboarding-greeting">
+                                <span class="js-onboarding-goal">Before You Go!</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <p class="subhead">Choose what interests you from your top goal. We'll point you in the right direction.</p>
+                    <!-- What are your Plan School Costs interests? -->
+                    {>"Profile/ProfileRadioCheckboxQuestion" type="multi" styleType="checkbox" displayBelow="true" currentQuestion=ProfileQandAs[24]/}
+                    {>"Modules/OnboardingTagSelectionButtons" /}
+                </form>
+                <form id="js-tag-selection-3" class="small-12 columns section-container" data-abide="ajax" hidden>
+                    <div class="small-12 columns">
+                        <div class="onboarding-header">
+                            <h1 class="onboarding-greeting">
+                                <span class="js-onboarding-goal">Before You Go!</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <p class="subhead">Choose what interests you from your top goal. We'll point you in the right direction.</p>
+                    <!-- What are your find a job interests? -->
+                    {>"Profile/ProfileRadioCheckboxQuestion" type="multi" styleType="checkbox" displayBelow="true" currentQuestion=ProfileQandAs[25]/}
+                    {>"Modules/OnboardingTagSelectionButtons" /}
+                </form>
+                <form id="js-tag-selection-4" class="small-12 columns section-container" data-abide="ajax" hidden>
+                    <div class="small-12 columns">
+                        <div class="onboarding-header">
+                            <h1 class="onboarding-greeting">
+                                <span class="js-onboarding-goal">Before You Go!</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <p class="subhead">Choose what interests you from your top goal. We'll point you in the right direction.</p>
+                    <!-- What are your Repay Student Debt interests? -->
+                    {>"Profile/ProfileRadioCheckboxQuestion" type="multi" styleType="checkbox" displayBelow="true" currentQuestion=ProfileQandAs[26]/}
+                    {>"Modules/OnboardingTagSelectionButtons" /}
+                </form>
+            </div>
+            <div class="small-12 columns outer-progress-meter-wrapper hide">
+                <div class="progress-meter-wrapper">
+                    <div id="onboarding-meter" class="progress">
+                        <span class="meter"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {/if}
+    <!-- Coach Screen overlays after initial registration -->
+    <!-- Screen One -->
+    <div id="onboardingHelpOverlay1" class="reveal-modal small standard-overlay rounded js-instr" data-reveal>
+        <div class="row text-center triple-padding-sides">
+            <a class="close-reveal-modal cancel-circle overlayClose" href tabindex="1"></a>
+            <div class="small-12 medium-centered columns">
+                <h1 id="overlay-one-header">Don’t Know Where To Start?</h1> 
+            </div>
+            <div class="small-12 medium-8 medium-centered columns">
+                <i class="overlay-main-icon sign-post"></i>
+                <h1>Don’t Worry</h1>
+                <h3>Salt® now offers <b>personalized recommendations</b> to help you achieve your financial dreams.</h3>
+            </div>
+            <div class="small-12 columns"> 
+                <a href type="button" class="button main-btn base-btn right js-void-href" aria-label="Next" data-reveal-id="onboardingHelpOverlay2" tabindex="1">Next</a>
+            </div>
+            <div class="columns small-12">
+                <span class="progress-circles active"></span><span class="progress-circles"></span><span class="progress-circles"></span><span class="progress-circles"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Screen Two -->
+    <div id="onboardingHelpOverlay2" class="reveal-modal small standard-overlay rounded js-instr" data-reveal>
+        <div class="row text-center triple-padding-sides">
+            <a class="close-reveal-modal cancel-circle overlayClose" href tabindex="1"></a>
+            <div class="small-12 medium-centered columns">
+                <h1 id="overlay-two-header">Rank Goals</h1>
+            </div>
+            <div class="small-12 medium-8 medium-centered columns">
+                <i class="overlay-main-icon podium-flags"></i>
+                <h3>Tell us which <b>topics matter most to you</b>, and answer a few quick questions about them.</h3> 
+            </div>
+            <div class="columns small-12">
+                <a href type="button" class="button main-btn base-btn cta-back left" aria-label="Back" data-reveal-id="onboardingHelpOverlay1" tabindex="1">Back</a>
+                <a href type="button" class="button main-btn base-btn right" aria-label="Next" data-reveal-id="onboardingHelpOverlay3" tabindex="1">Next</a>
+            </div>
+            <div class="columns small-12">
+                <span class="progress-circles"></span><span class="progress-circles active"></span><span class="progress-circles"></span><span class="progress-circles"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Screen Three -->
+    <div id="onboardingHelpOverlay3" class="reveal-modal small standard-overlay rounded js-instr" data-reveal>
+        <div class="row text-center triple-padding-sides">
+            <a class="close-reveal-modal cancel-circle overlayClose" href tabindex="1"></a>
+            <div class="small-12 medium-centered columns">
+                <h1 id="overlay-three-header">Get Recommendations</h1> 
+            </div>
+            <div class="small-12 medium-8 medium-centered columns">
+                <i class="overlay-main-icon ribbon-checkmark"></i>
+                <h3>Check out <b>your customized list</b> of <b>resources and tools</b> based on the info you provide.</h3>
+            </div>
+            <div class="small-12 columns"> 
+                <a href type="button" class="button main-btn base-btn cta-back left" aria-label="Back" data-reveal-id="onboardingHelpOverlay2" tabindex="1">Back</a>
+                <a href type="button" class="button main-btn base-btn right" aria-label="Next" data-reveal-id="onboardingHelpOverlay4" tabindex="1">Next</a>
+            </div>
+            <div class="columns small-12">
+                <span class="progress-circles"></span><span class="progress-circles"></span><span class="progress-circles active"></span><span class="progress-circles"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Screen Four (final) -->
+    <div id="onboardingHelpOverlay4" class="reveal-modal small standard-overlay rounded js-instr" data-reveal>
+        <div class="row text-center triple-padding-sides">
+            <a class="close-reveal-modal cancel-circle overlayClose" href tabindex="1"></a>
+            <div class="small-12 medium-centered columns">
+                <h1 id="overlay-four-header">Track Progress</h1> 
+            </div>
+            <div class="small-12 medium-8 medium-centered columns">
+                <i class="overlay-main-icon completion-graph"></i>
+                <h3>See what <b>you’ve completed</b> and <b>what to do next</b> to reach your goals.</h3>
+            </div>
+            <div class="small-12 columns">
+                <a href type="button" class="button main-btn base-btn cta-back left" aria-label="Back" data-reveal-id="onboardingHelpOverlay3" tabindex="1">Back</a>
+                <a href type="button" class="button main-btn base-btn right js-close-overlay js-void-href" aria-label="Done" tabindex="1">Done</a>
+            </div>
+            <div class="columns small-12">
+                <span class="progress-circles"></span><span class="progress-circles"></span><span class="progress-circles"></span><span class="progress-circles active"></span>
+            </div>
+        </div>
+    </div>
+</div>
+

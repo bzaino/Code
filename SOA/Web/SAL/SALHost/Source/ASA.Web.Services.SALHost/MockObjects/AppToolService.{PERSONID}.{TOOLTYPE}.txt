@@ -1,0 +1,15 @@
+﻿{
+	"ErrorList":[],
+	"AppToolPersonId":1,
+	"AppToolType":0,
+	"BalanceAtStartDeferment":20000,
+	"ForbearancePaymentAmount":500,
+	"InterestRate":6.2,
+	"MonthlyIncome":2500,
+	"NumberOfForbearancePayments":6,
+	"NumberOfMonthsInDeferment":4,
+	"NumberOfMonthsInForbearance":3,
+	"NumberOfPayments":120,
+	"PersonId":10001,
+	"PrincipalAmount":18000
+}

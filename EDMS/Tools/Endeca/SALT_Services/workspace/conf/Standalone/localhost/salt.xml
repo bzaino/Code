@@ -1,0 +1,7 @@
+<!-- Context configuration file for the Endeca JSP Reference UI -->
+<Context 
+	path="/salt" 
+	docBase="D:\Endeca\PlatformServices\6.1.3\tools\server\webapps\salt-service"
+    debug="0" 
+    privileged="false">
+</Context>

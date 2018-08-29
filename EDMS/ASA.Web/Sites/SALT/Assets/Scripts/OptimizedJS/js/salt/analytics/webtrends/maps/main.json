@@ -1,0 +1,244 @@
+{
+    "loanimport:upload:success": [
+        "{tags.DCS_URI_STEM}",               "{location.pathname}",
+        "{tags.SCENARIO_ANALYSIS_NAME}",     "mydataimport",
+        "{tags.SCENARIO_ANALYSIS_STEP_NUM}", "7",
+        "{tags.ACTIVITY_NAME}",              "fedloantool",
+        "{tags.ACTIVITY_TYPE}",              "complete",
+        "{tags.ACTIVITY_TRANSACTION}",       "1",
+        "{tags.SERVER_CALL_IDENTIFIER}",     "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "carousel:rotate": [
+        "{tags.CAROUSEL_NAME}",          "{carousel.name}",
+        "{tags.CAROUSEL_ROTATE}",        "1",
+        "{tags.CAROUSEL_SELECT}",        "",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "carousel:button:click": [
+        "{tags.CAROUSEL_NAME}",          "{carousel.name}",
+        "{tags.CAROUSEL_ROTATE}",        "",
+        "{tags.CAROUSEL_SELECT}",        "{carousel.activeSlide}",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "vlcAction:fire": [
+        "{tags.CONTENT_SUBGROUP}",           "{location}",
+        "{tags.ACTIVITY_NAME}",              "tool",
+        "{tags.ACTIVITY_SUB_NAME}",          "virtualcounselor",
+        "{tags.ACTIVITY_TYPE}",              "{actType}",
+        "{tags.ACTIVITY_TRANSACTION}",       "1",
+        "{tags.SERVER_CALL_IDENTIFIER}",     "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "sortNavigationWT:fire": [
+        "{tags.PAGE_TITLE}",                "{sortTitle}",
+        "{tags.EVENT_SOURCE}",              "{sortEventSource}",
+        "{tags.DCS_URI_STEM}",              "{sortUriStem}",
+        "{tags.SERVER_CALL_IDENTIFIER}",    "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "unauthpersona:button:click": [
+        "{tags.ACTIVITY_NAME}",              "{activity_name}",
+        "{tags.ACTIVITY_TYPE}",              "{activity_type}",
+        "{tags.ACTIVITY_TRANSACTION}",       "1",
+        "{tags.SERVER_CALL_IDENTIFIER}",     "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "KWYO:seeloans": [
+        "{tags.ACTIVITY_NAME}",          "KWYO View Loans",
+        "{tags.ACTIVITY_TRANSACTION}",   "1",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "KWYO:importLoans": [
+        "{tags.ACTIVITY_NAME}",          "KWYO Import",
+        "{tags.ACTIVITY_TRANSACTION}",   "1",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "KWYO:addloans:start": [
+        "{tags.ACTIVITY_NAME}",          "Add Loans",
+        "{tags.ACTIVITY_TYPE}",          "Loan Start",
+        "{tags.ACTIVITY_TRANSACTION}",   "1",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "KWYO:addloans:complete": [
+        "{tags.ACTIVITY_NAME}",          "{debtType}",
+        "{tags.ACTIVITY_TYPE}",          "Loan Complete",
+        "{tags.ACTIVITY_TRANSACTION}",   "1",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "KWYO:profile:start": [
+        "{tags.ACTIVITY_NAME}",          "Profile Start",
+        "{tags.ACTIVITY_TYPE}",          "start",
+        "{tags.ACTIVITY_TRANSACTION}",   "1",
+        "WT.z_state",                    "01",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "KWYO:switchView": [
+        "{tags.CONTENT_SUBGROUP}",       "Switch View",
+        "{tags.ACTIVITY_NAME}",          "KWYO Flip",
+        "{tags.ACTIVITY_TRANSACTION}",   "1",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "KWYO:glossary": [
+        "{tags.CONTENT_SUBGROUP}",       "Glossary",
+        "{tags.ACTIVITY_NAME}",          "KWYO Glossary",
+        "{tags.ACTIVITY_TRANSACTION}",   "1",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "KWYO:import:nav": [
+        "{tags.ACTIVITY_NAME}",          "KWYO NavImport",
+        "{tags.ACTIVITY_TRANSACTION}",   "1",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "KWYO:tour:start": [
+        "{tags.ACTIVITY_NAME}",          "KWYO Tour",
+        "{tags.ACTIVITY_TYPE}",          "Start",
+        "{tags.ACTIVITY_TRANSACTION}",   "1",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "Registration:Start": [
+        "{tags.TYPE}",                      "Tool Usage",
+        "{tags.SCENARIO_ANALYSIS_NAME}",    "Member Registration",
+        "{tags.SCENARIO_ANALYSIS_STEP_NUM}","1",
+        "{tags.ACTIVITY_NAME}",             "activation",
+        "{tags.ACTIVITY_TYPE}",             "start",
+        "{tags.ACTIVITY_TRANSACTION}",      "1",
+        "{tags.DCS_URI_STEM}",              "{location.pathname}",
+        "{tags.PAGE_TITLE}",                "{document.title}",
+        "{tags.EXTERNAL_VISITOR_ID}",       null,
+        "{tags.DCS_AUTHENTICATED_USERNAME}","0",
+        "{tags.REGISTERED_VISITOR}",        "0",
+        "{tags.SERVER_CALL_IDENTIFIER}",    "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "Registration:Steps": [
+        "{tags.TYPE}",                      "Tool Usage",
+        "{tags.SCENARIO_ANALYSIS_NAME}",    "Member Registration",
+        "{tags.SCENARIO_ANALYSIS_STEP_NUM}","{stepNumber}",
+        "{tags.SERVER_CALL_IDENTIFIER}",    "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "LoginManager:Start": [
+        "{tags.CONTENT_GROUP}",             "Member",
+        "{tags.CONTENT_SUBGROUP}",          "Login",
+        "{tags.SITE}",                      "salt",
+        "{tags.DCS_URI_STEM}",              "/login/",
+        "{tags.PAGE_TITLE}",                "Login",
+        "{tags.SERVER_CALL_IDENTIFIER}",    "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+	"LoginManager:RememberMe": [
+        "{tags.ACTIVITY_NAME}",             "Remember Me",
+        "{tags.ACTIVITY_TYPE}",             "save",
+        "{tags.ACTIVITY_TRANSACTION}",      "1",
+        "{tags.SERVER_CALL_IDENTIFIER}",    "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+    "Standard:Action:Generic": [
+        "{tags.ACTIVITY_NAME}",             "{activity_name}",
+        "{tags.ACTIVITY_TYPE}",             "{activity_type}",
+        "{tags.ACTIVITY_TRANSACTION}",      "{activity_transaction}",
+        "{tags.SERVER_CALL_IDENTIFIER}",    "{serverCallIdentifiers.SALT_CUSTOM_EVENT}",
+        "{tags.CONTENT_GROUP_TYPE}",        "{content_group_type}"
+   ],
+    "Standard:Action:Start": [
+        "{tags.ACTIVITY_NAME}",             "{activity_name}",
+        "{tags.ACTIVITY_TYPE}",             "start",
+        "{tags.ACTIVITY_TRANSACTION}",      "1",
+        "{tags.SERVER_CALL_IDENTIFIER}",    "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+   ],
+   "reminder:start": [
+        "{tags.DCS_URI_STEM}",               "/AddReminderStart.html",
+        "{tags.PAGE_TITLE}",                 "AddReminderStart",
+        "{tags.ACTIVITY_NAME}",              "addreminder",
+        "{tags.ACTIVITY_TYPE}",              "start",
+        "{tags.ACTIVITY_TRANSACTION}",       "1",
+        "{tags.SERVER_CALL_IDENTIFIER}",     "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+   ],
+   "deactivation:start": [
+       "{tags.ACTIVITY_NAME}",          "manageprofileclose",
+       "{tags.ACTIVITY_TYPE}",          "Self Service",
+       "{tags.ACTIVITY_ACTION}",        "start",
+       "{tags.ACTIVITY_TRANSACTION}",   "1",
+       "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+   ],
+   "deactivation:abandon": [
+       "{tags.ACTIVITY_NAME}",          "Deactivation",
+       "{tags.ACTIVITY_TYPE}",          "Self Service",
+       "{tags.ACTIVITY_ACTION}",        "Abandon",
+       "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+   ],
+   "deactivation:complete": [
+       "{tags.ACTIVITY_NAME}",          "Deactivation",
+       "{tags.ACTIVITY_TYPE}",          "Self Service",
+       "{tags.ACTIVITY_ACTION}",        "Deactivate",
+       "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+   ],
+   "COL:UI:Event": [
+        "{tags.ACTIVITY_NAME}",          "{activityName}",
+        "{tags.ACTIVITY_TRANSACTION}",   "1",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}",
+        "{tags.CONTENT_GROUP_TYPE}",     "Tool"
+   ],
+   "regWall": [
+        "{tags.REG_WALL}",               "{action}",
+        "{tags.SERVER_CALL_IDENTIFIER}", "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+   ],
+   "siteMember:activation:complete": [
+        "{tags.TYPE}",    "Tool Usage",
+        "{tags.DCS_URI_STEM}",                      "{location.pathname}",
+        "{tags.PAGE_TITLE}",                        "{document.title}",
+        "{tags.EXTERNAL_VISITOR_ID}",               "{siteMember.MembershipId}",
+        "{tags.DCS_AUTHENTICATED_USERNAME}",        "{siteMember.MembershipId}",
+        "{tags.REGISTERED_VISITOR}",                "1",
+        "{tags.ACTIVITY_NAME}",                     "activation",
+        "{tags.ACTIVITY_TYPE}",                     "complete",
+        "{tags.ACTIVITY_TRANSACTION}",              "1",
+        "{tags.SCENARIO_ANALYSIS_NAME}",            "{registration.name}",
+        "{tags.SCENARIO_ANALYSIS_STEP_NUM}",        "{registration.step}",
+        "{tags.SCENARIO_ANALYSIS_CONVERSION_STEP}", "1",
+        "{tags.SERVER_CALL_IDENTIFIER}",            "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "siteMember:signin:complete": [
+        "{tags.DCS_URI_STEM}",               "{location.pathname}",
+        "{tags.PAGE_TITLE}",                 "{document.title}",
+        "{tags.EXTERNAL_VISITOR_ID}",        "{siteMember.MembershipId}",
+        "{tags.DCS_AUTHENTICATED_USERNAME}", "{siteMember.MembershipId}",
+        "{tags.REGISTERED_VISITOR}",         "1",
+        "{tags.ACTIVITY_NAME}",              "signin",
+        "{tags.ACTIVITY_TYPE}",              "complete",
+        "{tags.ACTIVITY_TRANSACTION}",       "1",
+        "{tags.SERVER_CALL_IDENTIFIER}",     "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+    "dashboard:action:taken": [
+        "{tags.ACTIVITY_NAME}",             "{activity_name}",
+        "{tags.ACTIVITY_SUB_NAME}",         "{activity_sub_name}",
+        "{tags.ACTIVITY_TYPE}",             "{activity_type}",
+        "{tags.PRODUCT_SKU}",               "{content_id}",
+        "{tags.ACTIVITY_TRANSACTION}",      "SALT3",
+        "{tags.SERVER_CALL_IDENTIFIER}",    "{serverCallIdentifiers.NAMED_ANCHOR}"
+    ],
+    "onboarding:action:taken": [
+        "{tags.ACTIVITY_NAME}",                     "{activity_name}",
+        "{tags.ACTIVITY_SUB_NAME}",                 "{activity_sub_name}",
+        "{tags.ACTIVITY_SUB_NAME_2}",               "{activity_sub_name_2}",
+        "{tags.ACTIVITY_TYPE}",                     "{activity_type}",
+        "{tags.PRODUCT_SKU}",                       "{content_id}",
+        "{tags.SCENARIO_ANALYSIS_NAME}",            "onboard",
+        "{tags.SCENARIO_ANALYSIS_STEP_NUM}",        "{step_num}",
+        "{tags.SCENARIO_ANALYSIS_CONVERSION_STEP}", "{is_final_step}",
+        "{tags.ACTIVITY_TRANSACTION}",              "SALT3",
+        "{tags.SERVER_CALL_IDENTIFIER}",            "{serverCallIdentifiers.NAMED_ANCHOR}"
+    ]
+}

@@ -1,0 +1,18 @@
+﻿@using System.Net;
+@using System.Web.Mail;
+
+@if(Request.IsAuthenticated) {
+    <text>Welcome <strong>@User.Identity.Name</strong>!
+@* [ @Html.ActionLink("Log Off", "LogOff", "Account") ]*@</text>
+	//MailMessage mail = new MailMessage();
+	//mail.To = "rkumar@asa.org";
+	//mail.From = "user@webtool.amsa.com";
+	//mail.Subject = "User Logged in ->" + @User.Identity.Name;
+	//mail.Body =  "Logon ->" + Request.LogonUserIdentity.Name; 
+	//SmtpMail.SmtpServer = "casarray.amsa.com";  //your real server goes here
+	//SmtpMail.Send(mail); 
+}
+else
+{
+@*    @:[ @Html.ActionLink("Log On", "LogOn", "Account") ]*@
+}

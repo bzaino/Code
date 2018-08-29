@@ -1,0 +1,55 @@
+{#mainContent[0].records[0].attributes}
+    <div class="content VLCMain">
+       <div class="headline">
+            {answer-1-button-text}
+        </div>
+        {answer-1-page-name}
+        <div class="row collapse">
+            <div class="step-header one"> 
+                {answer-2-button-text}
+            </div>
+        </div>
+        <div class="row collapse">
+            <div class="small-12 medium-4 columns has-image"> 
+                {body}
+            </div>
+            <div class="small-12 medium-8 columns loan-instructions">
+                {answer-2-page-name}
+            </div>
+        </div>
+        <div class="row collapse">
+            <div class="small-12 columns step-header two"> 
+                {answer-3-button-text}
+            </div>
+        </div>
+        <div class="row collapse">
+             <div class="small-12 medium-4 columns has-image">
+                {headline}
+            </div>
+            <div class="small-12 medium-8 columns loan-instructions">
+                {answer-3-page-name}
+            </div>
+         </div>
+        <div class="row collapse">
+            <div class="small-12 columns step-header three">
+                {answer-4-button-text}
+            </div>
+        </div>
+        <div class="row collapse">
+            <div class="small-12 medium-4 columns has-image">
+                {rich-text-image}
+            </div>
+            <div class="small-12 medium-8 columns loan-instructions">
+                {answer-4-page-name}
+            </div>
+        </div>
+        <div class="row collapse padding-top">
+             <div class="small-6 columns" >
+                 <a id="backButton" onClick="history.back();" class="button base-btn main-btn back js-void-href" href="">{answer-5-button-text}</a>
+            </div>
+            <div class="small-6 columns" >
+                 <a class="button base-btn main-btn right" href="#LoanUpload" onClick="dcsMultiTrack('DCS.dcsuri','Navigator/#LoanImport', 'WT.si_n', 'mydataimport', 'WT.si_x', '1', 'WT.dl', '90');">{answer-5-page-name}</a></p>
+            </div>
+        </div>
+    </div>
+{/mainContent[0].records[0].attributes}

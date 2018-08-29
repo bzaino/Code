@@ -1,0 +1,12 @@
+{@if cond="'{mainContent[0].record.attributes.author-name}' !== ' '"}
+    <small><em>{?englishContent}By{:else}Por{/englishContent} {mainContent[0].record.attributes.author-name} - </em></small>
+{/if}
+<small>
+    <em>
+    	{@if cond="'{spanishContent}' === 'spanish' && '{mainContent[0].record.attributes.spanish-modified-date}' !== ' ' "}
+        		{@postedDateFormatter version=mainContent[0].record.attributes.Item_Version lng="{spanishContent}" date=mainContent[0].record.attributes.spanish-modified-date /}
+        {:else}
+        		{@postedDateFormatter version=mainContent[0].record.attributes.Item_Version lng="{spanishContent}" date=mainContent[0].record.attributes.sys_contentpostdate /}
+        {/if}
+    </em>
+</small>

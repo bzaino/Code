@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE CRAWL_PROFILE SYSTEM "crawl_profile.dtd">
+<CRAWL_PROFILE ID="1" NAME="sample profile">
+
+  <CRAWL_PROFILE_CONFIG_REF URL="crawl_profile_1_config.xml"/>
+
+  <CRAWL_PROFILE_URL_LIST_REF URL="crawl_profile_1_url_list.lst"/>
+
+</CRAWL_PROFILE>

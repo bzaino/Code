@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A91C1417-0555-4484-82DA-2B301F364726}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Asa.Salt.Web.Services.Domain</RootNamespace>
+    <AssemblyName>Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActiveDirectoryUser.cs" />
+    <Compile Include="ActivityType.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityType.partial.cs" />
+    <Compile Include="AlertType.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AlertType.partial.cs" />
+    <Compile Include="COLResults.cs" />
+    <Compile Include="EnrollmentStatus.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GradeLevel.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LessonQuestion.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LessonQuestionAttribute.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LessonQuestionResponse.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LessonStep.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoanType.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Member.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberActivationHistory.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberActivityHistory.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberAlert.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberContentInteraction.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberLesson.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberOrganization.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberProduct.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberProfileAnswer.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberQuestionAnswer.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberReportedLoan.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberRole.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberToDoList.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberToDoList.partial.cs" />
+    <Compile Include="OrganizationToDoList.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizationToDoList.partial.cs" />
+    <Compile Include="PaymentReminder.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RecordSource.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefAnswer.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefCampaign.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefChannel.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefContentInteractionType.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefGeographicIndex.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefLessonLookupData.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefLessonLookupDataType.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefMajor.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefMemberRole.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefOccupation.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefOrganization.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefOrganizationProduct.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefOrganizationType.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefProduct.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefProductType.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefProductType.partial.cs" />
+    <Compile Include="RefProfileAnswer.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefProfileQuestion.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefProfileQuestionType.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefQuestion.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefRegistrationSource.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefRegistrationSourceType.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefSalaryEstimatorSchool.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefSalaryEstimatorSchoolMajor.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefSALTSchoolType.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefSource.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefSourceQuestion.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefSourceQuestionAnswer.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefState.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefToDoStatus.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefToDoStatus.partial.cs" />
+    <Compile Include="RefToDoType.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefToDoType.partial.cs" />
+    <Compile Include="Survey.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SurveyOption.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SurveyResponse.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UDT.cs" />
+    <Compile Include="MemberQA.partial.cs" />
+    <Compile Include="MemberQA.cs" />
+    <Compile Include="RefCampaign.partial.cs" />
+    <Compile Include="RefChannel.partial.cs" />
+    <Compile Include="vCostOfLivingStateList.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VLCQuestion.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VLCUserProfile.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VLCUserResponse.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vMemberAcademicInfo.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vMemberAcademicInfo.partial.cs" />
+    <Compile Include="RefSourceQuestion.partial.cs" />
+    <Compile Include="RefSourceQuestionAnswer.partial.cs" />
+    <Compile Include="RefAnswer.partial.cs" />
+    <Compile Include="RefQuestion.partial.cs" />
+    <Compile Include="RefSource.partial.cs" />
+    <Compile Include="MemberQuestionAnswer.partial.cs" />
+    <Compile Include="JellyVisionQuizResponse.cs" />
+    <Compile Include="JSI.cs" />
+    <Compile Include="LessonStep.partial.cs" />
+    <Compile Include="Lessons\Lesson2\Lesson2.cs" />
+    <Compile Include="Lessons\Lesson3\FavoriteRepaymentPlan.cs">
+      <DependentUpon>Lesson3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lessons\Lesson3\Lesson3.cs" />
+    <Compile Include="Lessons\PostLessonResult.cs" />
+    <Compile Include="MemberActivationHistory.partial.cs" />
+    <Compile Include="MemberActivityHistory.partial.cs" />
+    <Compile Include="MemberContentInteraction.partial.cs" />
+    <Compile Include="MemberOrganization.partial.cs" />
+    <Compile Include="MemberProduct.partial.cs" />
+    <Compile Include="MemberProfileAnswer.partial.cs" />
+    <Compile Include="MemberProfileQA.cs" />
+    <Compile Include="MemberProfileQA.partial.cs" />
+    <Compile Include="OrgPagedList.cs" />
+    <Compile Include="RefContentInteractionType.partial.cs" />
+    <Compile Include="RefGeographicIndex.partial.cs" />
+    <Compile Include="RefMajor.partial.cs" />
+    <Compile Include="MemberRole.partial.cs" />
+    <Compile Include="RefLessonLookupData.partial.cs" />
+    <Compile Include="RefLessonLookupDataType.partial.cs" />
+    <Compile Include="Lessons\Lesson2\CardInformation.cs">
+      <DependentUpon>Lesson2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lessons\Lesson2\DebtReductionOptions.cs">
+      <DependentUpon>Lesson2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lessons\Lesson3\Deferment.cs">
+      <DependentUpon>Lesson3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lessons\Expense.cs" />
+    <Compile Include="Lessons\Lesson3\FasterRepayment.cs">
+      <DependentUpon>Lesson3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lessons\Lesson3\StandardRepayment.cs">
+      <DependentUpon>Lesson3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lessons\Frequency.cs" />
+    <Compile Include="Lessons\Lesson1\Goal.cs">
+      <DependentUpon>Lesson1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lessons\Lesson1\Income.cs">
+      <DependentUpon>Lesson1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lessons\Lesson1\Lesson1.cs" />
+    <Compile Include="Lessons\Lesson3\LoanType.cs">
+      <DependentUpon>Lesson3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lessons\Lesson3\LowerPayment.cs">
+      <DependentUpon>Lesson3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberLesson.partial.cs" />
+    <Compile Include="LessonQuestionResponse.partial.cs" />
+    <Compile Include="LessonQuestionAttribute.partial.cs" />
+    <Compile Include="LessonQuestion.partial.cs" />
+    <Compile Include="Lesson.partial.cs" />
+    <Compile Include="EnrollmentStatus.partial.cs" />
+    <Compile Include="GradeLevel.partial.cs" />
+    <Compile Include="LoanType.partial.cs" />
+    <Compile Include="MemberAlert.partial.cs" />
+    <Compile Include="PaymentReminder.partial.cs" />
+    <Compile Include="RecordSource.partial.cs" />
+    <Compile Include="RefMemberRole.partial.cs" />
+    <Compile Include="RefOccupation.partial.cs" />
+    <Compile Include="RefOrganization.partial.cs" />
+    <Compile Include="RefOrganizationProduct.partial.cs" />
+    <Compile Include="RefOrganizationType.partial.cs" />
+    <Compile Include="RefProduct.partial.cs" />
+    <Compile Include="RefProfileAnswer.partial.cs" />
+    <Compile Include="RefProfileQuestion.partial.cs" />
+    <Compile Include="RefProfileQuestionType.partial.cs" />
+    <Compile Include="RefRegistrationSourceType.partial.cs" />
+    <Compile Include="RefSalaryEstimatorSchool.partial.cs" />
+    <Compile Include="RefSalaryEstimatorSchoolMajor.partial.cs" />
+    <Compile Include="RefSALTSchoolType.partial.cs" />
+    <Compile Include="RefState.partial.cs" />
+    <Compile Include="RefRegistrationSource.partial.cs" />
+    <Compile Include="Survey.partial.cs" />
+    <Compile Include="SurveyOption.partial.cs" />
+    <Compile Include="SurveyResponse.cs" />
+    <Compile Include="MemberReportedLoan.partial.cs" />
+    <Compile Include="Member.partial.cs" />
+    <Compile Include="Entities.generated.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterMemberResult.cs" />
+    <Compile Include="UserAccount.cs" />
+    <Compile Include="vCostOfLivingStateList.partial.cs" />
+    <Compile Include="vMemberAlerts.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vMemberAlerts.partial.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="vMemberQuestionAnswer.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vMemberReportedLoans.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vMemberReportedLoans.partial.cs" />
+    <Compile Include="VLCMemberProfile.cs" />
+    <Compile Include="VLCQuestion.partial.cs" />
+    <Compile Include="VLCUserProfile.partial.cs" />
+    <Compile Include="VLCUserResponse.partial.cs" />
+    <Compile Include="vMemberQuestionAnswer.partial.cs" />
+    <Compile Include="vMemberToDoList.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vMemberToDoList.partial.cs" />
+    <Compile Include="vSourceQuestion.generated.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vSourceQuestion.partial.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Entities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Entities.generated.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common.Types\Common.Types.csproj">
+      <Project>{55C6DF8C-5C3E-46D0-9011-A4DC75C6B553}</Project>
+      <Name>Common.Types</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

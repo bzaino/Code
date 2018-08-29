@@ -1,0 +1,100 @@
+<section class="content">
+	<h4 class="boldText">Student Loan Repayment Plans</h4>
+	<ul class="row">
+		<li class="boldText  small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#RepaymentStandard1">Standard Repayment</a>
+			<span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{RepaymentStandard}</span>
+		</li>
+		<li class="boldText  small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#RepaymentHHI-HHS">Income Driven</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{IncomeDriven}</span>
+		</li>			
+		<li class="boldText  small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#RepaymentExtended1">Extended Repayment</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{RepaymentExtended}</span>
+		</li>
+		<li class="boldText  small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#RepaymentGraduated1">Graduated Repayment</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{RepaymentGraduated}</span>
+		</li>
+		<li class="boldText small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#Consolidation">Consolidation</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{Consolidation}</span>
+		</li>
+	</ul>
+</section>
+
+<section class="content">
+	<h4 class="boldText">Postponing Student Loan Payments</h4>
+	<ul class="row">
+		<li class="boldText small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#InSchoolDeferment">In-School Deferment</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{DefermentInSchool}</span>
+		</li>
+		<li class="boldText small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#EducationRelatedDeferment">Education Related Deferment</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{DefermentEducationRelated}</span>
+		</li>
+		<li class="boldText small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#SummerBridgeDeferment">Summer Bridge Deferment</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{DefermentSummerBridge}</span>
+		</li>
+		<li class="boldText small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#PerkinsDeferment">Perkins Loans Deferment</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{DefermentPerkins}</span>
+		</li>
+		<li class="boldText small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#RehabilitationTrainingDeferment">Rehabilitation Training Deferment</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{DefermentRehabilitation}</span>
+		</li>
+		<li class="boldText small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#PlusLoanPostEnrollmentDeferment">Plus Loan Post Enrollment Deferment</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{DefermentPlusLoan}</span>
+		</li>
+		<li class="boldText small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#UnemploymentDeferment">Unemployment Deferment</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{DefermentUnemployment}</span>
+		</li>
+		<li class="boldText small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#EconomicHardshipDeferment">Economic Hardship Deferment</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{DefermentEconomic}</span>
+		</li>
+		<li class="boldText small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#MilitaryDeferment">Military Deferment</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{DefermentMilitary}</span>
+		</li>
+		<li class="boldText small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#PeaceCorpsDeferment">Peace Corps Deferment</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{DefermentPeaceCorps}</span>
+		</li>
+		<li class="boldText small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#PostActiveDutyDeferment">Post Active Duty Deferment</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{DefermentPostActiveDuty}</span>
+		</li>
+		
+	</ul>
+</section>
+
+<section class="content">
+	<h4 class="boldText">Student Loan Forgiveness &amp; Discharge</h4>
+	<ul class="row">
+		<li class="boldText small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#SelectEducator">Education</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{ForgivenessEducator}</span>
+		</li>
+		<li class="boldText small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#SelectHealthcare">Healthcare</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{ForgivenessHealthcare}</span>
+		</li>
+		<li class="boldText small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#SelectMilitary">Military</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{ForgivenessMilitary}</span>
+		</li>
+		<li class="boldText small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#SelectPublicServant">Public Service or Government</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{ForgivenessPublicServant}</span>
+		</li>
+		<li class="boldText small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#SelectSTEMPrograms">STEM Career Field</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{ForgivenessSTEM}</span>
+		</li>
+		<li class="boldText small-12 columns no-padding">
+			<a class="small-8 columns no-padding scroll-top" href="#SelectLifeEvents">Serious Life Events</a>
+			<span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{LifeEvent}</span>
+		</li>
+	</ul>
+</section>
+
+
+<section class="content">
+	<h4 class="boldText">Default &amp; Delinquency</h4>
+		<ul class="row">
+			<li class="boldText small-12 columns no-padding">
+				<a class="small-8 columns no-padding scroll-top" href="#LoanDefault1NextSteps">Default</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{Default}</span>
+			</li>
+			<li class="boldText small-12 columns no-padding">
+				<a class="small-8 columns no-padding scroll-top" href="#LoanDelinquency1NextSteps">Delinquency</a><span class="small-4 columns widgetGrayText widgetTextRight upperCase no-padding">{Delinquency}</span>
+			</li>
+		</ul>
+</section>
+

@@ -1,0 +1,64 @@
+{@if cond="'{mainContent[0].records[0].attributes.help-text|trim}'.length !== 0"}
+<dl class="accordion widgetAccordion" data-accordion>
+	<dd class="accordion-section" class="active">
+		<a class="title widgetTitle blackAndColorBtn" href="#help">
+			<i class="widgetIcon-question">&nbsp;</i>
+			<h5 class="widgeth5">{#secondaryContent}
+	    							{@select key="{name}"}
+	        							{@eq value="NavigatorCollection"}
+	        								{#contents}
+		        								{#records}
+		        									{attributes.header-4}
+		        								{/records}
+	        								{/contents}
+	        							{/eq}
+	        						{/select}
+	        					{/secondaryContent}
+	        					</h5>
+	        					<i class="accordion-arrow"></i>
+		</a>
+		<div class="content widgetContent" id="help">
+			<div class="widgetText">{mainContent[0].records[0].attributes.help-text}</div>
+			{#secondaryContent}
+				{@eq key="{name}" value="Conditional Buttons"}
+					{#records}
+					<div class="small-12 columns no-padding">
+					<hr>
+						{@ne key="{attributes.widget-button-1}" value=" "}
+							<div class="six columns no-padding mobile-two widgetText">{attributes.widget-button-1-help}</div>
+							{!need button link in template!}
+							<div class="six columns no-padding mobile-two"><a href="{attributes.widget-button-1-link}" class="button base-btn main-btn right" target="_blank">{attributes.widget-button-1} ></a></div>
+						{/ne}
+					</div>
+					{/records}
+				{/eq}
+			{/secondaryContent}
+		</div>
+	</dd>
+</dl>
+{/if}
+{@if cond="'{mainContent[0].records[0].attributes.help-text|trim}'.length === 0"}
+<!-- if help-text is blank -->
+	{#secondaryContent} <!-- iterate over the secondary content cartridges-->
+		{@eq key="{name}" value="Conditional Buttons"}<!-- if conditional buttons tagged in Exp. Mgr. -->
+		<dl class="accordion widgetAccordion" data-accordion>
+			<dd class="widgetLI">
+				<a class="title widgetTitle blackAndColorBtn" href="#helpBlank">
+					<i class="widgetIcon-question">&nbsp;</i>
+					<h5 class="widgeth5">Need Some More Info?</h5>
+				</a>
+				<div class="content widgetContent" id="helpBlank">
+					{#records} <!-- iterate over the secondaryContent records -->
+						<div class="small-12 columns no-padding">
+						<hr>
+							<div class="small-6 columns no-padding widgetText">{attributes.widget-button-1-help}</div>
+							{!need button link in template!}
+							<div class="small-6 columns no-padding"><a href="/somepage" class="button base-btn main-btn right">{attributes.widget-button-1} ></a></div>
+						</div>
+					{/records}
+				</div>
+			</dd>
+		</dl>
+		{/eq}
+	{/secondaryContent}
+{/if}

@@ -1,0 +1,172 @@
+{
+  "cov-analyze" : {
+    "command-line-options" : {
+      args : [
+        "fb-include",
+        "dir",
+        "tmpdir",
+        "no-banner",
+        "security-file",
+        "persistent-models",
+        "no-whole-program-checkers",
+        "fb-exclude",
+        "export-summaries",
+        "noxrefs",
+        "use-cached-desktop",
+        "strip-path",
+        "ticker-mode",
+        "tu",
+        "enable",
+        "force-report-rws",
+        "PW_INFRASTRUCTURE:xx_report_default_parse_warnings",
+        "PW_INFRASTRUCTURE:xx_report_recovery_warnings",
+        "PW_INFRASTRUCTURE:xx_report_parse_errors",
+        "UNCAUGHT_EXCEPT_INTERNAL:xx_report_uncaught_except"
+      ]
+    },
+    time : 12,
+    "line-counts" : {
+      "C/C++" : {
+        "blank-lines" : 0,
+        "code-lines" : 0,
+        "comment-lines" : 0
+      },
+      Java : {
+        "blank-lines" : 0,
+        "code-lines" : 0,
+        "comment-lines" : 0
+      },
+      "C#" : {
+        "blank-lines" : 7603,
+        "code-lines" : 37228,
+        "comment-lines" : 6660
+      },
+      JavaScript : {
+        "blank-lines" : 0,
+        "code-lines" : 0,
+        "comment-lines" : 0
+      },
+      "Objective-C/C++" : {
+        "blank-lines" : 0,
+        "code-lines" : 0,
+        "comment-lines" : 0
+      },
+      PHP : {
+        "blank-lines" : 0,
+        "code-lines" : 0,
+        "comment-lines" : 0
+      },
+      Python : {
+        "blank-lines" : 0,
+        "code-lines" : 0,
+        "comment-lines" : 0
+      },
+      Ruby : {
+        "blank-lines" : 0,
+        "code-lines" : 0,
+        "comment-lines" : 0
+      },
+      Swift : {
+        "blank-lines" : 0,
+        "code-lines" : 0,
+        "comment-lines" : 0
+      },
+      Text : {
+        "blank-lines" : 0,
+        "code-lines" : 0,
+        "comment-lines" : 0
+      }
+    },
+    "file-statistics-by-extension" : {
+      "<redacted>" : {
+        files : 23,
+        "total-bytes" : 241810
+      },
+      asax : {
+        files : 2,
+        "total-bytes" : 216
+      },
+      "asax.cs" : {
+        files : 1,
+        "total-bytes" : 4175
+      },
+      cache : {
+        files : 2,
+        "total-bytes" : 335537
+      },
+      config : {
+        files : 12,
+        "total-bytes" : 85501
+      },
+      cs : {
+        files : 334,
+        "total-bytes" : 2081678
+      },
+      csproj : {
+        files : 1,
+        "total-bytes" : 15659
+      },
+      dll : {
+        files : 30,
+        "total-bytes" : 1122816
+      },
+      txt : {
+        files : 29,
+        "total-bytes" : 25262
+      },
+      user : {
+        files : 1,
+        "total-bytes" : 1744
+      },
+      xml : {
+        files : 8,
+        "total-bytes" : 2056481
+      }
+    },
+    ident : "2017.07 (build 7a4de27b47 p-milo-push-30112.654)",
+    platform : "Windows 7 Enterprise, 64-bit, Service Pack 1 (build 7601)",
+    "short-platform" : "win64",
+    extver : "2017.07",
+    intver : "7a4de27b47 p-milo-push-30112.654",
+    "aw-peak-mem-bytes" : 18255872,
+    "am+aw-peak-mem-bytes" : 66170880,
+    "bytecode-functions" : 0,
+    concurrency : true,
+    cxx : true,
+    "enable-parse-warnings" : false,
+    failures : 0,
+    "files-analyzed" : 248,
+    force : false,
+    "function-metrics-count" : 5255,
+    "functions-analyzed" : 5255,
+    "incremental-hits" : 15774,
+    "incremental-misses" : 30,
+    "dyncg-sites-resolved" : 0,
+    "dyncg-sites-total" : 0,
+    "max-mem" : 512,
+    "memout-count" : 0,
+    "pathout-count" : 0,
+    paths : 5000,
+    "paths-analyzed" : 56314,
+    "peak-mem-bytes" : 52723712,
+    security : true,
+    "tus-count" : 332,
+    "string-graph-nodes" : 0,
+    "web-app-entry-points" : 0,
+    "web-app-views-unused" : 0,
+    "ta.code_age_thresholds" : "0, 0",
+    "enabled-checkers" : "ARRAY_VS_SINGLETON ASSERT_SIDE_EFFECT BAD_ALLOC_ARITHMETIC BAD_ALLOC_STRLEN BAD_CHECK_OF_WAIT_COND BAD_COMPARE BAD_FREE BAD_LOCK_OBJECT BAD_OVERRIDE BAD_SIZEOF CALL_SUPER CHAR_IO CHECKED_RETURN COM.BAD_FREE COM.BSTR.CONV CONSTANT_EXPRESSION_RESULT COPY_PASTE_ERROR CTOR_DTOR_LEAK DEADCODE DELETE_ARRAY DELETE_VOID EVALUATION_ORDER EXPLICIT_THIS_EXPECTED FB.* FORWARD_NULL GUARDED_BY_VIOLATION IDENTICAL_BRANCHES INFINITE_LOOP INVALIDATE_ITERATOR LOCK_EVASION LOCK_INVERSION MISSING_BREAK MISSING_RETURN NEGATIVE_RETURNS NESTING_INDENT_MISMATCH NON_STATIC_GUARDING_STATIC NO_EFFECT NULL_RETURNS OVERFLOW_BEFORE_WIDEN OVERRUN PARSE_ERROR PASS_BY_VALUE READLINK RESOURCE_LEAK RETURN_LOCAL REVERSE_INULL REVERSE_NEGATIVE SIGN_EXTENSION SIZEOF_MISMATCH STRAY_SEMICOLON STREAM_FORMAT_STATE SWAPPED_ARGUMENTS UNCAUGHT_EXCEPT UNEXPECTED_CONTROL_FLOW UNINIT UNINIT_CTOR UNINTENDED_GLOBAL UNINTENDED_INTEGER_DIVISION UNREACHABLE UNUSED_VALUE USE_AFTER_FREE VARARGS VOLATILE_ATOMICITY WRAPPER_ESCAPE",
+    "NULL_RETURNS-new-defect-count" : 4,
+    "total-new-defect-count" : 4,
+    "total-input-files" : -1,
+    "matching-input-files" : -1
+  },
+  "cov-build" : {
+    "build-successes" : 62,
+    "builds-with-recoverable-errors" : 0,
+    "build-failures" : 0,
+    "cs-webapps-detected" : 1,
+    "cs-webapp-successes" : 1,
+    "cs-webapp-compilation-secs" : 9
+  }
+}

@@ -1,0 +1,508 @@
+.tiles, .tiles.featured, PromoTile.tiles, .sort-tile .tiles {
+    display: block;
+    position: relative;
+    transition-property: background-color, color, width, height;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+.tiles.Presspage {
+    max-width: 100%;
+    min-height: 50px;
+}
+.tiles:hover, .tiles:active{
+    box-shadow: 2px 2px 1px rgba(0,0,0,0.1);
+    transition-property: box-shadow;
+    transition-duration: .5s;
+    transition-delay: .5s;
+    transition-timing-function: ease-in-out;
+}
+.flex-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.home-tile-section:nth-child(4) {
+    display: block;
+}
+.home-tile-section:nth-child(4) .contentFlag {
+    display: none;
+}
+.tile {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.tileImgLink .responsive-image, .banner-full .responsive-image {
+    width: 100%;
+}
+.tiles {
+    margin: 0 0 1em 0;
+    color: $salt-blue;
+}
+.WhyUseSalt.tiles, .PromoTile.tiles {
+    background-color: $white;
+}
+a img {
+    border: 0;
+}
+img {
+    vertical-align: middle;
+    height: auto;
+}
+img, object, embed {
+    max-width: 100%;
+}
+.special-events img{
+    width: 100%;
+}
+.tileImgLink:focus img {
+    outline: 4px solid #009deb;
+}
+/*Tile Text Styles*/
+.topicName, .topic {
+    font-size: 11px;
+    background-color: $gray5;
+    border-bottom: 1px solid $gray15;
+    color: $black;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0;
+    padding: 3px 3px 4px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+/*Tile End Text Styles*/
+
+/*Tile Footer Styles*/
+.tile-bottom-icons {
+    position: absolute;
+    bottom: 0;
+    clear: both;
+    background-color: $white;
+}
+.spanishLink {
+    padding:0 rem-calc(10px);
+    //border-left: solid 1px $gray15;
+    a {
+        width: 50%;
+    }
+}
+.subheader .icon-time-to-read {
+    padding-right: rem-calc(10px);
+}
+.row-divider {
+    display: inline;
+    line-height: 0;
+    font-size: small;
+    * {
+        color: $gray15;        
+    }
+}
+/*Tile End Footer Styles*/
+
+.tile_desc p, .press_desc {
+    line-height: 16px;
+    position: absolute;
+    top: 95px;
+}
+.videoOverlay {
+    position: absolute;
+    z-index: 9;
+    margin: auto 26%;
+    width: 50%;
+    max-width: 114px;
+}
+.definition-body {
+    padding:0 .625em;
+}
+.definition-body h2 {
+    font-size: .9em;
+    font-weight: normal;
+    padding-top: 0;
+    margin-bottom: .25em;
+}
+.definition-body > p {
+    line-height: 1.2em;
+    display: inline;
+    padding-left: 0 ;
+}
+.definition-body > ul {
+    display: inline;
+    list-style-position: outside;
+}
+.definition-body p:last-child  {
+    padding-left: .5em;
+}
+.definition-body p:nth-child(2) {
+    padding-left: 0 !important;
+}
+/* defaults for the colored content type indicator
+    in top left of tile */
+.contentFlag {
+    font-size:10px;
+    height: 20px;
+    background-color: $gray10;
+    border-width: 0px 1px 1px 0px;
+    border-color: $black;
+    border-style: solid;
+    position: absolute;
+    left: 0;
+    color: $black;
+    padding: 0 0 5px 8px;
+}
+.contentFlag.Infographic {
+    width: 60%;
+    padding-left: 6px; 
+}
+/*used for new tiles, where we dont want absolute positioning */
+.contentTypeIndicator {
+    font-size:10px;
+    height: 26px;
+    left: 0;
+    padding: 0 0 5px 8px;
+}
+.salt-suggests .contentFlag.Infographic {
+    padding: 0 0 5px 5px;
+    width:50%;
+}
+.contentTypeText {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.25em;
+    position: relative;
+    text-transform: lowercase;
+    width: 50%;
+    color: $salt-blue;
+}
+.todo-tile-action-type-text {
+    display: inline-block;
+    font-size: .8rem;
+    text-transform: lowercase;
+    padding-top: 2px;
+    vertical-align: middle;
+    margin-bottom: 0px;
+    margin-left: 2px;
+    color: $salt-blue;
+    font-weight: bold;
+}
+.action-type-icon {
+    padding-top: 1px;
+}
+.tileImgLink p {
+    /*removing Foundation's default margin on <p>*/
+    margin: 0;
+}
+.tileImgLink p:nth-child(2) {
+    display: none;
+}
+.subHead h1 {
+    font-size: 11px;
+    color: $black;
+    font-style: italic;
+    margin: 0;
+    padding-top: 2px;
+    padding-bottom: 4px;
+}
+.topic {
+    color: #434343;
+}
+.description p, .pressDesc {
+    font-size: 12px;
+    line-height: 15px;
+    color: #434343;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.tiles section .tileHeader, .right .tileHeader {
+    margin-top: .6em;
+}
+.tiles {
+   border: 0;
+}
+.salt-suggests .tiles{
+    background-color: #efefef;
+}
+.home-tile-section .tiles {
+   min-height: 12em;
+}
+.home-tile-section .tileHeader {
+    padding-bottom: .8em;
+}
+.WhyUseSalt .tiles {
+    min-height: 3em;
+    border:0;
+}
+.home-tile-section.WhyUseSalt {
+    clear: left;
+}
+.PromoTile .tiles {
+    min-height: 1em;
+    border: 0;
+}
+.tileHeader {
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    max-height: 61px;
+    padding: 0;
+}
+.tileHeader h1 {
+    font-size: .75em;
+    color: #003763;
+    font-weight: bold;
+    margin-bottom: .2em;
+    text-decoration: none;
+    display: inline-block;
+}
+.tileHeader h1:hover {
+    color: $light-blue;
+    text-decoration: underline;
+}
+.salt-suggests .tileHeader {
+   padding: 20px 0.625em 0 0.626em;
+}
+.salt-suggests .tileHeader h1 {
+   min-height: 1.8em;
+}
+.salt-suggests .salt-suggests-banner {
+    position: absolute;
+    width: 100%;
+}
+.tile-summary {
+    height: 3em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: none;
+}
+.salt-suggests .tile-summary {
+   display: block;
+}
+.tileImgLink p img {
+    width: 100%;
+}
+.tile-bottom-icons.content-utility-icons {
+    margin: 0 5px;
+    color: #C0C0C0;
+    height:25px;
+}
+.tileImgLink p:nth-child(1) {
+    display: block;
+}
+.tileImgLink p:nth-child(2) {
+    display: none;
+}
+.PromoTile .tileImgLink p:nth-child(2) {
+    display: block;
+}
+/*Add specific styling for tiles which are 'recommended'*/
+.isRecommended {
+    background-color: #5BC500;
+    display: block;
+}
+.PromoTile p {
+    margin-bottom: 0;
+}
+.isRecommended p {
+    margin-bottom: 0px;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.corner-btn-container {
+    bottom: 4%;
+    right: 1%;
+}
+.Testimonials.tiles {
+    min-height: 1em ;
+    max-width: initial;
+    height: auto;
+}
+.tiles.Presspage  {
+    max-width: 100%;
+    min-height: 50px;
+}
+.tileText p {
+    margin-bottom: .2rem;
+}
+.salt-suggests .tileText p {
+    line-height: 1.25em;
+}
+.WhyUseSalt.tileText p {
+    line-height: 1.2em;
+    color: #003763;
+}
+.WhyUseSalt.tileText {
+    padding-bottom: 10px;
+}
+.corner-btn-container {
+    bottom: 4%;
+    right: 0;
+    padding: 0 0.3125em;
+}
+.WhyUseSalt h1 {
+    font-size: 1rem;
+}
+.tile-spacer {
+  min-height: 1em;
+  clear: both;
+}
+@media only screen and (min-width: 20.063em) {
+    .home-tile-section .tiles {
+       min-height: 14em;
+    }
+    .tileHeader h1 {
+        font-size: .85em;
+    }
+}
+@media only screen and (min-width: 30.063em) {
+    .home-tile-section .tiles {
+       min-height: 18em;
+    }
+}
+@media only screen and (min-width: 33.063em) {
+    .home-tile-section .tiles {
+       min-height: 19em;
+    }
+    .tileHeader h1 {
+        font-size: .85em;
+    }
+}
+@media only screen and (min-width: 40.063em) {
+    .PromoTile {
+        display: block;
+    }
+   .PromoTile .tileImgLink p:nth-child(1) {
+        display: block;
+    }
+   .PromoTile .tileImgLink p:nth-child(2) {
+        display: none;
+    }
+    .salt-suggests .tileHeader {
+        padding-top: 0px;
+    }
+    .salt-suggests .contentFlag.Infographic {
+        padding: 0 0 5px 5px;
+        width:42%;
+    }
+    .contentFlag.Infographic {
+        width: 41.66667%;
+    }
+    .definition-body > ul {
+        display: inline;
+        list-style-position: inside;
+    }
+    .corner-btn-container {
+        position: absolute;
+    }
+    .tiles {
+         border: 1px solid $gray15;
+    }
+    .salt-suggests .tiles {
+        background-color: $white;
+    }
+    .salt-suggests .tileText p {
+    line-height: 1.3em;
+    }
+    .home-tile-section .tiles {
+       min-height: 23em;
+    }
+    .home-tile-section .tileHeader {
+        padding-bottom: .8em;
+    }
+    .home-tile-section.WhyUseSalt {
+        clear: none;
+    }
+    .home-tile-section:nth-child(4) {
+        display: none;
+    }
+    .home-tile-section.PromoTile {
+        display: block;
+    }
+    .WhyUseSalt.tiles {
+        min-height: 5em;
+    }
+    .PromoTile.tiles {
+        min-height: 12em;
+    }
+    .tiles section .tileHeader, .right .tileHeader {
+        margin-top: 0;
+    }
+    .tileHeader {
+       padding: 0 .625em;
+    }
+    .tileHeader h1 {
+        margin: .125em 0;
+        font-size: 1em;
+    }
+    .tile-summary {
+        height: 2.813em;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+    }
+    .tileHeader {
+        max-height: 70px;
+    }
+    .tile-spacer {
+        min-height: 1.3em;
+        clear: both;
+    }
+}
+@media only screen and (min-width: 50.063em) {
+    .home-tile-section .tiles {
+       min-height: 25.5em;
+    }
+    .WhyUseSalt.tiles {
+        min-height: 1em;
+    }
+}
+/*Large mdia query*/
+@media only screen and (min-width: 64.063em) {
+    .home-tile-section .tiles {
+       min-height: 27em;
+    }
+    .tiles.Presspage, .tiles.Presspage {
+        min-height: initial;
+        max-width: initial;
+    }
+     .Testimonials.tiles, .tiles.PromoTile, .home-tile-section .WhyUseSalt.tiles {
+        min-height: 1em;
+        max-width: initial;
+        height: auto;
+    }
+    .tiles.promo {
+        min-height: 1em;
+        height:auto;
+    }
+    .tiles.Presspage {
+        max-width: 100%;
+        min-height: 50px;
+    }
+    .tiles.figure img {
+        max-height: 250px;
+    }
+    .videoOverlay {
+        position: absolute;
+        z-index: 9;
+        margin: auto 29%;
+        width: 50%;
+        max-width: 114px;
+    }
+    /*WHyusesalt specific styles*/
+    .WhyUseSalt.tileHeader, .WhyUseSalt.tileHeader h1 {
+        font-size: 2em;
+        max-height: 3em;
+        line-height: 1em;
+        margin-bottom: 0.625em;
+        overflow: visible;
+    }
+    .WhyUseSalt.tileText p {
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="#" title="Home" description="Welcome Page">
+		<!--<siteMapNode url="~/Home.aspx" title="Home" description="Welcome Page" />
+       <siteMapNode title="Manage Accounts" url="~/Admin.aspx" description="ASDL for Account"  />-->
+		<siteMapNode title="Salt User Search" url="~/MemberData.aspx" description="Search for Salt members">
+		</siteMapNode>
+    <siteMapNode url="~/Organization.aspx" title="Organization Search" description="ASDL Organization">      
+		</siteMapNode>
+    <siteMapNode url="~/RegistrationSources.aspx" title="Registration Sources" description="Registration Sources" />
+	</siteMapNode>
+</siteMap>

@@ -1,0 +1,5 @@
+<header>
+    <div class="headline">
+      <h1>{TypeName}</h1>
+    </div>
+</header>

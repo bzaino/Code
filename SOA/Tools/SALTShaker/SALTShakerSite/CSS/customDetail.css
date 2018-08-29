@@ -1,0 +1,98 @@
+﻿.width186
+{
+    width: 186px;
+}
+.width141
+{
+	width: 141px;
+}
+.leftalign
+{
+	float:left!important;
+}
+.textright
+{
+    text-align: right
+}
+.row.container
+{
+    margin-left: 0px;
+}
+#UpdateBtn
+{
+    margin-left: 107px;
+    margin-bottom: 0px;
+}
+.row
+{
+    margin-bottom:15px;
+    
+}
+#myModal .Label
+{
+    text-align:right;    
+}
+.btn
+{
+    text-align:center;    
+}
+.checkLabel label
+{
+    display:inline;
+    padding-left:10px;    
+}
+span.error
+{
+    margin-top: 0px;
+    width: 167px;
+}
+.InputBox
+{
+    width: 167px;
+}
+.overlay
+{
+    -webkit-border-radius: 20px;
+    border-radius: 20px;    
+}
+
+/***************************
+    Used by GridView in RegistrationSources
+***************************/
+.hiddencol { display: none; }
+
+
+/*** Selected Tab highlight ***/
+.selectedTab 
+{
+    background-color: Tan;
+}
+
+
+/***************************
+    Used by ModalPopupExtender in ToDo items
+***************************/
+.modalBackground 
+/*{
+    height:100%;
+    background-color:#969191;
+    filter:alpha(opacity=70);
+    opacity:0.7;
+}*/
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 99;
+    opacity: 0.3;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    min-height: 100%;
+    width: 100%;
+}
+.modalPopupPanel
+{
+    background-color: white;
+    padding: 20px;
+}

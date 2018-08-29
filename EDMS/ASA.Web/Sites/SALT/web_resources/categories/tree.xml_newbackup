@@ -1,0 +1,298 @@
+<Tree label="Categories">
+<Node id="content-types" label="Content-Types">
+<Node id="announcement" label="Announcement">
+</Node>
+<Node id="article" label="Article">
+</Node>
+<Node id="brief" label="Brief">
+</Node>
+<Node id="comic" label="Comic">
+</Node>
+<Node id="definition" label="Definition">
+</Node>
+<Node id="form" label="Form">
+</Node>
+<Node id="infographic" label="Infographic">
+</Node>
+<Node id="lesson" label="Lesson">
+</Node>
+<Node id="tool" label="Tool">
+</Node>
+<Node id="video" label="Video">
+</Node>
+<Node id="webinar" label="Webinar">
+</Node>
+</Node>
+<Node id="facets" label="Facets">
+<Node id="gender" label="Gender">
+<Node id="female" label="Female">
+</Node>
+<Node id="male" label="Male">
+</Node>
+</Node>
+<Node id="knowledge-levels" label="Knowledge Levels">
+<Node id="beginner" label="Beginner">
+</Node>
+<Node id="beginner-intermediate" label="Beginner-Intermediate">
+</Node>
+<Node id="intermediate" label="Intermediate">
+</Node>
+<Node id="intermediate-advanced" label="Intermediate-Advanced">
+</Node>
+<Node id="advanced" label="Advanced">
+</Node>
+</Node>
+<Node id="language" label="Language">
+<Node id="english" label="English">
+</Node>
+<Node id="spanish" label="Spanish">
+</Node>
+</Node>
+<Node id="life-stage" label="Life Stage">
+<Node id="life-preparation" label="Life Preparation">
+</Node>
+<Node id="career-entry" label="Career Entry">
+</Node>
+<Node id="setting-up-a-household" label="Setting Up a Household">
+</Node>
+</Node>
+<Node id="standards" label="Standards">
+<Node id="alternatives-and-consequences" label="Alternatives and Consequences">
+</Node>
+<Node id="buy-and-sell-investments" label="Buy and Sell Investments">
+</Node>
+<Node id="career-options" label="Career Options">
+</Node>
+<Node id="charitable-giving" label="Charitable Giving">
+</Node>
+<Node id="communication-strategies" label="Communication Strategies">
+</Node>
+<Node id="consumer-credit-laws" label="Consumer Credit Laws">
+</Node>
+<Node id="consumer-protection-laws" label="Consumer Protection Laws">
+</Node>
+<Node id="credit-report" label="Credit Report">
+</Node>
+<Node id="debt-problems" label="Debt Problems">
+</Node>
+<Node id="evaluate-financial-information" label="Evaluate Financial Information">
+</Node>
+<Node id="financial-records" label="Financial Records">
+</Node>
+<Node id="financial-regulation" label="Financial Regulation">
+</Node>
+<Node id="health,-life-and-disability-insurance" label="Health, Life and Disability Insurance">
+</Node>
+<Node id="importance-of-a-will" label="Importance of a Will">
+</Node>
+<Node id="investing" label="Investing">
+</Node>
+<Node id="investment-alternatives" label="Investment Alternatives">
+</Node>
+<Node id="investment-taxes" label="Investment Taxes">
+</Node>
+<Node id="payment-methods" label="Payment Methods">
+</Node>
+<Node id="personal-financial-decisions" label="Personal Financial Decisions">
+</Node>
+<Node id="personal-financial-plan" label="Personal Financial Plan">
+</Node>
+<Node id="personal-information" label="Personal Information">
+</Node>
+<Node id="personal-income-sources" label="Personal Income Sources">
+</Node>
+<Node id="property-and-liability-insurance" label="Property and Liability Insurance">
+</Node>
+<Node id="purchase-decisions" label="Purchase Decisions">
+</Node>
+<Node id="risk-management" label="Risk Management">
+</Node>
+<Node id="saving" label="Saving">
+</Node>
+<Node id="spending-and-saving" label="Spending and Saving">
+</Node>
+<Node id="take-home-pay" label="Take-Home Pay">
+</Node>
+<Node id="types-of-credit" label="Types of Credit">
+</Node>
+</Node>
+<Node id="state-change" label="State change">
+<Node id="pre-contemplation" label="Pre-contemplation">
+</Node>
+<Node id="contemplation" label="Contemplation">
+</Node>
+<Node id="preparation" label="Preparation">
+</Node>
+<Node id="action" label="Action">
+</Node>
+<Node id="maintenance" label="Maintenance">
+</Node>
+</Node>
+<Node id="user-goals" label="User Goals">
+<Node id="learn-the-basics" label="Learn the Basics">
+</Node>
+<Node id="pay-for-next-semester" label="Pay for Next Semester">
+</Node>
+<Node id="start-my-career" label="Start My Career">
+</Node>
+<Node id="repay-student-loan-debt" label="Repay Student Loan Debt">
+</Node>
+<Node id="make-a-large-purchase" label="Make a Large Purchase">
+</Node>
+<Node id="pay-my-bills" label="Pay My Bills">
+</Node>
+</Node>
+<Node id="vendor" label="Vendor">
+<Node id="dell" label="Dell">
+</Node>
+<Node id="hp" label="HP">
+</Node>
+</Node>
+<Node id="voice-level" label="Voice level">
+<Node id="beginner" label="Beginner">
+</Node>
+<Node id="intermediate" label="Intermediate">
+</Node>
+<Node id="advanced" label="Advanced">
+</Node>
+</Node>
+</Node>
+<Node id="positioning" label="Positioning">
+<Node id="featured" label="Featured">
+</Node>
+<Node id="trending" label="Trending">
+</Node>
+</Node>
+<Node id="topics" label="Topics">
+<Node id="banking" label="Banking">
+<Node id="balancing-your-account" label="Balancing Your Account">
+</Node>
+<Node id="banking-basics" label="Banking Basics">
+</Node>
+<Node id="finding-the-right-bank" label="Finding the Right Bank">
+</Node>
+</Node>
+<Node id="budgeting" label="Budgeting">
+<Node id="budgeting-basics" label="Budgeting Basics">
+</Node>
+<Node id="cash-flow-basics" label="Cash Flow Basics">
+</Node>
+<Node id="evaluating-a-budget" label="Evaluating a Budget">
+</Node>
+<Node id="goal-setting" label="Goal Setting">
+</Node>
+<Node id="implementing-a-budget" label="Implementing a Budget">
+</Node>
+<Node id="managing-expenses" label="Managing Expenses">
+</Node>
+<Node id="time-value-of-money" label="Time Value of Money">
+</Node>
+<Node id="why-budget" label="Why Budget">
+</Node>
+</Node>
+<Node id="changing-loan-repayment-plans" label="Changing Loan Repayment Plans">
+</Node>
+<Node id="credit" label="Credit">
+<Node id="credit-and-debit-card-basics" label="Credit and Debit Card Basics">
+</Node>
+<Node id="credit-reports" label="Credit Reports">
+</Node>
+<Node id="credit-scores" label="Credit Scores">
+</Node>
+<Node id="identify-theft" label="Identify Theft">
+</Node>
+<Node id="repaying-credit-card-debt" label="Repaying Credit Card Debt">
+</Node>
+</Node>
+<Node id="dealing-with-life-events" label="Dealing With Life Events">
+</Node>
+<Node id="erasing-loan-debt" label="Erasing Loan Debt">
+</Node>
+<Node id="financial-attitudes" label="Financial Attitudes">
+<Node id="changing-financial-behaviors" label="Changing Financial Behaviors">
+</Node>
+<Node id="money-talk" label="Money Talk">
+</Node>
+</Node>
+<Node id="insurance" label="Insurance">
+<Node id="evaluating-health-plans" label="Evaluating Health Plans">
+</Node>
+<Node id="insurance-basics" label="Insurance Basics">
+</Node>
+</Node>
+<Node id="jobs" label="Jobs">
+<Node id="choosing-a-career" label="Choosing a Career">
+</Node>
+<Node id="dealing-with-unemployment-or-underemployment" label="Dealing with Unemployment or Underemployment">
+</Node>
+<Node id="entrepreneurship-and-freelancing" label="Entrepreneurship and Freelancing">
+</Node>
+<Node id="evaluating-job-offers" label="Evaluating Job Offers">
+</Node>
+<Node id="internships,-volunteering-and-service-work" label="Internships, Volunteering and Service Work">
+</Node>
+<Node id="positioning-yourself-for-success" label="Positioning Yourself for Success">
+</Node>
+<Node id="working-while-in-school" label="Working While in School">
+</Node>
+</Node>
+<Node id="large-purchases" label="Large Purchases">
+<Node id="mortgages" label="Mortgages">
+</Node>
+<Node id="net-worth" label="Net Worth">
+</Node>
+<Node id="post-graduate-study" label="Post-Graduate Study">
+</Node>
+<Node id="vehicles" label="Vehicles">
+</Node>
+</Node>
+<Node id="paying-for-college" label="Paying for college">
+<Node id="alternative-sources-of-money" label="Alternative Sources of Money">
+</Node>
+<Node id="community-college" label="Community College">
+</Node>
+<Node id="federal-student-loans" label="Federal Student Loans">
+</Node>
+<Node id="graduate-school-funding" label="Graduate School Funding">
+</Node>
+<Node id="health-professions" label="Health Professions">
+</Node>
+<Node id="law-school" label="Law School">
+</Node>
+<Node id="life-happens" label="Life Happens">
+</Node>
+<Node id="mba" label="MBA">
+</Node>
+<Node id="paying-for-college-basics" label="Paying for College Basics">
+</Node>
+<Node id="private-student-loans" label="Private Student Loans">
+</Node>
+<Node id="scholarships-and-grants" label="Scholarships and Grants">
+</Node>
+<Node id="school-choice-comparison" label="School Choice Comparison">
+</Node>
+<Node id="student-loan-repayment-options" label="Student Loan Repayment Options">
+</Node>
+<Node id="tuition-payment-plans" label="Tuition Payment Plans">
+</Node>
+<Node id="work-study" label="Work Study">
+</Node>
+</Node>
+<Node id="saving" label="Saving">
+<Node id="investment-tools" label="Investment tools">
+</Node>
+<Node id="retirement-savings" label="Retirement Savings">
+</Node>
+<Node id="savings-basics" label="Savings basics">
+</Node>
+</Node>
+<Node id="suspending-loan-payments" label="Suspending Loan Payments">
+</Node>
+<Node id="taxes" label="Taxes">
+<Node id="filing-taxes" label="Filing Taxes">
+</Node>
+<Node id="tax-basics" label="Tax Basics">
+</Node>
+</Node>
+</Node>
+</Tree>

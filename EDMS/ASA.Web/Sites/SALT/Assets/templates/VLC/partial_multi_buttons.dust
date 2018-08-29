@@ -1,0 +1,34 @@
+{! Multiple Choice answers. Large blue outline buttons !}
+
+{@if cond="'{mainContent[0].records[0].attributes.answer-1-page-name|trim}'.length !== 0"}
+<a href="#{mainContent[0].records[0].attributes.answer-1-page-name}"class="button base-btn multi-btn {@contentLength phrase="{mainContent[0].records[0].attributes.answer-1-button-text}"/} answer {mainContent[0].records[0].attributes.SetWebTrendsTag}">{mainContent[0].records[0].attributes.answer-1-button-text}</a>
+{/if}
+
+{@if cond="'{mainContent[0].records[0].attributes.answer-2-page-name|trim}'.length !== 0"}
+	<a href="#{mainContent[0].records[0].attributes.answer-2-page-name}"class="button base-btn multi-btn {@contentLength phrase="{mainContent[0].records[0].attributes.answer-2-button-text}"/} answer {mainContent[0].records[0].attributes.SetWebTrendsTag}">{mainContent[0].records[0].attributes.answer-2-button-text}</a>
+{/if}
+
+{@if cond="'{mainContent[0].records[0].attributes.answer-3-page-name|trim}'.length !== 0"}
+	<a href="#{mainContent[0].records[0].attributes.answer-3-page-name}"class="button base-btn multi-btn {@contentLength phrase="{mainContent[0].records[0].attributes.answer-3-button-text}"/} answer {mainContent[0].records[0].attributes.SetWebTrendsTag}">{mainContent[0].records[0].attributes.answer-3-button-text}</a>
+{/if}
+
+{@if cond="'{mainContent[0].records[0].attributes.answer-4-page-name|trim}'.length !== 0"}
+<a href="#{mainContent[0].records[0].attributes.answer-4-page-name}"class="button base-btn multi-btn {@contentLength phrase="{mainContent[0].records[0].attributes.answer-4-button-text}"/} answer {mainContent[0].records[0].attributes.SetWebTrendsTag}">{mainContent[0].records[0].attributes.answer-4-button-text}</a>
+{/if}
+
+{@if cond="'{mainContent[0].records[0].attributes.answer-5-page-name|trim}'.length !== 0"}
+	<a href="#{mainContent[0].records[0].attributes.answer-5-page-name}"class="button base-btn multi-btn {@contentLength phrase="{mainContent[0].records[0].attributes.answer-5-button-text}"/} answer {mainContent[0].records[0].attributes.SetWebTrendsTag}">
+        {mainContent[0].records[0].attributes.answer-5-button-text}</a>
+{/if}
+
+{@if cond="'{mainContent[0].records[0].attributes.answer-6-page-name|trim}'.length !== 0"}
+	<a href="#{mainContent[0].records[0].attributes.answer-6-page-name}"class="button base-btn multi-btn {@contentLength phrase="{mainContent[0].records[0].attributes.answer-6-button-text}"/} answer {mainContent[0].records[0].attributes.SetWebTrendsTag}">{mainContent[0].records[0].attributes.answer-6-button-text}</a>
+{/if}
+
+{@if cond="'{mainContent[0].records[0].attributes.answer-7-page-name|trim}'.length !== 0"}
+	<a href="#{mainContent[0].records[0].attributes.answer-7-page-name}"class="button base-btn multi-btn {@contentLength phrase="{mainContent[0].records[0].attributes.answer-7-button-text}"/} answer {mainContent[0].records[0].attributes.SetWebTrendsTag}">{mainContent[0].records[0].attributes.answer-7-button-text}</a>
+{/if}
+
+{@if cond="'{mainContent[0].records[0].attributes.answer-8-page-name|trim}'.length !== 0"}
+	<a href="#{mainContent[0].records[0].attributes.answer-8-page-name}"class="button base-btn multi-btn {@contentLength phrase="{mainContent[0].records[0].attributes.answer-8-button-text}"/} answer {mainContent[0].records[0].attributes.SetWebTrendsTag}">{mainContent[0].records[0].attributes.answer-8-button-text}</a>
+{/if}

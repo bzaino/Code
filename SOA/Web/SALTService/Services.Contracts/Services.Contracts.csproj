@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A994B56-18F8-41C5-9BAF-3431E54E0354}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Asa.Salt.Web.Services.Contracts</RootNamespace>
+    <AssemblyName>Services.Contracts</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\ActivityType.cs" />
+    <Compile Include="Data\AlertType.cs" />
+    <Compile Include="Data\COLResultsContract.cs" />
+    <Compile Include="Data\MemberQAContact.cs" />
+    <Compile Include="Data\MemberToDoListContract.cs" />
+    <Compile Include="Data\OrganizationToDoListContract.cs" />
+    <Compile Include="Data\RefAnswerContract.cs" />
+    <Compile Include="Data\MemberQuestionAnswerContract.cs" />
+    <Compile Include="Data\RefCampaign.cs" />
+    <Compile Include="Data\RefChannel.cs" />
+    <Compile Include="Data\RefProductTypeContract.cs" />
+    <Compile Include="Data\RefRegistrationSource.cs" />
+    <Compile Include="Data\RefSourceQuestionAnswerContract.cs" />
+    <Compile Include="Data\RefQuestionContract.cs" />
+    <Compile Include="Data\RefSourceQuestionContract.cs" />
+    <Compile Include="Data\RefToDoStatusContract.cs" />
+    <Compile Include="Data\RefToDoTypeContract.cs" />
+    <Compile Include="Data\vSourceQuestionContract.cs" />
+    <Compile Include="Data\RefSourceContract.cs" />
+    <Compile Include="Data\vMemberQuestionAnswerContract.cs" />
+    <Compile Include="Data\JellyVisionQuizResponseContract.cs" />
+    <Compile Include="Data\MemberActivationHistory.cs" />
+    <Compile Include="Data\MemberActivityHistory.cs" />
+    <Compile Include="Data\MemberContentInteraction.cs" />
+    <Compile Include="Data\MemberOrganizationContract.cs" />
+    <Compile Include="Data\MemberProduct.cs" />
+    <Compile Include="Data\MemberProfileAnswer.cs" />
+    <Compile Include="Data\MemberProfileQAContract.cs" />
+    <Compile Include="Data\MemberRole.cs" />
+    <Compile Include="Data\RefContentInteractionType.cs" />
+    <Compile Include="Data\RefGeographicIndex.cs" />
+    <Compile Include="Data\RefMajor.cs" />
+    <Compile Include="Data\JSIQuestionsContract.cs" />
+    <Compile Include="Data\RefMemberRole.cs" />
+    <Compile Include="Data\RefOccupation.cs" />
+    <Compile Include="Data\RefOrganizationTypeContract.cs" />
+    <Compile Include="Data\RefProduct.cs" />
+    <Compile Include="Data\RefProfileAnswer.cs" />
+    <Compile Include="Data\RefProfileQuestion.cs" />
+    <Compile Include="Data\RefProfileQuestionType.cs" />
+    <Compile Include="Data\RefRegistrationSourceType.cs" />
+    <Compile Include="Data\RefSalaryEstimatorSchool.cs" />
+    <Compile Include="Data\RefSalaryEstimatorSchoolMajor.cs" />
+    <Compile Include="Data\RefSALTSchoolType.cs" />
+    <Compile Include="Data\RefState.cs" />
+    <Compile Include="Data\DataContracts.cs" />
+    <Compile Include="Data\EnrollmentStatus.cs" />
+    <Compile Include="Data\GradeLevel.cs" />
+    <Compile Include="Data\Lesson.cs" />
+    <Compile Include="Data\LessonQuestion.cs" />
+    <Compile Include="Data\LessonQuestionAttribute.cs" />
+    <Compile Include="Data\LessonQuestionResponse.cs" />
+    <Compile Include="Data\LessonStep.cs" />
+    <Compile Include="Data\Lessons\Lesson3\FavoriteRepaymentPlanContract.cs">
+      <DependentUpon>Lesson3Contract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Lessons\PostLessonResultContract.cs" />
+    <Compile Include="Data\Lessons\Lesson2\CardInformationContract.cs">
+      <DependentUpon>Lesson2Contract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Lessons\Lesson2\DebtReductionOptionsContract.cs">
+      <DependentUpon>Lesson2Contract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Lessons\Lesson3\DefermentContract.cs">
+      <DependentUpon>Lesson3Contract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Lessons\ExpenseContract.cs" />
+    <Compile Include="Data\Lessons\Lesson3\FasterRepaymentContract.cs">
+      <DependentUpon>Lesson3Contract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Lessons\Lesson3\StandardRepaymentContract.cs">
+      <DependentUpon>Lesson3Contract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Lessons\FrequencyContract.cs" />
+    <Compile Include="Data\Lessons\Lesson1\GoalContract.cs">
+      <DependentUpon>Lesson1Contract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Lessons\Lesson1\IncomeContract.cs">
+      <DependentUpon>Lesson1Contract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Lessons\Lesson1\Lesson1Contract.cs" />
+    <Compile Include="Data\Lessons\Lesson2\Lesson2Contract.cs" />
+    <Compile Include="Data\Lessons\Lesson3\Lesson3Contract.cs" />
+    <Compile Include="Data\Lessons\Lesson3\LoanTypeContract.cs">
+      <DependentUpon>Lesson3Contract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Lessons\Lesson3\LowerPaymentContract.cs">
+      <DependentUpon>Lesson3Contract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Lessons\Lesson3\RepaymentOptionsContract.cs">
+      <DependentUpon>Lesson3Contract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\LoanType.cs" />
+    <Compile Include="Data\Member.cs" />
+    <Compile Include="Data\MemberAlert.cs" />
+    <Compile Include="Data\MemberLesson.cs" />
+    <Compile Include="Data\MemberReportedLoan.cs" />
+    <Compile Include="Data\PaymentReminder.cs" />
+    <Compile Include="Data\RecordSource.cs" />
+    <Compile Include="Data\RefLessonLookupData.cs" />
+    <Compile Include="Data\RefLessonLookupDataType.cs" />
+    <Compile Include="Data\RegisterMemberResultContract.cs" />
+    <Compile Include="Data\Survey.cs" />
+    <Compile Include="Data\SurveyOption.cs" />
+    <Compile Include="Data\SurveyResponse.cs" />
+    <Compile Include="Data\UserRegistrationContract.cs" />
+    <Compile Include="Data\vCostOfLivingStateList.cs" />
+    <Compile Include="Data\vMemberAcademicInfo.cs" />
+    <Compile Include="Data\vMemberAlerts.cs" />
+    <Compile Include="Data\vMemberReportedLoans.cs" />
+    <Compile Include="Operations\ISALTJobService.cs" />
+    <Compile Include="Data\VLCMemberProfileContract.cs" />
+    <Compile Include="Data\VLCQuestion.cs" />
+    <Compile Include="Data\VLCUserProfile.cs" />
+    <Compile Include="Data\VLCUserResponse.cs" />
+    <Compile Include="Operations\ISALTService.cs" />
+    <Compile Include="Data\OrgPagedListContract.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Data\RefOrganizationContract.cs" />
+    <Compile Include="Data\RefOrganizationProductContract.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common.Types\Common.Types.csproj">
+      <Project>{55C6DF8C-5C3E-46D0-9011-A4DC75C6B553}</Project>
+      <Name>Common.Types</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

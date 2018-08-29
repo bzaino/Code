@@ -1,0 +1,21 @@
+﻿{
+	"ErrorList":[],
+	"Records":[
+		{"Fields":[
+			{"Key":"P_Content_Type","Value":["Article"]},
+			{"Key":"P_Enrollment_Status","Value":["Enrolled Part Time"]},
+			{"Key":"P_Grade_Level","Value":["Senior\/Fourth Year"]},
+			{"Key":"P_Loan_Status","Value":["Delinquent"]},
+			{"Key":"P_Loan_Type","Value":["Stafford"]},
+			{"Key":"P_Membership_Level","Value":["Guest"]},
+			{"Key":"P_Primary_Key","Value":["Tile-104"]},
+			{"Key":"P_School","Value":["Harvard University"]},
+			{"Key":"P_School_Type","Value":["Graduate"]},
+			{"Key":"P_Tile_ID","Value":["104"]},
+			{"Key":"P_Tile_Xml_Path","Value":["http:\/\/www.asa.org\/105"]},
+			{"Key":"Content Type","Value":["Article"]},
+			{"Key":"Record Type","Value":["Tile"]}
+		]}
+	],
+	"ResultsMessage":"Records were found"
+}

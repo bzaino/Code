@@ -1,0 +1,161 @@
+{>"page_parent.dust" /}
+
+{<dynamicTitle}{#content}{title}{/content} - Salt{/dynamicTitle}
+
+{<dynamicBody}
+    <article>
+        <div class="content">
+            {#content}
+                {#secondaryContent}
+                    {?SiteMember.ActiveDirectoryKey}
+                        <!-- mm101 school product SWD-5610 -->
+                        {?SiteMember.ShowMM101}
+                            {@select key="{name}"}
+                                {@eq value="authPaidPageContent"}
+                                    {#records}
+                                        <header class="title-container">
+                                            {attributes.headline}
+                                            <div class="row">
+                                                <div class="small-12 columns no-padding">
+                                                    {attributes.subhead}
+                                                </div>
+                                            </div>
+                                        </header>
+                                        <div class="row padding-top padding-bottom">
+                                            {@if cond="'{record.attributes.callout|trim}'.length"}
+                                                <article class="callout full-width">
+                                                    <div id="englishCallout">
+                                                        {record.attributes.callout}
+                                                    </div>
+                                                </article>
+                                            {/if}
+                                        </div>
+                                        <div class="row collapse">
+                                            <div class="large-6 medium-6 small-12 columns right">
+                                               <figure class="headerimage hide-for-small noprint">{attributes.tile-image-2014}</figure>
+                                           </div>
+                                            <div class="js-glossary-scope">
+                                                {attributes.body}
+                                            </div>
+                                            <!-- MY money 101 conditional -->
+                                            <p class="MM101 text-right"><a class="button base-btn main-btn js-salt-courses-link" href="{configuration.mm101B}" data-coursepath="{configuration.mm101B}" target="_blank">{attributes.button-text-only}</a></p>
+                                        </div>
+                                        <div class="row">
+                                            {>"Modules/FlatTags" /}
+                                        </div>
+                                    {/records}
+                                {/eq}
+                            {/select}
+                        {:else}
+                            {@select key="{name}"}
+                                {@eq value="authPageContent"}
+                                    {#records}
+                                        <header class="title-container">
+                                            {attributes.headline}
+                                            <div class="row">
+                                                <div class="small-12 columns no-padding">
+                                                    {attributes.subhead}
+                                                </div>
+                                            </div>
+                                        </header>
+                                        <div class="row padding-top padding-bottom">
+                                            {@if cond="'{record.attributes.callout|trim}'.length"}
+                                                <article class="callout full-width">
+                                                    <div id="englishCallout">
+                                                        {record.attributes.callout}
+                                                    </div>
+                                                </article>
+                                            {/if}
+                                        </div>
+                                        <div class="row collapse">
+                                            <div class="large-6 medium-6 small-12 columns right">
+                                                <figure class="headerimage hide-for-small double-padding-bottom margin-bottom clearfix noprint">{attributes.tile-image-2014}</figure>
+                                            </div>
+                                            <div class="js-glossary-scope">
+                                                {attributes.body}
+                                            </div>
+                                           {attributes.auth-button-area}
+                                        </div>
+                                    {/records}
+                                {/eq}
+                            {/select}
+                        {/SiteMember.ShowMM101}
+                    {:else}
+                        {@select key="{name}"}
+                            {@eq value="unAuthPageContent"}
+                                {#records}
+                                    <header class="title-container">
+                                        {attributes.headline}
+                                        <div class="row">
+                                            <div class="small-12 columns no-padding">
+                                                {attributes.subhead}
+                                            </div>
+                                        </div>
+                                    </header>
+                                    <div class="row padding-top padding-bottom">
+                                        {@if cond="'{record.attributes.callout|trim}'.length"}
+                                            <article class="callout full-width">
+                                                <div id="englishCallout">
+                                                    {record.attributes.callout}
+                                                </div>
+                                            </article>
+                                        {/if}
+                                    </div>
+                                    <div class="row collapse">
+                                        <div class="large-6 medium-6 small-12 columns right">
+                                            <figure class="headerimage hide-for-small noprint">{attributes.tile-image-2014}</figure>
+                                        </div>
+                                        <div class="js-glossary-scope">
+                                            {attributes.body}
+                                        </div>
+                                        {attributes.button-area}
+                                    </div>
+                                {/records}
+                            {/eq}
+                        {/select}
+                    {/SiteMember.ActiveDirectoryKey}
+                {/secondaryContent}
+            {/content}
+        </div>
+    </article>
+{/dynamicBody}
+
+{<dynamicSideBar}
+    {#content}
+        {?SiteMember.ActiveDirectoryKey}
+			{>"partial_schoolLogo.dust" /}
+            {?secondaryContent[3].contents}
+                <h3 class="featured-controls ce ">Resources</h3>
+            {/secondaryContent[3].contents}
+            {#secondaryContent[3]}
+                {#contents}
+                    {@select key="{name}"}
+                        {@eq value="SchoolTiles"}
+                            {#records}
+                        <article class="block entry_block auth-tile-school-specific">
+                            <figure class="promotile">
+                                <!-- desktop size, being resized by design team-->
+                                {attributes.rich-text-image}
+                            </figure>
+                            <div class="tilePromoText">
+                                <!-- the title and description text -->
+                                <header class="tileHeader">{attributes.headline}</header>
+                                {attributes.body}
+                            </div>
+                        </article>
+                            {/records}
+                        {/eq}
+                    {/select}
+                {/contents}
+            {/secondaryContent[3]}
+        {/SiteMember.ActiveDirectoryKey}
+        {>"Modules/ReachOutDelegate" /}
+    {/content}
+
+{/dynamicSideBar}
+
+<script>
+    require(['asa/ASAUtilities'], function (Utility) {
+        Utility.instantiateGlossaryTerms();
+    })
+</script>

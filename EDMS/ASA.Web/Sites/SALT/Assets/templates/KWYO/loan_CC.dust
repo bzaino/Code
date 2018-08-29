@@ -1,0 +1,8 @@
+<form id="edit-cc-form" data-abide>
+    {> "KWYO/loanDetailNonImportedHeader" /}
+    <section class="fields">
+        {>"KWYO/KWYO_forms_sharedFields" required="required" LoanLabel="Debt Name:"/}
+    </section>
+    {> "KWYO/loanDetailContentEditorBlock" /}
+    {> "KWYO/loanDetailButtons" /}
+</form>

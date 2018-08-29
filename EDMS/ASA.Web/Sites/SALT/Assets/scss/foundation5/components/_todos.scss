@@ -1,0 +1,573 @@
+// TODO, break the tile styles away into tiles.scss
+/*** Dashboard Tabs *****/
+.dashboard-container {
+    .tabs-content {
+        border: 1px solid $gray15;
+        border-radius: 10px 10px 10px 10px;
+        &::-webkit-scrollbar{
+            width: 0px;
+        }
+    }
+    .tabs-container {
+        padding-top: 10px;
+    }
+    .tabs {
+        .tab-title {
+            border: 1px solid $white;
+            height: 30px;
+            margin-bottom: 0;
+            margin-right: 10px;
+            position: relative;
+            z-index: $lowest-hover-layer;
+            @media #{$small} {
+                margin-right: 2px;
+            }
+            .todo-list, .todo-count {
+                color: $white;
+            }
+            .todo-count {font-size: 18px;}
+
+            .button, .todo-count{
+                font-weight: 600;
+                @media #{$small} {
+                    font-size: rem-calc(13px);
+                }
+            }
+            
+            &.active, &:hover {
+                border-width: 1px 1px 0 1px;
+                border-radius: 10px 10px 0 0 !important;
+                background-color: $white;
+                border-color: $gray15;
+                border-style: solid;
+                height: 40px;
+                top: 1px;
+
+                .MySALT {
+                    padding-bottom: 28px;
+                    border-left: 1px solid $gray15;
+                    border-radius: 10px 10px 0 0;
+                    position: relative;
+                    left: -1px;
+                    top: -1px;
+                    right: -14px;
+                    border-top: 1px solid $gray15;
+                }
+            }
+
+            &.active, &:hover, &:focus {
+                i {
+                    color: $white;
+                    background-color: $primary-color;
+                }
+                .todo-list, .todo-count { 
+                    color: $salt-blue;
+                }
+                .button{
+                    background-color: $white; 
+                    color: $salt-blue;
+                    @media #{$small} {
+                        font-size: rem-calc(13px);
+                    }
+                }
+             }
+        }
+        &.sticky {
+            .tab-title {
+                border-radius: 10px !important;
+                border: 1px solid $gray15;
+                height: 35px;
+                top: 0px;
+                overflow: hidden;
+                a { border-radius: 10px !important;
+
+                    &.MySALT {
+                        padding: 0.4375rem 0.875rem 0.5rem 0.875rem;
+                    } 
+                }
+            }
+        }
+    }
+    .tabs-container, .tabs {
+        z-index: $sticky-subheader-layer;
+        &.sticky {
+            top: 50px;
+            background-color: white;
+            padding: 10px;
+        }
+    }
+    .sticky {
+        position:fixed;
+    }
+}
+/**** End of Tabs *******/
+/**** Tiles *************/
+.todo {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.todoHeader {
+    h1 {
+        display: block;
+        font-size: .85em;
+        font-weight: bold;
+        height: auto;
+        line-height: 1.2;
+        margin: .1em 0;
+        overflow: visible;
+        text-overflow: initial;
+        white-space: normal;
+    }
+    p {
+        display: none;
+    }
+}
+.todo-flat-tags {
+    display: block;
+    font-size: 11px;
+    height: 1.4em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    a {
+        font-weight: bold;
+    }
+}
+.todo-list-headline {
+    font-weight: bold;
+    padding: .4em 0 0 .4em;
+}
+.todo-header {
+    display: inline-block;
+    line-height: .2em; /* since the p tag (check out these...) is using subhead class which has a line height of 1.3. To reduce the spacing a lineheight of .2 has been added.*/
+    font-weight: bold;
+}
+.todoTile, .panel-Articles, .panel-Videos, .panel-Tools, .panel-Infographics, .panel-Lessons, .panel-Ebooks, .panel-Courses, .panel-Forms, .panel-Comics {
+    margin: .4em 0;
+    background: rgba($gray15, .1);
+
+    img, figure.completed-overlay a {
+        max-width: 90%;
+        margin-top: .25em;
+    }
+    figure.completed-overlay {
+        img {
+            max-width: 100%;
+            margin-top: 0;
+        }
+        &.completed-overlay > a {
+            position: relative;
+            display: inline-block;
+        }
+        &.completed-overlay > a::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            /* Decide on opacity */
+            background: rgba(0,0,0,.6) center no-repeat url(/Assets/images/completed_tile_icon.png);
+        }
+    }
+}
+// tile's top strip, also not in tiles
+.todo-utility-bar {
+    background: $gray10;
+    border: 1px solid $gray15;
+    &.state-1, &.state-4 {
+        border-color: rgba($light-blue-alt, 0.4);
+    }
+    &.state-2 {
+        border-color: rgba($growth-green, 0.6);
+    }
+    .hide-status-small {
+        display: none;
+    }
+    // 'added', 'completed', etc labels in the top strip
+    .status-indicator {
+        font-size: 13px;
+        font-style: italic;
+        // these two are for the "complete" status on desktop
+        padding-right: 5px;
+        padding-top: .2em;
+    }
+}
+// add/remove buttons and their loading messages when clicked
+.todo-bar-item {
+    white-space: nowrap;
+    padding: 3px;
+    font-size: 0.8em;
+    &:hover, a:focus {
+        // make the labels for only the buttons appear like links
+        .todo-bar-item-label, .todo-bar-item-label {
+            text-decoration: underline;
+        }
+    }
+}
+// for feature task tile
+.featured-task-widget {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.featured-task-content{
+    p {
+        font-size: rem-calc(14px);
+        margin-bottom: rem-calc(15px);
+    }
+}
+/*********** End of Tiles ************/
+.load-more {
+    text-align: center;
+    font-size: .85rem;
+    padding: .8em;
+    border-top: 1px solid #e0e8ed;
+    border-bottom: 1px solid #e0e8ed;
+    width: 100%;
+    margin: 1.5em 0 2.1em 0;
+}
+.todo-tab-header {
+    margin-bottom: 0px;
+}
+// TODO this needs to be sorted out, this style is being used in a couple of different places
+// but should really be namespaced better
+.loading {
+    float: left;
+    position: relative;
+    top: -8px;
+    .todo-bar-item & {
+        top: 4px;
+        position: absolute;
+        right: 10px;
+        + span {
+            padding-right: 25px;
+        }
+    }
+}
+/* Salt3 Browse page can refactored when completed, -edit: SHOULD BE REFACTORED NOW */
+.browse-header-bar {
+    clear:both;
+    margin-bottom: .25em;
+}
+.browse-header-bar h1 {
+   padding-top: .4em;
+}
+// should just refer to .filter-bar now, may want to consolidate with those styles
+.salt3 .f-dropdown.content {
+    max-height: inherit;
+    border: 0;
+    background: #fff;
+    border: 1px solid $gray15;
+    -webkit-box-shadow: 4px 4px 10px -2px rgba(0,0,0,.5);
+    -moz-box-shadow: 4px 4px 10px -2px rgba(0,0,0,.5);
+    box-shadow: 4px 4px 10px -2px rgba(0,0,0,.5);
+    margin-top: -1px;
+}
+.salt3 .f-dropdown.filter-bar .filter-inner-wrap {
+    padding: .625em;
+    overflow-y: auto;
+    max-height: inherit;
+}
+.salt3 .f-dropdown.filter-bar .bordered {
+    border: 1px solid #d4d9dd;
+    border-width: 0 0 1px;
+    margin-bottom: .625em;
+    padding-bottom: 0.5em;
+}
+.salt3 .f-dropdown.filter-bar .bordered:first-child {
+    position:relative;
+}
+.salt3 .browse-header-bar {
+    clear:both;
+    margin: 0 0 .25em 0;
+    border: 1px solid $gray5;
+    background-color: #003763;
+}
+.salt3 .browse-header-bar h1 {
+   padding: .7em 0 .4em .4em;
+   font-size: 1rem;
+   margin: 0;
+   color: #fff;
+   font-weight: bold;
+}
+.salt3 .browse-header-bar .contentfilter {
+    float:right;
+}
+// for Sort & Filter accordion
+.salt3 .browse-header-bar .sort-filter {
+    display:inline-block;
+    max-height: 50vh;
+}
+.salt3 .f-dropdown.filter-bar div {
+    padding: .25em 0;
+}
+.salt3 .f-dropdown h2 {
+    font-size: 1.15em;
+}
+.salt3  .f-dropdown.content.filter-bar .filter-option{
+    margin-top: 10px;
+    width:44%;
+    margin-left: 15px;
+    float: left;
+}
+.salt3 .css-label {
+    color: $gray75;
+    padding-right: .625em;
+    font-size: .9em;
+}
+.dashboard-container .browse-subhead {
+    display: none;
+}
+// no result on sort filter result style
+.no-result-margin {
+    min-height: 50vh; /*added to browse page content (the no-result sort filter) when no result text is displayed the dropdown on medium screen gets cutoff where text ends. This gives the content the full height */
+}
+.no-result {
+    p {
+        color: $gray75;
+    }
+}
+// Sort & Filter Accordion stylings (first SASS ever in codebase)
+// silent class (doesn't appear in the css output, only for extending)
+%filter-accordion-subhead {
+    // overriding the very specific foundation background color
+    background-color: transparent;
+    font-size: inherit;
+    padding: 5px 0 0 0;
+}
+.filter-accordion {
+    font-size: 14px;
+    > .accordion-navigation > a {
+        @extend %filter-accordion-subhead;
+        &:hover, &:focus, &:active {
+            background-color: transparent;
+            text-decoration: none;
+        }
+        > h2 {
+            display: inline-block;
+            margin-bottom: 0;
+        }
+    }
+    > .accordion-navigation.active {
+        > a {
+            @extend %filter-accordion-subhead;
+        }
+        > .content {
+            background-color: transparent;
+        }
+    }
+    .accordion-navigation.active.bordered:last-child .columns {
+        padding-bottom: 10px;
+    }
+}
+// Sort & Filter accordion arrow
+.acc-arrow {
+    background: transparent url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNDMuOTk2cHgiIGhlaWdodD0iNDMuOTk2cHgiIHZpZXdCb3g9IjAgMCA0My45OTYgNDMuOTk2IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0My45OTYgNDMuOTk2IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwb2x5Z29uIGZpbGw9IiMwMDM3NjMiIHBvaW50cz0iMjMuNjQ4LDI1Ljg0MSAyMi45NDEsMjYuNTQ4IDIyLjIzNCwyNy4yNTUgMTguNjk5LDIzLjcyMSAxNS4xNjMsMjAuMTg2IDE1Ljg3LDE5LjQ3OSANCgkJMTYuNTc3LDE4Ljc3MSAyMC4xMTMsMjIuMzA3IAkiLz4NCgk8cG9seWxpbmUgZmlsbD0iIzAwMzc2MyIgcG9pbnRzPSIyMi4yMzQsMjQuNDI4IDI1LjA2MywyMS42IDI3Ljg5MSwxOC43NzEgMjguNTk4LDE5LjQ3OSAyOS4zMDcsMjAuMTg2IDI2LjQ3NywyMy4wMTQgDQoJCTIzLjY0OCwyNS44NDEgCSIvPg0KPC9nPg0KPC9zdmc+") -3px -3px no-repeat;
+    bottom: 10px;
+    display: inline-block;
+    float: right;
+    height: 28px;
+    position: relative;
+    width: 30px;
+}
+.load-more-container h2, .content-section .browse-magellan-headers {
+    background-color: $white;
+    margin: 0;
+    padding-bottom: 0.53em;
+    font-size: 1.125rem;
+    font-weight: bold;
+    position: relative;
+}
+.todo-header-link {
+    // for IE/Edge gives a tag full size of embedded h1 tag for 508 outline
+    display: block
+}
+.todo-header-link {
+    text-decoration: none;
+    &:hover, &:active, &:focus {
+        text-decoration: underline;
+    }
+}
+#Todos .todo-list-link {
+    display: none;
+}
+
+#browse-fixed-header {
+    background-color: $white;
+    z-index: $sticky-subheader-layer;
+    top: 90px;
+    margin-left: -10px;
+    > div {
+        height: 44px;
+        box-sizing: content-box;
+    }
+    &.sticky {
+        background-color: $white;
+        top: 104px;
+        @media #{$small}{
+            width: calc(100% - 22px) !important;
+        }
+    }
+}
+#Library {
+    > .magellan-container[data-magellan-expedition] {
+        .browse-magellan-headers {
+            padding-left: 10px;
+        }
+    }
+    > .magellan-container[data-magellan-expedition].sticky {
+        top:154px !important;
+        .browse-magellan-headers {
+            padding-left: 0;
+        }
+    }
+    > .magellan-container[data-magellan-expedition-clone] {
+        display: none;
+    }
+    .sub-nav {
+        display: block;
+        margin-left: -0.8rem;
+        > .browse-arrivals {
+            position: absolute;
+            width: inherit;
+            margin-left: 0px;
+            z-index: $lowest-hover-layer;
+            left: 0;
+        }
+        > .browse-arrivals:first-child {
+            z-index: $lowest-hover-layer + 1;
+        }
+        > .sticky-top {
+            z-index: $sticky-subheader-layer;
+        }
+    }
+    .load-more-container:first-of-type > h2 {
+        visibility: hidden;
+        line-height: 1;
+    }
+}
+
+.subhead {
+    .dashboard-container & {
+        color: $salt-blue;
+        margin-bottom: 0px;
+    }
+    #js-rank-container & {
+        margin-bottom: 1.25rem;
+    }
+    #js-open-todos & {
+        margin-bottom: 0.5rem;
+    }
+}
+.sort-filter-text {
+    font-size: 80%;
+    position: relative;
+    right: 47px;
+    top: 10px;
+    #browse-fixed-header & {
+        color: $white;
+    }
+}
+@media only screen and (min-width: 22.0625em) {
+    .salt3 .browse-header-bar h1 {
+        font-size: 1.25em;
+        padding-top: 0.4em;
+    }
+}
+@media #{$medium-up} {
+    .dashboard-button-style a {
+        text-align: left;
+    }
+    .todoHeader {
+        h1 {
+            font-size: 1.1em;
+            margin: 0;
+            line-height: 1.5;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 100%;
+        }
+        p {
+            display: block;
+            height: 1.4em;
+            line-height: 1.4em;
+            margin: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 100%;
+            &:nth-child(odd) {
+                display: none;
+            }
+        }
+    }
+    .todoTile .hide-status-small {
+        display: inline;
+    }
+}
+@media only screen and (min-width: 40.063em) and (min-height: 24.0625em) {
+    .dashboard-container .browse-subhead {
+        display: block;
+        font-size: 0.8em;
+        margin-bottom: 0px;
+    }
+    #Library {
+        .magellan-container[data-magellan-expedition].sticky {
+            top:180px !important;
+        }
+    }
+}
+@media only screen and (min-width: 45.4375em)  {
+    .dashboard-container .subhead {
+        font-size: .9em;
+    }
+}
+@media #{$large-up} {
+    .dashboard-button-style {
+        font-size: 1.2em;
+        text-align: left;
+        border-bottom: 0;
+    }
+    .dashboard-button-style a {
+        text-align: left;
+    }
+    .dashboard-container .subhead {
+        font-size: 0.85em;
+    }
+    .salt3 .browse-header-bar .sort-filter {
+        display:inline-block;
+        width: 290px;
+    }
+    #browse-fixed-header {
+        top:116px;
+    }
+    .no-result-margin{
+        min-height: auto;
+    }
+    .dashboard-container .tabs {
+        // make this the width of the dashboard container so it doesn't overlap the RR
+        width: 620px;
+    }
+}
+// for Sort & Filter accordion
+@media only screen and (min-height: 41.25em) {
+    .salt3 .browse-header-bar .sort-filter {
+        max-height: 68vh;
+    }
+}
+// these two are for the accordion in edge case where Sort & Filter label wraps
+// if that is a bug, and is fixed, remove these two.
+@media only screen and (min-width: 40.125em) and (max-width: 43.9375em) {
+    .salt3 .browse-header-bar .sort-filter {
+        max-height: 39vh;
+    }
+}
+@media only screen and (min-height: 25em) and (min-width: 40.125em) and (max-width: 43.9375em) {
+    .salt3 .browse-header-bar .sort-filter {
+        max-height: 54vh;
+    }
+}

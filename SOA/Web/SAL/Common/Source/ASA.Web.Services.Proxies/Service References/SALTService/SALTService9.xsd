@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson1" />
+  <xs:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Common.Types.Enums" />
+  <xs:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson2" />
+  <xs:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson3" />
+  <xs:complexType name="ArrayOfExpenseContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExpenseContract" nillable="true" type="tns:ExpenseContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExpenseContract" nillable="true" type="tns:ArrayOfExpenseContract" />
+  <xs:complexType name="ExpenseContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExpenseAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ExpenseDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Frequency" nillable="true" type="tns:FrequencyContract" />
+      <xs:element minOccurs="0" name="FrequencyId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="HasTopLevelExpense" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="LessonUserId" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaidByCreditCard" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ParentExpenseId" type="xs:int" />
+      <xs:element minOccurs="0" name="ParentExpenseType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Recurring" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExpenseContract" nillable="true" type="tns:ExpenseContract" />
+  <xs:complexType name="FrequencyContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FrequencyId" type="xs:int" />
+      <xs:element minOccurs="0" name="Months" type="xs:double" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FrequencyContract" nillable="true" type="tns:FrequencyContract" />
+  <xs:complexType name="PostLessonResultContractOfLesson1ContractlUUV3ww1">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="PostLessonResultContractOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Lesson1Contract" Namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson1" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson1" minOccurs="0" name="Lesson" nillable="true" type="q1:Lesson1Contract" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Common.Types.Enums" minOccurs="0" name="UpdateStatus" type="q2:LessonUpdateStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PostLessonResultContractOfLesson1ContractlUUV3ww1" nillable="true" type="tns:PostLessonResultContractOfLesson1ContractlUUV3ww1" />
+  <xs:complexType name="PostLessonResultContractOfLesson2ContractnnNbrmR3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="PostLessonResultContractOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Lesson2Contract" Namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson2" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson2" minOccurs="0" name="Lesson" nillable="true" type="q3:Lesson2Contract" />
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Common.Types.Enums" minOccurs="0" name="UpdateStatus" type="q4:LessonUpdateStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PostLessonResultContractOfLesson2ContractnnNbrmR3" nillable="true" type="tns:PostLessonResultContractOfLesson2ContractnnNbrmR3" />
+  <xs:complexType name="PostLessonResultContractOfLesson3ContractQ4ySJVjP">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="PostLessonResultContractOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Lesson3Contract" Namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson3" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data.Lessons.Lesson3" minOccurs="0" name="Lesson" nillable="true" type="q5:Lesson3Contract" />
+      <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Common.Types.Enums" minOccurs="0" name="UpdateStatus" type="q6:LessonUpdateStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PostLessonResultContractOfLesson3ContractQ4ySJVjP" nillable="true" type="tns:PostLessonResultContractOfLesson3ContractQ4ySJVjP" />
+</xs:schema>

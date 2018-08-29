@@ -1,0 +1,51 @@
+{
+	"pages" : [
+		{
+			"path": "intro.html",
+			"title": "Set a Goal",
+			"main": "true",
+			"step": 1,
+			"lessonComplete" : false,
+			"js" : ["js/curriculum/intro.js"]
+		},
+		{
+			"path": "income.html",
+			"title": "Enter Your Income",
+			"main": true,
+			"step": 2,
+			"lessonComplete" : false,
+			"js" : ["js/curriculum/income.js"]
+		},
+		{
+			"path": "expenses.html",
+			"title": "Enter Your Expense",
+			"main": true,
+			"step": 3,
+			"lessonComplete" : false,
+			"js" : ["js/curriculum/expenses.js"]
+		},
+		{
+			"path": "expenses/other.html",
+			"title": "Enter Your Expense",
+			"parent": "expenses",
+			"lessonComplete" : false,
+			"js" : ["js/curriculum/other.js"]
+		},
+		{
+			"path": "review.html",
+			"title": "Review Your Options",
+			"main": true,
+			"step": 4,
+			"lessonComplete" : true,
+			"js" : ["js/curriculum/review.js"]
+		},
+		{
+			"path": "goal.html",
+			"title": "Cashflow overtime",
+			"main": true,
+			"step": 5,
+			"lessonComplete" : false,
+			"js" : ["js/libs/highcharts.js", "js/libs/modules/exporting.js","js/curriculum/graph.js", "js/curriculum/edit-cashflow.js", "js/curriculum/goal-left.js"]
+		}
+	]
+}

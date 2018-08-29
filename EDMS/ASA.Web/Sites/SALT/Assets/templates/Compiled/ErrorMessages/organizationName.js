@@ -1,0 +1,1 @@
+define(["dust"], function(dust) { (function(){dust.register("ErrorMessages/organizationName",body_0);function body_0(chk,ctx){return chk.write("<small class=\"error js-org-error\">Please let us know if you are affiliated with ").reference(ctx.get("organizationValidation"),ctx,"h").write(".</small> ");}return body_0;})(); });

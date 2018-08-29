@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d929408f-18ee-468e-80ca-ca23a030bff0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1000/LoanManagementService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LoanManagementService1.disco" MetadataType="Disco" ID="7b89dee0-8566-4646-b6f6-55063364ed8d" SourceId="1" SourceUrl="http://localhost:1000/LoanManagementService.svc?disco" />
+    <MetadataFile FileName="LoanManagementService9.xsd" MetadataType="Schema" ID="d48fb8b9-d7d8-4d76-9597-34f4eeee6ee6" SourceId="1" SourceUrl="http://localhost:1000/LoanManagementService.svc?xsd=xsd6" />
+    <MetadataFile FileName="LoanManagementService91.xsd" MetadataType="Schema" ID="afc5cd88-7627-4bdc-9433-99c8f3485438" SourceId="1" SourceUrl="http://localhost:1000/LoanManagementService.svc?xsd=xsd8" />
+    <MetadataFile FileName="LoanManagement1.wsdl" MetadataType="Wsdl" ID="91c17b09-0e98-4243-bb0f-8f1c81954966" SourceId="1" SourceUrl="http://localhost:1000/LoanManagementService.svc?wsdl" />
+    <MetadataFile FileName="LoanManagementService92.xsd" MetadataType="Schema" ID="6f37925e-cf24-4043-97cc-a16345e3244e" SourceId="1" SourceUrl="http://localhost:1000/LoanManagementService.svc?xsd=xsd3" />
+    <MetadataFile FileName="LoanManagementService93.xsd" MetadataType="Schema" ID="71b2387a-f899-4af5-b081-ac7010b2e3a6" SourceId="1" SourceUrl="http://localhost:1000/LoanManagementService.svc?xsd=xsd4" />
+    <MetadataFile FileName="LoanManagementService94.xsd" MetadataType="Schema" ID="b2186914-bf9e-40c3-9140-f0556bfb5835" SourceId="1" SourceUrl="http://localhost:1000/LoanManagementService.svc?xsd=xsd1" />
+    <MetadataFile FileName="LoanManagementService95.xsd" MetadataType="Schema" ID="130ac690-b7ff-4e0d-affb-8893e4b1f025" SourceId="1" SourceUrl="http://localhost:1000/LoanManagementService.svc?xsd=xsd7" />
+    <MetadataFile FileName="LoanManagementService96.xsd" MetadataType="Schema" ID="c6b7a555-f9bd-470a-ab85-0ebb6830dbf9" SourceId="1" SourceUrl="http://localhost:1000/LoanManagementService.svc?xsd=xsd2" />
+    <MetadataFile FileName="LoanManagementService97.xsd" MetadataType="Schema" ID="998d1fe1-571a-4955-8c32-1112c52d5f23" SourceId="1" SourceUrl="http://localhost:1000/LoanManagementService.svc?xsd=xsd5" />
+    <MetadataFile FileName="LoanManagementService98.xsd" MetadataType="Schema" ID="9111e987-57bf-40b7-ba21-6b9161ba17cd" SourceId="1" SourceUrl="http://localhost:1000/LoanManagementService.svc?xsd=xsd0" />
+    <MetadataFile FileName="LoanManagementService.wsdl" MetadataType="Wsdl" ID="9b8f6e5f-3c58-429c-bddb-c294ed73f52d" SourceId="1" SourceUrl="http://localhost:1000/LoanManagementService.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

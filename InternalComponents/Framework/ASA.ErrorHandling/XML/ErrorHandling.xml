@@ -1,0 +1,9 @@
+﻿<objects xmlns="http://www.springframework.net">
+
+	<description>
+		The ASA.ErrorHandling layer where error processing is performed
+	</description>
+
+	<object id="ErrorLookupHelper" type="ASA.ErrorHandling.ErrorLookupHelper, ASA.ErrorHandling"/>
+
+</objects>

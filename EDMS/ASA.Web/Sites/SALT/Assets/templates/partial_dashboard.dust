@@ -1,0 +1,137 @@
+    <div class="small-12 columns">
+        {> "Modules/alerts" /}
+    </div>
+    <div class="articles-container row dashboard-container js-dashboard-container">
+    <div class="small-12 columns">
+        {@if cond="'{configuration.CurrentSchoolBrand}' !== 'nologo'"}
+            {>"LandingPage/dynamic_banner" bannerData=secondaryContent[6].records[0] hideCopyForSmall="true" /}
+        {/if}
+        <div class="tabs-container row collapse">
+            <dd class="tabs small-12 large-10" data-tab role="tablist" data-options="deep_linking:true; scroll_to_content:false;">
+                <dl class="js-dash-nav tab-title left active" tabindex="3">
+                    <a href="#MySALT" class="MySALT button radius tab-btn tiny" id="js-MySALT" role="tab">My Salt</a>
+                </dl>
+                <dl class="js-dash-nav tab-title left" tabindex="3">
+                    <a href="#Todos" class="button radius tab-btn tiny"  role="tab"><div class="todo-list{configuration.orgAdmin}">To-Do List <span  class="todo-count {openTodoCountClass}"><i id="js-todo-count" class="notify-bubble">{openTodoCount}</i></span></div></a>
+                </dl>
+                {^SiteMember.BrowseDisabled}
+                <dl class="js-dash-nav tab-title left" id="js-library-tab" tabindex="3">
+                    <a href="#Library" class="button radius tab-btn tiny" id="js-Library" role="tab">Browse</a>
+                </dl>
+                {/SiteMember.BrowseDisabled}
+            </dd>
+        </div>
+        <div class="tabs-content columns">
+            <section role="tabpanel" class="content no-left-margin active" id="MySALT">
+                <hgroup class="small-12">
+                    <h1 class="todo-header">Recommended For You</h1>
+                    <h3 class="subheader">We recommend these items based on the <a href class="js-void-href js-manage-rank">information you provided</a>. Save items for later by adding them to your to-do list.</h3>
+                </hgroup>
+                {#featuredTask}
+                <div class="row">
+                    <section id="js-featuredTask" class="panel row collapse small-12 columns featured-task-widget js-todoContainer" data-primary-key="{attributes.P_Primary_Key}" data-content-title="{attributes.resource_link_title}" data-content-type="{attributes.ContentTypes}">
+                        <div class="small-12 columns featured-task-content">
+                            <div class="medium-7 margin-top columns">
+                                {@if cond="'{attributes.external-url|trim}'.length"}
+                                    {@if cond="'{attributes.ContentTypes}' === 'Course'"}
+                                        <a href="#" data-coursepath="{attributes.external-url}"  title="{attributes.resource_link_title}" class="js-featuredContent js-wt-todoheader todo-header-link js-salt-courses-link">{attributes.headline}</a>
+                                    {:else}
+                                        <a href="{attributes.external-url}" title="{attributes.resource_link_title}" class=" js-featuredContent js-wt-todoheader todo-header-link">{attributes.headline}</a>
+                                    {/if}
+                                {:else}
+                                    <a href="/content/media{detailsAction.recordState}" title="{attributes.resource_link_title}" class="js-featuredContent js-wt-todoheader todo-header-link">{attributes.headline} </a>
+                                {/if}
+                                {attributes.page_summary}
+                                <ul class="button-group radius">
+                                        <li>
+                                            {@if cond="'{attributes.external-url|trim}'.length"}
+                                                {@if cond="'{attributes.ContentTypes}' === 'Course'"}
+                                                    <a href="#" data-coursepath="{attributes.external-url}" title="{attributes.resource_link_title}" class="button featured-btn small js-featuredContent js-wt-todoheader js-salt-courses-link">Open</a>
+                                                {:else}
+                                                    <a href="{attributes.external-url}" title="{attributes.resource_link_title}" class="button featured-btn small js-featuredContent js-wt-todoheader">Open</a>
+                                                {/if}
+                                            {:else}
+                                                <a href="/content/media{detailsAction.recordState}" title="{attributes.resource_link_title}" class="button featured-btn small js-featuredContent js-wt-todoheader">Open</a> 
+                                            {/if}
+                                        </li>
+                                        <li>
+                                            <a href="" class="button featured-btn toggle-todo small js-void-href js-featuredContent js-featured-todo-toggle js-wt-todoheader">
+                                                <span class="js-adding-spinner" hidden>
+                                                    <span class="small-2 columns no-left-padding loading">{>"Modules/SpinnerCSS" /}</span>
+                                                    <span class="small-10 columns no-left-padding tiny-top-padding">Adding...</span>
+                                                </span>
+                                                <span class="js-removing-spinner" hidden>
+                                                    <span class="small-2 columns no-left-padding loading">{>"Modules/SpinnerCSS" /}</span>
+                                                    <span class="small-10 columns no-left-padding tiny-top-padding">Removing...</span>
+                                                </span>
+                                                <i class="js-add-todo" {?attributes.RefToDoStatusID}{@if cond="'{attributes.RefToDoStatusID}' !== '3'"}hidden{/if}{/attributes.RefToDoStatusID}><span class="salticon featured-plus"></span> Add to-do</i>
+                                                <i class="js-remove-todo" {@if cond="'{attributes.RefToDoStatusID}' !== '1' && '{attributes.RefToDoStatusID}' !== '4'"}hidden{/if}><span class="salticon featured-minus"></span> remove to-do</i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                            </div>
+                            <div class="medium-5 show-for-medium-up columns">
+                                {@featuredTaskImage primaryKey="{attributes.P_Primary_Key[0]}" tagList="{attributes.FlatTags}"/}
+                            </div>
+                        </div>
+                    </section>
+                    <div class="row js-todoContainer todo" data-primary-key="{attributes.P_Primary_Key}" data-content-title="{attributes.resource_link_title}" data-content-type="{attributes.ContentTypes}" style="display:none;">
+                        {>"partial_todo" $idx="hidden-featured" /}
+                    </div>
+                </div>
+                {/featuredTask}
+                <section class="js-load-more-container" data-loadMore-amount="10" data-currentIndex="0" data-mapKey="MySALT" {#goalRankResponses}data-goal-{$idx}="{nameWithNoSpaces}"{/goalRankResponses} data-current-goal="0">
+
+                    {#recommendedTasks}
+                        <div class="row collapse js-todoContainer todo" data-primary-key="{attributes.P_Primary_Key}" data-content-title="{attributes.resource_link_title}" data-content-type="{attributes.ContentTypes}" {@gt key=$idx value="2"}style="display:none;"{/gt}>
+                            {>"partial_todo" /}
+                        </div>
+                    {/recommendedTasks}
+                    <div class="load-more js-load-more-btn-container">
+                        <a href class="js-void-href js-load-more">Load More</a>
+                    </div>
+                </section>
+            </section>
+            <section role="tabpanel" class="content no-left-margin" id="Todos">
+                <section id="js-open-todos" class="js-load-more-container" data-loadMore-amount="10" data-mapKey="Todos" data-subSection="Todos List">
+                    <hgroup class="small-12 columns">
+                        <h1 class="todo-tab-header">Choose, Save, And Track What You Learn</h1>
+                        <h3 class="subheader">Start achieving your goals. Choose what to learn next, and keep track of everything you’ve completed.</h3>
+                    </hgroup>
+                    <div class="small-12 columns">
+                        <p id="js-emptylist-message" class="subhead" {?openTasks}hidden{/openTasks}>Your list is empty. Add recommended items from your <a href="#" data-destination="MySALT" class="js-tab-link">home page</a>{^SiteMember.BrowseDisabled}, or <a href="#" data-destination="Library" class="js-tab-link">browse</a> for topics that interest you{/SiteMember.BrowseDisabled}.</p>
+                    </div>
+                    <div class="row collapse">
+                    <div id="js-open-container" class="small-12 columns">
+                        {#openTasks}
+                            <div class="row js-todoContainer todo" data-primary-key="{attributes.P_Primary_Key}" data-content-title="{attributes.resource_link_title}" data-content-type="{attributes.ContentTypes}" {@gt key=$idx value="4"}style="display:none;"{/gt}>
+                                {>"partial_todo" functionalityClass="js-remove-todo" stylingClass="no-right-padding" section-identifier="Open"/}
+                            </div>
+                        {/openTasks}
+                    </div>
+                    </div>
+                    <div class="load-more js-load-more-btn-container small-12 columns" {^openTasks}hidden{/openTasks}>
+                        <a href class="js-void-href js-load-more">Load More</a>
+                    </div>
+                </section>
+                {?completedTasks}
+                    <section class="js-load-more-container" data-loadMore-amount="10" data-mapKey="Todos" data-subSection="Completed">
+                        <h1 class="todo-tab-header js-completed-header margin-top">Completed</h1>
+                        {#completedTasks}
+                            <div class="row js-todoContainer todo" data-primary-key="{attributes.P_Primary_Key}" data-content-title="{attributes.resource_link_title}" data-content-type="{attributes.ContentTypes}" {@gt key=$idx value="4"}style="display:none;"{/gt}>
+                                {>"partial_todo" stylingClass="no-right-padding" section-identifier="Completed"/}
+                            </div>
+                        {/completedTasks}
+                        <div class="load-more js-load-more-btn-container small-12 columns">
+                            <a href class="js-void-href js-load-more">Load More</a>
+                        </div>
+                    </section>
+                {/completedTasks}
+            </section>
+            {^SiteMember.BrowseDisabled}
+            <section role="tabpanel" class="content no-left-margin" id="Library">
+            </section>
+            {/SiteMember.BrowseDisabled}
+        </div>
+    </div>
+</div>

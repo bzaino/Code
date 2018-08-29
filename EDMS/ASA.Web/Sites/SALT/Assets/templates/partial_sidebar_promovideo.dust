@@ -1,0 +1,33 @@
+{@select key="{title}"}
+    {@eq value="BrightCoveOverlay"}
+        <div id="js-player-parent" class="overlaySelector" >
+            <div class="show-media-small-down">
+                <div id="js-inplace-player" class="flex-video feature">
+                    {>"partial_overlayVideo" /}
+                </div>
+            </div>
+            <div class="show-media-medium-up">
+                {>"partial_overlayVideo" data-reveal-tag="data-reveal-id=js-reveal-video-overlay" show-vid-overla="show-vid-overlay"/}
+            </div>
+            <input class="js-tile-video-id" type="hidden" value="{attributes.b-video-id|trim}" />
+        </div>
+    {/eq}
+    {@eq value="YoutubeOverlay"}
+        <div id="js-player-parent" class="youTubeSelector" >
+            {>"partial_overlayVideo" /}
+            <script type="text/javascript">
+                require(['modules/ASAYouTubeVideo', 'jquery'], function(uTube, $) {
+                    $(document).ready(function () {
+                        uTube.initialize();
+                    });
+                });
+            </script>
+        </div>
+    {/eq}
+    {@default}
+        <div class="featured js-video-tile" id="playerContainer{attributes.b-video-id|trim}" >
+            <input class="js-tile-video-id" type="hidden" value="{attributes.b-video-id|trim}" />
+            <input class="js-tile-video" type="hidden" value="{attributes.third-party-video}" />
+        </div>
+    {/default}
+{/select}

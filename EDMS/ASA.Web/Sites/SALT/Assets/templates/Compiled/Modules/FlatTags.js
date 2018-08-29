@@ -1,0 +1,1 @@
+define(["dust"], function(dust) { (function(){dust.register("Modules/FlatTags",body_0);function body_0(chk,ctx){return chk.write("<div class=\"flat-tags small-12\">").helper("flatTagsSeperator",ctx,{},{"str":ctx.getPath(false,["record","attributes","FlatTags","0"])}).write("</div>");}return body_0;})(); });

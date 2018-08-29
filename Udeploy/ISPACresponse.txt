@@ -1,0 +1,4 @@
+/S 
+/SP:@sourcepathToken@ 
+/DS:@servernameToken@ 
+/DP:@destinationpathToken@

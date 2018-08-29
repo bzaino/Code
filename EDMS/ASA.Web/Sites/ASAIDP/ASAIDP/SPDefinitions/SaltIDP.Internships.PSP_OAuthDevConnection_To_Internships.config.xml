@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PartnerConfig PartnerName="SaltIDP/Internships/PSP_OAuthDevConnection_To_Internships">
+  
+  <!-- where to forward browsers that do support IWA -->
+  <LoggedOutPage>~/</LoggedOutPage> <!-- where to go when you are all logged out (unless overriden be relay state -->
+
+  <EncryptionKey>6bd2da2404575689d340b27bd9aa101d</EncryptionKey>
+  <EncryptionType>AES128</EncryptionType>
+  
+  <IDPURL>https://asa.ssoexchange.com/saml-idp/idp/oauth10/SSOService/DevSaltIDP</IDPURL>
+  <IDPLogoutURL>https://asa.ssoexchange.com/saml-idp/idp/oauth10/LogoutService/DevSaltIDP</IDPLogoutURL>
+  
+  <TokenTimeout>500</TokenTimeout>
+
+  <IDVerifierName>ASAIDP.SSO.Plugins.SiteMemberPlugin</IDVerifierName>
+
+</PartnerConfig>

@@ -1,0 +1,288 @@
+body {
+  background: #ebebeb; }
+
+#gateway {
+  color: #272525;
+  /* Header */
+  /* Top */ }
+  #gateway #gateway-header {
+    margin-bottom: 5px;
+    background: url("/Assets/images/lessons/lesson1/gateway/header.png") no-repeat 17px bottom;
+    height: 292px;
+    position: relative; }
+    #gateway #gateway-header h1 {
+      position: absolute;
+      right: 0;
+      top: 57px;
+      width: 302px;
+      height: 174px;
+      background: url("/Assets/images/lessons/lesson1/gateway/header-bg.png") no-repeat right 0;
+      font: 20px/24px "FoundersGroteskCond-reg", Arial, Helvetica, sans-serif;
+      padding-top: 43px;
+      padding-right: 100px; }
+      #gateway #gateway-header h1 strong {
+        font-size: 24px;
+        font-family: "FoundersGroteskCond-SmBd", Arial, Helvetica, sans-serif; }
+  #gateway #top {
+    width: 922px;
+    height: 91px;
+    background: white;
+    margin: 0 auto 20px;
+    padding: 22px 43px 18px;
+    position: relative; }
+    #gateway #top .dd-large {
+      margin-top: -8px; }
+      #gateway #top .dd-large dd ul li a {
+        line-height: 55px; }
+    #gateway #top .left,
+    #gateway #top .right {
+      position: absolute; }
+    #gateway #top .left {
+      width: 701px;
+      height: 91px;
+      border-right: 1px solid #d9d9d9;
+      margin-right: 41px; }
+      #gateway #top .left h1 {
+        font: normal 45px/1em "FoundersGroteskCond-Reg", Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding-top: 30px; }
+        #gateway #top .left h1 span {
+          position: relative;
+          float: left;
+          margin-right: 10px; }
+          #gateway #top .left h1 span select {
+            display: none; }
+    #gateway #top .right {
+      width: 222px;
+      right: 0;
+      top: 33px; }
+      #gateway #top .right p {
+        margin: 0;
+        text-transform: uppercase;
+        font: normal 15px/18px "FoundersGroteskCond-SmBd", Arial, Helvetica, sans-serif; }
+      #gateway #top .right ul {
+        margin: 0;
+        padding: 0;
+        list-style-position: inside;
+        font-size: 13px;
+        line-height: 18px; }
+        #gateway #top .right ul li a {
+          font-weight: bold;
+          color: #00b8cb; }
+          #gateway #top .right ul li a:hover, #gateway #top .right ul li a:active {
+            text-decoration: underline; }
+  #gateway .lesson {
+    width: 1008px;
+    background: white;
+    margin: 0 auto 20px;
+    position: relative;
+    /* Lesson Overlay Styles */
+    /* Lesson 1 styles */
+    /* Lesson 2 styles */
+    /* Lesson 3 styles */
+    /* Lesson 4 styles */ }
+    #gateway .lesson .left,
+    #gateway .lesson .mid,
+    #gateway .lesson .right {
+      float: left; }
+    #gateway .lesson .left {
+      height: 334px;
+      position: relative;
+      width: 66px; }
+      #gateway .lesson .left .lesson-number {
+        position: absolute;
+        left: 0;
+        bottom: 14px;
+        width: 66px;
+        text-align: center;
+        font: normal 50px/45px "FoundersGroteskCond-SmBd", Arial, Helvetica, sans-serif; }
+      #gateway .lesson .left .lesson-icon {
+        position: absolute;
+        left: 40px;
+        top: 20px;
+        width: 52px;
+        height: 59px;
+        background-repeat: no-repeat;
+        background-position: 0 0; }
+    #gateway .lesson .mid {
+      height: 304px;
+      padding-left: 35px;
+      width: 473px;
+      margin: 30px 31px 0 0;
+      border-right: 1px solid #d9d9d9;
+      position: relative; }
+      #gateway .lesson .mid h2 {
+        margin: 0;
+        font: normal 50px/45px "FoundersGroteskCond-SmBd", Arial, Helvetica, sans-serif; }
+      #gateway .lesson .mid ul.stats {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        list-style-position: inside;
+        font-size: 13px;
+        line-height: 18px;
+        position: absolute;
+        left: 36px;
+        bottom: 75px; }
+        #gateway .lesson .mid ul.stats li {
+          float: left;
+          color: #ccc8c8;
+          margin-right: 21px; }
+          #gateway .lesson .mid ul.stats li span.value {
+            font: normal 34px "FoundersGroteskCond-SmBd", Arial, Helvetica, sans-serif; }
+      #gateway .lesson .mid a.submit {
+        position: absolute;
+        left: 36px;
+        bottom: 30px; }
+    #gateway .lesson .right {
+      width: 384px;
+      height: 302px;
+      padding-top: 32px;
+      position: relative; }
+      #gateway .lesson .right a {
+        color: #00b8cb;
+        font-weight: bold; }
+      #gateway .lesson .right h3 {
+        margin: 0;
+        font: normal 15px/18px "FoundersGroteskCond-SmBd", Arial, Helvetica, sans-serif;
+        text-transform: uppercase; }
+      #gateway .lesson .right p {
+        margin: 0 0 1.5em;
+        font-size: 13px;
+        line-height: 18px;
+        color: #8c8989; }
+      #gateway .lesson .right ul {
+        margin: 0;
+        padding: 0;
+        list-style-position: inside;
+        font-size: 13px;
+        line-height: 18px;
+        color: #8c8989; }
+      #gateway .lesson .right .bottom {
+        width: 384px;
+        border-top: 1px solid #d9d9d9;
+        padding-top: 20px;
+        height: 63px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-size: 11px;
+        line-height: 13px; }
+        #gateway .lesson .right .bottom .lesson-icon {
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          padding-left: 40px;
+          padding-top: 9px;
+          height: 43px;
+          width: 134px; }
+        #gateway .lesson .right .bottom .social {
+          width: 192px;
+          position: absolute;
+          right: 0;
+          top: 23px; }
+          #gateway .lesson .right .bottom .social img,
+          #gateway .lesson .right .bottom .social p {
+            float: left; }
+          #gateway .lesson .right .bottom .social img {
+            margin-right: 10px;
+            width: 30px;
+            height: 30px; }
+          #gateway .lesson .right .bottom .social p {
+            font-size: 11px;
+            line-height: 13px;
+            color: #272525;
+            width: 152px; }
+    #gateway .lesson .lesson-overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: transparent url("/Assets/images/lessons/lesson1/gateway/bg-overlay.png") repeat 0 0;
+      width: 972px;
+      height: 297px;
+      padding: 19px 18px; }
+      #gateway .lesson .lesson-overlay h1 {
+        margin: 0 0 37px;
+        background: url("/Assets/images/lessons/lesson1/gateway/bg-overlay-heading.png") no-repeat 0 0;
+        width: 732px;
+        height: 62px;
+        text-indent: -99999px; }
+      #gateway .lesson .lesson-overlay .badge {
+        margin: 0 41px 0 38px;
+        float: left; }
+        #gateway .lesson .lesson-overlay .badge img,
+        #gateway .lesson .lesson-overlay .badge .note {
+          float: left; }
+        #gateway .lesson .lesson-overlay .badge img {
+          display: block;
+          margin-right: 29px; }
+        #gateway .lesson .lesson-overlay .badge .note {
+          padding-top: 22px;
+          padding-right: 133px;
+          width: 354px;
+          border-right: 1px solid #d9d9d9; }
+          #gateway .lesson .lesson-overlay .badge .note p {
+            font-size: 16px;
+            line-height: 22px;
+            margin: 0 0 1em; }
+      #gateway .lesson .lesson-overlay .share {
+        float: left;
+        padding-top: 9px; }
+        #gateway .lesson .lesson-overlay .share ul {
+          margin-bottom: 1em; }
+    #gateway .lesson.lesson-1 {
+      border-bottom: 1px solid #05e1f5; }
+      #gateway .lesson.lesson-1 .left {
+        background-color: #05e1f5;
+        color: #82f0fa; }
+        #gateway .lesson.lesson-1 .left span.lesson-icon {
+          background-image: url("/Assets/images/lessons/lesson1/gateway/icons/lesson-1.png"); }
+      #gateway .lesson.lesson-1 .mid ul.stats li span {
+        color: #05e1f5; }
+      #gateway .lesson.lesson-1 .right .lesson-icon {
+        background-image: url("/Assets/images/lessons/lesson1/gateway/icons/lesson-1-sm.png"); }
+    #gateway .lesson.lesson-2 {
+      border-bottom: 1px solid #00e070; }
+      #gateway .lesson.lesson-2 .left {
+        background-color: #00e070;
+        color: #80f0b8; }
+        #gateway .lesson.lesson-2 .left span.lesson-icon {
+          background-image: url("/Assets/images/lessons/lesson1/gateway/icons/lesson-2.png"); }
+      #gateway .lesson.lesson-2 .mid ul.stats li span {
+        color: #00e070; }
+      #gateway .lesson.lesson-2 .mid .submit {
+        background-color: #00e070; }
+      #gateway .lesson.lesson-2 .right .lesson-icon {
+        background-image: url("/Assets/images/lessons/lesson1/gateway/icons/lesson-2-sm.png"); }
+    #gateway .lesson.lesson-3 {
+      border-bottom: 1px solid #9b26b6; }
+      #gateway .lesson.lesson-3 .left {
+        background-color: #9b26b6;
+        color: #cd93db; }
+        #gateway .lesson.lesson-3 .left span.lesson-icon {
+          background-image: url("/Assets/images/lessons/lesson1/gateway/icons/lesson-3.png"); }
+      #gateway .lesson.lesson-3 .mid ul.stats li span {
+        color: #9b26b6; }
+      #gateway .lesson.lesson-3 .mid .submit {
+        background-color: #9b26b6; }
+        #gateway .lesson.lesson-3 .mid .submit:hover {
+          background-color: #74158a; }
+      #gateway .lesson.lesson-3 .right .lesson-icon {
+        background-image: url("/Assets/images/lessons/lesson1/gateway/icons/lesson-3-sm.png"); }
+    #gateway .lesson.lesson-4 {
+      border-bottom: 1px solid #ff0099; }
+      #gateway .lesson.lesson-4 .left {
+        background-color: #ff0099;
+        color: #ff80cc; }
+        #gateway .lesson.lesson-4 .left span.lesson-icon {
+          background-image: url("/Assets/images/lessons/lesson1/gateway/icons/lesson-4.png"); }
+      #gateway .lesson.lesson-4 .mid ul.stats li span {
+        color: #ff0099; }
+      #gateway .lesson.lesson-4 .mid .submit {
+        background-color: #ff0099; }
+        #gateway .lesson.lesson-4 .mid .submit:hover {
+          background-color: #d90082; }
+      #gateway .lesson.lesson-4 .right .lesson-icon {
+        background-image: url("/Assets/images/lessons/lesson1/gateway/icons/lesson-4-sm.png"); }
+
+#lessons {
+  display: none; }

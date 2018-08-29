@@ -1,0 +1,1 @@
+define(["dust"], function(dust) { (function(){dust.register("VLC/AmountBorrowed",body_0);function body_0(chk,ctx){return chk.write("$").reference(ctx.get("AmountBorrowed"),ctx,"h");}return body_0;})(); });

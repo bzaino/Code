@@ -1,0 +1,4 @@
+<option value="">Metro Area</option>
+{#UrbanArea}
+    <option value="{RefGeographicalIndexID}">{UrbanAreaName|shorten}</option>
+{/UrbanArea}

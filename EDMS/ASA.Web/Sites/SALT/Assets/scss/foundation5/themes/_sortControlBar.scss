@@ -1,0 +1,209 @@
+.articles-container .featured-controls {
+    margin: 0 0 1em 0 !important;
+}
+.featured-title, h2.featured-title-sort {
+    font-size: 1em;
+    text-decoration: none;
+    margin: 0;
+    display: inline-block;
+    white-space: nowrap;
+}
+.layout_controls li {
+    margin: 0;
+    padding: 6px;
+    height: 100%;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1; /* IE hack to trigger hasLayout*/
+}
+.calendar, .control_list_btn {
+    margin: 0 auto;
+}
+.calendar {
+    width: 2em;
+    height: 1.5em;
+}
+.control_list_btn {
+    padding: 2px 0;
+    width: 2em;
+    height: 1.5em;
+    display: block;
+    position: relative;
+}
+.contentfilter {
+    display:inline-block;
+}
+.contentfilter ul{
+    width: 175px;
+    position:absolute;
+    border:solid 1px;
+    height: 0;
+    z-index: 9999;
+    list-style-type: none;
+    margin-left: 0;
+    background:#FFF;
+}
+.contentfilter label small {
+    /* Override Foundation's default text color on the the content filter labels */
+    color: $salt-blue;
+    font-weight: bold;
+}
+.multi-select-type-style {
+    background-color: $gray5;
+    border: 1px solid $gray15;
+    padding: 0.5em;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.multi-select-type-style:hover {
+    background-color: $salt-blue;
+    color: $white;
+    cursor: pointer;
+}
+.dropdown.button:before, button.dropdown:before {
+    position: absolute;
+    content: initial;
+    width: 0;
+    height: 0;
+    display: none;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    top: 50%;
+}
+.f-dropdown:before, .f-dropdown:after {
+    content: initial !important;
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 6px;
+    border-color: transparent transparent white transparent;
+    border-bottom-style: solid;
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    z-index: 99;
+}
+.f-dropdown li a {
+    text-decoration: none;
+}
+.noRecord.search {
+    margin-left:3%;
+}
+
+.noRecord {
+    color:black;
+}
+.noRecord h2 {
+    margin-bottom:5px;
+}
+.for_nav, .for_nav li {
+    float: left;
+}
+.for_nav li {
+    margin: 0 5px 0 0;
+    position: relative;
+}
+.for_nav a, .for_nav a:link, .for_nav a:hover {
+    display: block;
+    position: relative;
+    color: #fa1f95;
+    text-decoration: none;
+}
+.contentfilter [hidden] {
+    display: none!important;
+    height: 0;
+}
+.f-dropdown.content.filter-bar{
+    max-width: 500px;
+    width:279px;
+    padding: 0;
+}
+.f-dropdown.filter-bar {
+    max-width: 100%;
+    z-index: 99;
+    font-weight: bold;
+}
+.f-dropdown.filter-bar li a {
+    color: #003765;
+    font-weight: bold;
+}
+.f-dropdown.filter-bar .bordered {
+    border: 1px solid #ccc;
+    border-width: 0 0 1px;
+}
+.f-dropdown.filter-bar .bordered li {
+    padding: 0 15px;
+}
+.f-dropdown.content.filter-bar input[type="checkbox"] {
+    visibility: visible;
+}
+.f-dropdown.content.filter-bar {
+    .spanish-filter-wrapper {
+        float: left;
+        width: 100%;
+        border-top: 1px solid #ccc;
+        margin-top: 1.25em;
+    }
+    .apply-button-wrapper {
+        border-top: 1px solid #ccc;
+    }
+}
+.f-dropdown.content.filter-bar .filter-option {
+    margin-top: 10px;
+    width:44%;
+    margin-left: 15px;
+    float: left;
+}
+.f-dropdown.content.filter-bar label{
+    margin-left: 3px;
+    font-weight: normal;
+}
+.f-dropdown.filter-bar > *:last-child {
+    margin-bottom: 5px;
+}
+.f-dropdown p {
+    margin-bottom: .25rem;
+}
+.a-normal a {
+    font-weight:500 !important;
+}
+.user-goal-topics li:last-child {
+    display:none;
+}
+.filter-option label.css-label {
+    white-space:nowrap;
+}
+.separator {
+    color: #555;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding-top: 0 !important;
+    vertical-align: text-bottom;
+}
+@media only screen and (max-width: 40em) {
+    .value-prop-filter {
+        margin-bottom: 0.5em;
+    }
+    #featured_controls {
+        margin-right: 0 !important;
+    }
+    .f-dropdown.content.filter-bar label {
+        width: 166%;
+    }
+}
+@media only screen and (min-width: 40em) {
+    .separator {
+        color: #555;
+        font-size: 1.1em;
+        font-weight: bold;
+        padding-top: .7em !important;
+        vertical-align: middle
+    }
+}
+
+
+.filter-option.css-go-button.right.no-top-margin {
+    margin-top: 0px;
+}
+

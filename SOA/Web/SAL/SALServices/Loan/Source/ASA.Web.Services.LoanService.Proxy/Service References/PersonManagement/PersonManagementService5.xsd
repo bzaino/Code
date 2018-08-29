@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://asa.org/servicecontract/personManagement/v1.1" elementFormDefault="qualified" targetNamespace="http://asa.org/servicecontract/personManagement/v1.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd2" namespace="http://asa.org/contracts/person" />
+  <xs:import schemaLocation="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd7" namespace="http://amsa.com/contract/ASA.Common.ResponseMessage/v1.0" />
+  <xs:import schemaLocation="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd9" namespace="http://asa.org/contracts/personServiceCriteria" />
+  <xs:element name="SavePersonRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://asa.org/contracts/person" minOccurs="0" name="PersonCanonical" nillable="true" type="q1:PersonCanonicalType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SavePersonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://asa.org/contracts/person" minOccurs="0" name="PersonCanonical" nillable="true" type="q2:PersonCanonicalType" />
+        <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+        <xs:element xmlns:q3="http://amsa.com/contract/ASA.Common.ResponseMessage/v1.0" minOccurs="0" name="ResponseMessageList" nillable="true" type="q3:ResponseMessageList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPersonRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://asa.org/contracts/personServiceCriteria" minOccurs="0" name="Criteria" nillable="true" type="q4:PersonServiceCriteriaType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPersonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://asa.org/contracts/person" minOccurs="0" name="PersonCanonicalList" nillable="true" type="q5:ArrayOfPersonCanonicalType" />
+        <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+        <xs:element xmlns:q6="http://amsa.com/contract/ASA.Common.ResponseMessage/v1.0" minOccurs="0" name="ResponseMessageList" nillable="true" type="q6:ResponseMessageList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

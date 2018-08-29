@@ -1,0 +1,835 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52F64276-98DF-4232-A460-E33095B4E68B}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ASA.Web.Sites.SALT</RootNamespace>
+    <AssemblyName>ASA.Web.Sites.SALT</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <Choose>
+    <When Condition="'$(Configuration)' == 'Release'">
+      <ItemGroup>
+        <Reference Include="ASA.Log.ServiceLogger">
+          <SpecificVersion>False</SpecificVersion>
+          <HintPath>..\..\..\..\SOA\Bin\InternalComponents\Release\ASA.Log.ServiceLogger.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="ASA.Log.ServiceLogger">
+          <SpecificVersion>False</SpecificVersion>
+          <HintPath>..\..\..\..\SOA\Bin\InternalComponents\Debug\ASA.Log.ServiceLogger.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\3rdParty\Bin\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net, Version=1.2.0.2, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\3rdParty\Bin\Common.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah">
+      <HintPath>..\..\..\..\3rdParty\Bin\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="Endeca.Data, Version=2.1.1.0, Culture=neutral, PublicKeyToken=6d02be8724ca751c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\3rdParty\Endeca\Bin\Endeca.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Intelligencia.UrlRewriter">
+      <HintPath>..\..\..\..\3rdParty\Bin\Intelligencia.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\3rdParty\Bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\_lib\sqlite\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Configs\URLRedirects.xml" />
+    <Content Include="Assets\Scripts\ASA\ASADoodadManager.js" />
+    <Content Include="Assets\Scripts\ASA\ASAUtilities.js" />
+    <Content Include="Assets\Scripts\ASA\ASAWebModel.js" />
+    <Content Include="Assets\Scripts\ASA\ASAWebService.js" />
+    <Content Include="Assets\Scripts\jquery.validate.min.js" />
+    <Content Include="Assets\Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Lessons\Lesson1\404.html" />
+    <Content Include="Lessons\Lesson1\channel.html" />
+    <Content Include="Lessons\lessonsLogin.html" />
+    <Content Include="Lessons\Lesson1\css\base.css" />
+    <Content Include="Lessons\Lesson1\css\colorbox.css" />
+    <Content Include="Lessons\Lesson1\css\curriculum\bar-test.css" />
+    <Content Include="Lessons\Lesson1\css\curriculum\cashflow.css" />
+    <Content Include="Lessons\Lesson1\css\curriculum\expenses.css" />
+    <Content Include="Lessons\Lesson1\css\curriculum\global.css" />
+    <Content Include="Lessons\Lesson1\css\curriculum\goal.css" />
+    <Content Include="Lessons\Lesson1\css\curriculum\income.css" />
+    <Content Include="Lessons\Lesson1\css\curriculum\intro.css" />
+    <Content Include="Lessons\Lesson1\css\curriculum\loans.css" />
+    <Content Include="Lessons\Lesson1\css\curriculum\other.css" />
+    <Content Include="Lessons\Lesson1\css\curriculum\review.css" />
+    <Content Include="Lessons\Lesson1\css\gateway.css" />
+    <Content Include="Lessons\Lesson1\css\global.css" />
+    <Content Include="Lessons\Lesson1\css\home.css" />
+    <Content Include="Lessons\Lesson1\css\notifications.css" />
+    <Content Include="Lessons\Lesson1\css\overlays.css" />
+    <Content Include="Lessons\Lesson1\css\summary.css" />
+    <Content Include="Lessons\Lesson1\edit-cashflow.html" />
+    <Content Include="Lessons\Lesson1\expenses.html" />
+    <Content Include="Lessons\Lesson1\expenses\eating.html" />
+    <Content Include="Lessons\Lesson1\expenses\entertainment.html" />
+    <Content Include="Lessons\Lesson1\expenses\groceries.html" />
+    <Content Include="Lessons\Lesson1\expenses\health.html" />
+    <Content Include="Lessons\Lesson1\expenses\housing.html" />
+    <Content Include="Lessons\Lesson1\expenses\loans.html" />
+    <Content Include="Lessons\Lesson1\expenses\other.html" />
+    <Content Include="Lessons\Lesson1\expenses\savings.html" />
+    <Content Include="Lessons\Lesson1\expenses\school.html" />
+    <Content Include="Lessons\Lesson1\expenses\technology.html" />
+    <Content Include="Lessons\Lesson1\expenses\transportation.html" />
+    <Content Include="Lessons\Lesson1\expenses\utilities.html" />
+    <Content Include="Lessons\Lesson1\favicon.ico" />
+    <Content Include="Lessons\Lesson1\fonts\FoundersGroteskCond-Reg.svg" />
+    <Content Include="Lessons\Lesson1\fonts\FoundersGroteskCond-SmBd.svg" />
+    <Content Include="Lessons\Lesson1\fonts\saltHeadline.svg" />
+    <Content Include="Lessons\Lesson1\goal.html" />
+    <Content Include="Lessons\Lesson1\graph-test.html" />
+    <Content Include="Lessons\Lesson1\humans.txt" />
+    <Content Include="Lessons\Lesson1\img\badges\fpo-badge.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\actual.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\autocomplete-top.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\bar-animation.gif" />
+    <Content Include="Lessons\Lesson1\img\curriculum\bar-graph\bar-bl-bt.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\bar-graph\bar-bl-tp.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\bar-graph\bar-bl-zero.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\bar-graph\bar-bt.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\bar-graph\bar-tp.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\bar-graph\bar-zero.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\bg-colorbox-overlay.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\bg-completed.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\bg-dotted-dim.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\bg-dotted.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\bg-dropdown-dots.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\bg-edit-back.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\bg-indicator.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\bg-listing-editing-arrow.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\btn-add.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\btn-arrow-back.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\btn-arrow-next.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\btn-remove.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\chapters-arrow.gif" />
+    <Content Include="Lessons\Lesson1\img\curriculum\checkbox-checked-bg.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\checkbox-partial-select-bg.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\curriculum-bar-expenses.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\curriculum-bar-income-1.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\curriculum-bar-income.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\curriculum-bg.gif" />
+    <Content Include="Lessons\Lesson1\img\curriculum\curriculum-dropdown-arrow-lrg.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\curriculum-dropdown-arrow-sml.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\curriculum-footer-next.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\curriculum-footer-prev.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\curriculum-header-arrow-active.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\curriculum-save-and-exit.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\curriculum-shadow.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\curriculum-tip-wing.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\edit-flow-tooltip-delete.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\edit-flow-tooltip-hover.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\expenses\icon\eating.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\expenses\icon\entertainment.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\expenses\icon\groceries.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\expenses\icon\health-beauty.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\expenses\icon\housing.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\expenses\icon\savings.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\expenses\icon\school.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\expenses\icon\technology.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\expenses\icon\transportation.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\expenses\icon\utilities.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\fpo-helpful-tip.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\fpo\extra-cash-default-chart.jpg" />
+    <Content Include="Lessons\Lesson1\img\curriculum\fpo\negative-default-chart.jpg" />
+    <Content Include="Lessons\Lesson1\img\curriculum\fpo\reached-goal-default-chart.jpg" />
+    <Content Include="Lessons\Lesson1\img\curriculum\goal.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\graph-handle-cyan.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\graph-handle-green.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\graph-handle-magenta.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\graph-handle-purple.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\icon-restore-cashflow.gif" />
+    <Content Include="Lessons\Lesson1\img\curriculum\icon-restore-cashflow.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\radio-checked-bg.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\radio-unchecked-bg.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\salt-logo.gif" />
+    <Content Include="Lessons\Lesson1\img\curriculum\slash.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\value-marker.png" />
+    <Content Include="Lessons\Lesson1\img\curriculum\vis-grid-bg.png" />
+    <Content Include="Lessons\Lesson1\img\gateway\bg-overlay-heading.png" />
+    <Content Include="Lessons\Lesson1\img\gateway\bg-overlay.png" />
+    <Content Include="Lessons\Lesson1\img\gateway\header-bg.png" />
+    <Content Include="Lessons\Lesson1\img\gateway\header.png" />
+    <Content Include="Lessons\Lesson1\img\global\bg-facebook-button.png" />
+    <Content Include="Lessons\Lesson1\img\global\bg-or-separator-white.png" />
+    <Content Include="Lessons\Lesson1\img\global\bg-or-separator.png" />
+    <Content Include="Lessons\Lesson1\img\global\border.png" />
+    <Content Include="Lessons\Lesson1\img\global\btn-facebook.png" />
+    <Content Include="Lessons\Lesson1\img\global\btn-loading.gif" />
+    <Content Include="Lessons\Lesson1\img\global\btn-login-facebook.png" />
+    <Content Include="Lessons\Lesson1\img\global\btn-twitter.png" />
+    <Content Include="Lessons\Lesson1\img\global\control-close.png" />
+    <Content Include="Lessons\Lesson1\img\global\controls.png" />
+    <Content Include="Lessons\Lesson1\img\global\default-profile-2.gif" />
+    <Content Include="Lessons\Lesson1\img\global\default-profile.gif" />
+    <Content Include="Lessons\Lesson1\img\global\fb-profile.png" />
+    <Content Include="Lessons\Lesson1\img\global\icon-close.png" />
+    <Content Include="Lessons\Lesson1\img\global\icon-email.png" />
+    <Content Include="Lessons\Lesson1\img\global\icon-facebook.png" />
+    <Content Include="Lessons\Lesson1\img\global\icon-twitter.png" />
+    <Content Include="Lessons\Lesson1\img\global\loading.gif" />
+    <Content Include="Lessons\Lesson1\img\global\loading_background.png" />
+    <Content Include="Lessons\Lesson1\img\global\log-in-icon.png" />
+    <Content Include="Lessons\Lesson1\img\global\notification-down-arrow.gif" />
+    <Content Include="Lessons\Lesson1\img\global\notifications\bg-hey-now.png" />
+    <Content Include="Lessons\Lesson1\img\global\notifications\bg-sweet.png" />
+    <Content Include="Lessons\Lesson1\img\global\notifications\btn-dismiss-x-off.png" />
+    <Content Include="Lessons\Lesson1\img\global\notifications\btn-dismiss-x-on.png" />
+    <Content Include="Lessons\Lesson1\img\global\notifications\icon-clock.png" />
+    <Content Include="Lessons\Lesson1\img\global\overlay.png" />
+    <Content Include="Lessons\Lesson1\img\global\salt-header-logo.gif" />
+    <Content Include="Lessons\Lesson1\img\global\search-icon.gif" />
+    <Content Include="Lessons\Lesson1\img\home\bg-arrows-blue.png" />
+    <Content Include="Lessons\Lesson1\img\home\bg-arrows-green.png" />
+    <Content Include="Lessons\Lesson1\img\home\bg-arrows-pink.png" />
+    <Content Include="Lessons\Lesson1\img\home\bg-arrows-purple.png" />
+    <Content Include="Lessons\Lesson1\img\home\bg-arrows.png" />
+    <Content Include="Lessons\Lesson1\img\home\bg-blue-tick.png" />
+    <Content Include="Lessons\Lesson1\img\home\bg-et-al.png" />
+    <Content Include="Lessons\Lesson1\img\home\bg-green-tick.png" />
+    <Content Include="Lessons\Lesson1\img\home\bg-hero-footer.png" />
+    <Content Include="Lessons\Lesson1\img\home\bg-hero-top.gif" />
+    <Content Include="Lessons\Lesson1\img\home\comment-bg.png" />
+    <Content Include="Lessons\Lesson1\img\home\fpo-col-1.png" />
+    <Content Include="Lessons\Lesson1\img\home\fpo-col-2.png" />
+    <Content Include="Lessons\Lesson1\img\home\fpo-col-3.png" />
+    <Content Include="Lessons\Lesson1\img\home\hero-bottom-border.gif" />
+    <Content Include="Lessons\Lesson1\img\home\hero-image-1.png" />
+    <Content Include="Lessons\Lesson1\img\home\hero-image-2.png" />
+    <Content Include="Lessons\Lesson1\img\home\hero-image-3.png" />
+    <Content Include="Lessons\Lesson1\img\home\hero-image-4.png" />
+    <Content Include="Lessons\Lesson1\img\home\hero-left-arrow.gif" />
+    <Content Include="Lessons\Lesson1\img\home\hero-play-button.png" />
+    <Content Include="Lessons\Lesson1\img\home\hero-right-arrow.gif" />
+    <Content Include="Lessons\Lesson1\img\home\hero-top-border.gif" />
+    <Content Include="Lessons\Lesson1\img\home\icon-in-the-news.png" />
+    <Content Include="Lessons\Lesson1\img\home\icon-real-talk.png" />
+    <Content Include="Lessons\Lesson1\img\home\icon-social-buzz.png" />
+    <Content Include="Lessons\Lesson1\img\home\icon-start-reading.png" />
+    <Content Include="Lessons\Lesson1\img\home\real-talk-bio-1.jpg" />
+    <Content Include="Lessons\Lesson1\img\home\real-talk-bio-2.jpg" />
+    <Content Include="Lessons\Lesson1\img\home\recognized-homepage-header-img-1.jpg" />
+    <Content Include="Lessons\Lesson1\img\home\recognized-homepage-header-img-2.jpg" />
+    <Content Include="Lessons\Lesson1\img\home\usa-today-logo.png" />
+    <Content Include="Lessons\Lesson1\img\overlays\badge-money.png" />
+    <Content Include="Lessons\Lesson1\img\overlays\bg-copied.png" />
+    <Content Include="Lessons\Lesson1\img\overlays\bg-social.png" />
+    <Content Include="Lessons\Lesson1\img\overlays\bg-tooltip.png" />
+    <Content Include="Lessons\Lesson1\img\overlays\btn-facebook.png" />
+    <Content Include="Lessons\Lesson1\img\overlays\btn-twitter.png" />
+    <Content Include="Lessons\Lesson1\img\overlays\expense-overlay-bg.png" />
+    <Content Include="Lessons\Lesson1\img\overlays\headline-confirm.png" />
+    <Content Include="Lessons\Lesson1\img\overlays\headline-oh-snap.png" />
+    <Content Include="Lessons\Lesson1\img\overlays\headline-sweet.png" />
+    <Content Include="Lessons\Lesson1\img\overlays\reward-redbox.png" />
+    <Content Include="Lessons\Lesson1\img\review\credit-question-wing.gif" />
+    <Content Include="Lessons\Lesson1\img\review\credit-question.gif" />
+    <Content Include="Lessons\Lesson1\img\summary\bg-sponsored.png" />
+    <Content Include="Lessons\Lesson1\img\summary\fpo-banner.png" />
+    <Content Include="Lessons\Lesson1\img\summary\fpo-be-ready.png" />
+    <Content Include="Lessons\Lesson1\img\summary\fpo-chart.png" />
+    <Content Include="Lessons\Lesson1\img\summary\fpo-header.png" />
+    <Content Include="Lessons\Lesson1\img\summary\fpo-right-col.png" />
+    <Content Include="Lessons\Lesson1\img\summary\fpo-to-do.png" />
+    <Content Include="Lessons\Lesson1\img\summary\icon-down.png" />
+    <Content Include="Lessons\Lesson1\img\summary\icon-up.png" />
+    <Content Include="Lessons\Lesson1\includes\add-another.html" />
+    <Content Include="Lessons\Lesson1\includes\confirm-overlay.html" />
+    <Content Include="Lessons\Lesson1\includes\edit-cashflow-left-column.html" />
+    <Content Include="Lessons\Lesson1\includes\expenses-overlay.html" />
+    <Content Include="Lessons\Lesson1\includes\goal-left-column-equal.html" />
+    <Content Include="Lessons\Lesson1\includes\goal-left-column-negative.html" />
+    <Content Include="Lessons\Lesson1\includes\goal-left-column.html" />
+    <Content Include="Lessons\Lesson1\includes\transportation-type-1.html" />
+    <Content Include="Lessons\Lesson1\includes\transportation-type-2.html" />
+    <Content Include="Lessons\Lesson1\income.html" />
+    <Content Include="Lessons\Lesson1\index.html" />
+    <Content Include="Lessons\Lesson1\intro.html" />
+    <Content Include="Lessons\Lesson1\js\curriculum\bar-test.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\eating.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\edit-cashflow.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\entertainment.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\expenses.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\global.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\goal-left.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\goal.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\graph-test.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\graph.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\groceries.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\health.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\housing.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\income.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\intro.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\loans.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\other.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\review.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\savings.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\school.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\technology.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\test.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\transportation.js" />
+    <Content Include="Lessons\Lesson1\js\curriculum\utilities.js" />
+    <Content Include="Lessons\Lesson1\js\gateway.js" />
+    <Content Include="Lessons\Lesson1\js\global.js" />
+    <Content Include="Lessons\Lesson1\js\home.js" />
+    <Content Include="Lessons\Lesson1\js\json\lesson1.js" />
+    <Content Include="Lessons\Lesson1\js\libs\ext-all-3.4-debug-w-comments.js" />
+    <Content Include="Lessons\Lesson1\js\libs\ext-base-3.4.js" />
+    <Content Include="Lessons\Lesson1\js\libs\ext-basex-4.0-debug.js" />
+    <Content Include="Lessons\Lesson1\js\libs\ext-basex-4.0.js" />
+    <Content Include="Lessons\Lesson1\js\libs\highcharts.js" />
+    <Content Include="Lessons\Lesson1\js\libs\jquery-1.8.2.js" />
+    <Content Include="Lessons\Lesson1\js\libs\jquery-ui-1.8.23.custom.js" />
+    <Content Include="Lessons\Lesson1\js\libs\jstorage.js" />
+    <Content Include="Lessons\Lesson1\js\libs\modernizr-2.5.2.js" />
+    <Content Include="Lessons\Lesson1\js\libs\modules\exporting.js" />
+    <Content Include="Lessons\Lesson1\js\libs\plugins\jquery.client.js" />
+    <Content Include="Lessons\Lesson1\js\libs\plugins\jquery.colorbox-min.js" />
+    <Content Include="Lessons\Lesson1\js\libs\plugins\jquery.colorbox.js" />
+    <Content Include="Lessons\Lesson1\js\libs\plugins\jquery.commify.js" />
+    <Content Include="Lessons\Lesson1\js\libs\plugins\jquery.dropkick-1.0.0.js" />
+    <Content Include="Lessons\Lesson1\js\libs\plugins\jquery.formatCurrency-1.4.0.js" />
+    <Content Include="Lessons\Lesson1\js\libs\plugins\jquery.json-2.3.js" />
+    <Content Include="Lessons\Lesson1\js\libs\plugins\lazyload-min.js" />
+    <Content Include="Lessons\Lesson1\js\libs\plugins\plugins.js" />
+    <Content Include="Lessons\Lesson1\js\libs\plugins\styledDropDowns.js" />
+    <Content Include="Lessons\Lesson1\js\libs\plugins\styledInputs.js" />
+    <Content Include="Lessons\Lesson1\js\libs\plugins\waypoints.js" />
+    <Content Include="Lessons\Lesson1\js\mylibs\jstdTest.js" />
+    <Content Include="Lessons\Lesson1\js\plugins.js" />
+    <Content Include="Lessons\Lesson1\js\summary.js" />
+    <Content Include="Lessons\Lesson1\overlays\badges.html" />
+    <Content Include="Lessons\Lesson1\review.html" />
+    <Content Include="Lessons\Lesson1\robots.txt" />
+    <Content Include="Lessons\Lesson1\test\curriculum\test_curriculum.js" />
+    <Content Include="Lessons\Lesson1\test\mylibs\test_jstdTest.js" />
+    <Content Include="Lessons\Lesson1\test\test_facebook.js" />
+    <Content Include="Lessons\Lesson1\test\test_global.js" />
+    <Content Include="Lessons\Lesson2\app\app.js" />
+    <Content Include="Lessons\Lesson2\app\config.js" />
+    <Content Include="Lessons\Lesson2\app\main.js" />
+    <Content Include="Lessons\Lesson2\app\modules\bar-graph.js" />
+    <Content Include="Lessons\Lesson2\app\modules\bar-graph\views.js" />
+    <Content Include="Lessons\Lesson2\app\modules\expense-type.js" />
+    <Content Include="Lessons\Lesson2\app\modules\footer.js" />
+    <Content Include="Lessons\Lesson2\app\modules\footer\views.js" />
+    <Content Include="Lessons\Lesson2\app\modules\graph-modifiers.js" />
+    <Content Include="Lessons\Lesson2\app\modules\graph-modifiers\views.js" />
+    <Content Include="Lessons\Lesson2\app\modules\header.js" />
+    <Content Include="Lessons\Lesson2\app\modules\header\views.js" />
+    <Content Include="Lessons\Lesson2\app\modules\imported-recurring-expense.js" />
+    <Content Include="Lessons\Lesson2\app\modules\imported-recurring-expense\views.js" />
+    <Content Include="Lessons\Lesson2\app\modules\new-recurring-expense.js" />
+    <Content Include="Lessons\Lesson2\app\modules\new-recurring-expense\views.js" />
+    <Content Include="Lessons\Lesson2\app\modules\one-time-expense.js" />
+    <Content Include="Lessons\Lesson2\app\modules\one-time-expense\views.js" />
+    <Content Include="Lessons\Lesson2\app\modules\step1.js" />
+    <Content Include="Lessons\Lesson2\app\modules\step1\views.js" />
+    <Content Include="Lessons\Lesson2\app\modules\step2.js" />
+    <Content Include="Lessons\Lesson2\app\modules\step2\views.js" />
+    <Content Include="Lessons\Lesson2\app\modules\step3.js" />
+    <Content Include="Lessons\Lesson2\app\modules\step3\views.js" />
+    <Content Include="Lessons\Lesson2\app\modules\step4.js" />
+    <Content Include="Lessons\Lesson2\app\modules\step4\views.js" />
+    <Content Include="Lessons\Lesson2\app\modules\step5.js" />
+    <Content Include="Lessons\Lesson2\app\modules\step5\views.js" />
+    <Content Include="Lessons\Lesson2\app\modules\summary.js" />
+    <Content Include="Lessons\Lesson2\app\modules\summary\views.js" />
+    <Content Include="Lessons\Lesson2\app\modules\user.js" />
+    <Content Include="Lessons\Lesson2\app\router.js" />
+    <Content Include="Lessons\Lesson2\app\templates\content\imported-recurring-expense.html" />
+    <Content Include="Lessons\Lesson2\app\templates\content\left-content.html" />
+    <Content Include="Lessons\Lesson2\app\templates\content\new-recurring-expense.html" />
+    <Content Include="Lessons\Lesson2\app\templates\content\one-time-expense.html" />
+    <Content Include="Lessons\Lesson2\app\templates\content\step1.html" />
+    <Content Include="Lessons\Lesson2\app\templates\content\step2.html" />
+    <Content Include="Lessons\Lesson2\app\templates\content\step3.html" />
+    <Content Include="Lessons\Lesson2\app\templates\content\step4.html" />
+    <Content Include="Lessons\Lesson2\app\templates\content\step5.html" />
+    <Content Include="Lessons\Lesson2\app\templates\content\summary.html" />
+    <Content Include="Lessons\Lesson2\app\templates\graph\bar-graph.html" />
+    <Content Include="Lessons\Lesson2\app\templates\graph\highcharts.html" />
+    <Content Include="Lessons\Lesson2\app\templates\layouts\main.html" />
+    <Content Include="Lessons\Lesson2\app\templates\nav\footer.html" />
+    <Content Include="Lessons\Lesson2\app\templates\nav\header.html" />
+    <Content Include="Lessons\Lesson2\assets\css\base.css" />
+    <Content Include="Lessons\Lesson2\assets\css\expenses.css" />
+    <Content Include="Lessons\Lesson2\assets\css\global-old.css" />
+    <Content Include="Lessons\Lesson2\assets\css\global.css" />
+    <Content Include="Lessons\Lesson2\assets\css\index.css" />
+    <Content Include="Lessons\Lesson2\assets\css\jquery.fancybox.css" />
+    <Content Include="Lessons\Lesson2\assets\fonts\FoundersGroteskCond-Reg.svg" />
+    <Content Include="Lessons\Lesson2\assets\fonts\FoundersGroteskCond-SmBd.svg" />
+    <Content Include="Lessons\Lesson2\assets\fonts\saltHeadline.svg" />
+    <Content Include="Lessons\Lesson2\assets\img\bar-graph\bar-bl-bt.png" />
+    <Content Include="Lessons\Lesson2\assets\img\bar-graph\bar-bl-tp.png" />
+    <Content Include="Lessons\Lesson2\assets\img\bar-graph\bar-bl-zero.png" />
+    <Content Include="Lessons\Lesson2\assets\img\bar-graph\bar-gr-bt.png" />
+    <Content Include="Lessons\Lesson2\assets\img\bar-graph\bar-gr-tp.png" />
+    <Content Include="Lessons\Lesson2\assets\img\bar-graph\bar-gr-zero.png" />
+    <Content Include="Lessons\Lesson2\assets\img\bar-graph\bar-grid-bg.png" />
+    <Content Include="Lessons\Lesson2\assets\img\bar-graph\bar-pl-bt.png" />
+    <Content Include="Lessons\Lesson2\assets\img\bar-graph\bar-pl-tp.png" />
+    <Content Include="Lessons\Lesson2\assets\img\bar-graph\bar-pl-zero.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\autocomplete-carrot.gif" />
+    <Content Include="Lessons\Lesson2\assets\img\global\bg-completed.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\bg-dotted.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\bg-dropdown-dots.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\bg-fancybox-overlay.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\bg-indicator.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\btn-add.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\btn-arrow-back.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\btn-arrow-next.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\btn-remove.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\chapters-arrow.gif" />
+    <Content Include="Lessons\Lesson2\assets\img\global\curriculum-header-arrow-active.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\default-profile.gif" />
+    <Content Include="Lessons\Lesson2\assets\img\global\dropdown-arrow-lrg.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\dropdown-arrow-sml.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\fb-profile.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\form\bg-input-focus.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\form\bg-input.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\form\checkbox-sprite.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\form\images\18_curriculum-review-edit_bm_03.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\form\images\18_curriculum-review-edit_bm_06.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\form\images\18_curriculum-review-edit_bm_08.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\form\sprite.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\header-save-and-exit.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\header-shadow.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\headline-confirm.png" />
+    <Content Include="Lessons\Lesson2\assets\img\global\salt-logo.gif" />
+    <Content Include="Lessons\Lesson2\assets\img\global\tip-wing.png" />
+    <Content Include="Lessons\Lesson2\assets\img\step5\arrow-less.gif" />
+    <Content Include="Lessons\Lesson2\assets\img\step5\arrow-more.gif" />
+    <Content Include="Lessons\Lesson2\assets\img\step5\ExtraPayment_markerLabel.png" />
+    <Content Include="Lessons\Lesson2\assets\img\step5\highcharts-tooltip-carrot.png" />
+    <Content Include="Lessons\Lesson2\assets\img\step5\key-blue.gif" />
+    <Content Include="Lessons\Lesson2\assets\img\step5\key-green.gif" />
+    <Content Include="Lessons\Lesson2\assets\img\step5\OneTimePurchase_markerLabel.png" />
+    <Content Include="Lessons\Lesson2\assets\js\libs\almond.js" />
+    <Content Include="Lessons\Lesson2\assets\js\libs\backbone.js" />
+    <Content Include="Lessons\Lesson2\assets\js\libs\jquery.js" />
+    <Content Include="Lessons\Lesson2\assets\js\libs\lodash.js" />
+    <Content Include="Lessons\Lesson2\assets\js\libs\modernizr-2.5.2.js" />
+    <Content Include="Lessons\Lesson2\assets\js\libs\require.js" />
+    <Content Include="Lessons\Lesson2\assets\js\plugins\asa-plugins.js" />
+    <Content Include="Lessons\Lesson2\assets\js\plugins\backbone-asa-persistence.js" />
+    <Content Include="Lessons\Lesson2\assets\js\plugins\backbone-localstorage.js" />
+    <Content Include="Lessons\Lesson2\assets\js\plugins\backbone.layoutmanager.js" />
+    <Content Include="Lessons\Lesson2\favicon.ico" />
+    <Content Include="Lessons\Lesson2\grunt.js" />
+    <Content Include="Lessons\Lesson2\index.html" />
+    <Content Include="Lessons\Lesson2\test\jasmine\index.html" />
+    <Content Include="Lessons\Lesson2\test\jasmine\spec\example.js" />
+    <Content Include="Lessons\Lesson2\test\jasmine\vendor\jasmine-html.js" />
+    <Content Include="Lessons\Lesson2\test\jasmine\vendor\jasmine.css" />
+    <Content Include="Lessons\Lesson2\test\jasmine\vendor\jasmine.js" />
+    <Content Include="Lessons\Lesson2\test\jasmine\vendor\jasmine_favicon.png" />
+    <Content Include="Lessons\Lesson2\test\qunit\index.html" />
+    <Content Include="Lessons\Lesson2\test\qunit\tests\example.js" />
+    <Content Include="Lessons\Lesson2\test\qunit\vendor\qunit.css" />
+    <Content Include="Lessons\Lesson2\test\qunit\vendor\qunit.js" />
+    <Content Include="Lessons\Lesson3\app\app.js" />
+    <Content Include="Lessons\Lesson3\app\config.js" />
+    <Content Include="Lessons\Lesson3\app\main.js" />
+    <Content Include="Lessons\Lesson3\app\modules\bar-graph.js" />
+    <Content Include="Lessons\Lesson3\app\modules\bar-graph\views.js" />
+    <Content Include="Lessons\Lesson3\app\modules\baseRepayment.js" />
+    <Content Include="Lessons\Lesson3\app\modules\better-interest.js" />
+    <Content Include="Lessons\Lesson3\app\modules\compare.js" />
+    <Content Include="Lessons\Lesson3\app\modules\compare\views.js" />
+    <Content Include="Lessons\Lesson3\app\modules\extended-repayment.js" />
+    <Content Include="Lessons\Lesson3\app\modules\favorites.js" />
+    <Content Include="Lessons\Lesson3\app\modules\favorites\views.js" />
+    <Content Include="Lessons\Lesson3\app\modules\footer.js" />
+    <Content Include="Lessons\Lesson3\app\modules\footer\views.js" />
+    <Content Include="Lessons\Lesson3\app\modules\forbearance.js" />
+    <Content Include="Lessons\Lesson3\app\modules\graduated-repayment.js" />
+    <Content Include="Lessons\Lesson3\app\modules\graph-modifiers.js" />
+    <Content Include="Lessons\Lesson3\app\modules\graph-modifiers\views.js" />
+    <Content Include="Lessons\Lesson3\app\modules\hardship-deferment.js" />
+    <Content Include="Lessons\Lesson3\app\modules\header.js" />
+    <Content Include="Lessons\Lesson3\app\modules\header\views.js" />
+    <Content Include="Lessons\Lesson3\app\modules\highcharts-graph.js" />
+    <Content Include="Lessons\Lesson3\app\modules\highcharts-graph\views.js" />
+    <Content Include="Lessons\Lesson3\app\modules\in-school-deferment.js" />
+    <Content Include="Lessons\Lesson3\app\modules\income-based-repayment.js" />
+    <Content Include="Lessons\Lesson3\app\modules\income-sensitive-repayment.js" />
+    <Content Include="Lessons\Lesson3\app\modules\loan-type.js" />
+    <Content Include="Lessons\Lesson3\app\modules\loan-type\views.js" />
+    <Content Include="Lessons\Lesson3\app\modules\pay-faster.js" />
+    <Content Include="Lessons\Lesson3\app\modules\repayment-options\better-interest.js" />
+    <Content Include="Lessons\Lesson3\app\modules\repayment-options\extended-repayment.js" />
+    <Content Include="Lessons\Lesson3\app\modules\repayment-options\forbearance.js" />
+    <Content Include="Lessons\Lesson3\app\modules\repayment-options\graduated-repayment.js" />
+    <Content Include="Lessons\Lesson3\app\modules\repayment-options\hardship-deferment.js" />
+    <Content Include="Lessons\Lesson3\app\modules\repayment-options\in-school-deferment.js" />
+    <Content Include="Lessons\Lesson3\app\modules\repayment-options\income-based-repayment.js" />
+    <Content Include="Lessons\Lesson3\app\modules\repayment-options\income-sensitive-repayment.js" />
+    <Content Include="Lessons\Lesson3\app\modules\repayment-options\pay-faster.js" />
+    <Content Include="Lessons\Lesson3\app\modules\repayment-options\repayment-view-mixin.js" />
+    <Content Include="Lessons\Lesson3\app\modules\repayment-options\set-timeline.js" />
+    <Content Include="Lessons\Lesson3\app\modules\repayment-options\standard-repayment.js" />
+    <Content Include="Lessons\Lesson3\app\modules\set-timeline.js" />
+    <Content Include="Lessons\Lesson3\app\modules\standard-repayment.js" />
+    <Content Include="Lessons\Lesson3\app\modules\step1.js" />
+    <Content Include="Lessons\Lesson3\app\modules\step1\views.js" />
+    <Content Include="Lessons\Lesson3\app\modules\step2.js" />
+    <Content Include="Lessons\Lesson3\app\modules\step2\views.js" />
+    <Content Include="Lessons\Lesson3\app\modules\step3.js" />
+    <Content Include="Lessons\Lesson3\app\modules\step3\views.js" />
+    <Content Include="Lessons\Lesson3\app\modules\step4.js" />
+    <Content Include="Lessons\Lesson3\app\modules\step4\views.js" />
+    <Content Include="Lessons\Lesson3\app\modules\step5.js" />
+    <Content Include="Lessons\Lesson3\app\modules\step5\views.js" />
+    <Content Include="Lessons\Lesson3\app\modules\step6.js" />
+    <Content Include="Lessons\Lesson3\app\modules\step6\views.js" />
+    <Content Include="Lessons\Lesson3\app\modules\user.js" />
+    <Content Include="Lessons\Lesson3\app\router.js" />
+    <Content Include="Lessons\Lesson3\app\templates\content\highcharts-graph.html" />
+    <Content Include="Lessons\Lesson3\app\templates\content\loan-type.html" />
+    <Content Include="Lessons\Lesson3\app\templates\content\step1.html" />
+    <Content Include="Lessons\Lesson3\app\templates\content\step2.html" />
+    <Content Include="Lessons\Lesson3\app\templates\content\step3.html" />
+    <Content Include="Lessons\Lesson3\app\templates\content\step4.html" />
+    <Content Include="Lessons\Lesson3\app\templates\content\step5.html" />
+    <Content Include="Lessons\Lesson3\app\templates\content\step6.html" />
+    <Content Include="Lessons\Lesson3\app\templates\graph-modifiers\better-interest.html" />
+    <Content Include="Lessons\Lesson3\app\templates\graph-modifiers\compare.html" />
+    <Content Include="Lessons\Lesson3\app\templates\graph-modifiers\extended-repayment.html" />
+    <Content Include="Lessons\Lesson3\app\templates\graph-modifiers\favorites.html" />
+    <Content Include="Lessons\Lesson3\app\templates\graph-modifiers\forbearance.html" />
+    <Content Include="Lessons\Lesson3\app\templates\graph-modifiers\graduated-repayment.html" />
+    <Content Include="Lessons\Lesson3\app\templates\graph-modifiers\hardship-deferment.html" />
+    <Content Include="Lessons\Lesson3\app\templates\graph-modifiers\in-school-deferment.html" />
+    <Content Include="Lessons\Lesson3\app\templates\graph-modifiers\income-based-repayment.html" />
+    <Content Include="Lessons\Lesson3\app\templates\graph-modifiers\income-sensitive-repayment.html" />
+    <Content Include="Lessons\Lesson3\app\templates\graph-modifiers\pay-faster.html" />
+    <Content Include="Lessons\Lesson3\app\templates\graph-modifiers\set-timeline.html" />
+    <Content Include="Lessons\Lesson3\app\templates\graph-modifiers\standard-repayment.html" />
+    <Content Include="Lessons\Lesson3\app\templates\graph\bar-graph.html" />
+    <Content Include="Lessons\Lesson3\app\templates\graph\highcharts.html" />
+    <Content Include="Lessons\Lesson3\app\templates\layouts\main.html" />
+    <Content Include="Lessons\Lesson3\app\templates\nav\footer.html" />
+    <Content Include="Lessons\Lesson3\app\templates\nav\header.html" />
+    <Content Include="Lessons\Lesson3\assets\css\base.css" />
+    <Content Include="Lessons\Lesson3\assets\css\global-old.css" />
+    <Content Include="Lessons\Lesson3\assets\css\global.css" />
+    <Content Include="Lessons\Lesson3\assets\css\jquery.fancybox.css" />
+    <Content Include="Lessons\Lesson3\assets\fonts\FoundersGroteskCond-Reg.svg" />
+    <Content Include="Lessons\Lesson3\assets\fonts\FoundersGroteskCond-SmBd.svg" />
+    <Content Include="Lessons\Lesson3\assets\fonts\saltHeadline.svg" />
+    <Content Include="Lessons\Lesson3\assets\img\bar-graph\bar-bl-bt.png" />
+    <Content Include="Lessons\Lesson3\assets\img\bar-graph\bar-bl-tp.png" />
+    <Content Include="Lessons\Lesson3\assets\img\bar-graph\bar-bl-zero.png" />
+    <Content Include="Lessons\Lesson3\assets\img\bar-graph\bar-gr-bt.png" />
+    <Content Include="Lessons\Lesson3\assets\img\bar-graph\bar-gr-tp.png" />
+    <Content Include="Lessons\Lesson3\assets\img\bar-graph\bar-gr-zero.png" />
+    <Content Include="Lessons\Lesson3\assets\img\bar-graph\bar-grid-bg.png" />
+    <Content Include="Lessons\Lesson3\assets\img\bar-graph\bar-pl-bt.png" />
+    <Content Include="Lessons\Lesson3\assets\img\bar-graph\bar-pl-tp.png" />
+    <Content Include="Lessons\Lesson3\assets\img\bar-graph\bar-pl-zero.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\autocomplete-carrot.gif" />
+    <Content Include="Lessons\Lesson3\assets\img\global\bg-completed.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\bg-dotted.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\bg-dropdown-dots.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\bg-fancybox-overlay.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\bg-indicator.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\btn-add.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\btn-arrow-back.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\btn-arrow-next.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\btn-remove.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\chapters-arrow.gif" />
+    <Content Include="Lessons\Lesson3\assets\img\global\chart-graph-on.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\compare-icon.gif" />
+    <Content Include="Lessons\Lesson3\assets\img\global\curriculum-header-arrow-active.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\default-profile.gif" />
+    <Content Include="Lessons\Lesson3\assets\img\global\dot-col1.gif" />
+    <Content Include="Lessons\Lesson3\assets\img\global\dot-col2.gif" />
+    <Content Include="Lessons\Lesson3\assets\img\global\dropdown-arrow-lrg.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\dropdown-arrow-sml.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\email-icon.gif" />
+    <Content Include="Lessons\Lesson3\assets\img\global\favorites-hover.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\favorites-off.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\favorites-on.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\favorites-pop-up.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\fb-profile.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\form\bg-input-focus.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\form\bg-input.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\form\checkbox-sprite.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\form\images\18_curriculum-review-edit_bm_03.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\form\images\18_curriculum-review-edit_bm_06.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\form\images\18_curriculum-review-edit_bm_08.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\form\sprite.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\header-save-and-exit.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\header-shadow.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\headline-bookmark.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\headline-confirm.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\print-icon.gif" />
+    <Content Include="Lessons\Lesson3\assets\img\global\qualify-overlay-arrow.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\salt-logo.gif" />
+    <Content Include="Lessons\Lesson3\assets\img\global\tip-wing.png" />
+    <Content Include="Lessons\Lesson3\assets\img\global\woops-header.png" />
+    <Content Include="Lessons\Lesson3\assets\img\graph\graph-list-view-selector-sprite.gif" />
+    <Content Include="Lessons\Lesson3\assets\img\step5\arrow-less.gif" />
+    <Content Include="Lessons\Lesson3\assets\img\step5\arrow-more.gif" />
+    <Content Include="Lessons\Lesson3\assets\img\step5\ExtraPayment_markerLabel.png" />
+    <Content Include="Lessons\Lesson3\assets\img\step5\highcharts-tooltip-carrot.png" />
+    <Content Include="Lessons\Lesson3\assets\img\step5\key-blue.gif" />
+    <Content Include="Lessons\Lesson3\assets\img\step5\key-green.gif" />
+    <Content Include="Lessons\Lesson3\assets\img\step5\key-red.gif" />
+    <Content Include="Lessons\Lesson3\assets\img\step5\OneTimePurchase_markerLabel.png" />
+    <Content Include="Lessons\Lesson3\assets\js\libs\almond.js" />
+    <Content Include="Lessons\Lesson3\assets\js\libs\backbone.js" />
+    <Content Include="Lessons\Lesson3\assets\js\libs\jquery.js" />
+    <Content Include="Lessons\Lesson3\assets\js\libs\lodash.js" />
+    <Content Include="Lessons\Lesson3\assets\js\libs\modernizr-2.5.2.js" />
+    <Content Include="Lessons\Lesson3\assets\js\libs\require.js" />
+    <Content Include="Lessons\Lesson3\assets\js\plugins\asa-plugins.js" />
+    <Content Include="Lessons\Lesson3\assets\js\plugins\backbone-asa-persistence.js" />
+    <Content Include="Lessons\Lesson3\assets\js\plugins\backbone-localstorage.js" />
+    <Content Include="Lessons\Lesson3\assets\js\plugins\backbone.layoutmanager.js" />
+    <Content Include="Lessons\Lesson3\favicon.ico" />
+    <Content Include="Lessons\Lesson3\grunt.js" />
+    <Content Include="Lessons\Lesson3\index.html" />
+    <Content Include="Lessons\Lesson3\test\jasmine\index.html" />
+    <Content Include="Lessons\Lesson3\test\jasmine\spec\example.js" />
+    <Content Include="Lessons\Lesson3\test\jasmine\vendor\jasmine-html.js" />
+    <Content Include="Lessons\Lesson3\test\jasmine\vendor\jasmine.js" />
+    <Content Include="Lessons\Lesson3\test\jasmine\vendor\jasmine_favicon.png" />
+    <Content Include="Lessons\Lesson3\test\qunit\index.html" />
+    <Content Include="Lessons\Lesson3\test\qunit\tests\example.js" />
+    <Content Include="Lessons\Lesson3\test\qunit\vendor\qunit.js" />
+    <Content Include="Monitor\Health.html" />
+    <Content Include="terms.html" />
+    <Content Include="Content\Site.css" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\SOA\Web\SALTService\Common.Types\Common.Types.csproj">
+      <Project>{55C6DF8C-5C3E-46D0-9011-A4DC75C6B553}</Project>
+      <Name>Common.Types</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SOA\Web\SAL\Common\Source\ASA.Web.Services.Common\ASA.Web.Services.Common.csproj">
+      <Project>{C3BED31D-9AFF-4FDE-A672-3806F28596FE}</Project>
+      <Name>ASA.Web.Services.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SOA\Web\SAL\SALServices\Alert\Source\ASA.Web.Services.AlertService\ASA.Web.Services.AlertService.csproj">
+      <Project>{3ADCD915-DD9C-479B-8709-76D89F9D35A9}</Project>
+      <Name>ASA.Web.Services.AlertService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SOA\Web\SAL\SALServices\Membership\Source\ASA.Web.Services.ASAMemberService\ASA.Web.Services.ASAMemberService.csproj">
+      <Project>{4B9960C0-CA04-46CF-9DEA-55F9FE8C4F02}</Project>
+      <Name>ASA.Web.Services.ASAMemberService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SOA\Web\SAL\SALServices\Reminder\Source\ASA.Web.Services.ReminderService\ASA.Web.Services.ReminderService.csproj">
+      <Project>{B4496DE0-C9C4-41E7-967B-040907806F1D}</Project>
+      <Name>ASA.Web.Services.ReminderService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\SOA\Web\SAL\SALServices\Search\Source\ASA.Web.Services.SearchService\ASA.Web.Services.SearchService.csproj">
+      <Project>{F8DDB7C7-3067-4196-A9D9-93B743728F21}</Project>
+      <Name>ASA.Web.Services.SearchService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Collections\ASA.Web.Collections.csproj">
+      <Project>{1C130373-1360-4D29-B924-2C465E00C4C0}</Project>
+      <Name>ASA.Web.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WTF\Integration\ASA.Web.WTF.Integration.csproj">
+      <Project>{B63E76A8-E705-4A19-95AC-4E30AAF289BA}</Project>
+      <Name>ASA.Web.WTF.Integration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WTF\_root\ASA.Web.WTF.csproj">
+      <Project>{DC669184-0A6D-4EF7-B225-07A4F5C841A9}</Project>
+      <Name>ASA.Web.WTF %28dependencies\asa.web.wtf\ASA.Web.WTF%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SALT.SiteCore\SALT.SiteCore.csproj">
+      <Project>{4C389C0F-4084-4EF8-81CC-F7DDDB59A6A8}</Project>
+      <Name>SALT.SiteCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="elmah.config" />
+    <Content Include="log4net.config" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <Content Include="..\..\..\..\SOA\Web\SAL\SALHost\Source\ASA.Web.Services.SALHost\client.config">
+      <Link>client.config</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Browsers\default.browser" />
+    <Content Include="App_Browsers\iphone.browser" />
+    <None Include="Lessons\Lesson1\fonts\FoundersGroteskCond-Reg.eot" />
+    <None Include="Lessons\Lesson1\fonts\FoundersGroteskCond-Reg.ttf" />
+    <None Include="Lessons\Lesson1\fonts\FoundersGroteskCond-Reg.woff" />
+    <None Include="Lessons\Lesson1\fonts\FoundersGroteskCond-SmBd.eot" />
+    <None Include="Lessons\Lesson1\fonts\FoundersGroteskCond-SmBd.ttf" />
+    <None Include="Lessons\Lesson1\fonts\FoundersGroteskCond-SmBd.woff" />
+    <None Include="Lessons\Lesson1\fonts\saltHeadline.eot" />
+    <None Include="Lessons\Lesson1\fonts\saltHeadline.ttf" />
+    <None Include="Lessons\Lesson1\fonts\saltHeadline.woff" />
+    <None Include="Lessons\Lesson1\js\json\frequencyStub.json" />
+    <None Include="Lessons\Lesson1\js\json\lesson1.json" />
+    <None Include="Lessons\Lesson1\js\json\userStub.json" />
+    <None Include="Lessons\Lesson2\assets\fonts\FoundersGroteskCond-Reg.eot" />
+    <None Include="Lessons\Lesson2\assets\fonts\FoundersGroteskCond-Reg.ttf" />
+    <None Include="Lessons\Lesson2\assets\fonts\FoundersGroteskCond-Reg.woff" />
+    <None Include="Lessons\Lesson2\assets\fonts\FoundersGroteskCond-SmBd.eot" />
+    <None Include="Lessons\Lesson2\assets\fonts\FoundersGroteskCond-SmBd.ttf" />
+    <None Include="Lessons\Lesson2\assets\fonts\FoundersGroteskCond-SmBd.woff" />
+    <None Include="Lessons\Lesson2\assets\fonts\saltHeadline.eot" />
+    <None Include="Lessons\Lesson2\assets\fonts\saltHeadline.ttf" />
+    <None Include="Lessons\Lesson2\assets\fonts\saltHeadline.woff" />
+    <None Include="Lessons\Lesson2\compass\config.rb" />
+    <None Include="Lessons\Lesson2\compass\sass\ie.scss" />
+    <None Include="Lessons\Lesson2\compass\sass\print.scss" />
+    <None Include="Lessons\Lesson2\compass\sass\screen.scss" />
+    <None Include="Lessons\Lesson2\readme.md" />
+    <None Include="Lessons\Lesson2\test\jasmine\vendor\MIT.LICENSE" />
+    <None Include="Lessons\Lesson3\assets\fonts\FoundersGroteskCond-Reg.eot" />
+    <None Include="Lessons\Lesson3\assets\fonts\FoundersGroteskCond-Reg.ttf" />
+    <None Include="Lessons\Lesson3\assets\fonts\FoundersGroteskCond-Reg.woff" />
+    <None Include="Lessons\Lesson3\assets\fonts\FoundersGroteskCond-SmBd.eot" />
+    <None Include="Lessons\Lesson3\assets\fonts\FoundersGroteskCond-SmBd.ttf" />
+    <None Include="Lessons\Lesson3\assets\fonts\FoundersGroteskCond-SmBd.woff" />
+    <None Include="Lessons\Lesson3\assets\fonts\saltHeadline.eot" />
+    <None Include="Lessons\Lesson3\assets\fonts\saltHeadline.ttf" />
+    <None Include="Lessons\Lesson3\assets\fonts\saltHeadline.woff" />
+    <None Include="Lessons\Lesson3\compass\config.rb" />
+    <None Include="Lessons\Lesson3\compass\sass\ie.scss" />
+    <None Include="Lessons\Lesson3\compass\sass\print.scss" />
+    <None Include="Lessons\Lesson3\compass\sass\screen.scss" />
+    <None Include="Lessons\Lesson3\readme.md" />
+    <None Include="Lessons\Lesson3\test\jasmine\vendor\MIT.LICENSE" />
+    <None Include="SALT.wpp.targets">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.SiteMap" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>IF '$(Configuration)' == 'Debug' IF EXIST "$(ProjectDir)bin\client.config" xcopy /Y "$(ProjectDir)bin\client.config" "$(ProjectDir)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

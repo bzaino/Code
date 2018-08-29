@@ -1,0 +1,50 @@
+{#content}
+    {#mainContent}
+       <article  class="content">
+            {>"Modules/ContentHeaderBar" /}
+            {>"Modules/DisplayAuthorAndDate" englishContent="english" /}
+            <header class="title-container">
+                {record.attributes.alt-headline}
+                {record.attributes.headline}
+                <hgroup>
+                    {record.attributes.subhead}
+                </hgroup>
+            </header>
+             <div class="row padding-top padding-bottom">
+                {@if cond="'{record.attributes.callout|trim}'.length"}
+                    <article class="callout">
+                        <div id="englishCallout">
+                            {record.attributes.callout}
+                        </div>
+                    </article>
+                {/if}
+                <div class="large-6 medium-6 small-12 columns right">
+                        <figure>
+                            {@sizeImage imageSource="{record.attributes.tile-image-2014}" /}
+                        </figure>
+                </div>
+                <div class="js-glossary-scope">
+                    {record.attributes.body}
+                </div>
+                    {record.attributes.button-area}
+            </div>
+            {>"Modules/FlatTags" /}
+            {>"Modules/AuthorPartnerBlock" /}
+            {>"Modules/ContentFooter" /}
+        </article>
+    {/mainContent}
+{/content}
+
+{?SiteMember.ActiveDirectoryKey}
+    {?SiteMember.DashboardEnabled}
+        <script type="text/javascript">
+            require([
+                'jquery'
+            ], function ($) {
+                $(document).ready(function () {
+                    $('.js-browse-lessons').attr('href', '/home?Dims=44&Ns=P_Hits_Last_30_Days|1#fndtn-Library');
+                });
+            });
+        </script>
+    {/SiteMember.DashboardEnabled}
+{/SiteMember.ActiveDirectoryKey}

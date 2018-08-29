@@ -1,0 +1,114 @@
+    <!-- filters -->
+    <div class="sort-filter right noprint js-sortfilter">
+        <div id="drop-content-types" aria-autoclose="false" class="f-dropdown content filter-bar" data-dropdown-content aria-hidden="true">
+            <div class="filter-inner-wrap">
+                <!-- Foundation Accordion 5.2.1 http://foundation.zurb.com/sites/docs/v/5.5.3/components/accordion.html must use dd dl format-->
+                <dl class="accordion filter-accordion" data-accordion="filter">
+                    <dd class="accordion-navigation row collapsed bordered active">
+                        <a href="#filtertype">
+                            <h2>Filter By Type</h2>
+                            <div class="acc-arrow"></div>
+                        </a>
+                        <div id="filtertype" class="content active">
+                            <div class=" small-6 columns">
+                                <input id="content-type-41" type="checkbox" class="css-checkbox js-content-type-option js-dims-param" value="41"><label for="content-type-41" class="css-label">Articles</label>
+                            </div>
+                            <div class=" small-6 columns">
+                                <input id="content-type-42" type="checkbox" class="css-checkbox js-content-type-option js-dims-param" value="42"><label for="content-type-42" class="css-label">Videos</label>
+                            </div>
+                            <div class=" small-6 columns">
+                                <input id="content-type-44" type="checkbox" class="css-checkbox js-content-type-option js-dims-param" value="44"><label for="content-type-44" class="css-label">Lessons</label>
+                            </div>
+                            <div class=" small-6 columns">
+                                <input id="content-type-43" type="checkbox" class="css-checkbox js-content-type-option js-dims-param" value="43"><label for="content-type-43" class="css-label">Forms</label>
+                            </div>
+                            <div class=" small-6 columns">
+                                <input id="content-type-46" type="checkbox" class="css-checkbox js-content-type-option js-dims-param" value="46"><label for="content-type-46" class="css-label">Tools</label>
+                            </div>
+                            <div class=" small-6 columns">
+                                <input id="content-type-45" type="checkbox" class="css-checkbox js-content-type-option js-dims-param" value="45"><label for="content-type-45" class="css-label">Infographics</label>
+                            </div>
+                            <div class=" small-6 columns">
+                                <input id="content-type-157" type="checkbox" class="css-checkbox js-content-type-option js-dims-param" value="157"><label for="content-type-157" class="css-label">Comics</label>
+                            </div>
+                            <div class=" small-6 columns">
+                                <input id="content-type-303" type="checkbox" class="css-checkbox js-content-type-option js-dims-param" value="303"><label for="content-type-303" class="css-label">eBooks</label>
+                            </div>
+                            {?SiteMember.ShowMM101}
+                            <div class=" small-6 columns">
+                                <input id="content-type-304" type="checkbox" class="css-checkbox js-content-type-option js-dims-param" value="304"><label for="content-type-304" class="css-label">Courses</label>
+                            </div>
+                            {/SiteMember.ShowMM101}
+                            <div class="small-6 offset-by-6 columns">
+                                &nbsp;<a href="" id="clearAllBtn" data-selected="off">Clear</a> | <a href="" id="select-all-types" data-selected="off">Select All</a>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd class="accordion-navigation row collapsed bordered">
+                        <a href="#sortby">
+                            <h2>Sort By</h2>
+                            <div class="acc-arrow"></div>
+                        </a>
+                        <div id="sortby" class="content">
+                            <div class="small-6 columns">
+                                <input id="js-sort-Recommended" class="css-checkbox" type="radio" value="" name="sortby">
+                                <label class="css-label" for="js-sort-Recommended">{?hideGoals}Relevance{:else}Recommended{/hideGoals}</label>
+                            </div>
+                            <div  class="small-6 columns">
+                                <input id="js-sort-Rating" class="css-checkbox" type="radio" value="P_Rating|1" name="sortby">
+                                <label class="css-label" for="js-sort-Rating">Rating</label>
+                            </div>
+                            <div  class="small-6 columns">
+                                <input id="js-sort-Popularity" class="css-checkbox " type="radio" value="P_Hits_Last_30_Days|1" name="sortby">
+                                <label class="css-label" for="js-sort-Popularity">Popularity</label>
+                            </div>
+                            <div class="small-6 columns">
+                            </div>
+                        </div>
+                    </dd>
+                    {^hideGoals}
+                    <dd class="accordion-navigation row collapsed bordered">
+                        <a href="#filtergoal">
+                            <h2>Filter By Goal</h2>
+                            <div class="acc-arrow"></div>
+                        </a>
+                        <div id="filtergoal" class="content">
+                            {?SiteMember.enabledGoals.MasterMoney}
+                                <div class="small-6 columns left">
+                                    <input id="content-type-MM" class="css-checkbox js-sortfilter-usergoal" data-goal-param-value="MM" type="checkbox" value="Manage Money">
+                                    <label class="css-label" for="content-type-MM">Manage Money</label>
+                                </div>
+                            {/SiteMember.enabledGoals.MasterMoney}
+                            {?SiteMember.enabledGoals.FindAJob}
+                                <div class="small-6 columns left">
+                                    <input id="content-type-FJ" type="checkbox" class="css-checkbox js-sortfilter-usergoal" data-goal-param-value="FJ" value="Find A Job"><label for="content-type-FJ" class="css-label">Find A Job</label>
+                                </div>
+                            {/SiteMember.enabledGoals.FindAJob}
+                            {?SiteMember.enabledGoals.RepayStudentDebt}
+                                <div class=" small-6 columns left">
+                                    <input id="content-type-RSD" type="checkbox" class="css-checkbox js-sortfilter-usergoal" data-goal-param-value="RSD" value="Repay Student Debt"><label for="content-type-RSD" class="css-label">Repay Student Debt</label>
+                                </div>
+                            {/SiteMember.enabledGoals.RepayStudentDebt}
+                            {?SiteMember.enabledGoals.PayForSchool}
+                                <div class=" small-6 columns left">
+                                    <input id="content-type-PS" type="checkbox" class="css-checkbox js-sortfilter-usergoal" data-goal-param-value="PS" value="Plan School Costs"><label for="content-type-PS" class="css-label">Plan School Costs</label>
+                                </div>
+                            {/SiteMember.enabledGoals.PayForSchool}
+                        </div>
+                    </dd>
+                    {/hideGoals}
+                </dl>
+                <div class="row collapse">
+                    <div class="small-6 columns padding-top">
+                        <input id="content-type-104" type="checkbox" class="css-checkbox js-dims-param" value="104"><label for="content-type-104" class="css-label">En Espa&#241;ol</label>
+                    </div>
+                    <div class="small-6 columns">
+                        <button id="typesApplyBtn" class="base-btn main-btn right">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    require(['salt/SortControlBarDelegate']);
+</script>

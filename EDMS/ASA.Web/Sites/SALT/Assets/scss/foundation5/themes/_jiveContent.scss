@@ -1,0 +1,43 @@
+/* This file contains stylings for the Community Related Links Section of the Right Rail */
+#JiveContent {
+    clear:both;
+}
+.community-search-module.community-active {
+    border-bottom: 1px solid $gray15;
+    padding-bottom: 1em; /* should match padding for default rr-horizontal */
+}
+.community-links-header {
+    border-bottom: 1px solid $gray15;
+    padding-bottom:.25em;
+    margin-bottom: 0;
+}
+.community-content {
+    margin-top: 1em;
+    .rr-middle-container > div {
+        padding: 0;
+    }
+    .community-links-header {
+        margin-bottom: 0.5em;
+    }
+}
+.community-small {
+    font-size: 0.85em;
+}
+.community-content .rr-horizontal-slot {
+    border-bottom: none;
+    padding: 0 11px 0.5em 0;
+    &:last-child {
+        padding-bottom: 0;
+    }
+    .diamond {
+        top: -10px;
+        left: 22px;
+        &:after {
+            left: -5px;
+            top: 7px;
+        }
+    }
+    > span {
+
+    }
+}

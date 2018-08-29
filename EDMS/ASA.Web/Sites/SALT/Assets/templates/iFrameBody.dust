@@ -1,0 +1,18 @@
+<article class="content">
+    {#content}
+        {>"Modules/ContentHeaderBar" /}
+        {>"Modules/DisplayAuthorAndDate" englishContent="english" /}
+        <iframe src="{mainContent[0].records[0].attributes.iframe-url[0]|trim|s}" width="100%"  style="border:0;" frameborder="0" class="calcXML {mainContent[0].records[0].attributes.iframe-height-class[0]|trim}"></iframe>
+        <div class="row collapse">
+            {#mainContent[0]}
+                {>"Modules/FlatTags" /}
+                {>"Modules/AuthorPartnerBlock" /}
+            {/mainContent[0]}
+        </div>
+        {>"Modules/ContentFooter" /}
+    {/content}
+</article>
+
+{@if cond="'{content.mainContent[0].records[0].attributes.RefToDoStatusID}' !== '2'"}
+    {>"TodoCompletor" /}
+{/if}

@@ -1,0 +1,10 @@
+<div id="blog-tiles-container" class="small-12 medium-10 large-12 columns medium-centered large-uncentered">	
+    {#content}
+         {> "Modules/BlogTiles" /}
+    {/content}
+</div>
+{@gt key="{content.mainContent[0].totalNumRecs}" value="4" type="number"}
+	<div class="load-more small-12 columns">
+	    <a href class="js-void-href js-load-more-blogs">Load More</a>
+	</div>
+{/gt}

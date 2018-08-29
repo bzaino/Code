@@ -1,0 +1,73 @@
+{>"page_parent" /}
+
+{<dynamicTitle}
+    {#content}
+        {title} - Salt
+    {/content}
+{/dynamicTitle}
+
+{<dynamicBody}
+    <article>
+        <div class="content glossary">
+            {#content}
+                {#mainContent}
+                    <header class="title-container">
+                        {records[0].attributes.headline}
+                        <div class="row">
+                            <div class="small-12 columns no-padding">
+                                {records[0].attributes.subhead}
+                            </div>
+                        </div>
+                    </header>
+                    <div class="magellan-container" data-magellan-expedition="fixed" data-options="destination_threshold:65;throttle_delay:0;">
+                        <dl class="sub-nav">
+                            <dd class="active" data-magellan-arrival="a"><a href="#a">A</a></dd>
+                            <dd data-magellan-arrival="b"><a href="#b">B</a></dd>
+                            <dd data-magellan-arrival="c"><a href="#c">C</a></dd>
+                            <dd data-magellan-arrival="d"><a href="#d">D</a></dd>
+                            <dd data-magellan-arrival="e"><a href="#e">E</a></dd>
+                            <dd data-magellan-arrival="f"><a href="#f">F</a></dd>
+                            <dd data-magellan-arrival="g"><a href="#g">G</a></dd>
+                            <dd data-magellan-arrival="h"><a href="#h">H</a></dd>
+                            <dd data-magellan-arrival="i"><a href="#i">I</a></dd>
+                            <dd data-magellan-arrival="j"><a href="#j">J</a></dd>
+                            <dd class="nolink">K</dd>
+                            <dd data-magellan-arrival="l"><a href="#l">L</a></dd>
+                            <dd data-magellan-arrival="m"><a href="#m">M</a></dd>
+                            <dd data-magellan-arrival="n"><a href="#n">N</a></dd>
+                            <dd data-magellan-arrival="o"><a href="#o">O</a></dd>
+                            <dd data-magellan-arrival="p"><a href="#p">P</a></dd>
+                            <dd class="nolink">Q</dd>
+                            <dd data-magellan-arrival="r"><a href="#r">R</a></dd>
+                            <dd data-magellan-arrival="s"><a href="#s">S</a></dd>
+                            <dd data-magellan-arrival="t"><a href="#t">T</a></dd>
+                            <dd data-magellan-arrival="u"><a href="#u">U</a></dd>
+                            <dd data-magellan-arrival="v"><a href="#v">V</a></dd>
+                            <dd data-magellan-arrival="w"><a href="#w">W</a></dd>
+                            <dd class="nolink">X</dd>
+                            <dd class="nolink">Y</dd>
+                            <dd class="nolink">Z</dd>
+                        </dl>
+                    </div>
+                {/mainContent}
+                {#secondaryContent}
+                    {@select key="{name}"}
+                        {@eq value="Terms"}
+                            {#records}
+                                {#attributes }
+                                    {@customSort val=attributes.letter/}
+                                    {?attributes.term}
+                                        <div class="glossary-term">{attributes.term} {attributes.acronym} </div>
+                                    {/attributes.term}
+                                    {?attributes.body}
+                                        <div class="glossary-definition"> {attributes.body} </div>
+                                    {/attributes.body}
+                                {/attributes}
+                            {/records}
+                         {/eq}
+                     {/select}
+                {/secondaryContent}
+            {/content}
+        </div>
+    </article>
+{/dynamicBody}

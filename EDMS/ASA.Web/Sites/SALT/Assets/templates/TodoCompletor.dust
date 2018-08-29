@@ -1,0 +1,13 @@
+{?SiteMember.DashboardEnabled}
+    <script>
+        require(['salt', 'modules/Dashboard'], function (SALT) {
+            /*The below lines to remain double quotes to account for items with single quotes in the title*/
+            var title = {content.mainContent[0].record.attributes.resource_link_title|js|s};
+            SALT.trigger('content:todo:completed', {
+                contentId: "{content.mainContent[0].record.attributes.P_Primary_Key[0]}",
+                contentType: "{content.mainContent[0].record.attributes.ContentTypes}",
+                contentTitle: '\"' + title + '\"'
+            });
+        });
+    </script>
+{/SiteMember.DashboardEnabled}

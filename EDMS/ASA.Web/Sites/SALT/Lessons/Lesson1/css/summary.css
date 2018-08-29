@@ -1,0 +1,154 @@
+body {
+  background: #ebebeb; }
+
+#summary {
+  color: #272525;
+  /* Column 1 */
+  /* Column 2 - All FPO content for now */ }
+  #summary .column-1,
+  #summary .column-2 {
+    float: left; }
+  #summary .column-1 {
+    width: 738px;
+    margin-right: 35px; }
+    #summary .column-1 .section {
+      margin-bottom: 20px;
+      padding: 18px;
+      background: white;
+      position: relative; }
+      #summary .column-1 .section h2 {
+        font-family: "FoundersGroteskCond-Reg", sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: lighter;
+        margin: 6px 0 0; }
+      #summary .column-1 .section .divider {
+        width: 22px;
+        height: 2px;
+        background: black;
+        margin: 20px auto 23px; }
+      #summary .column-1 .section .description {
+        font-family: "Georgia", serif;
+        font-size: 14px;
+        color: #8c8989;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 30px;
+        padding-bottom: 29px;
+        border-bottom: 1px solid #d9d9d9; }
+      #summary .column-1 .section a {
+        color: #00b8cb; }
+      #summary .column-1 .section#summary-header {
+        background: url("/Assets/images/lessons/lesson1/summary/fpo-header.png") no-repeat 0 0;
+        height: 293px; }
+        #summary .column-1 .section#summary-header h1 {
+          margin: 0 0 20px;
+          background: url("/Assets/images/lessons/lesson1/summary/fpo-banner.png") no-repeat 0 0;
+          width: 702px;
+          height: 62px;
+          text-indent: -99999px; }
+        #summary .column-1 .section#summary-header .badge {
+          margin: 0 33px 0 0;
+          width: 136px;
+          float: left; }
+        #summary .column-1 .section#summary-header p {
+          float: left;
+          width: 533px;
+          margin: 13px 0 0;
+          font-size: 20px;
+          line-height: 26px; }
+        #summary .column-1 .section#summary-header .bottom {
+          position: absolute;
+          bottom: 0;
+          left: 18px;
+          border-top: 1px solid #d9d9d9;
+          height: 43px;
+          padding-top: 9px;
+          width: 702px; }
+      #summary .column-1 .section#summary-chart {
+        background: white url("/Assets/images/lessons/lesson1/summary/fpo-chart.png") no-repeat bottom; }
+        #summary .column-1 .section#summary-chart table {
+          margin: 0 0 14px; }
+          #summary .column-1 .section#summary-chart table tr.headers {
+            background-color: #cdf9fd;
+            border-bottom: 1px solid #05e1f5;
+            height: 37px;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: left; }
+            #summary .column-1 .section#summary-chart table tr.headers th.col-1 {
+              width: 327px;
+              padding-left: 11px; }
+            #summary .column-1 .section#summary-chart table tr.headers th.col-2 {
+              width: 243px; }
+            #summary .column-1 .section#summary-chart table tr.headers th.col-3 {
+              width: 121px; }
+          #summary .column-1 .section#summary-chart table tr.data {
+            font-weight: normal;
+            font-family: "FoundersGroteskCond-Reg", Arial, Helvetica, sans-serif; }
+            #summary .column-1 .section#summary-chart table tr.data.odd {
+              background-color: #fafafa; }
+            #summary .column-1 .section#summary-chart table tr.data th {
+              padding: 30px 0 19px 12px;
+              text-align: left;
+              font-size: 30px;
+              line-height: 1em; }
+            #summary .column-1 .section#summary-chart table tr.data td {
+              padding-top: 33px;
+              padding-left: 7px;
+              font-size: 22px; }
+              #summary .column-1 .section#summary-chart table tr.data td.alert {
+                color: #ff0099; }
+              #summary .column-1 .section#summary-chart table tr.data td.target {
+                padding-left: 33px;
+                padding-right: 32px;
+                text-align: right; }
+              #summary .column-1 .section#summary-chart table tr.data td.up {
+                background: url("/Assets/images/lessons/lesson1/summary/icon-up.png") no-repeat 10px 34px; }
+              #summary .column-1 .section#summary-chart table tr.data td.down {
+                background: url("/Assets/images/lessons/lesson1/summary/icon-down.png") no-repeat 10px 34px; }
+      #summary .column-1 .section#summary-to-do {
+        background: white url("/Assets/images/lessons/lesson1/summary/fpo-to-do.png") no-repeat bottom;
+        height: 622px; }
+      #summary .column-1 .section#summary-be-ready {
+        background: white url("/Assets/images/lessons/lesson1/summary/fpo-be-ready.png") no-repeat 0 0;
+        text-indent: -99999px;
+        width: 702px;
+        height: 411px; }
+        #summary .column-1 .section#summary-be-ready .dynamic-text {
+          text-align: center;
+          border-bottom: 1px solid #d9d9d9;
+          padding-bottom: 16px;
+          font: normal 40px "FoundersGroteskCond-Reg", Arial, Helvetica, sans-serif;
+          margin-bottom: 25px; }
+          #summary .column-1 .section#summary-be-ready .dynamic-text strong {
+            font-weight: normal;
+            font-family: "FoundersGroteskCond-SmBd", Arial, Helvetica, sans-serif; }
+        #summary .column-1 .section#summary-be-ready h3 {
+          margin: 0 0 20px;
+          font-weight: normal;
+          font-size: 20px; }
+        #summary .column-1 .section#summary-be-ready ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          font-size: 15px; }
+          #summary .column-1 .section#summary-be-ready ul li {
+            height: 30px;
+            line-height: 30px; }
+            #summary .column-1 .section#summary-be-ready ul li input {
+              margin-right: 7px; }
+            #summary .column-1 .section#summary-be-ready ul li span {
+              display: inline-block;
+              height: 30px; }
+            #summary .column-1 .section#summary-be-ready ul li a {
+              font-weight: bold; }
+            #summary .column-1 .section#summary-be-ready ul li.sponsored span {
+              background: #feffd9 url("/Assets/images/lessons/lesson1/summary/bg-sponsored.png") no-repeat right center;
+              padding-right: 143px; }
+  #summary .column-2 {
+    width: 235px;
+    height: 1267px;
+    background: url("/Assets/images/lessons/lesson1/summary/fpo-right-col.png") no-repeat 0 0; }

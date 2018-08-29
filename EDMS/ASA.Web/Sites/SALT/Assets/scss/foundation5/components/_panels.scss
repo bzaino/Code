@@ -1,0 +1,424 @@
+// Foundation by ZURB
+// foundation.zurb.com
+// Licensed under MIT Open Source
+
+@import 'global';
+
+//
+// @variables
+//
+$include-html-panel-classes: $include-html-classes !default;
+
+// We use these to control the background and border styles
+$panel-bg: scale-color($white, $lightness: -5%) !default;
+$panel-border-style: solid !default;
+$panel-border-size: 1px !default;
+$callout-panel-bg: scale-color($primary-color, $lightness: 94%) !default;
+
+// This controls the border color's contrast relative to the background
+$panel-border-color: darken($panel-bg, 30) !default;
+
+// We use these to set default inner padding and bottom margin
+$panel-margin-top: rem-calc(20) !default;
+$panel-margin-bottom: rem-calc(20) !default;
+$panel-padding: rem-calc(20) !default;
+
+// We use these to set default font colors
+$panel-font-color: $oil !default;
+$panel-font-color-alt: $white !default;
+
+$panel-header-adjust: true !default;
+$callout-panel-link-color: $primary-color !default;
+$callout-panel-link-color-hover: scale-color($callout-panel-link-color, $lightness: -14%) !default;
+//
+// @mixins
+//
+// We use this mixin to create panels.
+// $bg - Sets the panel background color. Default: $panel-pg || scale-color($white, $lightness: -5%) !default
+// $padding - Sets the panel padding amount. Default: $panel-padding || rem-calc(20)
+// $adjust - Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust || true
+@mixin panel($bg:$panel-bg, $padding:$panel-padding, $adjust:$panel-header-adjust, $border:true) {
+
+  @if $bg {
+    $bg-lightness: lightness($bg);
+    border-radius: 0px 10px;
+    @if $border {
+      border-style: $panel-border-style;
+      border-width: $panel-border-size;
+      border-color: $panel-border-color;
+    } @else {
+      border-style: none;
+      border-width: 0;
+    }
+
+    margin-bottom: $panel-margin-bottom;
+    margin-top: $panel-margin-top;
+    padding: $padding;
+    overflow: hidden;
+    background: $bg;
+    @if $bg-lightness >= 50% { color: $panel-font-color; }
+    @else { color: $panel-font-color-alt; }
+
+    // Respect the padding, fool.
+    > :first-child { margin-top: 0; }
+    > :last-child { margin-bottom: 0; }
+
+    @if $adjust {
+      // We set the font color based on the darkness of the bg.
+      @if $bg-lightness >= 50% {
+        h1, h2, h3, h4, h5, h6, p, li, dl { color: $panel-font-color; }
+      }
+      @else {
+        h1, h2, h3, h4, h5, h6, p, li, dl { color: $panel-font-color-alt; }
+      }
+
+      // reset header line-heights for panels
+      h1, h2, h3, h4, h5, h6 {
+        line-height: 1; 
+        margin-bottom: rem-calc(15);
+        &.subheader { line-height: 1.4; }
+      }
+    }
+  }
+}
+
+@include exports("panel") {
+  @if $include-html-panel-classes {
+
+    /* Panels */
+    .panel { @include panel;
+
+      &.callout {
+        @include panel($callout-panel-bg);
+        a:not(.button) {
+          color: $callout-panel-link-color;
+
+          &:hover,
+          &:focus {
+            color: $callout-panel-link-color-hover;
+          }
+        }
+      }
+        .font-white {
+          color: $white;
+          #{$flow-text-group} {
+            color: $white;
+          }
+        }      
+      &.radius {
+        @include radius;
+      }
+
+    }
+
+  }
+}
+.notify-bubble {
+  @include panel(
+  // Sets the panel background color. Default: $panel-pg
+    $bg:$white,
+    // Sets the panel padding amount. Default: $panel-padding
+    $padding:0px 7px,
+    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
+    $adjust:true
+  );
+  border-radius: 50%;
+  font-style: normal;
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: $primary-color !important;
+    color: $white !important;
+  }
+}
+.side-nav-profile-panel {
+  @include panel(
+    // Sets the panel background color. Default: $panel-pg
+    $bg:rgba($gray15, 0),
+    // Sets the panel padding amount. Default: $panel-padding
+    $padding:5px,
+    $border: false,
+    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
+    $adjust:false 
+  );
+  top: 20px;
+  position: relative;
+}
+
+.side-panel, .dynamic-panel .rr-module {
+  @include panel(
+    // Sets the panel background color. Default: $panel-pg
+    $bg:rgba($gray15, .4),
+    // Sets the panel padding amount. Default: $panel-padding
+    $padding:30px 10px,
+    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
+    $adjust:true
+  );
+
+  position: relative;
+  @media #{$small} {
+    padding-bottom: 100px;
+  }
+
+  & .quick-look {
+    margin-bottom: 10px !important;
+  }
+  & .carousel-headline{
+    background-color: rgba(255,255,255,0);
+  }
+}
+
+.courses-panel {
+  @include panel(
+    // Sets the panel background color. Default: $panel-pg
+    $bg:$white,
+    // Sets the panel padding amount. Default: $panel-padding
+    $padding:10px,
+    $border: false,
+    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
+    $adjust:true
+  );
+  border-radius: 10;
+  border: solid 1px $gray15;
+  @include radius;
+}
+
+.help-panel {
+  @include panel(
+    // Sets the panel background color. Default: $panel-pg
+    $bg:$salt-blue,
+    // Sets the panel padding amount. Default: $panel-padding
+    $padding:10px,
+    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
+    $adjust:true,
+    //Border style T or F 
+    $border: false
+  );
+  background: transparent url('data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgNTcuMDYiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMDAzNzYzO3N0cm9rZTojMDAzNzY0O3N0cm9rZS1taXRlcmxpbWl0OjEwO3N0cm9rZS13aWR0aDozLjMycHg7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5zdXBwb3J0LWJnPC90aXRsZT48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMC41NSwxLjg4YTguNzYsOC43NiwwLDAsMC04LjU1LDl2MGE5LjEsOS4xLDAsMCwwLDEuNzIsNS4yOEwyNy40OSw1MWMyLjc4LDMuMjQsNy4xMSw0LjYxLDExLjcyLDQuMzFoMGMyLjU4LjE1LDEyNy4zNy4yOCwxMjcuMzcuMjguMjUtNy4wOC4xOS01NC41OC4xOS01NC41OC0xLjIzLS42NS01MS40Ni45MS01Mi44NC45M1oiLz48L3N2Zz4=');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0;
+  color: $white;
+  float: right;
+  position: relative;
+  right: -10px;
+  top:-30px;
+  width: 305px !important;
+  border-radius: 0px 0px 19px 0px;
+  & .text-red {
+    color: $pink-copy;
+    font-weight: bold;
+  }
+  & .text-green {
+    color: $growth-green;
+    font-weight: bold;
+  }
+  & .sidenav-button {
+    background-color: $growth-green;
+  }
+  & .reachout-header-section {
+    width: 267px;
+    padding-left: 20px !important;
+  }
+  & .community-row {
+    width: 68% !important;
+    margin-left: 32% !important;
+
+    h3 {
+      color: $growth-green;
+      font-weight: bold;
+    }
+  }
+  & .chat-row {
+    width: 85% !important;
+    margin-left: 15% !important;
+    padding-left: 20px;
+  }
+  .community-row, .chat-row {
+    top: -17px;
+    position: relative;
+    &:before {
+      display: block;
+      background: transparent url('data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NC40IDc0LjUiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojNWJjNTAwO3N0cm9rZTojNWJjNTAwO3N0cm9rZS1taXRlcmxpbWl0OjEwO3N0cm9rZS13aWR0aDozLjMycHg7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5ncmVlbiBkaWFtb25kPC90aXRsZT48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik01Mi4zLDM0LjRhOCw4LDAsMCwwLS44LTEuNkwzOC4zLDZhNy43Myw3LjczLDAsMCwwLTYuNC00LjNIMjIuNkE3LjYsNy42LDAsMCwwLDE2LjIsNkwyLjksMzMuMUE3LjU3LDcuNTcsMCwwLDAsMiwzOS4zSDJjMCwuMS4xLjIuMS40QTUuMTcsNS4xNywwLDAsMCwyLjcsNDFMMTYuMiw2OC42YTcuNzMsNy43MywwLDAsMCw2LjQsNC4zaDkuM2E3LjYsNy42LDAsMCwwLDYuNC00LjNMNTEuNSw0MS43YTIuMTIsMi4xMiwwLDAsMCwuMy0uN2wuMi0uM2E4LjksOC45LDAsMCwwLC44LTMuM0E3LjI5LDcuMjksMCwwLDAsNTIuMywzNC40WiIvPjwvc3ZnPg==');
+      width: 9px;
+      height: 12px;
+      position: relative;
+      left: -15px;
+      top: 17px;
+    }
+  }
+}
+.help-panel, .courses-panel, .side-panel, .dynamic-panel .row {
+  hgroup {
+    margin-bottom: 5px;
+  }
+  h1 {
+    font-size: rem-calc(24px);
+    letter-spacing: -1px;
+    margin-bottom: 15px !important;
+  }
+  h2 {
+    font-size: rem-calc(18px) !important;
+    line-height: rem-calc(22px);
+    letter-spacing: -1px;
+    margin-bottom: 2px !important;
+  }
+  h3 {
+    margin-bottom: 0px;
+    font-size: rem-calc(16px);
+  }
+  small {
+    margin-bottom: 25px;
+    display: inline-block;
+  }
+  .text-white {
+    color: $white !important;
+  } 
+}
+.dropdown-panel {
+  padding: 10px;
+  hgroup {
+    margin-bottom: 10px;
+  }
+  h2 {
+    margin-bottom: 2px;
+  }
+  h3 {
+    margin-bottom: 2px;
+  }
+  .sidenav-help-button {
+    background-color: $salt-blue;
+    color: $white;
+    border: 1px solid $white;
+    &:hover , &:focus, &:active {
+      background-color: scale-color($primary-color, $lightness: 20%)
+    }
+  }
+}
+.community-result-panel  {
+  @include panel(
+    // Sets the panel background color. Default: $panel-pg
+    $bg:$white,
+    // Sets the panel padding amount. Default: $panel-padding
+    $padding:10px,
+    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
+    $adjust:true,
+    //Border style T or F 
+    $border: false
+  );
+  border-radius: 19px;
+}
+.list-panel {
+   @include panel(
+    // Sets the panel background color. Default: $panel-pg
+    $bg:$white,
+    // Sets the panel padding amount. Default: $panel-padding
+    $padding:5px,
+    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
+    $adjust:true,
+    //Border style T or F 
+    $border: true
+  );
+   border-radius: 5px;
+   margin-bottom: 2px;
+   margin-top: 2px;
+}
+.dynamic-panel:first-child {
+  > div {
+    &:before {
+      content: "Progress";
+      display: block;
+      left: 0px;
+      top: 0px;
+      position:relative;
+      font-size: 24px;
+      font-weight: bold;
+      color: $salt-blue;
+      margin-bottom: 20px;
+      &.hide {
+        display: none;
+      }
+    }
+  }
+  
+}
+.dynamic-panel {
+  .row {
+    @include panel(
+      $padding:10px
+    );
+    margin-top: 0;
+    margin-bottom: 20px;
+
+  }
+}
+.NonContract-side-panel {
+  .help-panel {
+    top: 0px;
+    right: 0px;
+    background: $salt-blue;
+    border-radius: $global-radius;
+    width: 100% !important;
+    height: auto;
+    .chat-row {
+      margin-left: 20px !important;
+    }
+     & .community-row {
+      width: 85% !important;
+      margin-left: 20px !important;
+    }
+  }
+}
+.home-panel {
+  @include panel(
+    // Sets the panel background color. Default: $panel-pg
+    $bg: rgba($gray15, .4),
+    // Sets the panel padding amount. Default: $panel-padding
+    $padding:5px,
+    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
+    $adjust:true,
+    //Border style T or F 
+    $border: true
+  );
+  border-radius: 0px;
+  max-width: none !important;
+
+  @each $site-color,  $color-value in $site-colors{
+    &.bg-#{$site-color} {
+      background-color: #{$color-value};
+    } 
+    &.text-#{$site-color} {
+      color: #{$color-value} !important;
+      #{$flow-text-group} {
+        color: #{$color-value};
+      }
+    }
+  }
+}
+.panel-Blog {
+  @include panel(
+    // Sets the panel background color. Default: $panel-pg
+    $bg: rgba($gray15, .6),
+    // Sets the panel padding amount. Default: $panel-padding
+    $padding:10px,
+    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
+    $adjust:true,
+    //Border style T or F 
+    $border: false
+  );
+  border-radius: 5px;
+  margin: 5px 0;
+  h1 {
+    font-size: 16px;
+  }
+  p {
+    margin-bottom: rem-calc(10px);
+  }
+  .author-info {
+    font-size: 10px;
+    color: $pink;
+  }
+}
+.content.panel {
+  padding: 1.05rem;
+}

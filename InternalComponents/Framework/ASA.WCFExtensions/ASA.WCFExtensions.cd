@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="ASA.WCFExtensions.ASAServiceHost">
+    <Position X="0.75" Y="2.5" Width="3.5" />
+    <TypeIdentifier>
+      <FileName>ASAServiceHost.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAoAAAABAAAAAAAAAAAAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASA.WCFExtensions.ASAServiceHostFactory">
+    <Position X="4.5" Y="2.75" Width="3.75" />
+    <TypeIdentifier>
+      <FileName>ASAServiceHostFactory.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASA.WCFExtensions.LifetimeEvents">
+    <Position X="4.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>LifetimeEvents.cs</FileName>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAIBAgAIAIAAAAEAACACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.ServiceModel.Activation.ServiceHostFactory" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.ServiceModel.ServiceHost" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ASA.WCFExtensions.ASADispatchMessageInspector">
+    <Position X="0.5" Y="5" Width="3.5" />
+    <TypeIdentifier>
+      <FileName>ASADispatchMessageInspector.cs</FileName>
+      <HashCode>AAAAEAAQAACAAAgAAAAAAAAAAAAAAEAAAAAEAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Spring.ServiceModel.SpringServiceHost" Collapsed="true">
+    <Position X="1.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Spring.ServiceModel.Activation.ServiceHostFactory" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ASA.WCFExtensions.ASAClientMessageInspector">
+    <Position X="6.5" Y="6" Width="4" />
+    <TypeIdentifier>
+      <FileName>ASAClientMessageInspector.cs</FileName>
+      <HashCode>AAAACAAYAACAAAgAAAAAAAEAEAAAAEAAAAAABAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="System.ServiceModel.Configuration.BehaviorExtensionElement" Collapsed="true">
+    <Position X="7.25" Y="5" Width="2.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ASA.WCFExtensions.ASAServiceHostFactoryObject">
+    <Position X="8.75" Y="2.25" Width="3.25" />
+    <TypeIdentifier>
+      <FileName>ASAServiceHostFactoryObject.cs</FileName>
+      <HashCode>AAAAAAAAACgAIAAAAAgAAAAAAAAAAAABAIAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spring.ServiceModel.Activation.ServiceHostFactoryObject" Collapsed="true">
+    <Position X="9.25" Y="1.25" Width="2.25" />
+    <TypeIdentifier />
+    <Lollipop Position="0.1" />
+  </Class>
+</ClassDiagram>

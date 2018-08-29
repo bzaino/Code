@@ -1,0 +1,126 @@
+#perc-dropdown-page-workflow .perc-dropdown-title
+{
+    width: 29px;
+    height: 29px;
+    padding: 0;
+}
+/*#perc-dropdown-page-workflow .perc-dropdown.sf-menu li li
+{
+    background-color: transparent;
+}*/
+#perc-dropdown-page-workflow ul ul
+{
+    left: auto !important;
+    right: 2px !important;
+    top: 100% !important;
+    margin-top: 0 !important;
+    background-color: #FFFFFF;
+}
+#perc-dropdown-page-workflow .perc-dropdown.sf-menu li
+{
+    background-color: inherit;
+}
+#perc-dropdown-page-workflow .perc-dropdown.sf-menu a
+{
+    border-width: 0;
+    padding-right: 0;
+}
+#perc-dropdown-page-workflow > a:first-child span
+{
+    display: none;
+}
+#perc-dropdown-page-workflow .perc-dropdown.sf-menu li li a.perc-drop-disabled
+{
+    background-color: #FFFFFF;
+}
+#perc-dropdown-page-workflow .perc-dropdown.sf-menu li li a
+{
+    /*background-color: #0086a8;*/
+}
+#perc-dropdown-page-workflow .perc-dropdown.sf-menu a:focus, #perc-dropdown-page-workflow .perc-dropdown.sf-menu a:hover{
+    /*background-color: #0086a8;*/
+}
+#perc-dropdown-page-workflow:hover li.current > a
+{
+    background-image: url("../images/images/splitButtonArrowOver.gif") !important;
+    z-index: 9999;
+}
+#perc-dropdown-page-workflow .sf-menu li.current:hover > a
+{
+    background-image: url("../images/images/splitButtonArrowOn.gif") !important;
+    z-index: 9999;
+}
+#perc-dropdown-page-workflow .perc-dropdown.sf-menu li li
+{
+    background: #FFFFFF none repeat scroll 0 0;
+}
+#perc-dropdown-page-workflow .sf-menu ul
+{
+    
+}
+#perc-dropdown-page-workflow, #perc-dropdown-page-workflow > a, #perc-dropdown-page-workflow > div
+{
+    height: 29px;
+}
+#perc-dropdown-page-workflow .perc-workflow-split-button-Submit
+{
+    width: 82px;
+    background-image: url("/cm/images/images/splitButtonWfsubmit.gif");
+}
+#perc-dropdown-page-workflow:hover .perc-workflow-split-button-Submit
+{
+    background-image: url("/cm/images/images/splitButtonWfsubmitOver.gif");
+}
+#perc-dropdown-page-workflow .perc-workflow-split-button-Approve
+{
+    width: 95px;
+    background-image: url("/cm/images/images/splitButtonWfapprove.gif");
+}
+#perc-dropdown-page-workflow:hover .perc-workflow-split-button-Approve
+{
+    background-image: url("/cm/images/images/splitButtonWfapproveOver.gif");    
+}
+#perc-dropdown-page-workflow .perc-workflow-split-button-Reject
+{
+    width: 82px;
+    background-image: url("/cm/images/images/splitButtonWfreject.gif");
+}
+#perc-dropdown-page-workflow:hover .perc-workflow-split-button-Reject
+{
+    background-image: url("/cm/images/images/splitButtonWfrejectOver.gif");
+}
+
+#perc-dropdown-page-workflow .perc-workflow-split-button-Resubmit
+{
+    width: 82px;
+    background-image: url("/cm/images/images/splitButtonWfresubmit.gif");
+}
+#perc-dropdown-page-workflow:hover .perc-workflow-split-button-Resubmit
+{
+    background-image: url("/cm/images/images/splitButtonWfresubmitOver.gif");
+}
+
+#perc-dropdown-page-workflow .perc-workflow-split-button-Archive
+{
+    width: 82px;
+    background-image: url("/cm/images/images/splitButtonWfarchive.gif");
+}
+#perc-dropdown-page-workflow:hover .perc-workflow-split-button-Archive
+{
+    background-image: url("/cm/images/images/splitButtonWfarchiveOver.gif");
+}
+
+#perc-dropdown-page-workflow > a, #perc-dropdown-page-workflow li.current > a
+{
+    margin: 0 !important;
+}
+#perc-dropdown-page-workflow
+{
+    margin-right: 8px;
+    margin-top: 12px;
+}
+#perc-dropdown-page-workflow > a
+{
+    overflow: auto;
+    vertical-align:top; /* Safari Fix */    
+}

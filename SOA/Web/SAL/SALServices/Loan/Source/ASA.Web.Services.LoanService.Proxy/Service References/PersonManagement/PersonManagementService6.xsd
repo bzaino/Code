@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://asa.org/contracts/demogTypes" elementFormDefault="qualified" targetNamespace="http://asa.org/contracts/demogTypes" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd4" namespace="http://asa.org/contracts/commonTypes" />
+  <xs:complexType name="AddressType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseAddressType">
+        <xs:sequence>
+          <xs:element name="AddressTypeID" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="AddressLine1" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="USState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="USPostalCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="USPostalCodeSuffix" nillable="true" type="xs:string" />
+          <xs:element name="CountryID" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CommonDemogInfo" nillable="true" type="tns:CommonInfoType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AddressType" nillable="true" type="tns:AddressType" />
+  <xs:complexType name="BaseAddressType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddressCareOfAKAName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ForeignPostalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ForeignStateOrProvince" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://asa.org/contracts/commonTypes" minOccurs="0" name="IsDeliverable" type="q1:YNFlagType" />
+      <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MSA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValidationTypeId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseAddressType" nillable="true" type="tns:BaseAddressType" />
+  <xs:complexType name="AddressHistoryType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseAddressType">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AddressTypeID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AddressLine1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="USState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="USPostalCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="USPostalCodeSuffix" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountryName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CommonDemogInfo" nillable="true" type="tns:CommonHistoryInfoType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AddressHistoryType" nillable="true" type="tns:AddressHistoryType" />
+  <xs:complexType name="CommonHistoryInfoType">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://asa.org/contracts/commonTypes" minOccurs="0" name="IsAuthorizedForUse" nillable="true" type="q2:YNFlagType" />
+      <xs:element minOccurs="0" name="AuthorizedForUseChangeDate" nillable="true" type="xs:dateTime" />
+      <xs:element xmlns:q3="http://asa.org/contracts/commonTypes" minOccurs="0" name="IsPreferred" nillable="true" type="q3:YNFlagType" />
+      <xs:element minOccurs="0" name="EffectiveDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ExternalSourceId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InputSourceId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataEntryBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataSourceId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ExternalDataSourceId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CommonHistoryInfoType" nillable="true" type="tns:CommonHistoryInfoType" />
+  <xs:complexType name="CommonInfoType">
+    <xs:sequence>
+      <xs:element xmlns:q4="http://asa.org/contracts/commonTypes" minOccurs="0" name="IsAuthorizedForUse" type="q4:YNFlagType" />
+      <xs:element minOccurs="0" name="AuthorizedForUseChangeDate" nillable="true" type="xs:dateTime" />
+      <xs:element xmlns:q5="http://asa.org/contracts/commonTypes" minOccurs="0" name="IsPreferred" type="q5:YNFlagType" />
+      <xs:element name="EffectiveDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ExternalSourceId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InputSourceId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataEntryBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataSourceId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ExternalDataSourceId" nillable="true" type="xs:string" />
+      <xs:element xmlns:q6="http://asa.org/contracts/commonTypes" minOccurs="0" name="IsMasterUpdated" nillable="true" type="q6:YNFlagType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CommonInfoType" nillable="true" type="tns:CommonInfoType" />
+  <xs:complexType name="EmailType">
+    <xs:sequence>
+      <xs:element name="EmailTypeID" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="EmailAddress" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q7="http://asa.org/contracts/commonTypes" minOccurs="0" name="IsDeliverable" type="q7:YNFlagType" />
+      <xs:element name="CommonDemogInfo" nillable="true" type="tns:CommonInfoType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmailType" nillable="true" type="tns:EmailType" />
+  <xs:complexType name="FaxType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseFaxType">
+        <xs:sequence>
+          <xs:element name="FaxTypeID" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="CountryID" nillable="true" type="xs:string" />
+          <xs:element xmlns:q8="http://asa.org/contracts/commonTypes" minOccurs="0" name="IsReachable" type="q8:YNFlagType" />
+          <xs:element name="CommonDemogInfo" nillable="true" type="tns:CommonInfoType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="NorthAmericanAreaCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NorthAmericanNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FaxType" nillable="true" type="tns:FaxType" />
+  <xs:complexType name="BaseFaxType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ForeignFaxNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseFaxType" nillable="true" type="tns:BaseFaxType" />
+  <xs:complexType name="FaxHistoryType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseFaxType">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="FaxTypeID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountryName" nillable="true" type="xs:string" />
+          <xs:element xmlns:q9="http://asa.org/contracts/commonTypes" minOccurs="0" name="IsReachable" nillable="true" type="q9:YNFlagType" />
+          <xs:element minOccurs="0" name="CommonDemogInfo" nillable="true" type="tns:CommonHistoryInfoType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="NorthAmericanAreaCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NorthAmericanNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FaxHistoryType" nillable="true" type="tns:FaxHistoryType" />
+  <xs:complexType name="PhoneType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BasePhoneType">
+        <xs:sequence>
+          <xs:element name="PhoneTypeID" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="CountryID" nillable="true" type="xs:string" />
+          <xs:element xmlns:q10="http://asa.org/contracts/commonTypes" minOccurs="0" name="IsCellPhone" type="q10:YNFlagType" />
+          <xs:element xmlns:q11="http://asa.org/contracts/commonTypes" minOccurs="0" name="IsReachable" type="q11:YNFlagType" />
+          <xs:element name="CommonDemogInfo" nillable="true" type="tns:CommonInfoType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="NorthAmericanAreaCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NorthAmericanNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PhoneType" nillable="true" type="tns:PhoneType" />
+  <xs:complexType name="BasePhoneType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Extension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ForeignPhoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BestTimeToCall" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OtherOwner" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CellPhoneCarrier" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BasePhoneType" nillable="true" type="tns:BasePhoneType" />
+  <xs:complexType name="PhoneHistoryType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BasePhoneType">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PhoneTypeID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountryName" nillable="true" type="xs:string" />
+          <xs:element xmlns:q12="http://asa.org/contracts/commonTypes" minOccurs="0" name="IsCellPhone" nillable="true" type="q12:YNFlagType" />
+          <xs:element xmlns:q13="http://asa.org/contracts/commonTypes" minOccurs="0" name="IsReachable" nillable="true" type="q13:YNFlagType" />
+          <xs:element minOccurs="0" name="CommonDemogInfo" nillable="true" type="tns:CommonHistoryInfoType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="NorthAmericanAreaCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NorthAmericanNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PhoneHistoryType" nillable="true" type="tns:PhoneHistoryType" />
+  <xs:complexType name="WebType">
+    <xs:sequence>
+      <xs:element name="WebTypeID" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="WebAddress" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q14="http://asa.org/contracts/commonTypes" minOccurs="0" name="IsAccessible" type="q14:YNFlagType" />
+      <xs:element name="CommonDemogInfo" nillable="true" type="tns:CommonInfoType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WebType" nillable="true" type="tns:WebType" />
+  <xs:complexType name="EmailHistoryType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmailTypeID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+      <xs:element xmlns:q15="http://asa.org/contracts/commonTypes" minOccurs="0" name="IsDeliverable" nillable="true" type="q15:YNFlagType" />
+      <xs:element minOccurs="0" name="CommonDemogInfo" nillable="true" type="tns:CommonHistoryInfoType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmailHistoryType" nillable="true" type="tns:EmailHistoryType" />
+  <xs:complexType name="WebHistoryType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="WebTypeID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WebAddress" nillable="true" type="xs:string" />
+      <xs:element xmlns:q16="http://asa.org/contracts/commonTypes" minOccurs="0" name="IsAccessible" nillable="true" type="q16:YNFlagType" />
+      <xs:element minOccurs="0" name="CommonDemogInfo" nillable="true" type="tns:CommonHistoryInfoType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WebHistoryType" nillable="true" type="tns:WebHistoryType" />
+</xs:schema>

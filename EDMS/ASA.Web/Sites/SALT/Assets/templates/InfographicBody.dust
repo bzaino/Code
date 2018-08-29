@@ -1,0 +1,67 @@
+{>"Modules/EnglishOrSpanishBody"/}
+
+{<dynamicCTA}
+   {>"DynamicCTAButton" /}
+{/dynamicCTA}
+
+<script>
+    require(['https://platform.twitter.com/widgets.js']);
+
+    require(['jquery', 'jquery.rwdImageMaps'], function () {
+        $('img[usemap]').rwdImageMaps();
+        var imgWidth = $('.image-body img').attr('width');
+        var naturalWidth = $('.image-body img').prop('naturalWidth');
+        /*If a width wasn't specified in CM1 use the natural size of the image*/
+        if (!imgWidth || naturalWidth > imgWidth) {
+            imgWidth = naturalWidth;
+        }
+
+        var needsExpandable = imgWidth > 620 && imgWidth > $('.image-body').width();
+        /*imgWidth is the real image width attribute coming from CM1*/
+        if (needsExpandable) {
+            $('.image-body img').addClass('pointer').wrap('<div class="js-expandable relative-high-z"></div>');
+            /*if the true image width is greater 620 and greater than the left column width,
+            wrap it with a higher z-index div and add the icon.*/
+            $('.js-expandable').prepend('<i class="fa icon-zoom-in hide-for-small"></i>');
+        }
+         /*expand/contract infographic
+           image-body.width is the width of the left column which can vary in size but never get larger than 620*/
+        $('.icon-zoom-in, .image-body img').click(function (e) {
+            if (needsExpandable) {
+            /*if the 'true' image width is wider than the left column and wider than 620,
+                the icon should toggle between expand and contract on clicks*/
+                $('.icon-zoom-in').toggleClass('icon-zoom-out');
+            }
+            if ($('.js-expandable').css('width') !== ($('.image-body').width() + 'px')) {
+                /*contract the image size, if js-expandable isn't the same width as the left column - make it the width of the left column*/
+                $('.js-expandable').css('width', $('.image-body').width() + 'px');
+                /* We hid the sidebar when expanding the image, show it when contracting the infrographic */
+                $('#js-sidebar').show();
+            } else {
+                /* Hide the sidebar to avoid overlap of elements.  The infographic image has a higher z-index, but you can see the edge of some sidebar elements without this */
+                $('#js-sidebar').hide();
+
+                /*Some of the images come with a width attribute set that needs to be removed when expanding. (this attribute comes from cm1)*/
+                $('.image-body img').removeAttr('width');
+                /*expand the img size, rowwidth is the displayed row width of the page - at most 960px,
+                  but can vary in size dependent on browser width*/
+                var rowWidth = $('.js-row-expandable').width() - 15; /*for scrollbar*/
+                /*expand to full image width but no greater than full row width.
+                  This takes care of small browser windows where the icon would otherwise be off the right side of the page.*/
+                $('.js-expandable').css('width', (imgWidth < rowWidth ? imgWidth : rowWidth) + 'px');
+            }
+            e.preventDefault();
+        });
+
+        if (needsExpandable) {
+            $(window).resize(function () {
+                $('.icon-zoom-in').removeClass('icon-zoom-out');
+                $('.js-expandable').css('width', $('.image-body').width());
+                /*The sidebar may be hidden from having expanded the infographic when this resize event fires, need to make sure its showing now that we are contracting the image */
+                $('#js-sidebar').show();
+            });
+        }
+    });
+</script>
+
+{>"TodoCompletor" /}

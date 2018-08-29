@@ -1,0 +1,41 @@
+{>"page_parent" /}
+{<dynamicScripts}
+	<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()
+        { (i[r].q=i[r].q||[]).push(arguments)}
+        ,i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-58381558-4', 'auto');
+        ga('send', 'pageview');
+        {?SiteMember.ActiveDirectoryKey}
+            require(['modules/welcomeOverlay']);
+        {/SiteMember.ActiveDirectoryKey}
+    </script>
+{/dynamicScripts}
+
+{<dynamicBody}
+    {?individualIDCookie}
+        {?SiteMember.DashboardEnabled}
+            {?isOnboarding}
+                {>"Modules/Onboarding" /}
+            {:else}
+                {> "partial_dashboard" /}
+            {/isOnboarding}
+        {:else}
+            {> "partial_homepage_body" /}
+        {/SiteMember.DashboardEnabled}
+    {/individualIDCookie}
+{/dynamicBody}
+
+{<dynamicFooter}
+    {?SiteMember.ActiveDirectoryKey}
+        {>"Overlays/Welcome"/}
+    {/SiteMember.ActiveDirectoryKey}
+{/dynamicFooter}
+
+{<singlePageApp}
+    <script>
+        require(['modules/HomePage/Application']);
+    </script>
+{/singlePageApp}

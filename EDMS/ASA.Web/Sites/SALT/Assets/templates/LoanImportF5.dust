@@ -1,0 +1,52 @@
+{#content.mainContent[0].records[0].attributes}
+    <div id="js-uploadInfo" class="reveal-modal medium rounded upload-info" data-reveal>
+         <a href class="close-reveal-modal cancel-circle overlayClose"></a>
+        <header class="row collapse">
+            <div class="small-12 columns">
+                {answer-1-button-text}
+            </div>
+        </header>
+        <div class="row collapse">
+            <div class="step-header one"> 
+                {answer-2-button-text}
+            </div>
+        </div>
+        <div class="row collapse">
+            <div class="small-12 medium-4 columns has-image"> 
+                {body}
+            </div>
+            <div class="small-12 medium-8 columns loan-instructions">
+                {answer-2-page-name}
+            </div>
+        </div>
+        <div class="row collapse">
+            <div class="step-header two"> 
+                {answer-3-button-text}
+            </div>
+        </div>
+        <div class="row collapse">
+             <div class="small-12 medium-4 columns has-image">
+                {headline}
+            </div>
+            <div class="small-12 medium-8 columns loan-instructions">
+                {answer-3-page-name}
+            </div>
+         </div>
+        <div class="row collapse">
+            <div class="step-header three">
+                {answer-4-button-text}
+            </div>
+        </div>
+        <div class="row collapse">
+            <div class="small-12 medium-4 columns has-image">
+                {rich-text-image}
+            </div>
+            <div class="small-12 medium-8 columns loan-instructions">
+                {answer-4-page-name}
+            </div>
+        </div>
+        <div class="row">
+            <a class="button base-btn main-btn right js-void-href" href="" onClick="dcsMultiTrack('DCS.dcsuri','KnowWhatYouOwe#Import', 'WT.si_n', 'mydataimport', 'WT.si_x', '1');" data-reveal-id="js-loanUpload">{answer-5-page-name}</a>
+        </div>
+    </div>
+{/content.mainContent[0].records[0].attributes}

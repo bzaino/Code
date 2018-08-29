@@ -1,0 +1,7 @@
+<div id="redirectOverlay" class="redirectOverlayDiv reveal-modal large welcomeDiv" data-reveal>
+    <div class="small-12 centered">
+        <h3>Session timed out redirecting to HomePage...
+        {>"Modules/SpinnerCSS" /}
+        </h3>
+    </div>
+</div>

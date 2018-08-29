@@ -1,0 +1,23 @@
+{#mainContent}
+    {#records}
+		<article class="{name} small-12 columns panel-{attributes.ContentTypes}">
+		    <div class="row collapse">
+		        <header class="small-12 columns">
+		            {@if cond="'{attributes.external-url|trim}'.length"} 
+		                <a href="{attributes.external-url}" title="{attributes.resource_link_title}" class="js-wt-todoheader todo-header-link js-todo-header">{attributes.headline}</a>
+		                {attributes.page_summary}
+		            {:else}
+		                <a href="/content/media{detailsAction.recordState}" title="{attributes.resource_link_title}" class="js-wt-todoheader todo-header-link js-todo-header">{attributes.headline}</a>
+		                {attributes.page_summary}
+		            {/if}
+		        </header>
+				<div class="author-info left small-12 medium-8">
+					by {attributes.author-name} - <em class="blog-date">{@postedDateFormatter version=attributes.Item_Version lng="" date=attributes.sys_contentpostdate /}</em>
+				</div>
+		        <ul class="subheader right hide-for-small">
+		        	{>"Modules/ConsumptionTime" /}
+		        </ul>
+		    </div>
+		</article>
+    {/records}
+{/mainContent}

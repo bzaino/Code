@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="mod/forum/db" VERSION="20071010" COMMENT="XMLDB file for Moodle mod/forum"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="asa_sso" COMMENT="ASA Ticket Assertion Table">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" ENUM="false" NEXT="token"/>
+        <FIELD NAME="token" TYPE="char" LENGTH="128" NOTNULL="true" SEQUENCE="false" PREVIOUS="id" NEXT="firstname"/>
+		<FIELD NAME="firstname" TYPE="char" LENGTH="45" NOTNULL="false" SEQUENCE="false" PREVIOUS="token" NEXT="lastname"/>
+		<FIELD NAME="lastname" TYPE="char" LENGTH="45" NOTNULL="false" SEQUENCE="false" PREVIOUS="firstname" NEXT="schoolname"/>
+		<FIELD NAME="schoolname" TYPE="char" LENGTH="128" NOTNULL="false" SEQUENCE="false" PREVIOUS="lastname" NEXT="schooluri"/>
+		<FIELD NAME="schooluri" TYPE="char" LENGTH="256" NOTNULL="false" SEQUENCE="false" PREVIOUS="schoolname" NEXT="schoollogo"/>
+		<FIELD NAME="schoollogo" TYPE="char" LENGTH="45" NOTNULL="false" SEQUENCE="false" PREVIOUS="schooluri" NEXT="username"/>
+	 	<FIELD NAME="username" TYPE="char" LENGTH="45" NOTNULL="true" SEQUENCE="false" PREVIOUS="schoollogo" NEXT="issued"/>
+		<FIELD NAME="issued" TYPE="datetime" NOTNULL="false" SEQUENCE="false" PREVIOUS="username" NEXT="courses"/>
+		<FIELD NAME="courses" TYPE="char" LENGTH="45" NOTNULL="false" SEQUENCE="false" PREVIOUS="issued" NEXT="branch"/>
+		<FIELD NAME="branch" TYPE="char" LENGTH="45" NOTNULL="false" SEQUENCE="false" PREVIOUS="courses" NEXT="oecode"/>
+		<FIELD NAME="oecode" TYPE="char" LENGTH="45" NOTNULL="false" SEQUENCE="false" PREVIOUS="branch" />		
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="token" UNIQUE="true" FIELDS="token"/>
+      </INDEXES>
+    </TABLE>
+  </TABLES>
+</XMLDB>

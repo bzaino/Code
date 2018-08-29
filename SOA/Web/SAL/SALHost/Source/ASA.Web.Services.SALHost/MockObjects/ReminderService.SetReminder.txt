@@ -1,0 +1,9 @@
+﻿{
+	"ErrorList":[{
+		"BusinessMessage":"Setting Reminder was successful.",
+		"Code":"",
+		"DetailMessage":"Setting Reminder was successful.",
+		"ServiceName":"Web Reminder Service"
+	}],
+	"ResultCode":1
+}

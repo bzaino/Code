@@ -1,0 +1,382 @@
+timer                                            ms      calls
+--------------------------------------------------------------
+LOCK_FINDER_BOTTOMUP                              0          1
+RELAX_GETLOCK                                     0          1
+RELAX_LOCKS                                       0          1
+DUMMY_DERIVER_CONCURRENCY                         0          1
+IFACE_TRACKER                                     0          6
+LOCK_FINDER_TOPDOWN                               0          1
+LOCK_ORDER                                        0          1
+ARRAY_VS_SINGLETON_pass1                          0          1
+ARRAY_VS_SINGLETON_pass2                          0          1
+ASSERT_SIDE_EFFECT                                0          1
+BAD_ALLOC_ARITHMETIC                              0          1
+BAD_ALLOC_STRLEN                                  0          1
+BAD_CHECK_OF_WAIT_COND                            0          1
+BAD_COMPARE                                       0          1
+BAD_FREE_pass1                                    0          1
+BAD_FREE_pass2                                    0          1
+BAD_LOCK_OBJECT_pass1                             0          1
+BAD_LOCK_OBJECT_pass2                             0          1
+BAD_SIZEOF                                        0          1
+CALL_SUPER                                        0          1
+CHAR_IO                                           0          1
+CHECKED_RETURN_pass1                              0          1
+CHECKED_RETURN_pass2                              0          1
+COM.BAD_FREE_pass1                                0          1
+COM.BAD_FREE_pass2                                0          1
+COM.BSTR.CONV                                     0          1
+CONSTANT_EXPRESSION_RESULT                        0          1
+COPY_PASTE_ERROR                                  0          1
+CTOR_DTOR_LEAK_pass1                              0          1
+CTOR_DTOR_LEAK_pass2                              0          1
+DEADCODE_pass1                                    0          1
+DEADCODE_pass2                                    0          1
+DELETE_ARRAY_pass1                                0          1
+DELETE_ARRAY_pass2                                0          1
+DELETE_VOID                                       0          1
+USE_AFTER_FREE_pass1                              0          1
+USE_AFTER_FREE_pass2                              0          1
+EVALUATION_ORDER                                  0          1
+EXPLICIT_THIS_EXPECTED_pass1                      0          1
+EXPLICIT_THIS_EXPECTED_pass2                      0          1
+FORWARD_NULL_pass1                                0          1
+FORWARD_NULL_pass2                                0          1
+GUARDED_BY_VIOLATION_pass1                        0          1
+GUARDED_BY_VIOLATION_pass2                        0          1
+IDENTICAL_BRANCHES                                0          1
+INFINITE_LOOP                                     0          1
+INVALIDATE_ITERATOR                               0          1
+  INVALIDATE_ITERATOR_pass1                       0          2
+  INVALIDATE_ITERATOR_pass2                       0          2
+LOCK_EVASION                                      0          1
+LOCK_INVERSION_pass1                              0          1
+LOCK_INVERSION_pass2                              0          1
+MISSING_BREAK                                     0          1
+MISSING_RETURN_pass1                              0          1
+MISSING_RETURN_pass2                              0          1
+NEGATIVE_RETURNS_pass1                            0          1
+NEGATIVE_RETURNS_pass2                            0          1
+NESTING_INDENT_MISMATCH                           0          1
+NO_EFFECT                                         0          1
+NON_STATIC_GUARDING_STATIC                        0          1
+NULL_RETURNS_pass1                                0          1
+NULL_RETURNS_pass2                                0          1
+OVERFLOW_BEFORE_WIDEN_pass1                       0          1
+OVERFLOW_BEFORE_WIDEN_pass2                       0          1
+OVERRUN_pass1                                     0          1
+OVERRUN_pass2                                     0          1
+OVERRUN_SYMBOLIC_pass1                            0          1
+OVERRUN_SYMBOLIC_pass2                            0          1
+PASS_BY_VALUE                                     0          1
+READLINK_pass1                                    0          1
+READLINK_pass2                                    0          1
+RESOURCE_LEAK_pass1                               0          1
+RESOURCE_LEAK_pass2                               0          1
+RETURN_LOCAL_pass1                                0          1
+RETURN_LOCAL_pass2                                0          1
+REVERSE_NEGATIVE_pass1                            0          1
+REVERSE_NEGATIVE_pass2                            0          1
+REVERSE_INULL                                     0          1
+SIGN_EXTENSION                                    0          1
+SIZEOF_MISMATCH                                   0          1
+STRAY_SEMICOLON                                   0          1
+STREAM_FORMAT_STATE_pass1                         0          1
+STREAM_FORMAT_STATE_pass2                         0          1
+SWAPPED_ARGUMENTS                                 0          1
+UNCAUGHT_EXCEPT_INTERNAL                          0          1
+UNEXPECTED_CONTROL_FLOW                           0          1
+UNINIT_pass1                                      0          1
+UNINIT_pass2                                      0          1
+UNINIT_CTOR_pass1                                 0          1
+UNINIT_CTOR_pass2                                 0          1
+UNINTENDED_GLOBAL                                 0          1
+UNINTENDED_INTEGER_DIVISION                       0          1
+UNREACHABLE                                       0          1
+UNUSED_VALUE                                      0          1
+VARARGS_pass1                                     0          1
+VARARGS_pass2                                     0          1
+VOLATILE_ATOMICITY_pass1                          0          1
+VOLATILE_ATOMICITY_pass2                          0          1
+WRAPPER_ESCAPE_pass1                              0          1
+WRAPPER_ESCAPE_pass2                              0          1
+FUNCTION_METRICS                                  0          1
+RELAX_ACCESS_DBUFFER                              0          1
+RELAX_ALLOC                                       0          1
+RELAX_CLOSE_RESOURCE                              0          1
+RELAX_BUFFER_SIZE                                 0          1
+RELAX_CHECKED_RETURN                              0          1
+RELAX_DEREF_ARGS                                  0          1
+RELAX_FREED_ARGS                                  0          1
+RELAX_OBJECT_FREED                                0          1
+RELAX_OBJECT_USED                                 0          1
+RELAX_INDEX_GENERIC                               0          1
+RELAX_INDEX_STATIC                                0          1
+RELAX_MAYWRITE_NONPTR_FIELDS                      0          1
+RELAX_NEGATIVE_RETURN                             0          1
+RELAX_NEGATIVE_SINK                               0          1
+RELAX_NULL_RETURN                                 0          1
+RELAX_NEW_ARRAY                                   0          1
+RELAX_DELETE_ARRAY                                0          1
+RELAX_ITERATOR_RETURNS                            0          1
+RELAX_ITERATOR_SINKS                              0          1
+RELAX_JAVASCRIPT_OPTIONAL_CONSTRUCTOR             0          1
+RELAX_JAVASCRIPT_THIS_PARAMETER                   0          1
+RELAX_NOTHING                                     0          1
+RELAX_PARAM_NAMES                                 0          1
+RELAX_BENIGN_CLOSURE                              0          1
+DUMMY_DERIVER_STACK_USE                           0          1
+RELAX_MAYWRITE                                    0          1
+RELAX_MAYWRITE_NONPTR_FIELDS_UNINIT               0          1
+RELAX_MAYWRITE_ALL_FIELDS                         0          1
+RELAX_READ                                        0          1
+RELAX_MAYREAD_NONPTR_FIELDS                       0          1
+RELAX_UNINIT_ALLOC                                0          1
+DUMMY_DERIVER_UNINIT                              0          1
+DERIVE_PTR_ARITH                                  0          1
+DUMMY_DERIVER_PTR_ARITH                           0          1
+RELAX_UNCAUGHT_EXCEPT                             0          1
+DUMMY_DERIVER_EXCEPTIONS                          0          1
+CHECKED_RETURN_STAT                               0          1
+CALL_SUPER_STAT                                   0          1
+ADDR_ARG_STAT                                     0          1
+BAD_LOCK_OBJECT_LOCK_SOURCE_STAT                  0          1
+NON_STATIC_GUARDING_STATIC_STAT                   0          1
+VOLATILE_ATOMICITY_STAT                           0          1
+PW_INFRASTRUCTURE                                 0          1
+BAD_OVERRIDE                                      0          1
+UNCAUGHT_EXCEPT                                   0          1
+PW.*.DEFAULT                                      0          1
+RW.*                                              0          1
+PARSE_ERROR                                       0          1
+sequential initialization                       921          1
+  Computing links for translation units         203          1
+  xfer symbol cache                              31          1
+  Computing virtual overrides                    47          1
+  Computing callgraph                           234          1
+  Topologically sorting functions                78          1
+  (left over)                                   328
+Computing node costs                            156          1
+Analysis run                                  10249          1
+  BAD_LOCK_OBJECT_LOCK_SOURCE_STAT                0          2
+  CALL_SUPER_STAT                                 0          2
+  CHECKED_RETURN_STAT                             0          2
+  NON_STATIC_GUARDING_STATIC_STAT                 0          2
+  VOLATILE_ATOMICITY_STAT                         0          2
+  loadFromEmit                                 4825      15804
+    VOLATILE_ATOMICITY_STAT                       0       5255
+    RELAX_NULL_RETURN                             0       5255
+    RELAX_ALLOC                                   0       5255
+    LOCK_FINDER_TOPDOWN                           0         41
+    OVERFLOW_BEFORE_WIDEN_pass1                  15       5255
+    BAD_LOCK_OBJECT_pass1                        16       5255
+    CALL_SUPER                                    0       5255
+    LOCK_EVASION                                  0       5255
+    NON_STATIC_GUARDING_STATIC                   63       5255
+    NULL_RETURNS_pass1                           15       5255
+    GUARDED_BY_VIOLATION_pass1                    0         54
+    (left over)                                4716
+  IFACE_TRACKER                                   0          4
+  LOCK_FINDER_BOTTOMUP                            0          2
+  RELAX_ALLOC                                     0          2
+  RELAX_BENIGN_CLOSURE                            0          2
+  RELAX_CHECKED_RETURN                            0          2
+  RELAX_CLOSE_RESOURCE                            0          2
+  RELAX_DEREF_ARGS                                0          2
+  RELAX_GETLOCK                                   0          2
+  RELAX_LOCKS                                     0          2
+  RELAX_NOTHING                                   0          2
+  RELAX_NULL_RETURN                               0          2
+  RELAX_PARAM_NAMES                               0          2
+  LOCK_FINDER_TOPDOWN                             0         41
+  BAD_LOCK_OBJECT_pass1                           0          1
+  BAD_LOCK_OBJECT_pass2                           0          1
+  CALL_SUPER                                      0          2
+  CONSTANT_EXPRESSION_RESULT                      0          2
+  COPY_PASTE_ERROR                                0          2
+  DEADCODE_pass1                                  0          1
+  DEADCODE_pass2                                  0          1
+  FORWARD_NULL_pass1                              0          1
+  FORWARD_NULL_pass2                              0          1
+  FUNCTION_METRICS                              358       5257
+  GUARDED_BY_VIOLATION_pass1                      0          1
+  GUARDED_BY_VIOLATION_pass2                      0          1
+  IDENTICAL_BRANCHES                              0          2
+  LOCK_EVASION                                    0          2
+  NESTING_INDENT_MISMATCH                         0          2
+  NON_STATIC_GUARDING_STATIC                      0          2
+  NULL_RETURNS_pass1                              0          1
+  NULL_RETURNS_pass2                              0          1
+  OVERFLOW_BEFORE_WIDEN_pass1                     0          1
+  OVERFLOW_BEFORE_WIDEN_pass2                     0          1
+  RESOURCE_LEAK_pass1                             0          1
+  RESOURCE_LEAK_pass2                             0          1
+  REVERSE_INULL                                   0          2
+  STRAY_SEMICOLON                                 0          2
+  SWAPPED_ARGUMENTS                               0          2
+  UNEXPECTED_CONTROL_FLOW                         0          2
+  UNINTENDED_INTEGER_DIVISION                     0          2
+  UNREACHABLE                                     0          2
+  VOLATILE_ATOMICITY_pass1                        0          1
+  VOLATILE_ATOMICITY_pass2                        0          1
+
+activity                                         ms      calls
+--------------------------------------------------------------
+LOCK_FINDER_BOTTOMUP                              0          3
+RELAX_GETLOCK                                     0          3
+RELAX_LOCKS                                       0          3
+DUMMY_DERIVER_CONCURRENCY                         0          1
+IFACE_TRACKER                                     0         10
+LOCK_FINDER_TOPDOWN                               0         83
+LOCK_ORDER                                        0          1
+ARRAY_VS_SINGLETON_pass2                          0          1
+ARRAY_VS_SINGLETON_pass1                          0          1
+ASSERT_SIDE_EFFECT                                0          1
+BAD_ALLOC_ARITHMETIC                              0          1
+BAD_ALLOC_STRLEN                                  0          1
+BAD_CHECK_OF_WAIT_COND                            0          1
+BAD_COMPARE                                       0          1
+BAD_FREE_pass2                                    0          1
+BAD_FREE_pass1                                    0          1
+BAD_LOCK_OBJECT_pass2                             0          2
+BAD_LOCK_OBJECT_pass1                            16       5257
+BAD_SIZEOF                                        0          1
+CALL_SUPER                                        0       5258
+CHAR_IO                                           0          1
+CHECKED_RETURN_pass2                              0          1
+CHECKED_RETURN_pass1                              0          1
+COM.BAD_FREE_pass2                                0          1
+COM.BAD_FREE_pass1                                0          1
+COM.BSTR.CONV                                     0          1
+CONSTANT_EXPRESSION_RESULT                        0          3
+COPY_PASTE_ERROR                                  0          3
+CTOR_DTOR_LEAK_pass2                              0          1
+CTOR_DTOR_LEAK_pass1                              0          1
+DEADCODE_pass1                                    0          2
+DEADCODE_pass2                                    0          2
+DELETE_ARRAY_pass2                                0          1
+DELETE_ARRAY_pass1                                0          1
+DELETE_VOID                                       0          1
+USE_AFTER_FREE_pass2                              0          1
+USE_AFTER_FREE_pass1                              0          1
+EVALUATION_ORDER                                  0          1
+EXPLICIT_THIS_EXPECTED_pass2                      0          1
+EXPLICIT_THIS_EXPECTED_pass1                      0          1
+FORWARD_NULL_pass2                                0          2
+FORWARD_NULL_pass1                                0          2
+GUARDED_BY_VIOLATION_pass2                        0          2
+GUARDED_BY_VIOLATION_pass1                        0         56
+IDENTICAL_BRANCHES                                0          3
+INFINITE_LOOP                                     0          1
+INVALIDATE_ITERATOR                               0          1
+INVALIDATE_ITERATOR_pass2                         0          2
+INVALIDATE_ITERATOR_pass1                         0          2
+LOCK_EVASION                                      0       5258
+LOCK_INVERSION_pass2                              0          1
+LOCK_INVERSION_pass1                              0          1
+MISSING_BREAK                                     0          1
+MISSING_RETURN_pass2                              0          1
+MISSING_RETURN_pass1                              0          1
+NEGATIVE_RETURNS_pass2                            0          1
+NEGATIVE_RETURNS_pass1                            0          1
+NESTING_INDENT_MISMATCH                           0          3
+NO_EFFECT                                         0          1
+NON_STATIC_GUARDING_STATIC                       63       5258
+NULL_RETURNS_pass2                                0          2
+NULL_RETURNS_pass1                               15       5257
+OVERFLOW_BEFORE_WIDEN_pass2                       0          2
+OVERFLOW_BEFORE_WIDEN_pass1                      15       5257
+OVERRUN_pass2                                     0          1
+OVERRUN_pass1                                     0          1
+OVERRUN_SYMBOLIC_pass2                            0          1
+OVERRUN_SYMBOLIC_pass1                            0          1
+PASS_BY_VALUE                                     0          1
+READLINK_pass2                                    0          1
+READLINK_pass1                                    0          1
+RESOURCE_LEAK_pass2                               0          2
+RESOURCE_LEAK_pass1                               0          2
+RETURN_LOCAL_pass2                                0          1
+RETURN_LOCAL_pass1                                0          1
+REVERSE_NEGATIVE_pass2                            0          1
+REVERSE_NEGATIVE_pass1                            0          1
+REVERSE_INULL                                     0          3
+SIGN_EXTENSION                                    0          1
+SIZEOF_MISMATCH                                   0          1
+STRAY_SEMICOLON                                   0          3
+STREAM_FORMAT_STATE_pass2                         0          1
+STREAM_FORMAT_STATE_pass1                         0          1
+SWAPPED_ARGUMENTS                                 0          3
+UNCAUGHT_EXCEPT_INTERNAL                          0          1
+UNEXPECTED_CONTROL_FLOW                           0          3
+UNINIT_pass2                                      0          1
+UNINIT_pass1                                      0          1
+UNINIT_CTOR_pass2                                 0          1
+UNINIT_CTOR_pass1                                 0          1
+UNINTENDED_GLOBAL                                 0          1
+UNINTENDED_INTEGER_DIVISION                       0          3
+UNREACHABLE                                       0          3
+UNUSED_VALUE                                      0          1
+VARARGS_pass2                                     0          1
+VARARGS_pass1                                     0          1
+VOLATILE_ATOMICITY_pass2                          0          2
+VOLATILE_ATOMICITY_pass1                          0          2
+WRAPPER_ESCAPE_pass2                              0          1
+WRAPPER_ESCAPE_pass1                              0          1
+FUNCTION_METRICS                                358       5258
+RELAX_ACCESS_DBUFFER                              0          1
+RELAX_ALLOC                                       0       5258
+RELAX_CLOSE_RESOURCE                              0          3
+RELAX_BUFFER_SIZE                                 0          1
+RELAX_CHECKED_RETURN                              0          3
+RELAX_DEREF_ARGS                                  0          3
+RELAX_FREED_ARGS                                  0          1
+RELAX_OBJECT_FREED                                0          1
+RELAX_OBJECT_USED                                 0          1
+RELAX_INDEX_GENERIC                               0          1
+RELAX_INDEX_STATIC                                0          1
+RELAX_MAYWRITE_NONPTR_FIELDS                      0          1
+RELAX_NEGATIVE_RETURN                             0          1
+RELAX_NEGATIVE_SINK                               0          1
+RELAX_NULL_RETURN                                 0       5258
+RELAX_NEW_ARRAY                                   0          1
+RELAX_DELETE_ARRAY                                0          1
+RELAX_ITERATOR_RETURNS                            0          1
+RELAX_ITERATOR_SINKS                              0          1
+RELAX_JAVASCRIPT_OPTIONAL_CONSTRUCTOR             0          1
+RELAX_JAVASCRIPT_THIS_PARAMETER                   0          1
+RELAX_NOTHING                                     0          3
+DERIVE_PTR_ARITH                                  0          1
+DUMMY_DERIVER_PTR_ARITH                           0          1
+RELAX_PARAM_NAMES                                 0          3
+RELAX_BENIGN_CLOSURE                              0          3
+DUMMY_DERIVER_STACK_USE                           0          1
+RELAX_MAYWRITE                                    0          1
+RELAX_MAYWRITE_NONPTR_FIELDS_UNINIT               0          1
+RELAX_MAYWRITE_ALL_FIELDS                         0          1
+RELAX_READ                                        0          1
+RELAX_MAYREAD_NONPTR_FIELDS                       0          1
+RELAX_UNINIT_ALLOC                                0          1
+DUMMY_DERIVER_UNINIT                              0          1
+RELAX_UNCAUGHT_EXCEPT                             0          1
+DUMMY_DERIVER_EXCEPTIONS                          0          1
+CHECKED_RETURN_STAT                               0          3
+CALL_SUPER_STAT                                   0          3
+ADDR_ARG_STAT                                     0          1
+BAD_LOCK_OBJECT_LOCK_SOURCE_STAT                  0          3
+NON_STATIC_GUARDING_STATIC_STAT                   0          3
+VOLATILE_ATOMICITY_STAT                           0       5258
+PW_INFRASTRUCTURE                                 0          1
+BAD_OVERRIDE                                      0          1
+UNCAUGHT_EXCEPT                                   0          1
+PW.*.DEFAULT                                      0          1
+RW.*                                              0          1
+PARSE_ERROR                                       0          1
+sequential initialization                       921          1
+Computing links for translation units           203          1
+xfer symbol cache                                31          1
+Computing virtual overrides                      47          1
+Computing callgraph                             234          1
+Topologically sorting functions                  78          1
+Computing node costs                            156          1
+Analysis run                                  10249          1
+loadFromEmit                                   4825      15804

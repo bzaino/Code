@@ -1,0 +1,365 @@
+// Foundation by ZURB
+// foundation.zurb.com
+// Licensed under MIT Open Source
+
+@import 'global';
+
+//
+// @variables
+//
+
+$include-html-nav-classes: $include-html-classes !default;
+
+// We use this to control padding.
+$side-nav-padding: rem-calc(14 0) !default;
+
+// We use these to control list styles.
+$side-nav-list-type: none !default;
+$side-nav-list-position: outside !default;
+$side-nav-list-margin: rem-calc(0 0 7 0) !default;
+
+// We use these to control link styles.
+$side-nav-link-color: $primary-color !default;
+$side-nav-link-color-active: scale-color($side-nav-link-color, $lightness: 30%) !default;
+$side-nav-link-color-hover: scale-color($side-nav-link-color, $lightness: 30%) !default;
+$side-nav-link-bg-hover: hsla(0, 0, 0, .025) !default;
+$side-nav-link-margin: 0 !default;
+$side-nav-link-padding: rem-calc(7 14) !default;
+$side-nav-font-size: rem-calc(14) !default;
+$side-nav-font-weight: $font-weight-normal !default;
+$side-nav-font-weight-active: $side-nav-font-weight !default;
+$side-nav-font-family: $body-font-family !default;
+$side-nav-font-family-active: $side-nav-font-family !default;
+
+// We use these to control heading styles.
+$side-nav-heading-color: $side-nav-link-color !default;
+$side-nav-heading-font-size: $side-nav-font-size !default;
+$side-nav-heading-font-weight: bold !default;
+$side-nav-heading-text-transform: uppercase !default;
+
+// We use these to control border styles
+$side-nav-divider-size: 1px !default;
+$side-nav-divider-style: solid !default;
+$side-nav-divider-color: scale-color($white, $lightness: -10%) !default;
+
+
+//
+// @mixins
+//
+
+
+// We use this to style the side-nav
+//
+// $divider-color - Border color of divider. Default: $side-nav-divider-color.
+// $font-size - Font size of nav items. Default: $side-nav-font-size.
+// $link-color - Color of navigation links. Default: $side-nav-link-color.
+// $link-color-hover - Color of navigation links when hovered. Default: $side-nav-link-color-hover.
+@mixin side-nav(
+  $divider-color:$side-nav-divider-color,
+  $font-size:$side-nav-font-size,
+  $link-color:$side-nav-link-color,
+  $link-color-active:$side-nav-link-color-active,
+  $link-color-hover:$side-nav-link-color-hover,
+  $link-bg-hover:$side-nav-link-bg-hover) {
+  display: block;
+  font-family: $side-nav-font-family;
+  list-style-position: $side-nav-list-position;
+  list-style-type: $side-nav-list-type;
+  margin: 0;
+  padding: $side-nav-padding;
+
+  li {
+    font-size: $font-size;
+    font-weight: $side-nav-font-weight;
+    margin: $side-nav-list-margin;
+
+    a:not(.button):not(.salticon) {
+      color: $link-color;
+      display: inline;
+      margin: $side-nav-link-margin;
+      padding: $side-nav-link-padding;
+      &.course-name-lnk:hover {
+        text-decoration: none;
+      }
+      &:hover,
+      &:focus {
+        background: $link-bg-hover;
+        color: $link-color-hover;
+        text-decoration: underline;
+        text-decoration-line: $gray15;
+      }
+      &:active {
+        color: $link-color-active;
+      }
+    }
+
+    &.active > a:first-child:not(.button) {
+      color: $link-color-active;
+      font-family: $side-nav-font-family-active;
+      font-weight: $side-nav-font-weight-active;
+    }
+
+    &.divider {
+      border-top: $side-nav-divider-size $side-nav-divider-style;
+      height: 0;
+      list-style: none;
+      padding: 0;
+      border-top-color: $divider-color;
+    }
+
+    &.heading {
+      color: $side-nav-heading-color;
+      font: {
+        size: $side-nav-heading-font-size;
+        weight: $side-nav-heading-font-weight;
+      }
+      text-transform: $side-nav-heading-text-transform;
+    }
+  }
+}
+
+@include exports("side-nav") {
+  @if $include-html-nav-classes {
+    .side-nav {@include side-nav;}
+  }
+}
+.uni-side-nav {
+  background: transparent;
+  z-index: 100;
+  margin: 0 !important;
+  border: none !important;
+  position: fixed !important;
+  top: 50px !important;
+  width: 320px;
+  min-width: 300px !important;
+  right: 0 !important;
+  overflow-y: auto;
+  height: 90vh;
+  border-radius: 0 0 19px 19px;
+  padding-left: 5px;
+  .sidebar-content {
+    background-color: $white;
+
+  }
+  &.f-open-dropdown {
+    .sidebar-content{
+        box-shadow: rgba($gray50, .5) -2px -3px 8px;
+      @media #{$large} { 
+        box-shadow: rgba($gray50, .0) -2px -3px 8px;
+      }
+      border-radius: 0 0 19px 19px;
+    }
+  }
+  .side-nav {
+    padding-bottom: 0px;
+  }
+  li {
+    cursor: auto;
+  }
+  li:not(.side-panel) {
+    &:hover {
+      background-color: rgba(0,0,0,0);
+    }
+  }
+}
+
+
+$message-margin: 0.75rem;
+$message-side-padding: 0.6rem;
+$quick-reply-padding: 0 1px;
+
+$user-message-color: $white;
+$user-message-bg: $light-blue;
+$user-message-border: 1px solid rgba($salt-blue, 0.6);
+
+
+$response-message-bg: $gray10;
+$response-message-border: 1px solid $gray15;
+
+$input-box-height: 40px;
+$send-btn-width: 65px;
+$input-box-width: calc(100% - #{$send-btn-width});
+
+$smaller-radius: 2px;
+$bigger-radius: 10px;
+
+$loading-dot-diameter: 5px;
+
+@mixin chat-typing-dot($order-from-0) {
+  background: $growth-green;
+  width: $loading-dot-diameter;
+  height: $loading-dot-diameter;
+  border-radius: 100%;
+  display: block;
+  animation: loading-ellipses 1s infinite #{$order-from-0 * 0.2}s;
+  animation-fill-mode: both;
+}
+
+.bot {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  // push the chatbot off the bottom of the page in mobile
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  width: 100%;
+  background: $white;
+  border: solid 1px $gray15;
+  border-radius: 19px;
+  padding: 10px;
+  z-index: 900;
+  .bot__title {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background:$salt-blue;
+    color: $white;
+    padding: 0.5rem 0.25rem;
+    border-radius: 10px 10px 0 0
+  }
+  .hope {
+    max-height: 51px;
+    z-index: 10;
+    background: $white;
+  }
+  .bot__messages-overflow {
+    overflow: auto;
+    max-height: 400px;
+    border-color: $gray15;
+    border-style: solid;
+    border-width: 0 1px;
+    background: $white;
+  }
+  .bot__messages {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem $message-margin;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    .bot__message {
+      max-width: 90%;
+      padding: 0.3rem $message-side-padding;
+      font-size: 0.9rem;
+      &.user {
+        align-self: flex-end;
+        margin: 0.5rem 0 0.5rem 0;
+        color: $user-message-color;
+        background: $user-message-bg;
+        border: $user-message-border;
+        border-radius: $bigger-radius $bigger-radius $smaller-radius $bigger-radius;
+      }
+      &.response {
+        margin: 0.1rem 0;
+        background: $response-message-bg;
+        border: $response-message-border;
+        border-radius: $bigger-radius $bigger-radius $bigger-radius $smaller-radius;
+      }
+      &.quick-reply-message {
+        // we want the quick reply button blocks to be the full width so the buttons are larger.
+        width: 100%;
+        background: $gray15;
+        padding: $quick-reply-padding;
+        border: 0;
+      }
+    }
+  }
+  // we need to have this element tag to override our dumb global input styles
+  input.bot__user-input {
+    display: inline-block;
+    margin: 0;
+    width: $input-box-width;
+    height: $input-box-height;
+    font-size: 1rem;
+    box-shadow: none;
+    border-radius: 10px 0px 0px 0px;
+    &:hover, &:focus {
+      box-shadow: none;
+    }
+  }
+  .bot__input-area {
+    margin: 0;
+    height: 40px;
+    margin-top: -10px;
+    z-index: 1000;
+  }
+  .bot__send {
+    width: $send-btn-width;
+    padding: 0;
+    height: $input-box-height;
+    margin: 0;
+    border-radius: 0px 10px 10px 0px;
+  }
+  .button.quick-reply {
+    display: none;
+    line-height: 1;
+    width: 100%;
+    padding: 0.65rem 0.25rem;
+    margin: 2px 0;
+    background: $white;
+    color: $light-blue;
+    font-weight: normal;
+    &:focus, &:hover, &:active {
+      background: $growth-green;
+      color: $white;
+    }
+    &:first-of-type {
+      border-radius: 10px 10px 0 0;
+      margin-top: 1px;
+    }
+    &:last-of-type {
+      border-radius: 0 0 10px 2px;
+      margin-bottom: 1px;
+    }
+  }
+  .active-question .button.quick-reply {
+    display: block;
+  }
+  .bot__typing {
+    left: 15px;
+    margin-top: 8px;
+    position: relative;
+    display: none;
+    &.active {
+      display: block;
+    }
+    .bot__typing__icon {
+      @include chat-typing-dot(1);
+      position: absolute;
+    }
+    &:before, &:after {
+      content: '';
+      position: absolute;
+    }
+    &:before {
+      left: -10px;
+      @include chat-typing-dot(0);
+    }
+    &:after {
+      left: 10px;
+      @include chat-typing-dot(2);
+    }
+  }
+}
+
+@keyframes loading-ellipses {
+  0%, 100% {
+    opacity: 0.2;
+    width: $loading-dot-diameter;
+    height: $loading-dot-diameter;
+    transform: translateX(0), translateY(0);
+  }
+  50% {
+    opacity: 1;
+    width: $loading-dot-diameter + 2;
+    height: $loading-dot-diameter + 2;
+    transform: translateX(-4px) translateY(-4px);
+  }
+}
+
+.bot .icon-tray {
+  padding: 5px 0; 
+}

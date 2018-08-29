@@ -1,0 +1,490 @@
+#curriculum-review {
+  padding-bottom: 85px; }
+  #curriculum-review .columns .col {
+    width: 46.8%; }
+    #curriculum-review .columns .col .table {
+      width: 100%;
+      margin-bottom: 20px;
+      /* cc-edit styles */ }
+      #curriculum-review .columns .col .table.cc-edit .tbody .data dl.listing.editing dd.listing label {
+        background: none; }
+      #curriculum-review .columns .col .table.cc-edit .edit {
+        display: none !important; }
+      #curriculum-review .columns .col .table .question-hover {
+        display: none; }
+      #curriculum-review .columns .col .table a.question {
+        display: none !important; }
+      #curriculum-review .columns .col .table.default .data .question-hover {
+        z-index: 5;
+        display: none;
+        width: 222px;
+        height: 57px;
+        background: #272525;
+        position: absolute;
+        top: -30px;
+        left: 107px;
+        font-size: 11px;
+        color: white;
+        padding: 12px; }
+        #curriculum-review .columns .col .table.default .data .question-hover .wing {
+          top: 40px;
+          left: -7px;
+          width: 7px;
+          height: 13px;
+          background: url(/Assets/images/lessons/lesson1/review/credit-question-wing.gif) no-repeat;
+          position: absolute; }
+      #curriculum-review .columns .col .table.default .data a.question {
+        display: block !important;
+        font-size: 11px;
+        padding-top: 2px;
+        text-align: center;
+        font-weight: bold;
+        float: left;
+        width: 16px !important;
+        height: 16px;
+        background: pink;
+        position: relative;
+        top: 7px;
+        left: -3px;
+        background: url(/Assets/images/lessons/lesson1/review/credit-question.gif) no-repeat; }
+      #curriculum-review .columns .col .table.default .data .value {
+        position: absolute;
+        overflow: hidden;
+        padding: 0 1%;
+        width: 33%; 
+        white-space: nowrap;}
+        #curriculum-review .columns .col .table.default .data .value .dk-select {
+          max-height: 2em;
+          font-size: 1em;
+          float: right;
+        }
+        /* new dropkck library related */
+       .data .value .dk-selected, .listing.hasChildren.editing dt.listing .value .dk-select .dk-selected {
+          width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          position: relative;
+          background: #fff url() no-repeat 93% center;
+          border: none;
+          border-radius: 3px;
+          padding: 1px 0 2px 1em;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          max-height: 2em;
+       }
+     
+    .editing .value .dk-selected, .cc-expenses-time .dk-selected {
+          width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          position: relative;
+          border-radius: 3px;
+          padding: 4px 1.4em 2px 5px;
+          max-height: 2em;
+          background: #f0f0f0 url(/tools/img/arrow-icon.png) no-repeat 93% center;
+          margin: 0 .5em;
+        }
+
+    .editing .dk-select .dk-select-options {
+        left: 8px;
+    }
+    .cc-expenses-time.dk-select .dk-select-options {
+        left: 5px;
+    }
+        #curriculum-review .columns .col .table.default .data .value .amount {
+          background: none;
+          border: none;
+          cursor: default;
+          font-weight: bold;
+          padding: 0;
+          text-align: right; }
+        #curriculum-review .columns .col .table.default .data .value input[type=text] {
+          display: inline;
+          float: right;
+          padding: 0; }
+        #curriculum-review .columns .col .table.default .data .value .dash {
+          color: #939292;
+          display: inline;
+          float: right;
+          line-height: 21px;
+          padding: 0 0 0 8%; }
+        .data .value .dk-select {
+            float: right;
+          }
+      
+      #curriculum-review .columns .col .table .thead .tr .th {
+        text-align: right;
+        float: left;
+        padding: 0 1%; }
+        #curriculum-review .columns .col .table .thead .tr .th.title {
+          font: normal 30px "FoundersGroteskCond-Reg", Arial, Helvetica, sans-serif;
+          color: #272525;
+          width: 376px;
+          text-align: left;
+          width: 59%; }
+          #curriculum-review .columns .col .table .thead .tr .th.title a {
+            color: #00a3cc;
+            font: bold 13px Arial, Helvetica, sans-serif; }
+        #curriculum-review .columns .col .table .thead .tr .th.month-total {
+          font: normal 21px "FoundersGroteskCond-SmBd", Arial, Helvetica, sans-serif;
+          width: 90px;
+          float: right;
+          display: inline; }
+          #curriculum-review .columns .col .table .thead .tr .th.month-total.in {
+            color: #00e070; }
+          #curriculum-review .columns .col .table .thead .tr .th.month-total.out {
+            color: #ff0099; }
+        #curriculum-review .columns .col .table .thead .tr .th.slash, #curriculum-review .columns .col .table .thead .tr .th.month {
+          font: normal 21px "FoundersGroteskCond-Reg", Arial, Helvetica, sans-serif; }
+        #curriculum-review .columns .col .table .thead .tr .th.slash {
+          width: 1%;
+          float: right;
+          display: inline; }
+        #curriculum-review .columns .col .table .thead .tr .th.month {
+          width: 47px;
+          float: right;
+          display: inline;
+          padding: 0 0 0 1%; }
+      #curriculum-review .columns .col .table .tbody .cbox {
+        display: none;
+        float: left;
+        margin-right: 0px;
+        margin-top: 10px; }
+      #curriculum-review .columns .col .table .tbody .data {
+        /* dim styles */
+        /* editing styles */ }
+        #curriculum-review .columns .col .table .tbody .data dl.listing {
+          margin: 0;
+          padding: 0;
+          position: relative; }
+          #curriculum-review .columns .col .table .tbody .data dl.listing dt.listing {
+            background: url("/Assets/images/lessons/lesson1/curriculum/bg-dotted.png") repeat-x top;
+            clear: both;
+            overflow: hidden;
+            *zoom: 1;
+            padding-top: 3px; }
+            #curriculum-review .columns .col .table .tbody .data dl.listing dt.listing.remove {
+              display: none; }
+            #curriculum-review .columns .col .table .tbody .data dl.listing dt.listing.first {
+              background: none; }
+            #curriculum-review .columns .col .table .tbody .data dl.listing dt.listing .value {
+              display: inline-block;
+              position: relative;
+              float: right;
+              right: 5px;
+              top: 2px; }
+            #curriculum-review .columns .col .table .tbody .data dl.listing dt.listing label {
+              float: left;
+              line-height: 31px;
+              padding: 0% 1%; }
+            #curriculum-review .columns .col .table .tbody .data dl.listing dt.listing .edit, #curriculum-review .columns .col .table .tbody .data dl.listing dt.listing .edit-credit {
+              display: none;
+              float: left; }
+            #curriculum-review .columns .col .table .tbody .data dl.listing dt.listing:hover .edit, #curriculum-review .columns .col .table .tbody .data dl.listing dt.listing:hover .edit-credit {
+              display: block;
+              float: left;
+              line-height: 31px;
+              color: #00a3cc; }
+          #curriculum-review .columns .col .table .tbody .data dl.listing dd.listing {
+            position: relative;
+            margin: 0px 0px 0px 30px;
+            padding: 4px 0;
+            display: none; }
+            #curriculum-review .columns .col .table .tbody .data dl.listing dd.listing.remove {
+              display: none; }
+            #curriculum-review .columns .col .table .tbody .data dl.listing dd.listing .value {
+              float: right;
+              position: relative;
+              right: 0px; }
+            #curriculum-review .columns .col .table .tbody .data dl.listing dd.listing .cbox {
+              margin-top: 1px !important;
+              margin-right: 6px; }
+        #curriculum-review .columns .col .table .tbody .data dl.dd {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 94px; }
+        #curriculum-review .columns .col .table .tbody .data dl.listing.dim {
+          color: #939292; }
+          #curriculum-review .columns .col .table .tbody .data dl.listing.dim .value {
+            padding-right: 10px; }
+            #curriculum-review .columns .col .table .tbody .data dl.listing.dim .value .amount {
+              color: #939292;
+              background: none;
+              border: none;
+              cursor: default;
+              font-weight: bold;
+              padding: 0;
+              text-align: right; }
+            
+            #curriculum-review .columns .col .table .tbody .data dl.listing.dim .value .dash {
+              display: inline;
+              float: right;
+              padding: 0 0 0 15px; }
+          #curriculum-review .columns .col .table .tbody .data dl.listing.dim dt.listing {
+            background-image: url("/Assets/images/lessons/lesson1/curriculum/bg-dotted-dim.png"); }
+            #curriculum-review .columns .col .table .tbody .data dl.listing.dim dt.listing.first {
+              background: none; }
+        #curriculum-review .columns .col .table .tbody .data .editing .dash {
+          display: inline;
+          float: right;
+          padding: 0 0 0 15px; }
+        #curriculum-review .columns .col .table .tbody .data dl.listing.editing {
+          -moz-border-radius: 3px;
+          -webkit-border-radius: 3px;
+          -o-border-radius: 3px;
+          -ms-border-radius: 3px;
+          -khtml-border-radius: 3px;
+          border-radius: 3px;
+          border: 1px solid #cccccc;
+          background-color: white;
+          -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+          -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+          -o-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+          padding: 0 2px;
+          margin: 0 -2px; }
+          #curriculum-review .columns .col .table .tbody .data dl.listing.editing.hasChildren dt.listing {
+            background: none;
+            padding-left: 11px; }
+            #curriculum-review .columns .col .table .tbody .data dl.listing.editing.hasChildren dt.listing .value {
+              position: absolute;
+              padding-right: 10px;
+              top: 7px;
+              right: 2px; }
+              #curriculum-review .columns .col .table .tbody .data dl.listing.editing.hasChildren dt.listing .value .amount {
+                background: none;
+                border: none;
+                cursor: default;
+                font-weight: bold;
+                padding: 0;
+                text-align: right; }
+              #curriculum-review .data dl.listing dt.listing .value ul.dk-select-options {
+                display: none !important;
+                }
+              #curriculum-review .data dl.listing.editing dt.listing .value .dk-select.time.dropdown.dk-select-open-down.dk-select-open-down ul.dk-select-options {
+                display: block !important;
+                }
+             #curriculum-review .data dl.listing.editing.hasChildren dt.listing .value ul.dk-select-options {
+                display: block;
+                }
+             #curriculum-review .data dl.listing.editing.hasChildren dt.listing:first-child .value .dk-select.time.dropdown.dk-select-open-down.dk-select-open-down ul.dk-select-options {
+                display:  none !important;
+                }
+          #curriculum-review .columns .col .table .tbody .data dl.listing.editing dt,
+          #curriculum-review .columns .col .table .tbody .data dl.listing.editing dd {
+            background: none; }
+          #curriculum-review .columns .col .table .tbody .data dl.listing.editing dt.listing {
+            border-bottom: 1px solid #d9d9d9;
+            position: relative;
+            overflow: visible; }
+            #curriculum-review .columns .col .table .tbody .data dl.listing.editing dt.listing .value {
+              padding-right: 5px; }
+             
+            #curriculum-review .columns .col .table .tbody .data dl.listing.editing dt.listing label {
+              font-weight: bold;
+              background: url("/Assets/images/lessons/lesson1/curriculum/btn-remove.png") no-repeat center left;
+              padding-left: 30px;
+              margin-left: 7px; }
+            #curriculum-review .columns .col .table .tbody .data dl.listing.editing dt.listing:hover .edit {
+              display: none; }
+          #curriculum-review .columns .col .table .tbody .data dl.listing.editing dd.listing {
+            display: block;
+            background: url("/Assets/images/lessons/lesson1/curriculum/bg-dotted.png") repeat-x bottom; }
+            #curriculum-review .columns .col .table .tbody .data dl.listing.editing dd.listing:last-child {
+              background: none; }
+            #curriculum-review .columns .col .table .tbody .data dl.listing.editing dd.listing label {
+              line-height: 32px;
+              display: block;
+              background: url("/Assets/images/lessons/lesson1/curriculum/btn-remove.png") no-repeat center left;
+              padding-left: 30px; }
+            #curriculum-review .columns .col .table .tbody .data dl.listing.editing dd.listing.remove {
+              display: none; }
+            #curriculum-review .columns .col .table .tbody .data dl.listing.editing dd.listing .value {
+              position: absolute;
+              right: 0px;
+              padding-right: 10px;
+              top: 7px; }
+              
+          #curriculum-review .columns .col .table .tbody .data dl.listing.editing dd.bottom {
+            overflow: hidden;
+            *zoom: 1;
+            margin: 0 10px;
+            line-height: 32px;
+            padding: 8px 0 10px; }
+            #curriculum-review .columns .col .table .tbody .data dl.listing.editing dd.bottom a.btn-back {
+              float: left;
+              color: #00a3cc;
+              padding-left: 17px;
+              background: url("/Assets/images/lessons/lesson1/curriculum/bg-edit-back.png") no-repeat center left;
+              font-weight: bold; }
+            #curriculum-review .columns .col .table .tbody .data dl.listing.editing dd.bottom span {
+              overflow: hidden;
+              *zoom: 1;
+              float: right; }
+              #curriculum-review .columns .col .table .tbody .data dl.listing.editing dd.bottom span a {
+                color: #00a3cc;
+                float: left;
+                display: block; }
+                #curriculum-review .columns .col .table .tbody .data dl.listing.editing dd.bottom span a.cancel {
+                  font-size: 12px;
+                  margin-right: 13px; }
+                #curriculum-review .columns .col .table .tbody .data dl.listing.editing dd.bottom span a.save {
+                  font-weight: bold;
+                  -moz-border-radius: 1px;
+                  -webkit-border-radius: 1px;
+                  -o-border-radius: 1px;
+                  -ms-border-radius: 1px;
+                  -khtml-border-radius: 1px;
+                  border-radius: 1px;
+                  border: 1px solid #cfcfcf;
+                  background-color: #f9f9f9;
+                  text-align: center;
+                  height: 24px;
+                  padding: 0 10px;
+                  line-height: 24px;
+                  margin-top: 2px; }
+      #curriculum-review .columns .col .table .tbody dl.listing.editing.hasChildren dt.listing label {
+        background: none;
+        margin-left: 0;
+        padding-left: 0; }
+      #curriculum-review .columns .col .table .tbody .tr {
+        background: url("/Assets/images/lessons/lesson1/curriculum/bg-dotted.png") repeat-x top;
+        font: normal 15px/32px Arial, Helvetica, sans-serif;
+        clear: both; }
+        #curriculum-review .columns .col .table .tbody .tr.indented {
+          margin-left: 25px;
+          background: none;
+          display: none; }
+          #curriculum-review .columns .col .table .tbody .tr.indented.last {
+            background: url("/Assets/images/lessons/lesson1/curriculum/bg-dotted.png") repeat-x bottom; }
+        #curriculum-review .columns .col .table .tbody .tr.last {
+          background: none; }
+        #curriculum-review .columns .col .table .tbody .tr .th {
+          text-transform: capitalize;
+          text-align: left;
+          font-weight: normal;
+          float: left;
+          padding: 0 1%;
+          width: 63%; }
+          #curriculum-review .columns .col .table .tbody .tr .th .cbox {
+            float: left;
+            margin: 9px 11px 0 0;
+            display: none; }
+          #curriculum-review .columns .col .table .tbody .tr .th label {
+            float: left; }
+          #curriculum-review .columns .col .table .tbody .tr .th a.edit {
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 1em;
+            color: #00a3cc;
+            display: none; }
+        #curriculum-review .columns .col .table .tbody .tr .td {
+          text-align: right;
+          float: left;
+          padding: 0 1%; }
+          #curriculum-review .columns .col .table .tbody .tr .td.month-total {
+            float: right;
+            font-weight: bold;
+            width: 75px; }
+          #curriculum-review .columns .col .table .tbody .tr .td.slash {
+            color: #bebdbd;
+            float: right;
+            width: 1%; }
+          #curriculum-review .columns .col .table .tbody .tr .td.month {
+            float: right;
+            color: #939292;
+            padding: 0 3px 0 1%;
+            width: 40px; }
+      #curriculum-review .columns .col .table.cc-edit .tbody .cbox {
+        display: block; }
+    #curriculum-review .columns .col.income {
+      float: left; }
+      #curriculum-review .columns .col.income th.month-total {
+        color: #00e070; }
+    #curriculum-review .columns .col.expenses {
+      float: right;
+      margin-right: 17px; }
+      #curriculum-review .columns .col.expenses th.month-total {
+        color: #ff0099; }
+    #curriculum-review .columns .col .cc-details {
+      display: none;
+      padding-top: 10px;
+      position: relative; }
+     
+      #curriculum-review .columns .col .cc-details p {
+        float: left;
+        font-weight: bold;
+        font-size: 12px; }
+      #curriculum-review .columns .col .cc-details .right {
+        position: absolute;
+        right: 0px; }
+        #curriculum-review .columns .col .cc-details .right input, #curriculum-review .columns .col .cc-details .right div, #curriculum-review .columns .col .cc-details .right select {
+          float: left; }
+        #curriculum-review .columns .col .cc-details .right div {
+          margin: 0 5px; }
+  #curriculum-review a.edit-back {
+    background: url("/Assets/images/lessons/lesson1/curriculum/bg-edit-back.png") no-repeat left center;
+    color: #00a3cc;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19px;
+    padding-left: 17px; }
+  #curriculum-review .tip {
+    float: none;
+    width: auto; }
+    #curriculum-review .tip#cc-tip-interim {
+      display: none; }
+    #curriculum-review .tip .buttons button.cc-cancel {
+      background-color: transparent;
+      display: inline-block;
+      color: #00a3cc;
+      border: none;
+      -moz-border-radius: 0px;
+      -webkit-border-radius: 0px;
+      -o-border-radius: 0px;
+      -ms-border-radius: 0px;
+      -khtml-border-radius: 0px;
+      border-radius: 0px;
+      font-weight: normal;
+      margin: 3px 0 0 0; }
+    #curriculum-review .tip .buttons button.cc-save {
+      background-color: white;
+      border: 1px solid #cccccc;
+      color: #00a3cc;
+      margin: 2px 0 0 0; }
+  #curriculum-review .interim.tip {
+    background-color: #fcff7f;
+    border: 1px solid #d5d86c;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    padding: 0 10px; }
+  #curriculum-review .interim.tip.total-expenses {
+    background-color: #f5f5f5;
+    border: none;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -o-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -khtml-border-radius: 0px;
+    border-radius: 0px; }
+
+/* IE fixes */
+.lt-ie9 div.expenses .table input[type=checkbox], .ie div.expenses .table input[type=checkbox] {
+  display: none; }
+.lt-ie9 div.expenses .table.cc-edit dl.listing dt.listing input[type=checkbox], .ie div.expenses .table.cc-edit dl.listing dt.listing input[type=checkbox] {
+  float: left;
+  top: 10px;
+  margin-right: 10px;
+  position: relative;
+  display: block; }
+.lt-ie9 div.expenses .table.cc-edit dl.listing dd.listing input[type=checkbox], .ie div.expenses .table.cc-edit dl.listing dd.listing input[type=checkbox] {
+  float: left;
+  top: 3px;
+  margin-right: 10px;
+  position: relative;
+  display: block; }

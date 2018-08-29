@@ -1,0 +1,9 @@
+{@if cond="'{recordKey}'.length"}
+    <div class="carousel-holder small-11 columns js-carousel-holder-{recordKey}"></div>
+
+    <script>
+        require(['modules/Carousel'], function (render) {
+            render('{recordKey}');
+        });
+    </script>
+{/if}

@@ -1,0 +1,25 @@
+﻿@model ADTool.Models.LogOnModel
+       
+@{
+    ViewBag.Title = "Validate";
+}
+
+<h2>Validate User In AD</h2>
+
+@using (Html.BeginForm())
+{
+<p>
+
+   
+   @Html.Label("", "Enter Email Address")
+
+  
+   
+   @Html.TextBoxFor(m => m.EmailAddress)
+</p>
+
+<p>
+      
+       <input type="submit" value="Validate"/>
+</p>
+}

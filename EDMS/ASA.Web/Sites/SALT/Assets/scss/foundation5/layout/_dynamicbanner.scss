@@ -1,0 +1,375 @@
+/* Styles for Auth banner landing section and school branded registration page*/
+.cta-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.12em 1em;
+    width: 100%;
+    bottom: 0;
+}
+.cta-container a {
+    font-weight: bold;
+}
+.value-entry {
+    padding: 0 ;
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+.value-entry, .cta-container {
+	z-index: 1;
+}
+.value-entry h1>p {
+    border-bottom: 1px solid #fff;
+    margin: 0;
+    color: #000;
+}
+ .value-prop {
+    border-bottom: 0;
+    min-height: 200px;
+    overflow: hidden;
+    position: relative;
+ }
+.value-prop p:last-child {
+    margin-bottom:0;
+    padding-bottom:0;
+    line-height: 1.5em;
+}
+.value-prop .banner-full {
+    position: relative;
+    top: 100px;
+    max-height: 200px;
+}
+.value-prop-controls {
+    padding: 0 0 .4em 0;
+}
+.user-goal-width-1 {
+    width: 20%
+}
+.user-goal-width-2 {
+    width: 24%;
+}
+.user-goal-width-3 {
+    width: 32%;
+}
+.user-goal-options {
+    padding-bottom: 0.625em;
+}
+
+.user-goals-blocks {
+    // stylings for goal blocks
+    .user-goal {
+        color: #003763;
+        font-size: 1em;
+        font-weight: bold;
+        line-height: 1.2em;
+        text-decoration: none;
+        display: table-cell;
+        vertical-align: middle;
+        background-color: #fff;
+        padding: 0 5px;
+        width: inherit;
+        height: 3.8em;
+        border: 1.75px solid #DBDCDE;
+        text-align: center;
+        -webkit-box-shadow: inset 0 0  3px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: inset 0 0  3px rgba(0, 0, 0, 0.2);
+        box-shadow: inset 0 0  3px rgba(0, 0, 0, 0.2);
+         @media #{$small} {
+            font-size: rem-calc(14px);
+            padding: 0 2px;
+        }
+        // active states
+        &:hover, &.active-user-goal {
+            background-color: $salt-blue;
+            border: 1.75px solid $gray75;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    // Spacing and sizing of block in the grid
+    .user-goals-grid-member {
+        list-style: none;
+        width: 25%;
+        display: inline-block;
+        padding: 0 5px;
+        &:first-child {
+            // keep flush with parent
+            padding-left: 0;
+        }
+        &:last-child {
+            // keep flush with parent
+            padding-right: 0;
+        }
+    }
+}
+
+ul.user-goal-topics {
+    width: 100%;
+    padding: 0.4em 0 0 0;
+}
+ul.user-goal-topics li {
+    display: inline-block;
+    text-align: left;
+    padding: 0 .3em;
+    vertical-align: top;
+}
+.user-goal-topics.bordered {
+    border: 0;
+    border-width: 0 0;
+    margin: 0;
+}
+.user-goal-topics.bordered:empty {
+    border-bottom: none;
+}
+.user-goal-topics ul {
+    margin: 0;
+}
+.user-goal-topics a {
+    font-size: 1em;
+    font-weight: bold;
+}
+.value-prop-filter option {
+    font-weight: normal;
+}
+figure p {
+    margin: 0;
+}
+.organization-name-text-color {
+    color: #5BC500;
+}
+.school-text-overlay {
+    background: none;
+    color: #003763;
+    padding:  0 .3em 0 .3em;
+}
+.value-content  p:nth-child(2) {
+    display: none;
+}
+.tag-tray-link.selected {
+    color: $salt-blue;
+}
+.school-text-overlay h1 {
+     font-size: 1.3rem ;
+     color: #000;
+}
+h1.home-default-text {
+    font-size: 1.3rem;
+    color: #003763;
+}
+
+.school-text-overlay h1.home-default-text p {
+    color: #000;
+    font-size:.85em !important;
+    font-weight: 600;
+    display: block !important;
+}
+.school-text-overlay p, .banner-text-overlay p{
+    font-size: .8em ;
+    line-height: 1.3em;
+    margin-bottom: .75rem;
+}
+.banner-overlay {
+    padding-left: 0;
+    height: 100%;
+}
+.banner-text-overlay {
+    padding:  0 .3em 0 .3em;
+    color: #000;
+}
+.home-default-text p {
+    max-width: 50em;
+}
+div.reg-branded {
+    border-bottom: 1px solid $gray50;
+    padding: .5em 0;
+    margin: 1.1em 0 .625em 0;
+}
+div.reg-branded p {
+    padding: 0;
+    font-size: .85em;
+    font-weight: bold;
+    display: inline;
+    margin: 0;
+    line-height: .8em;
+}
+.school-reg h2.alt-h2 {
+    display: none;
+}
+.school-reg .subhead {
+    font-size: .8em;
+}
+.user_goal_landing {
+    width: 100%;
+}
+@media only screen and (max-width: 40.063em) {
+    .dashboard-container .value-prop {
+        min-height:0;
+        & .banner-full {
+            top:0px;
+            max-height: 105px;
+        }
+     }
+}
+@media only screen and (min-width: 30.063em) {
+    .value-prop {
+        border-bottom: 0;
+        position: relative;
+    }
+    .value-prop .banner-full {
+        position: relative;
+        top: 80px;
+    }
+    div.reg-branded {
+        border-bottom: 1px solid $gray50;
+        padding: .5em 0;
+        margin: 0 0 .625em 0;
+    }
+    .unauth-school-banner .school-text-overlay {
+        height: 80%;
+        width: 100%;
+    }
+     .unauth-school-banner .value-content p:nth-child(2) {
+        display: block;
+    }
+}
+@media only screen and (min-width: 40.063em) { /* min-width 642px, medium screens */
+    .banner-text-overlay {
+        padding: .8em 0 0 0;
+        color: #fff;
+        min-width: 270px;
+    }
+    .reg-container header h2 {
+        font-size: 1.2em;
+    }
+    .unauth-school-banner {
+        margin-left:.625em;
+        margin-bottom: 1em;
+    }
+    .school-text-overlay {
+        background: rgba(0, 0, 0, .5);
+        color: #fff;
+        height: 100%;
+        min-width: 270px;
+        padding: 1em;
+    }
+    .unauth-school-banner .school-text-overlay{
+        height: 94%;
+        padding: .8em;
+    }
+    .unauth-school-banner .value-content p {
+        display: block;
+        margin-bottom: 1em;
+    }
+    .home-default-text {
+        color: #fff;
+    }
+    h1.home-default-text {
+        color: #fff;
+        font-size: 1.3rem;
+        border-bottom: 2px solid #fff;
+    }
+    .school-text-overlay h1 {
+         font-size: 1.3rem ;
+         color: #fff;
+    }
+    .school-text-overlay h1.home-default-text p {
+        color: #fff;
+    }
+     .school-text-overlay p {
+        font-size: .8em;
+        line-height: 1.4em;
+        margin-bottom: 1.1rem;
+    }
+    .value-prop {
+        min-height: 150px;
+    }
+    .unauth-school-banner .value-prop {
+        min-height: 150px;
+    }
+    .value-prop .banner-full {
+        top: 0;
+    }
+    div.reg-branded p {
+        padding: 0;
+        font-size: 1.2em;
+        font-weight: bold;
+        display: inline;
+        margin: 0;
+        line-height: 1.2em;
+    }
+    .school-reg .subhead {
+        font-size: .95em;
+    }
+    ul.user-goal-topics {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        float: none;
+    }
+    ul.user-goal-topics li {
+        padding: 0 .3em;
+        vertical-align: middle;
+    }
+    .user-goal-topics.bordered {
+        border: 1px solid #eff2f5;
+        border-width: 1px 0;
+        margin: 0;
+    }
+    .user-goal-topics.bordered:empty {
+        border-bottom: none;
+    }
+    .value-entry h1>p {
+        color: #fff;
+    }
+}
+
+@media only screen and (min-width: 45.063em) {
+    .home-default-text > header {
+        width: 78% !important;
+    }
+    .home-default-text p:nth-child(3) {
+        display: inline-block;
+    }
+}
+@media only screen and (min-width: 875px) {
+    .user-goals-blocks .user-goal {
+        font-size: 1.1em;
+    }
+}
+@media only screen and (min-width: 64.063em) { /* min-width 1026px, large screens */
+   .home-default-text > header {
+        width: 100% !important;
+    }
+   .school-text-overlay{
+        padding: .8em ;
+    }
+    .unauth-school-banner .school-text-overlay {
+       height: 100%
+    }
+    .value-content  p:nth-child(2) {
+        display: block;
+    }
+    .user-goal-topics.bordered {
+        border: 1px solid #eff2f5;
+        border-width: 1px 0;
+        margin: 0;
+    }
+    ul.user-goal-topics {
+        display: table;
+        width: 100%;
+    }
+    ul.user-goal-topics li {
+        display: table-cell;
+        text-align: center;
+        padding: 0;
+    }
+    ul.user-goal-topics li:first-child {
+        padding-left: 0;
+    }
+    ul.user-goal-topics li:last-child {
+        padding-right: 0;
+    }
+     .banner-text-overlay {
+        padding: 1.3em 0 0 .5em;
+        color: #fff;
+    }
+}

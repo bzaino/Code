@@ -1,0 +1,33 @@
+<!-- Banners -->
+<article class="value-prop row collapse">
+    <div class="value-entry {?hideCopyForSmall}hide-for-small{/hideCopyForSmall}">
+        <section class="columns banner-overlay medium-{@dynamicSchoolOutput noLogoCase="6" schoolCase="5" CurrentSchoolBrand="{configuration.CurrentSchoolBrand}" /}">
+            <div class="{@dynamicSchoolOutput noLogoCase="banner-text-overlay" schoolCase="school-text-overlay" CurrentSchoolBrand="{configuration.CurrentSchoolBrand}" /}">
+                {@if cond="'{bannerData.attributes.P_Primary_Key}' === '101-16157' || '{bannerData.attributes.P_Primary_Key}' === '101-17537'"}
+                    <header>
+                        <h1 class="home-default-text">{bannerData.attributes.headline} </h1>
+                    </header>
+                    <div class="value-content home-default-text">
+                        {bannerData.attributes.body}
+                    </div>
+                {:else}
+                    <header>
+                        <h1>{bannerData.attributes.headline}</h1>
+                    </header>
+                    <div class="value-content">
+                        {bannerData.attributes.body}
+                    </div>
+                {/if}
+            </div>
+        </section>
+    </div>
+    <figure class="banner-full">
+        {@dynamicBanner CurrentSchool="{configuration.CurrentSchoolBrand}" CurrentSchoolBrand="{configuration.CurrentSchoolBrand}" CMImage="{bannerData.attributes.banner-image}" mediumAvailable="true" /}
+    </figure>
+</article>
+<!-- /Banners -->
+{@eq key="{bannerData.attributes.P_Primary_Key}" value="101-17537"}
+    <div class="reg-branded small-12">
+    <p class="organization-name-text-color">{configuration.CurrentSchool}</p>{bannerData.attributes.subhead}
+    </div>
+{/eq}

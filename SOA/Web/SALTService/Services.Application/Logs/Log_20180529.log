@@ -1,0 +1,16 @@
+2018-05-29 10:32:39.198 | 12190 | AMSA\bzaino [ 1] DEBUG | Logger                                             .SetUserData user, Member originalUser) - Begin Method 
+2018-05-29 10:32:39.213 | 12205 | AMSA\bzaino [ 1] DEBUG | Logger                                             .SetUserData user, Member originalUser) - End Method 
+2018-05-29 10:32:39.247 | 12239 | AMSA\bzaino [25] DEBUG | Logger                                             .SetUserData user, Member originalUser) - Begin Method 
+2018-05-29 10:32:39.303 | 12295 | AMSA\bzaino [25] DEBUG | Logger                                             .SetUserData user, Member originalUser) - End Method 
+2018-05-29 12:07:13.348 | 6566 | AMSA\bzaino [22] DEBUG | Logger                                             .SetUserData user, Member originalUser) - Begin Method 
+2018-05-29 12:07:13.368 | 6586 | AMSA\bzaino [22] DEBUG | Logger                                             .SetUserData user, Member originalUser) - End Method 
+2018-05-29 12:07:13.377 | 6595 | AMSA\bzaino [21] DEBUG | Logger                                             .SetUserData user, Member originalUser) - Begin Method 
+2018-05-29 12:07:13.379 | 6597 | AMSA\bzaino [21] DEBUG | Logger                                             .SetUserData user, Member originalUser) - End Method 
+2018-05-29 13:44:46.450 | 8052 | AMSA\bzaino [ 1] DEBUG | Logger                                             .SetUserData user, Member originalUser) - Begin Method 
+2018-05-29 13:44:46.470 | 8072 | AMSA\bzaino [ 1] DEBUG | Logger                                             .SetUserData user, Member originalUser) - End Method 
+2018-05-29 13:44:46.500 | 8102 | AMSA\bzaino [16] DEBUG | Logger                                             .SetUserData user, Member originalUser) - Begin Method 
+2018-05-29 13:44:46.503 | 8105 | AMSA\bzaino [16] DEBUG | Logger                                             .SetUserData user, Member originalUser) - End Method 
+2018-05-29 15:41:07.813 | 7821 | AMSA\bzaino [23] DEBUG | Logger                                             .SetUserData user, Member originalUser) - Begin Method 
+2018-05-29 15:41:07.814 | 7822 | AMSA\bzaino [ 1] DEBUG | Logger                                             .SetUserData user, Member originalUser) - Begin Method 
+2018-05-29 15:41:07.839 | 7847 | AMSA\bzaino [ 1] DEBUG | Logger                                             .SetUserData user, Member originalUser) - End Method 
+2018-05-29 15:41:07.843 | 7851 | AMSA\bzaino [23] DEBUG | Logger                                             .SetUserData user, Member originalUser) - End Method 

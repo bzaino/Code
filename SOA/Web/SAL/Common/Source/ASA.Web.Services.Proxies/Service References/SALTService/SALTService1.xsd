@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Common.Types.Enums" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Common.Types.Enums" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:simpleType name="LoanInterestRateType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Variable" />
+      <xs:enumeration value="Fixed" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="LoanInterestRateType" nillable="true" type="tns:LoanInterestRateType" />
+  <xs:simpleType name="MemberUpdateStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Success" />
+      <xs:enumeration value="InvalidOrganization" />
+      <xs:enumeration value="Duplicate" />
+      <xs:enumeration value="Failure" />
+      <xs:enumeration value="InvalidEnrollment" />
+      <xs:enumeration value="InvalidGradeLevel" />
+      <xs:enumeration value="Inactive" />
+      <xs:enumeration value="IncompleteProfile" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="MemberUpdateStatus" nillable="true" type="tns:MemberUpdateStatus" />
+  <xs:simpleType name="RemindersUpdateStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Success" />
+      <xs:enumeration value="PartialSuccess" />
+      <xs:enumeration value="Failure" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RemindersUpdateStatus" nillable="true" type="tns:RemindersUpdateStatus" />
+  <xs:simpleType name="RefLessonLookupDataTypes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Frequencies">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RefLessonLookupDataTypes" nillable="true" type="tns:RefLessonLookupDataTypes" />
+  <xs:simpleType name="LessonUpdateStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Success" />
+      <xs:enumeration value="Failure" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="LessonUpdateStatus" nillable="true" type="tns:LessonUpdateStatus" />
+</xs:schema>

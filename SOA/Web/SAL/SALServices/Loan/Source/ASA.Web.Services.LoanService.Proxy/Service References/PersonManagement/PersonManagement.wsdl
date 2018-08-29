@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://asa.org/servicecontract/personManagement/v1.1" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:i0="http://tempuri.org/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PersonManagement" targetNamespace="http://asa.org/servicecontract/personManagement/v1.1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://tempuri.org/" location="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://asa.org/servicecontract/personManagement/v1.1/Imports">
+      <xsd:import schemaLocation="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd0" namespace="http://asa.org/servicecontract/personManagement/v1.1" />
+      <xsd:import schemaLocation="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd6" namespace="http://amsa.com/contract/baserequestcontract/v1.0" />
+      <xsd:import schemaLocation="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd8" namespace="http://amsa.com/contract/errorHandling/v1.0" />
+      <xsd:import schemaLocation="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd2" namespace="http://asa.org/contracts/person" />
+      <xsd:import schemaLocation="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd3" namespace="http://asa.org/contracts/demogTypes" />
+      <xsd:import schemaLocation="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd4" namespace="http://asa.org/contracts/commonTypes" />
+      <xsd:import schemaLocation="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd7" namespace="http://amsa.com/contract/ASA.Common.ResponseMessage/v1.0" />
+      <xsd:import schemaLocation="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd9" namespace="http://asa.org/contracts/personServiceCriteria" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="SavePersonRequest">
+    <wsdl:part name="parameters" element="tns:SavePersonRequest" />
+  </wsdl:message>
+  <wsdl:message name="SavePersonRequest_Headers">
+    <wsdl:part xmlns:q1="http://amsa.com/contract/baserequestcontract/v1.0" name="ParamList" element="q1:ParamList" />
+  </wsdl:message>
+  <wsdl:message name="SavePersonResponse">
+    <wsdl:part name="parameters" element="tns:SavePersonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonManagement_SavePerson_ASABusinessFaultDetailFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://amsa.com/contract/errorHandling/v1.0" name="detail" element="q2:ASABusinessFaultDetail" />
+  </wsdl:message>
+  <wsdl:message name="IPersonManagement_SavePerson_ASAFaultDetailFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://amsa.com/contract/errorHandling/v1.0" name="detail" element="q3:ASAFaultDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetPersonRequest">
+    <wsdl:part name="parameters" element="tns:GetPersonRequest" />
+  </wsdl:message>
+  <wsdl:message name="GetPersonRequest_Headers">
+    <wsdl:part xmlns:q4="http://amsa.com/contract/baserequestcontract/v1.0" name="ParamList" element="q4:ParamList" />
+  </wsdl:message>
+  <wsdl:message name="GetPersonResponse">
+    <wsdl:part name="parameters" element="tns:GetPersonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPersonManagement_GetPerson_ASAFaultDetailFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://amsa.com/contract/errorHandling/v1.0" name="detail" element="q5:ASAFaultDetail" />
+  </wsdl:message>
+  <wsdl:message name="IPersonManagement_GetPerson_ASABusinessFaultDetailFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://amsa.com/contract/errorHandling/v1.0" name="detail" element="q6:ASABusinessFaultDetail" />
+  </wsdl:message>
+  <wsdl:portType name="IPersonManagement">
+    <wsdl:operation name="SavePerson">
+      <wsdl:input wsaw:Action="SavePerson" name="SavePersonRequest" message="tns:SavePersonRequest" />
+      <wsdl:output wsaw:Action="http://asa.org/servicecontract/personManagement/v1.1/IPersonManagement/SavePersonResponse" name="SavePersonResponse" message="tns:SavePersonResponse" />
+      <wsdl:fault wsaw:Action="ASABusinessFaultDetail" name="ASABusinessFaultDetailFault" message="tns:IPersonManagement_SavePerson_ASABusinessFaultDetailFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="ASAFaultDetail" name="ASAFaultDetailFault" message="tns:IPersonManagement_SavePerson_ASAFaultDetailFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPerson">
+      <wsdl:input wsaw:Action="GetPerson" name="GetPersonRequest" message="tns:GetPersonRequest" />
+      <wsdl:output wsaw:Action="http://asa.org/servicecontract/personManagement/v1.1/IPersonManagement/GetPersonResponse" name="GetPersonResponse" message="tns:GetPersonResponse" />
+      <wsdl:fault wsaw:Action="ASAFaultDetail" name="ASAFaultDetailFault" message="tns:IPersonManagement_GetPerson_ASAFaultDetailFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="ASABusinessFaultDetail" name="ASABusinessFaultDetailFault" message="tns:IPersonManagement_GetPerson_ASABusinessFaultDetailFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IPersonManagement" type="tns:IPersonManagement">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SavePerson">
+      <soap:operation soapAction="SavePerson" style="document" />
+      <wsdl:input name="SavePersonRequest">
+        <soap:header message="tns:SavePersonRequest_Headers" part="ParamList" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SavePersonResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ASABusinessFaultDetailFault">
+        <soap:fault use="literal" name="ASABusinessFaultDetailFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ASAFaultDetailFault">
+        <soap:fault use="literal" name="ASAFaultDetailFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPerson">
+      <soap:operation soapAction="GetPerson" style="document" />
+      <wsdl:input name="GetPersonRequest">
+        <soap:header message="tns:GetPersonRequest_Headers" part="ParamList" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetPersonResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ASAFaultDetailFault">
+        <soap:fault use="literal" name="ASAFaultDetailFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ASABusinessFaultDetailFault">
+        <soap:fault use="literal" name="ASABusinessFaultDetailFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PersonManagement">
+    <wsdl:port name="BasicHttpBinding_IPersonManagement" binding="tns:BasicHttpBinding_IPersonManagement">
+      <soap:address location="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc" />
+    </wsdl:port>
+    <wsdl:port name="CustomBinding_IPersonManagement" binding="i0:CustomBinding_IPersonManagement">
+      <soap12:address location="net.tcp://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

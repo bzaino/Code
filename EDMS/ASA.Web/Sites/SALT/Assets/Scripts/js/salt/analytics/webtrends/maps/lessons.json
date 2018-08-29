@@ -1,0 +1,111 @@
+{
+    "lesson:overall:freshStart": [
+        "{tags.STATE}",                               "{lesson.state}",
+        "{tags.DCS_AUTHENTICATED_USERNAME}",          "{lesson.siteMemberId}",
+        "{tags.EXTERNAL_VISITOR_ID}",                 "{lesson.siteMemberId}",
+        "{tags.ACTIVITY_NAME}",                       "lesson",
+        "{tags.ACTIVITY_SUB_NAME}",                   "{lesson.name}",
+        "{tags.ACTIVITY_TYPE}",                       "start",
+        "{tags.ACTIVITY_TRANSACTION}",                "1",
+        "{tags.SCENARIO_ANALYSIS_NAME}",              "{lesson.name}",
+        "{tags.SCENARIO_ANALYSIS_STEP_NUM}",          "{lesson.step.number}",
+        "{tags.SCENARIO_ANALYSIS_STEP_PREPOPULATED}", "{@if cond=\"{lesson.step.preloaded}\"}1{:else}0{/if}",
+        "{tags.CONTENT_GROUP}",                       "Lessons",
+        "{tags.CONTENT_SUBGROUP}",                    "{lesson.name}",
+        "{tags.SERVER_CALL_IDENTIFIER}",              "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "lesson:overall:clearExistingData": [
+        "{tags.STATE}",                               "{lesson.state}",
+        "{tags.DCS_AUTHENTICATED_USERNAME}",          "{lesson.siteMemberId}",
+        "{tags.EXTERNAL_VISITOR_ID}",                 "{lesson.siteMemberId}",
+        "{tags.ACTIVITY_NAME}",                       "lesson",
+        "{tags.ACTIVITY_SUB_NAME}",                   "{lesson.name}",
+        "{tags.ACTIVITY_TYPE}",                       "start",
+        "{tags.ACTIVITY_TRANSACTION}",                "1",
+        "{tags.SCENARIO_ANALYSIS_NAME}",              "{lesson.name}",
+        "{tags.SCENARIO_ANALYSIS_STEP_NUM}",          "{lesson.step.number}",
+        "{tags.SCENARIO_ANALYSIS_STEP_PREPOPULATED}", "{@if cond=\"{lesson.step.preloaded}\"}1{:else}0{/if}",
+        "{tags.CONTENT_GROUP}",                       "Lessons",
+        "{tags.CONTENT_SUBGROUP}",                    "{lesson.name}",
+        "{tags.SERVER_CALL_IDENTIFIER}",              "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "lesson:overall:loadData": [
+        "{tags.STATE}",                               "{lesson.state}",
+        "{tags.DCS_AUTHENTICATED_USERNAME}",          "{lesson.siteMemberId}",
+        "{tags.EXTERNAL_VISITOR_ID}",                 "{lesson.siteMemberId}",
+        "{tags.ACTIVITY_NAME}",                       "lesson",
+        "{tags.ACTIVITY_SUB_NAME}",                   "{lesson.name}",
+        "{tags.ACTIVITY_TYPE}",                       "start",
+        "{tags.ACTIVITY_TRANSACTION}",                "1",
+        "{tags.SCENARIO_ANALYSIS_NAME}",              "{lesson.name}",
+        "{tags.SCENARIO_ANALYSIS_STEP_NUM}",          "{lesson.step.number}",
+        "{tags.SCENARIO_ANALYSIS_STEP_PREPOPULATED}", "{@if cond=\"{lesson.step.preloaded}\"}1{:else}0{/if}",
+        "{tags.CONTENT_GROUP}",                       "Lessons",
+        "{tags.CONTENT_SUBGROUP}",                    "{lesson.name}",
+        "{tags.LESSON_DATA_RESTORED}",                "1",
+        "{tags.SERVER_CALL_IDENTIFIER}",              "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "lesson:overall:saveAndExit": [
+        "{tags.STATE}",                               "{lesson.state}",
+        "{tags.DCS_AUTHENTICATED_USERNAME}",          "{lesson.siteMemberId}",
+        "{tags.EXTERNAL_VISITOR_ID}",                 "{lesson.siteMemberId}",
+        "{tags.ACTIVITY_NAME}",                       "lesson",
+        "{tags.ACTIVITY_SUB_NAME}",                   "{lesson.name}",
+        "{tags.ACTIVITY_TYPE}",                       "saveAndExit",
+        "{tags.ACTIVITY_TRANSACTION}",                "1",
+        "{tags.SCENARIO_ANALYSIS_NAME}",              "{lesson.name}",
+        "{tags.SCENARIO_ANALYSIS_STEP_NUM}",          "{lesson.step.number}",
+        "{tags.SCENARIO_ANALYSIS_STEP_PREPOPULATED}", "{@if cond=\"{lesson.step.preloaded}\"}1{:else}0{/if}",
+        "{tags.CONTENT_GROUP}",                       "Lessons",
+        "{tags.CONTENT_SUBGROUP}",                    "{lesson.name}",
+        "{tags.SERVER_CALL_IDENTIFIER}",              "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "lesson:overall:complete": [
+        "{tags.STATE}",                               "{lesson.state}",
+        "{tags.DCS_AUTHENTICATED_USERNAME}",          "{lesson.siteMemberId}",
+        "{tags.EXTERNAL_VISITOR_ID}",                 "{lesson.siteMemberId}",
+        "{tags.ACTIVITY_NAME}",                       "lesson",
+        "{tags.ACTIVITY_SUB_NAME}",                   "{lesson.name}",
+        "{tags.ACTIVITY_TYPE}",                       "complete",
+        "{tags.ACTIVITY_TRANSACTION}",                "1",
+        "{tags.SCENARIO_ANALYSIS_NAME}",              "{lesson.name}",
+        "{tags.SCENARIO_ANALYSIS_STEP_NUM}",          "{lesson.step.number}",
+        "{tags.SCENARIO_ANALYSIS_STEP_PREPOPULATED}", "{@if cond=\"{lesson.step.preloaded}\"}1{:else}0{/if}",
+        "{tags.SCENARIO_ANALYSIS_CONVERSION_STEP}",   "{lesson.step.number}",
+        "{tags.CONTENT_GROUP}",                       "Lessons",
+        "{tags.CONTENT_SUBGROUP}",                    "{lesson.name}",
+        "{tags.SERVER_CALL_IDENTIFIER}",              "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "lesson:step:start": [
+        "{tags.STATE}",                               "{lesson.state}",
+        "{tags.DCS_AUTHENTICATED_USERNAME}",          "{lesson.siteMemberId}",
+        "{tags.EXTERNAL_VISITOR_ID}",                 "{lesson.siteMemberId}",
+        "{tags.SCENARIO_ANALYSIS_NAME}",              "{lesson.name}",
+        "{tags.SCENARIO_ANALYSIS_STEP_NUM}",          "{lesson.step.number}",
+        "{tags.SCENARIO_ANALYSIS_STEP_PREPOPULATED}", "{@if cond=\"{lesson.step.preloaded}\"}1{:else}0{/if}",
+        "{tags.CONTENT_GROUP}",                       "Lessons",
+        "{tags.CONTENT_SUBGROUP}",                    "{lesson.name}",
+        "{tags.SERVER_CALL_IDENTIFIER}",              "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ],
+
+    "lesson:graph:optionChange": [
+        "{tags.STATE}",                               "{lesson.state}",
+        "{tags.DCS_AUTHENTICATED_USERNAME}",          "{lesson.siteMemberId}",
+        "{tags.EXTERNAL_VISITOR_ID}",                 "{lesson.siteMemberId}",
+        "{tags.ACTIVITY_NAME}",                       "whatif",
+        "{tags.ACTIVITY_SUB_NAME}",                   "{lesson.name}",
+        "{tags.ACTIVITY_TYPE}",                       "{lesson.graph.option}",
+        "{tags.ACTIVITY_TRANSACTION}",                "1",
+        "{tags.SCENARIO_ANALYSIS_NAME}",              "{lesson.name}",
+        "{tags.SCENARIO_ANALYSIS_STEP_NUM}",          "{lesson.step.number}",
+        "{tags.SCENARIO_ANALYSIS_STEP_PREPOPULATED}", "{@if cond=\"{lesson.step.preloaded}\"}1{:else}0{/if}",
+        "{tags.CONTENT_GROUP}",                       "Lessons",
+        "{tags.CONTENT_SUBGROUP}",                    "{lesson.name}",
+        "{tags.SERVER_CALL_IDENTIFIER}",              "{serverCallIdentifiers.SALT_CUSTOM_EVENT}"
+    ]
+}

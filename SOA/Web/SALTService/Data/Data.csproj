@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50A7F392-93B8-47AD-A9AB-4EDBA38644C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Asa.Salt.Web.Services.Data</RootNamespace>
+    <AssemblyName>Data</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\Packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IDbContext.cs" />
+    <Compile Include="Infrastructure\IUnitOfWork.cs" />
+    <Compile Include="Infrastructure\UnitOfWork.cs" />
+    <Compile Include="Model\Database\ActivityType.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\AlertType.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\EnrollmentStatus.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\GradeLevel.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\Lesson.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\LessonQuestion.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\LessonQuestionAttribute.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\LessonQuestionResponse.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\LessonStep.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\LoanType.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\Member.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\MemberActivationHistory.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\MemberActivityHistory.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\MemberAlert.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\MemberContentInteraction.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\MemberLesson.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\MemberOrganization.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\MemberProduct.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\MemberProfileAnswer.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\MemberQuestionAnswer.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\MemberReportedLoan.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\MemberRole.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\MemberToDoList.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\OrganizationToDoList.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\PaymentReminder.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RecordSource.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefAnswer.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefCampaign.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefChannel.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefContentInteractionType.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefGeographicIndex.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefLessonLookupData.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefLessonLookupDataType.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefMajor.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefMemberRole.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefOccupation.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefOrganization.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefOrganizationProduct.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefOrganizationType.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefProduct.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefProductType.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefProfileAnswer.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefProfileQuestion.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefProfileQuestionType.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefQuestion.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefRegistrationSource.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefRegistrationSourceType.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefSalaryEstimatorSchool.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefSalaryEstimatorSchoolMajor.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefSALTSchoolType.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefSource.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefSourceQuestion.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefSourceQuestionAnswer.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefState.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefToDoStatus.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\RefToDoType.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\SALTDbContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SALTDbContext.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\SALTDbContext.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\SALTEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SALTEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\Survey.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\SurveyOption.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\SurveyResponse.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\vCostOfLivingStateList.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\VLCQuestion.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\VLCUserProfile.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\VLCUserResponse.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\vMemberAcademicInfo.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\vMemberAlerts.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\vMemberQuestionAnswer.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\vMemberReportedLoans.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\vMemberToDoList.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Database\vSourceQuestion.cs">
+      <DependentUpon>SALTDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\ActiveDirectoryRepository.cs" />
+    <Compile Include="Repositories\ActiveDirectoryUserPrincipal.cs" />
+    <Compile Include="Repositories\ActivityTypeRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\AlertTypeRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\EnrollmentStatusRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\GradeLevelRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\IActiveDirectoryRepository.cs" />
+    <Compile Include="Repositories\IMemberRepository.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\LessonQuestionAttributeRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\LessonQuestionRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\LessonQuestionResponseRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\LessonRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\LessonStepRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\LoanTypeRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\MemberActivationHistoryRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\MemberActivityHistoryRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\MemberAlertRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\MemberContentInteractionRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\MemberLessonRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\MemberOrganizationRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\MemberProductRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\MemberProfileAnswerRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\MemberQuestionAnswerRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\MemberReportedLoanRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\MemberRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\MemberRepository.partial.cs" />
+    <Compile Include="Repositories\MemberRoleRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\MemberToDoListRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\OrganizationToDoListRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\PaymentReminderRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RecordSourceRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefAnswerRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefCampaignRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefChannelRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefContentInteractionTypeRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefGeographicIndexRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefLessonLookupDataRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefLessonLookupDataTypeRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefMajorRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefMemberRoleRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefOccupationRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefOrganizationProductRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefOrganizationRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefOrganizationTypeRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefProductRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefProductTypeRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefProfileAnswerRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefProfileQuestionRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefProfileQuestionTypeRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefQuestionRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefRegistrationSourceRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefRegistrationSourceTypeRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefSalaryEstimatorSchoolMajorRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefSalaryEstimatorSchoolRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefSALTSchoolTypeRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefSourceQuestionAnswerRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefSourceQuestionRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefSourceRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefStateRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefToDoStatusRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RefToDoTypeRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\Repositories.generated.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Constants\StoredProcedures.cs" />
+    <Compile Include="Repositories\SurveyOptionRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\SurveyRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\SurveyResponseRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\vCostOfLivingStateListRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\VLCQuestionRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\VLCUserProfileRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\VLCUserResponseRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\vMemberAcademicInfoRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\vMemberAlertsRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\vMemberQuestionAnswerRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\vMemberReportedLoansRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\vMemberToDoListRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\vSourceQuestionRepository.generated.cs">
+      <DependentUpon>Repositories.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Model\Database\SALTEntities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SALTEntities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Model\Database\SALTDbContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SALTEntities.edmx</DependentUpon>
+      <LastGenOutput>SALTDbContext.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Model\Database\SALTDbContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SALTEntities.edmx</DependentUpon>
+      <LastGenOutput>SALTDbContext.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Repositories\Repositories.cd" />
+    <None Include="Repositories\Repositories.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Repositories.generated.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Configuration\Configuration.csproj">
+      <Project>{6ba471d4-40a3-4455-bc2f-1bee5f9ea45d}</Project>
+      <Name>Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{a91c1417-0555-4484-82da-2b301f364726}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logging\Logging.csproj">
+      <Project>{52432B5B-1E4F-488A-90D1-0056613FBB74}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

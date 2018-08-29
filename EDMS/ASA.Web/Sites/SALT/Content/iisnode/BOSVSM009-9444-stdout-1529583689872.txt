@@ -1,0 +1,81 @@
+Cross Domain API Call To: https://api.unigo.com/scholarshipsearch/allchoices?auth=eec6029a-4c6d-4042-81d6-7e755c0cd21c  Succeeded!
+request = {"eventName":"WELCOME","lang":"en-US","projectId":"cps-proto-orig","sessionId":"3bce0c92-a37f-ad41-a389-75cd4b5040aa"}
+Chatbase response: 
+{ message_id: '5272873092', status: 200 }
+Chatbase response: 
+{ message_id: '5274745678', status: 200 }
+request = {"contexts":[{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/welcome","lifespanCount":1,"parameters":null}],"queries":["asa-Bart"],"lang":"en-US","projectId":"cps-proto-orig","sessionId":"3bce0c92-a37f-ad41-a389-75cd4b5040aa"}
+Chatbase response: 
+{ message_id: '5247951289', status: 200 }
+Chatbase response: 
+{ message_id: '5278209063', status: 200 }
+request = {"contexts":[{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/name","lifespanCount":5,"parameters":{"fields":{"name.original":{"stringValue":"asa-Bart","kind":"stringValue"},"name":{"stringValue":"asa-Bart","kind":"stringValue"}}}}],"queries":["Loan Payments"],"lang":"en-US","projectId":"cps-proto-orig","sessionId":"3bce0c92-a37f-ad41-a389-75cd4b5040aa"}
+Chatbase response: 
+{ message_id: '5276798177', status: 200 }
+Chatbase response: 
+{ message_id: '5257823474', status: 200 }
+request = {"contexts":[{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/name","lifespanCount":5,"parameters":{"fields":{"name.original":{"stringValue":"asa-Bart","kind":"stringValue"},"name":{"stringValue":"asa-Bart","kind":"stringValue"}}}}],"queries":["Make Them"],"lang":"en-US","projectId":"cps-proto-orig","sessionId":"3bce0c92-a37f-ad41-a389-75cd4b5040aa"}
+Chatbase response: 
+{ message_id: '5243852152', status: 200 }
+Chatbase response: 
+{ message_id: '5278336458', status: 200 }
+request = {"contexts":[{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/makingpayment-followup","lifespanCount":2,"parameters":null},{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/name","lifespanCount":5,"parameters":{"fields":{"name":{"stringValue":"asa-Bart","kind":"stringValue"},"name.original":{"stringValue":"asa-Bart","kind":"stringValue"}}}}],"queries":["No"],"lang":"en-US","projectId":"cps-proto-orig","sessionId":"3bce0c92-a37f-ad41-a389-75cd4b5040aa"}
+Chatbase response: 
+{ message_id: '5261529150', status: 200 }
+Chatbase response: 
+{ message_id: '5247832378', status: 200 }
+request = {"contexts":[{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/servicer-no-followup","lifespanCount":2,"parameters":null},{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/name","lifespanCount":5,"parameters":{"fields":{"name.original":{"stringValue":"asa-Bart","kind":"stringValue"},"name":{"stringValue":"asa-Bart","kind":"stringValue"}}}}],"queries":["Yes"],"lang":"en-US","projectId":"cps-proto-orig","sessionId":"3bce0c92-a37f-ad41-a389-75cd4b5040aa"}
+Chatbase response: 
+{ message_id: '5261574671', status: 200 }
+Chatbase response: 
+{ message_id: '5299000228', status: 200 }
+request = {"contexts":[{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/did-this-answer","lifespanCount":2,"parameters":null},{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/name","lifespanCount":5,"parameters":{"fields":{"name":{"stringValue":"asa-Bart","kind":"stringValue"},"name.original":{"stringValue":"asa-Bart","kind":"stringValue"}}}}],"queries":["No"],"lang":"en-US","projectId":"cps-proto-orig","sessionId":"3bce0c92-a37f-ad41-a389-75cd4b5040aa"}
+Chatbase response: 
+{ message_id: '5276944019', status: 200 }
+Chatbase response: 
+{ message_id: '5283247053', status: 200 }
+request = {"contexts":[{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/did-this-answer","lifespanCount":1,"parameters":null},{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/name","lifespanCount":4,"parameters":{"fields":{"name":{"stringValue":"asa-Bart","kind":"stringValue"},"name.original":{"stringValue":"asa-Bart","kind":"stringValue"}}}},{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/end-convo","lifespanCount":1,"parameters":null}],"queries":["Need more info"],"lang":"en-US","projectId":"cps-proto-orig","sessionId":"3bce0c92-a37f-ad41-a389-75cd4b5040aa"}
+Chatbase response: 
+{ message_id: '5259859022', status: 200 }
+Chatbase response: 
+{ message_id: '5243806364', status: 200 }
+retryFetchAnswerData - answerData cached
+retryFetchAnswerData - answerData cached cancelling setInterval for retryFetchAnswerData
+request = {"eventName":"WELCOME","lang":"en-US","projectId":"cps-proto-orig","sessionId":"3bce0c92-a37f-ad41-a389-75cd4b5040aa"}
+Chatbase response: 
+{ message_id: '5266549219', status: 200 }
+Chatbase response: 
+{ message_id: '5291003348', status: 200 }
+request = {"contexts":[{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/did-this-answer","lifespanCount":1,"parameters":null},{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/name","lifespanCount":4,"parameters":{"fields":{"name.original":{"stringValue":"asa-Bart","kind":"stringValue"},"name":{"stringValue":"asa-Bart","kind":"stringValue"}}}},{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/welcome","lifespanCount":1,"parameters":null}],"queries":["asa-bart"],"lang":"en-US","projectId":"cps-proto-orig","sessionId":"3bce0c92-a37f-ad41-a389-75cd4b5040aa"}
+Chatbase response: 
+{ message_id: '5270719715', status: 200 }
+Chatbase response: 
+{ message_id: '5253923528', status: 200 }
+request = {"contexts":[{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/name","lifespanCount":5,"parameters":{"fields":{"name":{"stringValue":"asa-bart","kind":"stringValue"},"name.original":{"stringValue":"asa-bart","kind":"stringValue"}}}}],"queries":["Loan Payments"],"lang":"en-US","projectId":"cps-proto-orig","sessionId":"3bce0c92-a37f-ad41-a389-75cd4b5040aa"}
+Chatbase response: 
+{ message_id: '5243910490', status: 200 }
+Chatbase response: 
+{ message_id: '5274708985', status: 200 }
+request = {"contexts":[{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/name","lifespanCount":5,"parameters":{"fields":{"name.original":{"stringValue":"asa-bart","kind":"stringValue"},"name":{"stringValue":"asa-bart","kind":"stringValue"}}}}],"queries":["Make Them"],"lang":"en-US","projectId":"cps-proto-orig","sessionId":"3bce0c92-a37f-ad41-a389-75cd4b5040aa"}
+Chatbase response: 
+{ message_id: '5257945284', status: 200 }
+Chatbase response: 
+{ message_id: '5295012995', status: 200 }
+request = {"contexts":[{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/makingpayment-followup","lifespanCount":2,"parameters":null},{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/name","lifespanCount":5,"parameters":{"fields":{"name":{"stringValue":"asa-bart","kind":"stringValue"},"name.original":{"stringValue":"asa-bart","kind":"stringValue"}}}}],"queries":["No"],"lang":"en-US","projectId":"cps-proto-orig","sessionId":"3bce0c92-a37f-ad41-a389-75cd4b5040aa"}
+Chatbase response: 
+{ message_id: '5247906702', status: 200 }
+Chatbase response: 
+{ message_id: '5274479455', status: 200 }
+request = {"contexts":[{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/servicer-no-followup","lifespanCount":2,"parameters":null},{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/name","lifespanCount":5,"parameters":{"fields":{"name.original":{"stringValue":"asa-bart","kind":"stringValue"},"name":{"stringValue":"asa-bart","kind":"stringValue"}}}}],"queries":["Yes"],"lang":"en-US","projectId":"cps-proto-orig","sessionId":"3bce0c92-a37f-ad41-a389-75cd4b5040aa"}
+Chatbase response: 
+{ message_id: '5268845322', status: 200 }
+Chatbase response: 
+{ message_id: '5278238763', status: 200 }
+request = {"contexts":[{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/did-this-answer","lifespanCount":2,"parameters":null},{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/name","lifespanCount":5,"parameters":{"fields":{"name.original":{"stringValue":"asa-bart","kind":"stringValue"},"name":{"stringValue":"asa-bart","kind":"stringValue"}}}}],"queries":["No"],"lang":"en-US","projectId":"cps-proto-orig","sessionId":"3bce0c92-a37f-ad41-a389-75cd4b5040aa"}
+Chatbase response: 
+{ message_id: '5266346266', status: 200 }
+Chatbase response: 
+{ message_id: '5276769640', status: 200 }
+request = {"contexts":[{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/did-this-answer","lifespanCount":1,"parameters":null},{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/name","lifespanCount":4,"parameters":{"fields":{"name.original":{"stringValue":"asa-bart","kind":"stringValue"},"name":{"stringValue":"asa-bart","kind":"stringValue"}}}},{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/end-convo","lifespanCount":5,"parameters":null}],"queries":["more info"],"lang":"en-US","projectId":"cps-proto-orig","sessionId":"3bce0c92-a37f-ad41-a389-75cd4b5040aa"}
+Chatbase response: 
+{ message_id: '5278452071', status: 200 }

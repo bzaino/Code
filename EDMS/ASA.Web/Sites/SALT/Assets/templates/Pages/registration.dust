@@ -1,0 +1,38 @@
+{>"page_parent" /}
+
+{<dynamicBody}
+    {#content}
+        <section id="regContainer" class="reg-container">
+            {?SiteMember.ActiveDirectoryKey}
+            {! Redirect authenticated users. !}
+                <script>
+                    window.location.href="/index.html";
+                </script>
+            {/SiteMember.ActiveDirectoryKey}
+            {?configuration.CurrentSchool}
+                <div class="unauth-school-banner padding-right">
+                    {>"LandingPage/dynamic_banner" bannerData=secondaryContent[0].records[0] /}
+                </div>
+            {/configuration.CurrentSchool}
+                <div class="margin-right {?configuration.CurrentSchool}school-reg{/configuration.CurrentSchool}">
+                     {>"partial_registration_form" /}
+                </div>
+        </section>
+    {/content}
+{/dynamicBody}
+
+<script>
+    require(['jquery', 'salt', 'salt/analytics/webtrends', 'jquery.cookie'], function ($, SALT, wtLogger) {
+        $('#content').on('click', '#lhnchatimg', function () {
+            SALT.publish('Standard:Action:Start', {'activity_name': 'Live Chat Register'});
+        });
+        $(function () {
+            SALT.publish('Registration:Start');
+            if ($.cookie('TooYoung')) {
+                $('#regForm :input').attr('disabled', true);
+                $('#regErrorCode').html('Looks like you are too young to be here.....');
+            }
+        });
+    });
+</script>
+

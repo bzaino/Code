@@ -1,0 +1,5 @@
+<div class="row">
+  <div class="small-12 columns">
+          <a class="js-remove-affiliation right js-void-href small padding-bottom {class}" tabindex="{tabIndex}" href="">Remove</a>
+    </div>
+</div>

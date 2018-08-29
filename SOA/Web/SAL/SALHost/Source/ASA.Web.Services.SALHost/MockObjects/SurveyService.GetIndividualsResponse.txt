@@ -1,0 +1,13 @@
+﻿{
+	"ErrorList":[],
+	"Surveys":[
+		{
+		"ErrorList":[],
+		"SurveyId":"CEB97457-7C40-476E-8D0E-0FA132C60CFF",
+		"SurveyQuestionSetId":"F92FC2E4-4B35-4840-B8B5-B1DB9707DE00",
+		"IndividualId":"C6BD65CF-D10A-471C-B251-9ABC0A02857F",
+		"Response":"MockResponse - Yes",
+		"ResponseCount":1,
+		}
+	]
+}

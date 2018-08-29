@@ -1,0 +1,86 @@
+<spr:beans xmlns:spr="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:tx="http://www.springframework.org/schema/tx"
+  xmlns:aop="http://www.springframework.org/schema/aop"
+  xmlns="http://www.endeca.com/schema/eacToolkit"
+  xsi:schemaLocation="
+      http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+      http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+      http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+      http://www.endeca.com/schema/eacToolkit http://www.endeca.com/schema/eacToolkit/eacToolkit.xsd"> 
+
+ <!--
+    ########################################################################
+    # Exports Workbench configuration from the Endeca Configuration Repository
+    # Iterates over all of the json configuration files to remove properties
+    # that would prevent the configuration from being imported again
+	# Author: Andrew Kusz
+  -->
+  <script id="ExportWorkbenchConfig">
+    <bean-shell-script>
+      <![CDATA[
+
+    private void pruneJson(File directory){
+    
+        for (File file : directory.listFiles()) {
+        
+            if (file.isDirectory()) {
+            
+                log.info("Directory: " + file.getName());
+                pruneJson(file); // Calls same method again.
+                
+            } else if( file.getName().contains(".json") ){
+            
+                BufferedReader jsonFileStream = new BufferedReader(new FileReader(file));
+                JSONTokener jsonTokener = new JSONTokener(jsonFileStream);
+                JSONObject json = new JSONObject(jsonTokener);
+                jsonFileStream.close();
+                
+                for ( String field : fieldsToRemove ) {
+                    json.remove(field);
+                }
+                
+                BufferedWriter writeFile = new BufferedWriter( new FileWriter(file) );
+                writeFile.write(json.toString(2));
+                writeFile.close();
+                
+                log.info("Removed properties from: "+file.getName());
+                
+            }
+        }
+    }
+    
+    
+    import org.json.*;
+    
+    String exportPath = "../config/WorkbenchExport";
+    String[] fieldsToRemove = {
+                                "jcr:createdBy",
+                                "jcr:created",
+                                "jcr:lastModified",
+                                "jcr:lastModifiedBy",
+                                "jcr:uuid",
+                                "jcr:weakReference:contentCollectionReferences",
+								"mdexMerchRuleID",
+								"contentCollectionReferences"
+                              };
+        
+    //Pull down latest Workbench configuration files
+    File exportDirectory = new File(exportPath);
+    IFCR.exportNode(exportDirectory.getAbsolutePath() ,".all"); 
+    
+    //Remove Merch Rule ID counter
+    File merchRuleIdCounter = new File(exportDirectory+"/configuration/mdexMerchRuleIDCounter.json");
+    if (merchRuleIdCounter.exists() ){
+        merchRuleIdCounter.delete();
+    }
+    
+    //Iterate over all files in export directory and prune json properties
+    pruneJson(exportDirectory);
+    
+    
+      ]]>
+    </bean-shell-script>
+  </script>
+  
+  </spr:beans>

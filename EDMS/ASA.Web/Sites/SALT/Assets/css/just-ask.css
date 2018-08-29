@@ -1,0 +1,14 @@
+.regContainerTool {
+  padding: 1.25em .625em 0 .625em;
+  border: 1px solid #e5e5e5;
+}
+
+#thanksMessage {
+  display: none;
+}
+
+.textareaHeight {
+  height: 150px;
+}
+
+/*# sourceMappingURL=just-ask.css.map */

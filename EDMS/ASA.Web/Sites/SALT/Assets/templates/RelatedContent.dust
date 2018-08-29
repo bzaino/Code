@@ -1,0 +1,11 @@
+<input id="CurrentTags" type="hidden" value="{mainContent[0].record.attributes.FlatTags}" />
+<div class="padded no-top-padding noprint">
+    <header class="page-title">
+        <h2>Related</h2>
+    </header>
+</div>
+<div id="RelatedContentSection" class="noprint flex-container"></div>
+
+<script>
+    require(['salt/RelatedContent']);
+</script>

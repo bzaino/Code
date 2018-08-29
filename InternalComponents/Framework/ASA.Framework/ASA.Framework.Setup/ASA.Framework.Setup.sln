@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ASA.Framework.Setup", "ASA.Framework.Setup.vdproj", "{20927D2C-C7DA-4C80-A5F9-51A3228D4A5E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ASA.Framework.MergeModule", "..\ASA.Framework.MergeModule\ASA.Framework.MergeModule.vdproj", "{89D9CA50-4377-4888-9D70-3830AA6A4852}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20927D2C-C7DA-4C80-A5F9-51A3228D4A5E}.Debug|Default.ActiveCfg = Debug
+		{20927D2C-C7DA-4C80-A5F9-51A3228D4A5E}.Debug|Default.Build.0 = Debug
+		{20927D2C-C7DA-4C80-A5F9-51A3228D4A5E}.Release|Default.ActiveCfg = Release
+		{20927D2C-C7DA-4C80-A5F9-51A3228D4A5E}.Release|Default.Build.0 = Release
+		{89D9CA50-4377-4888-9D70-3830AA6A4852}.Debug|Default.ActiveCfg = Debug
+		{89D9CA50-4377-4888-9D70-3830AA6A4852}.Debug|Default.Build.0 = Debug
+		{89D9CA50-4377-4888-9D70-3830AA6A4852}.Release|Default.ActiveCfg = Release
+		{89D9CA50-4377-4888-9D70-3830AA6A4852}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

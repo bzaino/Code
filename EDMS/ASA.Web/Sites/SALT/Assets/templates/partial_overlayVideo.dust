@@ -1,0 +1,17 @@
+<figure class="featured" id="OverlayImage{attributes.b-video-id|trim}">
+    <a href="" {data-reveal-tag} class="tileImgLink js-void-href {show-vid-overlay}">
+        {@responsiveImage imageSource="{attributes.tile-image-2014}" /}
+    </a>
+</figure>
+{@if cond="'{data-reveal-tag}' !== ''" }
+    <header class="half-padding-top" id="OverlHeader{attributes.b-video-id|trim}">
+        <a href="#" data-reveal-id="js-reveal-video-overlay" title="{attributes.resource_link_title}" class="tileImgLink show-vid-overlay">{attributes.headline}</a>
+    </header>
+    <!-- hidden reveal/video overlay -->
+    <a href="{attributes.external-url}" id="playerURL" title="{attributes.resource_link_title}"></a>
+    {>"partial_overlay_SALTTour"/}
+{:else}
+    <header id="OverlHeader{attributes.b-video-id|trim}">
+        <a href="#" title="{attributes.resource_link_title}" class="tileImgLink">{attributes.headline}</a>
+    </header>
+{/if}

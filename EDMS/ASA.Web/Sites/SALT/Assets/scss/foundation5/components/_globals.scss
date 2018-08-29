@@ -1,0 +1,556 @@
+/********************************************************
+    globals.css is used for code that will be seen on many or all Salt pages.
+    For Foundation layout and spacing overides- check UtilityClasses.css
+
+********************************************************/
+
+
+/* HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html, button, input, select, textarea {
+    color: #434343;
+}
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    cursor: auto;
+    overflow-y: scroll;
+}
+body * {
+    font-family: 'Noto Sans', sans-serif;
+}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+.for-print-logo {
+    display: none;
+}
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+figure {
+    margin: 0;
+}
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/********************************************************
+    1: Globals
+********************************************************/
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #cccccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+.dropShadow {
+    box-shadow: 2px 3px rgba(0,0,0,0.3);
+}
+.last {
+    padding-right: 0;
+    float: right;
+}
+.verticalspacer50{height:50px;}
+.spacebefore{margin-top:20px;}
+.spaceleft{margin-left:20px;}
+/****************
+
+SALT Text defaults
+
+*****************/
+h1, h2, h3, h4, h5, h6 {
+    color: #003763;
+    margin-top: 0;
+}
+h1 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.salt3 h1 {
+    font-size: 1.2rem;
+}
+.salt3 .tabs.fixed{
+    top: 50px;
+}
+h2 {
+    font-size: 1.1rem;
+}
+h2:empty {
+   display:none;
+}
+.content-section h2 {
+    font-weight: bold;
+}
+h3 {
+    font-size: 1rem;
+}
+h4 {
+    font-size: 0.9rem;
+}
+/***** used for Windowshade subheads ****/
+h5 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: -.3em !important;
+}
+h6, p, ul li, ol li {
+    font-size: 0.8rem;
+}
+sup {
+    font-size: 75%;
+    text-decoration: none !important;
+}
+a > sup {
+    text-decoration: none !important;
+}
+.content, .main-content-text {
+    color: #003763;
+}
+.content-section {
+    z-index: inherit;
+}
+.subheader {
+    font-size: 11px;
+    font-family: 'Noto Sans', sans-serif;
+    color: $gray75;
+}
+table tr th, table tr td {
+    font-weight: bold;
+    color: inherit;
+}
+.ellipsis{
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.title-container  {
+   border-bottom: 1px solid #ececec;
+   padding-bottom:.625em;
+}
+.title-container h1 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+.title-container h2 {
+    padding-top: 1em;
+}
+.title-container h5 {
+    font-weight: normal;
+    font-size: .95em;
+}
+.profileInfo h2.deck {
+    color: #555;
+    line-height: 1.2rem;
+    font-weight: normal;
+}
+.border-bottom {
+    border-bottom: 1px solid #ccc;
+    padding: .8em 0;
+}
+.border-top {
+    border-top: 1px solid #ccc;
+    padding: .8em 0;
+}
+span {
+    //color: #003763;
+}
+
+/****************
+
+SALT Link defaults
+
+*****************/
+a, .link {
+    color: $light-blue;
+    line-height: inherit;
+    text-decoration: underline;
+    font-weight: bold;
+
+    &:hover, &.underline, &:active, &:focus {
+        color: $light-blue; /* Foundation's hover state is blue by default */
+        text-decoration: none;
+    }
+}
+ .link {
+    font-weight: normal;
+ }
+
+.section_title {
+    color: #000;
+    margin: 0;
+    padding: 0 0 5px;
+}
+a:hover h1, a:focus h1, a:active h1 {
+    color: $light-blue;
+}
+h2.section_title {
+    padding: 0 0 12px 4px;
+    font-size: 1em;
+}
+.section_title.row {
+    margin-bottom: 10px;
+}
+.blank_list.meta li {
+    margin-bottom: 0;
+}
+.article-top {
+    width:100%;
+    margin-bottom: .625em !important;
+}
+.article-top.inline-list > li {
+    margin-left: 0;
+}
+.content {
+    background: #fff;
+    border: 0;
+    padding: .625em;
+    margin: 0 0 1.2em 0em;
+}
+.content hr {
+    height: 1px;
+    margin: 8px 0;
+    background: #ececec;
+    border-width: 0;
+}
+.messages h1 {
+    font-size: 1em;
+    text-transform: none;
+    margin-bottom: 5px;
+}
+.messages h2 {
+    font-size: .7em;
+    font-weight: 100;
+}
+.thin-border {
+    border: 1px solid #d5d5d5;
+}
+.sidebar-border {
+    border-bottom: 1px solid #dcddde;
+    /* margin-bottom: .625em; */
+}
+.padded {
+    padding: 0.625em;
+}
+.padded > :first-child {
+    margin-top: 0;
+}
+.padded > :last-child {
+    margin-bottom: 0;
+}
+.gradSalaryEstimator .emphasis {
+    color: $salt-blue;
+    font-weight: bold;
+}
+area {
+    outline: none;
+}
+small {
+    font-size: 80%;
+    line-height:1em;
+    color: #003763;
+}
+.video-h5 h5 {
+    margin-top: 2em;
+}
+.calcXML {
+    overflow: auto;
+}
+.calcXML.shortest {
+    height: 1450px;
+}
+.calcXML.short {
+    height: 2300px;
+}
+.calcXML.medium {
+    height: 3000px;
+}
+.calcXML.long {
+    height: 2900px;
+}
+.calcXML.longer {
+    height: 4400px;
+}
+.calcXML.longest {
+    height: 5900px;
+}
+.flat-tags {
+    font-size: .85em;
+    margin: 1em 0 2em 0;
+    clear: both;
+}
+.article-info img {
+    float: left;
+    margin:.4em 1em .4em 0;
+    border-radius: 50%;
+}
+.article-info p {
+    display: inline;
+    margin-top: 0;
+    font-style: italic;
+    font-size: 1em;
+}
+.article-info p strong {
+     font-size:1.1em;
+}
+.article-info {
+    margin-bottom: 1em !important;
+    line-height: .7rem;
+    font-size:.8em;
+}
+.third-party-image, .third-party-copy {
+    display: block;
+    clear: both;
+}
+/* SWD-7216 Route 'small screen' users to signup page instead of signup overlay */
+.registration-link, .user-icon .registration-link {
+    display: none;
+ }
+ header.special-events {
+    margin: 0 .625em;
+ }
+.scroll-button {
+    background: transparent;
+    bottom: 0;
+    height: 44px;
+    width: 44px;
+    position: fixed;
+    z-index: 98;
+    right: .2em;
+    text-align: right;
+}
+.rating-email-box {
+    background-color: #939393;
+    box-shadow: 6px 6px 5px #888888;
+}
+.rating-email-box textarea {
+    height: 56px;
+}
+/* from deprecated.css*/
+.block {
+    background: #FFF;
+    /*border: 2px solid #CCC;*/
+    margin-bottom: 15px;
+    display: block;
+    position: relative;
+}
+.button.next-records {
+    margin-left: 15px;
+}
+.logo-row {
+    width: 60%;
+    margin: 0 auto;
+    &.row { 
+        margin-bottom: 11px;
+    }
+}
+.image-body img {
+    z-index: 10;
+}
+.skip-link {
+    position: fixed;
+    padding: 10px 100px;
+    background: $gray15;
+    z-index: 1000;
+    top: -100px;
+    display: none;
+    &:focus {
+        top: 0;
+    }
+}
+/*The overflow hidden in foundation.css was causing the overlay to disappear at the bottom of the goals screen in mobile view. This is to override teh foundation.css ruke in mobile view*/
+@media all and (min-width: 320px) and (max-width: 641px){
+   .off-canvas-wrap{
+    overflow: visible;
+    }
+}
+
+/* */
+/* SWD-7216 Route 'small screen' users to signup page instead of signup overlay */
+@media all and (min-width: 213px) and (max-width: 641px) {
+    .registrationOverlay-link{
+        /* need important or other class will overide setting*/
+        display: none !important;
+    }
+    .registration-link, .user-icon .registration-link {
+        display: inline;
+    }
+    .block-for-small {
+        display: block;
+    }
+    .top-margin-small-only {
+        margin-top: .7em;
+    }
+ }
+@media only screen and (max-width: 40em) {
+    .mobile-link {
+        color: #54c400 !important;
+        background-color: rgba(0,0,0,0.0) !important;
+        box-shadow: none !important;
+        font-family: 'Noto Sans', sans-serif !important;
+        transition-property: background-color, color;
+        transition-duration: 1s;
+        transition-timing-function: ease-out;
+    }
+    .small-only-left{
+        float: left !important;
+    }
+    .small-only-right{
+        float: right !important;
+    }
+    .small-medium-left{
+        float: left !important;
+    }
+    .small-medium-right{
+        float: right !important;
+    }
+}
+@media only screen and (min-width: 40.063em) {
+    .salt3 h1 {
+        font-size: 1.3rem;
+    }
+    .title-container h1 {
+        font-size: 1.4em;
+    }
+    .calcXML.shortest {
+        height: 1300px;
+    }
+    .calcXML.short {
+        height: 2000px;
+    }
+    .calcXML.medium {
+        height: 2700px;
+    }
+    .calcXML.long {
+        height: 2500px;
+    }
+    .calcXML.longer {
+        height: 3800px;
+    }
+    .calcXML.longest {
+        height: 5000px;
+    }
+    .content {
+        background: #fff;
+        padding: .625em 0;
+        margin: 0 .625em 1.2em .625em;
+    }
+    #tool-detail .content {
+        margin: 0 0 1.2em 0;
+    }
+    .scroll-button {
+        bottom: 1.5em;
+    }
+}
+/**Alignment classes ends**/
+@media only screen and (min-width: 60.063em) {
+    .calcXML.shortest {
+        height: 1200px;
+    }
+    .calcXML.short {
+        height: 2000px;
+    }
+    .calcXML.medium {
+        height: 2300px;
+    }
+    .calcXML.long {
+        height: 2500px;
+    }
+    .calcXML.longer {
+        height: 3100px;
+    }
+    .calcXML.longest {
+        height: 4000px;
+    }
+    .third-party-image {
+        display: block;
+        max-width:30%;
+        clear: none;
+    }
+    .third-party-copy {
+        display: inline;
+        clear: none;
+    }
+    .sidebar-content:empty+.scroll-button {
+        width: 58.75em;
+        max-width: 58.75em;
+    }
+}
+// large up (use this for "large sizes", not the others)
+@media only screen and (min-width: 64.063em){
+    .skip-link {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 64em) {
+    .sidebar-content:empty+.scroll-button {
+        width: 62em;
+        max-width: 62em;
+    }
+  }
+@media only screen and (min-width: 74em) {
+    .scroll-button {
+         right: 8%;
+    }
+}
+@media only screen and (min-width: 84em) {
+    .scroll-button {
+         right: 12%;
+    }
+}
+@media only screen and (min-width: 94em) {
+    .scroll-button {
+         right: 16%;
+    }
+}
+@media only screen and (min-width: 104em) {
+    .scroll-button {
+         right: 18%;
+    }
+}
+.nopipe + .row-divider{
+    display: none;
+}

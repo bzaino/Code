@@ -1,0 +1,13 @@
+request = {"contexts":[{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/did-this-answer","lifespanCount":2,"parameters":null},{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/name","lifespanCount":5,"parameters":{"fields":{"name":{"stringValue":"asa-bart","kind":"stringValue"},"name.original":{"stringValue":"asa-bart","kind":"stringValue"}}}}],"queries":["No"],"lang":"en-US","projectId":"cps-proto-orig","sessionId":"3bce0c92-a37f-ad41-a389-75cd4b5040aa"}
+Chatbase response: 
+{ message_id: '5258576407', status: 200 }
+Chatbase response: 
+{ message_id: '5258662482', status: 200 }
+request = {"contexts":[{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/name","lifespanCount":5,"parameters":{"fields":{"name.original":{"stringValue":"asa-bart","kind":"stringValue"},"name":{"stringValue":"asa-bart","kind":"stringValue"}}}}],"queries":["More info"],"lang":"en-US","projectId":"cps-proto-orig","sessionId":"3bce0c92-a37f-ad41-a389-75cd4b5040aa"}
+Chatbase response: 
+{ message_id: '5260464882', status: 200 }
+request = {"contexts":[{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/fallback-first","lifespanCount":1,"parameters":null},{"name":"projects/cps-proto-orig/agent/sessions/3bce0c92-a37f-ad41-a389-75cd4b5040aa/contexts/name","lifespanCount":4,"parameters":{"fields":{"name":{"stringValue":"asa-bart","kind":"stringValue"},"name.original":{"stringValue":"asa-bart","kind":"stringValue"}}}}],"queries":["more info"],"lang":"en-US","projectId":"cps-proto-orig","sessionId":"3bce0c92-a37f-ad41-a389-75cd4b5040aa"}
+Chatbase response: 
+{ message_id: '5254348536', status: 200 }
+retryFetchAnswerData - answerData cached
+retryFetchAnswerData - answerData cached cancelling setInterval for retryFetchAnswerData

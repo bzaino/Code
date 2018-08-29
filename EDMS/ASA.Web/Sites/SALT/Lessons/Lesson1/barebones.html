@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>$ALT - Lesson 1 - Need help saving toward a goal?</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <base href="/lessons/Lesson1/" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/colorbox.css" />
+    <link rel="stylesheet" href="css/overlays.css" />
+    <link rel="stylesheet" href="css/notifications.css" />
+    <link rel="stylesheet" href="css/curriculum/global.css" />
+    <link rel="stylesheet" href="css/curriculum/cashflow.css" />
+
+    <script src="/Assets/Scripts/js/libs/modernizr/modernizr.js"> </script>
+    <script src="/Assets/Scripts/js/libs/jquery/jquery.js"> </script>
+    <script src="/Assets/Scripts/ASA/ASAUtilities.js"> </script>
+    <script src="/Assets/Scripts/ASA/ASAWebModel.js"> </script>
+    <script src="/Assets/Scripts/js/require-config.js"> </script>
+    <script data-main="/Assets/Scripts/js/main" src="/Assets/Scripts/js/require.js"></script>
+
+    <script>
+      require(['jquery', 'jquery.colorbox', 'salt/global!', 'jquery.validate'], function ($) {
+        $(function () {
+          $('input[type=button].login').click(function () {
+            $.colorbox({
+              href: '/Account/LogOn',
+              opacity: '0.5'
+            });
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <input type="button" class="login" value="Log In" />
+
+    <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6. chromium.org/developers/how-tos/chrome-frame-getting-started -->
+    <!--[if lt IE 7 ]>
+      <script defer='defer' src='//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js'></script>
+      <script defer='defer'>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+    <![endif]-->
+  </body>
+</html>

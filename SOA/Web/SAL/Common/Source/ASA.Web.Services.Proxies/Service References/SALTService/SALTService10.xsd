@@ -1,0 +1,1587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Services.Contracts.Data" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://localhost:8081/SALTService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Common.Types.Enums" />
+  <xs:complexType name="MemberContentInteractionContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ContentID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="InteractionDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Member" nillable="true" type="tns:MemberContract" />
+          <xs:element minOccurs="0" name="MemberContentComment" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberContentInteractionID" type="xs:int" />
+          <xs:element minOccurs="0" name="MemberContentInteractionValue" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RefContentInteractionType" nillable="true" type="tns:RefContentInteractionTypeContract" />
+          <xs:element minOccurs="0" name="RefContentInteractionTypeID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MemberContentInteractionContract" nillable="true" type="tns:MemberContentInteractionContract" />
+  <xs:complexType name="IEntity">
+    <xs:sequence />
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="IEntity" nillable="true" type="tns:IEntity" />
+  <xs:complexType name="MemberContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActiveDirectoryKey" type="ser:guid" />
+          <xs:element minOccurs="0" name="CommunityDisplayName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DashboardEnabled" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EnrollmentStatus" nillable="true" type="tns:EnrollmentStatusContract" />
+          <xs:element minOccurs="0" name="EnrollmentStatusCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EnrollmentStatusId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GradeLevel" nillable="true" type="tns:GradeLevelContract" />
+          <xs:element minOccurs="0" name="GradeLevelCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GradeLevelId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="InvitationToken" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="IsCommunityActive" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsContactAllowed" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsMemberActive" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LastLoginDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberActivationHistories" nillable="true" type="tns:ArrayOfMemberActivationHistoryContract" />
+          <xs:element minOccurs="0" name="MemberActivityHistories" nillable="true" type="tns:ArrayOfMemberActivityHistoryContract" />
+          <xs:element minOccurs="0" name="MemberAlerts" nillable="true" type="tns:ArrayOfMemberAlertContract" />
+          <xs:element minOccurs="0" name="MemberContentInteractions" nillable="true" type="tns:ArrayOfMemberContentInteractionContract" />
+          <xs:element minOccurs="0" name="MemberId" type="xs:int" />
+          <xs:element minOccurs="0" name="MemberLessons" nillable="true" type="tns:ArrayOfMemberLessonContract" />
+          <xs:element minOccurs="0" name="MemberOrganizations" nillable="true" type="tns:ArrayOfMemberOrganizationContract" />
+          <xs:element minOccurs="0" name="MemberProducts" nillable="true" type="tns:ArrayOfMemberProductContract" />
+          <xs:element minOccurs="0" name="MemberProfileAnswers" nillable="true" type="tns:ArrayOfMemberProfileAnswerContract" />
+          <xs:element minOccurs="0" name="MemberProfileQAs" nillable="true" type="tns:ArrayOfMemberProfileQAContract" />
+          <xs:element minOccurs="0" name="MemberReportedLoans" nillable="true" type="tns:ArrayOfMemberReportedLoanContract" />
+          <xs:element minOccurs="0" name="MemberRoles" nillable="true" type="tns:ArrayOfMemberRoleContract" />
+          <xs:element minOccurs="0" name="MemberStartDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OrganizationIdForCourses" type="xs:int" />
+          <xs:element minOccurs="0" name="OrganizationProducts" nillable="true" type="tns:ArrayOfRefOrganizationProductContract" />
+          <xs:element minOccurs="0" name="PaymentReminders" nillable="true" type="tns:ArrayOfPaymentReminderContract" />
+          <xs:element minOccurs="0" name="RegistrationSource" nillable="true" type="tns:RefRegistrationSourceContract" />
+          <xs:element minOccurs="0" name="RegistrationSourceId" type="xs:int" />
+          <xs:element minOccurs="0" name="SurveyResponses" nillable="true" type="tns:ArrayOfSurveyResponseContract" />
+          <xs:element minOccurs="0" name="USPostalCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VLCUserProfile" nillable="true" type="tns:ArrayOfVLCUserProfileContract" />
+          <xs:element minOccurs="0" name="VLCUserResponses" nillable="true" type="tns:ArrayOfVLCUserResponseContract" />
+          <xs:element minOccurs="0" name="WelcomeEmailSent" type="xs:boolean" />
+          <xs:element minOccurs="0" name="YearOfBirth" nillable="true" type="xs:short" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MemberContract" nillable="true" type="tns:MemberContract" />
+  <xs:complexType name="EnrollmentStatusContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="EnrollmentStatusCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EnrollmentStatusDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EnrollmentStatusId" type="xs:int" />
+          <xs:element minOccurs="0" name="Members" nillable="true" type="tns:ArrayOfMemberContract" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EnrollmentStatusContract" nillable="true" type="tns:EnrollmentStatusContract" />
+  <xs:complexType name="ArrayOfMemberContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MemberContract" nillable="true" type="tns:MemberContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMemberContract" nillable="true" type="tns:ArrayOfMemberContract" />
+  <xs:complexType name="GradeLevelContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="GradeLevelCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GradeLevelDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GradeLevelId" type="xs:int" />
+          <xs:element minOccurs="0" name="Members" nillable="true" type="tns:ArrayOfMemberContract" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GradeLevelContract" nillable="true" type="tns:GradeLevelContract" />
+  <xs:complexType name="VLCUserProfileContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdjustedGrossIncome" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="EnrollmentStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FamilySize" nillable="true" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="GraduationDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Member" nillable="true" type="tns:MemberContract" />
+          <xs:element minOccurs="0" name="MemberID" type="xs:int" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RepaymentStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StateOfResidence" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TaxFilingStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VLCUserProfileID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="VLCUserProfileContract" nillable="true" type="tns:VLCUserProfileContract" />
+  <xs:complexType name="MemberRoleContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="IsMemberRoleActive" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Member" nillable="true" type="tns:MemberContract" />
+          <xs:element minOccurs="0" name="MemberID" type="xs:int" />
+          <xs:element minOccurs="0" name="MemberRoleID" type="xs:int" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RefMemberRole" nillable="true" type="tns:RefMemberRoleContract" />
+          <xs:element minOccurs="0" name="RefMemberRoleID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MemberRoleContract" nillable="true" type="tns:MemberRoleContract" />
+  <xs:complexType name="RefMemberRoleContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MemberRoles" nillable="true" type="tns:ArrayOfMemberRoleContract" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RefMemberRoleID" type="xs:int" />
+          <xs:element minOccurs="0" name="RoleDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RoleName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefMemberRoleContract" nillable="true" type="tns:RefMemberRoleContract" />
+  <xs:complexType name="ArrayOfMemberRoleContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MemberRoleContract" nillable="true" type="tns:MemberRoleContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMemberRoleContract" nillable="true" type="tns:ArrayOfMemberRoleContract" />
+  <xs:complexType name="MemberLessonContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CurrentStep" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Lesson" nillable="true" type="tns:LessonContract" />
+          <xs:element minOccurs="0" name="LessonId" type="xs:int" />
+          <xs:element minOccurs="0" name="LessonQuestionResponses" nillable="true" type="tns:ArrayOfLessonQuestionResponseContract" />
+          <xs:element minOccurs="0" name="LessonUserId" type="xs:int" />
+          <xs:element minOccurs="0" name="Member" nillable="true" type="tns:MemberContract" />
+          <xs:element minOccurs="0" name="MemberId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="MemberLessonId" type="xs:int" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MemberLessonContract" nillable="true" type="tns:MemberLessonContract" />
+  <xs:complexType name="LessonContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LessonDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LessonId" type="xs:int" />
+          <xs:element minOccurs="0" name="LessonName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LessonSteps" nillable="true" type="tns:ArrayOfLessonStepContract" />
+          <xs:element minOccurs="0" name="MemberLessons" nillable="true" type="tns:ArrayOfMemberLessonContract" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LessonContract" nillable="true" type="tns:LessonContract" />
+  <xs:complexType name="ArrayOfLessonStepContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LessonStepContract" nillable="true" type="tns:LessonStepContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLessonStepContract" nillable="true" type="tns:ArrayOfLessonStepContract" />
+  <xs:complexType name="LessonStepContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Lesson" nillable="true" type="tns:LessonContract" />
+          <xs:element minOccurs="0" name="LessonId" type="xs:int" />
+          <xs:element minOccurs="0" name="LessonQuestions" nillable="true" type="tns:ArrayOfLessonQuestionContract" />
+          <xs:element minOccurs="0" name="LessonStepId" type="xs:int" />
+          <xs:element minOccurs="0" name="LessonStepName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OrderNumber" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LessonStepContract" nillable="true" type="tns:LessonStepContract" />
+  <xs:complexType name="ArrayOfLessonQuestionContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LessonQuestionContract" nillable="true" type="tns:LessonQuestionContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLessonQuestionContract" nillable="true" type="tns:ArrayOfLessonQuestionContract" />
+  <xs:complexType name="LessonQuestionContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="HasMultipleValues" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LessonQuestionAttributes" nillable="true" type="tns:ArrayOfLessonQuestionAttributeContract" />
+          <xs:element minOccurs="0" name="LessonQuestionId" type="xs:int" />
+          <xs:element minOccurs="0" name="LessonStep" nillable="true" type="tns:LessonStepContract" />
+          <xs:element minOccurs="0" name="LessonStepId" type="xs:int" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OrderNumber" type="xs:int" />
+          <xs:element minOccurs="0" name="Question" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LessonQuestionContract" nillable="true" type="tns:LessonQuestionContract" />
+  <xs:complexType name="ArrayOfLessonQuestionAttributeContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LessonQuestionAttributeContract" nillable="true" type="tns:LessonQuestionAttributeContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLessonQuestionAttributeContract" nillable="true" type="tns:ArrayOfLessonQuestionAttributeContract" />
+  <xs:complexType name="LessonQuestionAttributeContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AttributeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LessonQuestion" nillable="true" type="tns:LessonQuestionContract" />
+          <xs:element minOccurs="0" name="LessonQuestionAttributeId" type="xs:int" />
+          <xs:element minOccurs="0" name="LessonQuestionId" type="xs:int" />
+          <xs:element minOccurs="0" name="LessonQuestionResponses" nillable="true" type="tns:ArrayOfLessonQuestionResponseContract" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LessonQuestionAttributeContract" nillable="true" type="tns:LessonQuestionAttributeContract" />
+  <xs:complexType name="ArrayOfLessonQuestionResponseContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LessonQuestionResponseContract" nillable="true" type="tns:LessonQuestionResponseContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLessonQuestionResponseContract" nillable="true" type="tns:ArrayOfLessonQuestionResponseContract" />
+  <xs:complexType name="LessonQuestionResponseContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="GroupingNumber" type="xs:int" />
+          <xs:element minOccurs="0" name="LessonQuestionAttribute" nillable="true" type="tns:LessonQuestionAttributeContract" />
+          <xs:element minOccurs="0" name="LessonQuestionAttributeId" type="xs:int" />
+          <xs:element minOccurs="0" name="LessonQuestionResponseId" type="xs:int" />
+          <xs:element minOccurs="0" name="MemberLesson" nillable="true" type="tns:MemberLessonContract" />
+          <xs:element minOccurs="0" name="MemberLessonId" type="xs:int" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ResponseValue" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LessonQuestionResponseContract" nillable="true" type="tns:LessonQuestionResponseContract" />
+  <xs:complexType name="VLCUserResponseContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Member" nillable="true" type="tns:MemberContract" />
+          <xs:element minOccurs="0" name="MemberID" type="xs:int" />
+          <xs:element minOccurs="0" name="Response" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ResponseDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="VLCQuestion" nillable="true" type="tns:VLCQuestionContract" />
+          <xs:element minOccurs="0" name="VLCQuestionID" type="xs:int" />
+          <xs:element minOccurs="0" name="VLCUserResponseID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="VLCUserResponseContract" nillable="true" type="tns:VLCUserResponseContract" />
+  <xs:complexType name="VLCQuestionContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ExternalItemID" type="xs:short" />
+          <xs:element minOccurs="0" name="ExternalItemVersionNumber" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="Question" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VLCQuestionID" type="xs:int" />
+          <xs:element minOccurs="0" name="VLCUserResponses" nillable="true" type="tns:ArrayOfVLCUserResponseContract" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="VLCQuestionContract" nillable="true" type="tns:VLCQuestionContract" />
+  <xs:complexType name="ArrayOfVLCUserResponseContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VLCUserResponseContract" nillable="true" type="tns:VLCUserResponseContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVLCUserResponseContract" nillable="true" type="tns:ArrayOfVLCUserResponseContract" />
+  <xs:complexType name="MemberOrganizationContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BranchCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="EffectiveEndDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="EffectiveStartDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ExpectedGraduationYear" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="IsContracted" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsLookupAllowed" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsOrganizationDeleted" type="xs:boolean" />
+          <xs:element minOccurs="0" name="MemberID" type="xs:int" />
+          <xs:element minOccurs="0" name="MemberOrganizationID" type="xs:int" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OECode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrganizationAliases" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrganizationExternalID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrganizationId" type="xs:int" />
+          <xs:element minOccurs="0" name="OrganizationLogoName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrganizationName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrganizationTypeExternalID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefOrganizationID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefOrganizationTypeID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefSALTSchoolTypeID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="SchoolReportingID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MemberOrganizationContract" nillable="true" type="tns:MemberOrganizationContract" />
+  <xs:complexType name="RefOrganizationContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BranchCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="IsContracted" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsLookupAllowed" type="xs:boolean" />
+          <xs:element minOccurs="0" name="MemberOrganizations" nillable="true" type="tns:ArrayOfMemberOrganizationContract" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OPECode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrganizationAliases" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrganizationDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrganizationExternalID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrganizationLogoName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrganizationName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrganizationToDoLists" nillable="true" type="tns:ArrayOfOrganizationToDoListContract" />
+          <xs:element minOccurs="0" name="RefOrganizationID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefOrganizationProducts" nillable="true" type="tns:ArrayOfRefOrganizationProductContract" />
+          <xs:element minOccurs="0" name="RefOrganizationType" nillable="true" type="tns:RefOrganizationTypeContract" />
+          <xs:element minOccurs="0" name="RefOrganizationTypeID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefSALTSchoolType" nillable="true" type="tns:RefSALTSchoolTypeContract" />
+          <xs:element minOccurs="0" name="RefSALTSchoolTypeID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="RefState" nillable="true" type="tns:RefStateContract" />
+          <xs:element minOccurs="0" name="RefStateID" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefOrganizationContract" nillable="true" type="tns:RefOrganizationContract" />
+  <xs:complexType name="ArrayOfMemberOrganizationContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MemberOrganizationContract" nillable="true" type="tns:MemberOrganizationContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMemberOrganizationContract" nillable="true" type="tns:ArrayOfMemberOrganizationContract" />
+  <xs:complexType name="ArrayOfOrganizationToDoListContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrganizationToDoListContract" nillable="true" type="tns:OrganizationToDoListContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrganizationToDoListContract" nillable="true" type="tns:ArrayOfOrganizationToDoListContract" />
+  <xs:complexType name="OrganizationToDoListContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ContentID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DueDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Headline" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OrganizationToDoListID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefOrganizationID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefToDoStatusID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefToDoTypeID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OrganizationToDoListContract" nillable="true" type="tns:OrganizationToDoListContract" />
+  <xs:complexType name="ArrayOfRefOrganizationProductContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RefOrganizationProductContract" nillable="true" type="tns:RefOrganizationProductContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRefOrganizationProductContract" nillable="true" type="tns:ArrayOfRefOrganizationProductContract" />
+  <xs:complexType name="RefOrganizationProductContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="IsRefOrganizationProductActive" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RefOrganization" nillable="true" type="tns:RefOrganizationContract" />
+          <xs:element minOccurs="0" name="RefOrganizationID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefOrganizationProductID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefProduct" nillable="true" type="tns:RefProductContract" />
+          <xs:element minOccurs="0" name="RefProductID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefOrganizationProductContract" nillable="true" type="tns:RefOrganizationProductContract" />
+  <xs:complexType name="RefProductContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="IsProductActive" type="xs:boolean" />
+          <xs:element minOccurs="0" name="MemberProducts" nillable="true" type="tns:ArrayOfMemberProductContract" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ProductDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProductName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefProductID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefProductType" nillable="true" type="tns:RefProductTypeContract" />
+          <xs:element minOccurs="0" name="RefProductTypeID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefProductContract" nillable="true" type="tns:RefProductContract" />
+  <xs:complexType name="ArrayOfMemberProductContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MemberProductContract" nillable="true" type="tns:MemberProductContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMemberProductContract" nillable="true" type="tns:ArrayOfMemberProductContract" />
+  <xs:complexType name="MemberProductContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="IsMemberProductActive" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Member" nillable="true" type="tns:MemberContract" />
+          <xs:element minOccurs="0" name="MemberID" type="xs:int" />
+          <xs:element minOccurs="0" name="MemberProductID" type="xs:int" />
+          <xs:element minOccurs="0" name="MemberProductValue" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RefProduct" nillable="true" type="tns:RefProductContract" />
+          <xs:element minOccurs="0" name="RefProductID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MemberProductContract" nillable="true" type="tns:MemberProductContract" />
+  <xs:complexType name="RefStateContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RefSalaryEstimatorSchools" nillable="true" type="tns:ArrayOfRefSalaryEstimatorSchoolContract" />
+          <xs:element minOccurs="0" name="RefStateID" type="xs:int" />
+          <xs:element minOccurs="0" name="StateCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StateName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefStateContract" nillable="true" type="tns:RefStateContract" />
+  <xs:complexType name="ArrayOfRefSalaryEstimatorSchoolContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RefSalaryEstimatorSchoolContract" nillable="true" type="tns:RefSalaryEstimatorSchoolContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRefSalaryEstimatorSchoolContract" nillable="true" type="tns:ArrayOfRefSalaryEstimatorSchoolContract" />
+  <xs:complexType name="RefSalaryEstimatorSchoolContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DataSource" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RefSalaryEstimatorSchoolID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefSalaryEstimatorSchoolMajors" nillable="true" type="tns:ArrayOfRefSalaryEstimatorSchoolMajorContract" />
+          <xs:element minOccurs="0" name="RefState" nillable="true" type="tns:RefStateContract" />
+          <xs:element minOccurs="0" name="RefStateID" type="xs:int" />
+          <xs:element minOccurs="0" name="SchoolName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SourceSchoolID" type="xs:int" />
+          <xs:element minOccurs="0" name="WageFactorMid" type="xs:decimal" />
+          <xs:element minOccurs="0" name="WageFactorStart" type="xs:decimal" />
+          <xs:element minOccurs="0" name="WageFactorTier" type="xs:unsignedByte" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefSalaryEstimatorSchoolContract" nillable="true" type="tns:RefSalaryEstimatorSchoolContract" />
+  <xs:complexType name="ArrayOfRefSalaryEstimatorSchoolMajorContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RefSalaryEstimatorSchoolMajorContract" nillable="true" type="tns:RefSalaryEstimatorSchoolMajorContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRefSalaryEstimatorSchoolMajorContract" nillable="true" type="tns:ArrayOfRefSalaryEstimatorSchoolMajorContract" />
+  <xs:complexType name="RefSalaryEstimatorSchoolMajorContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DataSource" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RefMajor" nillable="true" type="tns:RefMajorContract" />
+          <xs:element minOccurs="0" name="RefMajorID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefSalaryEstimatorSchool" nillable="true" type="tns:RefSalaryEstimatorSchoolContract" />
+          <xs:element minOccurs="0" name="RefSalaryEstimatorSchoolID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefSalaryEstimatorSchoolMajorID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefSalaryEstimatorSchoolMajorContract" nillable="true" type="tns:RefSalaryEstimatorSchoolMajorContract" />
+  <xs:complexType name="RefMajorContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DataSource" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MajorName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MajorSalaryAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RefMajorID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefSalaryEstimatorSchoolMajors" nillable="true" type="tns:ArrayOfRefSalaryEstimatorSchoolMajorContract" />
+          <xs:element minOccurs="0" name="SourceMajorID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefMajorContract" nillable="true" type="tns:RefMajorContract" />
+  <xs:complexType name="RefSALTSchoolTypeContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Members" nillable="true" type="tns:ArrayOfMemberContract" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RefSALTSchoolTypeID" type="xs:int" />
+          <xs:element minOccurs="0" name="SALTSchoolTypeDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SALTSchoolTypeName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefSALTSchoolTypeContract" nillable="true" type="tns:RefSALTSchoolTypeContract" />
+  <xs:complexType name="RefOrganizationTypeContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OrganizationTypeDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrganizationTypeExternalID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrganizationTypeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefOrganizationTypeID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefOrganizations" nillable="true" type="tns:ArrayOfRefOrganizationContract" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefOrganizationTypeContract" nillable="true" type="tns:RefOrganizationTypeContract" />
+  <xs:complexType name="ArrayOfRefOrganizationContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RefOrganizationContract" nillable="true" type="tns:RefOrganizationContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRefOrganizationContract" nillable="true" type="tns:ArrayOfRefOrganizationContract" />
+  <xs:complexType name="RefRegistrationSourceContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Members" nillable="true" type="tns:ArrayOfMemberContract" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RefCampaign" nillable="true" type="tns:RefCampaignContract" />
+          <xs:element minOccurs="0" name="RefCampaignId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="RefChannel" nillable="true" type="tns:RefChannelContract" />
+          <xs:element minOccurs="0" name="RefChannelId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="RefRegistrationSourceId" type="xs:int" />
+          <xs:element minOccurs="0" name="RefRegistrationSourceType" nillable="true" type="tns:RefRegistrationSourceTypeContract" />
+          <xs:element minOccurs="0" name="RefRegistrationSourceTypeId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="RegistrationDetail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RegistrationSourceName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefRegistrationSourceContract" nillable="true" type="tns:RefRegistrationSourceContract" />
+  <xs:complexType name="RefCampaignContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CampaignName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RefCampaignID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefRegistrationSources" nillable="true" type="tns:ArrayOfRefRegistrationSourceContract" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefCampaignContract" nillable="true" type="tns:RefCampaignContract" />
+  <xs:complexType name="ArrayOfRefRegistrationSourceContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RefRegistrationSourceContract" nillable="true" type="tns:RefRegistrationSourceContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRefRegistrationSourceContract" nillable="true" type="tns:ArrayOfRefRegistrationSourceContract" />
+  <xs:complexType name="MemberAlertContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AlertIssueDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="AlertLink" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AlertLogoUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AlertMessage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AlertTitle" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AlertType" nillable="true" type="tns:AlertTypeContract" />
+          <xs:element minOccurs="0" name="AlertTypeId" type="xs:int" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="IsAlertViewed" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Member" nillable="true" type="tns:MemberContract" />
+          <xs:element minOccurs="0" name="MemberAlertId" type="xs:int" />
+          <xs:element minOccurs="0" name="MemberId" type="xs:int" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MemberAlertContract" nillable="true" type="tns:MemberAlertContract" />
+  <xs:complexType name="AlertTypeContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AlertTypeId" type="xs:int" />
+          <xs:element minOccurs="0" name="AlertTypeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MemberAlerts" nillable="true" type="tns:ArrayOfMemberAlertContract" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AlertTypeContract" nillable="true" type="tns:AlertTypeContract" />
+  <xs:complexType name="ArrayOfMemberAlertContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MemberAlertContract" nillable="true" type="tns:MemberAlertContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMemberAlertContract" nillable="true" type="tns:ArrayOfMemberAlertContract" />
+  <xs:complexType name="RefRegistrationSourceTypeContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RefRegistrationSourceTypeID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefRegistrationSources" nillable="true" type="tns:ArrayOfRefRegistrationSourceContract" />
+          <xs:element minOccurs="0" name="RegistrationSourceTypeDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RegistrationSourceTypeName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefRegistrationSourceTypeContract" nillable="true" type="tns:RefRegistrationSourceTypeContract" />
+  <xs:complexType name="MemberReportedLoanContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="InterestRate" nillable="true" type="xs:decimal" />
+          <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Common.Types.Enums" minOccurs="0" name="InterestRateType" type="q1:LoanInterestRateType" />
+          <xs:element minOccurs="0" name="LoanName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LoanStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LoanTerm" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="LoanType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Member" nillable="true" type="tns:MemberContract" />
+          <xs:element minOccurs="0" name="MemberId" type="xs:int" />
+          <xs:element minOccurs="0" name="MemberReportedLoanId" type="xs:int" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MonthlyPaymentAmount" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="OriginalLoanAmount" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="OriginalLoanDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="PrincipalOutstandingAmount" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ReceivedYear" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="RecordSource" nillable="true" type="tns:RecordSourceContract" />
+          <xs:element minOccurs="0" name="RecordSourceId" type="xs:int" />
+          <xs:element minOccurs="0" name="ServicingOrganizationName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MemberReportedLoanContract" nillable="true" type="tns:MemberReportedLoanContract" />
+  <xs:complexType name="RecordSourceContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MemberReportedLoans" nillable="true" type="tns:ArrayOfMemberReportedLoanContract" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RecordSourceDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecordSourceId" type="xs:int" />
+          <xs:element minOccurs="0" name="RecordSourceName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RecordSourceContract" nillable="true" type="tns:RecordSourceContract" />
+  <xs:complexType name="ArrayOfMemberReportedLoanContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MemberReportedLoanContract" nillable="true" type="tns:MemberReportedLoanContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMemberReportedLoanContract" nillable="true" type="tns:ArrayOfMemberReportedLoanContract" />
+  <xs:complexType name="RefChannelContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ChannelName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RefChannelID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefRegistrationSources" nillable="true" type="tns:ArrayOfRefRegistrationSourceContract" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefChannelContract" nillable="true" type="tns:RefChannelContract" />
+  <xs:complexType name="PaymentReminderContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DayOfMonth" type="xs:int" />
+          <xs:element minOccurs="0" name="LastReminderSentDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Member" nillable="true" type="tns:MemberContract" />
+          <xs:element minOccurs="0" name="MemberId" type="xs:int" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="NumberOfLoans" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="PaymentReminderId" type="xs:int" />
+          <xs:element minOccurs="0" name="ServicerName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PaymentReminderContract" nillable="true" type="tns:PaymentReminderContract" />
+  <xs:complexType name="SurveyResponseContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Member" nillable="true" type="tns:MemberContract" />
+          <xs:element minOccurs="0" name="MemberId" type="xs:int" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="SurveyOption" nillable="true" type="tns:SurveyOptionContract" />
+          <xs:element minOccurs="0" name="SurveyOptionId" type="xs:int" />
+          <xs:element minOccurs="0" name="SurveyOptionText" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SurveyResponseId" type="xs:int" />
+          <xs:element minOccurs="0" name="TotalResponseCount" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SurveyResponseContract" nillable="true" type="tns:SurveyResponseContract" />
+  <xs:complexType name="SurveyOptionContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OptionValue" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrderNumber" type="xs:int" />
+          <xs:element minOccurs="0" name="Survey" nillable="true" type="tns:SurveyContract" />
+          <xs:element minOccurs="0" name="SurveyId" type="xs:int" />
+          <xs:element minOccurs="0" name="SurveyOptionId" type="xs:int" />
+          <xs:element minOccurs="0" name="SurveyResponses" nillable="true" type="tns:ArrayOfSurveyResponseContract" />
+          <xs:element minOccurs="0" name="TotalResponseCount" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SurveyOptionContract" nillable="true" type="tns:SurveyOptionContract" />
+  <xs:complexType name="SurveyContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ListOfValues" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="SurveyDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SurveyEndDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="SurveyId" type="xs:int" />
+          <xs:element minOccurs="0" name="SurveyName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SurveyOptions" nillable="true" type="tns:ArrayOfSurveyOptionContract" />
+          <xs:element minOccurs="0" name="SurveyPurpose" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SurveyQuestion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SurveyStartDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SurveyContract" nillable="true" type="tns:SurveyContract" />
+  <xs:complexType name="ArrayOfSurveyOptionContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SurveyOptionContract" nillable="true" type="tns:SurveyOptionContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSurveyOptionContract" nillable="true" type="tns:ArrayOfSurveyOptionContract" />
+  <xs:complexType name="RefContentInteractionTypeContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ContentInteractionTypeDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContentInteractionTypeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MemberContentInteractions" nillable="true" type="tns:ArrayOfMemberContentInteractionContract" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RefContentInteractionTypeID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefContentInteractionTypeContract" nillable="true" type="tns:RefContentInteractionTypeContract" />
+  <xs:complexType name="ArrayOfMemberContentInteractionContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MemberContentInteractionContract" nillable="true" type="tns:MemberContentInteractionContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMemberContentInteractionContract" nillable="true" type="tns:ArrayOfMemberContentInteractionContract" />
+  <xs:complexType name="MemberActivityHistoryContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActivityDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="AdditionalDetails" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Member" nillable="true" type="tns:MemberContract" />
+          <xs:element minOccurs="0" name="MemberActivityHistoryID" type="xs:int" />
+          <xs:element minOccurs="0" name="MemberID" type="xs:int" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RefActivityType" nillable="true" type="tns:ActivityTypeContract" />
+          <xs:element minOccurs="0" name="RefActivityTypeID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MemberActivityHistoryContract" nillable="true" type="tns:MemberActivityHistoryContract" />
+  <xs:complexType name="ActivityTypeContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActivityTypeDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ActivityTypeId" type="xs:int" />
+          <xs:element minOccurs="0" name="ActivityTypeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MemberActivityHistories" nillable="true" type="tns:ArrayOfMemberActivityHistoryContract" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ActivityTypeContract" nillable="true" type="tns:ActivityTypeContract" />
+  <xs:complexType name="ArrayOfMemberActivityHistoryContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MemberActivityHistoryContract" nillable="true" type="tns:MemberActivityHistoryContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMemberActivityHistoryContract" nillable="true" type="tns:ArrayOfMemberActivityHistoryContract" />
+  <xs:complexType name="MemberActivationHistoryContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActivationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DeactivationDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Member" nillable="true" type="tns:MemberContract" />
+          <xs:element minOccurs="0" name="MemberActivationHistoryID" type="xs:int" />
+          <xs:element minOccurs="0" name="MemberID" type="xs:int" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MemberActivationHistoryContract" nillable="true" type="tns:MemberActivationHistoryContract" />
+  <xs:complexType name="MemberProfileAnswerContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CustomValue" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Member" nillable="true" type="tns:MemberContract" />
+          <xs:element minOccurs="0" name="MemberID" type="xs:int" />
+          <xs:element minOccurs="0" name="MemberProfileAnswerID" type="xs:int" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RefProfileAnswer" nillable="true" type="tns:RefProfileAnswerContract" />
+          <xs:element minOccurs="0" name="RefProfileAnswerID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MemberProfileAnswerContract" nillable="true" type="tns:MemberProfileAnswerContract" />
+  <xs:complexType name="RefProfileAnswerContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="IsProfileAnswerActive" type="xs:boolean" />
+          <xs:element minOccurs="0" name="MemberProfileAnswers" nillable="true" type="tns:ArrayOfMemberProfileAnswerContract" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ProfileAnswerDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProfileAnswerDisplayOrder" nillable="true" type="xs:short" />
+          <xs:element minOccurs="0" name="ProfileAnswerExternalID" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="ProfileAnswerName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefProfileAnswerID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefProfileQuestion" nillable="true" type="tns:RefProfileQuestionContract" />
+          <xs:element minOccurs="0" name="RefProfileQuestionID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefProfileAnswerContract" nillable="true" type="tns:RefProfileAnswerContract" />
+  <xs:complexType name="ArrayOfMemberProfileAnswerContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MemberProfileAnswerContract" nillable="true" type="tns:MemberProfileAnswerContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMemberProfileAnswerContract" nillable="true" type="tns:ArrayOfMemberProfileAnswerContract" />
+  <xs:complexType name="RefProfileQuestionContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="IsInLineProfileQuestion" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsProfileQuestionActive" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ProfileQuestionDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProfileQuestionExternalID" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="ProfileQuestionName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProfileQuestionPriority" nillable="true" type="xs:short" />
+          <xs:element minOccurs="0" name="RefProfileAnswers" nillable="true" type="tns:ArrayOfRefProfileAnswerContract" />
+          <xs:element minOccurs="0" name="RefProfileQuestionID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefProfileQuestionType" nillable="true" type="tns:RefProfileQuestionTypeContract" />
+          <xs:element minOccurs="0" name="RefProfileQuestionTypeID" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefProfileQuestionContract" nillable="true" type="tns:RefProfileQuestionContract" />
+  <xs:complexType name="ArrayOfRefProfileAnswerContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RefProfileAnswerContract" nillable="true" type="tns:RefProfileAnswerContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRefProfileAnswerContract" nillable="true" type="tns:ArrayOfRefProfileAnswerContract" />
+  <xs:complexType name="RefProfileQuestionTypeContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ProfileQuestionTypeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefProfileQuestionTypeID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefProfileQuestions" nillable="true" type="tns:ArrayOfRefProfileQuestionContract" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefProfileQuestionTypeContract" nillable="true" type="tns:RefProfileQuestionTypeContract" />
+  <xs:complexType name="ArrayOfRefProfileQuestionContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RefProfileQuestionContract" nillable="true" type="tns:RefProfileQuestionContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRefProfileQuestionContract" nillable="true" type="tns:ArrayOfRefProfileQuestionContract" />
+  <xs:complexType name="ArrayOfSurveyResponseContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SurveyResponseContract" nillable="true" type="tns:SurveyResponseContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSurveyResponseContract" nillable="true" type="tns:ArrayOfSurveyResponseContract" />
+  <xs:complexType name="RefProductTypeContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ProductTypeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefProductTypeID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefProducts" nillable="true" type="tns:ArrayOfRefProductTypeContract" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefProductTypeContract" nillable="true" type="tns:RefProductTypeContract" />
+  <xs:complexType name="ArrayOfRefProductTypeContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RefProductTypeContract" nillable="true" type="tns:RefProductTypeContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRefProductTypeContract" nillable="true" type="tns:ArrayOfRefProductTypeContract" />
+  <xs:complexType name="ArrayOfMemberLessonContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MemberLessonContract" nillable="true" type="tns:MemberLessonContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMemberLessonContract" nillable="true" type="tns:ArrayOfMemberLessonContract" />
+  <xs:complexType name="ArrayOfMemberActivationHistoryContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MemberActivationHistoryContract" nillable="true" type="tns:MemberActivationHistoryContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMemberActivationHistoryContract" nillable="true" type="tns:ArrayOfMemberActivationHistoryContract" />
+  <xs:complexType name="ArrayOfMemberProfileQAContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MemberProfileQAContract" nillable="true" type="tns:MemberProfileQAContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMemberProfileQAContract" nillable="true" type="tns:ArrayOfMemberProfileQAContract" />
+  <xs:complexType name="MemberProfileQAContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CustomValue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProfileAnswerDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProfileAnswerExternalID" type="xs:int" />
+      <xs:element minOccurs="0" name="ProfileAnswerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProfileQuestionExternalID" type="xs:int" />
+      <xs:element minOccurs="0" name="ProfileQuestionName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RefProfileAnswerID" type="xs:int" />
+      <xs:element minOccurs="0" name="RefProfileQuestionID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MemberProfileQAContract" nillable="true" type="tns:MemberProfileQAContract" />
+  <xs:complexType name="ArrayOfPaymentReminderContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaymentReminderContract" nillable="true" type="tns:PaymentReminderContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaymentReminderContract" nillable="true" type="tns:ArrayOfPaymentReminderContract" />
+  <xs:complexType name="ArrayOfVLCUserProfileContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VLCUserProfileContract" nillable="true" type="tns:VLCUserProfileContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVLCUserProfileContract" nillable="true" type="tns:ArrayOfVLCUserProfileContract" />
+  <xs:complexType name="UserRegistrationContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActiveDirectoryKey" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EnrollmentStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EnrollmentStatusId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ExpectedGraduationYear" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GradeLevel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GradeLevelId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="InvitationToken" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsContactAllowed" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MemberOrganizations" nillable="true" type="tns:ArrayOfMemberOrganizationContract" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PasswordReminderQuestion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PasswordReminderQuestionAnswer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegistrationSourceId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="RegistrationSourceName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YearOfBirth" nillable="true" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserRegistrationContract" nillable="true" type="tns:UserRegistrationContract" />
+  <xs:complexType name="RegisterMemberResultContract">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Asa.Salt.Web.Common.Types.Enums" minOccurs="0" name="CreateStatus" type="q2:MemberUpdateStatus" />
+      <xs:element minOccurs="0" name="Member" nillable="true" type="tns:MemberContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RegisterMemberResultContract" nillable="true" type="tns:RegisterMemberResultContract" />
+  <xs:complexType name="OrgPagedListContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrentPage" type="xs:int" />
+      <xs:element minOccurs="0" name="Organizations" nillable="true" type="tns:ArrayOfRefOrganizationContract" />
+      <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalOrgCount" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalPageCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrgPagedListContract" nillable="true" type="tns:OrgPagedListContract" />
+  <xs:complexType name="ArrayOfRefProductContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RefProductContract" nillable="true" type="tns:RefProductContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRefProductContract" nillable="true" type="tns:ArrayOfRefProductContract" />
+  <xs:complexType name="ArrayOfRefRegistrationSourceTypeContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RefRegistrationSourceTypeContract" nillable="true" type="tns:RefRegistrationSourceTypeContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRefRegistrationSourceTypeContract" nillable="true" type="tns:ArrayOfRefRegistrationSourceTypeContract" />
+  <xs:complexType name="ArrayOfRefMemberRoleContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RefMemberRoleContract" nillable="true" type="tns:RefMemberRoleContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRefMemberRoleContract" nillable="true" type="tns:ArrayOfRefMemberRoleContract" />
+  <xs:complexType name="ArrayOfRefCampaignContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RefCampaignContract" nillable="true" type="tns:RefCampaignContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRefCampaignContract" nillable="true" type="tns:ArrayOfRefCampaignContract" />
+  <xs:complexType name="ArrayOfRefChannelContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RefChannelContract" nillable="true" type="tns:RefChannelContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRefChannelContract" nillable="true" type="tns:ArrayOfRefChannelContract" />
+  <xs:complexType name="ArrayOfvMemberReportedLoansContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="vMemberReportedLoansContract" nillable="true" type="tns:vMemberReportedLoansContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfvMemberReportedLoansContract" nillable="true" type="tns:ArrayOfvMemberReportedLoansContract" />
+  <xs:complexType name="vMemberReportedLoansContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InterestRate" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="IsContactAllowed" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LoanName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LoanStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LoanTerm" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="LoanType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LoanTypeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberID" type="xs:int" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MonthlyPaymentAmount" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="OriginalLoanAmount" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="OriginalLoanDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="PrincipalOutstandingAmount" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ReceivedYear" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="RecordSourceDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecordSourceName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefRecordSourceID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefSchoolID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="ServicingOrganizationName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="vMemberReportedLoansContract" nillable="true" type="tns:vMemberReportedLoansContract" />
+  <xs:complexType name="ArrayOfRefLessonLookupDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RefLessonLookupDataContract" nillable="true" type="tns:RefLessonLookupDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRefLessonLookupDataContract" nillable="true" type="tns:ArrayOfRefLessonLookupDataContract" />
+  <xs:complexType name="RefLessonLookupDataContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefLessonLookupDataId" type="xs:int" />
+          <xs:element minOccurs="0" name="RefLessonLookupDataType" nillable="true" type="tns:RefLessonLookupDataTypeContract" />
+          <xs:element minOccurs="0" name="RefLessonLookupDataTypeId" type="xs:int" />
+          <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefLessonLookupDataContract" nillable="true" type="tns:RefLessonLookupDataContract" />
+  <xs:complexType name="RefLessonLookupDataTypeContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefLessonLookupDataTypeId" type="xs:int" />
+          <xs:element minOccurs="0" name="RefLessonLookupDatas" nillable="true" type="tns:ArrayOfRefLessonLookupDataContract" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefLessonLookupDataTypeContract" nillable="true" type="tns:RefLessonLookupDataTypeContract" />
+  <xs:complexType name="JellyVisionQuizResponseContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MemberId" type="xs:int" />
+      <xs:element minOccurs="0" name="QuizName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QuizResponse" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QuizResult" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QuizTakenSite" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="JellyVisionQuizResponseContract" nillable="true" type="tns:JellyVisionQuizResponseContract" />
+  <xs:complexType name="ArrayOfvCostOfLivingStateListContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="vCostOfLivingStateListContract" nillable="true" type="tns:vCostOfLivingStateListContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfvCostOfLivingStateListContract" nillable="true" type="tns:ArrayOfvCostOfLivingStateListContract" />
+  <xs:complexType name="vCostOfLivingStateListContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="RefStateID" type="xs:int" />
+          <xs:element minOccurs="0" name="StateCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StateName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="vCostOfLivingStateListContract" nillable="true" type="tns:vCostOfLivingStateListContract" />
+  <xs:complexType name="ArrayOfRefGeographicIndexContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RefGeographicIndexContract" nillable="true" type="tns:RefGeographicIndexContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRefGeographicIndexContract" nillable="true" type="tns:ArrayOfRefGeographicIndexContract" />
+  <xs:complexType name="RefGeographicIndexContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MetroName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RefGeographicIndexID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefStateID" type="xs:int" />
+          <xs:element minOccurs="0" name="UrbanAreaName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefGeographicIndexContract" nillable="true" type="tns:RefGeographicIndexContract" />
+  <xs:complexType name="COLResultsContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ComparableSalary" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Groceries" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Health" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Housing" type="xs:decimal" />
+      <xs:element minOccurs="0" name="IncomeToMaintain" type="xs:decimal" />
+      <xs:element minOccurs="0" name="IncomeToSustain" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Miscellaneous" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Transportation" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Utilities" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="COLResultsContract" nillable="true" type="tns:COLResultsContract" />
+  <xs:complexType name="JSIQuestionsContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="majors" nillable="true" type="tns:ArrayOfRefMajorContract" />
+      <xs:element minOccurs="0" name="results" nillable="true" type="tns:ArrayOfJSIQuizResultContract" />
+      <xs:element minOccurs="0" name="schools" nillable="true" type="tns:ArrayOfJSISchoolMajorContract" />
+      <xs:element minOccurs="0" name="states" nillable="true" type="tns:ArrayOfRefStateContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="JSIQuestionsContract" nillable="true" type="tns:JSIQuestionsContract" />
+  <xs:complexType name="ArrayOfRefMajorContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RefMajorContract" nillable="true" type="tns:RefMajorContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRefMajorContract" nillable="true" type="tns:ArrayOfRefMajorContract" />
+  <xs:complexType name="ArrayOfJSIQuizResultContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="JSIQuizResultContract" nillable="true" type="tns:JSIQuizResultContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfJSIQuizResultContract" nillable="true" type="tns:ArrayOfJSIQuizResultContract" />
+  <xs:complexType name="JSIQuizResultContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EstimatedSalaryAmount" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OccupationName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="JSIQuizResultContract" nillable="true" type="tns:JSIQuizResultContract" />
+  <xs:complexType name="ArrayOfJSISchoolMajorContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="JSISchoolMajorContract" nillable="true" type="tns:JSISchoolMajorContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfJSISchoolMajorContract" nillable="true" type="tns:ArrayOfJSISchoolMajorContract" />
+  <xs:complexType name="JSISchoolMajorContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="RefMajorID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RefStateID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SchoolID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SchoolName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="JSISchoolMajorContract" nillable="true" type="tns:JSISchoolMajorContract" />
+  <xs:complexType name="ArrayOfRefStateContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RefStateContract" nillable="true" type="tns:RefStateContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRefStateContract" nillable="true" type="tns:ArrayOfRefStateContract" />
+  <xs:complexType name="JSIQuizAnswerContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MemberID" type="xs:int" />
+      <xs:element minOccurs="0" name="RefMajorID" type="xs:int" />
+      <xs:element minOccurs="0" name="RefSalaryEstimatorSchoolID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="JSIQuizAnswerContract" nillable="true" type="tns:JSIQuizAnswerContract" />
+  <xs:complexType name="ArrayOfvMemberAcademicInfoContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="vMemberAcademicInfoContract" nillable="true" type="tns:vMemberAcademicInfoContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfvMemberAcademicInfoContract" nillable="true" type="tns:ArrayOfvMemberAcademicInfoContract" />
+  <xs:complexType name="vMemberAcademicInfoContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActivationDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ActiveDirectoryKey" type="ser:guid" />
+          <xs:element minOccurs="0" name="BranchCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DeactivationDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EffectiveEndDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="EffectiveStartDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EnrollmentStatusCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EnrollmentStatusDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GradeLevelCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GradeLevelDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InvitationToken" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="IsContactAllowed" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsContracted" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsMemberActive" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberActivationHistoryID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="MemberFirstActivationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MemberID" type="xs:int" />
+          <xs:element minOccurs="0" name="MemberOrganizationID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="OPECode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrganizationDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrganizationExternalID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrganizationLogoName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrganizationName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefEnrollmentStatusID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="RefGradeLevelID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="RefOrganizationID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="RefRegistrationSourceID" type="xs:int" />
+          <xs:element minOccurs="0" name="WelcomeEmailSent" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="vMemberAcademicInfoContract" nillable="true" type="tns:vMemberAcademicInfoContract" />
+  <xs:complexType name="ArrayOfMemberQAContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MemberQAContract" nillable="true" type="tns:MemberQAContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMemberQAContract" nillable="true" type="tns:ArrayOfMemberQAContract" />
+  <xs:complexType name="MemberQAContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnswerText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExternalSourceAnswerID" type="xs:int" />
+      <xs:element minOccurs="0" name="ExternalSourceQuestionID" type="xs:int" />
+      <xs:element minOccurs="0" name="FreeformAnswerText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MemberQuestionAnswerID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="RefSourceID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MemberQAContract" nillable="true" type="tns:MemberQAContract" />
+  <xs:complexType name="ArrayOfvMemberQuestionAnswerContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="vMemberQuestionAnswerContract" nillable="true" type="tns:vMemberQuestionAnswerContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfvMemberQuestionAnswerContract" nillable="true" type="tns:ArrayOfvMemberQuestionAnswerContract" />
+  <xs:complexType name="vMemberQuestionAnswerContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AnswerDisplayOrder" nillable="true" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="AnswerText" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ExternalSourceQuestionAnswerID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="ExternalSourceQuestionID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FreeformAnswerText" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberID" type="xs:int" />
+          <xs:element minOccurs="0" name="MemberQuestionAnswerID" type="xs:int" />
+          <xs:element minOccurs="0" name="QuestionDisplayOrder" nillable="true" type="xs:unsignedByte" />
+          <xs:element minOccurs="0" name="QuestionText" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefAnswerID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefAnswer_refAnswerID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefQuestionID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefQuestions_refQuestionID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefSourceID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefSourceQuestionAnswerID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="RefSourceQuestionAnswer_refAnswerID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="RefSourceQuestionID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="SourceDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SourceName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SourceQuestionDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StandardAnswerText" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StandardQuestionText" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="vMemberQuestionAnswerContract" nillable="true" type="tns:vMemberQuestionAnswerContract" />
+  <xs:complexType name="ArrayOfMemberToDoListContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MemberToDoListContract" nillable="true" type="tns:MemberToDoListContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMemberToDoListContract" nillable="true" type="tns:ArrayOfMemberToDoListContract" />
+  <xs:complexType name="MemberToDoListContract">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ContentID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MemberID" type="xs:int" />
+          <xs:element minOccurs="0" name="MemberToDoListID" type="xs:int" />
+          <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RefToDoStatusID" type="xs:int" />
+          <xs:element minOccurs="0" name="RefToDoTypeID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MemberToDoListContract" nillable="true" type="tns:MemberToDoListContract" />
+</xs:schema>

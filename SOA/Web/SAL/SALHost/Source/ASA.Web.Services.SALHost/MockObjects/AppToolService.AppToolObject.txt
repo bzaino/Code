@@ -1,0 +1,9 @@
+﻿{
+	"ErrorList":[{
+		"BusinessMessage":"Update was successful.",
+		"Code":"",
+		"DetailMessage":"Update was successful.",
+		"ServiceName":"Web AppTool Service"
+	}],
+	"ResultCode":1
+}

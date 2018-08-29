@@ -1,0 +1,72 @@
+{! top row of the tile !}
+{@if cond="'{attributes.ContentTypes}' !== 'Blog'"}
+<div class="row todo-utility-bar js-todo-utility-bar state-{attributes.RefToDoStatusID}">
+    <div class="contentTypeIndicator small-5 medium-2 columns noprint">
+        {! show the icon for the corresponding content type !}
+        <img class="action-type-icon" src="/Assets/images/{?attributes.ContentTypes}{attributes.ContentTypes|actionType}{:else}try{/attributes.ContentTypes}.png"/>
+        {! show the slogan for the corresponding content type !}
+        <p class="todo-tile-action-type-text{^attributes.ContentTypes} js-offline-todo{/attributes.ContentTypes}">
+            {?attributes.ContentTypes}{attributes.ContentTypes|actionType}{:else}try{/attributes.ContentTypes}
+        </p>
+    </div>
+    {! these tiles can be seen in unauth and non-dashboard, so these management elements needs to be gated !}
+    {?SiteMember.DashboardEnabled}
+        <span class="hide-status-small medium-3 columns">
+            <span class="js-status-indicator status-indicator">
+                {! check the status of the content this tile represents !}
+                {@select key="{attributes.RefToDoStatusID}"}
+                    {! if "added" status !}
+                    {@eq value="1"}
+                        <span class="js-status-indicator status-indicator">Added</span>
+                    {:else}
+                        {! if "in progress" !}
+                        {@eq value="4"}
+                            <span class="js-status-indicator status-indicator">In Progress</span>
+                        {/eq}
+                    {/eq}
+                {/select}
+            </span>
+        </span>
+        <div class="small-7 medium-4 large-4 columns no-right-padding js-todo-menu-container">
+            {@select key="{attributes.RefToDoStatusID}"}
+                {! Either show the "complete" status, or show the user add/remove todo buttons !}
+                {@eq value="2"}
+                    <span class="js-status-indicator status-indicator right">Complete</span>
+                {:else}
+                    {! wrapper for add/remove to-do buttons !}
+                    <div id="{name}-{$idx}{?section-identifier}-{section-identifier}{/section-identifier}" class="js-todo-bar-items-wrapper clearfix todo-bar-items-wrapper">
+                        {! shows when the add to to-do list functionality is happening !}
+                        <div class="todo-bar-item js-adding-spinner" hidden>
+                            <a href="#" class="right">
+                                <span class="loading right">{>"Modules/SpinnerCSS" /}</span>
+                                <span class="right">Adding...</span>
+                            </a>
+                        </div>
+                        {! shows when the remove to to-do list functionality is happening !}
+                        <div class="todo-bar-item js-removing-spinner" hidden>
+                            <a href="#" class="right">
+                                <span class="loading right">{>"Modules/SpinnerCSS" /}</span>
+                                <span class="right">Removing...</span>
+                            </a>
+                        </div>
+                        {! button to add to to-do list!}
+                        <div class="todo-bar-item js-add-todo js-todo-manage" {?attributes.RefToDoStatusID}{@if cond="'{attributes.RefToDoStatusID}' !== '3'"}hidden{/if}{/attributes.RefToDoStatusID}>
+                            <a href="#" class="right">
+                                <span class="add-this right"></span>
+                                <span class="right todo-bar-item-label">Add To-Do</span>
+                            </a>
+                        </div>
+                        {! button to remove from to-do list!}
+                        <div class="todo-bar-item js-remove-todo js-todo-manage" {@if cond="'{attributes.RefToDoStatusID}' !== '1' && '{attributes.RefToDoStatusID}' !== '4'"}hidden{/if}>
+                            <a href="#" class="right">
+                                <span class="remove-this right"></span>
+                                <span class="right todo-bar-item-label">Remove To-Do</span>
+                            </a>
+                        </div>
+                    </div>
+                {/eq}
+            {/select}
+        </div>
+    {/SiteMember.DashboardEnabled}
+</div>
+{/if}

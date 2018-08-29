@@ -1,0 +1,13 @@
+{mainContent[0].records[0].attributes.body}
+<div>
+    <a href='/Navigator/#{mainContent[0].records[0].attributes.answer-1-page-name}' class="button base-btn multi-btn answer yesAnswer">{mainContent[0].records[0].attributes.answer-1-button-text}</a>
+    <a href='/Navigator/#{mainContent[0].records[0].attributes.answer-2-page-name}' class="button base-btn multi-btn answer noAnswer">{mainContent[0].records[0].attributes.answer-2-button-text}</a>
+</div>
+<div>
+    <a id="backButton" class="button base-btn main-btn back js-void-href" href=""> Back<a/>
+</div>
+{>"VLC/partial_specialContent" /}
+
+{>"VLC/partial_newTab_buttons" /}
+
+{>"VLC/partial_VLC_buttons" /}

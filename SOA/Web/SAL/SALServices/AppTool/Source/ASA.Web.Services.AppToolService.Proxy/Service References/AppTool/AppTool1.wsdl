@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://asa.org/servicecontract/apptool/v1.0" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AppTool" targetNamespace="http://asa.org/servicecontract/apptool/v1.0" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://asa.org/servicecontract/apptool/v1.0/Imports">
+      <xsd:import schemaLocation="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?xsd=xsd0" namespace="http://asa.org/servicecontract/apptool/v1.0" />
+      <xsd:import schemaLocation="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?xsd=xsd6" namespace="http://amsa.com/contract/baserequestcontract/v1.0" />
+      <xsd:import schemaLocation="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?xsd=xsd8" namespace="http://amsa.com/contract/errorHandling/v1.0" />
+      <xsd:import schemaLocation="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?xsd=xsd2" namespace="http://asa.org/contracts/apptoolServiceCriteria" />
+      <xsd:import schemaLocation="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?xsd=xsd3" namespace="http://asa.org/contracts/commonTypes" />
+      <xsd:import schemaLocation="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?xsd=xsd4" namespace="http://asa.org/contracts/apptool" />
+      <xsd:import schemaLocation="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://adevweb014.amsa.com/AppToolService/AppToolService.svc?xsd=xsd7" namespace="http://amsa.com/contract/ASA.Common.ResponseMessage/v1.0" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAppToolRequest">
+    <wsdl:part name="parameters" element="tns:GetAppToolRequest" />
+  </wsdl:message>
+  <wsdl:message name="GetAppToolRequest_Headers">
+    <wsdl:part xmlns:q1="http://amsa.com/contract/baserequestcontract/v1.0" name="ParamList" element="q1:ParamList" />
+  </wsdl:message>
+  <wsdl:message name="GetAppToolResponse">
+    <wsdl:part name="parameters" element="tns:GetAppToolResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAppTool_GetAppTool_ASABusinessFaultDetailFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://amsa.com/contract/errorHandling/v1.0" name="detail" element="q2:ASABusinessFaultDetail" />
+  </wsdl:message>
+  <wsdl:message name="IAppTool_GetAppTool_ASAFaultDetailFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://amsa.com/contract/errorHandling/v1.0" name="detail" element="q3:ASAFaultDetail" />
+  </wsdl:message>
+  <wsdl:message name="SaveAppToolRequest">
+    <wsdl:part name="parameters" element="tns:SaveAppToolRequest" />
+  </wsdl:message>
+  <wsdl:message name="SaveAppToolRequest_Headers">
+    <wsdl:part xmlns:q4="http://amsa.com/contract/baserequestcontract/v1.0" name="ParamList" element="q4:ParamList" />
+  </wsdl:message>
+  <wsdl:message name="SaveAppToolResponse">
+    <wsdl:part name="parameters" element="tns:SaveAppToolResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAppTool_SaveAppTool_ASAFaultDetailFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://amsa.com/contract/errorHandling/v1.0" name="detail" element="q5:ASAFaultDetail" />
+  </wsdl:message>
+  <wsdl:message name="IAppTool_SaveAppTool_ASABusinessFaultDetailFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://amsa.com/contract/errorHandling/v1.0" name="detail" element="q6:ASABusinessFaultDetail" />
+  </wsdl:message>
+  <wsdl:portType name="IAppTool">
+    <wsdl:operation name="GetAppTool">
+      <wsdl:input wsaw:Action="GetAppTool" name="GetAppToolRequest" message="tns:GetAppToolRequest" />
+      <wsdl:output wsaw:Action="http://asa.org/servicecontract/apptool/v1.0/IAppTool/GetAppToolResponse" name="GetAppToolResponse" message="tns:GetAppToolResponse" />
+      <wsdl:fault wsaw:Action="ASABusinessFaultDetail" name="ASABusinessFaultDetailFault" message="tns:IAppTool_GetAppTool_ASABusinessFaultDetailFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="ASAFaultDetail" name="ASAFaultDetailFault" message="tns:IAppTool_GetAppTool_ASAFaultDetailFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveAppTool">
+      <wsdl:input wsaw:Action="SaveAppTool" name="SaveAppToolRequest" message="tns:SaveAppToolRequest" />
+      <wsdl:output wsaw:Action="http://asa.org/servicecontract/apptool/v1.0/IAppTool/SaveAppToolResponse" name="SaveAppToolResponse" message="tns:SaveAppToolResponse" />
+      <wsdl:fault wsaw:Action="ASAFaultDetail" name="ASAFaultDetailFault" message="tns:IAppTool_SaveAppTool_ASAFaultDetailFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="ASABusinessFaultDetail" name="ASABusinessFaultDetailFault" message="tns:IAppTool_SaveAppTool_ASABusinessFaultDetailFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAppTool" type="tns:IAppTool">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAppTool">
+      <soap:operation soapAction="GetAppTool" style="document" />
+      <wsdl:input name="GetAppToolRequest">
+        <soap:header message="tns:GetAppToolRequest_Headers" part="ParamList" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetAppToolResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ASABusinessFaultDetailFault">
+        <soap:fault use="literal" name="ASABusinessFaultDetailFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ASAFaultDetailFault">
+        <soap:fault use="literal" name="ASAFaultDetailFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SaveAppTool">
+      <soap:operation soapAction="SaveAppTool" style="document" />
+      <wsdl:input name="SaveAppToolRequest">
+        <soap:header message="tns:SaveAppToolRequest_Headers" part="ParamList" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SaveAppToolResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ASAFaultDetailFault">
+        <soap:fault use="literal" name="ASAFaultDetailFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ASABusinessFaultDetailFault">
+        <soap:fault use="literal" name="ASABusinessFaultDetailFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AppTool">
+    <wsdl:port name="BasicHttpBinding_IAppTool" binding="tns:BasicHttpBinding_IAppTool">
+      <soap:address location="http://adevweb014.amsa.com/AppToolService/AppToolService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

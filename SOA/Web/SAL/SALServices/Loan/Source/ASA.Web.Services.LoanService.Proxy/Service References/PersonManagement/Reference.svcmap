@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="588af599-b42f-4741-92b0-4d6729fd6c78" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PersonManagementService.wsdl" MetadataType="Wsdl" ID="93134306-e5d3-4c9d-a549-b24c591ac416" SourceId="1" SourceUrl="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="PersonManagementService.xsd" MetadataType="Schema" ID="cc0a84e5-fbee-4531-b6e6-1860e5f9d039" SourceId="1" SourceUrl="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd8" />
+    <MetadataFile FileName="PersonManagementService1.xsd" MetadataType="Schema" ID="9bb57d27-71ca-4914-9449-ffb821d5ead0" SourceId="1" SourceUrl="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PersonManagementService2.xsd" MetadataType="Schema" ID="fe6242bf-9cca-43d9-bc29-648828632b71" SourceId="1" SourceUrl="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd5" />
+    <MetadataFile FileName="PersonManagementService3.xsd" MetadataType="Schema" ID="17120422-b5b9-4543-ba95-a1249eaa7fe3" SourceId="1" SourceUrl="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PersonManagementService4.xsd" MetadataType="Schema" ID="f6277615-68ae-441a-9b6e-6bc7576a0851" SourceId="1" SourceUrl="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd7" />
+    <MetadataFile FileName="PersonManagementService5.xsd" MetadataType="Schema" ID="25f0034a-6757-43cd-bf2d-55286b59321a" SourceId="1" SourceUrl="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PersonManagement.wsdl" MetadataType="Wsdl" ID="4a751e56-d244-4110-84d4-9834c6c54ba6" SourceId="1" SourceUrl="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?wsdl" />
+    <MetadataFile FileName="PersonManagementService6.xsd" MetadataType="Schema" ID="e5035f46-4615-40e2-813c-8d62f9fad74d" SourceId="1" SourceUrl="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd3" />
+    <MetadataFile FileName="PersonManagementService7.xsd" MetadataType="Schema" ID="c400f977-2328-42f7-aab3-3612a555ddf7" SourceId="1" SourceUrl="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd4" />
+    <MetadataFile FileName="PersonManagementService8.xsd" MetadataType="Schema" ID="13ef2b8e-8e39-4d9d-b69f-55c19a74242c" SourceId="1" SourceUrl="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd6" />
+    <MetadataFile FileName="PersonManagementService9.xsd" MetadataType="Schema" ID="dc01939c-8d78-4e17-931f-949a1e77f939" SourceId="1" SourceUrl="http://adevweb022.amsa.com/PersonManagementService/PersonManagementService.svc?xsd=xsd9" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

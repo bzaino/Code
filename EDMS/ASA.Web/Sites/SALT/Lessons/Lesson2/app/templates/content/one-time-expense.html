@@ -1,0 +1,13 @@
+<div class="one-time-expense" data-iteration="<%= order %>">
+	I plan on buying a/an
+	<input type="text" class="large one-time-name" id="one-time-name-<%= order %>" tabindex="<%= (order * 3) - 2 %>" maxlength="14" placeholder="winter coat" />
+	in
+	<span class="inline">
+		<select class="dropdown-large one-time-month" id="one-time-month-<%= order %>" name="months-<%= order %>" tabindex="<%= (order * 2) + (order - 1) %>">
+        </select>
+    </span>
+	and it will cost about
+	<input type="text" class="large value currency one-time-value" id="one-time-value-<%= order %>" maxlength="8" placeholder="$" tabindex="<%= order * 3 %>"/>
+	.
+    <a href="#" class="btn-remove"></a>
+</div>

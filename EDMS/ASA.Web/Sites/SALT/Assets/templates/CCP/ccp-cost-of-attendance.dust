@@ -1,0 +1,95 @@
+<section data-index="2" hidden>
+    <div class="items-col deck">
+        <div class="row collapse"> 
+            <div class="small-7 large-6 columns">
+                <span class="js-attach-glossary glossary-link">Single Year Cost</span>
+            </div>
+            <div class="small-5 large-6 columns no-left-padding dollar">
+                <input class="js-cost-of-attendance js-free-answer" type="number" data-questionid="56" data-choiceid="21" step="100" min="0">
+                <small class="error">A valid amount is required.</small>
+            </div>
+            <p>Type the total single year cost amount above, or itemize it below.<p>
+        </div>
+    </div>
+    <div class="items-col">
+        <div class="row collapse">
+            <div class="small-7 large-6 columns">
+                <span class="js-attach-glossary glossary-link">Tuition</span>
+            </div>
+            <div class="small-5 large-6 columns no-left-padding dollar">
+                <input class="js-individual-expense js-free-answer" type="number" data-questionid="48" data-choiceid="13" step="100" min="0">
+                <small class="error">A valid amount is required.</small>
+            </div>
+        </div>
+        <div class="row collapse">
+            <div class="small-7 large-6 columns">
+                <span class="js-attach-glossary glossary-link" >Fees</span>
+            </div>
+            <div class="small-5 large-6 columns no-left-padding dollar">
+                <input class="js-individual-expense js-free-answer" type="number" data-questionid="49" data-choiceid="14" step="100" min="0">
+                <small class="error">A valid amount is required.</small>
+            </div>
+        </div>
+        <div class="row collapse">
+            <div class="small-7 large-6 columns">
+                <span class="js-attach-glossary glossary-link">Housing</span>
+            </div>
+            <div class="small-5 large-6 columns no-left-padding dollar">
+                <input class="js-individual-expense js-free-answer" type="number" data-questionid="50" data-choiceid="15" step="100" min="0">
+                <small class="error">A valid amount is required.</small>
+            </div>
+        </div>
+        <div class="row collapse">
+            <div class="small-7 large-6 columns">
+                <span class="js-attach-glossary glossary-link" >Meals</span>
+            </div>
+           <div class="small-5 large-6 columns no-left-padding dollar">
+                <input class="js-individual-expense js-free-answer" type="number" data-questionid="51" data-choiceid="16" step="100" min="0">
+                <small class="error">A valid amount is required.</small>
+            </div>
+        </div>
+        <div class="row collapse">
+            <div class="small-7 large-6 columns">
+                <span class="js-attach-glossary glossary-link">Books</span>
+            </div>
+          <div class="small-5 large-6 columns no-left-padding dollar">
+                <input class="js-individual-expense js-free-answer" type="number" data-questionid="52" data-choiceid="17" step="100" min="0">
+                <small class="error">A valid amount is required.</small>
+            </div>
+        </div>
+        <div class="row collapse">
+            <div class="small-7 large-6 columns">
+                <span class="js-attach-glossary glossary-link">Supplies</span>
+            </div>
+
+            <div class="small-5 large-6 columns no-left-padding dollar">
+                <input class="js-individual-expense js-free-answer" type="number" data-questionid="53" data-choiceid="18" step="100" min="0">
+                <small class="error">A valid amount is required.</small>
+            </div>
+        </div>
+        <div class="row collapse">
+            <div class="small-7 large-6 columns">
+                <span class="js-attach-glossary glossary-link">Transportation</span>
+            </div>
+            <div class="small-5 large-6 columns no-left-padding dollar">
+                <input class="js-individual-expense js-free-answer" type="number" data-questionid="54" data-choiceid="19" step="100" min="0">
+                <small class="error">A valid amount is required.</small>
+            </div>
+        </div>
+        <div class="row collapse">
+            <div class="small-7 large-6 columns">
+                <span class="js-attach-glossary glossary-link">Other</span>
+            </div>
+            <div class="small-5 large-6 columns no-left-padding dollar">
+                <input class="js-individual-expense js-free-answer" type="number" data-questionid="55" data-choiceid="20" step="100" min="0">
+                <small class="error">A valid amount is required.</small>
+            </div>
+        </div>
+        <div class="row collapse margin-top">
+            <div class="small-12 columns">
+                <input type="button" href="R-101-23826" class="js-backend-save js-prev-page back-arrow" value="" onclick='Webtrends.multiTrack({element:this, argsa:["WT.dl","99","WT.z_actname","CollegeCostPlanner","WT.z_actype","Page2CostofAttendance-ClickBack","WT.si_n","","WT.si_x",""]});'/>
+                <input type="button" href="GrantsAndScholarships" class="js-backend-save js-next-page button base-btn main-btn right" value="Next" onclick='Webtrends.multiTrack({element:this, argsa:["WT.dl","99","WT.z_actname","CollegeCostPlanner","WT.z_actype","Page2CostofAttendance-ClickNext","WT.si_n","CollegeCostPlanner","WT.si_x","3"]});'/>
+            </div>
+        </div>
+    </div>
+</section>

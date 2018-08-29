@@ -1,0 +1,160 @@
+{+dynamicCSS}
+    <link href="/Assets/css/foundation5/themes/ccp.css" rel='stylesheet'/>
+{/dynamicCSS}
+{+dynamicScript}
+
+{/dynamicScript}
+
+<META NAME="WT.si_n" CONTENT="CollegeCostPlanner">
+<META NAME="WT.si_x" CONTENT="1">
+<form data-abide class="ccp-use-as-glossary js-ccp-form">
+    <section id="school-year" class="row js-ccp-container" data-index="1">
+        <hr>
+        <header class="table small-12">
+            <hgroup class="tableCell middleLAlign">
+                <h2> <span class="js-attach-glossary">Year In School</span><i class="fa fa-question js-question-mark right"></i></h2>
+            </hgroup>
+        </header>
+        <div class="table small-12">
+            <div class="tableCell middleLAlign">
+                <input type="radio" name="yearInSchool" data-questionid="1" data-choiceid="2" class="js-year-in-school css-checkbox" value="First Year" id="first">
+                <label for="first" class="ccp-button">Freshman</label>
+                <input type="radio" name="yearInSchool" data-questionid="1" data-choiceid="3" class="js-year-in-school css-checkbox" value="Second Year" id="second">
+                <label for="second" class="ccp-button">Sophomore</label>
+                <input type="radio" name="yearInSchool" data-questionid="1" data-choiceid="4" class="js-year-in-school css-checkbox" value="Third Year" id="third">
+                <label for="third" class="ccp-button">Junior</label>
+                <input type="radio" name="yearInSchool" data-questionid="1" data-choiceid="5" class="js-year-in-school css-checkbox" value="Fourth Year" id="fourth">
+                <label for="fourth" class="ccp-button">Senior</label>
+                <input type="radio" name="yearInSchool" data-questionid="1" data-choiceid="1" class="js-year-in-school css-checkbox" value="Graduate" id="graduate">
+                <label for="graduate" class="ccp-button">Grad Student</label>
+            </div>
+        </div>
+        <hr>
+        <header class="table small-12">
+            <hgroup class="tableCell middleLAlign">
+                <h2><span class="js-attach-glossary">School Years Left To Fund</span><i class="fa fa-question js-question-mark right"></i></h2>
+            </hgroup>
+        </header>
+        <div class="row collapse items-col">
+            <div class="small-12 medium-6 columns">
+                <table><tr><td>
+                    <span class="minus">
+                        <input type="button" value=" " id="minus" class="left">
+                    </span>
+                </td><td>
+                    <span>
+                        <input type="text" size="25" data-questionid="2" data-choiceid="6" class="js-years-remaining stepper-input centered left" value="1" id="count" style="max-width:60px; margin-bottom: 0;" disabled="disabled">
+                    </span>
+                </td><td>
+                    <span class="plus">
+                        <input type="button" value="" id="plus" class="left">
+                    </span>
+                </td></tr></table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-12 columns margin-right">
+                <input type="button" href="CostOfAttendance" class="js-landing-start js-next-page js-backend-save button base-btn main-btn right no-margin margin-right" value="Start" disabled="disabled" onclick='Webtrends.multiTrack({element:this, argsa:["WT.dl","99","WT.z_actname","CollegeCostPlanner","WT.z_actype","Page1ClickStart","WT.si_n","CollegeCostPlanner","WT.si_x","2"]});'/>
+            </div>
+        </div>
+    </section>
+    <!-- hidden headers for each page-->
+    <header data-index="2" hidden>    
+         <div class="row collapse">
+            <div class="small-12 columns">
+                <h2>
+                    <span>Cost Of Attendance</span>
+                </h2>
+                <p>Enter the total <span class="js-attach-glossary glossary-link">cost of attendance for 1 year</span>, or input each individual cost below. We'll use your numbers to estimate the total remaining cost of the degree.</p>
+            </div>
+        </div>
+    </header>
+    <header data-index="3" hidden>
+        <div class="row collapse">
+            <div class="small-12 columns">
+                <h2>
+                    <span>Grants And Scholarships</span>
+                </h2>
+                {>"CCP/total-remaining-cost-display" /}
+            </div>
+            {>"CCP/exceed-coa-message" display="hidden"/}
+        </div>
+    </header> 
+    <header data-index="4" hidden>
+        <div class="row collapse">
+            <div class="small-12 columns">
+                <h2>Planned Contributions</h2>
+                {>"CCP/total-remaining-cost-display" /}
+            </div>
+            {>"CCP/exceed-coa-message" display="hidden"/}
+        </div>
+    </header> 
+    <header data-index="5" hidden>
+        <div class="row collapse">
+            <div class="small-12 columns">
+                <h2>Monthly Installments</h2>
+                {>"CCP/total-remaining-cost-display" /}
+            </div>
+            {>"CCP/exceed-coa-message" display="hidden"/}
+        </div>
+    </header> 
+    <header data-index="6" hidden>
+        <a id="pagetop"></a>
+        <div class="row collapse">
+            <div class="small-12 columns">
+                <h2>Student Loans</h2>
+                {>"CCP/total-remaining-cost-display" /}
+            </div>
+        </div>
+    </header>
+    <header data-index="7" hidden>
+        <div class="row collapse">
+            <div class="small-12 columns">
+                <h2>Your Plan</h2>
+                {>"CCP/total-remaining-cost-display" /}
+            </div>
+        </div>
+    </header> 
+     <!-- end hidden headers for each page-->
+    <div class="small-12 medium-6 columns CCPmainContent">
+        <div id="CCPBody">
+            {>"CCP/ccp-cost-of-attendance" display="hidden"/}
+            {>"CCP/ccp-grants-and-scholarships" display="hidden"/}
+            {>"CCP/ccp-planned-contributions" display="hidden"/}
+            {>"CCP/ccp-monthly-installments" display="hidden"/}
+            {>"CCP/ccp-student-loans-total" display="hidden"/}
+            {>"CCP/ccp-your-plan" display="hidden"/}
+        </div>
+        <div id="js-CCPMobileFlyOutButton" class="WidgetsButton rightFlyOut widgetsSlider hiddenitem"> 
+            <i class="ccp-icon">&nbsp;</i>
+        </div>
+    </div>
+    {>"CCP/college-cost-planner-graph" display="hidden"/}
+</div>
+<div class="row collapse">
+    <div class="small-12 columns noprint js-CCPMessageContainer hidden">
+        <header>
+            <h2>What's Next?</h2>
+        </header>
+        <p>Changes to tuition, income, major, and enrollment are just a few factors that can affect college costs over time. To account for these, update your plan each year.</p>
+        {#secondaryContent}
+            {@if cond="'{name}' =='FSLCopy' || '{name}' =='PrivateLoanCopy' || '{name}' =='PlusLoanCopy' || '{name}' =='GrantsCopy' || '{name}' =='GradPlusLoanCopy'"}
+                <div class="js-{name} hidden">
+                    {content|s}
+                </div>   
+            {/if}
+            {@if cond="'{name}' =='FSLContent' || '{name}' =='PrivateLoanContent' || '{name}' =='PlusLoanContent' || '{name}' =='GrantsContent' || '{name}' =='GradPlusLoanContent'"}
+                <div class="js-{name} small-12 padding-top">
+                    {#records}  
+                        <div class="row js-todoContainer todo" data-primary-key="{attributes.P_Primary_Key}" data-content-title="{attributes.resource_link_title}" data-content-type="{attributes.ContentTypes}" {@gt key=$idx value="4"}style="display:none;"{/gt}>
+                        {>"partial_todo" functionalityClass="js-remove-todo" stylingClass="no-right-padding" section-identifier="Open"/}    
+                        </div>           
+                    {/records}
+                </div>
+            {/if}                      
+        {/secondaryContent}
+  </div>
+</form>
+<script>
+    require(['modules/CCP/CollegeCostPlanner']);
+</script>

@@ -1,0 +1,62 @@
+<section>
+    <header>
+        <div class="row collapse js-show-hide show-hide">
+            <div class="small-10 columns">
+                <h2> Personal Information</h2>   
+            </div>
+            <div class="small-2 columns">
+                  <a href="" class="js-void-href" title="Open or close" tabindex="2"><div class="hide-btn"><i class="fa fa-sort-asc"></i></div></a>
+            </div>
+        </div>
+    </header>
+   <article class="panel">
+        <form id="personal-information-form" data-abide="ajax">
+           <div class="row">
+                <div class="small-12 medium-6 columns">
+                   <label for="FirstName">First Name</label>
+                    <input name="FirstName" id="FirstName" type="text" pattern="alpha" value="{FirstName}" tabindex="2" required/>
+                    {>"ErrorMessages/name" /}
+                </div>
+                <div class="small-12 medium-6 columns">
+                   <label for="LastName">Last Name</label>
+                    <input name="LastName" id="LastName" placeholder="Last Name" type="text" pattern="alpha" value="{LastName}" tabindex="2" required/>
+                    {>"ErrorMessages/name" /}
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-12 medium-6 columns">
+                    <label for="USPostalCode">ZIP Code</label>
+                    <input name="USPostalCode" id="USPostalCode" placeholder="Please use your current zip code" type="text" pattern="zip_code" value="{USPostalCode}" tabindex="2"/>
+                    <small class="error">Please enter a valid zip code.</small>
+                </div>
+                <div class="small-12 medium-6 columns">
+                  <label for="profile-birth-year">Year of Birth</label>
+                    <div class="styled-select">
+                         <select id="profile-birth-year" name="YearOfBirth" tabindex="2" required>
+                            <option value="">Select a year</option>
+                            {@yearDropdown startYear="-5" range="-104" savedValue="{YearOfBirth}" /}
+                        </select>
+                        {>"ErrorMessages/Age" /}
+                    </div>
+                </div>
+            </div>
+            <!--Where do you live-->
+            {>"Profile/ProfileRadioCheckboxQuestion" type="single" styleType="radio" currentQuestion=QuestionsAnswers[12]/}
+
+            <!--Whom do you live with-->
+            {>"Profile/ProfileRadioCheckboxQuestion" type="single" styleType="radio" currentQuestion=QuestionsAnswers[13]/}
+
+            <!-- How did you hear about SALT™?-->
+            {>"Profile/ProfileRadioCheckboxQuestion" type="multi" styleType="checkbox" currentQuestion=QuestionsAnswers[8] /}
+
+             <div class="row">
+                <div class="small-12 columns">
+                    <button type="submit" class="button base-btn main-btn submit right" tabindex="2" disabled >Save</button>
+                </div>
+            </div>
+        </form>
+        {>"Profile/AjaxMessages" /}
+     </article>
+</section>
+{>"Overlays/ProfileAge" /}
+

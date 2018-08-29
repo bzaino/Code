@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE RELRANK_STRATEGIES SYSTEM "relrank_strategies.dtd">
+<RELRANK_STRATEGIES>
+
+  <RELRANK_STRATEGY NAME="ContentSearch">
+    <RELRANK_FIELD/>
+    <RELRANK_NUMFIELDS/>
+    <RELRANK_INTERP/>
+  </RELRANK_STRATEGY>
+
+  <RELRANK_STRATEGY NAME="TagSearch">
+    <RELRANK_FIELD/>
+  </RELRANK_STRATEGY>
+
+  <RELRANK_STRATEGY NAME="GlossaryContentSearch">
+    <RELRANK_FIELD/>
+  </RELRANK_STRATEGY>
+
+</RELRANK_STRATEGIES>

@@ -1,0 +1,25 @@
+﻿{
+	"ErrorList":[],
+	"Reminders":[
+		{
+		"ErrorList":[],
+		"DayOfMonth":15,
+		"ID":"rmndr1",
+		"IndividualId":"member1",
+		"Message":"Pay your loans!",
+		"NumberOfLoans":3,
+		"ServicerName":"Fake Servicer",
+		"ActiveFlag":true
+		},
+		{
+		"ErrorList":[],
+		"DayOfMonth":1,
+		"ID":"rmndr2",
+		"IndividualId":"member1",
+		"Message":"Pay your loans again!",
+		"NumberOfLoans":3,
+		"ServicerName":"Fake Servicer",
+		"ActiveFlag":true
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{@if cond="'{attributes.consumption-time|trim}' !== ''"}
+    <li class="subheader icon-time-to-read {classParams}">
+        <i class="fa fa-clock-o"></i> {attributes.consumption-time|trim}m.
+    </li>
+    {@if cond="'{attributes.Language[0]}' === 'English' && '{attributes.Language[1]}' === 'Spanish'"}
+    <div class="row-divider">
+        <span class="">|</span>
+    </div>
+    {/if}
+{:else}
+    {@if cond="'{attributes.ContentTypes}' === 'Article'"}
+        <li class="subheader icon-time-to-read {classParams}">
+            <i class="fa fa-clock-o"></i> {@math key="{attributes.Word-Count}" method="divide" round="true" operand="200" /}m.
+        </li>
+	    {@if cond="'{attributes.Language[0]}' === 'English' && '{attributes.Language[1]}' === 'Spanish'"}
+	    <div class="row-divider">
+	        <span class="">|</span>
+	    </div>
+	    {/if}
+    {/if}
+{/if}

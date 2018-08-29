@@ -1,0 +1,57 @@
+﻿<#@ template debug="true" hostspecific="true" language="C#" #>
+<#@ include file="EF.Utility.CS.ttinclude"#>
+<#@ import namespace="System.IO" #>
+<#@ output extension=".generated.cs" #>
+<# 		
+if(Errors.HasErrors)
+{
+    return String.Empty;
+}
+CodeGenerationTools code = new CodeGenerationTools(this){FullyQualifySystemTypes = true, CamelCaseFields = false};
+MetadataLoader loader = new MetadataLoader(this);
+EntityFrameworkTemplateFileManager fileManager = EntityFrameworkTemplateFileManager.Create(this);
+
+string open = "<";
+string close = ">";
+string SourceCsdlPath = @"..\Model\Database\SALTEntities.edmx";
+ReferenceCsdlPaths = new string[] {};
+string namespaceName = code.VsNamespaceSuggestion();
+ItemCollection = loader.CreateEdmItemCollection(SourceCsdlPath, ReferenceCsdlPaths.ToArray());
+EntityContainer container = ItemCollection.GetItems<EntityContainer>().FirstOrDefault();
+#>
+
+<#
+	foreach (EntityType entity in ItemCollection.GetItems<EntityType>().OrderBy(e => e.Name))
+    {
+	    fileManager.StartNewFile(entity.Name + "Repository.generated.cs");
+		#>
+using System;
+using System.Linq;
+using System.Data.Objects;
+using System.Collections.Generic;
+using Asa.Salt.Web.Services.Data.Model;
+using Asa.Salt.Web.Services.Data.Model.Database;
+
+using <#= entity.Name #>=Asa.Salt.Web.Services.Domain.<#= entity.Name #>;
+namespace <#= code.VsNamespaceSuggestion() #>
+{   
+	public partial class <#= entity.Name #>Repository : Repository<#=open#><#=entity.Name#><#=close#>, IRepository<#=open#><#=entity.Name#>,int<#=close#>
+	{
+		public <#= entity.Name #>Repository(SALTEntities context) : base(context)
+		{
+
+		}
+	}
+}
+		<# 
+	}
+	fileManager.Process();		
+#>
+
+
+
+<#+
+public string SourceCsdlPath{ get; set; }
+public EdmItemCollection ItemCollection{ get; set; }
+public IEnumerable<string> ReferenceCsdlPaths{ get; set; }
+#>

@@ -1,0 +1,19 @@
+﻿{
+	"ErrorList":[],
+	"Surveys":[
+		{
+		"ErrorList":[],
+		"SurveyId":"CEB97457-7C40-476E-8D0E-0FA132C60CFF",
+		"SurveyQuestionSetId":"F92FC2E4-4B35-4840-B8B5-B1DB9707DE00",
+		"QuestionText":"MockQuestionText - Do you have a savings account?",
+		"ListOfAnswerOptions":"MockAnswerOptions - Yes;No;Not sure",
+		},
+		{
+		"ErrorList":[],
+		"SurveyId":"CEB97457-7C40-476E-8D0E-0FA132C60CFF",
+		"SurveyQuestionSetId":"4446813D-5909-4881-B631-E7FADE7CB342",
+		"QuestionText":"MockQuestionText - Do you have a credit card?",
+		"ListOfAnswerOptions":"MockAnswerOptions - Yes;No",
+		}
+	]
+}

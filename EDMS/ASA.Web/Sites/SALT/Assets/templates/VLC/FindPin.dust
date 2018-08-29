@@ -1,0 +1,51 @@
+{#mainContent[0].records[0].attributes}
+<div class="row collapse">
+    <div class="small-12 medium-8 columns">
+        <div class="content VLCMain">
+            <div class="row collapse"> 
+                 <header>
+                    {answer-4-button-text}
+                </header>
+                {answer-4-page-name}
+                <div class="row collapse">
+                <div class="small-12 columns step-header one"> 
+                    {answer-1-button-text}
+                </div>
+                </div>
+                <div class="row collapse">
+                    <div class="small-12 medium-4 columns has-image"> 
+                        {rich-text-image}
+                    </div>
+                    <div class="small-12 8 medium-8 columns pin-instructions">
+                        {answer-1-page-name}
+                    </div>
+                </div>
+                <div class="row collapse">
+                    <div class="small-12 columns step-header two"> 
+                        {answer-2-button-text}
+                    </div>
+                </div>
+                <div class="row collapse">
+                     <div class="small-12 medium-4 columns has-image">
+                        {btn-help-1}
+                </div>
+                <div clas="row collapse">
+                    <div class="small-12 8 medium-8 columns pin-instructions">
+                        {answer-2-page-name}
+                    </div>
+                </div>
+                <div class="row collapse">
+                    <div class="small-12 columns">
+                        <a id="backButton" onClick="history.back();" class="button base-btn main-btn back js-void-href" href="">{answer-3-button-text}</a>
+                       
+                        <a  class="button base-btn main-btn right" href="#LoanUpload" onClick="dcsMultiTrack('DCS.dcsuri','myloans/findpin.html', 'WT.si_n', 'mydataimport', 'WT.si_x', '1', 'WT.dl', '90');">{answer-3-page-name}</a>
+                    </div>
+                    <div class="small-12 columns">
+                        <h4><a id="startOver" class="js-void-href" href="">Start Over<a/></h4>
+                    </div>
+                </div>
+            </div>
+         </div>
+     </div>
+</div>
+{/mainContent[0].records[0].attributes}

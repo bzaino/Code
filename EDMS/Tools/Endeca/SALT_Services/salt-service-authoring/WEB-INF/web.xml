@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2001, 2012, Oracle and/or its affiliates. All rights reserved.
+  ~ Oracle and Java are registered trademarks of Oracle and/or its
+  ~ affiliates. Other names may be trademarks of their respective owners.
+  ~ UNIX is a registered trademark of The Open Group.
+  ~
+  ~ This software and related documentation are provided under a license
+  ~ agreement containing restrictions on use and disclosure and are
+  ~ protected by intellectual property laws. Except as expressly permitted
+  ~ in your license agreement or allowed by law, you may not use, copy,
+  ~ reproduce, translate, broadcast, modify, license, transmit, distribute,
+  ~ exhibit, perform, publish, or display any part, in any form, or by any
+  ~ means. Reverse engineering, disassembly, or decompilation of this
+  ~ software, unless required by law for interoperability, is prohibited.
+  ~ The information contained herein is subject to change without notice
+  ~ and is not warranted to be error-free. If you find any errors, please
+  ~ report them to us in writing.
+  ~ U.S. GOVERNMENT END USERS: Oracle programs, including any operating
+  ~ system, integrated software, any programs installed on the hardware,
+  ~ and/or documentation, delivered to U.S. Government end users are
+  ~ "commercial computer software" pursuant to the applicable Federal
+  ~ Acquisition Regulation and agency-specific supplemental regulations.
+  ~ As such, use, duplication, disclosure, modification, and adaptation
+  ~ of the programs, including any operating system, integrated software,
+  ~ any programs installed on the hardware, and/or documentation, shall be
+  ~ subject to license terms and license restrictions applicable to the
+  ~ programs. No other rights are granted to the U.S. Government.
+  ~ This software or hardware is developed for general use in a variety
+  ~ of information management applications. It is not developed or
+  ~ intended for use in any inherently dangerous applications, including
+  ~ applications that may create a risk of personal injury. If you use
+  ~ this software or hardware in dangerous applications, then you shall
+  ~ be responsible to take all appropriate fail-safe, backup, redundancy,
+  ~ and other measures to ensure its safe use. Oracle Corporation and its
+  ~ affiliates disclaim any liability for any damages caused by use of this
+  ~ software or hardware in dangerous applications.
+  ~ This software or hardware and documentation may provide access to or
+  ~ information on content, products, and services from third parties.
+  ~ Oracle Corporation and its affiliates are not responsible for and
+  ~ expressly disclaim all warranties of any kind with respect to
+  ~ third-party content, products, and services. Oracle Corporation and
+  ~ its affiliates will not be responsible for any loss, costs, or damages
+  ~ incurred due to your access to or use of third-party content, products,
+  ~ or services.
+  -->
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_5.xsd"
+     version="2.5">
+    
+    <display-name>SALT Assembler Service</display-name>
+    <description>SALT Assembler Service</description>
+    <filter>
+        <filter-name>UrlRewriteFilter</filter-name>
+        <filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>UrlRewriteFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+        <!-- Filter that exposes the request to Spring -->
+    <filter>
+        <filter-name>RequestContextFilter</filter-name>
+        <filter-class>org.springframework.web.filter.RequestContextFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>RequestContextFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+
+    <!-- The PerfFilter must go after the RequestContextFilter so it can have access to the request -->
+    <filter>
+        <filter-name>PerfFilter</filter-name>
+        <filter-class>
+            com.endeca.infront.assembler.perf.PerfEventFilter
+        </filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>PerfFilter</filter-name>
+        <url-pattern>*</url-pattern>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>REQUEST</dispatcher>    </filter-mapping>
+
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+    </listener>
+    
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/assembler-context.xml</param-value>
+    </context-param>
+    
+    <servlet>
+         <servlet-name>JsonAssemblerServiceServlet</servlet-name>
+         <servlet-class>com.endeca.infront.assembler.servlet.spring.SpringAssemblerServlet</servlet-class>
+         <init-param>
+             <param-name>assemblerFactoryID</param-name>
+             <param-value>assemblerFactory</param-value>
+         </init-param>
+         <init-param>
+             <param-name>responseWriterID</param-name>
+             <param-value>jsonResponseWriter</param-value>
+         </init-param> 
+    </servlet>
+
+    
+    <servlet>
+         <servlet-name>XmlAssemblerServiceServlet</servlet-name>
+         <servlet-class>com.endeca.infront.assembler.servlet.spring.SpringAssemblerServlet</servlet-class>
+         <init-param>
+             <param-name>assemblerFactoryID</param-name>
+             <param-value>assemblerFactory</param-value>
+         </init-param>
+         <init-param>
+             <param-name>responseWriterID</param-name>
+             <param-value>xmlResponseWriter</param-value>
+         </init-param>
+    </servlet>
+	
+		<servlet>
+        <servlet-name>link</servlet-name>
+        <servlet-class>
+            com.endeca.infront.assembler.servlet.spring.SpringPreviewLinkServlet
+        </servlet-class>
+        <init-param>
+            <description>
+                The ID of the NavigationStateBuilder in the spring
+                contextConfig file
+            </description>
+            <param-name>navigationStateBuilderBeanId</param-name>
+            <param-value>navigationStateBuilder</param-value>
+        </init-param>
+        <init-param>
+            <description>
+                The ID of the ContentSource in the spring
+                contextConfig file
+            </description>
+            <param-name>contentSourceBeanId</param-name>
+            <param-value>contentSource</param-value>
+        </init-param>
+    </servlet>
+	    <servlet>
+        <servlet-name>assemble-stats</servlet-name>
+        <jsp-file>/WEB-INF/services/assemble-stats.jsp</jsp-file>
+    </servlet>
+	    <servlet-mapping>
+        <servlet-name>JsonAssemblerServiceServlet</servlet-name>
+        <url-pattern>/servlet/json/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>XmlAssemblerServiceServlet</servlet-name>
+        <url-pattern>/servlet/xml/*</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet-mapping>
+        <servlet-name>assemble-stats</servlet-name>
+        <url-pattern>/servlet/stats/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>assemble-stats</servlet-name>
+        <url-pattern>/servlet/statsreset</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>link</servlet-name>
+        <url-pattern>/link.json/*</url-pattern>
+    </servlet-mapping>
+</web-app>

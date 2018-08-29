@@ -1,0 +1,1095 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Tree label="Categories">
+
+   <Node id="content-types" label="Content-Types">
+
+      <Node id="announcement" label="Announcement">
+
+      </Node>
+
+      <Node id="article" label="Article">
+
+      </Node>
+
+      <Node id="brief" label="Brief">
+
+      </Node>
+
+      <Node id="comic" label="Comic">
+
+      </Node>
+
+      <Node id="definition" label="Definition">
+
+      </Node>
+
+      <Node id="ebook" label="EBook">
+
+      </Node>
+
+      <Node id="form" label="Form">
+
+      </Node>
+
+      <Node id="infographic" label="Infographic">
+
+      </Node>
+
+      <Node id="lesson" label="Lesson">
+
+      </Node>
+
+      <Node id="tool" label="Tool">
+
+      </Node>
+
+      <Node id="video" label="Video">
+
+      </Node>
+
+      <Node id="webinar" label="Webinar">
+
+      </Node>
+
+   </Node>
+
+   <Node id="facets" label="Facets">
+
+      <Node id="gender" label="Gender">
+
+         <Node id="female" label="Female">
+
+         </Node>
+
+         <Node id="male" label="Male">
+
+         </Node>
+
+      </Node>
+
+      <Node id="knowledge-levels" label="Knowledge Levels">
+
+         <Node id="beginner" label="Beginner">
+
+         </Node>
+
+         <Node id="beginner-intermediate" label="Beginner-Intermediate">
+
+         </Node>
+
+         <Node id="intermediate" label="Intermediate">
+
+         </Node>
+
+         <Node id="intermediate-advanced" label="Intermediate-Advanced">
+
+         </Node>
+
+         <Node id="advanced" label="Advanced">
+
+         </Node>
+
+      </Node>
+
+      <Node id="language" label="Language">
+
+         <Node id="english" label="English">
+
+         </Node>
+
+         <Node id="spanish" label="Spanish">
+
+         </Node>
+
+      </Node>
+
+      <Node id="life-stage" label="Life Stage">
+
+         <Node id="life-preparation" label="Life Preparation">
+
+         </Node>
+
+         <Node id="career-entry" label="Career Entry">
+
+         </Node>
+
+         <Node id="setting-up-a-household" label="Setting Up a Household">
+
+         </Node>
+
+      </Node>
+
+      <Node id="standards" label="Standards">
+
+         <Node id="alternatives-and-consequences" label="Alternatives and Consequences">
+
+         </Node>
+
+         <Node id="buy-and-sell-investments" label="Buy and Sell Investments">
+
+         </Node>
+
+         <Node id="career-options" label="Career Options">
+
+         </Node>
+
+         <Node id="charitable-giving" label="Charitable Giving">
+
+         </Node>
+
+         <Node id="communication-strategies" label="Communication Strategies">
+
+         </Node>
+
+         <Node id="consumer-credit-laws" label="Consumer Credit Laws">
+
+         </Node>
+
+         <Node id="consumer-protection-laws" label="Consumer Protection Laws">
+
+         </Node>
+
+         <Node id="credit-report" label="Credit Report">
+
+         </Node>
+
+         <Node id="debt-problems" label="Debt Problems">
+
+         </Node>
+
+         <Node id="evaluate-financial-information" label="Evaluate Financial Information">
+
+         </Node>
+
+         <Node id="financial-records" label="Financial Records">
+
+         </Node>
+
+         <Node id="financial-regulation" label="Financial Regulation">
+
+         </Node>
+
+         <Node id="health,-life-and-disability-insurance" label="Health, Life and Disability Insurance">
+
+         </Node>
+
+         <Node id="importance-of-a-will" label="Importance of a Will">
+
+         </Node>
+
+         <Node id="investing" label="Investing">
+
+         </Node>
+
+         <Node id="investment-alternatives" label="Investment Alternatives">
+
+         </Node>
+
+         <Node id="investment-taxes" label="Investment Taxes">
+
+         </Node>
+
+         <Node id="payment-methods" label="Payment Methods">
+
+         </Node>
+
+         <Node id="personal-financial-decisions" label="Personal Financial Decisions">
+
+         </Node>
+
+         <Node id="personal-financial-plan" label="Personal Financial Plan">
+
+         </Node>
+
+         <Node id="personal-information" label="Personal Information">
+
+         </Node>
+
+         <Node id="personal-income-sources" label="Personal Income Sources">
+
+         </Node>
+
+         <Node id="property-and-liability-insurance" label="Property and Liability Insurance">
+
+         </Node>
+
+         <Node id="purchase-decisions" label="Purchase Decisions">
+
+         </Node>
+
+         <Node id="risk-management" label="Risk Management">
+
+         </Node>
+
+         <Node id="saving" label="Saving">
+
+         </Node>
+
+         <Node id="spending-and-saving" label="Spending and Saving">
+
+         </Node>
+
+         <Node id="take-home-pay" label="Take-Home Pay">
+
+         </Node>
+
+         <Node id="types-of-credit" label="Types of Credit">
+
+         </Node>
+
+      </Node>
+
+      <Node id="state-change" label="State change">
+
+         <Node id="pre-contemplation" label="Pre-contemplation">
+
+         </Node>
+
+         <Node id="contemplation" label="Contemplation">
+
+         </Node>
+
+         <Node id="preparation" label="Preparation">
+
+         </Node>
+
+         <Node id="action" label="Action">
+
+         </Node>
+
+         <Node id="maintenance" label="Maintenance">
+
+         </Node>
+
+      </Node>
+
+      <Node id="user-goals" label="User Goals">
+
+         <Node id="learn-the-basics" label="Learn the Basics">
+
+         </Node>
+
+         <Node id="pay-for-next-semester" label="Pay for Next Semester">
+
+         </Node>
+
+         <Node id="start-my-career" label="Start My Career">
+
+         </Node>
+
+         <Node id="repay-student-loan-debt" label="Repay Student Loan Debt">
+
+         </Node>
+
+         <Node id="make-a-large-purchase" label="Make a Large Purchase">
+
+         </Node>
+
+         <Node id="pay-my-bills" label="Pay My Bills">
+
+         </Node>
+
+      </Node>
+
+      <Node id="vendor" label="Vendor">
+
+         <Node id="dell" label="Dell">
+
+         </Node>
+
+         <Node id="hp" label="HP">
+
+         </Node>
+
+      </Node>
+
+      <Node id="voice-level" label="Voice level">
+
+         <Node id="beginner" label="Beginner">
+
+         </Node>
+
+         <Node id="intermediate" label="Intermediate">
+
+         </Node>
+
+         <Node id="advanced" label="Advanced">
+
+         </Node>
+
+      </Node>
+
+   </Node>
+
+   <Node id="persona" label="Persona">
+  
+      <Node id="bank-accounts" label="Bank Accounts">
+    
+         <Node id="savings" label="Savings">
+    
+         </Node>
+    
+         <Node id="checking" label="Checking">
+    
+         </Node>
+    
+         <Node id="neither" label="Neither">
+    
+         </Node>
+    
+         <Node id="other" label="Other">
+    
+         </Node>
+  
+      </Node>
+  
+      <Node id="credit-cards" label="Credit Cards">
+    
+         <Node id="debit-card" label="Debit Card">
+    
+         </Node>
+    
+         <Node id="credit-card" label="Credit Card">
+    
+         </Node>
+    
+         <Node id="neither" label="Neither">
+    
+         </Node>
+  
+      </Node>
+  
+      <Node id="employment" label="Employment">
+    
+         <Node id="employed-part-time" label="Employed Part-time">
+    
+         </Node>
+    
+         <Node id="employed-full-time" label="Employed Full-time">
+    
+         </Node>
+    
+         <Node id="employed-seasonally" label="Employed Seasonally">
+    
+         </Node>
+    
+         <Node id="seeking-employment" label="Seeking Employment">
+    
+         </Node>
+    
+         <Node id="none-of-the-above" label="None of the above">
+    
+         </Node>
+  
+      </Node>
+  
+      <Node id="housing-type" label="Housing Type">
+    
+         <Node id="home" label="Home">
+    
+         </Node>
+    
+         <Node id="on-campus" label="On campus">
+    
+         </Node>
+    
+         <Node id="off-campus" label="Off campus">
+    
+         </Node>
+    
+         <Node id="alone" label="Alone">
+    
+         </Node>
+    
+         <Node id="roommate-friends" label="Roommate/friends">
+    
+         </Node>
+    
+         <Node id="family" label="Family">
+    
+         </Node>
+  
+      </Node>
+  
+      <Node id="loan-payments" label="Loan Payments">
+    
+         <Node id="yes" label="Yes">
+    
+         </Node>
+    
+         <Node id="no" label="No">
+    
+         </Node>
+    
+         <Node id="unsure" label="Unsure">
+    
+         </Node>
+    
+         <Node id="repayment-period-has-not-started" label="Repayment period has not started">
+    
+         </Node>
+    
+         <Node id="in-grace-period" label="In grace period">
+    
+         </Node>
+    
+         <Node id="in-repayment-making-payments-on-schedule" label="In repayment, making payments on schedule">
+    
+         </Node>
+    
+         <Node id="in-repayment-but-i-am-not-making-regular-payments" label="In repayment, but I am not making regular payments">
+    
+         </Node>
+  
+      </Node>
+  
+      <Node id="loan-type" label="Loan Type">
+    
+         <Node id="federal" label="Federal">
+    
+         </Node>
+    
+         <Node id="private" label="Private">
+    
+         </Node>
+    
+         <Node id="state-institutional" label="State/Institutional">
+    
+         </Node>
+    
+         <Node id="other" label="Other">
+    
+         </Node>
+    
+         <Node id="yes-but-im-not-sure-which-type" label="Yes, but I'm not sure which type">
+    
+         </Node>
+    
+         <Node id="no" label="No">
+    
+         </Node>
+  
+      </Node>
+  
+      <Node id="planning" label="Planning">
+    
+         <Node id="making-a-major-purchase" label="Making a major purchase">
+    
+         </Node>
+    
+         <Node id="buying-a-car" label="Buying a car">
+    
+         </Node>
+    
+         <Node id="buying-a-house" label="Buying a house">
+    
+         </Node>
+    
+         <Node id="attending-college-for-the-first-time" label="Attending college for the first time">
+    
+         </Node>
+    
+         <Node id="going-back-to-school-undergrad" label="Going back to school (undergrad)">
+    
+         </Node>
+    
+         <Node id="going-to-grad-school" label="Going to grad school">
+    
+         </Node>
+    
+         <Node id="starting-a-family" label="Starting a family">
+    
+         </Node>
+    
+         <Node id="switching-careers" label="Switching careers">
+    
+         </Node>
+  
+      </Node>
+  
+      <Node id="school-type" label="School Type">
+    
+         <Node id="public-school" label="Public School">
+    
+         </Node>
+    
+         <Node id="private-school" label="Private School">
+    
+         </Node>
+    
+         <Node id="community-college" label="Community College">
+    
+         </Node>
+    
+         <Node id="online-school" label="Online School">
+    
+         </Node>
+  
+      </Node>
+
+   </Node>
+
+   <Node id="positioning" label="Positioning">
+
+      <Node id="featured" label="Featured">
+
+      </Node>
+
+      <Node id="trending" label="Trending">
+
+      </Node>
+
+   </Node>
+  
+   <Node id="salt-standards" label="SALT Standards">
+    
+    
+      <Node id="fundamentals" label="1. Fundamentals">
+      
+         <Node id="understand-your-personal-financial-personality-philosophy" label="1.1 Understand your personal financial personality/philosophy">
+      
+         </Node>
+      
+         <Node id="understand-opportunity-costs-pros-and-cons-of-financial-decisions" label="1.2 Understand opportunity costs (pros and cons) of financial decisions">
+      
+         </Node>
+      
+         <Node id="differentiate-between-different-types-of-financial-institutions-and-financial-products" label="1.3 Differentiate between different types of financial institutions and financial products">
+      
+         </Node>
+      
+         <Node id="understand-how-to-control-personal-information-and-avoid-financial-scams" label="1.4 Understand how to control personal information and avoid financial scams">
+      
+         </Node>
+      
+         <Node id="understand-where-to-go-and-how-to-communicate-when-you-need-help" label="1.5 Understand where to go and how to communicate when you need help">
+      
+         </Node>
+    
+      </Node>
+
+  
+      <Node id="college-access-and-planning" label="2. College Access and Planning">
+      
+         <Node id="understand-the-payoff-between-education-earnings-and-student-loan-debt" label="2.1 Understand the payoff between education, earnings and student loan debt">
+       
+         </Node>
+       
+         <Node id="explore-college-options-and-the-best-fit-philosophy" label="2.2 Explore college options and the best fit philosophy">
+       
+         </Node>
+       
+         <Node id="understand-the-college-application-process" label="2.3 Understand the college application process">
+       
+         </Node>
+       
+         <Node id="develop a system for school choice comparison " label="2.4 Develop a system for school choice comparison">
+       
+         </Node>
+       
+         <Node id="understand-how-to-apply-for-financial-aid" label="2.5 Understand how to apply for financial aid">
+       
+         </Node>
+       
+         <Node id="understand-college-financing-options" label="2.6 Understand college financing options">
+       
+         </Node>
+  
+      </Node>
+
+  
+      <Node id="student-loans" label="3. Student Loans ">
+      
+         <Node id="understand-borrower-rights-and-responsibilities" label="3.1 Understand borrower rights and responsibilities">
+       
+         </Node>
+       
+         <Node id="understand-industry-players-" label="3.2 Understand industry players">
+       
+         </Node>
+       
+         <Node id="understand-loan-repayment-schedules" label="3.3 Understand loan repayment schedules">
+       
+         </Node>
+       
+         <Node id="understand-postponement-options" label="3.4 Understand postponement options">
+       
+         </Node>
+       
+         <Node id="understand-loan-forgiveness-programs" label="3.5 Understand loan forgiveness programs">
+       
+         </Node>
+       
+         <Node id="understand-loan-repayment-assistance-programs" label="3.6 Understand loan repayment assistance programs">
+       
+         </Node>
+       
+         <Node id="explore-repayment-challenge-solutions" label="3.7 Explore repayment challenge solutions">
+       
+         </Node>
+       
+         <Node id="develop-your-personal-education-debt-tracker" label="3.8 Develop your personal education debt tracker">
+       
+         </Node>
+  
+      </Node>
+    
+      <Node id="income-and-careers" label="4. Income and Careers">
+      
+         <Node id="examine-options-for-working-while-in-school-" label="4.0 Examine options for working while in school">
+       
+         </Node>
+       
+         <Node id="understand-internships-volunteering-service-work" label="4.1 Understand internships, volunteering and service work">
+       
+         </Node>
+       
+         <Node id="examine-career-options" label="4.2 Examine career options">
+       
+         </Node>
+       
+         <Node id="develop-a job-search-plan" label="4.3 Develop a job search plan">
+       
+         </Node>
+       
+         <Node id="create-career-resources-resume-cover-letter-online-profiles" label="4.4 Create career resources (resume, cover letter, online profiles)">
+       
+         </Node>
+       
+         <Node id="examine-professional-networking-opportunities" label="4.5 Examine professional networking opportunities">
+       
+         </Node>
+       
+         <Node id="understand-how-to-evaluate-job-offers" label="4.6 Understand how to evaluate job offers">
+       
+         </Node>
+       
+         <Node id="understand-the-factors-that-affect-take-home-pay" label="4.7 Understand the factors that affect take home pay">
+       
+         </Node>
+       
+         <Node id="understand-the-basics-of-entrepreneurship-freelancing-portfolio-careers" label="4.8 Understand the basics of entrepreneurship/freelancing/portfolio careers">
+       
+         </Node>
+       
+         <Node id="understand-how-to-deal-with-unemployment-or-underemployment " label="4.9 Understand how to deal with unemployment or underemployment">
+       
+         </Node>
+    
+      </Node>
+
+    
+      <Node id="money management" label="5. Money Management">
+      
+         <Node id="understand-the-goal-of-money-management" label="5.1 Understand the goal of money management">
+       
+         </Node>
+       
+         <Node id="understand-the-components-of-a-net-worth-statement" label="5.2 Understand the components of a net worth statement">
+       
+         </Node>
+       
+         <Node id="create-a-net-worth-statement" label="5.3 Create a net worth statement">
+       
+         </Node>
+       
+         <Node id="understand-the-components-of-a-budget" label="5.4 Understand the components of a budget">
+       
+         </Node>
+       
+         <Node id="create-a-personal-spending-plan" label="5.5 Create a personal spending plan">
+       
+         </Node>
+       
+         <Node id="understand-large-purchase-decision-making" label="5.6 Understand large purchase decision-making">
+       
+         </Node>
+       
+         <Node id="develop-and-prioritize-short-term-and-long-term-goals" label="5.7 Develop and prioritize short term and long term goals">
+       
+         </Node>
+       
+         <Node id="create-realistic-financial-plans-to-meet-goals" label="5.8 Create realistic financial plans to meet goals">
+       
+         </Node>
+       
+         <Node id="understand-how-to-evaluate-and-modify-spending-and-financial-plans" label="5.9 Understand how to evaluate and modify spending and financial plans">
+       
+         </Node>
+    
+      </Node>
+
+    
+      <Node id="saving-and-investing" label="6. Saving and Investing">
+      
+         <Node id="understand-the-difference-between-saving-and-investing" label="6.1 Understand the difference between saving and investing">
+       
+         </Node>
+       
+         <Node id="understand-the-principles-of-compound-interest" label="6.2 Understand the principles of compound interest">
+       
+         </Node>
+       
+         <Node id="understand-the-different-types-of-investment-vehicles-and-how-to-purchase-them" label="6.3 Understand the different types of investment vehicles and how to purchase them">
+       
+         </Node>
+       
+         <Node id="examine-the-risks-and-rewards-related-to-investments" label="6.4 Examine the risks and rewards related to investments">
+       
+         </Node>
+       
+         <Node id="understand-the-difference-between-retirement-and-non-retirement-accounts" label="6.5 Understand the difference between retirement and non-retirement accounts">
+       
+         </Node>
+       
+         <Node id="examine-saving-and-investing-needs-by-life-stage" label="6.6 Examine saving and investing needs by life-stage">
+       
+         </Node>
+    
+      </Node>
+ 
+    
+      <Node id="credit-and-debt-management" label="7. Credit and Debt Management">
+      
+         <Node id="understand-different-types-of-credit" label="7.1 Understand different types of credit">
+       
+         </Node>
+       
+         <Node id="understand-how-to-use-credit-and-debt-appropriately" label="7.2 Understand how to use credit and debt appropriately">
+       
+         </Node>
+       
+         <Node id="understand-the-credit-application-process" label="7.3 Understand the credit application process">
+       
+         </Node>
+       
+         <Node id="understand-the-implications-of-co-signing-a-credit-application" label="7.4 Understand the implications of co-signing a credit application">
+       
+         </Node>
+       
+         <Node id="evaluate-the-elements-of-a-credit-report" label="7.5 Evaluate the elements of a credit report">
+       
+         </Node>
+       
+         <Node id="understand-consumer-rights-and-how-to-dispute-errors-" label="7.6 Understand consumer rights and how to dispute errors">
+       
+         </Node>
+       
+         <Node id="examine-the-impact-and-implications-of-credit-scores" label="7.7 Examine the impact and implications of credit scores">
+       
+         </Node>
+    
+      </Node>
+
+  
+      <Node id="risk-management" label="8. Risk Management">
+      
+         <Node id="evaluate-your-risk-tolerance-level" label="8.1 Evaluate your risk tolerance level">
+       
+         </Node>
+       
+         <Node id="evaluate-your-insurance-needs-and-how-they-change-over-time" label="8.2 Evaluate your insurance needs and how they change over time">
+       
+         </Node>
+       
+         <Node id="understand-different-types-of-insurance-products" label="8.3 Understand different types of insurance products">
+       
+         </Node>
+       
+         <Node id="understand-the-purpose-and-basics-of-a-will" label="8.4 Understand the purpose and basics of a will">
+       
+         </Node>
+       
+         <Node id="create-a-risk-management-strategy" label="8.5 Create a risk management strategy">
+       
+         </Node>
+    
+      </Node>
+
+    
+      <Node id="taxes" label="9. Taxes">
+       
+         <Node id="understand-tax-rates-and-tax-liability" label="9.1 Understand tax rates and tax liability">
+      
+         </Node>
+      
+         <Node id="understand-different-types-of-taxes" label="9.2 Understand different types of taxes">
+       
+         </Node>
+       
+         <Node id="understand-different-tax-documents" label="9.3 Understand different tax documents">
+       
+         </Node>
+       
+         <Node id="understand-tax-filing-basics" label="9.4 Understand tax filing basics">
+       
+         </Node>
+    
+      </Node>
+   </Node>
+
+
+   <Node id="topics" label="Topics">
+
+      <Node id="banking" label="Banking">
+
+         <Node id="balancing-your-account" label="Balancing Your Account">
+
+         </Node>
+
+         <Node id="banking-basics" label="Banking Basics">
+
+         </Node>
+
+         <Node id="finding-the-right-bank" label="Finding the Right Bank">
+
+         </Node>
+
+      </Node>
+
+      <Node id="budgeting" label="Budgeting">
+
+         <Node id="budgeting-basics" label="Budgeting Basics">
+
+         </Node>
+
+         <Node id="cash-flow-basics" label="Cash Flow Basics">
+
+         </Node>
+
+         <Node id="evaluating-a-budget" label="Evaluating a Budget">
+
+         </Node>
+
+         <Node id="goal-setting" label="Goal Setting">
+
+         </Node>
+
+         <Node id="implementing-a-budget" label="Implementing a Budget">
+
+         </Node>
+
+         <Node id="managing-expenses" label="Managing Expenses">
+
+         </Node>
+
+         <Node id="time-value-of-money" label="Time Value of Money">
+
+         </Node>
+
+         <Node id="why-budget" label="Why Budget">
+
+         </Node>
+
+      </Node>
+
+      <Node id="changing-loan-repayment-plans" label="Changing Loan Repayment Plans">
+
+      </Node>
+
+      <Node id="credit" label="Credit">
+
+         <Node id="credit-and-debit-card-basics" label="Credit and Debit Card Basics">
+
+         </Node>
+
+         <Node id="credit-reports" label="Credit Reports">
+
+         </Node>
+
+         <Node id="credit-scores" label="Credit Scores">
+
+         </Node>
+
+         <Node id="identify-theft" label="Identify Theft">
+
+         </Node>
+
+         <Node id="repaying-credit-card-debt" label="Repaying Credit Card Debt">
+
+         </Node>
+
+      </Node>
+
+      <Node id="dealing-with-life-events" label="Dealing With Life Events">
+
+      </Node>
+
+      <Node id="erasing-loan-debt" label="Erasing Loan Debt">
+
+      </Node>
+
+      <Node id="financial-attitudes" label="Financial Attitudes">
+
+         <Node id="changing-financial-behaviors" label="Changing Financial Behaviors">
+
+         </Node>
+
+         <Node id="money-talk" label="Money Talk">
+
+         </Node>
+
+      </Node>
+
+      <Node id="insurance" label="Insurance">
+
+         <Node id="evaluating-health-plans" label="Evaluating Health Plans">
+
+         </Node>
+
+         <Node id="insurance-basics" label="Insurance Basics">
+
+         </Node>
+
+      </Node>
+
+      <Node id="jobs" label="Jobs">
+
+         <Node id="choosing-a-career" label="Choosing a Career">
+
+         </Node>
+
+         <Node id="dealing-with-unemployment-or-underemployment" label="Dealing with Unemployment or Underemployment">
+
+         </Node>
+
+         <Node id="entrepreneurship-and-freelancing" label="Entrepreneurship and Freelancing">
+
+         </Node>
+
+         <Node id="evaluating-job-offers" label="Evaluating Job Offers">
+
+         </Node>
+
+         <Node id="internships,-volunteering-and-service-work" label="Internships, Volunteering and Service Work">
+
+         </Node>
+
+         <Node id="positioning-yourself-for-success" label="Positioning Yourself for Success">
+
+         </Node>
+
+         <Node id="working-while-in-school" label="Working While in School">
+
+         </Node>
+
+      </Node>
+
+      <Node id="large-purchases" label="Large Purchases">
+
+         <Node id="mortgages" label="Mortgages">
+
+         </Node>
+
+         <Node id="net-worth" label="Net Worth">
+
+         </Node>
+
+         <Node id="post-graduate-study" label="Post-Graduate Study">
+
+         </Node>
+
+         <Node id="vehicles" label="Vehicles">
+
+         </Node>
+
+      </Node>
+
+      <Node id="paying-for-college" label="Paying for college">
+
+         <Node id="alternative-sources-of-money" label="Alternative Sources of Money">
+
+         </Node>
+
+         <Node id="community-college" label="Community College">
+
+         </Node>
+
+         <Node id="federal-student-loans" label="Federal Student Loans">
+
+         </Node>
+
+         <Node id="graduate-school-funding" label="Graduate School Funding">
+
+         </Node>
+
+         <Node id="health-professions" label="Health Professions">
+
+         </Node>
+
+         <Node id="law-school" label="Law School">
+
+         </Node>
+
+         <Node id="life-happens" label="Life Happens">
+
+         </Node>
+
+         <Node id="mba" label="MBA">
+
+         </Node>
+
+         <Node id="paying-for-college-basics" label="Paying for College Basics">
+
+         </Node>
+
+         <Node id="private-student-loans" label="Private Student Loans">
+
+         </Node>
+
+         <Node id="scholarships-and-grants" label="Scholarships and Grants">
+
+         </Node>
+
+         <Node id="school-choice-comparison" label="School Choice Comparison">
+
+         </Node>
+
+         <Node id="student-loan-repayment-options" label="Student Loan Repayment Options">
+
+         </Node>
+
+         <Node id="tuition-payment-plans" label="Tuition Payment Plans">
+
+         </Node>
+
+         <Node id="work-study" label="Work Study">
+
+         </Node>
+
+      </Node>
+
+      <Node id="saving" label="Saving">
+
+         <Node id="investment-tools" label="Investment tools">
+
+         </Node>
+
+         <Node id="retirement-savings" label="Retirement Savings">
+
+         </Node>
+
+         <Node id="savings-basics" label="Savings basics">
+
+         </Node>
+
+      </Node>
+
+      <Node id="suspending-loan-payments" label="Suspending Loan Payments">
+
+      </Node>
+
+      <Node id="taxes" label="Taxes">
+
+         <Node id="filing-taxes" label="Filing Taxes">
+
+         </Node>
+
+         <Node id="tax-basics" label="Tax Basics">
+
+         </Node>
+
+      </Node>
+
+   </Node>
+</Tree>

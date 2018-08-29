@@ -1,0 +1,1 @@
+define(["dust"], function(dust) { (function(){dust.register("VLC/EnrollmentStatus",body_0);function body_0(chk,ctx){return chk.write("<span>").reference(ctx.get("EnrollmentStatus"),ctx,"h").write("</span>");}return body_0;})(); });

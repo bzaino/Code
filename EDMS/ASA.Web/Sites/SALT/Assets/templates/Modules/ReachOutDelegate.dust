@@ -1,0 +1,19 @@
+{#secondaryContent}
+    {@select key="{name}"}
+        {@eq value="ReachOutContent"}
+            {@if cond="'{mainContent[0].name}' === 'ProductDetail'"}
+                {@if cond="'{mainContent[0].record.attributes.show-livechat-reachout|trim}'"}
+                    {>"Modules/ReachOutModule" showLiveChatVal="{mainContent[0].record.attributes.show-livechat-reachout|trim}" /}
+                {:else}
+                    {>"Modules/ReachOutModule" showLiveChatVal="sponsored" /}
+                {/if}
+            {:else}
+                {@if cond="'{records[1].attributes.show-livechat-reachout|trim}'"}
+                    {>"Modules/ReachOutModule" showLiveChatVal="{records[1].attributes.show-livechat-reachout|trim}" /}
+                {:else}
+                    {>"Modules/ReachOutModule" showLiveChatVal="sponsored" /}
+                {/if}
+            {/if}
+        {/eq}
+    {/select}
+{/secondaryContent}

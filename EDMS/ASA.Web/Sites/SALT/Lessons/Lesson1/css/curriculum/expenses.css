@@ -1,0 +1,108 @@
+#curriculum-expenses {
+  padding-bottom: 0px; }
+
+/* Curriculum Expenses */
+ul.expenses-selections {
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  list-style: none;
+  width: 100%; }
+  ul.expenses-selections li {
+    float: left;
+    width: 18.7%;
+    height: 3.19%;
+    margin: 0 1.1% 1.3% 0;
+    padding: 14% 0 7px;
+    background-color: #fafafa;
+    border: 1px solid #d9d4d4;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center; }
+    ul.expenses-selections li:hover {
+      background-color: #f0f0f0; }
+    ul.expenses-selections li.selected {
+      background-color: #e5fcf0;
+      border-color: #00e070; }
+    ul.expenses-selections li.transportation {
+      background-image: url("/Assets/images/lessons/lesson1/curriculum/expenses/icon/transportation.png"); }
+    ul.expenses-selections li.housing {
+      background-image: url("/Assets/images/lessons/lesson1/curriculum/expenses/icon/housing.png"); }
+    ul.expenses-selections li.utilities {
+      background-image: url("/Assets/images/lessons/lesson1/curriculum/expenses/icon/utilities.png"); }
+    ul.expenses-selections li.school {
+      background-image: url("/Assets/images/lessons/lesson1/curriculum/expenses/icon/school.png"); }
+    ul.expenses-selections li.health {
+      background-image: url("/Assets/images/lessons/lesson1/curriculum/expenses/icon/health-beauty.png");
+      margin-right: 0; }
+    ul.expenses-selections li.savings {
+      background-image: url("/Assets/images/lessons/lesson1/curriculum/expenses/icon/savings.png"); }
+    ul.expenses-selections li.groceries {
+      background-image: url("/Assets/images/lessons/lesson1/curriculum/expenses/icon/groceries.png"); }
+    ul.expenses-selections li.entertainment {
+      background-image: url("/Assets/images/lessons/lesson1/curriculum/expenses/icon/entertainment.png"); }
+    ul.expenses-selections li.eating {
+      background-image: url("/Assets/images/lessons/lesson1/curriculum/expenses/icon/eating.png"); }
+    ul.expenses-selections li.technology {
+      background-image: url("/Assets/images/lessons/lesson1/curriculum/expenses/icon/technology.png");
+      margin-right: 0; }
+
+/* all expenses */
+.question h1 span {
+  float: left; }
+
+#curriculum-transportation {
+  padding-bottom: 135px; }
+  #curriculum-transportation .question {
+    position: relative; }
+    #curriculum-transportation .question .question-wrapper {
+      margin: 45px 0;
+      min-height: 50px; }
+      #curriculum-transportation .question .question-wrapper span {
+        float: left; }
+    #curriculum-transportation .question h1 {
+      margin: 0; }
+    #curriculum-transportation .question .dd-large {
+      float: left; }
+    #curriculum-transportation .question form {
+      margin-top: 40px; }
+  #curriculum-transportation .btn-remove {
+    margin-top: 15px; }
+
+#curriculum-transportation .dk_theme_large .dk_toggle {
+  /* min-width: 305px */ }
+
+#curriculum-housing {
+  padding-bottom: 135px; }
+  #curriculum-housing .question {
+    position: relative; }
+    #curriculum-housing .question .question-wrapper {
+      margin: 45px 0;
+      min-height: 50px; }
+      #curriculum-housing .question .question-wrapper span {
+        float: left; }
+    #curriculum-housing .question h1 {
+      margin: 0; }
+    #curriculum-housing .question .dd-large {
+      float: left;
+      margin: 0px 15px; }
+    #curriculum-housing .question form {
+      margin-top: 45px; }
+
+#curriculum-utilities {
+  padding-bottom: 85px; }
+
+#curriculum-school {
+  padding-bottom: 85px; }
+
+#curriculum-health {
+  padding-bottom: 85px; }

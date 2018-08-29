@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE RECORD_FILTER SYSTEM "record_filter.dtd">
+<RECORD_FILTER>
+
+  <PROPNAME>P_Record_Type</PROPNAME>
+
+  <PROPNAME>P_School</PROPNAME>
+
+  <PROPNAME>P_School_Name</PROPNAME>
+
+  <PROPNAME>P_Content_Size</PROPNAME>
+
+  <PROPNAME>P_Hits_Last_365_Days</PROPNAME>
+
+</RECORD_FILTER>

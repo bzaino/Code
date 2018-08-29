@@ -1,0 +1,55 @@
+<div id="browse-fixed-header" class="contain-to-grid">
+    <div class="browse-header-bar clearfix">
+        <h1 class="left">Find What You Need</h1>
+        <div class="btn-dropdown-container right">
+            <span class="sort-filter-text">Sort & Filter</span>
+            <input type="button" data-dropdown="drop-content-types" aria-controls="drop-content-types" aria-expanded="false" class="btn-dropdown js-dropdown dd-opener"/>
+        </div>
+        {>"Modules/Salt3SortControl"/}
+    </div>
+    <hgroup class="small-12 columns hide-for-small">
+    <h3 class="subheader">
+        See everything Salt has to offer. Add more items to your to-do list to stay motivated.
+    </h3>
+    </hgroup>
+</div>
+{^hasContent}
+    <div class="magellan-container small-12 columns" data-magellan-expedition="fixed" data-options="active_class:sticky-top;destination_threshold:170;threshold:188;throttle_delay:0">
+        <div class="js-browse-no-content double-margin-top no-result no-result-margin">
+            <h2>Nothing To See Here, Folks</h2>
+            <p>Sorry we couldn't find what you're looking for. Choose a different option to check out something else. </p>
+        </div>
+    </div>
+{:else}
+    <div class="magellan-container" data-magellan-expedition="fixed" data-options="active_class:sticky-top;destination_threshold:170;threshold:188;throttle_delay:0">
+      <dl class="sub-nav left">
+        {#goalRankResponses}
+            {?filterEnabled}
+                <dd data-magellan-arrival="{$idx}" class="browse-arrivals" ><h2 class="browse-magellan-headers">{AnsDescription}</h2></dd>
+            {/filterEnabled}
+        {/goalRankResponses}
+      </dl>
+    </div>
+
+    {#goalRankResponses}
+        {?filterEnabled}
+            <section class="js-load-more-container load-more-container" data-loadMore-amount="10" data-currentIndex="0" data-mapKey="{nameWithNoSpaces}">
+                <h2 data-magellan-destination="{$idx}">{AnsDescription}</h2>
+                {?libraryTasks[nameWithNoSpaces]}
+                    {#libraryTasks[nameWithNoSpaces]}
+                        <div class="row collapse js-todoContainer todo" data-primary-key="{attributes.P_Primary_Key}" data-content-type="{attributes.ContentTypes}" data-content-title="{attributes.resource_link_title}" {@gt key=$idx value="2"}style="display:none;"{/gt}>
+                            {>"partial_todo" section-identifier="Library-{nameWithNoSpaces}"/}
+                        </div>
+                    {/libraryTasks[nameWithNoSpaces]}
+                    <div class="load-more js-load-more-btn-container" {^libraryTasks[nameWithNoSpaces]}hidden{/libraryTasks[nameWithNoSpaces]}>
+                        <a href class="js-void-href js-load-more">Load More</a>
+                    </div>
+                {:else}
+                    <div class="js-browse-no-content no-result">
+                        <p>Sorry we couldn't find what you're looking for. Choose a different option to check out something else. </p>
+                    </div>
+                {/libraryTasks[nameWithNoSpaces]}
+            </section>
+        {/filterEnabled}
+    {/goalRankResponses}
+{/hasContent}

@@ -1,0 +1,31 @@
+<div class="loan-type" data-iteration="<%= order %>">
+	Show me repayment options for
+	<span class="inline">
+		<select class="dropdown-large loan-type" id="loan-type-options-<%= order %>" name="loan-type-options-<%=order %>" tabindex="<%= (order * 1) + (order - 1) %>">
+		</select>
+    </span>
+	with a total balance of
+	<input class="large value loan-type-value" id="total-balance" placeholder="$" maxlength="8" tabindex="<%= (order * 2) %>" type="text" >.
+	<a href="#" class="btn-remove"></a>
+</div>
+<div class="interestRate clearfix">
+Interest Rate: 
+	<span class="modify-interest large value">
+        <span  class="flex-container">
+      <a href="#" id="interest-less" class="flex-cell">&lt;</a>
+      <input type="text" id="interestRate" value="3.86" tabindex="<%= (order * 3)%>" class="flex-cell"/>
+      <a href="#" id="interest-more" class="flex-cell">&gt;</a>
+    </span> </span>
+</div>
+<div class="state">
+	Select State:
+	<span class="inline">
+		<select class="dropdown-state state" id="state-options" name="state-options" tabindex="<%= (order * 4)%>">
+		</select>
+	</span>
+</div>
+<div class="section">
+	<p>How are my loans affected if I start out making <input class="large value income-value" type="text" id="income" value="" placeholder="$" maxlength="7" tabindex="<%= (order * 5)%>" /> per year?</p>
+	<p>How many people do you provide for financially? <input class="large value" type="text" id="dependents" value="" placeholder="0" maxlength="2" tabindex="<%= (order * 6)%>" /></p>
+</div>
+

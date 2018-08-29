@@ -1,0 +1,22 @@
+﻿@model IEnumerable<ADqueryClinet.Models.UserDetail>
+
+@{
+    ViewBag.Title = "ValidateUser";
+}
+
+<h2>@ViewBag.Message</h2>
+
+
+
+@using (Html.BeginForm())
+{
+<p>
+   @Html.Label("", "Enter Email Address")
+
+</p>
+
+<p>
+      
+       <input type="submit" value="Validate"/>
+</p>
+}

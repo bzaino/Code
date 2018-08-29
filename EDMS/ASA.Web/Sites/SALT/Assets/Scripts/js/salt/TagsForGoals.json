@@ -1,0 +1,6 @@
+{
+    "MasterMoney": ["budgeting", "banking", "credit", "taxes", "insurance"],
+    "RepayStudentDebt": ["payment plans", "postponements", "cancellations", "late payments"],
+    "PayForSchool": ["scholarships", "federal student aid", "private loans", "transferring", "school choice"],
+    "FindAJob": ["job search", "job applications", "job interviews", "internships", "salaries", "career skills"]
+}

@@ -1,0 +1,52 @@
+<div class="vlc-body">
+    {mainContent[0].records[0].attributes.body}
+</div>
+
+{mainContent[0].records[0].attributes.rich-text-image}
+
+{>"VLC/partial_multi_buttons" /}
+
+{mainContent[0].records[0].attributes.special-content-1}
+
+{>"VLC/partial_newTab_buttons" /}
+
+{>"VLC/partial_VLC_buttons" /}
+<div>
+    <a id="backButton" class="button base-btn main-btn back js-void-href" href=""> Back<a/>
+</div>
+
+
+{?mainContent[0].records[0].attributes.learnedTopic}
+<script type="text/javascript">
+    require([
+        'salt/models/SiteMember',
+        'backbone',
+        'modules/ContentInteractionModels'
+    ], function(SiteMember, Backbone, Interactions) {
+        SiteMember.done(function (memberObj) {
+            var learnedTopicRaw = "{mainContent[0].records[0].attributes.learnedTopic}",
+                learnedTopic = learnedTopicRaw.trim() || 'NotInWidget',
+                contentId = "{mainContent[0].records[0].attributes.P_Primary_Key}",
+                rating = new Interactions.Interaction({ RefContentInteractionTypeID: 3, ContentID: contentId, MemberID: parseInt(memberObj.MembershipId, 10), MemberContentInteractionValue: learnedTopic });
+
+            loanForgiveness.model.set(learnedTopic, 'Visited');
+            paymentPlans.model.set(learnedTopic, 'Visited');
+            postponePayment.model.set(learnedTopic, 'Visited');
+            loanDefault.model.set(learnedTopic, 'Visited');
+
+            Backbone.sync('create', rating, { url: rating.urlRoot });
+        });
+    });
+</script>
+{/mainContent[0].records[0].attributes.learnedTopic}
+
+{@ne key="{mainContent[0].records[0].attributes.SetRepaymentPlan}" value=" "}
+    <script>
+    	require(['jquery'], function ($) {
+    		var repaymentPlan = "{mainContent[0].records[0].attributes.SetRepaymentPlan}";
+			repaymentPlan = repaymentPlan.trim();
+			progressWidget.model.set('Plan', repaymentPlan);
+    	});
+    </script>
+{/ne}
+
